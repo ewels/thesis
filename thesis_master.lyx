@@ -4,8 +4,13 @@
 \begin_header
 \textclass report
 \use_default_options true
+\begin_modules
+eqs-within-sections
+figs-within-sections
+tabs-within-sections
+\end_modules
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -73,29 +78,10 @@ Spatial organization of proto-oncogenes in human hematopoietic progenitor
 Philip Ewels
 \end_layout
 
-\begin_layout Abstract
-Abstract here
-\end_layout
-
-\begin_layout Abstract
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-\begin_inset FloatList table
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList figure
+\begin_inset CommandInset include
+LatexCommand include
+filename "thesis_firstpages.lyx"
 
 \end_inset
 
@@ -106,6 +92,25 @@ LatexCommand tableofcontents
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset FloatList table
 
 \end_inset
 
@@ -192,45 +197,25 @@ filename "thesis_chapter_8.lyx"
 
 \end_layout
 
-\begin_layout Chapter*
-Acknowledgements
-\end_layout
-
-\begin_layout Chapter
-\start_of_appendix
-Appendices
-\end_layout
-
-\begin_layout Section
-Hi-C data analysis work?
-\end_layout
-
-\begin_layout Section
-Other Perl scripts and R scripts used
-\end_layout
-
-\begin_layout Subsection
-Web Tools
-\end_layout
-
 \begin_layout Standard
-Publically available tools I’ve written - Cytobands, Genome RE Sites, Sequences.
- Mention traffic.
-\end_layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "thesis_appendices.lyx"
 
-\begin_layout Standard
-Talk about contribution to fastQC 
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter*
-Bibliography
+References
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "C:/Users/ewelsp/Dropbox/Work/BibTeX/THESIS"
-options "plain"
+options "bibtotoc,plain"
 
 \end_inset
 

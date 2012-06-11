@@ -1,0 +1,281 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\master thesis_master.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans helvet
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+
+\lang british
+Declaration
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+This dissertation is the result of my own work and includes nothing which
+ is the outcome of work done in collaboration except where specifically
+ indicated in the text.
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Signed:
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Phil Ewels
+\end_layout
+
+\begin_layout Chapter*
+
+\lang british
+Summary
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Abstract here
+\end_layout
+
+\begin_layout Chapter*
+
+\lang british
+Acknowledgements
+\end_layout
+
+\begin_layout Chapter*
+
+\lang british
+Acknowledgement of assistance
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+It is recognised by the Institute and the University that work leading to
+ a research degree is frequently now carried out in groups and that you
+ are likely to have availed yourself of the help of postdocs, technicians
+ or other students etc.
+ in your work to some extent.
+ The Institute feels it is important for students to be open about the amount
+ of help they have received during the course of their research in in preparing
+ their thesis.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Initial training in techniques and laboratory practice and subsequent mentoring
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang british
+Allen Chong, Dr.
+ Cameron Osborne - Training in 3C, e4C, general molecular biology techniques
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ Stefan Schoenfelder - Training in RNA-FISH
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ Daniel Bolland - Training in RNA-FISH and DNA-FISH
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ Geoff Morgan - Training in FACS
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ Cameron Osborne, Christel Kreuger - Mentoring
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang british
+Data obtained from a technical service provider (
+\emph on
+e.g.
+ 
+\emph default
+DNA sequencing, illustrations, simple bioinformatics information etc.)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang british
+Kristina Tabbada - DNA Sequencing
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang british
+Data produced jointly (
+\emph on
+e.g.
+ 
+\emph default
+where it was necessary or desirable to have two pairs of hands)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang british
+Mayra Furlan-Magaril - Initial e4C work
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Lauren Ferreira - DNA-FISH probe generation
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang british
+Data / materials provided by someone else (
+\emph on
+e.g.
+ 
+\emph default
+one-off analysis, bioinformatics analysis)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ George Follows, Dr.
+ Kevin Jestice, Paul Boraks - CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\lang british
++
+\end_layout
+
+\end_inset
+
+ samples
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Dr.
+ Karen Anderson - Test blood samples
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Sarah Toscano - SL2
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\lang british
++
+\end_layout
+
+\end_inset
+
+ cells for carrier e4C
+\end_layout
+
+\begin_layout Enumerate
+
+\lang british
+Simon Andrews, Felix Kreuger - Initial bioinformatics processing
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
