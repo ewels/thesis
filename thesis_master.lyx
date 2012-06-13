@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\usepackage[margin=6pt,font=small,labelfont=bf,labelsep=endash]{caption}
+\end_preamble
 \use_default_options true
 \begin_modules
 eqs-within-sections
@@ -31,14 +34,23 @@ tabs-within-sections
 \index_command default
 \paperfontsize default
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_numerical
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
