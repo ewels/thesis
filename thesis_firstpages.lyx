@@ -6,7 +6,7 @@
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -66,58 +66,65 @@
 \begin_body
 
 \begin_layout Chapter*
-
-\lang british
 Declaration
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 This dissertation is the result of my own work and includes nothing which
  is the outcome of work done in collaboration except where specifically
  indicated in the text.
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Signed:
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Phil Ewels
 \end_layout
 
 \begin_layout Chapter*
-
-\lang british
 Summary
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Abstract here
 \end_layout
 
 \begin_layout Chapter*
-
-\lang british
 Acknowledgements
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
 
-\lang british
+\begin_layout Plain Layout
+I would like to thank my group.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/misc/hip.jpg
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
 Acknowledgement of assistance
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 It is recognised by the Institute and the University that work leading to
  a research degree is frequently now carried out in groups and that you
  are likely to have availed yourself of the help of postdocs, technicians
@@ -129,51 +136,37 @@ It is recognised by the Institute and the University that work leading to
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Initial training in techniques and laboratory practice and subsequent mentoring
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-
-\lang british
 Allen Chong, Dr.
  Cameron Osborne - Training in 3C, e4C, general molecular biology techniques
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Dr.
  Stefan Schoenfelder - Training in RNA-FISH
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Dr.
  Daniel Bolland - Training in RNA-FISH and DNA-FISH
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Dr.
  Geoff Morgan - Training in FACS
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Dr.
  Cameron Osborne, Christel Kreuger - Mentoring
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-
-\lang british
 Data obtained from a technical service provider (
 \emph on
 e.g.
@@ -184,15 +177,11 @@ DNA sequencing, illustrations, simple bioinformatics information etc.)
 
 \begin_deeper
 \begin_layout Enumerate
-
-\lang british
 Kristina Tabbada - DNA Sequencing
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-
-\lang british
 Data produced jointly (
 \emph on
 e.g.
@@ -203,21 +192,15 @@ where it was necessary or desirable to have two pairs of hands)
 
 \begin_deeper
 \begin_layout Enumerate
-
-\lang british
 Mayra Furlan-Magaril - Initial e4C work
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Lauren Ferreira - DNA-FISH probe generation
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-
-\lang british
 Data / materials provided by someone else (
 \emph on
 e.g.
@@ -228,16 +211,12 @@ one-off analysis, bioinformatics analysis)
 
 \begin_deeper
 \begin_layout Enumerate
-
-\lang british
 Dr.
  George Follows, Dr.
  Kevin Jestice, Paul Boraks - CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\lang british
 +
 \end_layout
 
@@ -247,21 +226,15 @@ Dr.
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Dr.
  Karen Anderson - Test blood samples
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Sarah Toscano - SL2
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\lang british
 +
 \end_layout
 
@@ -271,8 +244,6 @@ Sarah Toscano - SL2
 \end_layout
 
 \begin_layout Enumerate
-
-\lang british
 Simon Andrews, Felix Kreuger - Initial bioinformatics processing
 \end_layout
 
