@@ -6,7 +6,7 @@
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -128,12 +128,12 @@ Expanding the above approach to determine significance across the entire
 \end_layout
 
 \begin_layout Section
-4C dataset correlations
+4C data set correlations
 \end_layout
 
 \begin_layout Standard
 Talk about the work I did doing pairwise correlation analysis on multiple
- different 4C datasets..?
+ different 4C data sets..?
 \end_layout
 
 \begin_layout Section

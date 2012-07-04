@@ -198,6 +198,75 @@ MLL
  name.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/enzyme gels/enzyme gels.eps
+	lyxscale 30
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+Restriction Enzyme Tests.
+
+\series default
+ Digestion tests with six enzymes in four different conditions.
+ Cells were fixed in either 1% or 2% formaldehyde as described in Materials
+ and Methods: 3C 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+, either with or without the pre-digestion SDS/Triton steps.
+ Samples were treated with Proteinase K, RNase A and cleaned with a phenol
+ / chloroform extraction and precipitation as described in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+.
+ Samples shown run on 1% gels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Preparation of CD34
 \begin_inset script superscript
@@ -216,6 +285,76 @@ Work with handling collections from small scale peripheral mobilised blood
  samples, ficoll separation and fixation, and then using both the Invitrogen
  and Miltenyi separation kits with the fixed cells.
  FACS plots showing how much better Miltenyi is.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/facs/CD34 FACS Plots.eps
+	lyxscale 30
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-Separation-FACS"
+
+\end_inset
+
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ Separation FACS Plots.
+ 
+\series default
+FACS plots after magnetic bead separation of fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

@@ -70,22 +70,52 @@ Methods
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:M&M-CD34-cell-handling"
+
+\end_inset
+
 CD34+ cell handling
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:M&M-Cell-culture"
+
+\end_inset
+
 Cell culture
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:M&M-3C"
+
+\end_inset
+
 3C
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:M&M-e4C"
+
+\end_inset
+
 e4C
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:M&M-DNA-FISH"
+
+\end_inset
+
 DNA-FISH 
 \end_layout
 
