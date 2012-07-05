@@ -5,6 +5,7 @@
 \textclass report
 \begin_preamble
 \usepackage[margin=6pt,font=small,labelfont=bf,labelsep=endash]{caption}
+\hyphenpenalty=10000
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -29,7 +30,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -102,7 +103,127 @@ description "Chromosome Conformation Capture"
 
 \end_inset
 
-3C) was developed by..
+3C) is a ligation based proximity assay.
+ First published in 2002 by Dekker 
+\emph on
+et.
+ al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dekker2002b"
+
+\end_inset
+
+ it allows the physical association of sequences of DNA to be interrogated.
+ 3C has become a key methodology in the field of nuclear organisation, and
+ a number of new techniques use it as a base.
+\end_layout
+
+\begin_layout Standard
+3C works by fixing protein and DNA in place with formaldehyde.
+ A restriction enyme is used to cut the DNA, typically recognising a 6 base
+ pair sequence, so cutting on average once every 1.2 Kb (
+\begin_inset Formula $6^{4}=1296$
+\end_inset
+
+).
+ This results in 
+\begin_inset Quotes eld
+\end_inset
+
+hairballs
+\begin_inset Quotes erd
+\end_inset
+
+ of cross linked DNA and protein which are diluted into a large volume.
+ A ligation reaction is then run, which favours ligations between sequences
+ held together by the formaldehyde cross links.
+ Cross links are reversed and the DNA is purified, leaving a 3C 
+\begin_inset Quotes eld
+\end_inset
+
+library
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Within this library, the frequency with which restriction fragments are
+ found ligated together corresponds to their degree of interaction within
+ the nucleus.
+\end_layout
+
+\begin_layout Standard
+The 3C library is a basis for a number of different assays that all measure
+ interaction frequencies.
+ Traditional 3C uses PCR with primers positioned adjacent to the restriction
+ enzyme recognition sites of two loci of interest.
+ If a PCR product is detected, these two sequences were physically close
+ within the nucleus.
+ The strength of bands on a gel can be used to quantify the strength of
+ this interaction, and qPCR can be used to accurately assess this for a
+ large number of primer pairs (3C qPCR).
+ Both of these techniques are used to probe interactions on a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-one
+\begin_inset Quotes erd
+\end_inset
+
+ basis; that is, investigating the interaction between two specific loci
+ at a time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/3C protocol/3C protocol.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3C_protocol"
+
+\end_inset
+
+
+\series default
+Overview of the 3C methodology
+\end_layout
+
+\end_inset
+
+R denotes the recognition sites for the first six-cutter restriction endonucleas
+e.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -118,7 +239,72 @@ description "Enriched Chromosome Conformation Capture"
 
 \end_inset
 
-e4C) was developed from the basis of 3C.
+e4C) starts with the preparation of 3C libraries as described above, and
+ uses further processing to generate a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-all
+\begin_inset Quotes erd
+\end_inset
+
+ assay, which is capable of revealing the genome-wide interaction profile
+ of a single sequence of interest.
+\end_layout
+
+\begin_layout Standard
+A biotinylated primer annealing and extension step is used to do this, with
+ magnetic streptavidin beads pulling down all ligation products containing
+ the sequence of interest, or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "bait"
+description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
+
+\end_inset
+
+bait
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A second restriction enzyme is then used to cut the enriched library, an
+ enzyme with a 4 base pair recognition site is used to cut approximately
+ once every 256 base pairs (
+\begin_inset Formula $4^{4}=256$
+\end_inset
+
+).
+ The resulting sticky end is then used to ligate an adapter to the end of
+ the unknown partner sequence.
+ This allows the libary to be amplified using PCR.
+ Primers with overhanging tails are used to add the sequence needed for
+ sequencing with the Illumina Genome Analyser IIx.
+ A custom sequencing primer is used which binds to the bait region immediately
+ before the first restriction enzyme cut site, preventing known sequence
+ from being unnecessarily sequenced.
+ A few remaining few base pairs are left betweenthe sequencing primer and
+ the cut site, to use as a barcode region to allow multiplexing of libraries
+ on the sequencing run.
+ This sequence is also used to confirm the identity of the bait sequence.
+ The remaining base pairs that are sequenced after the cut site are aligned
+ to the genome, and their distribution used to plot a genome-wide interaction
+ profile for the bait sequence.
+\end_layout
+
+\begin_layout Standard
+See Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:e4C-Analysis"
+
+\end_inset
+
+ for further details about the analysis of e4C data.
 \end_layout
 
 \begin_layout Standard
@@ -130,9 +316,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/protocol summary/4C protocol.eps
-	lyxscale 30
-	width 100text%
+	filename figures/chapter 4/4C protocol/4C protocol.eps
+	width 100col%
 
 \end_inset
 
@@ -147,22 +332,21 @@ status open
 \series bold
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:e4C-Protocol-Summary"
+name "fig:e4C_protocol"
 
 \end_inset
 
-e4C Protocol Summary
+
+\series default
+Overview of the e4C methodology
 \end_layout
 
 \end_inset
 
-Adjacent fragments are fixed with formaldehyde and cut with a restriction
- enzyme.
- The nuclei are disrupted and a dilute ligation reaction is run, favouring
- cross-linked DNA fragments.
- Cross-links are reversed and a second restriction digest is performed.
- Adapter sequences are ligated to these products, enabling the PCR amplification
- and high-throughput sequencing of the library.
+R' denotes the recognition site for the second four-cutter restriction endonucle
+ase.
+ BC denotes the barcode region used to confirm the identity of the bait
+ sequence and identify sequences when multiplexing libraries for sequencing.
 \end_layout
 
 \end_inset
@@ -178,24 +362,199 @@ Primer Design
 Restriction Enzyme Choice
 \end_layout
 
-\begin_layout Quote
-Work trying to get BamHI to work with 3C, resulting in SDS titrations and
- testing of multiple restriction enzymes, and finally the decision to use
- AseI instead.
-\end_layout
-
 \begin_layout Standard
-My work with enriched 4C (e4C) started with the study of the 
+The majority of chromosomal translocations within the 
 \emph on
-Mixed Lineage Leukaemia (MLL)
+BCR
 \emph default
- gene.
- Mutations within the 
+ and 
 \emph on
 MLL
 \emph default
- gene are necessary and sufficient to drive a class of cancers by the same
- name.
+ genes occur within tight breakpoint cluster regions.
+ The 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region is an 8.3 Kb region between exons 6 and 14 bordered
+ by two BamHI restriction sites [# REF].
+ It is thought that the presence of 8 direct Alu SINE repeats, 4 L1 LINE
+ and 2 MER2 repeats within the 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region may provide regions of micro-homology with its
+ translocation partners and increase the chance of aberrant repair via the
+ NHEJ pathway.
+ Additionally, a number of putative topoisomerase II binding sites are present
+ within this region, leading to suggestions that topoisomerase II activity
+ may lead to an increased likelihood of a double strand break in this region.
+\end_layout
+
+\begin_layout Standard
+To provide as accurate a picture of the interaction with these translocation
+ forming regions as possible, we looked into the fragments created by a
+ number of six-cutting restriction enzymes.
+ As the breakpoint cluster region of the 
+\emph on
+MLL
+\emph default
+ gene is flanked by BamHI restriction sites, it seemed a natural choice
+ for the 3C enzyme.
+\end_layout
+
+\begin_layout Standard
+After a number of test e4C runs using Human buffy coat cells it became clear
+ that the assay was not working to its full potential.
+ Due to the nature of the 3C protocol, the most common interaction partner
+ will always be the germ line configuration, as the cut fragments will be
+ held together during the ligation reaction, making re-ligation a likely
+ possibility.
+ This germ line band was clearly visible when the e4C libraries were run
+ on a gel (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BamHI-e4C-Libraries"
+
+\end_inset
+
+), however, the characteristic smear resulting from the varying lengths
+ of 3C products was not.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "25col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/bad e4C gel/BamHI e4C.eps
+	lyxscale 50
+	width 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BamHI-e4C-Libraries"
+
+\end_inset
+
+
+\series default
+BamHI e4C Libraries
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After a number of diagnostic tests I found that the underlying problem was
+ poor digestion efficiency in the first steps of the 3C, with only 44% of
+ BamHI recognition sites being cut
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Digestion test qPCR done on 01/02/2010.
+ Page 195 Lab Book 1.
+\end_layout
+
+\end_inset
+
+.
+ Further work on this step showed that the SDS treatment and subsequent
+ Triton-X100 quenching of the SDS were having a dramatic effect on the digestion.
+\end_layout
+
+\begin_layout Standard
+I ran a concentration gradient of Triton-X100 with a digestion using purified
+ plasmid DNA which showed residual SDS inhibiting the reaction when there
+ was insufficient Triton-X100 to quench all of the SDS (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+A).
+ The concentration of Triton-X100 had a similar effect on the digestion
+ efficiency of BamHi with cross linked chromatin (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+I followed these tests with an experiment using a panel of different restriction
+ enzymes, some of which are commonly used in 3C based techniques.
+ I used cells which were fixed with the normal 2% formaldehyde and a weaker
+ 1% formaldehyde fix, and I ran the digestion step with and without the
+ initial SDS disruption and Triton-X100 quenching (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+).
+ These digestions clearly showed that BamHI was far less efficient at digesting
+ cross linked chromatin than the other restriction enzymes in every condition.
+\end_layout
+
+\begin_layout Standard
+At this point, instead of continuing to try to optimise the 3C to work with
+ BamHI, I went back to the drawing board and looked at which other enzymes
+ could be suitable.
+ The restriction enzyme AseI had good performance under all of the conditions,
+ and gave suitable fragment sizes in and around the break point cluster
+ regions of both 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+.
+ Further digestion efficiency qPCR tests showed it's efficiency at a far
+ superior 81 - 99% of sites being cut
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Digestion test qPCR done on 30/04/2010.
+ Page 49 Lab Book 2.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -228,10 +587,14 @@ name "fig:Restriction-Enzyme-Tests"
 
 \end_inset
 
-Restriction Enzyme Tests.
 
 \series default
- Digestion tests with six enzymes in four different conditions.
+Restriction Enzyme Tests
+\end_layout
+
+\end_inset
+
+Digestion tests with six enzymes in four different conditions.
  Cells were fixed in either 1% or 2% formaldehyde as described in Materials
  and Methods: 3C 
 \begin_inset CommandInset ref
@@ -258,15 +621,6 @@ reference "sec:M&M-3C"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Preparation of CD34
 \begin_inset script superscript
@@ -281,10 +635,102 @@ Preparation of CD34
 \end_layout
 
 \begin_layout Standard
-Work with handling collections from small scale peripheral mobilised blood
- samples, ficoll separation and fixation, and then using both the Invitrogen
- and Miltenyi separation kits with the fixed cells.
- FACS plots showing how much better Miltenyi is.
+There is mounting evidence that the founder translocations involving 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ in leukaemia may occur within the haematopoeitic stem cell compartment
+ [#REFS].
+ As it is thought that the translocations happen within these cells, it
+ is here that I was interested in investigating the organisation of the
+ un-translocated genes.
+\end_layout
+
+\begin_layout Standard
+Because the nuclear organisation of these cells starts to change as soon
+ as they are removed from the body, it was important that I fixed them with
+ formaldehyde as quickly as possible.
+ Adding formaldehyde directly to the blood samples would have caused problems
+ during cell separation, so I chose to run a Ficoll separation to isolate
+ the lymphoblasts, and then fixed in PBS with EDTA and 2% formaldehyde.
+ Following formaldehyde separation, I used a magnetic sort with anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ antibodies to purify the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ Finally, I analysed an aliquot of the purified cells using FACS (using
+ an antibody against a different epitope of CD34) to find the purity of
+ the samples.
+\end_layout
+
+\begin_layout Standard
+The first kit I used to separate the fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells was the Invitrogen Dynal CD34 Progenitor Cell Selection System.
+ I used this to process 17 separate blood samples from patients who had
+ been treated with GCSF to mobilise their haematopoeitic cells into their
+ peripheral blood stream.
+ The FACS plots all show some material with low front scatter, likely to
+ be debris resulting from the fix and sort (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
+ This was gated out, and a threshold set for anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ fluorescence.
+ The percentage of cells within the gate fluorescing above the threshold
+ varied from 17% - 91%, with a median purity of 67%.
+\end_layout
+
+\begin_layout Standard
+I attempted a number of alterations to the cell separation protocol to improve
+ this purity, and finally tried using the Miltenyi MACS CD34 MicroBead Kit
+ instead.
+ This immediately gave much better performance, with purities ranging from
+ 90% - 97% with a median of 96% purity (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -317,6 +763,8 @@ name "fig:CD34-Separation-FACS"
 
 \end_inset
 
+
+\series default
 CD34
 \begin_inset script superscript
 
@@ -328,7 +776,13 @@ CD34
 
 \end_inset
 
- Separation FACS Plots.
+ Separation FACS Plots
+\end_layout
+
+\end_inset
+
+
+\series bold
  
 \series default
 FACS plots after magnetic bead separation of fixed CD34
@@ -341,11 +795,6 @@ FACS plots after magnetic bead separation of fixed CD34
 \end_inset
 
  cells.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
