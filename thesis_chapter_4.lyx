@@ -622,6 +622,12 @@ reference "sec:M&M-3C"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
 Preparation of CD34
 \begin_inset script superscript
 

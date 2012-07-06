@@ -6,7 +6,7 @@
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,7 +26,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -76,7 +76,391 @@ name "sec:M&M-CD34-cell-handling"
 
 \end_inset
 
-CD34+ cell handling
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cell handling
+\end_layout
+
+\begin_layout Subsection
+Peripheral blood collections
+\end_layout
+
+\begin_layout Standard
+Mobilised CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells were collected from peripheral blood samples supplied by Dr.
+ George Follows with the help of Dr.
+ Paul Boraks.
+ These blood samples were taken with constent from the patient at the same
+ time as clinical samples used to test the mobilisation efficacy of the
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GCSF"
+description "Granulocyte colony-stimulating factor"
+
+\end_inset
+
+GCSF stimulation.
+ Blood samples were collected and immediately diluted into 5ml 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RPMI"
+description "Roswell Park Memorial Institute medium"
+
+\end_inset
+
+RPMI with heparin to prevent agglutination.
+ Samples were transported from Addenbrookes Haematology Department to the
+ Babraham Institute.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Buffy coat isolation and fixation of cells
+\end_layout
+
+\begin_layout Standard
+Samples were diluted with 2-4 volumes of 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PBS"
+description "Phosphate buffered saline"
+
+\end_inset
+
+PBS (Dulbecco's PBS; PAA) containing 2mM 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "EDTA"
+description "Ethylene-diamine-tetraacetic acid"
+
+\end_inset
+
+EDTA (ultra-pure; GIBCO).
+ 15 ml Ficoll (Ficoll-Paque Premium; GE Healthcare) was added to empty 50
+ ml tubes, and 35 ml cell suspension was layered on top.
+ Samples were centrifuged at 400x 
+\emph on
+g
+\emph default
+ for 40 minutes at at room temperature.
+ The central buffy coat found at the interface between the plasma and Ficoll
+ layer, containing primarily mononuclear cells, was carefully pipetted into
+ a new labelled 50 ml tube.
+ This was washed in PBS containing 2 mM EDTA and centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 minutes at room temperature.
+ Cell pellets were washed twice by resuspending in 50 ml MACS Buffer (D-PBS
+ [PAA] with 0.5% 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BSA"
+description "Bovine serum albumin"
+
+\end_inset
+
+BSA [Sigma] and 2 mM EDTA [Gibco]) and re-centrifuged at 200x 
+\emph on
+g
+\emph default
+ for 15 minutes at room temperature.
+ Cell pellets were resuspend cells in 2 ml total volume MACS Buffer and
+ transferred to tubes containing 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DMEM"
+description "Dulbecco's modified Eagle's medium"
+
+\end_inset
+
+DMEM (PAA) with 10% 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FBS"
+description "Foetal bovine serum"
+
+\end_inset
+
+FBS (PAA).
+ Cells were then fixed with 2% formaldehyde (histology-grade, min 37% free
+ from acid; Merck) for 10 minutes at room temperature with constant mixing.
+ The fixation was quenched by adding glycine to a final concentration of
+ 0.125 M.
+ Fixed cells were centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 mins at 4°C before being resuspend in 50 ml ice-cold MACS Buffer.
+ Cells were counted using a haemocytometer.
+\end_layout
+
+\begin_layout Subsection
+Leukapheresis collections
+\end_layout
+
+\begin_layout Standard
+Mobilised CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+cells were collected from leukapheresis collections supplied by Dr.
+ George Follows and Dr.
+ Kevin Jestice.
+ These samples were made available after the harvesting of mobilised CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells from patients who had responded to GCSF stimulation exceptionally
+ well, meaning that there was an excess of cells not required for clinical
+ use.
+ Leukapheresis samples were refrigerated in serum bags until collection
+ from Addenbrookes National Blood Service, and transported to the Babraham
+ Institute.
+\end_layout
+
+\begin_layout Subsubsection
+Cell washing and fixation of cells
+\end_layout
+
+\begin_layout Standard
+Because white blood cells are already separated from the blood in the leukaphere
+sis samples, buffy coat isolation is not necessary.
+ The much higher number of cells to be processed is also a point of consideratio
+n in the processing of these samples.
+\end_layout
+
+\begin_layout Standard
+The sample was aliquotted into 50 ml tubes and diluted with 2 - 4 volumes
+ of PBS with 2 mM EDTA, to a final volume of 50 ml.
+ Tubes were centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 minutes at room temperature.
+ Cells were washed twice by resuspending in 50 ml PBS with 2 mM EDTA and
+ centrifuged at 200x 
+\emph on
+g
+\emph default
+ for 15 minutes at room temperature.
+ Each cell pellet was resuspended in 50 ml PBS with 2 mM EDTA and transferred
+ to a 500 ml bottle of DMEM (PAA) supplemented with 10% FBS (PAA).
+ Cells were fixed by adding 26 ml 37% formaldehyde was added to a final
+ concentration of 2% (histology-grade, min 37% free from acid; Merck) and
+ being placed on a rocker for 10 minutes at room temperature.
+ The fixation was quenched by adding glycine to a final concentration of
+ 0.125 M.
+ Samples were centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 mins at 4°C.
+ The supernatant was removed and each cell pellet resuspended in 50 ml ice-cold
+ MACS buffer.
+ Cells were counted using a haemocytometer.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cell separation
+\end_layout
+
+\begin_layout Standard
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells were separated from the mixture of fixed buffy coat cells using either
+ the Invitrogen Dynal CD34 Progenitor Cell Selection System or the Miltenyi
+ MACS CD34 MicroBead Kit.
+ See section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
+ for details.
+\end_layout
+
+\begin_layout Subsubsection
+Cell separation using the Invitrogen Dynal CD34 Progenitor Cell Selection
+ System
+\end_layout
+
+\begin_layout Subsubsection
+Cell separation using the Miltenyi MACS CD34 MicroBead Kit
+\end_layout
+
+\begin_layout Standard
+Samples were centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 mins at 4°C and resuspend in 300 µl MACS buffer per 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ cells.
+ The following assumes a single aliquot of 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ cells, and was scaled up as necessary.
+ Some leukaepheresis samples had enough cells to warrant thousands of pounds
+ worth of MACS beads, in these cases I used aliquots of greater than 1 x
+ 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ cells.
+\end_layout
+
+\begin_layout Standard
+Cell separation was carried out as per the manufacturer's instructions.
+ In brief, 100 µl MACS FcR Blocking reagent was added to block non-specific
+ binding of the MicroBeads before adding 100 µl CD34 MicroBeads.
+ Samples were mixed and refrigerated for 30 minutes at 4°C.
+ 10 ml MACS Buffer was added and samples centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 mins at 4°C.
+ Samples were resuspend in 500 µl MACS Buffer and applied to pre-wetted
+ MACS MS columns held in an OctoMACS separator magnet at 4°C.
+ Flow through was collected and stored at 4°C to use as a control in the
+ later FACS analysis.
+ Columns were washed three times with 500 µl MACS Buffer and cells were
+ eluted from their columns in 1 ml MACS Buffer directly into a second pre-wetted
+ MACS MS column.
+ Multiple samples were combined into a single column at this point.
+ This second magnetic separation step greatly increases the purity of the
+ separated cells.
+ The column was washed three times with 500 µl MACS buffer and cells eluted
+ in 1 ml MACS Buffer.
+ Purified cells were counted and made up to 15 ml with MACS buffer.
+ A 1 ml aliquot was taken for later FACS purity analysis before the remaining
+ sample was centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 minutes at 4°C.
+ The supernatant was discarded and the cell pellet flash frozen in liquid
+ nitrogen before storage at -80°C.
+\end_layout
+
+\begin_layout Subsubsection
+FACS CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ purity analysis
+\end_layout
+
+\begin_layout Standard
+FACS analysis was used to quantify the percentage of cells staining positively
+ for the CD34 antigen.
+ Representative FACS plots can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The 1 ml aliquot taken after the magnetic sort was transferred into a 2
+ ml microcentrifuge tube, along with two aliquots of no more than 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ cells was taken from the unbound magnetic sort.
+ Cells were centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 minutes at 4°C and resuspended in 100 µl in MACS buffer.
+ 10 µl CD34-APC antibody was added to the purified sample and one of the
+ two unbound countrols, and all three samples were and incubated in the
+ dark at 4°C for 10 minutes.
+ Cells were diluted with 1.8 ml MACS buffer and centrifuged at 300x 
+\emph on
+g
+\emph default
+ for 10 mins at 4°C.
+ Cell pellets were resuspend in 200 µl PBS and analysed using a BD FACSCalibur
+ flow cytometer.
 \end_layout
 
 \begin_layout Section
@@ -99,6 +483,367 @@ name "sec:M&M-3C"
 3C
 \end_layout
 
+\begin_layout Standard
+4.
+ Take frozen human CD34+ cells and thaw on ice
+\end_layout
+
+\begin_layout Standard
+5.
+ Resuspend cells in approximately 20 ml permeabilization buffer by pipetting
+\end_layout
+
+\begin_layout Standard
+6.
+ Make up to 50 ml with permeabilization buffer
+\end_layout
+
+\begin_layout Standard
+7.
+ Incubate on ice for 30 min.
+ Invert tube every 10 minutes
+\end_layout
+
+\begin_layout Standard
+8.
+ Centrifuge at 760 g for 5 min, at 4°C
+\end_layout
+
+\begin_layout Standard
+9.
+ Pour off supernatant into 50 ml falcon
+\end_layout
+
+\begin_layout Standard
+10.
+ Resuspend pellet in 500 µl 1.2x NEB3
+\end_layout
+
+\begin_layout Standard
+11.
+ Transfer to a 1.5 ml low-bind eppendorf
+\end_layout
+
+\begin_layout Standard
+12.
+ Centrifuge at 760 g for 5 min, 4°C
+\end_layout
+
+\begin_layout Standard
+13.
+ Pour off supernatant into 1.5 ml eppendorf
+\end_layout
+
+\begin_layout Standard
+14.
+ Resuspend pellet in 500 µl fresh 1.2x NEB3 by pipetting
+\end_layout
+
+\begin_layout Standard
+15.
+ Add 7.5 µl 20% SDS (0.3% final)
+\end_layout
+
+\begin_layout Standard
+16.
+ Incubate at 37°C, 950 rpm for 1 hour
+\end_layout
+
+\begin_layout Standard
+17.
+ Add 50 µl 20% Triton-X100 (1.8% final)
+\end_layout
+
+\begin_layout Standard
+18.
+ Incubate at 37°C, 950 rpm for 1 hour
+\end_layout
+
+\begin_layout Standard
+19.
+ Take a 10µl aliquot to check for digestion efficiency, label UND
+\end_layout
+
+\begin_layout Standard
+20.
+ Add 30 µl AseI (1500 units)
+\end_layout
+
+\begin_layout Standard
+21.
+ Incubate at 37°C, 950 rpm overnight
+\end_layout
+
+\begin_layout Standard
+06/05/2010
+\end_layout
+
+\begin_layout Standard
+22.
+ Remove one tube of ligation buffer from -20°C and allow to thaw on ice
+\end_layout
+
+\begin_layout Standard
+23.
+ Add 10 μl AseI (500 units)
+\end_layout
+
+\begin_layout Standard
+24.
+ Incubate at 37°C, 950 rpm for 3 hours
+\end_layout
+
+\begin_layout Standard
+25.
+ Take a 10µl aliquot to check for digestion efficiency, label DIG
+\end_layout
+
+\begin_layout Standard
+26.
+ Add 40 µl 20% SDS
+\end_layout
+
+\begin_layout Standard
+27.
+ Incubate at 65°C, 950 rpm for 25 minutes
+\end_layout
+
+\begin_layout Standard
+28.
+ Set up a 15 ml Falcon tube with 7 ml 1.1x ligation buffer
+\end_layout
+
+\begin_layout Standard
+a.
+ 6200 µl H2O
+\end_layout
+
+\begin_layout Standard
+b.
+ 800 µl NEB 10x ligase buffer
+\end_layout
+
+\begin_layout Standard
+29.
+ Transfer sample to 15 ml Falcon
+\end_layout
+
+\begin_layout Standard
+30.
+ Add 375 µl 20% Triton-X100
+\end_layout
+
+\begin_layout Standard
+31.
+ Incubate for at 37°C for 1 hour.
+ Invert tube every 10 minutes
+\end_layout
+
+\begin_layout Standard
+32.
+ Set up a 16°C water bath
+\end_layout
+
+\begin_layout Standard
+33.
+ Allow samples to equilibrate to 16°C in water bath
+\end_layout
+
+\begin_layout Standard
+34.
+ Add 2 µl T4 DNA ligase (800 units)
+\end_layout
+
+\begin_layout Standard
+35.
+ Incubate in the 16°C water bath for 4 hours.
+ Check temperature every 30 minutes
+\end_layout
+
+\begin_layout Standard
+36.
+ Incubate at room temperature for 30 minutes
+\end_layout
+
+\begin_layout Standard
+37.
+ Add 90 µl fresh Proteinase K (900 µg)
+\end_layout
+
+\begin_layout Standard
+38.
+ Incubate at 65°C overnight in PJF oven
+\end_layout
+
+\begin_layout Standard
+07/05/2010
+\end_layout
+
+\begin_layout Standard
+39.
+ Allow to cool to room temperature
+\end_layout
+
+\begin_layout Standard
+40.
+ Aliquot 40.4 ml fresh 100% Ethanol into a 50 ml Falcon tube and place in
+ the -20°C freezer
+\end_layout
+
+\begin_layout Standard
+41.
+ Make up 15 ml fresh 70% Ethanol in a 50 ml Falcon tube and place in the
+ -20°C freezer
+\end_layout
+
+\begin_layout Standard
+a.
+ 10.5 ml 100% Ethanol
+\end_layout
+
+\begin_layout Standard
+b.
+ 4.5 ml H2O
+\end_layout
+
+\begin_layout Standard
+42.
+ Add 3 µl RNase A to sample (300 µg)
+\end_layout
+
+\begin_layout Standard
+43.
+ Incubate at 37°C for 1 hour
+\end_layout
+
+\begin_layout Standard
+44.
+ Prepare two 15 ml Phase Lock Gel Tubes by spinning them at 1500 g for 2
+ minutes at room temperature
+\end_layout
+
+\begin_layout Standard
+45.
+ Transfer 3.5 ml of the ligation reaction to each Phase Lock Gel Tube
+\end_layout
+
+\begin_layout Standard
+46.
+ Add 3.5 ml phenol/chloroform
+\end_layout
+
+\begin_layout Standard
+47.
+ Mix well, but carefully as to not disturb the gel
+\end_layout
+
+\begin_layout Standard
+48.
+ Centrifuge at 1500 g for 5 minutes, at room temperature
+\end_layout
+
+\begin_layout Standard
+49.
+ Add 3.5 ml chloroform
+\end_layout
+
+\begin_layout Standard
+50.
+ Mix well, but very carefully as to not disturb the gel barrier
+\end_layout
+
+\begin_layout Standard
+51.
+ Centrifuge at 1500 g for 5 minutes, at room temperature
+\end_layout
+
+\begin_layout Standard
+52.
+ Pour the two aqueous layers into a fresh 15 ml Falcon tube
+\end_layout
+
+\begin_layout Standard
+53.
+ Add 1600 µl 3M NaOAc 
+\end_layout
+
+\begin_layout Standard
+54.
+ Transfer to the 50 ml tube of 100% Ethanol in the -20°C freezer
+\end_layout
+
+\begin_layout Standard
+55.
+ Mix and precipitate in the -80°C freezer over the weekend
+\end_layout
+
+\begin_layout Standard
+09/05/2010
+\end_layout
+
+\begin_layout Standard
+56.
+ Centrifuge at maximum speed for 1 hour at 4°C
+\end_layout
+
+\begin_layout Standard
+57.
+ Pour supernatant into a 50 ml Falcon
+\end_layout
+
+\begin_layout Standard
+58.
+ Wash pellet with 10 ml 70% Ethanol in the -20°C freezer
+\end_layout
+
+\begin_layout Standard
+59.
+ Centrifuge at maximum speed for 45 minutes at 4°C
+\end_layout
+
+\begin_layout Standard
+60.
+ Carefully pour supernatant into a 50 ml Falcon
+\end_layout
+
+\begin_layout Standard
+61.
+ Keep tube upside down and allow pellet to dry
+\end_layout
+
+\begin_layout Standard
+62.
+ Add 200 μl Molecular Biology grade water
+\end_layout
+
+\begin_layout Standard
+63.
+ Allow to rehydrate at 37°C overnight
+\end_layout
+
+\begin_layout Standard
+10/05/2010
+\end_layout
+
+\begin_layout Standard
+64.
+ Transfer to a 1.5 ml low-bind eppendorf
+\end_layout
+
+\begin_layout Standard
+65.
+ Wash tip and tube with 50 μl Molecular Biology grade water
+\end_layout
+
+\begin_layout Standard
+66.
+ Store at 4°C
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
@@ -107,6 +852,1048 @@ name "sec:M&M-e4C"
 \end_inset
 
 e4C
+\end_layout
+
+\begin_layout Standard
+67.
+ Defrost ThermoPol Buffer, dNTPs and Primers for primer extension, on ice
+\end_layout
+
+\begin_layout Standard
+68.
+ SPRI clean 3C material prior to primer extension
+\end_layout
+
+\begin_layout Standard
+a.
+ Add 23 μl 3C material to 229 μl Molecular Biology Grade H2O
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 453.6 μl Agencourt AMPure beads
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction.
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 1 ml fresh 70% EtOH dispensing the EtOH to the beads on
+ the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 30 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 252 μl H2O and pipette mix 10-15 times
+\end_layout
+
+\begin_layout Standard
+h.
+ Place beads on magnet for 10 minutes and remove eluted DNA into a clean
+ tube
+\end_layout
+
+\begin_layout Standard
+i.
+ Confirm volume is 252 μl, and add extra H2O if required
+\end_layout
+
+\begin_layout Standard
+69.
+ Set up six primer extensions on 2 µg aliquots of CD34+ 3C material, one
+ primer extension on 1 μg of human genomic DNA, cut with EcoRI
+\end_layout
+
+\begin_layout Standard
+a.
+ Cleaned CD34+ 3C library 42µl } 252 µl
+\end_layout
+
+\begin_layout Standard
+b.
+ 10x ThermoPol buffer 5 µl } 30 µl
+\end_layout
+
+\begin_layout Standard
+c.
+ 10 mM dNTPs 1 µl } x 6 6 µl
+\end_layout
+
+\begin_layout Standard
+d.
+ 10 µM hMLL 47619 biot 0.5 µl (5 pmol) } 3 µl
+\end_layout
+
+\begin_layout Standard
+e.
+ 10 μM hBCR 89777 biot 0.5 µl (5 pmol) } 3 µl
+\end_layout
+
+\begin_layout Standard
+f.
+ Vent (exo-) DNA polymerase 1 µl (2U) } 6 µl
+\end_layout
+
+\begin_layout Standard
+70.
+ Run primer extension as follows:
+\end_layout
+
+\begin_layout Standard
+a.
+ 95°C, 4 min (“hot-start”)
+\end_layout
+
+\begin_layout Standard
+b.
+ 61°C, 2 min primer specific ~2.5°C below Tm
+\end_layout
+
+\begin_layout Standard
+c.
+ 72°C, 10 min
+\end_layout
+
+\begin_layout Standard
+d.
+ Snap chill tubes on ice and continue immediately, do not leave standing
+\end_layout
+
+\begin_layout Standard
+71.
+ Briefly centrifuge tubes
+\end_layout
+
+\begin_layout Standard
+72.
+ Pool three of the CD34+ primer extensions into one tube, resulting in two
+ CD34+ tubes (150 μl each) and one gDNA tube (50 μl)
+\end_layout
+
+\begin_layout Standard
+73.
+ Purify using SPRI beads as follows (gDNA volumes in brackets):
+\end_layout
+
+\begin_layout Standard
+a.
+ Gently shake the Agencourt AMPure bottle to resuspend any magnetic particles
+ that have settled
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 270 μl (90 μl) of Agencourt AMPure beads to the 150 μl (50µl) reaction
+ products
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes.
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction.
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 600 μl (200μl) fresh 70% EtOH dispensing the EtOH to the
+ beads on the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 20 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 80 μl (40 µl) of Molecular Biology H2O and pipette mix 10-15 times
+\end_layout
+
+\begin_layout Standard
+h.
+ Place beads on magnet for 5 minutes, and remove eluted DNA
+\end_layout
+
+\begin_layout Standard
+74.
+ Digest with Nla III (20 U) in 1 x NEB4, 1X BSA and incubate for 3 hours
+ at 37°C.
+ Add:
+\end_layout
+
+\begin_layout Standard
+CD34+ gDNA
+\end_layout
+
+\begin_layout Standard
+a.
+ 5 µl H2O 2.5 µl H2O
+\end_layout
+
+\begin_layout Standard
+b.
+ 1 µl 100x BSA 0.5 µl 100x BSA
+\end_layout
+
+\begin_layout Standard
+c.
+ 10 µl 10x NEB4 5 µl 10x NEB4
+\end_layout
+
+\begin_layout Standard
+d.
+ 4 μl NlaIII 2 µl NlaIII
+\end_layout
+
+\begin_layout Standard
+75.
+ Purify using SPRI beads as follows (gDNA volumes in brackets):
+\end_layout
+
+\begin_layout Standard
+a.
+ Gently shake the Agencourt AMPure bottle to resuspend any magnetic particles
+ that have settled
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 180 μl (90 μl) of Agencourt AMPure beads to the 100 μl (50µl) reaction
+ products
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes.
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction.
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 400 μl (200μl) fresh 70% EtOH dispensing the EtOH to the
+ beads on the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 30 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 50 µl of Molecular Biology H2O and pipette mix 10-15 times
+\end_layout
+
+\begin_layout Standard
+h.
+ Place beads on magnet for 5 minutes, and remove eluted DNA
+\end_layout
+
+\begin_layout Standard
+76.
+ Vortex stock of Dynabeads M-280 streptavidin and transfer 10 µl (100 µg)
+ aliquots to eppendorfs.
+\end_layout
+
+\begin_layout Standard
+77.
+ Remove preservative on magnet, and gently resuspend beads in 50 µl binding
+ buffer (provided in Dynabeads kilobaseBINDER kit)
+\end_layout
+
+\begin_layout Standard
+78.
+ Remove on magnet and gently resuspend beads in 50 µl fresh binding buffer.
+\end_layout
+
+\begin_layout Standard
+Note: Extremely prone to bubbles, be very gentle! Put on shaker to resuspend
+ whilst resuspending SPRI beads
+\end_layout
+
+\begin_layout Standard
+79.
+ Add 50 µl primer extension material and incubate overnight at 23°C on the
+ PJF shaker, 1200 rpm
+\end_layout
+
+\begin_layout Standard
+Saturday - 29/05/2010
+\end_layout
+
+\begin_layout Standard
+80.
+ Make up 400 μl NEB4 + BSA:
+\end_layout
+
+\begin_layout Standard
+a.
+ 356 µl H2O
+\end_layout
+
+\begin_layout Standard
+b.
+ 4 µl 100x BSA
+\end_layout
+
+\begin_layout Standard
+c.
+ 40 µl 10x NEB4
+\end_layout
+
+\begin_layout Standard
+81.
+ Remove supernatant on magnet and wash (keep supernatant - label for future
+ 3C experiments):
+\end_layout
+
+\begin_layout Standard
+a.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+b.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+c.
+ 100 µl EB
+\end_layout
+
+\begin_layout Standard
+d.
+ 50 µl 1x NEB4 + BSA
+\end_layout
+
+\begin_layout Standard
+82.
+ Resuspend beads in 50 µl 1x NEB4 + 1X BSA
+\end_layout
+
+\begin_layout Standard
+83.
+ Add 0.5 µl Nla III and incubate for 2 hours at 37°C, 1200 rpm
+\end_layout
+
+\begin_layout Standard
+84.
+ Turn heating block to 55°C to warm up
+\end_layout
+
+\begin_layout Standard
+85.
+ Defrost ligation buffer and Nla adapter on ice
+\end_layout
+
+\begin_layout Standard
+86.
+ Make up NEB Ligase Buffer:
+\end_layout
+
+\begin_layout Standard
+a.
+ 162 µl H2O
+\end_layout
+
+\begin_layout Standard
+b.
+ 18 µl 10x Ligation Buffer
+\end_layout
+
+\begin_layout Standard
+87.
+ Remove supernatant on the magnet
+\end_layout
+
+\begin_layout Standard
+88.
+ Wash the beads:
+\end_layout
+
+\begin_layout Standard
+a.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+b.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+c.
+ 100 µl EB
+\end_layout
+
+\begin_layout Standard
+d.
+ 50 µl 1x NEB Ligase Buffer
+\end_layout
+
+\begin_layout Standard
+89.
+ Make a 7.5 μl aliquot of 100 µM stock Nla adapter
+\end_layout
+
+\begin_layout Standard
+90.
+ Heat the 4C samples and Nla adapter to 55°C for 5 minutes, then snap chill
+ on ice
+\end_layout
+
+\begin_layout Standard
+91.
+ Flick to resuspend beads
+\end_layout
+
+\begin_layout Standard
+92.
+ Place tubes on the magnet and remove the supernatant
+\end_layout
+
+\begin_layout Standard
+93.
+ Make up the Ligation Reaction master mix:
+\end_layout
+
+\begin_layout Standard
+a.
+ H2O 33 µl 115.5 µl
+\end_layout
+
+\begin_layout Standard
+b.
+ 10x NEB ligase buffer 4 µl x3.5 14 µl
+\end_layout
+
+\begin_layout Standard
+c.
+ PE Ad 2.0 Nla adapter 2 µl (200 pmol) 7 µl
+\end_layout
+
+\begin_layout Standard
+d.
+ 2,000,000 U/ml T4 DNA ligase 1 µl (2000 U) 3.5 µl
+\end_layout
+
+\begin_layout Standard
+94.
+ Add 40 µl ligation master mix to the beads and incubate for 2 hours at
+ RT on the rotating wheel
+\end_layout
+
+\begin_layout Standard
+95.
+ Remove supernatant on magnet, and wash beads:
+\end_layout
+
+\begin_layout Standard
+a.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+b.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+c.
+ 100 µl EB
+\end_layout
+
+\begin_layout Standard
+d.
+ 100 µl EB
+\end_layout
+
+\begin_layout Standard
+96.
+ (Beads can be stored as a suspension in EB at 4°C)
+\end_layout
+
+\begin_layout Standard
+97.
+ Take an aliquot of 50 μl of the gDNA sample
+\end_layout
+
+\begin_layout Standard
+98.
+ Make up PCR wash mix:
+\end_layout
+
+\begin_layout Standard
+a.
+ H2O 39 µl 156 µl
+\end_layout
+
+\begin_layout Standard
+b.
+ 5x Phusion Buffer 10 µl x4 40 µl
+\end_layout
+
+\begin_layout Standard
+c.
+ 10mM dNTPs 1 µl 4 µl
+\end_layout
+
+\begin_layout Standard
+99.
+ Place samples on the magnet and remove supernatants
+\end_layout
+
+\begin_layout Standard
+100.
+ Resuspend beads in 50 μl of PCR wash mix
+\end_layout
+
+\begin_layout Standard
+101.
+ Make up the PCR master mix:
+\end_layout
+
+\begin_layout Standard
+a.
+ H2O 31.5 µl 756 µl
+\end_layout
+
+\begin_layout Standard
+b.
+ 5X Phusion HF Reaction Buffer 10 µl 240 µl
+\end_layout
+
+\begin_layout Standard
+c.
+ 10mM dNTPs 1 µl 24 µl
+\end_layout
+
+\begin_layout Standard
+d.
+ 10µM PE Ad 1.0+ BCR nested primer 2 µl x24 48 µl
+\end_layout
+
+\begin_layout Standard
+e.
+ 10µM PE Ad 1.0+ MLL nested primer 2 µl 48 µl
+\end_layout
+
+\begin_layout Standard
+f.
+ 10µM PE Ad 2.0 Nla adaptor primer 3 µl 72 µl
+\end_layout
+
+\begin_layout Standard
+g.
+ HF Phusion Pol II 0.5 µl (1U) 12 µl
+\end_layout
+
+\begin_layout Standard
+102.
+ Split each CD34+ sample into 8 PCR tubes (use strip tubes).
+ Split gDNA sample into 4 tubes.
+ Keep two for no template controls.
+ 22 total, 6.25 μl beads per tube.
+\end_layout
+
+\begin_layout Standard
+103.
+ Using the magnet outside its housing, remove the PCR wash mix from the
+ beads
+\end_layout
+
+\begin_layout Standard
+104.
+ Resuspend the beads in 50 μl of PCR master mix (attempt flicking, brief
+ vortex if troublesome)
+\end_layout
+
+\begin_layout Standard
+105.
+ Run the PCR:
+\end_layout
+
+\begin_layout Standard
+a.
+ 98° for 30 sec
+\end_layout
+
+\begin_layout Standard
+b.
+ 98° for 10 sec ------ 
+\end_layout
+
+\begin_layout Standard
+c.
+ 65° for 30 sec 35 cycles
+\end_layout
+
+\begin_layout Standard
+d.
+ 72° for 30 sec ------
+\end_layout
+
+\begin_layout Standard
+e.
+ 72° for 5 min
+\end_layout
+
+\begin_layout Standard
+f.
+ 4° for ever
+\end_layout
+
+\begin_layout Standard
+106.
+ Resuspend the beads (attempt flicking, brief vortex if troublesome)
+\end_layout
+
+\begin_layout Standard
+107.
+ Pool the PCR tubes back into single sample tubes (2x CD34+ samples, gDNA
+ and NTC)
+\end_layout
+
+\begin_layout Standard
+108.
+ Place the tubes on the magnet, and remove the supernatant
+\end_layout
+
+\begin_layout Standard
+109.
+ Wash the beads:
+\end_layout
+
+\begin_layout Standard
+a.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+b.
+ 100 µl wash buffer
+\end_layout
+
+\begin_layout Standard
+c.
+ 100 µl EB
+\end_layout
+
+\begin_layout Standard
+110.
+ Beads can be stored at 4°C
+\end_layout
+
+\begin_layout Standard
+111.
+ Take a 5 μl aliquot of the PCR product (supernatant) for analysis before
+ SPRI on later gel.
+ If two NTC tubes, keep one back.
+\end_layout
+
+\begin_layout Standard
+112.
+ Clean the PCR product (supernatant) with SPRI beads:
+\end_layout
+
+\begin_layout Standard
+Volumes in brackets are for gDNA, then NTC
+\end_layout
+
+\begin_layout Standard
+a.
+ Gently shake the Agencourt AMPure bottle to resuspend any magnetic particles
+ that have settled
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 720 μl (360 μl, 180 μl) of Agencourt AMPure beads to the 400 μl (200
+ µl, 100 μl) reaction products
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 1500 μl (800 μl, 400 μl) fresh 70% EtOH dispensing the
+ EtOH to the beads on the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 30 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 400 µl (200 µl, 100 μl) of Molecular Biology H2O and pipette mix 10-15
+ times
+\end_layout
+
+\begin_layout Standard
+113.
+ Place beads on magnet for 5 minutes, and remove eluted DNA
+\end_layout
+
+\begin_layout Standard
+Sunday - 30/05/2010
+\end_layout
+
+\begin_layout Standard
+114.
+ Run a 1.5 % gel to check products, 5 µl + 1 µl loading buffer with small
+ combs
+\end_layout
+
+\begin_layout Standard
+115.
+ Take 100 μl aliquots of the 2 x CD34+ and gDNA 4C samples
+\end_layout
+
+\begin_layout Standard
+116.
+ Add the following:
+\end_layout
+
+\begin_layout Standard
+a.
+ 12 µl 10x NEB3
+\end_layout
+
+\begin_layout Standard
+b.
+ 6.5 µl BspEI (65 units)
+\end_layout
+
+\begin_layout Standard
+c.
+ 1.5 μl BglII (75 units)
+\end_layout
+
+\begin_layout Standard
+117.
+ Incubate at 37°C for 2 hours
+\end_layout
+
+\begin_layout Standard
+118.
+ Clean the PCR product (supernatant) with SPRI beads:
+\end_layout
+
+\begin_layout Standard
+Volumes in brackets are for gDNA, then NTC
+\end_layout
+
+\begin_layout Standard
+a.
+ Gently shake the Agencourt AMPure bottle to resuspend any magnetic particles
+ that have settled
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 216 μl of Agencourt AMPure beads to the 120 μl reaction products
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 864 μl fresh 70% EtOH dispensing the EtOH to the beads
+ on the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 30 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 100 μl of Molecular Biology H2O and pipette mix 10-15 times
+\end_layout
+
+\begin_layout Standard
+119.
+ Run a 1.5% gel with 5 µl of the digested gDNA sample and 5 µl of the undigested
+ gDNA sample to check removal of germline bands
+\end_layout
+
+\begin_layout Standard
+a.
+ MLL bands: undigested = 119 bp, digested = 75 bp + 44 bp
+\end_layout
+
+\begin_layout Standard
+b.
+ BCR bands: undigested = 389 bp, digested = 249 bp + 140 bp
+\end_layout
+
+\begin_layout Standard
+120.
+ Run half of the CD34+ sample on a 1.5% gel (large tank - 50 μl sample +
+ 10 μl loading buffer)
+\end_layout
+
+\begin_layout Standard
+a.
+ Stain in fresh Ethidium Bromide
+\end_layout
+
+\begin_layout Standard
+b.
+ De-stain in water?
+\end_layout
+
+\begin_layout Standard
+c.
+ Place gel in saran-wrap to avoid contamination
+\end_layout
+
+\begin_layout Standard
+121.
+ Cut out sample from 250bp to 700bp and take image.
+ Purify section by gel extraction.
+\end_layout
+
+\begin_layout Standard
+a.
+ Weigh 14ml snap cap falcon before putting gel inside
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 3 volumes of buffer QG (1g gel = 1000 µl)
+\end_layout
+
+\begin_layout Standard
+c.
+ Dissolve by shaking and waiting.
+ Do not heat.
+\end_layout
+
+\begin_layout Standard
+d.
+ Add one gel volume of isopropanol
+\end_layout
+
+\begin_layout Standard
+e.
+ Spin entire volume though QiaQuick column, 10 000 g for 1 minute.
+ 800 μl at a time.
+\end_layout
+
+\begin_layout Standard
+f.
+ Wash once with 500 µl buffer QG and twice with Buffer PE.
+ Spin once without anything.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 30 µl EB to membrane and stand for one minute before spinning.
+\end_layout
+
+\begin_layout Standard
+122.
+ Stickybit PCR to add ILUMINA end that will bind to the flow cell.
+ Make up a master mix:
+\end_layout
+
+\begin_layout Standard
+a.
+ H2O 33.5 µl 117.25 µl
+\end_layout
+
+\begin_layout Standard
+b.
+ 5X Phusion HF Reaction Buffer 10 µl 35 µl
+\end_layout
+
+\begin_layout Standard
+c.
+ dNTPs 1 µl 3.5 µl
+\end_layout
+
+\begin_layout Standard
+d.
+ PE PCR 1.0 Primer 1 µl x 3.5 3.5 µl
+\end_layout
+
+\begin_layout Standard
+e.
+ PE PCR 2.0 Primer 1 µl 3.5 µl
+\end_layout
+
+\begin_layout Standard
+f.
+ Phusion HF Taq 0.5 µl 1.75 µl
+\end_layout
+
+\begin_layout Standard
+123.
+ In the CSO lab (not pre-PCR area) Add 47 µl master mix to 3 µl CD34+ sample
+ and a second tube of 3 µl H2O (no template control)
+\end_layout
+
+\begin_layout Standard
+124.
+ Run Phusion two step PCR:
+\end_layout
+
+\begin_layout Standard
+a.
+ 98°C for 30 seconds
+\end_layout
+
+\begin_layout Standard
+b.
+ 98°C for 10 seconds ---------
+\end_layout
+
+\begin_layout Standard
+c.
+ 72°C for 30 seconds --------- 15 cycles
+\end_layout
+
+\begin_layout Standard
+d.
+ 72°C for 5 minutes
+\end_layout
+
+\begin_layout Standard
+e.
+ 4°C for ever
+\end_layout
+
+\begin_layout Standard
+125.
+ Take a 10 μl aliquot for pre-SPRI analysis on the gel
+\end_layout
+
+\begin_layout Standard
+126.
+ SPRI cleanup the PCR products:
+\end_layout
+
+\begin_layout Standard
+a.
+ Gently shake the Agencourt AMPure bottle to resuspend any magnetic particles
+ that have settled
+\end_layout
+
+\begin_layout Standard
+b.
+ Add 72 μl of Agencourt AMPure beads to the 40 μl reaction products
+\end_layout
+
+\begin_layout Standard
+c.
+ Pippete mix 10-15 times and incubate at room temperature for 15 minutes
+\end_layout
+
+\begin_layout Standard
+d.
+ Place on magnet and wait for 10 minutes.
+ Aspirate the unbound fraction
+\end_layout
+
+\begin_layout Standard
+e.
+ Wash twice with 200 μl fresh 70% EtOH dispensing the EtOH to the beads
+ on the magnet.
+ Wait 30 sec and aspirate.
+\end_layout
+
+\begin_layout Standard
+f.
+ Air dry beads for 30 minutes off the magnet.
+ The beads look cracked when dry.
+\end_layout
+
+\begin_layout Standard
+g.
+ Add 40 μl of Molecular Biology H2O and pipette mix 10-15 times
+\end_layout
+
+\begin_layout Standard
+127.
+ Run 10 µl in a 1% gel with 2 µl loading buffer and large comb.
+ Also include samples pre-SPRI
+\end_layout
+
+\begin_layout Standard
+128.
+ Check library with test primers (testing common products)
+\end_layout
+
+\begin_layout Standard
+129.
+ Quantify DNA samples by qPCR with TaqMan probes (Kristina?)
+\end_layout
+
+\begin_layout Standard
+130.
+ Check library with BioAnalyzer (Kristina)
+\end_layout
+
+\begin_layout Standard
+131.
+ Sequence.
 \end_layout
 
 \begin_layout Section
