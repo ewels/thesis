@@ -324,12 +324,76 @@ reference "sec:chap4-CD34-cell-prep"
 
 \end_inset
 
- for details.
+ for the results of both separation methods.
 \end_layout
 
 \begin_layout Subsubsection
 Cell separation using the Invitrogen Dynal CD34 Progenitor Cell Selection
  System
+\end_layout
+
+\begin_layout Standard
+Cell separation was carried out as per the manufacturer's instructions.
+ Samples were centrifuged at 400x 
+\emph on
+g
+\emph default
+ for 8 mins at 4°C and resuspended in Sort Buffer (D-PBS [PAA] supplemented
+ with 0.1% BSA [Sigma] and 2 mM EDTA [Gibco]) at a concentration of 4 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ to 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ per ml in 2 ml microcentrifuge tubes.
+ Invitrogen Dynalbeads were aliquotted into a 2 ml microcentrifuge tube
+ (100 µl per ml sample).
+ 1 ml Sort Buffer was added and the tubes placed on a separation magnet.
+ The supernatant was removed and the beads resuspended in 100 µl sort buffer
+ per ml sample.
+ The beads were then added to the samples and mixed, before incubating on
+ a rotating wheel at 4°C for 30 minutes.
+ 700 µl Sort Buffer was added to each tube before placing each tube on the
+ separation magnet for at least 2 minutes.
+ The supernatant was then removed and kept at 4°C to use as a negative control
+ in the FACS analysis.
+ The beads were then washed three times in 2 ml Sort Buffer, separating
+ on the magnet for at least 1 minute each wash.
+ The beads were resuspended in 100 µl Sort Buffer and 100 µl DETACHaBEAD
+ added per tube.
+ Samples were incubated at room temperature on a shaker at 600 rpm for 45
+ minutes.
+ 1.8 ml Sort Buffer was added to each tube before being placed on the separation
+ magnet for at least 2 minutes.
+ The supernatant was then transferred to a 15 ml tube and the beads washed
+ three times with 500 µl Sort Buffer, the supernatant being added to the
+ 15 ml tube each time.
+ An aliquot was taken to count the cells using a haemocytometer and the
+ remaining sample was made up to 15 ml with Sort Buffer.
+ 1 ml was removed into fresh tube for the FACS purity analysis.
+ The remaining sample was centrifuged at 400x 
+\emph on
+g
+\emph default
+ for 8 minutes at 4°C.
+ The supernatant was discarded and the cell pellet flash frozen in liquid
+ nitrogen before storage at -80°C.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -473,6 +537,97 @@ name "sec:M&M-Cell-culture"
 Cell culture
 \end_layout
 
+\begin_layout Standard
+1.
+ Pre-warm media (minimum 15 mins)
+\end_layout
+
+\begin_layout Standard
+2.
+ Spray down cabinet
+\end_layout
+
+\begin_layout Standard
+3.
+ Take out flasks for either GM12878 or GM06990
+\end_layout
+
+\begin_layout Standard
+4.
+ Using a 10 ml pipette, gently pipette the cells about 4 or 5 times until
+ cloudy with no visible clumps of cells
+\end_layout
+
+\begin_layout Standard
+5.
+ Transfer to a 50 ml falcon
+\end_layout
+
+\begin_layout Standard
+6.
+ Repeat for the other flasks, merging them all into one falcon if they look
+ the same
+\end_layout
+
+\begin_layout Standard
+7.
+ Invert the falcon, and take 10 µl into an eppendorf
+\end_layout
+
+\begin_layout Standard
+8.
+ Spin the falcon at 300g for 3 minutes, RT
+\end_layout
+
+\begin_layout Standard
+10.
+ Count.
+ Use my cell culture notebook to note down the numbers.
+\end_layout
+
+\begin_layout Standard
+b.
+ Culture range is between 2 x 105 and 1 x 106/ml, so I usually aim for roughly
+ 5 x 105 / ml, though go with whatever makes sense for dividing into flasks
+ of 20 ml
+\end_layout
+
+\begin_layout Standard
+11.
+ Take the media out of the bath, wipe down and spray
+\end_layout
+
+\begin_layout Standard
+12.
+ Pipette off the media from the spun cells into a new falcon to discard
+\end_layout
+
+\begin_layout Standard
+13.
+ Add new media with a 10 ml pipette and mix again until cloudy
+\end_layout
+
+\begin_layout Standard
+14.
+ Invert and pipette out into new T25s.
+ Keep them stood on their end, not lying down
+\end_layout
+
+\begin_layout Standard
+15.
+ Label and put back into the hood!
+\end_layout
+
+\begin_layout Standard
+16.
+ Repeat steps 3 to 15 with the other cell line.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
@@ -484,364 +639,615 @@ name "sec:M&M-3C"
 \end_layout
 
 \begin_layout Standard
+Chromosome Conformation Capture (3C) is a ligation based proximity assay
+ used to determine the physical association of sequences of DNA in within
+ the nucleus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dekker2002b"
+
+\end_inset
+
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C_protocol"
+
+\end_inset
+
+).
+ The 3C protocol used was based on that published by Cope and Fraser 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cope2009"
+
+\end_inset
+
+, with some modifications for using CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells and different restriction endonucleases.
+ See Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4-e4C-dev"
+
+\end_inset
+
+ for more details about the development of this assay.
+\end_layout
+
+\begin_layout Subsection
+Nuclei preparation and digestion
+\end_layout
+
+\begin_layout Standard
+CD34+ cells were fixed, sorted and flash frozen in cell pellets as described
+ in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-CD34-cell-handling"
+
+\end_inset
+
+.
+ Cell pellets were thawed on ice and resuspended in 50 ml permeabilization
+ buffer (10 mM Tris-HCl, 10 mM NaCl, 0.2% Igepal CA-360 [Sigma], 1 tablet
+ complete EDTA-free protease inhibitor [Roche]).
+ Cells were incubated on ice for 30 minutes on a rocker whilst an aliquot
+ was taken to count the nuclei using a haemocytometer.
+ Samples were centrifuged at 760x 
+\emph on
+g
+\emph default
+ for 5 minutes at 4°C and resuspended in 500 µl 1.2x NEB3 buffer (100 mM
+ NaCl, 50 mM Tris-HCl, 10 mM MgCl
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, 1 mM Dithiothreitol, pH 7.9 [New England Biolabs]).
+ Samples were transferred into a 1.5 ml microcentrifuge tube and centrifuged
+ at 760x 
+\emph on
+g
+\emph default
+ for 5 min at 4°C.
+ Nuclei pellets were resuspended in 500 µl fresh 1.2x NEB3 and 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SDS"
+description "Sodium dodecyl sulfate"
+
+\end_inset
+
+SDS was added to a final concentration of 0.3% to further permeabilise the
+ nuclei and remove protein that has not been crosslinked..
+ Nuclei were incubated at 37°C for 1 hour, shaking at 950 rpm.
+ Triton-X100 was added to a final conentration of 1.8% to sequester the SDS
+ and samples incubated at 37°C for 1 hour, shaking at 950 rpm.
+ A 10µl aliquot was taken for later digestion efficiency analysis (See Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:M&M-3C-digestion-efficiency-analysis"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+To digest the crosslinked chromatin 30 µl high concentration 
+\emph on
+AseI
+\emph default
+ was added (1500 units [New England Biolabs]) and samples incubated at 37°C
+ overnight, shaking at 950 rpm.
+ An additional 10 μl 
+\emph on
+AseI
+\emph default
+ (500 units) was added and incubated for a further 3 hours at 37°C, 950
+ rpm.
+ Another 10µl aliquot was taken to check for digestion efficiency later
+ and the digestion stopped by the addition of SDS to a final concentration
+ of 1.6% before incubating at 65°C, 950 rpm for 25 minutes.
+\end_layout
+
+\begin_layout Subsection
+Ligation and purification
+\end_layout
+
+\begin_layout Standard
+Samples were cooled to room temperature and added to 15 ml tubes containing
+  7 ml 1.1x T4 DNA ligase buffer (Made using 10x buffer [New England Biolabs]
+ - 55 mM Tris-HCl pH 7.5, 11 mM MgCl
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, 1.1 mM ATP, 11 mM DTT, 27.5 µg/ml BSA).
+ To sequester the SDS, Triton-X100 was added to a final concentration of
+ 1% and samples incubated at 37°C for 1 hour with mixing by inversion every
+ 10 minutes.
+ Samples were allowed to equilibrate in a 16°C in water bath before the
+ addition of 2 µl T4 DNA ligase (800 units [NEB]).
+ Samples were incubated at 16°C for 4 hours, then at room temperature for
+ 30 minutes.
+ Proteinase K was added to a final concentration of 100 µg/ml and samples
+ incubated at 65°C overnight.
+ Tubes were cooled to room temperature and RNase A added to a final concentratio
+n of 40 µg/ml before incubation at 37°C for 1 hour.
+ Samples were split into two and transfered into 15 ml Phase Lock Gel Tubes
+ (Phase Lock Gel Light 15 ml [5 PRIME]).
+ DNA was purified using a phenol / chloroform extraction followed by precipitati
+on in ethanol and sodium acetate.
+ DNA pellets were resuspended in 250 μl Molecular Biology grade water (Qiagen).
+\end_layout
+
+\begin_layout Standard
+3C samples were quantified using the Quant-iT PicoGreen assay (Invitrogen).
+ Dilutions of 3C product in 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TE Buffer"
+description "Tris-EDTA Buffer"
+
+\end_inset
+
+TE Buffer (200 mM Tris-HCl, 20 mM EDTA, pH 7.5) were measured in duplicate
+ and compared to standard curves made using lambda DNA supplied within the
+ Quant-iT PicoGreen kit.
+ Fluorescence of the PicoGreen dye was assayed using a Cytofluor II multi-well
+ plate reader (485 nm excitation wavelength , 530 nm emission wavelength
+ [PerSeptive Biosystems]).
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:M&M-3C-digestion-efficiency-analysis"
+
+\end_inset
+
+Digestion efficiency analysis
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Digestion Efficiency of 3C Sample
+\end_layout
+
+\begin_layout Standard
+• Take a 5 µl aliquot of the 3C samples, BEFORE the addition of the restriction
+ enzyme.
+ Label as UND (undigested genomic DNA control).
+\end_layout
+
+\begin_layout Standard
+• After the digestion (i.e overnight incubation), take another 5 µl aliquot
+ and label as DIG (digested genomic DNA control.
+\end_layout
+
+\begin_layout Standard
+1.
+ Add 500 µl of Proteinase K buffer and 1 µl of 10 mg/ml Proteinase K (20
+ µg final) to the control aliquots.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ Incubate for 30 minutes at 65 ºC (can be performed o/n if procedure is
+ conducted in parallel to the 3C methodology).
+\end_layout
+
+\begin_layout Standard
+3.
+ Equilibrate for a few minutes at 37 ºC, then add 1 µl of 1 mg/ml RNase
+ A (2 µg final) and incubate for 2 hours at 37 ºC.
+\end_layout
+
+\begin_layout Standard
 4.
- Take frozen human CD34+ cells and thaw on ice
+ Add 500 µl phenol-chloroform, mix vigorously.
 \end_layout
 
 \begin_layout Standard
 5.
- Resuspend cells in approximately 20 ml permeabilization buffer by pipetting
+ Centrifuge for 20 minutes at 13’000rpm, room temperature.
 \end_layout
 
 \begin_layout Standard
 6.
- Make up to 50 ml with permeabilization buffer
+ Transfer the aqueous phase (upper layer) to a new tube and add 50 µl of
+ 2 M sodium acetate, pH 5.6, then 1 - 1.5 ml of 100 % ethanol.
 \end_layout
 
 \begin_layout Standard
 7.
- Incubate on ice for 30 min.
- Invert tube every 10 minutes
+ Mix and then precipitate DNA in the -20 ºC freezer for > 2 hours.
 \end_layout
 
 \begin_layout Standard
 8.
- Centrifuge at 760 g for 5 min, at 4°C
+ Centrifuge for 25 minutes at 13’000 rpm, 4 ºC.
 \end_layout
 
 \begin_layout Standard
 9.
- Pour off supernatant into 50 ml falcon
+ Remove the supernatant and add 500 µl of 70 % ethanol.
+ Vortex.
 \end_layout
 
 \begin_layout Standard
 10.
- Resuspend pellet in 500 µl 1.2x NEB3
+ Centrifuge for 25 minutes at 13’000 rpm, 4 ºC.
 \end_layout
 
 \begin_layout Standard
 11.
- Transfer to a 1.5 ml low-bind eppendorf
+ Remove the supernatant and air-dry the pellet at room temperature.
+\end_layout
+
+\begin_layout Standard
+A few minutes at 37 ºC may decrease the waiting time.
 \end_layout
 
 \begin_layout Standard
 12.
- Centrifuge at 760 g for 5 min, 4°C
+ Re-suspend pellet in 60 µl of water.
 \end_layout
 
 \begin_layout Standard
-13.
- Pour off supernatant into 1.5 ml eppendorf
-\end_layout
-
-\begin_layout Standard
-14.
- Resuspend pellet in 500 µl fresh 1.2x NEB3 by pipetting
-\end_layout
-
-\begin_layout Standard
-15.
- Add 7.5 µl 20% SDS (0.3% final)
-\end_layout
-
-\begin_layout Standard
-16.
- Incubate at 37°C, 950 rpm for 1 hour
-\end_layout
-
-\begin_layout Standard
-17.
- Add 50 µl 20% Triton-X100 (1.8% final)
-\end_layout
-
-\begin_layout Standard
-18.
- Incubate at 37°C, 950 rpm for 1 hour
-\end_layout
-
-\begin_layout Standard
-19.
- Take a 10µl aliquot to check for digestion efficiency, label UND
-\end_layout
-
-\begin_layout Standard
-20.
- Add 30 µl AseI (1500 units)
-\end_layout
-
-\begin_layout Standard
-21.
- Incubate at 37°C, 950 rpm overnight
-\end_layout
-
-\begin_layout Standard
-06/05/2010
-\end_layout
-
-\begin_layout Standard
-22.
- Remove one tube of ligation buffer from -20°C and allow to thaw on ice
-\end_layout
-
-\begin_layout Standard
-23.
- Add 10 μl AseI (500 units)
-\end_layout
-
-\begin_layout Standard
-24.
- Incubate at 37°C, 950 rpm for 3 hours
-\end_layout
-
-\begin_layout Standard
-25.
- Take a 10µl aliquot to check for digestion efficiency, label DIG
-\end_layout
-
-\begin_layout Standard
-26.
- Add 40 µl 20% SDS
-\end_layout
-
-\begin_layout Standard
-27.
- Incubate at 65°C, 950 rpm for 25 minutes
-\end_layout
-
-\begin_layout Standard
-28.
- Set up a 15 ml Falcon tube with 7 ml 1.1x ligation buffer
-\end_layout
-
-\begin_layout Standard
-a.
- 6200 µl H2O
-\end_layout
-
-\begin_layout Standard
-b.
- 800 µl NEB 10x ligase buffer
-\end_layout
-
-\begin_layout Standard
-29.
- Transfer sample to 15 ml Falcon
-\end_layout
-
-\begin_layout Standard
-30.
- Add 375 µl 20% Triton-X100
-\end_layout
-
-\begin_layout Standard
-31.
- Incubate for at 37°C for 1 hour.
- Invert tube every 10 minutes
-\end_layout
-
-\begin_layout Standard
-32.
- Set up a 16°C water bath
-\end_layout
-
-\begin_layout Standard
-33.
- Allow samples to equilibrate to 16°C in water bath
-\end_layout
-
-\begin_layout Standard
-34.
- Add 2 µl T4 DNA ligase (800 units)
-\end_layout
-
-\begin_layout Standard
-35.
- Incubate in the 16°C water bath for 4 hours.
- Check temperature every 30 minutes
-\end_layout
-
-\begin_layout Standard
-36.
- Incubate at room temperature for 30 minutes
-\end_layout
-
-\begin_layout Standard
-37.
- Add 90 µl fresh Proteinase K (900 µg)
-\end_layout
-
-\begin_layout Standard
-38.
- Incubate at 65°C overnight in PJF oven
-\end_layout
-
-\begin_layout Standard
-07/05/2010
-\end_layout
-
-\begin_layout Standard
-39.
- Allow to cool to room temperature
-\end_layout
-
-\begin_layout Standard
-40.
- Aliquot 40.4 ml fresh 100% Ethanol into a 50 ml Falcon tube and place in
- the -20°C freezer
-\end_layout
-
-\begin_layout Standard
-41.
- Make up 15 ml fresh 70% Ethanol in a 50 ml Falcon tube and place in the
- -20°C freezer
-\end_layout
-
-\begin_layout Standard
-a.
- 10.5 ml 100% Ethanol
-\end_layout
-
-\begin_layout Standard
-b.
- 4.5 ml H2O
-\end_layout
-
-\begin_layout Standard
-42.
- Add 3 µl RNase A to sample (300 µg)
-\end_layout
-
-\begin_layout Standard
-43.
- Incubate at 37°C for 1 hour
-\end_layout
-
-\begin_layout Standard
-44.
- Prepare two 15 ml Phase Lock Gel Tubes by spinning them at 1500 g for 2
- minutes at room temperature
-\end_layout
-
-\begin_layout Standard
-45.
- Transfer 3.5 ml of the ligation reaction to each Phase Lock Gel Tube
-\end_layout
-
-\begin_layout Standard
-46.
- Add 3.5 ml phenol/chloroform
-\end_layout
-
-\begin_layout Standard
-47.
- Mix well, but carefully as to not disturb the gel
-\end_layout
-
-\begin_layout Standard
-48.
- Centrifuge at 1500 g for 5 minutes, at room temperature
-\end_layout
-
-\begin_layout Standard
-49.
- Add 3.5 ml chloroform
-\end_layout
-
-\begin_layout Standard
-50.
- Mix well, but very carefully as to not disturb the gel barrier
-\end_layout
-
-\begin_layout Standard
-51.
- Centrifuge at 1500 g for 5 minutes, at room temperature
-\end_layout
-
-\begin_layout Standard
-52.
- Pour the two aqueous layers into a fresh 15 ml Falcon tube
-\end_layout
-
-\begin_layout Standard
-53.
- Add 1600 µl 3M NaOAc 
-\end_layout
-
-\begin_layout Standard
-54.
- Transfer to the 50 ml tube of 100% Ethanol in the -20°C freezer
-\end_layout
-
-\begin_layout Standard
-55.
- Mix and precipitate in the -80°C freezer over the weekend
-\end_layout
-
-\begin_layout Standard
-09/05/2010
-\end_layout
-
-\begin_layout Standard
-56.
- Centrifuge at maximum speed for 1 hour at 4°C
-\end_layout
-
-\begin_layout Standard
-57.
- Pour supernatant into a 50 ml Falcon
-\end_layout
-
-\begin_layout Standard
-58.
- Wash pellet with 10 ml 70% Ethanol in the -20°C freezer
-\end_layout
-
-\begin_layout Standard
-59.
- Centrifuge at maximum speed for 45 minutes at 4°C
-\end_layout
-
-\begin_layout Standard
-60.
- Carefully pour supernatant into a 50 ml Falcon
-\end_layout
-
-\begin_layout Standard
-61.
- Keep tube upside down and allow pellet to dry
-\end_layout
-
-\begin_layout Standard
-62.
- Add 200 μl Molecular Biology grade water
-\end_layout
-
-\begin_layout Standard
-63.
- Allow to rehydrate at 37°C overnight
-\end_layout
-
-\begin_layout Standard
-10/05/2010
-\end_layout
-
-\begin_layout Standard
-64.
- Transfer to a 1.5 ml low-bind eppendorf
-\end_layout
-
-\begin_layout Standard
-65.
- Wash tip and tube with 50 μl Molecular Biology grade water
-\end_layout
-
-\begin_layout Standard
-66.
- Store at 4°C
+Sample(s) can now be assessed for digestion efficiency.
 \end_layout
 
 \begin_layout Standard
 
+\series bold
+Real-Time PCR quantifications
+\end_layout
+
+\begin_layout Standard
+To check digestion efficiencies, use primer pairs that amplify across each
+ restriction site of interest (R), for example the For and Rev of restriction
+ enzyme site under investigation.
+ To correct for differences in the amount of template added to the PCR,
+ also PCR-amplify control regions not containing the restriction site of
+ interest (use the “internal” primers used for loading adjustments, providing
+ that they do not fall within a restriction site).
+ 
+\end_layout
+
+\begin_layout Standard
+Use the cycle thresholds (Ct values, i.e.
+ the number of PCR cycles required to generate a threshold amount of PCR
+ product) to calculate the restriction efficiency according to the following
+ formula:
+\end_layout
+
+\begin_layout Standard
+% Restriction = 100 – 100 / 2[(CtR – CtC)DIG – (CtR – CtC)UND]
+\end_layout
+
+\begin_layout Standard
+Ideally the restriction efficiency should be above 60 - 70 %, but you should
+ aim for >80 %.
+ Samples with lower digestion efficiencies should be discarded.
+\end_layout
+
+\begin_layout Standard
+Set up 25 µl qPCRs as follows:
+\end_layout
+
+\begin_layout Standard
+Stock Component Amount Final
+\end_layout
+
+\begin_layout Standard
+H2O 5.5 µl 
+\end_layout
+
+\begin_layout Standard
+Forward internal primer (10 µM) 1 µl (7.5 µM) 300 nM
+\end_layout
+
+\begin_layout Standard
+Reverse internal primer (10 µM) 1 µl (7.5 µM) 300 nM
+\end_layout
+
+\begin_layout Standard
+SYBgreen 12.5 µl 
+\end_layout
+
+\begin_layout Standard
+Restriction sample 5 µl 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Digestion Efficiency reactions
+\end_layout
+
+\begin_layout Standard
+Active Gene - Check digestion around a site of interest
+\end_layout
+
+\begin_layout Standard
+Conduct this on each of the 3C Digestion samples, both UND and D.
+\end_layout
+
+\begin_layout Standard
+Inactive Gene - Check digestion around a site of interest 
+\end_layout
+
+\begin_layout Standard
+Conduct this on each of the 3C Digestion samples, both UND and D.
+\end_layout
+
+\begin_layout Standard
+Internal control to correct for loading differences, run a PCR on each of
+ the 3C Digestion samples, both UND and D, which utilise the internal primers
+ - no restriction site
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reagents
+\end_layout
+
+\begin_layout Standard
+Proteinase K Buffer (5 mls)
+\end_layout
+
+\begin_layout Standard
+5 mM EDTA, pH 8.0 (50 µl of 0.5 M); 10 mM Tris-Hcl, pH 8.0 (50 µl of 1 M);
+ 0.5 % SDS (125 µl of 20 %).
+\end_layout
+
+\begin_layout Standard
+Proteinase K, 10 mg/ml
+\end_layout
+
+\begin_layout Standard
+Ribonuclease A (RNase A), 1 mg/ml
+\end_layout
+
+\begin_layout Subsection
+Detection of 3C products by 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "qPCR"
+description "Quantitative PCR"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PCR"
+description "Polymerase chain reaction"
+
+\end_inset
+
+qPCR
+\end_layout
+
+\begin_layout Subsubsection
+Primer design
+\end_layout
+
+\begin_layout Standard
+Insert the gene of interest into the primer3 programme (gene has been exported
+ from Ensembl).
+ 
+\end_layout
+
+\begin_layout Standard
+Square brackets around the AseI / BglII site.
+\end_layout
+
+\begin_layout Standard
+Define primer characteristics.
+ 
+\end_layout
+
+\begin_layout Standard
+Primer size: 20 22 24
+\end_layout
+
+\begin_layout Standard
+Primer Tm: 60 62 64
+\end_layout
+
+\begin_layout Standard
+Primer GC%: 30 50 70
+\end_layout
+
+\begin_layout Standard
+For one round PCR: product size ~ 150-230 bp
+\end_layout
+
+\begin_layout Standard
+Difference Tm b/w primers = 1.5C
+\end_layout
+
+\begin_layout Standard
+Number to return: 25 (minimum).
+\end_layout
+
+\begin_layout Subsubsection
+Equimolar mix
+\end_layout
+
+\begin_layout Subsubsection
+qPCR
+\end_layout
+
+\begin_layout Standard
+Real-time PCR machine: ABI Prism Sequence Detection System 
+\end_layout
+
+\begin_layout Standard
+Initial step: 50°C, 2 min Denaturation: 95°C, 10 min 40 cycles: 95°C, 15
+ s
+\end_layout
+
+\begin_layout Standard
+Dissociation Curve: 95°C, 1 min; 55°C, 30s; 95°C, 30s 60°C, 1 min
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reaction mixture (μl): 
+\end_layout
+
+\begin_layout Standard
+6 H2O 
+\end_layout
+
+\begin_layout Standard
+5 Template 
+\end_layout
+
+\begin_layout Standard
+0.75 Forward primer (stock 10 µM, final 300 nM) 
+\end_layout
+
+\begin_layout Standard
+0.75 Reverse primer (stock 10 µM, final 300 nM) 
+\end_layout
+
+\begin_layout Standard
+12.5 SYBRgreen 2x mix 
+\end_layout
+
+\begin_layout Standard
+25 Final volume 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Protocol
+\end_layout
+
+\begin_layout Standard
+1.       Pipette out templates into plate (bottom of wells)
+\end_layout
+
+\begin_layout Standard
+2.       Make master mix
+\end_layout
+
+\begin_layout Standard
+3.       Pipette out MM (left of wells)
+\end_layout
+
+\begin_layout Standard
+4.       Put seal on plate
+\end_layout
+
+\begin_layout Standard
+5.       Spin briefly
+\end_layout
+
+\begin_layout Standard
+6.       Run qPCR
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Using 0.2 pmol (200 fmol) equimolar mix
+\end_layout
+
+\begin_layout Standard
+Mix dilutions:
+\end_layout
+
+\begin_layout Standard
+1 x 10-1
+\end_layout
+
+\begin_layout Standard
+2 x 10-2
+\end_layout
+
+\begin_layout Standard
+4 x 10-3
+\end_layout
+
+\begin_layout Standard
+8 x 10-4
+\end_layout
+
+\begin_layout Standard
+1.6 x 10-4
+\end_layout
+
+\begin_layout Standard
+3.2 x 10-5
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3C DNA template is diluted to 25 ng/μl
+\end_layout
+
+\begin_layout Standard
+5 μl template / well (125 ng)
+\end_layout
+
+\begin_layout Standard
+4 replicates per primer pair
+\end_layout
+
+\begin_layout Subsubsection
+Analysis
+\end_layout
+
+\begin_layout Standard
+Make standard curves from controls for each primer pair - plot log Ct and
+ log quantity of controls.
+\end_layout
+
+\begin_layout Standard
+Log Ct of samples, work out log quantity from standard curve.
+ 10^(log Ct), then average and work out SD.
+\end_layout
+
+\begin_layout Standard
+Plot variance from mean across plate to check for evapouration
+\end_layout
+
+\begin_layout Standard
+Plot values with SD
+\end_layout
+
+\begin_layout Standard
+Check all dissociation curves
 \end_layout
 
 \begin_layout Section
@@ -1903,7 +2309,974 @@ name "sec:M&M-DNA-FISH"
 
 \end_inset
 
-DNA-FISH 
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DNA-FISH"
+description "DNA fluorescence in-situ hybridisation"
+
+\end_inset
+
+DNA fluorescence 
+\emph on
+in-situ
+\emph default
+ hybridisation
+\end_layout
+
+\begin_layout Standard
+Modified from D.Bolland original by I.Clay 23/09/08, remodified by D.
+ Bolland 14/01/09.
+ Originally from Thomas Ried lab, NIH, Bethesda and the Cremer lab (I.
+ Solovei chapter in FISH book).
+\end_layout
+
+\begin_layout Subsection
+Probe generation
+\end_layout
+
+\begin_layout Standard
+Directly-labeled DNA probes for in situ hybridisation
+\end_layout
+
+\begin_layout Standard
+Nick translation with aminoallyl-dUTP followed by chemical-coupling with
+ alexafluor reactive dye
+\end_layout
+
+\begin_layout Standard
+Start with clean BAC DNA (use Dan’s triple precipitation method) or pure
+ plasmid or PCR product DNA prepared using a kit.
+ Make sure DNA is in H2O, not TE or EB buffer.
+\end_layout
+
+\begin_layout Standard
+1.
+ Add the following components on ice:
+\end_layout
+
+\begin_layout Standard
+DNA to be labeled 1 ug
+\end_layout
+
+\begin_layout Standard
+10 × NTB 5 μl
+\end_layout
+
+\begin_layout Standard
+0.1M DTT (comes with superscript II/III) 5 μl
+\end_layout
+
+\begin_layout Standard
+d(GAC)TP mix (0.5mM each) 4 μl
+\end_layout
+
+\begin_layout Standard
+dTTP (0.5mM) 1 μl
+\end_layout
+
+\begin_layout Standard
+aminoallyl-dUTP (0.5mM) 6 μl
+\end_layout
+
+\begin_layout Standard
+DNA Polymerase I, 10 U/μl 1 μl
+\end_layout
+
+\begin_layout Standard
+DNase I dilution (currently 1:30) 1 μl
+\end_layout
+
+\begin_layout Standard
+H2O to final volume 50 μl
+\end_layout
+
+\begin_layout Standard
+It is best to scale this up to give pellets large enough to see and to make
+ extra nick-translated DNA that can be coupled to different dyes at a later
+ date.
+ I have found doing a 4x reaction gives around 4ug nick-translated DNA and
+ reasonable pellets.
+ Labelling 1ug of this each time will give enough probe for 100 single spot
+ slides (10ng probe per slide, 22 x 22mm coverslip, 10ul hyb.
+ mix)
+\end_layout
+
+\begin_layout Standard
+For my current batch of DNase I (Roche 04716728001) I have found that a
+ 1:30-1:35 DNAse I dilution gives a smear of optimal size after 2 hours
+ at 16˚C.
+ However, this will need to be optimized for each new/different batch of
+ DNAse I.
+ This can be done by running the above reaction but without nucleotides
+ or DNA Polymerase I and titrating the DNAse I dilution.
+ This can range from 1:10-1:2000 so it may be necessary to do multiple tests.
+ A smear of 100bp-800bp with a maximum at ~300bp (before heating) is ideal
+ at this stage.
+ It is then typical to use double the concentration in the actual NT reaction,
+ although this may require some fine tuning.
+ The DNAse I will typically go off slowly over time.
+\end_layout
+
+\begin_layout Standard
+Ensure DNA Polymerase is well within date as it is critical this enzyme
+ works well.
+ Dilute DNAse I in 1x DNAse 1 buffer.
+\end_layout
+
+\begin_layout Standard
+2.
+ Incubate at 16°C for 2h.
+\end_layout
+
+\begin_layout Standard
+3.
+ Run an aliquot of 1μl on a 2% agarose gel to check the size of the fragments.
+ The optimal size for in situ hybridisation is 100-500 bp.
+ Before heating (below) nick-translation reactions run slower in agarose
+ gels (probably due to BSA in NTB).
+ A smear of products from 1kb to 150bp with the peak around 200-300bp is
+ suitable at this stage.
+ If the size range is significantly larger than this (eg.
+ 500bp-1.5kb), add another 1μl of a new DNase I dilution and place at 16°C
+ for a further 15-60 min.
+ Run another aliquot of 0.5μl on a 2% gel to check size again.
+ Repeat until optimum size is achieved.
+\end_layout
+
+\begin_layout Standard
+4.
+ Heat to 75˚C for 5 min to inactivate DNase I.
+ If you run 1ul on a 2% gel at this stage the DNA smear will have shifted
+ to 100-500bp.
+ Clean up amine-modified DNA using Qiagen PCR purification kit.
+ Elute in 200ul.
+\end_layout
+
+\begin_layout Standard
+5.
+ Precipitate amine-modified DNA immediately with 20μl NaOAc and 550μl 100%
+ ethanol.
+ Precipitate at -20˚C for at least an hour (overnight is best).
+ Centrifuge at 13-14k for 15 min at 4˚C.
+ Pellet will be small but visible if NT reaction was scaled up but tiny
+ if a 1x reaction was done.
+ Wash pellet with 100μl 70% ethanol, spin, take off ethanol, allow pellet
+ to air dry.
+\end_layout
+
+\begin_layout Standard
+6.
+ Resuspend pellet of ultraclean amine-modified DNA in 1.25μl H2O per NT reaction.
+ You will lose a lot of DNA in the two cleanup steps but these are necessary
+ to remove all non-probe primary amines that would otherwise compete in
+ the coupling reaction (below).
+ If a single NT reaction was done then presume at this stage that you have
+ ~1ug of NT DNA.
+ If 4x NT reactions where done then resuspend in 5ul H2O and quantify 1ul
+ on the nanodrop.
+ Amine-modified DNA can be stored at -20˚C at this stage and used in future
+ labeling reactions.
+\end_layout
+
+\begin_layout Standard
+7.
+ If using single-use dried pellets of amine reactive dye, take out of freezer
+ and resuspend in 2μl anhydrous DMSO, vortex, spin down.
+ Each tube of dye can be used to label 4-5ug of NT DNA but concentration
+ of the dye in the coupling reaction should always be constant.
+ Once reconsitituted with DMSO the dyes rapidly lose reactivity so use immediate
+ly (cannot be stored for future use).
+ Use the following table as a guide for probes per tube of reactive dye.
+\end_layout
+
+\begin_layout Standard
+DNA amount DNA volume NaB buffer Volume of dye Total Enough for
+\end_layout
+
+\begin_layout Standard
+4 x 1ug 1.25ul each 0.75ul each 0.5ul each 2.5ul (1/4 reactions) 100 slides
+ each
+\end_layout
+
+\begin_layout Standard
+3 x 1.35ug 1.67ul each 1ul each 0.67ul each 3.34ul (1/3 reactions) 130 slide
+ each
+\end_layout
+
+\begin_layout Standard
+2 x 2ug 2.5ul each 1.5ul each 1ul each 5ul (1/2 reactions) 200 slides each
+\end_layout
+
+\begin_layout Standard
+1 x 4ug 5ul 3ul 2ul 10ul (Full reaction) 400 slides
+\end_layout
+
+\begin_layout Standard
+8.
+ Heat amine-modified DNA to 95˚C for 5 min in PCR block, snap cool on ice
+ then add NaB labeling buffer (0.2M Sodium bicarbonate pH 8.3) on ice and
+ mix/pulse down.
+ Heating gives 10-20% enhanced labeling.
+ Add amine-reactive dye to amine-modified DNA/NaB, vortex, spin down and
+ incubate at room temperature in the dark for at least 1h.
+\end_layout
+
+\begin_layout Standard
+Amine-reactive dyes are very sensitive to water and DMSO is hygroscopic
+ so allow everything to warm to room temperature before opening tubes/resuspendi
+ng.
+ Always use fully anhydrous DMSO.
+\end_layout
+
+\begin_layout Standard
+9.
+ Add 40μl H2O and use Qiagen PCR cleanup kit to purify the probe, do two
+ washes of the column with PE.
+ Elute in 40μl for 1ug, 60ul for 1.35ug, 100ul for 2ug or 200ul for 4ug probe.
+ Liquid should be slightly orange/yellow for alexa488, pink for alexa555
+ or blue for alexa647.
+\end_layout
+
+\begin_layout Standard
+10.
+ Can be analysed on the nanodrop using the ‘proteins and labels’ setting
+ to measure dye incorporation and DNA concentration using Dan’s probe analysis
+ excel workbook.
+ You can also run an aliquot (1μl should be enough) on a gel also to check
+ size, yield etc.
+ You can then analyse the gel on the phosphoimager to check incorporation
+ and if there is any unincorporated dye.
+ In the FISH, 10ng per single-spot slide/22x22mm coverslip works well with
+ bright probes.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Reagents
+\end_layout
+
+\begin_layout Standard
+10×NTB: 0.5 M Tris-HCl (or Trizma-HCl), pH 7.5, 50mM MgCl2, 0.5 mg/ml nuclease-free
+ BSA fraction V.
+ Filter purify.
+\end_layout
+
+\begin_layout Standard
+10×NTB 5 ml
+\end_layout
+
+\begin_layout Standard
+1 M Tris-HCl, pH 7.5 2.5 ml
+\end_layout
+
+\begin_layout Standard
+1 M MgCl2 0.25 ml
+\end_layout
+
+\begin_layout Standard
+10 mg/ml BSA fraction V 250 μl
+\end_layout
+
+\begin_layout Standard
+Make to 5ml with nuclease-free water 2 ml
+\end_layout
+
+\begin_layout Standard
+0.1M DTT – comes with Superscript II/III or make your own stock
+\end_layout
+
+\begin_layout Standard
+DNA Polymerase I – NEB cat.
+ no.
+ M0209S from Stores £39.95
+\end_layout
+
+\begin_layout Standard
+DNAse I – Roche cat.
+ no.
+ 04716728001 from Stores £89.59
+\end_layout
+
+\begin_layout Standard
+Sodium bicarb.
+ (NaHCO3) 250 g Sigma cat#S7277 £14.30
+\end_layout
+
+\begin_layout Standard
+Stock solution 0.2 M, pH 8.3 MW 84.01 dissolve 100 mg in 3.95 ml water
+\end_layout
+
+\begin_layout Standard
+Make single use aliquots (5-10μl)
+\end_layout
+
+\begin_layout Standard
+Amino-allyl dUTP 1 mg Sigma cat#A0410 £92.10
+\end_layout
+
+\begin_layout Standard
+Stock solution 20 mM MW 523.2 add 95.5 µl of H2O
+\end_layout
+
+\begin_layout Standard
+Cheaper, alternate source: Ambion Cat# 8439 50mM solution (50μl) £108 or
+ even cheaper
+\end_layout
+
+\begin_layout Standard
+Fermentas R1101 50ul 50mM solution £84.88 through SSC
+\end_layout
+
+\begin_layout Standard
+2μl amino-allyl dUTP (50mM stock)
+\end_layout
+
+\begin_layout Standard
+198μl H2O
+\end_layout
+
+\begin_layout Standard
+Make 15μl aliquots
+\end_layout
+
+\begin_layout Standard
+d(GAC)TP 10 x mix = (0.5 mM dGTP, dATP, dCTP) 
+\end_layout
+
+\begin_layout Standard
+2μl dATP (100mM stock)
+\end_layout
+
+\begin_layout Standard
+2μl dCTP (100mM stock)
+\end_layout
+
+\begin_layout Standard
+2μl dGTP (100mM stock)
+\end_layout
+
+\begin_layout Standard
+394μl H2O
+\end_layout
+
+\begin_layout Standard
+Make 10μl aliquots
+\end_layout
+
+\begin_layout Standard
+dTTP 10 x 1μl dATP (100mM stock)
+\end_layout
+
+\begin_layout Standard
+199μl H2O
+\end_layout
+
+\begin_layout Standard
+Make 5μl aliquots
+\end_layout
+
+\begin_layout Standard
+Succinimdyl ester-coupled dyes plus others
+\end_layout
+
+\begin_layout Standard
+Alexa-fluor reactive dye decapacks (10 vials) for microarray applications
+ – from Invitrogen/Molecular probes – dyes available;
+\end_layout
+
+\begin_layout Standard
+Alexa fluor 488 (2nd brightest) A32750 £130
+\end_layout
+
+\begin_layout Standard
+Alexa fluor 555 (1st brightest) A32756 £134
+\end_layout
+
+\begin_layout Standard
+Alexa fluor 594 A32751 £113
+\end_layout
+
+\begin_layout Standard
+Alexa fluor 647 (3rd brightest) A32757 £130
+\end_layout
+
+\begin_layout Standard
+Alexa fluor 555+647 (2 x 10 vials).
+ A32755 £239
+\end_layout
+
+\begin_layout Standard
+Other dyes available – Alexa fluor 488 (TFP) 1mg A30005 £217
+\end_layout
+
+\begin_layout Standard
+Tetrafluorophenyl (TFP) esters are an improvement over the succinimidyl
+ ester (SE or NHS-ester) chemistry typically used to attach fluorophores
+ or haptens to the primary amines of biomolecules.
+ Both reactive chemistries produce the same strong amide bond between the
+ dye or hapten and the compound of interest, but TFP esters are less susceptible
+ to spontaneous hydrolysis during conjugation reactions.
+ Alexa Fluor TFP esters are stable for several hours at the basic pH typically
+ used for reactions – far outlasting succinimidyl esters.
+ Many succinimidyl ester-coupled dyes available from molecular probes or
+ GE life sciences – 1mg aliquots ~£200 – resuspend in 41.4μl anhydrous DMSO,
+ store at -20˚C in single use aliquots of 2μl in box with dessicant (eg.
+ Silica gel).
+\end_layout
+
+\begin_layout Standard
+(from old method)
+\end_layout
+
+\begin_layout Standard
+10×NTS: 0.5 M Tris-HCl (or Trizma-HCl), pH 7.5, 0.1 M MgSO4, 1 mM DTT, 0.5 mg/ml
+ nuclease-free BSA fraction V
+\end_layout
+
+\begin_layout Standard
+10×NTS 5 ml
+\end_layout
+
+\begin_layout Standard
+1 M Tris-HCl, pH 7.5 2.5 ml
+\end_layout
+
+\begin_layout Standard
+1 M Mg SO4 0.5 ml
+\end_layout
+
+\begin_layout Standard
+100 mM DTT 50 μl
+\end_layout
+
+\begin_layout Standard
+10 mg/ml BSA fraction V 250 μl
+\end_layout
+
+\begin_layout Standard
+Make to 5ml with nuclease-free water 1.7 ml
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+DNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+Fixing cells in solution and cytospinning on to slides for DNA FISH
+\end_layout
+
+\begin_layout Standard
+This is a variation of the Hi-C fixation that I have found works for DNA
+ FISH in P20 male germ cells and fetal liver cells (so far).
+ It should work for other cells.
+ Can do variable numbers of cells in different tubes from microtubes to
+ 50ml falcons.
+ For tubes that fit in a microcentrifuge – spin live cells at 4500rpm for
+ 2 min, fixed cells can be spun a little harder – 6000rpm for 2 min.
+ For falcon tubes, centrifuge live cells at 1300rpm, 5 min, 4˚C, fixed cells
+ at 1500rpm, 10 min, 4˚C.
+ This protocol uses the Shandon Cytospin but the cells are fixed and a very
+ slow speed is used – 3D nuclear structure appears to be largely preserved
+ based on DAPI staining and how spherical they are.
+\end_layout
+
+\begin_layout Standard
+1.
+ Prepare a single-cell suspension of your cells in PBS on ice at 1x106 cells
+ per ml.
+ How you do this will depend on the cell type but it’s best to have a very
+ good single cell suspension for FISH – filter through 40um cell strainers,
+ multiple PBS washes etc etc.
+\end_layout
+
+\begin_layout Standard
+2.
+ Add 37% formaldehyde (FA - Merck) to a final concentration of 2%.
+ Eg.
+ 40ml – 2.28ml, 20ml – 1.14ml, 10ml – 0.57ml, 1ml - 57ul etc)
+\end_layout
+
+\begin_layout Standard
+3.
+ Mix gently on a rocker for 10 min to fix.
+ (10 min fixation works for P20 male germ cells and fetal liver so far –
+ lower times may be needed for other cell types)
+\end_layout
+
+\begin_layout Standard
+4.
+ Quench formaldehyde with 1M glycine (final concentration 120mM – eg.
+ 40ml – 6ml glycine, 20ml – 3ml glycine, 10ml – 1.5ml glycine, 1ml - 150ul
+ etc.)
+\end_layout
+
+\begin_layout Standard
+5.
+ Mix gently on rocker for 5 min, then leave on ice for 15 min.
+\end_layout
+
+\begin_layout Standard
+6.
+ If any aggregations or debris have formed during the fixation then filter
+ through 40um cell strainers to remove at this stage.
+\end_layout
+
+\begin_layout Standard
+7.
+ Top up tube with cold PBS, take some cells to count on a hemocytometer
+ and spin down at 4˚C.
+\end_layout
+
+\begin_layout Standard
+8.
+ Discard supernatant and carefully resuspend pellet in PBS at 0.5-3x107 cells/ml
+ (see note in 9).
+ At this stage cells can be stored in the fridge for some time (?unknown
+ at present?) in PBS with 0.05% sodium azide.
+\end_layout
+
+\begin_layout Standard
+9.
+ To cytospin, pipette 100ul of cells into a pre-assembled cytospin funnel/clip/c
+ard/slide assembly and spin at 300rpm for 3 min in the Shandon cytospin
+ (Fatima/Wendy Dean).
+ Use the standard polyprep poly-L-lysine slides from sigma.
+ Ensure cells are fully mixed before pipetting into cytofunnel.
+ The optimal number of cells to cytospin for optimal density will have to
+ be determined for each cell type as it depends on cell size and probably
+ many other factors.
+ A good density for FISH is one where the cells are dense but not too many
+ are touching/are not clumping too much.
+ Some cell will be lost during the FISH.
+\end_layout
+
+\begin_layout Standard
+10.
+ As soon as the spin is finished quickly take out and disassemble the cytofunnel
+ assembly and carefully extract the slide, being careful not to scrape the
+ cells with the absorbent card.
+ This is a race against time as the cells will be rapidly drying out since
+ the PBS has now gone.
+ Quickly place slides in a coplin jar containing 1x PBS.
+ Can assess cell density by placing slides in PBS in a petri dish and viewing
+ on TC microscope.
+\end_layout
+
+\begin_layout Standard
+11.
+ Continue with the standard DNA FISH protocol!
+\end_layout
+
+\begin_layout Subsubsection
+DNA FISH probe precipitation 
+\end_layout
+
+\begin_layout Standard
+1.
+ Add to an eppendorf tube:
+\end_layout
+
+\begin_layout Standard
+Probe DNA (eg.
+ 10-20ng directly-labelled BAC)
+\end_layout
+
+\begin_layout Standard
+1µl (1µg) Cot-1 DNA
+\end_layout
+
+\begin_layout Standard
+1µl (9.7µg) salmon sperm DNA
+\end_layout
+
+\begin_layout Standard
+2.
+ Add Na-Acetate, 1/10 of the total volume of probe DNA mixture (above).
+\end_layout
+
+\begin_layout Standard
+3.
+ Add 100% ethanol, i.e., 2.5 x total volume of mixture of DNA + Na-Acetate.
+\end_layout
+
+\begin_layout Standard
+4.
+ Vortex, store tube at -20°C for 1 hour or overnight.
+\end_layout
+
+\begin_layout Standard
+5.
+ Centrifuge (13,000 rpm) the precipitated DNA at 4°C for 30 min.
+\end_layout
+
+\begin_layout Standard
+6.
+ Wash pellet with 70% Ethanol and spin again.
+\end_layout
+
+\begin_layout Standard
+7.
+ Carefully take off supernatant, allow pellet to dry.
+\end_layout
+
+\begin_layout Standard
+8.
+ Add 5µl deionized formamide (pH 7.0) and incubate tube at 37°C using a thermomix
+er, shaking at 300-500rpm for 30 min, or until probe has resuspended.
+\end_layout
+
+\begin_layout Standard
+9.
+ Add 5 µl Master Mix, vortex, centrifuge briefly.
+ Your probe is now ready to apply.
+ Make sure you mix again by pipetting well before loading onto coverslip
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsubsection
+Day 1 – Prepare slides, apply probes
+\end_layout
+
+\begin_layout Standard
+1.
+ Cells that stick well to poly-L-lysine slides (eg.
+ FACS/MACS sorted BM B cells, Thymocytes, Splenocytes) can be prepared as
+ normal in 1x PBS.
+\end_layout
+
+\begin_layout Standard
+• For anaemic spleens (AS) it is best to refilter the cell suspension through
+ a 70µm sieve, as this removes larger debris.
+ Several washes with PBS and refiltering through 40um sieve will help to
+ eliminate crud and get a good single cell suspension, giving cells that
+ stick better to the slides and are less prone to fall off during the pre-hyb
+ steps.
+\end_layout
+
+\begin_layout Standard
+• One AS in ~15 ml buffer will produce a good density of isolated cells
+ in the final product.
+\end_layout
+
+\begin_layout Standard
+Cells that do not stick well to poly-L-lysine can be fixed in solution using
+ Dan’s fixation in solution/cytospin methodology (see protocol at end) which
+ is adapted from the Hi-C fixation, then cytospun onto slides.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ Place 50-200µl cell suspension onto poly-L-lysine slides as you normally
+ would, allow cells to settle for 2 min, gently place slides in tray with
+ 4% PFA in PBS and fix for 10 min.
+ 
+\end_layout
+
+\begin_layout Standard
+• Use home made 4% PFA in PBS or standard.
+\end_layout
+
+\begin_layout Standard
+• For a tray: 20ml 10x PBS, 50ml 16% FA, H2O → 200 ml
+\end_layout
+
+\begin_layout Standard
+3.
+ Quench in 155mM glycine for at least 10 min, at RT.
+\end_layout
+
+\begin_layout Standard
+4.
+ Permeabilize cells in 0.1% saponin/0.1% triton X-100 in PBS for 10 min, RT.
+\end_layout
+
+\begin_layout Standard
+• For large coplin: 
+\end_layout
+
+\begin_layout Standard
+0.5 ml 20% Tx-100, 5 ml 2% Saponin, 1xPBS → 100 ml
+\end_layout
+
+\begin_layout Standard
+5.
+ Wash twice in PBS for 5 min each.
+\end_layout
+
+\begin_layout Standard
+6.
+ Incubate for 20 min or longer in 20% glycerol/PBS at RT 
+\end_layout
+
+\begin_layout Standard
+• Precipitate probes during incubation
+\end_layout
+
+\begin_layout Standard
+• 10ml 10x PBS, 20ml glycerol, H2O → 100ml
+\end_layout
+
+\begin_layout Standard
+• If not using immediately, store slides in 50% glycerol/PBS at -20˚C.
+ Can be stored for at least several weeks, probably longer.
+\end_layout
+
+\begin_layout Standard
+7.
+ 3X freezing/thawing in liquid nitrogen.
+ 
+\end_layout
+
+\begin_layout Standard
+• Ensure a good depth of liquid nitrogen so that the slides are well covered
+\end_layout
+
+\begin_layout Standard
+• After freezing, lay on tissues to allow thawing.
+\end_layout
+
+\begin_layout Standard
+• Once slide is totally thawed (opaque frozen glycerol no longer visible),
+ place back in 20% glycerol/PBS before subsequent round of freezing.
+ 
+\end_layout
+
+\begin_layout Standard
+• Listen for characteristic ‘popping’ sound after 3-4 seconds in liquid
+ nitrogen before withdrawing slide.
+ May not always be audible, if so withdraw after ~4 seconds.
+\end_layout
+
+\begin_layout Standard
+• Process slides one by one, 15 slides can be done comfortably in rotation,
+ i.e.
+ thawing on tissues while the rest are frozen.
+ Wait for all slides to be back in glycerol before starting the next round.
+\end_layout
+
+\begin_layout Standard
+8.
+ Rinse twice in PBS 5 min.
+\end_layout
+
+\begin_layout Standard
+9.
+ Incubate slides for 30 min in 0.1 N HCl at RT 
+\end_layout
+
+\begin_layout Standard
+• For large coplin: 840ul conc.
+ HCl, H2O → 100ml
+\end_layout
+
+\begin_layout Standard
+10.
+ Equilibrate in PBS for 5 min.
+\end_layout
+
+\begin_layout Standard
+11.
+ RNAase A/T1 (Fermentas) treatment for 60 min with 100ug/ml Rnase A/T1 in
+ 2x SSC at 37oC.
+ 
+\end_layout
+
+\begin_layout Standard
+• Begin spin down of precipitated probe mixes at this point.
+\end_layout
+
+\begin_layout Standard
+• Apply 100µl on a 50x22mm coverslip in a FISH box at 37°C
+\end_layout
+
+\begin_layout Standard
+12.
+ Rinse in 2x SSC 5 min then PBS 5 min.
+\end_layout
+
+\begin_layout Standard
+13.
+ Permeabilize in 0.5% saponin/0.5% triton X-100/PBS for 30 min at RT
+\end_layout
+
+\begin_layout Standard
+• For large coplin: 
+\end_layout
+
+\begin_layout Standard
+2.5 ml 20% Tx-100, 25 ml 2% Saponin, 1xPBS → 80 ml
+\end_layout
+
+\begin_layout Standard
+14.
+ Rinse twice with PBS, 5 min each.
+\end_layout
+
+\begin_layout Standard
+15.
+ Equilibrate in 50% formamide/2X SSC for at least 10 min (can mix with pipette
+ to speed this step up)
+\end_layout
+
+\begin_layout Standard
+• 1:1 4xSSC : Formamide
+\end_layout
+
+\begin_layout Standard
+16.
+ To apply probe, first place 10ul probe mix (see later) onto 22x22mm coverslip.
+ Take corresponding slide out of jar, carefully wipe off excess liquid around
+ cell spot(s) and invert coverslip onto cell spot(s) – try to avoid bubbles
+ and cells drying out.
+ Seal with rubber cement (‘fixogum’ is best) and allow to dry completely.
+ If using directly labeled probes protect from light at all subsequent stages.
+\end_layout
+
+\begin_layout Standard
+17.
+ Once rubber cement is dry place slides on hot plate set at 78˚C for exactly
+ 2 min.
+ Cover with box to protect from light during denaturation.
+\end_layout
+
+\begin_layout Standard
+18.
+ Remove from hot plate and incubate 16+ hours at 37˚C in a humidified chamber
+ (eg.
+ FISH box with water-soaked tissues).
+\end_layout
+
+\begin_layout Standard
+Next Day - wash slides
+\end_layout
+
+\begin_layout Standard
+19.
+ Prepare water baths and coplin jars with solutions at correct temperatures.
+ 
+\end_layout
+
+\begin_layout Standard
+• Check temperature of solutions not the water baths.
+\end_layout
+
+\begin_layout Standard
+20.
+ Take off rubber cement carefully, place in 2X SSC until coverslips loosen
+ and slide off.
+\end_layout
+
+\begin_layout Standard
+21.
+ Wash in 50% formamide/2X SSC for 15 min at 45˚C, once, 
+\end_layout
+
+\begin_layout Standard
+22.
+ Then in 0.2X SSC at 63˚C for 15 min, once
+\end_layout
+
+\begin_layout Standard
+23.
+ Then in 2X SSC at 45oC for 5 min, once
+\end_layout
+
+\begin_layout Standard
+24.
+ Equilibrate in 2X SSC at RT for 5 min.
+\end_layout
+
+\begin_layout Standard
+25.
+ If using only directly labeled probes proceed to step 27.
+ For antibody detection (eg.
+ hapten probes or immuno-FISH), block for 30 min at RT with 3% BSA in 2X
+ SSC (can also use TSB from RNA FISH protocol)
+\end_layout
+
+\begin_layout Standard
+• Apply on a coverslip and incubate in the same humidified FISH box as used
+ for the hybridisation
+\end_layout
+
+\begin_layout Standard
+26.
+ Apply detection antibodies diluted in 3% BSA in 2X SSC or TSB, incubating
+ at RT for 30-45 min in dark humidified box.
+ 30 min is fine if doing multiple layers – longer time might be important
+ if doing just one layer.
+\end_layout
+
+\begin_layout Standard
+27.
+ Wash three times for 3 min each in 2X SSC/0.1% TX-100 or TSTX (from RNA
+ FISH protocol) at RT after each detection.
+\end_layout
+
+\begin_layout Standard
+28.
+ Rinse in PBS for 5 min
+\end_layout
+
+\begin_layout Standard
+29.
+ Stain for 2 min with DAPI in 2X SSC at RT in coplin jar
+\end_layout
+
+\begin_layout Standard
+• Jar and solution can be stored at 4°C (protected from light by wrapping
+ in foil) for several weeks and reused
+\end_layout
+
+\begin_layout Standard
+30.
+ Wash in PBS for 10 min to destain DAPI.
+\end_layout
+
+\begin_layout Standard
+31.
+ Fix in 3.7% formaldehyde/PBS for 5 min to fix probes/antibodies in place
+ (this gives a cleaner result and the slides should last longer).
+\end_layout
+
+\begin_layout Standard
+32.
+ Quench in 155mM glycine for at least 30 minutes at RT (longer is better
+ – this quenches autofluorescence from the formaldehyde fixation).
+\end_layout
+
+\begin_layout Standard
+33.
+ Wash in PBS for 5 min to remove glycine.
+\end_layout
+
+\begin_layout Standard
+34.
+ Mount a coverslip with a drop of vectashield or slowfade gold (NO DAPI)
+ on slide area with cells.
+ Seal with nail varnish.
+\end_layout
+
+\begin_layout Subsection
+Visualising signals using the Metacyte
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
