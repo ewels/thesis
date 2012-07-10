@@ -89,6 +89,12 @@ CD34
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:M&M-Peripheral-blood-collections"
+
+\end_inset
+
 Peripheral blood collections
 \end_layout
 
@@ -103,7 +109,7 @@ Mobilised CD34
 \end_inset
 
  cells were collected from peripheral blood samples supplied by Dr.
- George Follows with the help of Dr.
+ George Follows with the help of apheresis coordinator / specialist nurse
  Paul Boraks.
  These blood samples were taken with constent from the patient at the same
  time as clinical samples used to test the mobilisation efficacy of the
@@ -125,7 +131,7 @@ description "Roswell Park Memorial Institute medium"
 \end_inset
 
 RPMI with heparin to prevent agglutination.
- Samples were transported from Addenbrookes Haematology Department to the
+ Samples were transported from Addenbrookes Haematology Day Unit to the
  Babraham Institute.
  
 \end_layout
@@ -212,6 +218,12 @@ g
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:M&M-Leukapheresis-collections"
+
+\end_inset
+
 Leukapheresis collections
 \end_layout
 
@@ -2302,6 +2314,32 @@ g.
  Sequence.
 \end_layout
 
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:M&M-Carrier-e4C"
+
+\end_inset
+
+Carrier e4C
+\end_layout
+
+\begin_layout Standard
+Due to the low numbers of CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells initially obtained from the peripheral blood collections, I worked
+ on optimising the e4C protocol for use with low cell numbers.
+ Because of the use of 'carrier chromatin' from other organisms, used to
+ buffer loss of DNA, I named this protocol Carrier e4C.
+\end_layout
+
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
@@ -2991,7 +3029,7 @@ Cells that do not stick well to poly-L-lysine can be fixed in solution using
 \end_layout
 
 \begin_layout Standard
-• For a tray: 20ml 10x PBS, 50ml 16% FA, H2O → 200 ml
+• For a tray: 20ml 10x PBS, 50ml 16% FA, H2O -> 200 ml
 \end_layout
 
 \begin_layout Standard
@@ -3009,7 +3047,7 @@ Cells that do not stick well to poly-L-lysine can be fixed in solution using
 \end_layout
 
 \begin_layout Standard
-0.5 ml 20% Tx-100, 5 ml 2% Saponin, 1xPBS → 100 ml
+0.5 ml 20% Tx-100, 5 ml 2% Saponin, 1xPBS -> 100 ml
 \end_layout
 
 \begin_layout Standard
@@ -3027,7 +3065,7 @@ Cells that do not stick well to poly-L-lysine can be fixed in solution using
 \end_layout
 
 \begin_layout Standard
-• 10ml 10x PBS, 20ml glycerol, H2O → 100ml
+• 10ml 10x PBS, 20ml glycerol, H2O -> 100ml
 \end_layout
 
 \begin_layout Standard
@@ -3080,7 +3118,7 @@ Cells that do not stick well to poly-L-lysine can be fixed in solution using
 
 \begin_layout Standard
 • For large coplin: 840ul conc.
- HCl, H2O → 100ml
+ HCl, H2O -> 100ml
 \end_layout
 
 \begin_layout Standard
@@ -3118,7 +3156,7 @@ Cells that do not stick well to poly-L-lysine can be fixed in solution using
 \end_layout
 
 \begin_layout Standard
-2.5 ml 20% Tx-100, 25 ml 2% Saponin, 1xPBS → 80 ml
+2.5 ml 20% Tx-100, 25 ml 2% Saponin, 1xPBS -> 80 ml
 \end_layout
 
 \begin_layout Standard

@@ -89,14 +89,195 @@ Developing an assay for gene association
 \end_layout
 
 \begin_layout Section
-Establishment of e4C
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
+Preparation of CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Subsection
-Experimental Design
+\end_inset
+
+ cells
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+There is mounting evidence that the founder translocations involving 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ in leukaemia may occur within the haematopoeitic stem cell compartment
+ [#REFS].
+ As it is thought that the translocations happen within these cells, it
+ is here that I was interested in investigating the organisation of the
+ un-translocated genes.
+\end_layout
+
+\begin_layout Standard
+Because the nuclear organisation of these cells starts to change as soon
+ as they are removed from the body, it was important that I fixed them with
+ formaldehyde as quickly as possible.
+ Adding formaldehyde directly to the blood samples would have caused problems
+ during cell separation, so I chose to run a Ficoll separation to isolate
+ the lymphoblasts, and then fixed in PBS with EDTA and 2% formaldehyde.
+ Following formaldehyde separation, I used a magnetic sort with anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ antibodies to purify the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ Finally, I analysed an aliquot of the purified cells using FACS (using
+ an antibody against a different epitope of CD34) to find the purity of
+ the samples.
+\end_layout
+
+\begin_layout Standard
+The first kit I used to separate the fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells was the Invitrogen Dynal CD34 Progenitor Cell Selection System.
+ I used this to process 17 separate blood samples from patients who had
+ been treated with GCSF to mobilise their haematopoeitic cells into their
+ peripheral blood stream.
+ The FACS plots all show some material with low front scatter, likely to
+ be debris resulting from the fix and sort (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
+ This was gated out, and a threshold set for anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ fluorescence.
+ The percentage of cells within the gate fluorescing above the threshold
+ varied from 17% - 91%, with a median purity of 67%.
+ 10 of 17 samples collected using the Invitrogen kit had to be discarded
+ due to unsatisfactory purity.
+\end_layout
+
+\begin_layout Standard
+I attempted a number of alterations to the cell separation protocol to improve
+ this purity, and finally tried using the Miltenyi MACS CD34 MicroBead Kit
+ instead.
+ This immediately gave much better performance, with purities ranging from
+ 90% - 97% with a median of 96% purity (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/facs/CD34 FACS Plots.eps
+	lyxscale 30
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-Separation-FACS"
+
+\end_inset
+
+
+\series default
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ Separation FACS Plots
+\end_layout
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+FACS plots after magnetic bead separation of fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Chromosome Conformation Capture
 \end_layout
 
@@ -232,7 +413,7 @@ e.
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Section
 Enriched 4C
 \end_layout
 
@@ -360,11 +541,7 @@ ase.
 
 \end_layout
 
-\begin_layout Subsection
-Primer Design
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Restriction Enzyme Choice
 \end_layout
 
@@ -628,121 +805,160 @@ reference "sec:M&M-3C"
 \end_layout
 
 \begin_layout Section
+Primer Design
+\end_layout
+
+\begin_layout Section
+e4C with low cell numbers
+\end_layout
+
+\begin_layout Standard
+Initially, CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells were collected from peripheral blood supplied by Dr.
+ George Follows in the Addenbrookes Haemotology Day Unit, with the help
+ of apheresis coordinator / specialist nurse Paul Boraks (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:M&M-Peripheral-blood-collections"
+
+\end_inset
+
+ for details).
+ Samples were collected on a weekly basis before being fixed and sorted
+ as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-CD34-cell-handling"
+
+\end_inset
+
+.
+ Typically, between 12 and 30 ml whole blood was received in each sample,
+ giving a median final count of 3.6 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells per collection.
+ Typically, 3C experiments use 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ cells, or 28 collections pooled together.
+ Between 2008 and 2009 I managed to collect and sort 23 peripheral blood
+ samples, giving a total of 1.04 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ total cells, however 10 of these samples had to be discarded due to poor
+ purity, as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
+.
+ This left me with 13 samples and a total of 7 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ cells (minimum 76% purity, average 91.6% purity).
+ Because of this low cell number, combined with the need for more than one
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C library, I worked on optimising the 3C protocol for use with low cell
+ numbers.
+ Some of this work was done with the help of Dr.
+ Mayra Furlan-Magaril, who was a visiting student in our laboratory at the
+ time.
+ 
+\end_layout
+
+\begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:chap4-CD34-cell-prep"
+name "sub:ChIP-e4C"
 
 \end_inset
 
-Preparation of CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells
+ChIP e4C
 \end_layout
 
 \begin_layout Standard
-There is mounting evidence that the founder translocations involving 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-MLL
-\emph default
- in leukaemia may occur within the haematopoeitic stem cell compartment
- [#REFS].
- As it is thought that the translocations happen within these cells, it
- is here that I was interested in investigating the organisation of the
- un-translocated genes.
+My initial plans when making the interaction libraries was to incorporate
+ a 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ChIP"
+description "Chromatin immuno-precipitation"
+
+\end_inset
+
+chromatin immunoprecipitation (ChIP) step to purity for 3C DNA-protein complexes
+ containing RNA Polymerase II.
+ This was done using an antibody against the Serine-5 phosphorylated elongating
+ form of RNA Polymerase II, and was intended to enrich for DNA-DNA interactions
+ specifically happening at transcription factories.
+ This protocol was used with some success in my lab by Dr.
+ Cameron Osborne and Allen Chong, though the extra immunoprecipitation step
+ meant that only very low amounts of input DNA was available for the e4C
+ stage, resulting in interaction datasets that were very low in complexity.
+ This low complexity was offset by the specific nature of the hits and low
+ signal to noise ratio (unpublished data).
 \end_layout
 
 \begin_layout Standard
-Because the nuclear organisation of these cells starts to change as soon
- as they are removed from the body, it was important that I fixed them with
- formaldehyde as quickly as possible.
- Adding formaldehyde directly to the blood samples would have caused problems
- during cell separation, so I chose to run a Ficoll separation to isolate
- the lymphoblasts, and then fixed in PBS with EDTA and 2% formaldehyde.
- Following formaldehyde separation, I used a magnetic sort with anti-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- antibodies to purify the CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells.
- Finally, I analysed an aliquot of the purified cells using FACS (using
- an antibody against a different epitope of CD34) to find the purity of
- the samples.
-\end_layout
-
-\begin_layout Standard
-The first kit I used to separate the fixed CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells was the Invitrogen Dynal CD34 Progenitor Cell Selection System.
- I used this to process 17 separate blood samples from patients who had
- been treated with GCSF to mobilise their haematopoeitic cells into their
- peripheral blood stream.
- The FACS plots all show some material with low front scatter, likely to
- be debris resulting from the fix and sort (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:CD34-Separation-FACS"
-
-\end_inset
-
-).
- This was gated out, and a threshold set for anti-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- fluorescence.
- The percentage of cells within the gate fluorescing above the threshold
- varied from 17% - 91%, with a median purity of 67%.
-\end_layout
-
-\begin_layout Standard
-I attempted a number of alterations to the cell separation protocol to improve
- this purity, and finally tried using the Miltenyi MACS CD34 MicroBead Kit
- instead.
- This immediately gave much better performance, with purities ranging from
- 90% - 97% with a median of 96% purity (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:CD34-Separation-FACS"
-
-\end_inset
-
-).
+Although the chromatin immunoprecipitation steps worked well in my hands
+ for test samples, I soon decided to remove this enrichment step in favour
+ of keeping as much library DNA as possible.
+ I showed by RT-PCR that my bait genes were expressed in the cells I was
+ investigating.
+ Additionally, all interactions may be relevant to the formation of chromosomal
+ translocations, so any resulting interaction data is useful.
 \end_layout
 
 \begin_layout Standard
@@ -754,9 +970,228 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/facs/CD34 FACS Plots.eps
-	lyxscale 30
-	height 80theight%
+	filename figures/chapter 4/RT-PCR/RT-PCR.ai
+	lyxscale 50
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-RT-PCR"
+
+\end_inset
+
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ RT-PCR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+B = Buffy Coat cells, C = CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells, G = genomic DNA control.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells not treated with DNaseI due to low cell numbers, hence genomic band
+ contamination.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Book 2 page 87 for GM12878 RT-PCR with MLL, page 100 for GM12878, GM06990
+ and HEK293 MLL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Carrier e4C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+SF9 (page 39, book 1) and then SL2 cells (page 48, book 1).
+ Page 67 for primer testing.
+ Page 108 for 3C check in carrier 3C material.
+\end_layout
+
+\end_inset
+
+ An established technique when using low cell numbers for techniques such
+ as ChIP and BS-Seq is to use 'carrier' chromatin to buffer loss of sample
+ DNA [#REFS].
+ This is done by processing cells from another organism in with the sample,
+ giving larger quantities of DNA to work with.
+ Loss through non-specific binding of DNA to plastic such as tubes and pipette
+ tips has less of an effect on the sample DNA, and steps such as precipitations
+ are aided by having larger pellets to work with.
+\end_layout
+
+\begin_layout Standard
+Intially I tried this technique by using the Sf9 cell line, derived from
+ 
+\emph on
+Spodoptera frugiperda
+\emph default
+ (Fall Armyworm), obtained from Maureen Hamon at the Babraham Institute.
+ Cells were processed in parallel with the sample as described in Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+ up until the point of permeabilisation.
+ Sf9 cells were then split into two aliquots of 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ cells, and 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ sample cells were added to one aliquot.
+ Both samples were then processed as normal for the rest of the 3C protocol.
+\end_layout
+
+\begin_layout Standard
+After this initial test run, I use the Schneider's line 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "S2R+"
+description "Schneider's line 2 Drosophila cell line"
+
+\end_inset
+
+S2R+) cell line, derived from 
+\emph on
+Drosophila melanogaster
+\emph default
+, grown with help from Dr.
+ Sarah Toscano at the Babraham Institute.
+ The reason for this change was because the genome of 
+\emph on
+Drosophila melanogaster
+\emph default
+ is known, allowing easy design of PCR primers to test for carrier DNA contamina
+tion, and to allow identification of any products occuring as a result of
+ a non-specific ligation event in the e4C.
+ The protocol was followed as described for the Sf9 cells.
+\end_layout
+
+\begin_layout Standard
+Initial tests with the carrier e4C were promising, showing good recovery
+ of sample DNA and successful 3C product detection using primers designed
+ for the 
+\emph on
+Drosophila melanogaster 
+\emph default
+genome (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S2R+3C-test"
+
+\end_inset
+
+).
+ However, due to the removal of the removal of the RNA Polymerase II ChIP
+ step (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ChIP-e4C"
+
+\end_inset
+
+) and subsequent aquisition of much larger CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cell collections (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:4C-with-large-cell-numbers"
+
+\end_inset
+
+), the carrier e4C protocol was not needed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/S2R+ 3C/S2R+ 3C.ai
+	lyxscale 50
+	width 70col%
 
 \end_inset
 
@@ -768,48 +1203,20 @@ status open
 
 \begin_layout Plain Layout
 
-\series bold
+\emph on
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:CD34-Separation-FACS"
+name "fig:S2R+3C-test"
 
 \end_inset
 
-
-\series default
-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-
-\series bold
-+
+Drosophila melanogaster
+\emph default
+ S2R+ 3C Tests
 \end_layout
 
 \end_inset
 
- Separation FACS Plots
-\end_layout
-
-\end_inset
-
-
-\series bold
- 
-\series default
-FACS plots after magnetic bead separation of fixed CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells.
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -819,25 +1226,123 @@ FACS plots after magnetic bead separation of fixed CD34
 \end_layout
 
 \begin_layout Section
-4C with low cell numbers
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4C-with-large-cell-numbers"
+
+\end_inset
+
+e4C with large cell numbers
 \end_layout
 
 \begin_layout Standard
-Talk about initial plan to collect multiple patient samples and pool them,
- then work on developing the carrier e4C, using chromatin from SF9 and then
- SL2 cells.
- 
+In December 2009 I was able to obtain a leukapheresis sample from Dr.
+ George Follows with the help of Kevin Jestice, the chief biomedical scientist
+ within the Haematology Department at Addenbrookes Hospital, Cambridge.
+ This sample came from a patient who had responded exceptionally well to
+ G-CSF treatment and had such a large number of mobilised peripheral CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Section
-4C with large cell numbers
+\end_inset
+
+ cells that there was leukapheresis sample left spare after use by the Haematolo
+gy Department.
+ I processed this sample as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:M&M-Leukapheresis-collections"
+
+\end_inset
+
+.
+ The final yield of CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells from this single collection was 2.88 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ cells, over four times the number of cells collected from a year of weekly
+ peripheral blood CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ sample collections.
+ These collections also had the added benefit of coming from a single patient,
+ so including one less variable in the population variation we may see within
+ the interaction datasets.
+ In a subsequent two leukapheresis collections 3.99 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ and 1.4 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells were collected, with an average purity of 95.3%.
 \end_layout
 
 \begin_layout Standard
-Talk about new, larger samples that came in.
- Scaling up the cell prep protocol to work with it and then explaining that
- this led to the carrier e4C being dropped.
- 
+These three CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ collections were used to generate 3C libraries that went on to form e4C
+ libraries.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Needs expanding / writing!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
