@@ -970,7 +970,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/RT-PCR/RT-PCR.ai
+	filename figures/chapter 4/RT-PCR/RT-PCR.eps
 	lyxscale 50
 	width 60col%
 
@@ -1189,7 +1189,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/S2R+ 3C/S2R+ 3C.ai
+	filename figures/chapter 4/S2R+ 3C/S2R+ 3C.eps
 	lyxscale 50
 	width 70col%
 

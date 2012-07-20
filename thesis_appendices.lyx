@@ -3,10 +3,13 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\usepackage{minted}
+\end_preamble
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -67,51 +70,736 @@
 
 \begin_layout Chapter
 \start_of_appendix
+e4C analysis scripts
+\end_layout
 
-\lang british
+\begin_layout Section
+e4C sequence processing and trimming 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:APP-library-trimming-script"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Put Felix's script here which trimmed the barcodes off etc.
+\end_layout
+
+\begin_layout Section
+Restriction fragment distribution normalisation
+\end_layout
+
+\begin_layout Subsection
+inputminted method
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+inputminted{perl}{figures/scripts/make_windows.pl}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+LaTeX include method
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minted}{perl}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+include{figures/scripts/make_windows.pl}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minted}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lyx include child document method
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand verbatiminput
+filename "figures/scripts/make_windows.pl"
+lstparams "caption={make_windows.pl},label={make_windows.pl}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Copy and paste method
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minted}{perl}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#!/usr/bin/perl
+\end_layout
+
+\begin_layout Plain Layout
+
+use warnings;
+\end_layout
+
+\begin_layout Plain Layout
+
+use strict;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+my ($infile,$outfile,$window,$min_count) = @ARGV;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+unless (defined $min_count) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  die "Usage is make_windows.pl [input file] [output file] [window size]
+ [minimum count]
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+open (IN,$infile) or die "Can't read $infile: $!";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if (-e $outfile) {
+\end_layout
+
+\begin_layout Plain Layout
+
+  print "$outfile already exists.
+  Overwrite [Y/N]?";
+\end_layout
+
+\begin_layout Plain Layout
+
+  my $answer = <STDIN>;
+\end_layout
+
+\begin_layout Plain Layout
+
+  if ($answer !~ /^y/i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    die "Exiting...
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+open (OUT,'>',$outfile) or die "Can't write to $outfile: $!";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# This is the store of lines we're currently dealing with
+\end_layout
+
+\begin_layout Plain Layout
+
+my @current_lines;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# This is the chromosome we're dealing with
+\end_layout
+
+\begin_layout Plain Layout
+
+my $last_chromosome = '';
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Record the header
+\end_layout
+
+\begin_layout Plain Layout
+
+my $header = <IN>;
+\end_layout
+
+\begin_layout Plain Layout
+
+chomp $header;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+my @header = split(/
+\backslash
+t/,$header);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+for my $l (0 ..
+ $#header) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	warn "header[$l] = $header[$l]
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print OUT join("
+\backslash
+t",qw(Chr Start End Count),@header[10..$#header]),"
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while (<IN>) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  chomp;
+\end_layout
+
+\begin_layout Plain Layout
+
+  my @sections = split(/
+\backslash
+t/);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Check for putting out a status update
+\end_layout
+
+\begin_layout Plain Layout
+
+  if ($sections[1] ne $last_chromosome) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    warn "Processing Chromosome $sections[1]
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+    $last_chromosome = $sections[1];
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  if (@current_lines) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Check if we can add this to the existing set
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    if ($current_lines[0]->[1] eq $sections[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+		and int ($current_lines[0]->[2] / $window) == int ($sections[3] / $window))
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+      push @current_lines,
+\backslash
+@sections;
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    else {
+\end_layout
+
+\begin_layout Plain Layout
+
+      check_valid_group(@current_lines);
+\end_layout
+
+\begin_layout Plain Layout
+
+      @current_lines = (
+\backslash
+@sections);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  else {
+\end_layout
+
+\begin_layout Plain Layout
+
+    push @current_lines, 
+\backslash
+@sections;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sub check_valid_group {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  my @sections = @_;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  if (@sections < $min_count) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    return;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  # If we're keeping this then we need to work out
+\end_layout
+
+\begin_layout Plain Layout
+
+  # the position of the window and record the 
+\end_layout
+
+\begin_layout Plain Layout
+
+  # number of hits and the average measure for
+\end_layout
+
+\begin_layout Plain Layout
+
+  # each sample
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  my $window_start = $window * int($sections[0]->[2]/$window);
+\end_layout
+
+\begin_layout Plain Layout
+
+  my $window_end = $window_start + $window;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  my @line = ($sections[0]->[1],$window_start,$window_end, scalar @sections);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  for my $index (10..$#header) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    my $average;
+\end_layout
+
+\begin_layout Plain Layout
+
+    foreach my $probe (@sections) {
+\end_layout
+
+\begin_layout Plain Layout
+
+      $average += $probe->[$index];
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    $average /= @sections;
+\end_layout
+
+\begin_layout Plain Layout
+
+    push @line, $average;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  print OUT join("
+\backslash
+t",@line),"
+\backslash
+n";
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minted}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 Hi-C data analysis work
 \end_layout
 
 \begin_layout Chapter
-
-\lang british
 Other Perl scripts and R scripts used
 \end_layout
 
 \begin_layout Chapter
-
-\lang british
 Web Tools
 \end_layout
 
 \begin_layout Section
-
-\lang british
 Publicly available tools I’ve written - Cytobands, Genome RE Sites, Sequences.
  Mention traffic.
 \end_layout
 
 \begin_layout Section
-
-\lang british
 Talk about contribution to fastQC 
 \end_layout
 
 \begin_layout Chapter
-
-\lang british
 Publications
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Meet the neighbours: tools to dissect nuclear structure and function
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Osborne CS, 
 \series bold
 Ewels PA
@@ -120,8 +808,6 @@ Ewels PA
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 Briefings in Functional Genomics (2011) 10(1), 11-7
 \end_layout
 
