@@ -761,96 +761,18 @@ Sequence trimming
 \end_layout
 
 \begin_layout Standard
-Library sequence information was produced in FASTQ format and checked for
- quality using FastQC and FastQ Screen (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:e4C-Library-FastQC"
-
-\end_inset
-
-).
- The expected structure of each read was as follows (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:e4C-library-structure"
-
-\end_inset
-
-, Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Expected-read-structure"
-
-\end_inset
-
-): the barcode region specific to each library, an 
-\emph on
-AseI
-\emph default
- recognition site, unknown partner sequence representing the adjacent DNA
- fragment in the 3C library.
- In a small proportion of cases, we expected to then see either a second
- 
-\emph on
-AseI
-\emph default
- recognition site followed by a third interaction partner, or an 
-\emph on
-NlaIII
-\emph default
- recognition site followed by Illumina adapter sequence.
-\end_layout
-
-\begin_layout Standard
-Dr.
- Felix Kreuger in the Babraham Bioinformatics group wrote a script in Perl
- process the reads generated from the first e4C sequencing run, which I
- later modified and used myself (Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:APP-library-trimming-script"
-
-\end_inset
-
-).
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Write walkthrough of exactly what the script does, in the order that it
- does it.
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Over 97% of the sequences from each e4C library started with the expected
- barcode sequence (Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Library-trimming-statistics"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "40col%"
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/e4C sequence structure/e4C sequence structure.ai
+	filename figures/chapter 5/e4C sequence structure/e4C sequence structure.eps
 	lyxscale 50
-	width 100col%
+	width 30col%
 
 \end_inset
 
@@ -875,13 +797,106 @@ Expected structure of reads in each e4C library
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Library sequence information was produced in FASTQ format and checked for
+ quality using FastQC and FastQ Screen (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-Library-FastQC"
+
+\end_inset
+
+).
+ The expected structure of each read was as follows: the barcode region
+ specific to each library, an 
+\emph on
+AseI
+\emph default
+ recognition site, unknown partner sequence representing the adjacent DNA
+ fragment in the 3C library (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-structure"
+
+\end_inset
+
+, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-primers"
+
+\end_inset
+
+).
+ In a small proportion of cases, we expected to then see either a second
+ 
+\emph on
+AseI
+\emph default
+ recognition site followed by a third interaction partner, or an 
+\emph on
+NlaIII
+\emph default
+ recognition site followed by Illumina adapter sequence.
+\end_layout
+
+\begin_layout Standard
+Dr.
+ Felix Kreuger in the Babraham Bioinformatics group wrote a script in Perl
+ process the reads generated from the first e4C sequencing run, which I
+ later modified and used myself (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-library-trimming-script"
+
+\end_inset
+
+).
+ The script goes through the FastQ file and checks the first three base
+ pairs of each sequence to see if it matches the barcode.
+ If so, it trims them off and looks to see if the next six base pairs are
+ an AseI recognition site (ATTAAT).
+ Next, the script searches for 
+\emph on
+AseI
+\emph default
+ and 
+\emph on
+NlaIII
+\emph default
+ sites.
+ If a second 
+\emph on
+AseI
+\emph default
+ site is found the line is rejected, if a 
+\emph on
+NlaIII
+\emph default
+ site is found the sequence is trimmed to that site.
+ If the remaining sequence is less than 25 bp long it is rejected.
+ The remaining content in the FastQ read, such as quality scores, are trimmed
+ to the same length and the line is printed to the output file.
+\end_layout
+
+\begin_layout Standard
+Over 97% of the sequences from each e4C library started with the expected
+ barcode sequence (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Library-trimming-statistics"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -889,322 +904,17 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="2">
-<features tabularvalignment="middle" tabularwidth="100col%">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Illumina sequencing primer 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-PE Ad 1.0 + hMLL 47591
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-ACACTCTTTCCCTACACGACGCTCTTCCGATCTGCAACAGATAATAATGCAAATGA
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hMLL 57609 
-\emph on
-(Seqencing Primer)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-CCGATCTGCAACAGATAATAATGCAAATGACAAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hMLL Expected Sequence
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-ACACTCTTTCCCTACACGACGCTCTTCCGATCTGCAACAGATAATAATGCAAATGACAAAT
-\series bold
-\bar under
-TTTATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-PE Ad 1.0 + hBCR 89825
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-ACACTCTTTCCCTACACGACGCTCTTCCGATCTGTCTCTGTTTATGCTTTTGTTCAG
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hBCR 100499 
-\emph on
-(Seqencing Primer)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-TGTCTCTGTTTATGCTTTTGTTCAGAAGCTTAGTACCA
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hBCR Expected Sequence
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-ACACTCTTTCCCTACACGACGCTCTTCCGATCTGTCTCTGTTTATGCTTTTGTTCAGAAGCTTAGTACCA
-\series bold
-\bar under
-GGAATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-PE Ad 1.0 + hABL
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hABL 
-\emph on
-(Seqencing Primer)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-hABL Expected Sequence
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-these need confirming
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Expected-read-structure"
-
-\end_inset
-
-Sequences of e4C libraries
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="7">
-<features tabularvalignment="middle" tabularwidth="100col%">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1217,6 +927,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Reads starting with correct barcode
 \end_layout
 
@@ -1226,6 +938,8 @@ Reads starting with correct barcode
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Reads with second 
 \emph on
 AseI
@@ -1239,6 +953,8 @@ AseI
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Reads with 
 \emph on
 NlaIII
@@ -1252,6 +968,8 @@ NlaIII
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Reads with 
 \emph on
 NlaIII
@@ -1265,6 +983,8 @@ NlaIII
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Total sequences to be mapped
 \end_layout
 
@@ -1274,6 +994,8 @@ Total sequences to be mapped
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 % aligned
 \end_layout
 
@@ -1281,11 +1003,12 @@ Total sequences to be mapped
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 BCR
 \emph default
@@ -1294,37 +1017,45 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 22390498
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 85448 (0.4%)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 3823824 (17.1%)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 2860849 (12.8%)
 \end_layout
 
@@ -1334,7 +1065,9 @@ BCR
 \begin_inset Text
 
 \begin_layout Plain Layout
-18203128 (81.3 %)
+
+\size scriptsize
+18203128 (81.3%)
 \end_layout
 
 \end_inset
@@ -1343,6 +1076,8 @@ BCR
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 14931033 (66.7%)
 \end_layout
 
@@ -1350,11 +1085,12 @@ BCR
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 BCR
 \emph default
@@ -1363,7 +1099,7 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1372,7 +1108,7 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1381,7 +1117,7 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1390,7 +1126,7 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1419,11 +1155,12 @@ BCR
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1432,37 +1169,45 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 55868
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 15 (0.03%)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 29279 (52.4%)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 1819 (3.3%)
 \end_layout
 
@@ -1472,6 +1217,8 @@ MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 26129 (46.8%)
 \end_layout
 
@@ -1481,6 +1228,8 @@ MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 21923 (39.2%)
 \end_layout
 
@@ -1488,11 +1237,12 @@ MLL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1501,7 +1251,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1510,7 +1260,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1519,7 +1269,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1528,7 +1278,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1557,11 +1307,12 @@ MLL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1570,7 +1321,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1579,7 +1330,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1588,7 +1339,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1597,7 +1348,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1626,11 +1377,12 @@ MLL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1639,7 +1391,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1648,7 +1400,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1657,7 +1409,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1666,7 +1418,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1695,11 +1447,12 @@ MLL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 ABL
 \emph default
@@ -1708,7 +1461,7 @@ ABL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1717,7 +1470,7 @@ ABL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1726,7 +1479,7 @@ ABL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1735,7 +1488,7 @@ ABL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1764,11 +1517,12 @@ ABL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1777,7 +1531,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1786,7 +1540,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1795,7 +1549,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1804,7 +1558,7 @@ MLL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1833,11 +1587,12 @@ MLL
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size scriptsize
 \emph on
 MLL
 \emph default
@@ -1964,18 +1719,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset listings
-inline false
-status open
 
-\begin_layout Plain Layout
-
-~ bowtie -p 8 -m 1 --best hg19 <trimmed_reads.txt> <output_alignment.bowtie>
-\end_layout
-
-\end_inset
-
-
+\family typewriter
+\size small
+bowtie -q --phred64-quals -p 8 -m 1 hg19 <trimmed_reads.txt> <output_alignment.bow
+tie>
 \end_layout
 
 \begin_layout Plain Layout
@@ -1997,16 +1745,17 @@ Bowtie alignment parameters
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2017,11 +1766,51 @@ Parameter
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input is in FastQ format
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+--phred64-quals
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Correct interpretation of ASCII quality scores
 \end_layout
 
 \end_inset
@@ -2037,7 +1826,7 @@ Description
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2057,31 +1846,11 @@ Use eight CPU cores for the alignment
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Ignore any read with more than one alignment
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
---best
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -2097,7 +1866,7 @@ hg19
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
