@@ -4,7 +4,7 @@
 \begin_header
 \textclass report
 \begin_preamble
-\usepackage{minted}
+
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -85,7 +85,122 @@ name "sec:APP-library-trimming-script"
 \end_layout
 
 \begin_layout Standard
-Put Felix's script here which trimmed the barcodes off etc.
+Not sure if this should go in as I didn't write it?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+include{figures/scripts/sort_prey_seqs_according_to_bait_barcode.pl}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+In-silico
+\emph default
+ restriction fragment libraries 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:APP-in-silico-restriction-fragments"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+include{figures/scripts/potential_hits.pl}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+GC content and fragment length bias detection 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:APP-GC-content-bias"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Systematic bias correction 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:APP-systematic-bias-correction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -97,6 +212,25 @@ inputminted method
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+in preamble: 
+\backslash
+usepackage{minted}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -126,11 +260,20 @@ linespread{2}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 LaTeX include method
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -145,21 +288,7 @@ linespread{1}
 
 
 \backslash
-begin{minted}{perl}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 include{figures/scripts/make_windows.pl}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minted}
 \end_layout
 
 \begin_layout Plain Layout
@@ -174,11 +303,20 @@ linespread{2}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Lyx include child document method
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -202,7 +340,7 @@ lstparams "caption={make_windows.pl},label={make_windows.pl}"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -218,11 +356,20 @@ linespread{2}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Copy and paste method
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -770,8 +917,20 @@ linespread{2}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
-Hi-C data analysis work
+Hi-C 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:APP-Hi-C"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -779,7 +938,14 @@ Other Perl scripts and R scripts used
 \end_layout
 
 \begin_layout Chapter
-Web Tools
+Web Tools 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:APP-Web-Tools"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -788,7 +954,7 @@ Publicly available tools I’ve written - Cytobands, Genome RE Sites, Sequences.
 \end_layout
 
 \begin_layout Section
-Talk about contribution to fastQC 
+Talk about contribution to FastQC 
 \end_layout
 
 \begin_layout Chapter

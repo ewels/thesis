@@ -89,6 +89,274 @@ Developing an assay for gene association
 \end_layout
 
 \begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Chromosome Conformation Capture
+\end_layout
+
+\begin_layout Standard
+Chromosome Conformation Capture (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3C"
+description "Chromosome Conformation Capture"
+
+\end_inset
+
+3C) is a ligation based proximity assay.
+ First published in 2002 by Dekker 
+\emph on
+et.
+ al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dekker2002b"
+
+\end_inset
+
+ it allows the physical association of sequences of DNA to be interrogated.
+ 3C has become a key methodology in the field of nuclear organisation, and
+ a number of new techniques use it as a base.
+\end_layout
+
+\begin_layout Standard
+3C works by fixing protein and DNA in place with formaldehyde.
+ A restriction enyme is used to cut the DNA, typically recognising a 6 base
+ pair sequence, so cutting on average once every 1.2 Kb (
+\begin_inset Formula $6^{4}=1296$
+\end_inset
+
+).
+ This results in 
+\begin_inset Quotes eld
+\end_inset
+
+hairballs
+\begin_inset Quotes erd
+\end_inset
+
+ of cross linked DNA and protein which are diluted into a large volume.
+ A ligation reaction is then run, which favours ligations between sequences
+ held together by the formaldehyde cross links.
+ Cross links are reversed and the DNA is purified, leaving a 3C 
+\begin_inset Quotes eld
+\end_inset
+
+library
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Within this library, the frequency with which restriction fragments are
+ found ligated together corresponds to their degree of interaction within
+ the nucleus.
+\end_layout
+
+\begin_layout Standard
+The 3C library is a basis for a number of different assays that all measure
+ interaction frequencies.
+ Traditional 3C uses PCR with primers positioned adjacent to the restriction
+ enzyme recognition sites of two loci of interest.
+ If a PCR product is detected, these two sequences were physically close
+ within the nucleus.
+ The strength of bands on a gel can be used to quantify the strength of
+ this interaction, and qPCR can be used to accurately assess this for a
+ large number of primer pairs (3C qPCR).
+ Both of these techniques are used to probe interactions on a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-one
+\begin_inset Quotes erd
+\end_inset
+
+ basis; that is, investigating the interaction between two specific loci
+ at a time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/3C protocol/3C protocol.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3C_protocol"
+
+\end_inset
+
+
+\series default
+Overview of the 3C methodology
+\end_layout
+
+\end_inset
+
+R denotes the recognition sites for the first six-cutter restriction endonucleas
+e.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Enriched 4C
+\end_layout
+
+\begin_layout Standard
+Enriched 4C (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "e4C"
+description "Enriched Chromosome Conformation Capture"
+
+\end_inset
+
+e4C) starts with the preparation of 3C libraries as described above, and
+ uses further processing to generate a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-all
+\begin_inset Quotes erd
+\end_inset
+
+ assay, which is capable of revealing the genome-wide interaction profile
+ of a single sequence of interest.
+\end_layout
+
+\begin_layout Standard
+A biotinylated primer annealing and extension step is used to do this, with
+ magnetic streptavidin beads pulling down all ligation products containing
+ the sequence of interest, or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "bait"
+description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
+
+\end_inset
+
+bait
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A second restriction enzyme is then used to cut the enriched library, an
+ enzyme with a 4 base pair recognition site is used to cut approximately
+ once every 256 base pairs (
+\begin_inset Formula $4^{4}=256$
+\end_inset
+
+).
+ The resulting sticky end is then used to ligate an adapter to the end of
+ the unknown partner sequence.
+ This allows the libary to be amplified using PCR.
+ Primers with overhanging tails are used to add the sequence needed for
+ sequencing with the Illumina Genome Analyser IIx.
+ A custom sequencing primer is used which binds to the bait region immediately
+ before the first restriction enzyme cut site, preventing known sequence
+ from being unnecessarily sequenced.
+ A few remaining few base pairs are left betweenthe sequencing primer and
+ the cut site, to use as a barcode region to allow multiplexing of libraries
+ on the sequencing run.
+ This sequence is also used to confirm the identity of the bait sequence.
+ The remaining base pairs that are sequenced after the cut site are aligned
+ to the genome, and their distribution used to plot a genome-wide interaction
+ profile for the bait sequence.
+\end_layout
+
+\begin_layout Standard
+See Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:e4C-Analysis"
+
+\end_inset
+
+ for further details about the analysis of e4C data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/4C protocol/4C protocol.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C_protocol"
+
+\end_inset
+
+
+\series default
+Overview of the e4C methodology
+\end_layout
+
+\end_inset
+
+R' denotes the recognition site for the second four-cutter restriction endonucle
+ase.
+ BC denotes the barcode region used to confirm the identity of the bait
+ sequence and identify sequences when multiplexing libraries for sequencing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:chap4-CD34-cell-prep"
@@ -278,270 +546,6 @@ FACS plots after magnetic bead separation of fixed CD34
 \end_layout
 
 \begin_layout Section
-Chromosome Conformation Capture
-\end_layout
-
-\begin_layout Standard
-Chromosome Conformation Capture (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "3C"
-description "Chromosome Conformation Capture"
-
-\end_inset
-
-3C) is a ligation based proximity assay.
- First published in 2002 by Dekker 
-\emph on
-et.
- al.
-
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Dekker2002b"
-
-\end_inset
-
- it allows the physical association of sequences of DNA to be interrogated.
- 3C has become a key methodology in the field of nuclear organisation, and
- a number of new techniques use it as a base.
-\end_layout
-
-\begin_layout Standard
-3C works by fixing protein and DNA in place with formaldehyde.
- A restriction enyme is used to cut the DNA, typically recognising a 6 base
- pair sequence, so cutting on average once every 1.2 Kb (
-\begin_inset Formula $6^{4}=1296$
-\end_inset
-
-).
- This results in 
-\begin_inset Quotes eld
-\end_inset
-
-hairballs
-\begin_inset Quotes erd
-\end_inset
-
- of cross linked DNA and protein which are diluted into a large volume.
- A ligation reaction is then run, which favours ligations between sequences
- held together by the formaldehyde cross links.
- Cross links are reversed and the DNA is purified, leaving a 3C 
-\begin_inset Quotes eld
-\end_inset
-
-library
-\begin_inset Quotes erd
-\end_inset
-
-.
- Within this library, the frequency with which restriction fragments are
- found ligated together corresponds to their degree of interaction within
- the nucleus.
-\end_layout
-
-\begin_layout Standard
-The 3C library is a basis for a number of different assays that all measure
- interaction frequencies.
- Traditional 3C uses PCR with primers positioned adjacent to the restriction
- enzyme recognition sites of two loci of interest.
- If a PCR product is detected, these two sequences were physically close
- within the nucleus.
- The strength of bands on a gel can be used to quantify the strength of
- this interaction, and qPCR can be used to accurately assess this for a
- large number of primer pairs (3C qPCR).
- Both of these techniques are used to probe interactions on a 
-\begin_inset Quotes eld
-\end_inset
-
-one-to-one
-\begin_inset Quotes erd
-\end_inset
-
- basis; that is, investigating the interaction between two specific loci
- at a time.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 4/3C protocol/3C protocol.eps
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:3C_protocol"
-
-\end_inset
-
-
-\series default
-Overview of the 3C methodology
-\end_layout
-
-\end_inset
-
-R denotes the recognition sites for the first six-cutter restriction endonucleas
-e.
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Enriched 4C
-\end_layout
-
-\begin_layout Standard
-Enriched 4C (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "e4C"
-description "Enriched Chromosome Conformation Capture"
-
-\end_inset
-
-e4C) starts with the preparation of 3C libraries as described above, and
- uses further processing to generate a 
-\begin_inset Quotes eld
-\end_inset
-
-one-to-all
-\begin_inset Quotes erd
-\end_inset
-
- assay, which is capable of revealing the genome-wide interaction profile
- of a single sequence of interest.
-\end_layout
-
-\begin_layout Standard
-A biotinylated primer annealing and extension step is used to do this, with
- magnetic streptavidin beads pulling down all ligation products containing
- the sequence of interest, or 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "bait"
-description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
-
-\end_inset
-
-bait
-\begin_inset Quotes erd
-\end_inset
-
-.
- A second restriction enzyme is then used to cut the enriched library, an
- enzyme with a 4 base pair recognition site is used to cut approximately
- once every 256 base pairs (
-\begin_inset Formula $4^{4}=256$
-\end_inset
-
-).
- The resulting sticky end is then used to ligate an adapter to the end of
- the unknown partner sequence.
- This allows the libary to be amplified using PCR.
- Primers with overhanging tails are used to add the sequence needed for
- sequencing with the Illumina Genome Analyser IIx.
- A custom sequencing primer is used which binds to the bait region immediately
- before the first restriction enzyme cut site, preventing known sequence
- from being unnecessarily sequenced.
- A few remaining few base pairs are left betweenthe sequencing primer and
- the cut site, to use as a barcode region to allow multiplexing of libraries
- on the sequencing run.
- This sequence is also used to confirm the identity of the bait sequence.
- The remaining base pairs that are sequenced after the cut site are aligned
- to the genome, and their distribution used to plot a genome-wide interaction
- profile for the bait sequence.
-\end_layout
-
-\begin_layout Standard
-See Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:e4C-Analysis"
-
-\end_inset
-
- for further details about the analysis of e4C data.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 4/4C protocol/4C protocol.eps
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:e4C_protocol"
-
-\end_inset
-
-
-\series default
-Overview of the e4C methodology
-\end_layout
-
-\end_inset
-
-R' denotes the recognition site for the second four-cutter restriction endonucle
-ase.
- BC denotes the barcode region used to confirm the identity of the bait
- sequence and identify sequences when multiplexing libraries for sequencing.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 Restriction Enzyme Choice
 \end_layout
 
@@ -653,9 +657,9 @@ BamHI e4C Libraries
 \end_layout
 
 \begin_layout Standard
-After a number of diagnostic tests I found that the underlying problem was
- poor digestion efficiency in the first steps of the 3C, with only 44% of
- BamHI recognition sites being cut
+Further tests showed that the underlying problem was poor digestion efficiency
+ in the first steps of the 3C, with only 44% of BamHI recognition sites
+ being cut
 \begin_inset Note Note
 status collapsed
 
@@ -809,6 +813,130 @@ Primer Design
 \end_layout
 
 \begin_layout Standard
+Once the restriction enzymes for the e4C have been chosen, primers can be
+ designed for the assay.
+ A suitable bait fragment must be chosen; for my first e4C libraries with
+ 
+\emph on
+MLL
+\emph default
+ and 
+\emph on
+BCR
+\emph default
+, I picked 
+\emph on
+AseI
+\emph default
+ fragments which lay within the breakpoint cluster regions (hg19 chr22:23,596,60
+8-23,612,941 and chr11:118,354,804-118,356,061, respectively).
+ Bait fragments should not be excessively large or small, as this can affect
+ the ligation efficiency in the generation of the 3C library.
+ One end of the bait fragment is used for the e4C, this must be free of
+ repetitive DNA, and have enough room to design primers before the first
+ 
+\emph on
+NlaIII
+\emph default
+ restriction site.
+\end_layout
+
+\begin_layout Standard
+Three primers are designed for each e4C library: a primer to do the initial
+ enrichment step from the 3C library, which must have a biotinylated moiety
+ on the 5' base to bind the streptavidin beads; a nested primer which binds
+ the bait sequence and has an overhanging tail with the half of the Illumina
+ Paired End Adapter 1.0 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PE Ad 1.0"
+description "Illumina Paired End Adapter 1.0"
+
+\end_inset
+
+PE Ad 1.0); a sequencing primer which aligns with the resulting library sequence,
+ close to the 
+\emph on
+AseI
+\emph default
+ cut site but leaving a barcode sequence of at least 3 base pairs.
+ This bar code region is important - it allows us to multiplex e4C libraries
+ to save on sequencing costs, but also confirms that the sequenced fragment
+ is the expected bait.
+ The sequencing primers were designed to have properties as close to the
+ original Illumina sequencing primer as possible, within the constraints
+ of the bait region sequence (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-sequencing-primer-properties"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Paired end sequencing or single end sequencing?
+\end_layout
+
+\begin_layout Standard
+When I started my project, the intention was to use Illumina Paired End
+ Sequencing to sequence the libraries.
+ I designed primers and adapters so that the first read would be from the
+ 
+\emph on
+NlaIII 
+\emph default
+adapter end of the e4C fragment and would give sequence information about
+ the unknown, captured fragment.
+ The second read of the paired end run would then go from the bait end of
+ the fragment, and confirm the identity of the e4C bait region.
+ Dr.
+ Cameron Osborne was sequencing mouse e4C libraries and ran into problems
+ with this approach however: read lengths were not sufficient to sequence
+ through the entire captured region and into the bait sequence on the first
+ round of sequencing, so we could not be certain that the first read was
+ not from a concatemer, and so not directly ligated to the bait sequence.
+ At this time, the sequences of the Illumina sequencing primers were made
+ public, and we decided to use our own custom sequencing primers.
+ This allowed us to use single end sequencing runs which start very close
+ to the ligation junction of the e4C products, so confirming the identity
+ of the bait product but giving us enough sequence in the unknown partner
+ to be aligned to the genome.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+What were the other problems with the paired end approach? 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+What were the other problems with the paired end approach?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It should be noted that different e4C libraries with different sequencing
+ primers can be multiplexed within the same lane.
+ However, multiplexing with libraries using the standard Illumina PE Ad
+ 1.0 sequencing primer is not advised, as this primer also binds the e4C
+ library and sequences the bait region.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -816,7 +944,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="25" columns="3">
+<lyxtabular version="3" rows="20" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
@@ -831,7 +959,7 @@ BCR
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -840,7 +968,7 @@ Germline
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -849,8 +977,13 @@ Germline
 \size scriptsize
 \color red
 TGTTTCCTGCAGCACAAGAGGTTGGCAGAGCAACCTCAGAACCTCTTCTGTCTCTGTTTATGCTTTTGTTCAGAAGCTTA
-GTACCAGGA
+GTACCA
+\series bold
+\color magenta
+GGA
+\series default
 \bar under
+\color red
 ATTAAT
 \end_layout
 
@@ -998,7 +1131,7 @@ GTCTCTGTTTATGCTTTTGTTCAG
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1007,7 +1140,7 @@ Sequencing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1214,112 +1347,6 @@ TGTCTCTGTTTATGCTTTTGTTCAGAAGCTTAGTACCA
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Library
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color green
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\color inherit
-GTCTCTGTTTATGCTTTTGTTCAGAAGCTTAGTACCA
-\series bold
-\color green
-GGA
-\series default
-\bar under
-\color red
-ATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1346,8 +1373,13 @@ Germline
 \family typewriter
 \size scriptsize
 \color red
-GAACAAAATCACACCCTATTTGCCTTCACATTTGCAACAGATAATAATGCAAATGACAAATTTT
+GAACAAAATCACACCCTATTTGCCTTCACATTTGCAACAGATAATAATGCAAATGACAAAT
+\series bold
+\color magenta
+TTT
+\series default
 \bar under
+\color red
 ATTAAT
 \end_layout
 
@@ -1462,7 +1494,7 @@ GCAACAGATAATAATGCAAATGA
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1471,7 +1503,7 @@ Sequencing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1590,48 +1622,6 @@ CCGATCTGCAACAGATAATAATGCAAATGACAAAT
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Library
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-\color green
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\color inherit
-GCAACAGATAATAATGCAAATGACAAAT
-\series bold
-\color green
-TTT
-\series default
-\bar under
-\color red
-ATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1686,8 +1676,13 @@ Germline
 
 
 \color red
-AAAGGAGCCAGAGCAAGTCAGAATTTGGTTTATTGTTGGAGATTTTAGGGCGAAAAT
+AAAGGAGCCAGAGCAAGTCAGAATTTGGTTTATTGTTGGAGATTTTAGGGCGAA
+\series bold
+\color magenta
+AAT
+\series default
 \bar under
+\color red
 ATTAAT
 \end_layout
 
@@ -1798,7 +1793,7 @@ GGTTTATTGTTGGAGATTTTAGGG
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1807,7 +1802,7 @@ Sequencing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1930,49 +1925,6 @@ CGATCTGGTTTATTGTTGGAGATTTTAGGGCGAA
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Library
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-\color green
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\color inherit
-GGTTTATTGTTGGAGATTTTAGGGCGAA
-\series bold
-\bar under
-\color green
-AAT
-\series default
-\bar default
-\color red
-ATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2000,8 +1952,13 @@ Germline
 \size scriptsize
 \color red
 ACAGCAGCACCCTTTCTGTTGACTAGAAGTTAGGCTGTTGTAATAATAAACCCCTGAAACAGTGTGTTTATCAGTAACTA
-GTCTTCGTTT
+GTCT
+\series bold
+\color magenta
+TCGTTT
+\series default
 \bar under
+\color red
 ATTAAT
 \end_layout
 
@@ -2153,7 +2110,7 @@ CCCCTGAAACAGTGTGTTTATC
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2162,7 +2119,7 @@ Sequencing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2353,116 +2310,6 @@ CGATCTCCCCTGAAACAGTGTGTTTATCAGTAACTAGTCT
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Library
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\color green
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\color inherit
-CCCCTGAAACAGTGTGTTTATCAGTAACTAGTCT
-\series bold
-\bar under
-\color green
-TCGTTT
-\series default
-\color red
-ATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2489,8 +2336,13 @@ Germline
 \family typewriter
 \size scriptsize
 \color red
-CCACTGCGCCTGGCTAGTTTTCACTGGACAATACCTTGATGAAGCAGCAAAAATT
+CCACTGCGCCTGGCTAGTTTTCACTGGACAATACCTTGATGAAGCAGCAAAA
+\series bold
+\color magenta
+ATT
+\series default
 \bar under
+\color red
 ATTAAT
 \end_layout
 
@@ -2649,7 +2501,7 @@ CCTTGATGAAGCAGCAAAAA
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2658,7 +2510,7 @@ Sequencing
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2752,48 +2604,6 @@ GCTCTTCCGATCTCCTTGATGAAGCAGCAAAA
 \end_inset
 </cell>
 </row>
-<row>
-<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Library
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-\size scriptsize
-\color green
-ACACTCTTTCCCTACACGACGCTCTTCCGATCT
-\color inherit
-CCTTGATGAAGCAGCAAAA
-\series bold
-\color green
-ATT
-\series default
-\bar under
-\color red
-ATTAAT
-\end_layout
-
-\end_inset
-</cell>
-</row>
 </lyxtabular>
 
 \end_inset
@@ -2817,6 +2627,497 @@ e4C primers
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Length (bp)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GC Content
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Illumina Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77.4°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.5% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BCR Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73.4°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36.8%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.2°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34.3%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABL Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77.9°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+46.9% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL-1 Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+76.1°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL-2 Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.7°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.5%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:e4C-sequencing-primer-properties"
+
+\end_inset
+
+e4C sequencing primer properties
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Illumina sequencing primer 1: ACACTCTTTCCCTACACGACGCTCTTCCGATCT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+NlaIII
+\emph default
+ e4C adapter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+5' 
+\size scriptsize
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\size footnotesize
+§AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG 3'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+3' G*TACTCTAGCCTTCTCGCCAAGTCGTCCTTACGGCTC 5'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE Ad 1.0 Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE Ad 2.0 Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e4C library sequence structure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:illumina-adapter-primers"
+
+\end_inset
+
+Illumina e4C adapter primers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+§ denotes a phosphorylation modification.
+ * denotes a phosphorothioate modification.
 \end_layout
 
 \end_inset
@@ -3338,7 +3639,7 @@ reference "sub:M&M-Leukapheresis-collections"
 \end_layout
 
 \begin_layout Standard
-These three CD34
+The first CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -3347,18 +3648,48 @@ These three CD34
 
 \end_inset
 
- collections were used to generate 3C libraries that went on to form e4C
- libraries.
-\begin_inset Foot
-status open
+ collection was used to generate a 3C library which was used as the basis
+ for the e4C libraries.
+ The second CD34
+\begin_inset script superscript
 
 \begin_layout Plain Layout
-Needs expanding / writing!
++
 \end_layout
 
 \end_inset
 
+ collection was used to generate 3C material used in the 3C qPCR validation
+ (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Validation-by-3C"
 
+\end_inset
+
+).
+ The third CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ collection was used to generate 
+\emph on
+HindIII
+\emph default
+ 3C material by Alice Young, a fellow PhD student in my group.
+ She went on to create Hi-C libraries with this material (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Hi-C"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
