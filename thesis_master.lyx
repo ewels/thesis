@@ -5,7 +5,6 @@
 \textclass report
 \begin_preamble
 \usepackage[margin=6pt,font=small,labelfont=bf,labelsep=endash]{caption}
-\usepackage{minted}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -92,6 +91,19 @@ Philip Ewels
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "thesis_firstpages.lyx"
@@ -127,10 +139,34 @@ LatexCommand tableofcontents
 
 \end_inset
 
+ 
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "thesis_chapter_1.lyx"

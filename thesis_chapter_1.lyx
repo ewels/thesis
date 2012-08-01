@@ -70,12 +70,24 @@ Introduction
 \end_layout
 
 \begin_layout Section
-Nuclear structure
+Nuclear organisation
 \end_layout
 
 \begin_layout Standard
 Gross nuclear structure, description of sub-compartments, leading on to
  chromosome territories.
+\end_layout
+
+\begin_layout Subsection
+Chromatin
+\end_layout
+
+\begin_layout Subsection
+Chromosome Territories
+\end_layout
+
+\begin_layout Subsection
+Nuclear compartmentalisation
 \end_layout
 
 \begin_layout Section
@@ -85,7 +97,38 @@ Transcription factories
 \begin_layout Standard
 Transcription factories in detail as distinct sub-compartments.
  Transcription takes place in transcription factories.
- 
+\end_layout
+
+\begin_layout Section
+Nuclear interactions
+\end_layout
+
+\begin_layout Subsection
+Looping
+\end_layout
+
+\begin_layout Subsection
+Long range interactions
+\end_layout
+
+\begin_layout Section
+Techniques to investigate nuclear organisation
+\end_layout
+
+\begin_layout Subsection
+3C
+\end_layout
+
+\begin_layout Subsection
+3C derived techniques
+\end_layout
+
+\begin_layout Subsection
+Fluorescence 
+\emph on
+in-situ 
+\emph default
+hybridisation
 \end_layout
 
 \begin_layout Section
@@ -95,6 +138,20 @@ Chromosomal translocations
 \begin_layout Standard
 Basics of HR, SSA and NHEJ.
  Contact first / breakage first models.
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\end_layout
+
+\begin_layout Subsection
+Mixed lineage leukaemia
 \end_layout
 
 \begin_layout Section

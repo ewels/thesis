@@ -97,7 +97,14 @@ Description of analysis of Dekker Hi-C dataset.
 \end_layout
 
 \begin_layout Section
-Validation by 3C
+Validation by 3C 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Validation-by-3C"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
