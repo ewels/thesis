@@ -5,6 +5,7 @@
 \textclass report
 \begin_preamble
 \usepackage[margin=6pt,font=small,labelfont=bf,labelsep=endash]{caption}
+\usepackage{minted}
 \end_preamble
 \use_default_options true
 \begin_modules
