@@ -2,17 +2,18 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass article
+\textclass report
 \use_default_options true
+\master thesis_master.lyx
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
 \font_roman default
-\font_sans default
+\font_sans helvet
 \font_typewriter default
-\font_default_family default
+\font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -25,9 +26,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +44,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,15 +65,30 @@
 
 \begin_body
 
+\begin_layout Chapter
+Preferential association of 
+\emph on
+BCR
+\emph default
+ with Chromosome 9 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:BCR-ABL"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Preferential association of BCR with Chromosome 9
+
+\emph on
+BCR
+\emph default
+ preferentially co-associates with telomeric Chromosome 9
 \end_layout
 
 \begin_layout Subsection
-BCR preferentially co-associates with ABL
-\end_layout
-
-\begin_layout Subsubsection
 BCR associations in CD34+ cells
 \end_layout
 
@@ -76,11 +97,11 @@ BCR associations in CD34+ cells
  Telomeric chromosome 9 is the highest hit in the entire genome.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 ABL 4C associations in ENCODE cell line GM12878
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Associations in ENCODE cell line GM06990
 \end_layout
 
@@ -90,11 +111,18 @@ Description of analysis of Dekker Hi-C dataset.
  and produce heat maps to show interacting regions.
 \end_layout
 
-\begin_layout Subsection
-Validation by 3C
+\begin_layout Section
+Validation by 3C 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Validation-by-3C"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Introduction
 \end_layout
 
@@ -102,25 +130,55 @@ Introduction
 Explain why trying to validate this interaction by 3C is a logical step
 \end_layout
 
+\begin_layout Subsection
+Results
+\end_layout
+
 \begin_layout Standard
-8.2.2.
- Results Results, explain why they’re not conclusive (interaction too weak
- to reliably quantitate using traditional 3C) 8.3.
- Validation by DNA-FISH 8.3.1.
- ( Introduction to the Surfeit Cluster of genes ) The weight given to this
- section sort of depends on how the FISH comes out.
- 8.3.2.
- ( Narrowing the window - the Surfeit Cluster ) Description of data analysis
- (“narrowing the window”) with the 4C and Hi-C that led me to the Surfeit
- Cluster.
- 8.3.3.
- DNA-FISH results 8.4.
- Discussion Describe why this work is new, and different to what has already
- been shown with purely DNA-FISH - eg.
+Results, explain why they’re not conclusive (interaction too weak to reliably
+ quantitate using traditional 3C)
+\end_layout
+
+\begin_layout Section
+Validation by DNA-FISH
+\end_layout
+
+\begin_layout Subsection
+Introduction to the Surfeit Cluster of genes
+\end_layout
+
+\begin_layout Standard
+The weight given to this section sort of depends on how the FISH comes out.
+\end_layout
+
+\begin_layout Subsection
+Narrowing the window - the Surfeit Cluster
+\end_layout
+
+\begin_layout Standard
+Description of data analysis (“narrowing the window”) with the 4C and Hi-C
+ that led me to the Surfeit Cluster.
+\end_layout
+
+\begin_layout Subsection
+DNA-FISH results
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+Describe why this work is new, and different to what has already been shown
+ with purely DNA-FISH - eg.
  the Neves paper (not only do the genes co-localize, they are the top co-localiz
 ation partners in the entire genome).
  Talk about the bystander effect (?).
  
+\end_layout
+
+\begin_layout Standard
+Should this go in the discussion section instead?
 \end_layout
 
 \end_body

@@ -6,7 +6,7 @@
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -66,24 +66,104 @@
 \begin_body
 
 \begin_layout Chapter
-Preferential association of BCR with Chromosome 9
+Preferential association of 
+\emph on
+BCR
+\emph default
+ with Chromosome 9 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:BCR-ABL"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-BCR preferentially co-associates with ABL
+
+\emph on
+BCR
+\emph default
+ preferentially co-associates with 9q34
 \end_layout
 
 \begin_layout Subsection
-BCR associations in CD34+ cells
+
+\emph on
+BCR
+\emph default
+ associations in CD34+ cells
 \end_layout
 
 \begin_layout Standard
-10mb window analysis.
- Telomeric chromosome 9 is the highest hit in the entire genome.
+The most prominent of the specific interactions seen in the 
+\emph on
+BCR
+\emph default
+ interaction profiles is 9q34, a gene dense region which is highly transcribed.
+ This region contains the gene 
+\emph on
+ABL1
+\emph default
+ – a recurrent translocation partner with 
+\emph on
+BCR
+\emph default
+ which is found in 95% of chronic myeloid leukaemia (CML) cases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Neves1999a"
+
+\end_inset
+
+.
+ This region of chromosome 9 has approximately 7 fold enrichment of association
+ above the mean with the 
+\emph on
+BCR
+\emph default
+ bait, with a maximal association of 
+\emph on
+p
+\emph default
+ < 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-4
+\end_layout
+
+\end_inset
+
+.
+ The entire region has a significance of 
+\emph on
+p 
+\emph default
+< 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-13
+\end_layout
+
+\end_inset
+
+ (Supp Fig - single window testing).
+ This is the strongest 
+\emph on
+trans
+\emph default
+ interaction that we found in any of our association datasets.
 \end_layout
 
 \begin_layout Subsection
-ABL 4C associations in ENCODE cell line GM12878
+
+\emph on
+ABL
+\emph default
+ 4C associations in ENCODE cell line GM12878
 \end_layout
 
 \begin_layout Subsection
@@ -94,6 +174,61 @@ Associations in ENCODE cell line GM06990
 Description of analysis of Dekker Hi-C dataset.
  Limitations in resolution of Hi-C data, but ability to adjust bait region
  and produce heat maps to show interacting regions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For additional validation of this specific interaction, we used Hi-C data
+ obtained in GM06990 cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+.
+ We took reads with one end contained within a 1 Mbp region surrounding
+ the 
+\emph on
+BCR
+\emph default
+ gene, and analysed the partner reads as if they were from an e4C experiment.
+ The Hi-C data has a lower signal to noise ratio, and so a flatter profile,
+ but a peak of association over the same region of chromosome 9 can still
+ clearly be seen (supplementary Fig XX).
+ 
+\end_layout
+
+\begin_layout Section
+Narrowing the window - the Surfeit Cluster
+\end_layout
+
+\begin_layout Subsection
+1 megabase windows
+\end_layout
+
+\begin_layout Subsection
+Hi-C work
+\end_layout
+
+\begin_layout Subsection
+Candidate genes
+\end_layout
+
+\begin_layout Standard
+Description of data analysis (“narrowing the window”) with the 4C and Hi-C
+ that led me to the Surfeit Cluster.
 \end_layout
 
 \begin_layout Section
@@ -128,21 +263,16 @@ Results, explain why they’re not conclusive (interaction too weak to reliably
 Validation by DNA-FISH
 \end_layout
 
-\begin_layout Subsection
-( Introduction to the Surfeit Cluster of genes )
-\end_layout
-
 \begin_layout Standard
-The weight given to this section sort of depends on how the FISH comes out.
-\end_layout
-
-\begin_layout Subsection
-( Narrowing the window - the Surfeit Cluster )
-\end_layout
-
-\begin_layout Standard
-Description of data analysis (“narrowing the window”) with the 4C and Hi-C
- that led me to the Surfeit Cluster.
+To validate the associations we see in the e4C and Hi-C data, we used DNA-Fluore
+scence 
+\emph on
+In-Situ
+\emph default
+ Hybridization (DNA-FISH).
+ DNA-FISH is able to show the distance between genetic loci on a single-cell
+ basis, and does not share any of the potential biases present in 3C technologie
+s.
 \end_layout
 
 \begin_layout Subsection

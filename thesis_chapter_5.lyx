@@ -3,6 +3,29 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\let\originaltabular\tabular
+\let\endoriginaltabular\endtabular
+\renewenvironment{tabular}[1]{%
+  \begingroup%
+  \centering%
+  \originaltabular{#1}}%
+  {\endoriginaltabular\endgroup}
+
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+  \originaltable[#1]
+  \centering}%
+  {\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+  \originalfigure[#1]
+  \centering}%
+  {\endoriginalfigure}
+\end_preamble
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
@@ -5485,7 +5508,7 @@ e4C library biases
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Bias correction
 \end_layout
 
@@ -5500,27 +5523,22 @@ AseI
 NlaIII
 \emph default
  fragments was created with associated 'expected probability' values.
- These were generated with a perl script which took the base probability
- for any fragment to be hit (
-\begin_inset Formula $\frac{observed}{potential}$
-\end_inset
-
-) and modified this accordingly (Appendix 
+ These were generated with a perl script which calculates a correction value
+ for each bin of GC % and fragment length: (Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:APP-systematic-bias-correction"
 
 \end_inset
 
-).
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Need to fill this in when I have the script and stuff to see how it actually
- works...
+)
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\frac{hit\, fragments\, in\, bin}{hit\, fragments}\;/\;\frac{all\, fragments\, in\, bin}{all\, fragments}
+\]
 
 \end_inset
 
@@ -5528,8 +5546,25 @@ Need to fill this in when I have the script and stuff to see how it actually
 \end_layout
 
 \begin_layout Standard
-This library of fragment expected observation rate was then used in single
- window testing (Section 
+Then, for every potential fragment, the appropriate correction values for
+ %GC and fragment length were multiplied against the overall chance of any
+ fragment being hit: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{frag}=\dfrac{observed\, fragments}{potential\, fragments}\times C_{\%GC}\times C_{frag\, length}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This library of expected observation rates for every potential fragment
+ was then used in single window testing (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:significance-of-single-regions"
@@ -5543,6 +5578,197 @@ status open
 
 \begin_layout Plain Layout
 Should really do the genome wide stuff with this correction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Validation
+\end_layout
+
+\begin_layout Standard
+To check that the values produced by this script were reliable, I wrote
+ a small Perl script to generate 
+\emph on
+in-silico 
+\emph default
+libraries using the correction values.
+ The script loops through every potential fragment and outputs it as a hit
+ if a random number between 0 and 1 is greater than or equal to the correction
+ factor.
+ This was repeated 5 times to generate a suitable number of reads.
+ This 
+\emph on
+in-silico
+\emph default
+ library was then loaded into SeqMonk for visual inspection before being
+ analysed for biases as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:CH5-GC-content-bias"
+
+\end_inset
+
+.
+ The resulting plot shows the 
+\emph on
+in-silico
+\emph default
+ library with identical biases to the observed library, validating the correctio
+n values.
+\end_layout
+
+\begin_layout Section
+Significance of single regions 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:significance-of-single-regions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To test the significance of the observed hits in a single region, I wrote
+ a script that generates 
+\emph on
+in-silico
+\emph default
+ random libraries for defined regions of the genome.
+ This process can be repeated many times and the number of 
+\emph on
+in-silico
+\emph default
+ reads generated for each run compared to the number of observed reads in
+ the real e4C library.
+ The script was run with 1,000,000 loops and the resulting frequency of
+ each number of 
+\emph on
+in-silico
+\emph default
+ hits plotted in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single-window-testing"
+
+\end_inset
+
+.
+ When the observed hit count for this region is plotted on the same graph
+ it can be seen that it is far above what would be expected from GC content
+ and fragment length of the region.
+ To calculate a 
+\emph on
+p 
+\emph default
+value, I ran the script for for 3.3x10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ iterations and no loops showed ≥ the observed hit count, so 
+\emph on
+p
+\emph default
+ < 3x10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-8
+\end_layout
+
+\end_inset
+
+for this region.
+ For more discussion about this region, see Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BCR-ABL"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/single window testing/single_window.eps
+	lyxscale 30
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:single-window-testing"
+
+\end_inset
+
+Frequency of 
+\emph on
+in-silico
+\emph default
+ hits for single window in telomeric Chromosome 9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A genome wide approach
+\end_layout
+
+\begin_layout Standard
+Expanding the above approach to determine significance across the entire
+ genome.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I haven't done this work yet.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I haven't done this work yet.
 \end_layout
 
 \end_inset
@@ -5609,23 +5835,72 @@ In-silico
 
 \begin_layout Standard
 To validate this normalisation, I wrote a Perl script which creates randomised
- virtual e4C libraries.
- 
-\begin_inset Foot
+ virtual e4C libraries from the list of potential 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragments and loaded this into SeqMonk.
+ I then ran the 
+\emph on
+AseI
+\emph default
+ normalisation as described above and loaded the resulting normalised library
+ back into SeqMonk.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Needs writing when I have the script
+\begin_inset Graphics
+	filename figures/chapter 5/AseI normalisation/AseI_normalisation.eps
+	lyxscale 30
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:AseI-normalisation"
+
+\end_inset
+
+
+\emph on
+AseI
+\emph default
+ site distribution normalisation
 \end_layout
 
 \end_inset
 
 
-\begin_inset Note Note
-status open
+\end_layout
 
 \begin_layout Plain Layout
-Needs writing when I have the script
+Chromosome 1 showing the 
+\emph on
+in-silico
+\emph default
+ e4C randomised library before and after normalisation for 
+\emph on
+AseI
+\emph default
+ site distribution.
 \end_layout
 
 \end_inset
@@ -5657,30 +5932,6 @@ A standard score represents how many standard deviations from the mean a
 \end_layout
 
 \begin_layout Section
-Significance of single regions 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:significance-of-single-regions"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Tests uses to determine significance for single windows.
-\end_layout
-
-\begin_layout Section
-A genome wide approach
-\end_layout
-
-\begin_layout Standard
-Expanding the above approach to determine significance across the entire
- genome.
-\end_layout
-
-\begin_layout Section
 4C data set correlations
 \end_layout
 
@@ -5706,7 +5957,26 @@ The problems of low coverage in the libraries, and how this differs for
 \end_layout
 
 \begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
 Put this in the discussion chapter? 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Put this in the discussion chapter? 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
