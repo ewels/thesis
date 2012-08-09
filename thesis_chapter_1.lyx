@@ -26,7 +26,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -70,45 +70,258 @@ Introduction
 \end_layout
 
 \begin_layout Section
-Nuclear organisation
+Nuclear structure
 \end_layout
 
 \begin_layout Standard
-Gross nuclear structure, description of sub-compartments, leading on to
- chromosome territories.
+The nucleus of a human cell contains approximately 2 metres of DNA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Annunziato2008"
+
+\end_inset
+
+, requiring a huge degree of compaction to fit within the nucleus.
+ In addition to storing DNA the nucleus itself is a highly functional organelle,
+ responsible for the huge variety of complex cellular processes.
+ To achieve this, the contents of the nucleus are very preciesely organised
+ into sub-nuclear compartments which specialise in processes such as transcripti
+on and replication.
+ In addition to the organisation of the nuclear proteome, chromatin itself
+ is thought to be organised.
+ In this chapter I will discuss the current understanding of nuclear structure
+ and organisation, how we have obtained this knowledge, and how it may play
+ a part in the initiation of certain cancers.
 \end_layout
 
 \begin_layout Subsection
 Chromatin
 \end_layout
 
+\begin_layout Standard
+Chromatin is a general term used to describe the DNA found in the nucleus
+ along with the plethora of proteins that bind to it.
+ There are two principle forms of chromatin: 
+\emph on
+euchromatin 
+\emph default
+and 
+\emph on
+heterochromatin
+\emph default
+.
+ These were first described in the early twentieth century by the difference
+ in staining within the nucleus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Heitz1928"
+
+\end_inset
+
+.
+ Euchromatin tends to stain lightly and is less dense in its compaction.
+ It typically contains gene rich active stretches of DNA which can be accessed
+ by the nuclear machinery.
+ Heterochromatin can be split into 
+\emph on
+constitutive heterochromatin
+\emph default
+ and 
+\emph on
+facultative heterochromatin
+\emph default
+; the former describing heterochromatin found in all cell types typically
+ surrounding centromeres and telomeres, and the latter describing less fixed
+ heterochromatin which may vary between cell types.
+\end_layout
+
+\begin_layout Subsubsection
+Histones
+\end_layout
+
+\begin_layout Standard
+To package DNA, the double helix is wrapped around an octomer of core histones:
+ two H2A, two H2B, two H3 and two H4.
+ 146 base pairs of DNA wrap around these positively charged proteins to
+ form the nucleosome, which is then bound by histone H1 to bind a total
+ of 166 base pairs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krueger2011"
+
+\end_inset
+
+.
+ This packing forms the 10 nm fibre, often known as 'beads on a string'
+ due to its appearance in electron micrographs.
+ At their most basic level, histones function to compact DNA by counteracting
+ the negative charge of the phosphrylated back bone.
+ The structure of the nucleosome allows varying degrees of compaction, and
+ this is one of the key methods by which cells control which genes are expressed.
+ Nucleosome spacing along the linear DNA can vary, and histone variants
+ can signify the chromatin signature of a region.
+\end_layout
+
+\begin_layout Subsubsection
+Histone modifications
+\end_layout
+
+\begin_layout Subsubsection
+Histone variants
+\end_layout
+
+\begin_layout Standard
+H3.3, H2A.Z, H2A.X (DNA damage)
+\end_layout
+
+\begin_layout Subsubsection
+Structure of chromatin
+\end_layout
+
+\begin_layout Subsection
+Two-dimensional organisation
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+cis
+\emph default
+ organisation of hox genes, gene clusters, gene rich areas and gene deserts
+\end_layout
+
 \begin_layout Subsection
 Chromosome Territories
+\end_layout
+
+\begin_layout Standard
+Chromosome painting, what they are, not much more.
+ (talk about organisation of CTs later)
 \end_layout
 
 \begin_layout Subsection
 Nuclear compartmentalisation
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+Cajal bodies, speckles, nucleosomes
+\end_layout
+
+\begin_layout Subsection
 Transcription factories
 \end_layout
 
 \begin_layout Standard
 Transcription factories in detail as distinct sub-compartments.
  Transcription takes place in transcription factories.
+ Stochastic bursting transcription.
+\end_layout
+
+\begin_layout Subsubsection
+Specialised transcription factories
 \end_layout
 
 \begin_layout Section
-Nuclear interactions
+Nuclear organisation
 \end_layout
 
 \begin_layout Subsection
-Looping
+Large scale organisation
+\end_layout
+
+\begin_layout Subsubsection
+Nuclear Positioning
+\end_layout
+
+\begin_layout Standard
+Nuclear periphery / nuclear interior.
+\end_layout
+
+\begin_layout Subsubsection
+Chromosome Territories
+\end_layout
+
+\begin_layout Standard
+CTs being close to the nuclear periphery, CT intermingling, being buried
+ in CTs or on the surface.
 \end_layout
 
 \begin_layout Subsection
+Small scale organisation
+\end_layout
+
+\begin_layout Subsubsection
+Looping and chromatin hubs
+\end_layout
+
+\begin_layout Standard
+Hbb, Igh and other classical looping examples.
+\end_layout
+
+\begin_layout Subsubsection
 Long range interactions
+\end_layout
+
+\begin_layout Standard
+Sonic the hedgehog, other long range 
+\emph on
+cis
+\emph default
+ interactions? Any evidence of trans stuff? Cam's Myc and Igh FISH paper.
+\end_layout
+
+\begin_layout Subsubsection
+Domains
+\end_layout
+
+\begin_layout Standard
+Hi-C domains.
+ Interactions within domains.
+ Talk about how transcription depends on cotext.
+ Spreading of epigenetics marks.
+\end_layout
+
+\begin_layout Subsection
+What drives nuclear organisation?
+\end_layout
+
+\begin_layout Subsubsection
+Actin and myosin
+\end_layout
+
+\begin_layout Subsubsection
+Transcription
+\end_layout
+
+\begin_layout Subsubsection
+CTCF and cohesin
+\end_layout
+
+\begin_layout Subsubsection
+Transcriptional hubs
+\end_layout
+
+\begin_layout Standard
+Talk about latest theories about housekeeping genes organising everything
+ else.
+ How this ties in with chromatin domains.
+\end_layout
+
+\begin_layout Subsubsection
+The self-organisation model
+\end_layout
+
+\begin_layout Standard
+Cook 2002, Iborra and Cook 2002.
+\end_layout
+
+\begin_layout Subsection
+The annotated genome
+\end_layout
+
+\begin_layout Standard
+Talking about the use of a systems biology approach to understand the linear
+ genomic information of the genome.
 \end_layout
 
 \begin_layout Section
@@ -116,19 +329,55 @@ Techniques to investigate nuclear organisation
 \end_layout
 
 \begin_layout Subsection
+Microscopy
+\end_layout
+
+\begin_layout Subsubsection
+Chromosome painting
+\end_layout
+
+\begin_layout Subsubsection
+DNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+RNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+Electron microscopy
+\end_layout
+
+\begin_layout Subsection
+Chromosome conformation capture
+\end_layout
+
+\begin_layout Subsubsection
 3C
 \end_layout
 
-\begin_layout Subsection
-3C derived techniques
+\begin_layout Subsubsection
+Circular 4C
 \end_layout
 
-\begin_layout Subsection
-Fluorescence 
-\emph on
-in-situ 
-\emph default
-hybridisation
+\begin_layout Subsubsection
+e4C
+\end_layout
+
+\begin_layout Subsubsection
+5C
+\end_layout
+
+\begin_layout Subsubsection
+ChIA-PET
+\end_layout
+
+\begin_layout Subsubsection
+Hi-C
+\end_layout
+
+\begin_layout Subsubsection
+Tethered Hi-C
 \end_layout
 
 \begin_layout Section
@@ -138,6 +387,22 @@ Chromosomal translocations
 \begin_layout Standard
 Basics of HR, SSA and NHEJ.
  Contact first / breakage first models.
+\end_layout
+
+\begin_layout Subsection
+Formation of chromosomal translocations
+\end_layout
+
+\begin_layout Subsubsection
+Double strand breaks
+\end_layout
+
+\begin_layout Subsubsection
+Aberrant religation
+\end_layout
+
+\begin_layout Subsubsection
+Contact first model
 \end_layout
 
 \begin_layout Subsection

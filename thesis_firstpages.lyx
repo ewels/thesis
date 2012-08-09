@@ -65,6 +65,34 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{8cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+I'd rather be rich than stupid.
+\end_layout
+
+\begin_layout Quotation
+\align center
+
+\emph on
+Jack Handey
+\end_layout
+
 \begin_layout Chapter*
 Declaration
 \end_layout
@@ -76,10 +104,40 @@ This dissertation is the result of my own work and includes nothing which
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Signed:
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{1cm} 
+\backslash
+hspace{2cm}
+\end_layout
+
+\end_inset
+
 Phil Ewels
 \end_layout
 
