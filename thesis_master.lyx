@@ -263,7 +263,7 @@ References
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "C:/Users/ewelsp/Dropbox/Work/BibTeX/THESIS,/Users/phil/Dropbox/Work/BibTeX/THESIS"
+bibfiles "C:/Users/ewelsp/Dropbox/Work/BibTeX/THESIS,/Users/phil/Dropbox/Work/BibTeX/THESIS,/Users/philewels/Dropbox/Work/BibTeX/THESIS"
 options "bibtotoc,plain"
 
 \end_inset

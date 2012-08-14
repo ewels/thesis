@@ -1,0 +1,6 @@
+LaTeX wishlist:
+
+- Remove duplicate nomenclature items
+
+
+- Have single sided text, numeric references, and have the full references displayed on the facing page? Much like PLoS...
