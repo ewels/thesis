@@ -573,11 +573,22 @@ Two-dimensional organisation
 \end_layout
 
 \begin_layout Standard
-
+Chromosome banding, 
 \emph on
 cis
 \emph default
- organisation of Hox genes, gene clusters, gene rich areas and gene deserts
+ organisation of Hox genes, gene clusters, gene rich areas and gene deserts.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Maybe get rid of this section?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -585,27 +596,13 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
-Chromosome painting, what they are, not much more.
- (talk about organisation of CTs later).
- CTs being close to the nuclear periphery, CT intermingling, being buried
- in CTs or on the surface.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Interphase chromosomes are organised into discrete regions, known as chromosome
- territories (
+The interphase nucleus is a highly structured organelle.
+ As chromosomes decondense after metaphase they retain some degree of structure,
+ forming 
+\emph on
+chromosome territories
+\emph default
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CT"
@@ -621,70 +618,168 @@ key "Cremer2001"
 \end_inset
 
 .
- Chromosome territories are not randomly positioned, and territory position
- has been shown to be conserved through evolution 
+ Circumstantial evidence for such interphase organisation of the chromosomes
+ has existed for a long time, first suggested by Carl Rabl in 1885 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rabl1885"
+
+\end_inset
+
+.
+ Oberservations by Stack 
+\emph on
+et al.
+
+\emph default
+ using microscopy with giemsa-band staining suggested that chromosomes retained
+ some degree of organisation during interphase 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stack1977"
+
+\end_inset
+
+, and in 1982 Cremer 
+\emph on
+et al., 
+\emph default
+showed that interphase chromosomes exist in 'territories' by studying the
+ pattern of DNA damage in metaphase chromosomes after spot irradiation in
+ during interphase 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cremer1982"
+
+\end_inset
+
+.
+ The subsequent development of 'chromosome paints', a method to visualise
+ entire- or part- chromosomes with (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FISH"
+description "Fluorescence in-situ hybridisation"
+
+\end_inset
+
+FISH), confirmed these findings 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schardin1985a,Manuelidis1985"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As FISH techniques have developed, so too has the detail with which CT organisat
+ion can be studied.
+ Several groups have shown that chromosome territory position within the
+ nucleus is not random and correlates with chromosome size 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun2000,Cremer2001b"
+
+\end_inset
+
+, gene-density 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cremer2001b,Croft1999"
+
+\end_inset
+
+ and replication timing 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Visser1998"
+
+\end_inset
+
+: those near the centre of the nucleus tend to be gene-rich, early replicating
+ and small.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Talk about tethering experiments changing gene expression, nuclear pores
+ and lamina interactions?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The specificity of CT positioning is a topic of debate, though studies have
+ suggested conservation of CT positioning through evolution 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tanabe2002"
 
 \end_inset
 
+ and shown tissue specificity in chromosome pairing 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parada2004b"
+
+\end_inset
+
 .
- Fluorescence 
-\emph on
-in-situ
-\emph default
- hybridisation (FISH) studies have demonstrated large scale rearrangements
- of CTs with changes in cell morphology, such as in chicken hematopoietic
- cell differentiation 
+ Chromosome position is dynamic and tied to multiple cellular processes
+ - inhibition of transcription causes a reversible change in position 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Croft1999"
+
+\end_inset
+
+ and large scale rearrangements of CTs has been observed during cell differentia
+tion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stadler2004"
+
+\end_inset
+
+.
+ Interestingly, derivative chromosomes that result from balanced translocations
+ affect the organisation of CTs within the nucleus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Harewood2010"
+
+\end_inset
+
+, raising the possibility that the global changes in gene expression observed
+ after oncogenic translocations could be in part due to changes in genome
+ organisation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Harewood2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Stadler, S., Schnapp, V., Mayer, R., Stein, S., Cremer, C., Bonifer, C., Cremer,
- T.
- and Dietzel, S.
- (2004) The architecture of chicken chromosome territories changes during
- differentiation.
- BMC Cell Biol 5, 44
+CT intermingling, genes being buried in CTs or on the surface.
+ 
 \end_layout
 
 \end_inset
 
-.
- Studies of CT localisation within multiple mouse cell types have shown
- that CT organisation can be tissue specific 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Parada2004b"
 
-\end_inset
-
-.
- Certain chromosomes have preferred neighbours in some tissue types, for
- example chromosomes 12 and 15 are frequently close in mouse lymphocytes
- but not mouse hepatocytes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Parada2004b"
-
-\end_inset
-
-.
- This is relevant as translocations between these chromosomes are common
- in lymphomas but not in hepatomas.
- The positions adopted by chromosome territories within the nucleus appears
- to be related to the sequence encoded by each chromosome – those near the
- centre of the nucleus tend to be gene-rich, often replicate early and are
- frequently relatively small, whilst the opposite is true for chromosomes
- located near the nuclear periphery 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun2000,Croft1999"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section
