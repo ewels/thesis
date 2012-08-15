@@ -187,7 +187,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/3C protocol/3C protocol.eps
+	filename figures/chapter 3/3C protocol/3C protocol.eps
 	width 100col%
 
 \end_inset
@@ -332,7 +332,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/4C protocol/4C protocol.eps
+	filename figures/chapter 3/4C protocol/4C protocol.eps
 	width 100col%
 
 \end_inset
@@ -514,7 +514,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/facs/CD34 FACS Plots.eps
+	filename figures/chapter 3/facs/CD34 FACS Plots.eps
 	lyxscale 30
 	height 80theight%
 
@@ -673,7 +673,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/bad e4C gel/BamHI e4C.eps
+	filename figures/chapter 3/bad e4C gel/BamHI e4C.eps
 	lyxscale 50
 	width 20col%
 
@@ -818,7 +818,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/enzyme gels/enzyme gels.eps
+	filename figures/chapter 3/enzyme gels/enzyme gels.eps
 	lyxscale 30
 	height 80theight%
 
@@ -3401,7 +3401,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/RT-PCR/RT-PCR.eps
+	filename figures/chapter 3/RT-PCR/RT-PCR.eps
 	lyxscale 50
 	width 60col%
 
@@ -3640,7 +3640,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 4/S2R+ 3C/S2R+ 3C.eps
+	filename figures/chapter 3/S2R+ 3C/S2R+ 3C.eps
 	lyxscale 50
 	width 70col%
 

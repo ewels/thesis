@@ -225,7 +225,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/bareback/bareback.eps
+	filename figures/chapter 4/bareback/bareback.eps
 	lyxscale 50
 	width 70col%
 
@@ -730,7 +730,7 @@ FastQC
 \emph default
  and 
 \emph on
-FastQ Analysis
+FastQ Screen
 \emph default
 .
  I was involved in development of FastQC version 0.9.3 (released 16/6/11)
@@ -758,12 +758,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Need FastQC plots and stuff here
-\end_layout
+\begin_inset Graphics
+	filename figures/chapter 4/fastQC/fastQC.eps
+	lyxscale 30
+	width 90col%
 
 \end_inset
 
@@ -784,15 +782,33 @@ name "fig:e4C-Library-FastQC"
 \series bold
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Representative e4C Library FastQC and FastQ Analysis
+Representative e4C Library FastQC and FastQ Screen
 \end_layout
 
 \end_inset
 
-Representative e4C Library FastQC and FastQ Analysis.
+Representative e4C Library FastQC and FastQ Screen.
+
+\series default
+ (A)
+\series bold
+ 
+\series default
+FastQC - average sequence quality.
+ (B) FastQ Screen - species alignment.
+ Both statistics are for the second CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ BCR e4C sequencing run.
 \end_layout
 
 \end_inset
@@ -819,7 +835,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/e4C sequence structure/e4C sequence structure.eps
+	filename figures/chapter 4/e4C sequence structure/e4C sequence structure.eps
 	lyxscale 50
 	width 30col%
 
@@ -5563,7 +5579,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/GC_length biases/GC_length biases.eps
+	filename figures/chapter 4/GC_length biases/GC_length biases.eps
 	lyxscale 40
 	width 30text%
 
@@ -5809,7 +5825,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/single window testing/single_window.eps
+	filename figures/chapter 4/single window testing/single_window.eps
 	lyxscale 30
 	width 80col%
 
@@ -5979,7 +5995,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/AseI normalisation/AseI_normalisation.eps
+	filename figures/chapter 4/AseI normalisation/AseI_normalisation.eps
 	lyxscale 30
 	height 90theight%
 
