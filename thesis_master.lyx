@@ -200,6 +200,16 @@ filename "thesis_chapter_1.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "thesis_chapter_2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "thesis_chapter_3.lyx"
 
 \end_inset
@@ -241,16 +251,6 @@ filename "thesis_chapter_6.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "thesis_chapter_7.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "thesis_chapter_8.lyx"
 
 \end_inset
 
