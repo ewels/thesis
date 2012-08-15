@@ -30,14 +30,23 @@
 \index_command default
 \paperfontsize default
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_numerical
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -69,295 +78,3221 @@
 \begin_body
 
 \begin_layout Chapter
-Materials and Methods
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:chap4-e4C-dev"
+
+\end_inset
+
+Developing an assay for gene association
 \end_layout
 
 \begin_layout Section
-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cell handling 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:M&M-CD34-cell-handling"
-
-\end_inset
-
-
+Introduction
 \end_layout
 
 \begin_layout Subsection
-Peripheral blood collections 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:M&M-Peripheral-blood-collections"
-
-\end_inset
-
-
+Chromosome Conformation Capture
 \end_layout
 
 \begin_layout Standard
-Mobilised CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
+Chromosome Conformation Capture (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3C"
+description "Chromosome Conformation Capture"
 
 \end_inset
 
- cells were collected from peripheral blood samples supplied by Dr.
- George Follows with the help of apheresis coordinator / specialist nurse
- Paul Boraks.
- These blood samples were taken with constent from the patient at the same
- time as clinical samples used to test the mobilisation efficacy of the
+3C) is a ligation based proximity assay.
+ First published in 2002 by Dekker 
+\emph on
+et.
+ al.
+
+\emph default
  
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GCSF"
-description "Granulocyte colony-stimulating factor"
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dekker2002b"
 
 \end_inset
 
-GCSF stimulation.
- Blood samples were collected and immediately diluted into 5ml 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "RPMI"
-description "Roswell Park Memorial Institute medium"
-
-\end_inset
-
-RPMI with heparin to prevent agglutination.
- Samples were transported from Addenbrookes Haematology Day Unit to the
- Babraham Institute.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Buffy coat isolation and fixation of cells
+ it allows the physical association of sequences of DNA to be interrogated.
+ 3C has become a key methodology in the field of nuclear organisation, and
+ a number of new techniques use it as a base.
 \end_layout
 
 \begin_layout Standard
-Samples were diluted with 2-4 volumes of 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PBS"
-description "Phosphate buffered saline"
-
+3C works by fixing protein and DNA in place with formaldehyde.
+ A restriction enyme is used to cut the DNA, typically recognising a 6 base
+ pair sequence, so cutting on average once every 1.2 Kb (
+\begin_inset Formula $6^{4}=1296$
 \end_inset
 
-PBS (Dulbecco's PBS; PAA) containing 2mM 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "EDTA"
-description "Ethylene-diamine-tetraacetic acid"
-
+).
+ This results in 
+\begin_inset Quotes eld
 \end_inset
 
-EDTA (ultra-pure; GIBCO).
- 15 ml Ficoll (Ficoll-Paque Premium; GE Healthcare) was added to empty 50
- ml tubes, and 35 ml cell suspension was layered on top.
- Samples were centrifuged at 400x 
-\emph on
-g
-\emph default
- for 40 minutes at at room temperature.
- The central buffy coat found at the interface between the plasma and Ficoll
- layer, containing primarily mononuclear cells, was carefully pipetted into
- a new labelled 50 ml tube.
- This was washed in PBS containing 2 mM EDTA and centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 minutes at room temperature.
- Cell pellets were washed twice by resuspending in 50 ml MACS Buffer (D-PBS
- [PAA] with 0.5% 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "BSA"
-description "Bovine serum albumin"
-
+hairballs
+\begin_inset Quotes erd
 \end_inset
 
-BSA [Sigma] and 2 mM EDTA [Gibco]) and re-centrifuged at 200x 
-\emph on
-g
-\emph default
- for 15 minutes at room temperature.
- Cell pellets were resuspend cells in 2 ml total volume MACS Buffer and
- transferred to tubes containing 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DMEM"
-description "Dulbecco's modified Eagle's medium"
-
+ of cross linked DNA and protein which are diluted into a large volume.
+ A ligation reaction is then run, which favours ligations between sequences
+ held together by the formaldehyde cross links.
+ Cross links are reversed and the DNA is purified, leaving a 3C 
+\begin_inset Quotes eld
 \end_inset
 
-DMEM (PAA) with 10% 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "FBS"
-description "Foetal bovine serum"
-
+library
+\begin_inset Quotes erd
 \end_inset
 
-FBS (PAA).
- Cells were then fixed with 2% formaldehyde (histology-grade, min 37% free
- from acid; Merck) for 10 minutes at room temperature with constant mixing.
- The fixation was quenched by adding glycine to a final concentration of
- 0.125 M.
- Fixed cells were centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 mins at 4°C before being resuspend in 50 ml ice-cold MACS Buffer.
- Cells were counted using a haemocytometer.
+.
+ Within this library, the frequency with which restriction fragments are
+ found ligated together corresponds to their degree of interaction within
+ the nucleus.
 \end_layout
 
-\begin_layout Subsection
-Leukapheresis collections 
+\begin_layout Standard
+The 3C library is a basis for a number of different assays that all measure
+ interaction frequencies.
+ Traditional 3C uses PCR with primers positioned adjacent to the restriction
+ enzyme recognition sites of two loci of interest.
+ If a PCR product is detected, these two sequences were physically close
+ within the nucleus.
+ The strength of bands on a gel can be used to quantify the strength of
+ this interaction, and qPCR can be used to accurately assess this for a
+ large number of primer pairs (3C qPCR).
+ Both of these techniques are used to probe interactions on a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-one
+\begin_inset Quotes erd
+\end_inset
+
+ basis; that is, investigating the interaction between two specific loci
+ at a time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/3C protocol/3C protocol.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:M&M-Leukapheresis-collections"
+name "fig:3C_protocol"
 
 \end_inset
 
 
-\end_layout
+\series default
 
-\begin_layout Standard
-Mobilised CD34
-\begin_inset script superscript
+\begin_inset Argument
+status open
 
 \begin_layout Plain Layout
-+
+Overview of the 3C methodology
 \end_layout
 
 \end_inset
 
-cells were collected from leukapheresis collections supplied by Dr.
- George Follows and Dr.
- Kevin Jestice.
- These samples were made available after the harvesting of mobilised CD34
-\begin_inset script superscript
+
+\series bold
+Overview of the 3C methodology.
+ 
+\series default
+R denotes the recognition sites for the first six-cutter restriction endonucleas
+e.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
-+
+
 \end_layout
 
 \end_inset
 
- cells from patients who had responded to GCSF stimulation exceptionally
- well, meaning that there was an excess of cells not required for clinical
- use.
- Leukapheresis samples were refrigerated in serum bags until collection
- from Addenbrookes National Blood Service, and transported to the Babraham
- Institute.
-\end_layout
-
-\begin_layout Subsubsection
-Cell washing and fixation of cells
-\end_layout
-
-\begin_layout Standard
-Because white blood cells are already separated from the blood in the leukaphere
-sis samples, buffy coat isolation is not necessary.
- The much higher number of cells to be processed is also a point of consideratio
-n in the processing of these samples.
-\end_layout
-
-\begin_layout Standard
-The sample was aliquotted into 50 ml tubes and diluted with 2 - 4 volumes
- of PBS with 2 mM EDTA, to a final volume of 50 ml.
- Tubes were centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 minutes at room temperature.
- Cells were washed twice by resuspending in 50 ml PBS with 2 mM EDTA and
- centrifuged at 200x 
-\emph on
-g
-\emph default
- for 15 minutes at room temperature.
- Each cell pellet was resuspended in 50 ml PBS with 2 mM EDTA and transferred
- to a 500 ml bottle of DMEM (PAA) supplemented with 10% FBS (PAA).
- Cells were fixed by adding 26 ml 37% formaldehyde was added to a final
- concentration of 2% (histology-grade, min 37% free from acid; Merck) and
- being placed on a rocker for 10 minutes at room temperature.
- The fixation was quenched by adding glycine to a final concentration of
- 0.125 M.
- Samples were centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 mins at 4°C.
- The supernatant was removed and each cell pellet resuspended in 50 ml ice-cold
- MACS buffer.
- Cells were counted using a haemocytometer.
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
 \begin_layout Subsection
-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cell separation
+Enriched 4C
 \end_layout
 
 \begin_layout Standard
-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
+Enriched 4C (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "e4C"
+description "Enriched Chromosome Conformation Capture"
 
 \end_inset
 
- cells were separated from the mixture of fixed buffy coat cells using either
- the Invitrogen Dynal CD34 Progenitor Cell Selection System or the Miltenyi
- MACS CD34 MicroBead Kit.
- See section 
+e4C) starts with the preparation of 3C libraries as described above, and
+ uses further processing to generate a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-all
+\begin_inset Quotes erd
+\end_inset
+
+ assay, which is capable of revealing the genome-wide interaction profile
+ of a single sequence of interest.
+\end_layout
+
+\begin_layout Standard
+A biotinylated primer annealing and extension step is used to do this, with
+ magnetic streptavidin beads pulling down all ligation products containing
+ the sequence of interest, or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "bait"
+description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
+
+\end_inset
+
+bait
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A second restriction enzyme is then used to cut the enriched library, an
+ enzyme with a 4 base pair recognition site is used to cut approximately
+ once every 256 base pairs (
+\begin_inset Formula $4^{4}=256$
+\end_inset
+
+).
+ The resulting sticky end is then used to ligate an adapter to the end of
+ the unknown partner sequence.
+ This allows the libary to be amplified using PCR.
+ Primers with overhanging tails are used to add the sequence needed for
+ sequencing with the Illumina Genome Analyser IIx.
+ A custom sequencing primer is used which binds to the bait region immediately
+ before the first restriction enzyme cut site, preventing known sequence
+ from being unnecessarily sequenced.
+ A few remaining few base pairs are left betweenthe sequencing primer and
+ the cut site, to use as a barcode region to allow multiplexing of libraries
+ on the sequencing run.
+ This sequence is also used to confirm the identity of the bait sequence.
+ The remaining base pairs that are sequenced after the cut site are aligned
+ to the genome, and their distribution used to plot a genome-wide interaction
+ profile for the bait sequence.
+\end_layout
+
+\begin_layout Standard
+See Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:chap4-CD34-cell-prep"
+reference "chap:e4C-Analysis"
 
 \end_inset
 
- for the results of both separation methods.
-\end_layout
-
-\begin_layout Subsubsection
-Cell separation using the Invitrogen Dynal CD34 Progenitor Cell Selection
- System
+ for further details about the analysis of e4C data.
 \end_layout
 
 \begin_layout Standard
-Cell separation was carried out as per the manufacturer's instructions.
- Samples were centrifuged at 400x 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/4C protocol/4C protocol.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C_protocol"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Overview of the e4C methodology
+\end_layout
+
+\end_inset
+
+
+\series bold
+Overview of the e4C methodology.
+
+\series default
+ R' denotes the recognition site for the second four-cutter restriction
+ endonuclease.
+ BC denotes the barcode region used to confirm the identity of the bait
+ sequence and identify sequences when multiplexing libraries for sequencing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
+Preparation of CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells
+\end_layout
+
+\begin_layout Standard
+There is mounting evidence that the founder translocations involving 
 \emph on
-g
+BCR
 \emph default
- for 8 mins at 4°C and resuspended in Sort Buffer (D-PBS [PAA] supplemented
- with 0.1% BSA [Sigma] and 2 mM EDTA [Gibco]) at a concentration of 4 x 10
+ and 
+\emph on
+MLL
+\emph default
+ in leukaemia may occur within the haematopoeitic stem cell compartment
+ [#REFS].
+ As it is thought that the translocations happen within these cells, it
+ is here that I was interested in investigating the organisation of the
+ un-translocated genes.
+\end_layout
+
+\begin_layout Standard
+Because the nuclear organisation of these cells starts to change as soon
+ as they are removed from the body, it was important that I fixed them with
+ formaldehyde as quickly as possible.
+ Adding formaldehyde directly to the blood samples would have caused problems
+ during cell separation, so I chose to run a Ficoll separation to isolate
+ the lymphoblasts, and then fixed in PBS with EDTA and 2% formaldehyde.
+ Following formaldehyde separation, I used a magnetic sort with anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ antibodies to purify the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ Finally, I analysed an aliquot of the purified cells using FACS (using
+ an antibody against a different epitope of CD34) to find the purity of
+ the samples.
+\end_layout
+
+\begin_layout Standard
+The first kit I used to separate the fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells was the Invitrogen Dynal CD34 Progenitor Cell Selection System.
+ I used this to process 17 separate blood samples from patients who had
+ been treated with GCSF to mobilise their haematopoeitic cells into their
+ peripheral blood stream.
+ The FACS plots all show some material with low front scatter, likely to
+ be debris resulting from the fix and sort (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
+ This was gated out, and a threshold set for anti-CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ fluorescence.
+ The percentage of cells within the gate fluorescing above the threshold
+ varied from 17% - 91%, with a median purity of 67%.
+ 10 of 17 samples collected using the Invitrogen kit had to be discarded
+ due to unsatisfactory purity.
+\end_layout
+
+\begin_layout Standard
+I attempted a number of alterations to the cell separation protocol to improve
+ this purity, and finally tried using the Miltenyi MACS CD34 MicroBead Kit
+ instead.
+ This immediately gave much better performance, with purities ranging from
+ 90% - 97% with a median of 96% purity (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-Separation-FACS"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/facs/CD34 FACS Plots.eps
+	lyxscale 30
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-Separation-FACS"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ Separation FACS Plots
+\end_layout
+
+\end_inset
+
+
+\series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ Separation FACS Plots.
+ 
+\series default
+FACS plots after magnetic bead separation of fixed CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+\end_layout
+
+\end_inset
+
+
+\series bold
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Restriction Enzyme Choice
+\end_layout
+
+\begin_layout Standard
+The majority of chromosomal translocations within the 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ genes occur within tight breakpoint cluster regions.
+ The 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region is an 8.3 Kb region between exons 6 and 14 bordered
+ by two BamHI restriction sites [# REF].
+ It is thought that the presence of 8 direct Alu SINE repeats, 4 L1 LINE
+ and 2 MER2 repeats within the 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region may provide regions of micro-homology with its
+ translocation partners and increase the chance of aberrant repair via the
+ NHEJ pathway.
+ Additionally, a number of putative topoisomerase II binding sites are present
+ within this region, leading to suggestions that topoisomerase II activity
+ may lead to an increased likelihood of a double strand break in this region.
+\end_layout
+
+\begin_layout Standard
+To provide as accurate a picture of the interaction with these translocation
+ forming regions as possible, we looked into the fragments created by a
+ number of six-cutting restriction enzymes.
+ As the breakpoint cluster region of the 
+\emph on
+MLL
+\emph default
+ gene is flanked by BamHI restriction sites, it seemed a natural choice
+ for the 3C enzyme.
+\end_layout
+
+\begin_layout Standard
+After a number of test e4C runs using Human buffy coat cells it became clear
+ that the assay was not working to its full potential.
+ Due to the nature of the 3C protocol, the most common interaction partner
+ will always be the germ line configuration, as the cut fragments will be
+ held together during the ligation reaction, making re-ligation a likely
+ possibility.
+ This germ line band was clearly visible when the e4C libraries were run
+ on a gel (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BamHI-e4C-Libraries"
+
+\end_inset
+
+), however, the characteristic smear resulting from the varying lengths
+ of 3C products was not.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "25col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/bad e4C gel/BamHI e4C.eps
+	lyxscale 50
+	width 20col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BamHI-e4C-Libraries"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+BamHI e4C Libraries
+\end_layout
+
+\end_inset
+
+
+\series bold
+BamHI e4C Libraries.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Further tests showed that the underlying problem was poor digestion efficiency
+ in the first steps of the 3C, with only 44% of BamHI recognition sites
+ being cut
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Digestion test qPCR done on 01/02/2010.
+ Page 195 Lab Book 1.
+\end_layout
+
+\end_inset
+
+.
+ Further work on this step showed that the SDS treatment and subsequent
+ Triton-X100 quenching of the SDS were having a dramatic effect on the digestion.
+\end_layout
+
+\begin_layout Standard
+I ran a concentration gradient of Triton-X100 with a digestion using purified
+ plasmid DNA which showed residual SDS inhibiting the reaction when there
+ was insufficient Triton-X100 to quench all of the SDS (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+A).
+ The concentration of Triton-X100 had a similar effect on the digestion
+ efficiency of BamHi with cross linked chromatin (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+I followed these tests with an experiment using a panel of different restriction
+ enzymes, some of which are commonly used in 3C based techniques.
+ I used cells which were fixed with the normal 2% formaldehyde and a weaker
+ 1% formaldehyde fix, and I ran the digestion step with and without the
+ initial SDS disruption and Triton-X100 quenching (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+).
+ These digestions clearly showed that BamHI was far less efficient at digesting
+ cross linked chromatin than the other restriction enzymes in every condition.
+\end_layout
+
+\begin_layout Standard
+At this point, instead of continuing to try to optimise the 3C to work with
+ BamHI, I went back to the drawing board and looked at which other enzymes
+ could be suitable.
+ The restriction enzyme AseI had good performance under all of the conditions,
+ and gave suitable fragment sizes in and around the break point cluster
+ regions of both 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+.
+ Further digestion efficiency qPCR tests showed it's efficiency at a far
+ superior 81 - 99% of sites being cut
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Digestion test qPCR done on 30/04/2010.
+ Page 49 Lab Book 2.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/enzyme gels/enzyme gels.eps
+	lyxscale 30
+	height 80theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Restriction Enzyme Tests
+\end_layout
+
+\end_inset
+
+
+\series bold
+Restriction Enzyme Tests.
+
+\series default
+ Digestion tests with six enzymes in four different conditions.
+ Cells were fixed in either 1% or 2% formaldehyde as described in Materials
+ and Methods: 3C 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+, either with or without the pre-digestion SDS/Triton steps.
+ Samples were treated with Proteinase K, RNase A and cleaned with a phenol
+ / chloroform extraction and precipitation as described in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+.
+ Samples shown run on 1% gels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Primer Design
+\end_layout
+
+\begin_layout Standard
+Once the restriction enzymes for the e4C have been chosen, primers can be
+ designed for the assay.
+ A suitable bait fragment must be chosen; for my first e4C libraries with
+ 
+\emph on
+MLL
+\emph default
+ and 
+\emph on
+BCR
+\emph default
+, I picked 
+\emph on
+AseI
+\emph default
+ fragments which lay within the breakpoint cluster regions (hg19 chr22:23,596,60
+8-23,612,941 and chr11:118,354,804-118,356,061, respectively).
+ Bait fragments should not be excessively large or small, as this can affect
+ the ligation efficiency in the generation of the 3C library.
+ One end of the bait fragment is used for the e4C, this must be free of
+ repetitive DNA, and have enough room to design primers before the first
+ 
+\emph on
+NlaIII
+\emph default
+ restriction site.
+\end_layout
+
+\begin_layout Standard
+Three primers are designed for each e4C library: a primer to do the initial
+ enrichment step from the 3C library, which must have a biotinylated moiety
+ on the 5' base to bind the streptavidin beads; a nested primer which binds
+ the bait sequence and has an overhanging tail with the half of the Illumina
+ Paired End Adapter 1.0 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PE Ad 1.0"
+description "Illumina Paired End Adapter 1.0"
+
+\end_inset
+
+PE Ad 1.0); a sequencing primer which aligns with the resulting library sequence,
+ close to the 
+\emph on
+AseI
+\emph default
+ cut site but leaving a barcode sequence of at least 3 base pairs.
+ This bar code region is important - it allows us to multiplex e4C libraries
+ to save on sequencing costs, but also confirms that the sequenced fragment
+ is the expected bait.
+ The sequencing primers were designed to have properties as close to the
+ original Illumina sequencing primer as possible, within the constraints
+ of the bait region sequence (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-sequencing-primer-properties"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Paired end sequencing or single end sequencing?
+\end_layout
+
+\begin_layout Standard
+When I started my project, the intention was to use Illumina Paired End
+ Sequencing to sequence the libraries.
+ I designed primers and adapters so that the first read would be from the
+ 
+\emph on
+NlaIII 
+\emph default
+adapter end of the e4C fragment and would give sequence information about
+ the unknown, captured fragment.
+ The second read of the paired end run would then go from the bait end of
+ the fragment, and confirm the identity of the e4C bait region.
+ Dr.
+ Cameron Osborne was sequencing mouse e4C libraries and ran into problems
+ with this approach however: read lengths were not sufficient to sequence
+ through the entire captured region and into the bait sequence on the first
+ round of sequencing, so we could not be certain that the first read was
+ not from a concatemer, and so not directly ligated to the bait sequence.
+ At this time, the sequences of the Illumina sequencing primers were made
+ public, and we decided to use our own custom sequencing primers.
+ This allowed us to use single end sequencing runs which start very close
+ to the ligation junction of the e4C products, so confirming the identity
+ of the bait product but giving us enough sequence in the unknown partner
+ to be aligned to the genome.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+What were the other problems with the paired end approach? 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+What were the other problems with the paired end approach?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It should be noted that different e4C libraries with different sequencing
+ primers can be multiplexed within the same lane.
+ However, multiplexing with libraries using the standard Illumina PE Ad
+ 1.0 sequencing primer is not advised, as this primer also binds the e4C
+ library and sequences the bait region.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="20" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BCR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Germline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color red
+TGTTTCCTGCAGCACAAGAGGTTGGCAGAGCAACCTCAGAACCTCTTCTGTCTCTGTTTATGCTTTTGTTCAGAAGCTTA
+GTACCA
+\series bold
+\color magenta
+GGA
+\series default
+\bar under
+\color red
+ATTAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biotinylated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+TGTTTCCTGCAGCACAAGAG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color green
+ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+\color inherit
+GTCTCTGTTTATGCTTTTGTTCAG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequencing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+TGTCTCTGTTTATGCTTTTGTTCAGAAGCTTAGTACCA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Germline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color red
+GAACAAAATCACACCCTATTTGCCTTCACATTTGCAACAGATAATAATGCAAATGACAAAT
+\series bold
+\color magenta
+TTT
+\series default
+\bar under
+\color red
+ATTAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biotinylated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+TCACACCCTATTTGCCTTCA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color green
+ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+\color inherit
+GCAACAGATAATAATGCAAATGA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequencing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+CCGATCTGCAACAGATAATAATGCAAATGACAAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Germline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color red
+AAAGGAGCCAGAGCAAGTCAGAATTTGGTTTATTGTTGGAGATTTTAGGGCGAA
+\series bold
+\color magenta
+AAT
+\series default
+\bar under
+\color red
+ATTAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biotinylated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+AAAGGAGCCAGAGCAAGTCA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color green
+ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+\color inherit
+GGTTTATTGTTGGAGATTTTAGGG
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequencing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+CGATCTGGTTTATTGTTGGAGATTTTAGGGCGAA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Germline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color red
+ACAGCAGCACCCTTTCTGTTGACTAGAAGTTAGGCTGTTGTAATAATAAACCCCTGAAACAGTGTGTTTATCAGTAACTA
+GTCT
+\series bold
+\color magenta
+TCGTTT
+\series default
+\bar under
+\color red
+ATTAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biotinylated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+ACAGCAGCACCCTTTCTGTT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color green
+ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+\color inherit
+CCCCTGAAACAGTGTGTTTATC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequencing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+CGATCTCCCCTGAAACAGTGTGTTTATCAGTAACTAGTCT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Germline
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color red
+CCACTGCGCCTGGCTAGTTTTCACTGGACAATACCTTGATGAAGCAGCAAAA
+\series bold
+\color magenta
+ATT
+\series default
+\bar under
+\color red
+ATTAAT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biotinylated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+TTCACTGGACAATACCTTGATGA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\color green
+ACACTCTTTCCCTACACGACGCTCTTCCGATCT
+\color inherit
+CCTTGATGAAGCAGCAAAAA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequencing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size scriptsize
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\color blue
+GCTCTTCCGATCTCCTTGATGAAGCAGCAAAA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:e4C-primers"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+e4C primers
+\end_layout
+
+\end_inset
+
+e4C primers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Length (bp)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GC Content
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Illumina Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77.4°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.5% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BCR Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73.4°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36.8%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.2°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34.3%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ABL Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+77.9°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+46.9% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL-1 Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+76.1°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MLL-2 Sequencing Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.7°C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.5%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:e4C-sequencing-primer-properties"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+e4C sequencing primer properties
+\end_layout
+
+\end_inset
+
+
+\series bold
+e4C sequencing primer properties.
+
+\series default
+ Illumina sequencing primer 1: ACACTCTTTCCCTACACGACGCTCTTCCGATCT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+NlaIII
+\emph default
+ e4C adapter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+5' 
+\size scriptsize
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\size footnotesize
+§AGATCGGAAGAGCGGTTCAGCAGGAATGCCGAG 3'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size footnotesize
+3' G*TACTCTAGCCTTCTCGCCAAGTCGTCCTTACGGCTC 5'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE Ad 1.0 Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PE Ad 2.0 Primer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e4C library sequence structure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:illumina-adapter-primers"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Illumina e4C adapter primers
+\end_layout
+
+\end_inset
+
+
+\series bold
+Illumina e4C adapter primers.
+
+\series default
+ § denotes a phosphorylation modification.
+ * denotes a phosphorothioate modification.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+e4C with low cell numbers
+\end_layout
+
+\begin_layout Standard
+Initially, CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells were collected from peripheral blood supplied by Dr.
+ George Follows in the Addenbrookes Haemotology Day Unit, with the help
+ of apheresis coordinator / specialist nurse Paul Boraks (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:M&M-Peripheral-blood-collections"
+
+\end_inset
+
+ for details).
+ Samples were collected on a weekly basis before being fixed and sorted
+ as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-CD34-cell-handling"
+
+\end_inset
+
+.
+ Typically, between 12 and 30 ml whole blood was received in each sample,
+ giving a median final count of 3.6 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells per collection.
+ Typically, 3C experiments use 1 x 10
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -366,132 +3301,38 @@ g
 
 \end_inset
 
- to 1 x 10
+ cells, or 28 collections pooled together.
+ Between 2008 and 2009 I managed to collect and sort 23 peripheral blood
+ samples, giving a total of 1.04 x 10
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-8
+6
 \end_layout
 
 \end_inset
 
- per ml in 2 ml microcentrifuge tubes.
- Invitrogen Dynalbeads were aliquotted into a 2 ml microcentrifuge tube
- (100 µl per ml sample).
- 1 ml Sort Buffer was added and the tubes placed on a separation magnet.
- The supernatant was removed and the beads resuspended in 100 µl sort buffer
- per ml sample.
- The beads were then added to the samples and mixed, before incubating on
- a rotating wheel at 4°C for 30 minutes.
- 700 µl Sort Buffer was added to each tube before placing each tube on the
- separation magnet for at least 2 minutes.
- The supernatant was then removed and kept at 4°C to use as a negative control
- in the FACS analysis.
- The beads were then washed three times in 2 ml Sort Buffer, separating
- on the magnet for at least 1 minute each wash.
- The beads were resuspended in 100 µl Sort Buffer and 100 µl DETACHaBEAD
- added per tube.
- Samples were incubated at room temperature on a shaker at 600 rpm for 45
- minutes.
- 1.8 ml Sort Buffer was added to each tube before being placed on the separation
- magnet for at least 2 minutes.
- The supernatant was then transferred to a 15 ml tube and the beads washed
- three times with 500 µl Sort Buffer, the supernatant being added to the
- 15 ml tube each time.
- An aliquot was taken to count the cells using a haemocytometer and the
- remaining sample was made up to 15 ml with Sort Buffer.
- 1 ml was removed into fresh tube for the FACS purity analysis.
- The remaining sample was centrifuged at 400x 
-\emph on
-g
-\emph default
- for 8 minutes at 4°C.
- The supernatant was discarded and the cell pellet flash frozen in liquid
- nitrogen before storage at -80°C.
-\end_layout
+ total cells, however 10 of these samples had to be discarded due to poor
+ purity, as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:chap4-CD34-cell-prep"
 
-\begin_layout Standard
+\end_inset
 
-\end_layout
-
-\begin_layout Subsubsection
-Cell separation using the Miltenyi MACS CD34 MicroBead Kit
-\end_layout
-
-\begin_layout Standard
-Samples were centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 mins at 4°C and resuspend in 300 µl MACS buffer per 1 x 10
+.
+ This left me with 13 samples and a total of 7 x 10
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-8
+6
 \end_layout
 
 \end_inset
 
- cells.
- The following assumes a single aliquot of 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-
- cells, and was scaled up as necessary.
- Some leukaepheresis samples had enough cells to warrant thousands of pounds
- worth of MACS beads, in these cases I used aliquots of greater than 1 x
- 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-
- cells.
-\end_layout
-
-\begin_layout Standard
-Cell separation was carried out as per the manufacturer's instructions.
- In brief, 100 µl MACS FcR Blocking reagent was added to block non-specific
- binding of the MicroBeads before adding 100 µl CD34 MicroBeads.
- Samples were mixed and refrigerated for 30 minutes at 4°C.
- 10 ml MACS Buffer was added and samples centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 mins at 4°C.
- Samples were resuspend in 500 µl MACS Buffer and applied to pre-wetted
- MACS MS columns held in an OctoMACS separator magnet at 4°C.
- Flow through was collected and stored at 4°C to use as a control in the
- later FACS analysis.
- Columns were washed three times with 500 µl MACS Buffer and cells were
- eluted from their columns in 1 ml MACS Buffer directly into a second pre-wetted
- MACS MS column.
- Multiple samples were combined into a single column at this point.
- This second magnetic separation step greatly increases the purity of the
- separated cells.
- The column was washed three times with 500 µl MACS buffer and cells eluted
- in 1 ml MACS Buffer.
- Purified cells were counted and made up to 15 ml with MACS buffer.
- A 1 ml aliquot was taken for later FACS purity analysis before the remaining
- sample was centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 minutes at 4°C.
- The supernatant was discarded and the cell pellet flash frozen in liquid
- nitrogen before storage at -80°C.
-\end_layout
-
-\begin_layout Subsubsection
-FACS CD34
+ cells (minimum 76% purity, average 91.6% purity).
+ Because of this low cell number, combined with the need for more than one
+ CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -500,189 +3341,91 @@ FACS CD34
 
 \end_inset
 
- purity analysis
+ 3C library, I worked on optimising the 3C protocol for use with low cell
+ numbers.
+ Some of this work was done with the help of Dr.
+ Mayra Furlan-Magaril, who was a visiting student in our laboratory at the
+ time.
+ 
 \end_layout
 
-\begin_layout Standard
-FACS analysis was used to quantify the percentage of cells staining positively
- for the CD34 antigen.
- Representative FACS plots can be seen in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:CD34-Separation-FACS"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The 1 ml aliquot taken after the magnetic sort was transferred into a 2
- ml microcentrifuge tube, along with two aliquots of no more than 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-
- cells was taken from the unbound magnetic sort.
- Cells were centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 minutes at 4°C and resuspended in 100 µl in MACS buffer.
- 10 µl CD34-APC antibody was added to the purified sample and one of the
- two unbound countrols, and all three samples were and incubated in the
- dark at 4°C for 10 minutes.
- Cells were diluted with 1.8 ml MACS buffer and centrifuged at 300x 
-\emph on
-g
-\emph default
- for 10 mins at 4°C.
- Cell pellets were resuspend in 200 µl PBS and analysed using a BD FACSCalibur
- flow cytometer.
-\end_layout
-
-\begin_layout Section
-Cell culture 
+\begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:M&M-Cell-culture"
+name "sub:ChIP-e4C"
 
 \end_inset
 
-
+ChIP e4C
 \end_layout
 
 \begin_layout Standard
-ENCODE cell lines GM12878 and GM06990 were grown in cell culture facilities
- at the Babraham Institute.
- Both cell lines were obtained from Coriell Cell Repositories and grown
- according to their recommendations.
- Cell lines were grown in RPMI 1640 with 2mM L-glutamine (PAA; E15-840),
- supplemented with 15% fetal bovine serum (PAA; A11-152) and 1x Penicillin
- / Streptomycin (PAA; P11-010).
- Separate bottles of culture were kept for each cell line.
- Cultures were kept in T25 flasks, stood upright with loose caps at 37 ºC
- in 5% CO
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Cultures were passaged when cell densities reached 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-
- cells / ml, typically every other day.
- Cell culture media was made up if required and warmed to 37 ºC in a water
- bath.
- Cell cultures were removed from the incubators into a cell culture laminar
- flood hood, and resuspended using a 10 ml pipette.
- Cultures were transferred to a 50 ml tube and counted using a haemocytometer.
- Tubes were centrifuged at 300x
-\emph on
- g
-\emph default
- for 3 minutes at room temperature.
- Supernatants were discarded, and the cell pellet resuspended in fresh media
- to between 2 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-
- and 5 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-
- cells / ml.
- Resuspended cell solutions were transferred to fresh T25 flasks and put
- back into the incubator.
-\end_layout
-
-\begin_layout Standard
-Stocks of both cell lines were stored in liquid nitrogen, frozen in 1 ml
- aliquots of 5 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-
- cells in RPMI 1640 with 2mM L-glutamine (PAA; E15-840), supplemented with
- 20% fetal bovine serum (PAA; A11-152) and 6% Dimethyl Sulfoxide (
+My initial plans when making the interaction libraries was to incorporate
+ a 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "DMSO"
-description "Dimethyl Sulfoxide"
+symbol "ChIP"
+description "Chromatin immuno-precipitation"
 
 \end_inset
 
-DMSO - Sigma-Aldrich; #154938).
-\end_layout
-
-\begin_layout Section
-3C 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:M&M-3C"
-
-\end_inset
-
-
+chromatin immunoprecipitation (ChIP) step to purity for 3C DNA-protein complexes
+ containing RNA Polymerase II.
+ This was done using an antibody against the Serine-5 phosphorylated elongating
+ form of RNA Polymerase II, and was intended to enrich for DNA-DNA interactions
+ specifically happening at transcription factories.
+ This protocol was used with some success in my lab by Dr.
+ Cameron Osborne and Allen Chong, though the extra immunoprecipitation step
+ meant that only very low amounts of input DNA was available for the e4C
+ stage, resulting in interaction datasets that were very low in complexity.
+ This low complexity was offset by the specific nature of the hits and low
+ signal to noise ratio (unpublished data).
 \end_layout
 
 \begin_layout Standard
-Chromosome Conformation Capture (3C) is a ligation based proximity assay
- used to determine the physical association of sequences of DNA in within
- the nucleus 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Dekker2002b"
+Although the chromatin immunoprecipitation steps worked well in my hands
+ for test samples, I soon decided to remove this enrichment step in favour
+ of keeping as much library DNA as possible.
+ I showed by RT-PCR that my bait genes were expressed in the cells I was
+ investigating.
+ Additionally, all interactions may be relevant to the formation of chromosomal
+ translocations, so any resulting interaction data is useful.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/RT-PCR/RT-PCR.eps
+	lyxscale 50
+	width 60col%
 
 \end_inset
 
- (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:3C_protocol"
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-RT-PCR"
 
 \end_inset
 
-).
- The 3C protocol used was based on that published by Cope and Fraser 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cope2009"
 
-\end_inset
+\begin_inset Argument
+status open
 
-, with some modifications for using CD34
+\begin_layout Plain Layout
+CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -691,685 +3434,185 @@ key "Cope2009"
 
 \end_inset
 
- cells and different restriction endonucleases.
- See Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chap4-e4C-dev"
-
-\end_inset
-
- for more details about the development of this assay.
-\end_layout
-
-\begin_layout Subsection
-Nuclei preparation and digestion
-\end_layout
-
-\begin_layout Standard
-CD34+ cells were fixed, sorted and flash frozen in cell pellets as described
- in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:M&M-CD34-cell-handling"
-
-\end_inset
-
-.
- Cell pellets were thawed on ice and resuspended in 50 ml permeabilization
- buffer (10 mM Tris-HCl, 10 mM NaCl, 0.2% Igepal CA-360 [Sigma], 1 tablet
- complete EDTA-free protease inhibitor [Roche]).
- Cells were incubated on ice for 30 minutes on a rocker whilst an aliquot
- was taken to count the nuclei using a haemocytometer.
- Samples were centrifuged at 760x 
-\emph on
-g
-\emph default
- for 5 minutes at 4°C and resuspended in 500 µl 1.2x NEB3 buffer (100 mM
- NaCl, 50 mM Tris-HCl, 10 mM MgCl
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-2
+ RT-PCR
 \end_layout
 
 \end_inset
 
-, 1 mM Dithiothreitol, pH 7.9 [New England Biolabs]).
- Samples were transferred into a 1.5 ml microcentrifuge tube and centrifuged
- at 760x 
-\emph on
-g
-\emph default
- for 5 min at 4°C.
- Nuclei pellets were resuspended in 500 µl fresh 1.2x NEB3 and 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SDS"
-description "Sodium dodecyl sulfate"
-
-\end_inset
-
-SDS was added to a final concentration of 0.3% to further permeabilise the
- nuclei and remove protein that has not been crosslinked..
- Nuclei were incubated at 37°C for 1 hour, shaking at 950 rpm.
- Triton-X100 was added to a final conentration of 1.8% to sequester the SDS
- and samples incubated at 37°C for 1 hour, shaking at 950 rpm.
- A 10µl aliquot was taken for later digestion efficiency analysis (See Section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:M&M-3C-digestion-efficiency-analysis"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-To digest the crosslinked chromatin 30 µl high concentration 
-\emph on
-AseI
-\emph default
- was added (1500 units [New England Biolabs]) and samples incubated at 37°C
- overnight, shaking at 950 rpm.
- An additional 10 μl 
-\emph on
-AseI
-\emph default
- (500 units) was added and incubated for a further 3 hours at 37°C, 950
- rpm.
- Another 10µl aliquot was taken to check for digestion efficiency later
- and the digestion stopped by the addition of SDS to a final concentration
- of 1.6% before incubating at 65°C, 950 rpm for 25 minutes.
-\end_layout
-
-\begin_layout Subsection
-Ligation and purification
-\end_layout
-
-\begin_layout Standard
-Samples were cooled to room temperature and added to 15 ml tubes containing
-  7 ml 1.1x T4 DNA ligase buffer (Made using 10x buffer [New England Biolabs]
- - 55 mM Tris-HCl pH 7.5, 11 mM MgCl
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-
-, 1.1 mM ATP, 11 mM DTT, 27.5 µg/ml BSA).
- To sequester the SDS, Triton-X100 was added to a final concentration of
- 1% and samples incubated at 37°C for 1 hour with mixing by inversion every
- 10 minutes.
- Samples were allowed to equilibrate in a 16°C in water bath before the
- addition of 2 µl T4 DNA ligase (800 units [NEB]).
- Samples were incubated at 16°C for 4 hours, then at room temperature for
- 30 minutes.
- Proteinase K was added to a final concentration of 100 µg/ml and samples
- incubated at 65°C overnight.
- Tubes were cooled to room temperature and RNase A added to a final concentratio
-n of 40 µg/ml before incubation at 37°C for 1 hour.
- Samples were split into two and transfered into 15 ml Phase Lock Gel Tubes
- (Phase Lock Gel Light 15 ml [5 PRIME]).
- DNA was purified using a phenol / chloroform extraction followed by precipitati
-on in ethanol and sodium acetate.
- DNA pellets were resuspended in 250 μl Molecular Biology grade water (Qiagen).
-\end_layout
-
-\begin_layout Standard
-3C samples were quantified using the Quant-iT PicoGreen assay (Invitrogen).
- Dilutions of 3C product in 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "TE Buffer"
-description "Tris-EDTA Buffer"
-
-\end_inset
-
-TE Buffer (200 mM Tris-HCl, 20 mM EDTA, pH 7.5) were measured in duplicate
- and compared to standard curves made using lambda DNA supplied within the
- Quant-iT PicoGreen kit.
- Fluorescence of the PicoGreen dye was assayed using a Cytofluor II multi-well
- plate reader (485 nm excitation wavelength , 530 nm emission wavelength
- [PerSeptive Biosystems]).
-\end_layout
-
-\begin_layout Subsection
-Digestion efficiency analysis 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:M&M-3C-digestion-efficiency-analysis"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To determine the effificiency of the restriction enzyme digestion step in
- the 3C protocol, I used quantitative PCR.
- In brief, primers are designed that flank a known restriction enzyme site,
- and their performance in quantitative PCR is compared to a set of primers
- nearby that don't flank a restriction enzyme site.
- This is done for samples taken before and after the restriction enzyme
- digestion step.
-\end_layout
-
-\begin_layout Standard
-5 µl aliquots are taken from the 3C samples, before the addition of the
- restriction enzyme and after the end of the digestion incubation.
- 500 µl of Proteinase K buffer (5 mM EDTA, pH 8.0; 10 mM Tris-HCl, pH 8.0;
- 0.5 % SDS) was added with 1 µl of 10 mg/ml Proteinase K (10 µg final).
- Samples were incubated at 65 ºC for at least 30 minutes before being equilibrat
-ed at 37 ºC.
- 1 µl of 1 mg/ml RNase A (1 µg final) was then added, and samples incubated
- for 2 hours at 37 ºC.
- Samples were then phenol-chloroform extracted with ethanol precipitation
- and resuspended in 60 µl of molecular biology grade water.
-\end_layout
-
-\begin_layout Standard
-Samples are now assayed for digestion efficiency using qPCR.
- I used SYBR Green Master (Roche - 04913850001), with the manufacturer's
- protocol.
- Restriction digestion efficiency is calculated using cycle thresholds,
- Ct values:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\%\, Restriction=100-\frac{100}{2^{(CtR-CtC)DIG-(CtR-CtC)UND}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where CtR is the Ct value of the primer pair spanning a restriction enzyme
- site, CtC is the control primer pair.
- DIG is the digested sample and UND is the pre-digestion sample.
- Typically, primers were designed for the region of interest (for example,
- the e4C bait region) as well as an inactive region of heterochromatin.
-\end_layout
-
-\begin_layout Subsection
-Detection of 3C products by qPCR 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "qPCR"
-description "Quantitative PCR"
-
-\end_inset
-
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "PCR"
-description "Polymerase chain reaction"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Primer design
-\end_layout
-
-\begin_layout Standard
-Insert the gene of interest into the primer3 programme (gene has been exported
- from Ensembl).
- 
-\end_layout
-
-\begin_layout Standard
-Square brackets around the AseI / BglII site.
-\end_layout
-
-\begin_layout Standard
-Define primer characteristics.
- 
-\end_layout
-
-\begin_layout Standard
-Primer size: 20 22 24
-\end_layout
-
-\begin_layout Standard
-Primer Tm: 60 62 64
-\end_layout
-
-\begin_layout Standard
-Primer GC%: 30 50 70
-\end_layout
-
-\begin_layout Standard
-For one round PCR: product size ~ 150-230 bp
-\end_layout
-
-\begin_layout Standard
-Difference Tm b/w primers = 1.5C
-\end_layout
-
-\begin_layout Standard
-Number to return: 25 (minimum).
-\end_layout
-
-\begin_layout Subsubsection
-Equimolar mix
-\end_layout
-
-\begin_layout Subsubsection
-qPCR
-\end_layout
-
-\begin_layout Standard
-Real-time PCR machine: ABI Prism Sequence Detection System 
-\end_layout
-
-\begin_layout Standard
-Initial step: 50°C, 2 min Denaturation: 95°C, 10 min 40 cycles: 95°C, 15
- s
-\end_layout
-
-\begin_layout Standard
-Dissociation Curve: 95°C, 1 min; 55°C, 30s; 95°C, 30s 60°C, 1 min
-\end_layout
-
-\begin_layout Standard
 
 \series bold
-Reaction mixture (μl): 
-\end_layout
-
-\begin_layout Standard
-6 H2O 
-\end_layout
-
-\begin_layout Standard
-5 Template 
-\end_layout
-
-\begin_layout Standard
-0.75 Forward primer (stock 10 µM, final 300 nM) 
-\end_layout
-
-\begin_layout Standard
-0.75 Reverse primer (stock 10 µM, final 300 nM) 
-\end_layout
-
-\begin_layout Standard
-12.5 SYBRgreen 2x mix 
-\end_layout
-
-\begin_layout Standard
-25 Final volume 
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Protocol
-\end_layout
-
-\begin_layout Standard
-1.       Pipette out templates into plate (bottom of wells)
-\end_layout
-
-\begin_layout Standard
-2.       Make master mix
-\end_layout
-
-\begin_layout Standard
-3.       Pipette out MM (left of wells)
-\end_layout
-
-\begin_layout Standard
-4.       Put seal on plate
-\end_layout
-
-\begin_layout Standard
-5.       Spin briefly
-\end_layout
-
-\begin_layout Standard
-6.       Run qPCR
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Using 0.2 pmol (200 fmol) equimolar mix
-\end_layout
-
-\begin_layout Standard
-Mix dilutions:
-\end_layout
-
-\begin_layout Standard
-1 x 10-1
-\end_layout
-
-\begin_layout Standard
-2 x 10-2
-\end_layout
-
-\begin_layout Standard
-4 x 10-3
-\end_layout
-
-\begin_layout Standard
-8 x 10-4
-\end_layout
-
-\begin_layout Standard
-1.6 x 10-4
-\end_layout
-
-\begin_layout Standard
-3.2 x 10-5
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-3C DNA template is diluted to 25 ng/μl
-\end_layout
-
-\begin_layout Standard
-5 μl template / well (125 ng)
-\end_layout
-
-\begin_layout Standard
-4 replicates per primer pair
-\end_layout
-
-\begin_layout Subsubsection
-Analysis
-\end_layout
-
-\begin_layout Standard
-Make standard curves from controls for each primer pair - plot log Ct and
- log quantity of controls.
-\end_layout
-
-\begin_layout Standard
-Log Ct of samples, work out log quantity from standard curve.
- 10^(log Ct), then average and work out SD.
-\end_layout
-
-\begin_layout Standard
-Plot variance from mean across plate to check for evapouration
-\end_layout
-
-\begin_layout Standard
-Plot values with SD
-\end_layout
-
-\begin_layout Standard
-Check all dissociation curves
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:M&M-e4C"
-
-\end_inset
-
-e4C
-\end_layout
-
-\begin_layout Subsection
-Primer extension and primary 
-\emph on
-NlaIII
-\emph default
- digestion
-\end_layout
-
-\begin_layout Standard
-12 µg of 3C material was defrosted and cleaned using 
-\emph on
-solid-phase revsersible immobilization
-\emph default
- (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SPRI"
-description "Solid-phase revsersible immobilization"
-
-\end_inset
-
-SPRI), as described in the manufacturer's protocol (Beckman & Coulter Agencourt
- AMPure XP+ beads).
- Samples were eluted in 252 μl molecular biology grade water.
- Six primer extensions were set up with 2 µg template 3C material, alongside
- a positive control primer extension using 1 µg of human genomic DNA, cut
- with EcoRI.
- 50 µl reaction volumes were made up containing capture DNA, 1x ThermoPol
- buffer (supplied with Vent), 200 µM each dNTPs, 10 pmol biotinylated bait
- enrichment primer and 2 units Vent (exo
+CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
--
++
 \end_layout
 
 \end_inset
 
-) DNA polymerase (NEB).
- The primer extension was then run on a thermocycler with the following
- cycle parameters: 95 °C for 4 min, 61 °C for 2 min (primer specific; ~2.5°C
- below T
-\begin_inset script subscript
+ RT-PCR.
+
+\series default
+ B = Buffy Coat cells, C = CD34
+\begin_inset script superscript
 
 \begin_layout Plain Layout
-m
++
 \end_layout
 
 \end_inset
 
-of biotinylated primer), 72 °C for 10 min.
- Tubes were snap chilled on ice and then briefly pulsed in the microcentrifuge.
- The six sample tubes were pooled into two microcentrifuge tubes and cleaned
- using a SPRI cleanup.
- Samples were eluted in 80 µl molecular biology water (40 µl for the genomic
- DNA positive control).
- Samples were digested with 20 units of 
-\emph on
-NlaIII 
-\emph default
-(NEB) in 1x NEB4 buffer and 1x BSA (both supplied with 
-\emph on
-NlaIII
-\emph default
-) for 3 hours at 37 °C.
- Samples were purified using SPRI beads and eluted in 50 µl of Molecular
- Biology water.
- 
+ cells, G = genomic DNA control.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Subsection
-Bait enrichment and secondary 
-\emph on
-NlaIII
-\emph default
- digestion
+\end_inset
+
+ cells not treated with DNaseI due to low cell numbers, hence genomic band
+ contamination.
 \end_layout
 
-\begin_layout Standard
-To enrich the e4C bait regions, bound with biotinylated primers from the
- extension step, the magnetic streptavidin Invitrogen Dynabeads kilobaseBINDER
- Kit (M-280) was used.
- Beads were aliquotted into microcentrifuge tubes, 10 µl (100 µg) per sample.
- The  preservative was removed on a magnet and the beads resuspended in
- 50 µl binding buffer (provided in Dynabeads kilobaseBINDER kit).
- This was removed on the magnet and the beads resuspended in 50 µl fresh
- binding buffer.
- The primer extension material (50 µl) was added and the tubes incubated
- on a shaker set to 1200 rpm overnight at room temperature.
- The supernatant was then removed on a magnet and the beads washed twice
- in 100 µl wash buffer, once in 100 µl 1x TE Buffer and once in 50 µl 1x
- NEB4 buffer with 1x BSA (NEB) before being resuspended in 50 µl NEB4 with
- BSA.
-\end_layout
-
-\begin_layout Standard
-A second digestion step was then carried out with the enriched 3C material.
- To the resuspended beads, 0.5 µl (2.5 units) 
-\emph on
-NlaIII
-\emph default
- was added and tubes were incubate for 2 hours at 37°C, shaking at 1200
- rpm.
- The supernatant was then removed on the magnet and the beads washed twice
- in 100 µl wash buffer, once in 100 µl 1x TE Buffer and once in 50 µl 1x
- NEB Ligase Buffer (supplied with NEB T4 ligase).
- Beads were resuspended in 50 µl fresh 1x NEB Ligase Buffer heated to 55°C
- for 5 minutes on a heating block along side a 7.5 µl aliquot of 100 µM stock
- PE Ad 2.0 Nla adapter.
- Both were snap chilled on ice.
- Beads were placed on the magnet and the supernatant removed before being
- resuspended in 40 µl ligation mixture (1x NEB Ligase Buffer; 200 pmol PE
- Ad 2.0 Nla adapter; 2000 units NEB T4 DNA ligase).
- Tubes were incubated at room temperature for 2 hours on a rotating wheel.
- The supernatant was removed on a magnet and the beads washed twice in 100
- µl wash buffer and twice in 100 µl 1x TE Buffer.
-\end_layout
-
-\begin_layout Subsection
-PCR and germline removal
-\end_layout
-
-\begin_layout Standard
-Beads were washed in PCR wash mix (1x Phusion HF Reaction Buffer (NEB) with
- 200 µM each dNTPs) and split into a strip of 8 PCR tubes.
- 4 strip PCR tubes were used for half of the gDNA positive control and two
- tubes were used as no template controls.
- Using the magnet outside its housing, the PCR wash mix was removed and
- the beads resuspended in 50 μl of PCR master mix - 1x Phusion HF Reaction
- Buffer (NEB); 200 µM each dNTPs; 10 pmol PE Ad 1.0 + nested primer; 10 pmol
- PE Ad 2.0 Nla adaptor primer; 1 unit HF Phusion Pol II (NEB).
- The PCR was run on a thermocycler with the following program: 98 °C for
- 30 seconds; 35 cycles of 98 °C for 10 seconds, 65 °C for 30 seconds and
- 72 °C for 30 seconds; 72 °C for 5 minuntes; hold at 4 °C.
- The PCR tubes were pooled back into single sample tubes and the PCR supernatant
- transferred into a fresh microcentrifuge tube using a magnet.
- The beads were washed twice in 100 µl wash buffer and once in 100 µl 1x
- TE Buffer before storing at 4 °C as a backup.
- The PCR supernatant was cleaned using SPRI beads and eluted in 400 µl Molecular
- Biology water.
- 5 µl sample was kept back for the later gel.
-\end_layout
-
-\begin_layout Standard
-To avoid sequencing religation events, which make up the majority of the
- e4C library, a digestion step is undertaken using a rare-cutting enzyme
- that recognises a sequence within the germline locus after the 
-\emph on
-AseI
-\emph default
- site.
- Aliquots of each sample were taken and processed fromt this point forwards,
- taking 100 μl aliquots and keeping the remainder as a backup.
- Each aliquot was made up to 1x with NEB buffer for the relevant restriction
- enzyme and then ~65 units of restriction enzyme (
-\emph on
-BspEI
-\emph default
- for 
-\emph on
-MLL
-\emph default
-, 
-\emph on
-BglII
-\emph default
- for 
-\emph on
-BCR
-\emph default
- 
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-what was it for ABL and MLL promoters?
+Book 2 page 87 for GM12878 RT-PCR with MLL, page 100 for GM12878, GM06990
+ and HEK293 MLL
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Carrier e4C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+SF9 (page 39, book 1) and then SL2 cells (page 48, book 1).
+ Page 67 for primer testing.
+ Page 108 for 3C check in carrier 3C material.
+\end_layout
+
+\end_inset
+
+ An established technique when using low cell numbers for techniques such
+ as ChIP and BS-Seq is to use 'carrier' chromatin to buffer loss of sample
+ DNA [#REFS].
+ This is done by processing cells from another organism in with the sample,
+ giving larger quantities of DNA to work with.
+ Loss through non-specific binding of DNA to plastic such as tubes and pipette
+ tips has less of an effect on the sample DNA, and steps such as precipitations
+ are aided by having larger pellets to work with.
+\end_layout
+
+\begin_layout Standard
+Intially I tried this technique by using the Sf9 cell line, derived from
+ 
+\emph on
+Spodoptera frugiperda
+\emph default
+ (Fall Armyworm), obtained from Maureen Hamon at the Babraham Institute.
+ Cells were processed in parallel with the sample as described in Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+ up until the point of permeabilisation.
+ Sf9 cells were then split into two aliquots of 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ cells, and 1 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+
+ sample cells were added to one aliquot.
+ Both samples were then processed as normal for the rest of the 3C protocol.
+\end_layout
+
+\begin_layout Standard
+After this initial test run, I use the Schneider's line 2 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "S2R+"
+description "Schneider's line 2 Drosophila cell line"
+
+\end_inset
+
+S2R+) cell line, derived from 
+\emph on
+Drosophila melanogaster
+\emph default
+, grown with help from Dr.
+ Sarah Toscano at the Babraham Institute.
+ The reason for this change was because the genome of 
+\emph on
+Drosophila melanogaster
+\emph default
+ is known, allowing easy design of PCR primers to test for carrier DNA contamina
+tion, and to allow identification of any products occuring as a result of
+ a non-specific ligation event in the e4C.
+ The protocol was followed as described for the Sf9 cells.
+\end_layout
+
+\begin_layout Standard
+Initial tests with the carrier e4C were promising, showing good recovery
+ of sample DNA and successful 3C product detection using primers designed
+ for the 
+\emph on
+Drosophila melanogaster 
+\emph default
+genome (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:S2R+3C-test"
 
 \end_inset
 
 ).
- Samples were incubated at 37°C for 2 hours before being cleaned with SPRI
- beads and eluted in 100 µl of molecular biology grade water.
- A 1.5% gel was run with 5 µl of the digested gDNA sample and 5 µl of the
- undigested gDNA sample to check removal of germline bands.
-\end_layout
-
-\begin_layout Subsection
-Gel extraction and second round PCR
-\end_layout
-
-\begin_layout Standard
-Half of the e4C sample was run on a 1.5% gel and stained in fresh Ethidium
- Bromide.
- Using a UV box to visualise the samples, a gel block was cut out for each
- sample from 250bp to 700bp.
- The samples were extracted from these gel blocks using the Qiagen Gel Extractio
-n Kit, as per the manufacturer's instructions (without heating to resuspend).
- Samples were eluted in 30 µl Qiagen Eluion Buffer.
-\end_layout
-
-\begin_layout Standard
-To add the full illumina adapters for sequencing, a second PCR is used.
- 3 µl e4C sample is made up to a 50 µl PCR mix with 1x Phusion HF Reaction
- Buffer (NEB); 200 µM each dNTPs; 10 pmol PE PCR 1.0 Primer; 10 pmol PE PCR
- 2.0 Primer; 1 unit Phusion HF Taq (NEB).
- The Phusion two step PCR was then run: 98 °C for 30 seconds; 15 cycles
- of 98 °C for 10 seconds and 72 °C for 30 seconds; 72 °C for 5 minutes;
- hold at 4 °C.
- PCR products were cleaned using SPRI beads and eluted in 40 µl molecular
- biology grade water.
- To check the products, 10 µl was run on a 1% gel.
-\end_layout
-
-\begin_layout Subsection
-e4C library quality control
-\end_layout
-
-\begin_layout Standard
-To test the e4C library before sequencing a panel of PCR reactions were
- done using two sense primers facing adjacent 
-\emph on
-AseI
-\emph default
- recognition sites.
- Samples were quantified by qPCR with TaqMan probes and run on an Agilent
- 2100 Bioanalyzer by Kristina Tabbada of the Babraham Sequencing Facility.
- Library size and quantities were assessed before deciding to sequence each
- sample.
-\end_layout
-
-\begin_layout Section
-Carrier e4C 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:M&M-Carrier-e4C"
+ However, due to the removal of the removal of the RNA Polymerase II ChIP
+ step (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ChIP-e4C"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Due to the low numbers of CD34
+) and subsequent aquisition of much larger CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1378,988 +3621,225 @@ Due to the low numbers of CD34
 
 \end_inset
 
- cells initially obtained from the peripheral blood collections, I worked
- on optimising the e4C protocol for use with low cell numbers.
- Because of the use of 'carrier chromatin' from other organisms, used to
- buffer loss of DNA, I named this protocol Carrier e4C.
+ cell collections (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:4C-with-large-cell-numbers"
+
+\end_inset
+
+), the carrier e4C protocol was not needed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 4/S2R+ 3C/S2R+ 3C.eps
+	lyxscale 50
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:S2R+3C-test"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Drosophila melanogaster
+\emph default
+ S2R+ 3C Tests
+\end_layout
+
+\end_inset
+
+
+\series bold
+Drosophila melanogaster
+\emph default
+ S2R+ 3C Tests.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-DNA fluorescence 
-\emph on
-in-situ
-\emph default
- hybridisation 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:M&M-DNA-FISH"
+name "sec:4C-with-large-cell-numbers"
 
 \end_inset
 
+e4C with large cell numbers
+\end_layout
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "DNA-FISH"
-description "DNA fluorescence in-situ hybridisation"
+\begin_layout Standard
+In December 2009 I was able to obtain a leukapheresis sample from Dr.
+ George Follows with the help of Kevin Jestice, the chief biomedical scientist
+ within the Haematology Department at Addenbrookes Hospital, Cambridge.
+ This sample came from a patient who had responded exceptionally well to
+ G-CSF treatment and had such a large number of mobilised peripheral CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
 
 \end_inset
 
+ cells that there was leukapheresis sample left spare after use by the Haematolo
+gy Department.
+ I processed this sample as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:M&M-Leukapheresis-collections"
 
-\end_layout
-
-\begin_layout Standard
-Modified from D.Bolland original by I.Clay 23/09/08, remodified by D.
- Bolland 14/01/09.
- Originally from Thomas Ried lab, NIH, Bethesda and the Cremer lab (I.
- Solovei chapter in FISH book).
-\end_layout
-
-\begin_layout Subsection
-Probe generation
-\end_layout
-
-\begin_layout Standard
-Directly-labeled DNA probes for in situ hybridisation
-\end_layout
-
-\begin_layout Standard
-Nick translation with aminoallyl-dUTP followed by chemical-coupling with
- alexafluor reactive dye
-\end_layout
-
-\begin_layout Standard
-Start with clean BAC DNA (use Dan’s triple precipitation method) or pure
- plasmid or PCR product DNA prepared using a kit.
- Make sure DNA is in H2O, not TE or EB buffer.
-\end_layout
-
-\begin_layout Standard
-1.
- Add the following components on ice:
-\end_layout
-
-\begin_layout Standard
-DNA to be labeled 1 ug
-\end_layout
-
-\begin_layout Standard
-10 × NTB 5 μl
-\end_layout
-
-\begin_layout Standard
-0.1M DTT (comes with superscript II/III) 5 μl
-\end_layout
-
-\begin_layout Standard
-d(GAC)TP mix (0.5mM each) 4 μl
-\end_layout
-
-\begin_layout Standard
-dTTP (0.5mM) 1 μl
-\end_layout
-
-\begin_layout Standard
-aminoallyl-dUTP (0.5mM) 6 μl
-\end_layout
-
-\begin_layout Standard
-DNA Polymerase I, 10 U/μl 1 μl
-\end_layout
-
-\begin_layout Standard
-DNase I dilution (currently 1:30) 1 μl
-\end_layout
-
-\begin_layout Standard
-H2O to final volume 50 μl
-\end_layout
-
-\begin_layout Standard
-It is best to scale this up to give pellets large enough to see and to make
- extra nick-translated DNA that can be coupled to different dyes at a later
- date.
- I have found doing a 4x reaction gives around 4ug nick-translated DNA and
- reasonable pellets.
- Labelling 1ug of this each time will give enough probe for 100 single spot
- slides (10ng probe per slide, 22 x 22mm coverslip, 10ul hyb.
- mix)
-\end_layout
-
-\begin_layout Standard
-For my current batch of DNase I (Roche 04716728001) I have found that a
- 1:30-1:35 DNAse I dilution gives a smear of optimal size after 2 hours
- at 16˚C.
- However, this will need to be optimized for each new/different batch of
- DNAse I.
- This can be done by running the above reaction but without nucleotides
- or DNA Polymerase I and titrating the DNAse I dilution.
- This can range from 1:10-1:2000 so it may be necessary to do multiple tests.
- A smear of 100bp-800bp with a maximum at ~300bp (before heating) is ideal
- at this stage.
- It is then typical to use double the concentration in the actual NT reaction,
- although this may require some fine tuning.
- The DNAse I will typically go off slowly over time.
-\end_layout
-
-\begin_layout Standard
-Ensure DNA Polymerase is well within date as it is critical this enzyme
- works well.
- Dilute DNAse I in 1x DNAse 1 buffer.
-\end_layout
-
-\begin_layout Standard
-2.
- Incubate at 16°C for 2h.
-\end_layout
-
-\begin_layout Standard
-3.
- Run an aliquot of 1μl on a 2% agarose gel to check the size of the fragments.
- The optimal size for in situ hybridisation is 100-500 bp.
- Before heating (below) nick-translation reactions run slower in agarose
- gels (probably due to BSA in NTB).
- A smear of products from 1kb to 150bp with the peak around 200-300bp is
- suitable at this stage.
- If the size range is significantly larger than this (eg.
- 500bp-1.5kb), add another 1μl of a new DNase I dilution and place at 16°C
- for a further 15-60 min.
- Run another aliquot of 0.5μl on a 2% gel to check size again.
- Repeat until optimum size is achieved.
-\end_layout
-
-\begin_layout Standard
-4.
- Heat to 75˚C for 5 min to inactivate DNase I.
- If you run 1ul on a 2% gel at this stage the DNA smear will have shifted
- to 100-500bp.
- Clean up amine-modified DNA using Qiagen PCR purification kit.
- Elute in 200ul.
-\end_layout
-
-\begin_layout Standard
-5.
- Precipitate amine-modified DNA immediately with 20μl NaOAc and 550μl 100%
- ethanol.
- Precipitate at -20˚C for at least an hour (overnight is best).
- Centrifuge at 13-14k for 15 min at 4˚C.
- Pellet will be small but visible if NT reaction was scaled up but tiny
- if a 1x reaction was done.
- Wash pellet with 100μl 70% ethanol, spin, take off ethanol, allow pellet
- to air dry.
-\end_layout
-
-\begin_layout Standard
-6.
- Resuspend pellet of ultraclean amine-modified DNA in 1.25μl H2O per NT reaction.
- You will lose a lot of DNA in the two cleanup steps but these are necessary
- to remove all non-probe primary amines that would otherwise compete in
- the coupling reaction (below).
- If a single NT reaction was done then presume at this stage that you have
- ~1ug of NT DNA.
- If 4x NT reactions where done then resuspend in 5ul H2O and quantify 1ul
- on the nanodrop.
- Amine-modified DNA can be stored at -20˚C at this stage and used in future
- labeling reactions.
-\end_layout
-
-\begin_layout Standard
-7.
- If using single-use dried pellets of amine reactive dye, take out of freezer
- and resuspend in 2μl anhydrous DMSO, vortex, spin down.
- Each tube of dye can be used to label 4-5ug of NT DNA but concentration
- of the dye in the coupling reaction should always be constant.
- Once reconsitituted with DMSO the dyes rapidly lose reactivity so use immediate
-ly (cannot be stored for future use).
- Use the following table as a guide for probes per tube of reactive dye.
-\end_layout
-
-\begin_layout Standard
-DNA amount DNA volume NaB buffer Volume of dye Total Enough for
-\end_layout
-
-\begin_layout Standard
-4 x 1ug 1.25ul each 0.75ul each 0.5ul each 2.5ul (1/4 reactions) 100 slides
- each
-\end_layout
-
-\begin_layout Standard
-3 x 1.35ug 1.67ul each 1ul each 0.67ul each 3.34ul (1/3 reactions) 130 slide
- each
-\end_layout
-
-\begin_layout Standard
-2 x 2ug 2.5ul each 1.5ul each 1ul each 5ul (1/2 reactions) 200 slides each
-\end_layout
-
-\begin_layout Standard
-1 x 4ug 5ul 3ul 2ul 10ul (Full reaction) 400 slides
-\end_layout
-
-\begin_layout Standard
-8.
- Heat amine-modified DNA to 95˚C for 5 min in PCR block, snap cool on ice
- then add NaB labeling buffer (0.2M Sodium bicarbonate pH 8.3) on ice and
- mix/pulse down.
- Heating gives 10-20% enhanced labeling.
- Add amine-reactive dye to amine-modified DNA/NaB, vortex, spin down and
- incubate at room temperature in the dark for at least 1h.
-\end_layout
-
-\begin_layout Standard
-Amine-reactive dyes are very sensitive to water and DMSO is hygroscopic
- so allow everything to warm to room temperature before opening tubes/resuspendi
-ng.
- Always use fully anhydrous DMSO.
-\end_layout
-
-\begin_layout Standard
-9.
- Add 40μl H2O and use Qiagen PCR cleanup kit to purify the probe, do two
- washes of the column with PE.
- Elute in 40μl for 1ug, 60ul for 1.35ug, 100ul for 2ug or 200ul for 4ug probe.
- Liquid should be slightly orange/yellow for alexa488, pink for alexa555
- or blue for alexa647.
-\end_layout
-
-\begin_layout Standard
-10.
- Can be analysed on the nanodrop using the ‘proteins and labels’ setting
- to measure dye incorporation and DNA concentration using Dan’s probe analysis
- excel workbook.
- You can also run an aliquot (1μl should be enough) on a gel also to check
- size, yield etc.
- You can then analyse the gel on the phosphoimager to check incorporation
- and if there is any unincorporated dye.
- In the FISH, 10ng per single-spot slide/22x22mm coverslip works well with
- bright probes.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Reagents
-\end_layout
-
-\begin_layout Standard
-10×NTB: 0.5 M Tris-HCl (or Trizma-HCl), pH 7.5, 50mM MgCl2, 0.5 mg/ml nuclease-free
- BSA fraction V.
- Filter purify.
-\end_layout
-
-\begin_layout Standard
-10×NTB 5 ml
-\end_layout
-
-\begin_layout Standard
-1 M Tris-HCl, pH 7.5 2.5 ml
-\end_layout
-
-\begin_layout Standard
-1 M MgCl2 0.25 ml
-\end_layout
-
-\begin_layout Standard
-10 mg/ml BSA fraction V 250 μl
-\end_layout
-
-\begin_layout Standard
-Make to 5ml with nuclease-free water 2 ml
-\end_layout
-
-\begin_layout Standard
-0.1M DTT – comes with Superscript II/III or make your own stock
-\end_layout
-
-\begin_layout Standard
-DNA Polymerase I – NEB cat.
- no.
- M0209S from Stores £39.95
-\end_layout
-
-\begin_layout Standard
-DNAse I – Roche cat.
- no.
- 04716728001 from Stores £89.59
-\end_layout
-
-\begin_layout Standard
-Sodium bicarb.
- (NaHCO3) 250 g Sigma cat#S7277 £14.30
-\end_layout
-
-\begin_layout Standard
-Stock solution 0.2 M, pH 8.3 MW 84.01 dissolve 100 mg in 3.95 ml water
-\end_layout
-
-\begin_layout Standard
-Make single use aliquots (5-10μl)
-\end_layout
-
-\begin_layout Standard
-Amino-allyl dUTP 1 mg Sigma cat#A0410 £92.10
-\end_layout
-
-\begin_layout Standard
-Stock solution 20 mM MW 523.2 add 95.5 µl of H2O
-\end_layout
-
-\begin_layout Standard
-Cheaper, alternate source: Ambion Cat# 8439 50mM solution (50μl) £108 or
- even cheaper
-\end_layout
-
-\begin_layout Standard
-Fermentas R1101 50ul 50mM solution £84.88 through SSC
-\end_layout
-
-\begin_layout Standard
-2μl amino-allyl dUTP (50mM stock)
-\end_layout
-
-\begin_layout Standard
-198μl H2O
-\end_layout
-
-\begin_layout Standard
-Make 15μl aliquots
-\end_layout
-
-\begin_layout Standard
-d(GAC)TP 10 x mix = (0.5 mM dGTP, dATP, dCTP) 
-\end_layout
-
-\begin_layout Standard
-2μl dATP (100mM stock)
-\end_layout
-
-\begin_layout Standard
-2μl dCTP (100mM stock)
-\end_layout
-
-\begin_layout Standard
-2μl dGTP (100mM stock)
-\end_layout
-
-\begin_layout Standard
-394μl H2O
-\end_layout
-
-\begin_layout Standard
-Make 10μl aliquots
-\end_layout
-
-\begin_layout Standard
-dTTP 10 x 1μl dATP (100mM stock)
-\end_layout
-
-\begin_layout Standard
-199μl H2O
-\end_layout
-
-\begin_layout Standard
-Make 5μl aliquots
-\end_layout
-
-\begin_layout Standard
-Succinimdyl ester-coupled dyes plus others
-\end_layout
-
-\begin_layout Standard
-Alexa-fluor reactive dye decapacks (10 vials) for microarray applications
- – from Invitrogen/Molecular probes – dyes available;
-\end_layout
-
-\begin_layout Standard
-Alexa fluor 488 (2nd brightest) A32750 £130
-\end_layout
-
-\begin_layout Standard
-Alexa fluor 555 (1st brightest) A32756 £134
-\end_layout
-
-\begin_layout Standard
-Alexa fluor 594 A32751 £113
-\end_layout
-
-\begin_layout Standard
-Alexa fluor 647 (3rd brightest) A32757 £130
-\end_layout
-
-\begin_layout Standard
-Alexa fluor 555+647 (2 x 10 vials).
- A32755 £239
-\end_layout
-
-\begin_layout Standard
-Other dyes available – Alexa fluor 488 (TFP) 1mg A30005 £217
-\end_layout
-
-\begin_layout Standard
-Tetrafluorophenyl (TFP) esters are an improvement over the succinimidyl
- ester (SE or NHS-ester) chemistry typically used to attach fluorophores
- or haptens to the primary amines of biomolecules.
- Both reactive chemistries produce the same strong amide bond between the
- dye or hapten and the compound of interest, but TFP esters are less susceptible
- to spontaneous hydrolysis during conjugation reactions.
- Alexa Fluor TFP esters are stable for several hours at the basic pH typically
- used for reactions – far outlasting succinimidyl esters.
- Many succinimidyl ester-coupled dyes available from molecular probes or
- GE life sciences – 1mg aliquots ~£200 – resuspend in 41.4μl anhydrous DMSO,
- store at -20˚C in single use aliquots of 2μl in box with dessicant (eg.
- Silica gel).
-\end_layout
-
-\begin_layout Standard
-(from old method)
-\end_layout
-
-\begin_layout Standard
-10×NTS: 0.5 M Tris-HCl (or Trizma-HCl), pH 7.5, 0.1 M MgSO4, 1 mM DTT, 0.5 mg/ml
- nuclease-free BSA fraction V
-\end_layout
-
-\begin_layout Standard
-10×NTS 5 ml
-\end_layout
-
-\begin_layout Standard
-1 M Tris-HCl, pH 7.5 2.5 ml
-\end_layout
-
-\begin_layout Standard
-1 M Mg SO4 0.5 ml
-\end_layout
-
-\begin_layout Standard
-100 mM DTT 50 μl
-\end_layout
-
-\begin_layout Standard
-10 mg/ml BSA fraction V 250 μl
-\end_layout
-
-\begin_layout Standard
-Make to 5ml with nuclease-free water 1.7 ml
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Subsection
-DNA-FISH
-\end_layout
-
-\begin_layout Subsubsection
-Fixing cells in solution and cytospinning on to slides for DNA FISH
-\end_layout
-
-\begin_layout Standard
-This is a variation of the Hi-C fixation that I have found works for DNA
- FISH in P20 male germ cells and fetal liver cells (so far).
- It should work for other cells.
- Can do variable numbers of cells in different tubes from microtubes to
- 50ml falcons.
- For tubes that fit in a microcentrifuge – spin live cells at 4500rpm for
- 2 min, fixed cells can be spun a little harder – 6000rpm for 2 min.
- For falcon tubes, centrifuge live cells at 1300rpm, 5 min, 4˚C, fixed cells
- at 1500rpm, 10 min, 4˚C.
- This protocol uses the Shandon Cytospin but the cells are fixed and a very
- slow speed is used – 3D nuclear structure appears to be largely preserved
- based on DAPI staining and how spherical they are.
-\end_layout
-
-\begin_layout Standard
-1.
- Prepare a single-cell suspension of your cells in PBS on ice at 1x106 cells
- per ml.
- How you do this will depend on the cell type but it’s best to have a very
- good single cell suspension for FISH – filter through 40um cell strainers,
- multiple PBS washes etc etc.
-\end_layout
-
-\begin_layout Standard
-2.
- Add 37% formaldehyde (FA - Merck) to a final concentration of 2%.
- Eg.
- 40ml – 2.28ml, 20ml – 1.14ml, 10ml – 0.57ml, 1ml - 57ul etc)
-\end_layout
-
-\begin_layout Standard
-3.
- Mix gently on a rocker for 10 min to fix.
- (10 min fixation works for P20 male germ cells and fetal liver so far –
- lower times may be needed for other cell types)
-\end_layout
-
-\begin_layout Standard
-4.
- Quench formaldehyde with 1M glycine (final concentration 120mM – eg.
- 40ml – 6ml glycine, 20ml – 3ml glycine, 10ml – 1.5ml glycine, 1ml - 150ul
- etc.)
-\end_layout
-
-\begin_layout Standard
-5.
- Mix gently on rocker for 5 min, then leave on ice for 15 min.
-\end_layout
-
-\begin_layout Standard
-6.
- If any aggregations or debris have formed during the fixation then filter
- through 40um cell strainers to remove at this stage.
-\end_layout
-
-\begin_layout Standard
-7.
- Top up tube with cold PBS, take some cells to count on a hemocytometer
- and spin down at 4˚C.
-\end_layout
-
-\begin_layout Standard
-8.
- Discard supernatant and carefully resuspend pellet in PBS at 0.5-3x107 cells/ml
- (see note in 9).
- At this stage cells can be stored in the fridge for some time (?unknown
- at present?) in PBS with 0.05% sodium azide.
-\end_layout
-
-\begin_layout Standard
-9.
- To cytospin, pipette 100ul of cells into a pre-assembled cytospin funnel/clip/c
-ard/slide assembly and spin at 300rpm for 3 min in the Shandon cytospin
- (Fatima/Wendy Dean).
- Use the standard polyprep poly-L-lysine slides from sigma.
- Ensure cells are fully mixed before pipetting into cytofunnel.
- The optimal number of cells to cytospin for optimal density will have to
- be determined for each cell type as it depends on cell size and probably
- many other factors.
- A good density for FISH is one where the cells are dense but not too many
- are touching/are not clumping too much.
- Some cell will be lost during the FISH.
-\end_layout
-
-\begin_layout Standard
-10.
- As soon as the spin is finished quickly take out and disassemble the cytofunnel
- assembly and carefully extract the slide, being careful not to scrape the
- cells with the absorbent card.
- This is a race against time as the cells will be rapidly drying out since
- the PBS has now gone.
- Quickly place slides in a coplin jar containing 1x PBS.
- Can assess cell density by placing slides in PBS in a petri dish and viewing
- on TC microscope.
-\end_layout
-
-\begin_layout Standard
-11.
- Continue with the standard DNA FISH protocol!
-\end_layout
-
-\begin_layout Subsubsection
-DNA FISH probe precipitation 
-\end_layout
-
-\begin_layout Standard
-1.
- Add to an eppendorf tube:
-\end_layout
-
-\begin_layout Standard
-Probe DNA (eg.
- 10-20ng directly-labelled BAC)
-\end_layout
-
-\begin_layout Standard
-1µl (1µg) Cot-1 DNA
-\end_layout
-
-\begin_layout Standard
-1µl (9.7µg) salmon sperm DNA
-\end_layout
-
-\begin_layout Standard
-2.
- Add Na-Acetate, 1/10 of the total volume of probe DNA mixture (above).
-\end_layout
-
-\begin_layout Standard
-3.
- Add 100% ethanol, i.e., 2.5 x total volume of mixture of DNA + Na-Acetate.
-\end_layout
-
-\begin_layout Standard
-4.
- Vortex, store tube at -20°C for 1 hour or overnight.
-\end_layout
-
-\begin_layout Standard
-5.
- Centrifuge (13,000 rpm) the precipitated DNA at 4°C for 30 min.
-\end_layout
-
-\begin_layout Standard
-6.
- Wash pellet with 70% Ethanol and spin again.
-\end_layout
-
-\begin_layout Standard
-7.
- Carefully take off supernatant, allow pellet to dry.
-\end_layout
-
-\begin_layout Standard
-8.
- Add 5µl deionized formamide (pH 7.0) and incubate tube at 37°C using a thermomix
-er, shaking at 300-500rpm for 30 min, or until probe has resuspended.
-\end_layout
-
-\begin_layout Standard
-9.
- Add 5 µl Master Mix, vortex, centrifuge briefly.
- Your probe is now ready to apply.
- Make sure you mix again by pipetting well before loading onto coverslip
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Subsubsection
-Day 1 – Prepare slides, apply probes
-\end_layout
-
-\begin_layout Standard
-1.
- Cells that stick well to poly-L-lysine slides (eg.
- FACS/MACS sorted BM B cells, Thymocytes, Splenocytes) can be prepared as
- normal in 1x PBS.
-\end_layout
-
-\begin_layout Standard
-• For anaemic spleens (AS) it is best to refilter the cell suspension through
- a 70µm sieve, as this removes larger debris.
- Several washes with PBS and refiltering through 40um sieve will help to
- eliminate crud and get a good single cell suspension, giving cells that
- stick better to the slides and are less prone to fall off during the pre-hyb
- steps.
-\end_layout
-
-\begin_layout Standard
-• One AS in ~15 ml buffer will produce a good density of isolated cells
- in the final product.
-\end_layout
-
-\begin_layout Standard
-Cells that do not stick well to poly-L-lysine can be fixed in solution using
- Dan’s fixation in solution/cytospin methodology (see protocol at end) which
- is adapted from the Hi-C fixation, then cytospun onto slides.
- 
-\end_layout
-
-\begin_layout Standard
-2.
- Place 50-200µl cell suspension onto poly-L-lysine slides as you normally
- would, allow cells to settle for 2 min, gently place slides in tray with
- 4% PFA in PBS and fix for 10 min.
- 
-\end_layout
-
-\begin_layout Standard
-• Use home made 4% PFA in PBS or standard.
-\end_layout
-
-\begin_layout Standard
-• For a tray: 20ml 10x PBS, 50ml 16% FA, H2O -> 200 ml
-\end_layout
+\end_inset
 
-\begin_layout Standard
-3.
- Quench in 155mM glycine for at least 10 min, at RT.
-\end_layout
-
-\begin_layout Standard
-4.
- Permeabilize cells in 0.1% saponin/0.1% triton X-100 in PBS for 10 min, RT.
-\end_layout
-
-\begin_layout Standard
-• For large coplin: 
-\end_layout
-
-\begin_layout Standard
-0.5 ml 20% Tx-100, 5 ml 2% Saponin, 1xPBS -> 100 ml
-\end_layout
-
-\begin_layout Standard
-5.
- Wash twice in PBS for 5 min each.
-\end_layout
-
-\begin_layout Standard
-6.
- Incubate for 20 min or longer in 20% glycerol/PBS at RT 
-\end_layout
-
-\begin_layout Standard
-• Precipitate probes during incubation
-\end_layout
-
-\begin_layout Standard
-• 10ml 10x PBS, 20ml glycerol, H2O -> 100ml
-\end_layout
-
-\begin_layout Standard
-• If not using immediately, store slides in 50% glycerol/PBS at -20˚C.
- Can be stored for at least several weeks, probably longer.
-\end_layout
-
-\begin_layout Standard
-7.
- 3X freezing/thawing in liquid nitrogen.
- 
-\end_layout
-
-\begin_layout Standard
-• Ensure a good depth of liquid nitrogen so that the slides are well covered
-\end_layout
-
-\begin_layout Standard
-• After freezing, lay on tissues to allow thawing.
-\end_layout
-
-\begin_layout Standard
-• Once slide is totally thawed (opaque frozen glycerol no longer visible),
- place back in 20% glycerol/PBS before subsequent round of freezing.
- 
-\end_layout
-
-\begin_layout Standard
-• Listen for characteristic ‘popping’ sound after 3-4 seconds in liquid
- nitrogen before withdrawing slide.
- May not always be audible, if so withdraw after ~4 seconds.
-\end_layout
-
-\begin_layout Standard
-• Process slides one by one, 15 slides can be done comfortably in rotation,
- i.e.
- thawing on tissues while the rest are frozen.
- Wait for all slides to be back in glycerol before starting the next round.
-\end_layout
-
-\begin_layout Standard
-8.
- Rinse twice in PBS 5 min.
-\end_layout
-
-\begin_layout Standard
-9.
- Incubate slides for 30 min in 0.1 N HCl at RT 
-\end_layout
-
-\begin_layout Standard
-• For large coplin: 840ul conc.
- HCl, H2O -> 100ml
-\end_layout
-
-\begin_layout Standard
-10.
- Equilibrate in PBS for 5 min.
-\end_layout
-
-\begin_layout Standard
-11.
- RNAase A/T1 (Fermentas) treatment for 60 min with 100ug/ml Rnase A/T1 in
- 2x SSC at 37oC.
- 
-\end_layout
-
-\begin_layout Standard
-• Begin spin down of precipitated probe mixes at this point.
-\end_layout
-
-\begin_layout Standard
-• Apply 100µl on a 50x22mm coverslip in a FISH box at 37°C
-\end_layout
+.
+ The final yield of CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-12.
- Rinse in 2x SSC 5 min then PBS 5 min.
-\end_layout
-
-\begin_layout Standard
-13.
- Permeabilize in 0.5% saponin/0.5% triton X-100/PBS for 30 min at RT
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-• For large coplin: 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-2.5 ml 20% Tx-100, 25 ml 2% Saponin, 1xPBS -> 80 ml
-\end_layout
+ cells from this single collection was 2.88 x 10
+\begin_inset script superscript
 
-\begin_layout Standard
-14.
- Rinse twice with PBS, 5 min each.
+\begin_layout Plain Layout
+7
 \end_layout
 
-\begin_layout Standard
-15.
- Equilibrate in 50% formamide/2X SSC for at least 10 min (can mix with pipette
- to speed this step up)
-\end_layout
+\end_inset
 
-\begin_layout Standard
-• 1:1 4xSSC : Formamide
-\end_layout
+ cells, over four times the number of cells collected from a year of weekly
+ peripheral blood CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-16.
- To apply probe, first place 10ul probe mix (see later) onto 22x22mm coverslip.
- Take corresponding slide out of jar, carefully wipe off excess liquid around
- cell spot(s) and invert coverslip onto cell spot(s) – try to avoid bubbles
- and cells drying out.
- Seal with rubber cement (‘fixogum’ is best) and allow to dry completely.
- If using directly labeled probes protect from light at all subsequent stages.
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-17.
- Once rubber cement is dry place slides on hot plate set at 78˚C for exactly
- 2 min.
- Cover with box to protect from light during denaturation.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-18.
- Remove from hot plate and incubate 16+ hours at 37˚C in a humidified chamber
- (eg.
- FISH box with water-soaked tissues).
-\end_layout
+ sample collections.
+ These collections also had the added benefit of coming from a single patient,
+ so including one less variable in the population variation we may see within
+ the interaction datasets.
+ In a subsequent two leukapheresis collections 3.99 x 10
+\begin_inset script superscript
 
-\begin_layout Standard
-Next Day - wash slides
+\begin_layout Plain Layout
+7
 \end_layout
 
-\begin_layout Standard
-19.
- Prepare water baths and coplin jars with solutions at correct temperatures.
- 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-• Check temperature of solutions not the water baths.
-\end_layout
+ and 1.4 x 10
+\begin_inset script superscript
 
-\begin_layout Standard
-20.
- Take off rubber cement carefully, place in 2X SSC until coverslips loosen
- and slide off.
+\begin_layout Plain Layout
+8
 \end_layout
 
-\begin_layout Standard
-21.
- Wash in 50% formamide/2X SSC for 15 min at 45˚C, once, 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-22.
- Then in 0.2X SSC at 63˚C for 15 min, once
-\end_layout
+ CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-23.
- Then in 2X SSC at 45oC for 5 min, once
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-24.
- Equilibrate in 2X SSC at RT for 5 min.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-25.
- If using only directly labeled probes proceed to step 27.
- For antibody detection (eg.
- hapten probes or immuno-FISH), block for 30 min at RT with 3% BSA in 2X
- SSC (can also use TSB from RNA FISH protocol)
+ cells were collected, with an average purity of 95.3%.
 \end_layout
 
 \begin_layout Standard
-• Apply on a coverslip and incubate in the same humidified FISH box as used
- for the hybridisation
-\end_layout
+The first CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-26.
- Apply detection antibodies diluted in 3% BSA in 2X SSC or TSB, incubating
- at RT for 30-45 min in dark humidified box.
- 30 min is fine if doing multiple layers – longer time might be important
- if doing just one layer.
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-27.
- Wash three times for 3 min each in 2X SSC/0.1% TX-100 or TSTX (from RNA
- FISH protocol) at RT after each detection.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-28.
- Rinse in PBS for 5 min
-\end_layout
+ collection was used to generate a 3C library which was used as the basis
+ for the e4C libraries.
+ The second CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-29.
- Stain for 2 min with DAPI in 2X SSC at RT in coplin jar
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-• Jar and solution can be stored at 4°C (protected from light by wrapping
- in foil) for several weeks and reused
-\end_layout
+\end_inset
 
-\begin_layout Standard
-30.
- Wash in PBS for 10 min to destain DAPI.
-\end_layout
+ collection was used to generate 3C material used in the 3C qPCR validation
+ (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Validation-by-3C"
 
-\begin_layout Standard
-31.
- Fix in 3.7% formaldehyde/PBS for 5 min to fix probes/antibodies in place
- (this gives a cleaner result and the slides should last longer).
-\end_layout
+\end_inset
 
-\begin_layout Standard
-32.
- Quench in 155mM glycine for at least 30 minutes at RT (longer is better
- – this quenches autofluorescence from the formaldehyde fixation).
-\end_layout
+).
+ The third CD34
+\begin_inset script superscript
 
-\begin_layout Standard
-33.
- Wash in PBS for 5 min to remove glycine.
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Standard
-34.
- Mount a coverslip with a drop of vectashield or slowfade gold (NO DAPI)
- on slide area with cells.
- Seal with nail varnish.
-\end_layout
+\end_inset
 
-\begin_layout Subsection
-Visualising signals using the Metacyte
-\end_layout
+ collection was used to generate 
+\emph on
+HindIII
+\emph default
+ 3C material by Alice Young, a fellow PhD student in my group.
+ She went on to create Hi-C libraries with this material (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Hi-C"
 
-\begin_layout Standard
+\end_inset
 
+).
 \end_layout
 
 \end_body
