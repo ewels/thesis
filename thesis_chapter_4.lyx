@@ -4,8 +4,7 @@
 \begin_header
 \textclass report
 \begin_preamble
-\usepackage[margin=6pt,font=small,labelfont=bf,labelsep=endash]{caption}
-\hyphenpenalty=10000
+\input{lyx_preamble}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -210,13 +209,28 @@ name "fig:3C_protocol"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Overview of the 3C methodology
 \end_layout
 
 \end_inset
 
+
+\series bold
+Overview of the 3C methodology.
+ 
+\series default
 R denotes the recognition sites for the first six-cutter restriction endonucleas
 e.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -340,15 +354,30 @@ name "fig:e4C_protocol"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Overview of the e4C methodology
 \end_layout
 
 \end_inset
 
-R' denotes the recognition site for the second four-cutter restriction endonucle
-ase.
+
+\series bold
+Overview of the e4C methodology.
+
+\series default
+ R' denotes the recognition site for the second four-cutter restriction
+ endonuclease.
  BC denotes the barcode region used to confirm the identity of the bait
  sequence and identify sequences when multiplexing libraries for sequencing.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -508,6 +537,11 @@ name "fig:CD34-Separation-FACS"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 CD34
 \begin_inset script superscript
 
@@ -526,6 +560,18 @@ CD34
 
 
 \series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ Separation FACS Plots.
  
 \series default
 FACS plots after magnetic bead separation of fixed CD34
@@ -538,6 +584,13 @@ FACS plots after magnetic bead separation of fixed CD34
 \end_inset
 
  cells.
+\end_layout
+
+\end_inset
+
+
+\series bold
+ 
 \end_layout
 
 \end_inset
@@ -643,7 +696,19 @@ name "fig:BamHI-e4C-Libraries"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 BamHI e4C Libraries
+\end_layout
+
+\end_inset
+
+
+\series bold
+BamHI e4C Libraries.
 \end_layout
 
 \end_inset
@@ -776,12 +841,22 @@ name "fig:Restriction-Enzyme-Tests"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Restriction Enzyme Tests
 \end_layout
 
 \end_inset
 
-Digestion tests with six enzymes in four different conditions.
+
+\series bold
+Restriction Enzyme Tests.
+
+\series default
+ Digestion tests with six enzymes in four different conditions.
  Cells were fixed in either 1% or 2% formaldehyde as described in Materials
  and Methods: 3C 
 \begin_inset CommandInset ref
@@ -801,6 +876,11 @@ reference "sec:M&M-3C"
 
 .
  Samples shown run on 1% gels.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2621,7 +2701,19 @@ name "tab:e4C-primers"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 e4C primers
+\end_layout
+
+\end_inset
+
+e4C primers.
 \end_layout
 
 \end_inset
@@ -2931,16 +3023,27 @@ name "tab:e4C-sequencing-primer-properties"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 e4C sequencing primer properties
 \end_layout
 
 \end_inset
 
 
+\series bold
+e4C sequencing primer properties.
+
+\series default
+ Illumina sequencing primer 1: ACACTCTTTCCCTACACGACGCTCTTCCGATCT 
 \end_layout
 
-\begin_layout Plain Layout
-Illumina sequencing primer 1: ACACTCTTTCCCTACACGACGCTCTTCCGATCT 
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3107,17 +3210,28 @@ name "tab:illumina-adapter-primers"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Illumina e4C adapter primers
 \end_layout
 
 \end_inset
 
 
+\series bold
+Illumina e4C adapter primers.
+
+\series default
+ § denotes a phosphorylation modification.
+ * denotes a phosphorothioate modification.
 \end_layout
 
-\begin_layout Plain Layout
-§ denotes a phosphorylation modification.
- * denotes a phosphorothioate modification.
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3306,6 +3420,11 @@ name "fig:CD34-RT-PCR"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 CD34
 \begin_inset script superscript
 
@@ -3321,10 +3440,20 @@ CD34
 \end_inset
 
 
-\end_layout
+\series bold
+CD34
+\begin_inset script superscript
 
 \begin_layout Plain Layout
-B = Buffy Coat cells, C = CD34
++
+\end_layout
+
+\end_inset
+
+ RT-PCR.
+
+\series default
+ B = Buffy Coat cells, C = CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -3354,6 +3483,11 @@ status open
 \begin_layout Plain Layout
 Book 2 page 87 for GM12878 RT-PCR with MLL, page 100 for GM12878, GM06990
  and HEK293 MLL
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3527,9 +3661,25 @@ name "fig:S2R+3C-test"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
 Drosophila melanogaster
 \emph default
  S2R+ 3C Tests
+\end_layout
+
+\end_inset
+
+
+\series bold
+Drosophila melanogaster
+\emph default
+ S2R+ 3C Tests.
 \end_layout
 
 \end_inset

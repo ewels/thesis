@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\input{lyx_preamble}
+\end_preamble
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
@@ -70,10 +73,39 @@ Preferential association of
 \emph on
 BCR
 \emph default
- with Chromosome 9 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+with Chromosome 9 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:BCR-ABL"
+
+\end_inset
+
+ 
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Preferential association of 
+\emph on
+BCR
+\emph default
+ with Chromosome 9
+\end_layout
 
 \end_inset
 

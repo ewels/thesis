@@ -4,27 +4,7 @@
 \begin_header
 \textclass report
 \begin_preamble
-\let\originaltabular\tabular
-\let\endoriginaltabular\endtabular
-\renewenvironment{tabular}[1]{%
-  \begingroup%
-  \centering%
-  \originaltabular{#1}}%
-  {\endoriginaltabular\endgroup}
-
-\let\originaltable\table
-\let\endoriginaltable\endtable
-\renewenvironment{table}[1][ht]{%
-  \originaltable[#1]
-  \centering}%
-  {\endoriginaltable}
-
-\let\originalfigure\figure
-\let\endoriginalfigure\endfigure
-\renewenvironment{figure}[1][ht]{%
-  \originalfigure[#1]
-  \centering}%
-  {\endoriginalfigure}
+\input{lyx_preamble}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -264,16 +244,22 @@ name "fig:Bareback-overview"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Bareback overview
 \end_layout
 
 \end_inset
 
 
-\end_layout
+\series bold
+Bareback overview.
 
-\begin_layout Plain Layout
-Taken from Kreuger 
+\series default
+ Taken from Kreuger 
 \emph on
 et al.
 
@@ -282,6 +268,11 @@ et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Krueger2011"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -697,7 +688,19 @@ name "tab:bareback-stats"
 
 \end_inset
 
-Illumina sequence processing statistics with Bareback
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Illumina sequence processing statistics with Bareback.
+\end_layout
+
+\end_inset
+
+
+\series bold
+Illumina sequence processing statistics with Bareback.
 \end_layout
 
 \end_inset
@@ -777,7 +780,19 @@ name "fig:e4C-Library-FastQC"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Representative e4C Library FastQC and FastQ Analysis
+\end_layout
+
+\end_inset
+
+Representative e4C Library FastQC and FastQ Analysis.
 \end_layout
 
 \end_inset
@@ -823,7 +838,19 @@ name "fig:e4C-library-structure"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Expected structure of reads in each e4C library
+\end_layout
+
+\end_inset
+
+Expected structure of reads in each e4C library.
 \end_layout
 
 \end_inset
@@ -1810,17 +1837,28 @@ name "tab:Library-trimming-statistics"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Library trimming statistics
 \end_layout
 
 \end_inset
 
+Library trimming statistics.
 
+\series default
+ Percentage of possible sequences that were successfully aligned are shown
+ in italics.
 \end_layout
 
-\begin_layout Plain Layout
-Percentage of possible sequences that were successfully aligned are shown
- in italics.
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2070,7 +2108,19 @@ name "tab:explanation-of-bowtie-parameters"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Explanation of bowtie parameters
+\end_layout
+
+\end_inset
+
+Explanation of bowtie parameters.
 \end_layout
 
 \end_inset
@@ -4172,7 +4222,19 @@ name "tab:e4C-library-read-counts"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 e4C library read counts
+\end_layout
+
+\end_inset
+
+e4C library read counts.
 \end_layout
 
 \end_inset
@@ -5001,11 +5063,27 @@ name "tab:AseI-fragment-stats"
 
 
 \series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 e4C library 
 \emph on
 AseI
 \emph default
  fragment statistics
+\end_layout
+
+\end_inset
+
+
+\series bold
+e4C library 
+\emph on
+AseI
+\emph default
+ fragment statistics.
 \end_layout
 
 \end_inset
@@ -5360,7 +5438,12 @@ name "tab:in-silico-library-statistics"
 \end_inset
 
 
-\series default
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
 in-silico
 \emph default
  potential AseI - NlaIII fragment
@@ -5368,6 +5451,17 @@ in-silico
  
 \emph default
 library statistics
+\end_layout
+
+\end_inset
+
+in-silico
+\emph default
+ potential AseI - NlaIII fragment
+\emph on
+ 
+\emph default
+library statistics.
 \end_layout
 
 \end_inset
@@ -5491,17 +5585,25 @@ name "fig:library-biases"
 \end_inset
 
 
-\series default
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 e4C library biases
 \end_layout
 
 \end_inset
 
+e4C library biases.
 
+\series default
+ (A) GC bias in observed fragments (B) Fragment length bias in observed
+ fragments
 \end_layout
 
-\begin_layout Plain Layout
-(A) GC bias in observed fragments (B) Fragment length bias in observed fragments
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5726,11 +5828,27 @@ name "fig:single-window-testing"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Frequency of 
 \emph on
 in-silico
 \emph default
  hits for single window in telomeric Chromosome 9
+\end_layout
+
+\end_inset
+
+Frequency of 
+\emph on
+in-silico
+\emph default
+ hits for single window in telomeric Chromosome 9.
 \end_layout
 
 \end_inset
@@ -5863,7 +5981,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 5/AseI normalisation/AseI_normalisation.eps
 	lyxscale 30
-	width 70col%
+	height 90theight%
 
 \end_inset
 
@@ -5881,6 +5999,14 @@ name "fig:AseI-normalisation"
 \end_inset
 
 
+\series bold
+\emph on
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
 \emph on
 AseI
 \emph default
@@ -5889,11 +6015,15 @@ AseI
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-Chromosome 1 showing the 
+AseI
+\emph default
+ site distribution normalisation.
+ 
+\series default
+(A) Genome wide plots of BCR e4C Run 2 before and after AseI site distribution
+ normalisation.
+ Standard scores calculated and normalised against maximum value.
+ (B) Chromosome 1 showing the 
 \emph on
 in-silico
 \emph default
@@ -5902,6 +6032,12 @@ in-silico
 AseI
 \emph default
  site distribution.
+ Read counts quantified and normalised against maximum value.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

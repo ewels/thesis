@@ -4,27 +4,7 @@
 \begin_header
 \textclass report
 \begin_preamble
-\let\originaltabular\tabular
-\let\endoriginaltabular\endtabular
-\renewenvironment{tabular}[1]{%
-  \begingroup%
-  \centering%
-  \originaltabular{#1}}%
-  {\endoriginaltabular\endgroup}
-
-\let\originaltable\table
-\let\endoriginaltable\endtable
-\renewenvironment{table}[1][ht]{%
-  \originaltable[#1]
-  \centering}%
-  {\endoriginaltable}
-
-\let\originalfigure\figure
-\let\endoriginalfigure\endfigure
-\renewenvironment{figure}[1][ht]{%
-  \originalfigure[#1]
-  \centering}%
-  {\endoriginalfigure}
+\input{lyx_preamble}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -1473,16 +1453,22 @@ name "tab:e4C-Correlation-R-Scores"
 
 \end_inset
 
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Correlation R Scores
 \end_layout
 
 \end_inset
 
+Correlation R Scores.
 
-\end_layout
-
-\begin_layout Plain Layout
-10 megabase windows, 1 megabase separation.
+\series default
+ 10 megabase windows, 1 megabase separation.
  
 \emph on
 cis
@@ -1491,6 +1477,11 @@ cis
  Read counts quantified and then Z-scores calculated.
  Scatter plot drawn and R score derived.
  Protein coding genes only used for gene density.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

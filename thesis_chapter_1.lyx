@@ -4,31 +4,7 @@
 \begin_header
 \textclass report
 \begin_preamble
-\usepackage{comment}
-\includecomment{comment}
-
-
-\let\originaltabular\tabular
-\let\endoriginaltabular\endtabular
-\renewenvironment{tabular}[1]{%
-  \begingroup%
-  \centering%
-  \originaltabular{#1}}%
-  {\endoriginaltabular\endgroup}
-
-\let\originaltable\table
-\let\endoriginaltable\endtable
-\renewenvironment{table}[1][ht]{%
-  \originaltable[#1]
-  \centering}%
-  {\endoriginaltable}
-
-\let\originalfigure\figure
-\let\endoriginalfigure\endfigure
-\renewenvironment{figure}[1][ht]{%
-  \originalfigure[#1]
-  \centering}%
-  {\endoriginalfigure}
+\input{lyx_preamble}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -37,10 +13,10 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman times
 \font_sans helvet
 \font_typewriter default
-\font_default_family sfdefault
+\font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -249,15 +225,21 @@ name "fig:nucleosome-xray-structure"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Structure of the nucleosome
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
+\series bold
+Structure of the nucleosome.
+ 
+\series default
 X Ray Structure of a Nucleosome core particle at a resolution of 1.9Å.
  DNA can be seen wrapped around the core histones.
  PDB structure 1KX5 
@@ -268,6 +250,11 @@ key "Davey2002"
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -426,7 +413,32 @@ name "fig:Histone-mod-dashboard"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Histone modification associations in chromatin
+\end_layout
+
+\end_inset
+
+
+\series bold
+Histone modification associations in chromatin.
+
+\series default
+ Diagram showing the range of histone modifications available within mammalian
+ chromatin and how they can specify the behaviour of elements within the
+ DNA.
+ Taken from
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhou2011"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -589,6 +601,70 @@ Maybe get rid of this section?
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Techniques to investigate nuclear organisation
+\end_layout
+
+\begin_layout Subsection
+Microscopy
+\end_layout
+
+\begin_layout Subsubsection
+Chromosome painting
+\end_layout
+
+\begin_layout Subsubsection
+DNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+RNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+Electron microscopy
+\end_layout
+
+\begin_layout Subsection
+Chromosome conformation capture
+\end_layout
+
+\begin_layout Standard
+Chromosome conformation capture (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3C"
+description "Chromosome conformation capture"
+
+\end_inset
+
+3C)
+\end_layout
+
+\begin_layout Subsubsection
+Circular 4C
+\end_layout
+
+\begin_layout Subsubsection
+e4C
+\end_layout
+
+\begin_layout Subsubsection
+5C
+\end_layout
+
+\begin_layout Subsubsection
+ChIA-PET
+\end_layout
+
+\begin_layout Subsubsection
+Hi-C
+\end_layout
+
+\begin_layout Subsubsection
+Tethered Hi-C
 \end_layout
 
 \begin_layout Section
@@ -914,16 +990,22 @@ name "fig:transcription-factories"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
 Nascent RNA and transcription factories.
 \end_layout
 
 \end_inset
 
+ 
+\series bold
+Nascent RNA and transcription factories.
 
-\end_layout
-
-\begin_layout Plain Layout
-(A) Transcription foci in HeLa cells, visualised with labelled Br-UTP in
+\series default
+ (A) Transcription foci in HeLa cells, visualised with labelled Br-UTP in
  100 nm cryosections.
  Nascent RNA (green) is concentrated in punctate foci.
  (B) Model for a nucleolar factory, showing a transcript with multiple polymeras
@@ -943,6 +1025,11 @@ key "Cook1999"
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1191,71 +1278,25 @@ Talking about the use of a systems biology approach to understand the linear
 \end_layout
 
 \begin_layout Section
-Techniques to investigate nuclear organisation
-\end_layout
-
-\begin_layout Subsection
-Microscopy
-\end_layout
-
-\begin_layout Subsubsection
-Chromosome painting
-\end_layout
-
-\begin_layout Subsubsection
-DNA-FISH
-\end_layout
-
-\begin_layout Subsubsection
-RNA-FISH
-\end_layout
-
-\begin_layout Subsubsection
-Electron microscopy
-\end_layout
-
-\begin_layout Subsection
-Chromosome conformation capture
-\end_layout
-
-\begin_layout Standard
-Chromosome conformation capture (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "3C"
-description "Chromosome conformation capture"
-
-\end_inset
-
-3C)
-\end_layout
-
-\begin_layout Subsubsection
-Circular 4C
-\end_layout
-
-\begin_layout Subsubsection
-e4C
-\end_layout
-
-\begin_layout Subsubsection
-5C
-\end_layout
-
-\begin_layout Subsubsection
-ChIA-PET
-\end_layout
-
-\begin_layout Subsubsection
-Hi-C
-\end_layout
-
-\begin_layout Subsubsection
-Tethered Hi-C
-\end_layout
-
-\begin_layout Section
 Chromosomal translocations
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\end_layout
+
+\begin_layout Subsection
+Mixed lineage leukaemia
+\end_layout
+
+\begin_layout Subsection
+Formation of chromosomal translocations
 \end_layout
 
 \begin_layout Standard
@@ -1263,16 +1304,8 @@ Basics of HR, SSA and NHEJ.
  Contact first / breakage first models.
 \end_layout
 
-\begin_layout Subsection
-Formation of chromosomal translocations
-\end_layout
-
 \begin_layout Subsubsection
-Double strand breaks
-\end_layout
-
-\begin_layout Subsubsection
-Aberrant religation
+Double strand breaks and religation
 \end_layout
 
 \begin_layout Subsubsection
@@ -1298,18 +1331,12 @@ key "Parada2004b"
  incidence
 \end_layout
 
-\begin_layout Subsection
-
-\emph on
-BCR
-\emph default
- and 
-\emph on
-ABL1
+\begin_layout Subsubsection
+Transcription Factories
 \end_layout
 
-\begin_layout Subsection
-Mixed lineage leukaemia
+\begin_layout Standard
+Cam's Myc and Igh RNA-FISH paper.
 \end_layout
 
 \begin_layout Section

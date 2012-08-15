@@ -1,0 +1,35 @@
+% include the comments when we output. This is so we get the bibliography when previewing this chapter on its own
+\usepackage{comment}
+\includecomment{comment}
+
+% stop LaTeX from putting hyphens everywhere
+\hyphenpenalty=10000
+
+% Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
+\usepackage[margin=10pt,font={small,sf},labelfont=bf,labelsep=endash]{caption}
+
+% Make chapter headings use a sans-serif font
+\usepackage[{sf,bf}]{titlesec}
+
+% centre tables and figures on the page
+\let\originaltabular\tabular
+\let\endoriginaltabular\endtabular
+\renewenvironment{tabular}[1]{%
+  \begingroup%
+  \centering%
+  \originaltabular{#1}}%
+  {\endoriginaltabular\endgroup}
+
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+  \originaltable[#1]
+  \centering}%
+  {\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+  \originalfigure[#1]
+  \centering}%
+  {\endoriginalfigure}

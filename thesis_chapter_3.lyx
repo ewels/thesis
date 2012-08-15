@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\input{lyx_preamble}
+\end_preamble
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
