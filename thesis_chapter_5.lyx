@@ -1617,16 +1617,9 @@ ABL
 \begin_layout Plain Layout
 
 \size scriptsize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-look in seqmonk for these
-\end_layout
-
-\end_inset
-
-
+27117770 (84.4%) 
+\emph on
+(87.2%)
 \end_layout
 
 \end_inset
@@ -1707,6 +1700,10 @@ MLL
 
 \begin_layout Plain Layout
 
+\size scriptsize
+23688930 (86.0%) 
+\emph on
+(90.1%)
 \end_layout
 
 \end_inset
@@ -1787,6 +1784,10 @@ MLL
 
 \begin_layout Plain Layout
 
+\size scriptsize
+22638880 (74.6%) 
+\emph on
+(81.6%)
 \end_layout
 
 \end_inset
@@ -2159,7 +2160,7 @@ reference "tab:e4C-library-read-counts"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4287,7 +4288,7 @@ cis
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular

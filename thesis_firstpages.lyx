@@ -146,7 +146,82 @@ Summary
 \end_layout
 
 \begin_layout Standard
-Abstract here
+The eukaryotic cell nucleus is a highly organised organelle, with distinct
+ specialised sub-compartments responsible for specific nuclear functions.
+ Within the context of this functional framework, the genome is organised,
+ allowing contact between specific genomic regions and sub-compartments.
+ Actively transcribing genes in both 
+\emph on
+cis
+\emph default
+ and 
+\emph on
+trans
+\emph default
+ co-associate at shared transcriptional sub-compartments called transcription
+ factories.
+ Remarkably, genes exhibit a preference to co-associate with certain other
+ genes at the factories.
+ I hypothesised that such preferred juxtaposition at transcription factories
+ may impact the propensity for specific cancer-initiating chromosomal translocat
+ions to occur.
+\end_layout
+
+\begin_layout Standard
+Here I have employed a ligation based proximity assay known as enriched
+ 4C, coupled with high throughput sequencing to identify the genomic regions
+ that spatially co-associate with the proto-oncogenes 
+\emph on
+MLL
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+BCR
+\emph default
+ in human CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ haematopoietic progenitor cells and lymphoblastoid cell line GM12878.
+ I find that the association profiles of these three genes show strong correlati
+on to the binding profile of RNA Polymerase II and other active marks.
+ This suggests that transcribed genes have a propensity to associate with
+ other transcribed regions of the genome, consistent with studies showing
+ that genes often co-associate at transcription factories.
+ However, each gene also exhibits a unique repertoire of preferred associations
+ with certain regions of the genome.
+ Significantly, I find that the most frequent trans association of 
+\emph on
+BCR
+\emph default
+ is telomeric chromosome 9, encompassing its recurrent translocation partner
+ gene 
+\emph on
+ABL1
+\emph default
+.
+ I use DNA-Fluorescence in-situ hybridisation to show that the maximal point
+ of association lies near the highly expressed 
+\emph on
+SURF
+\emph default
+ cluster of genes, suggesting a mechanism for mediating the interaction.
+\end_layout
+
+\begin_layout Standard
+My data supports a hypothesis that gene transcription has a direct role
+ on genome organisation.
+ I suggest that preferred co-associations of genes at transcription factories
+ may promote the occurrence of specific chromosomal translocations.
 \end_layout
 
 \begin_layout Chapter*

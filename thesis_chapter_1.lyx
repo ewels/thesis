@@ -709,6 +709,14 @@ Talk about tethering experiments changing gene expression, nuclear pores
  and lamina interactions?
 \end_layout
 
+\begin_layout Plain Layout
+Parada et al, Genome Biol 2004
+\end_layout
+
+\begin_layout Plain Layout
+Bolze et al, Plos Biol 2005
+\end_layout
+
 \end_inset
 
 
@@ -1112,6 +1120,17 @@ Actin and myosin
 Transcription
 \end_layout
 
+\begin_layout Standard
+Active RNA Polymerases: Mobile or Immobile Molecular Machines? 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Papantonis2010"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 CTCF and cohesin
 \end_layout
@@ -1137,6 +1156,11 @@ key "Jackson1981"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Igh forming rosettes for v region selection - http://www.ncbi.nlm.nih.gov/pmc/articl
+es/PMC3070187/
 \end_layout
 
 \begin_layout Subsection
@@ -1253,6 +1277,25 @@ Aberrant religation
 
 \begin_layout Subsubsection
 Contact first model
+\end_layout
+
+\begin_layout Subsubsection
+Chromosome Territories
+\end_layout
+
+\begin_layout Standard
+Branco and Pombo, Plos Biol 2006
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parada2004b"
+
+\end_inset
+
+ - tissue specific CT pairing in mouse, correlates with tissue translocation
+ incidence
 \end_layout
 
 \begin_layout Subsection
