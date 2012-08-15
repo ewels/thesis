@@ -1,0 +1,6120 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\input{lyx_preamble}
+\end_preamble
+\use_default_options true
+\master thesis_master.lyx
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans helvet
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Developing the analysis of e4C data 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:e4C-Analysis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Explain the context of when this work was done, that there was little if
+ any published work on how to analyse this data.
+ Mention other analysis work that has come out subsequently (eg.
+ Amos Tanay) and how that fits around what I’ve done.
+\end_layout
+
+\begin_layout Section
+Initial data handling
+\end_layout
+
+\begin_layout Standard
+All of the e4C libraries discussed were sequenced using the Illumina Genome
+ Analyser IIx.
+ Initial data processing up to the point of a SeqMonk library was done by
+ the Babraham Bioinformatics team, primarily Dr.
+ Felix Krueger and Dr.
+ Simon Andrews.
+\end_layout
+
+\begin_layout Subsection
+Bareback processing
+\end_layout
+
+\begin_layout Standard
+Illumina next generation sequencing machine such as the Genome Analyser
+ IIx 'sequence by synthesis'.
+ Libraries are hybridised to oligonucleotides on a chip and clusters are
+ generated surrounding each library sequence with multiple rounds of amplificati
+on.
+ Fluorescent bases are then added one by one, and the chip imaged each round.
+ The colour information collected in the image can be used to determine
+ the base being added to the cluster according to its colour, and so the
+ sequence of each cluster is determined.
+\end_layout
+
+\begin_layout Standard
+Central to this technique is the process of calling cluster locations, typically
+ done by the Illumina Sequence Control Software (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SCS"
+description "Illumina Sequence Control Software"
+
+\end_inset
+
+SCS) with Real Time Analysis (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RTA"
+description "Illumina Real Time Analysis"
+
+\end_inset
+
+RTA) once the first fluorescent base is added.
+ Once determined, the cluster positions are used for the remaining base
+ pair calling.
+ If the cluster density on the chip is large, then spots can start to merge.
+ This isn't a problem with a typical Illumina library, as the different
+ spots will usually be different colours, and so discernable from each other.
+ However, every sequence within e4C libraries begins with a barcode region
+ followed by the restriction enzyme recognition sequence.
+ This lack of diversity within the first bases of the sequence can cause
+ problems for the cluster calling; merged clusters may be called as one
+ which can be thrown out by the purity filter because of its size, or rejected
+ later when the sequence diverges and it starts to exhibit mixed fluorescence
+ signals.
+ This has the effect of a vastly reduced number of reads being processed
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bareback-overview"
+
+\end_inset
+
+).
+ The same effect can happen in multiplexed libraries using barcodes to identify
+ different samples on the same chip.
+\end_layout
+
+\begin_layout Standard
+This problem was first experienced in our institute with Dr.
+ Cameron Osborne's e4C libraries, and also strongly affected my sequencing
+ runs.
+ To overcome the initial lack of diversity, Dr.
+ Felix Krueger and Dr.
+ Simon Andrews of the Babraham bioinformatics department developed a package
+ called 
+\emph on
+Bareback
+\emph default
+ (barcode back-processing) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krueger2011"
+
+\end_inset
+
+.
+ Bareback uses the raw image files generated by the Genome Analyser IIx
+ and moves the images taken during low diversity to the back of the stack
+ by renaming the files.
+ These are then analysed using the Illumina 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GOAT"
+description "Illumina General Oligo Analysis Tool"
+
+\end_inset
+
+GOAT (General Oligo Analysis Tool) pipeline, now part of the Illumina 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OLB"
+description "Illumina Off-Line Basecaller"
+
+\end_inset
+
+OLB (Off-Line basecaller).
+\end_layout
+
+\begin_layout Standard
+Bareback processing greatly increased the number of sequence reads returned
+ from my e4C libraries (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:bareback-stats"
+
+\end_inset
+
+), completely resucing one library with particularly dense clusters from
+ which the standard SCS processing returned no reads.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/bareback/bareback.eps
+	lyxscale 50
+	width 70col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bareback-overview"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Bareback overview
+\end_layout
+
+\end_inset
+
+
+\series bold
+Bareback overview.
+
+\series default
+ Taken from Kreuger 
+\emph on
+et al.
+
+\emph default
+ (2001) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krueger2011"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Illumina SCS processing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bareback processing
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Fold increase
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+June 2010 - BCR and MLL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14,409,580
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22,167,823
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.54
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sept 2010 - MLL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13,147,751
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,704,073
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oct 2010 - BCR and MLL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18,434,991
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23,251,377
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.26
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dec 2010 - MLL1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,690,956
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27,868,955
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+5.94
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dec 2010 - MLL2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+272,927
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,632,135
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+112.24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dec 2010 - ABL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33,157,523
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dec 2010 - MLL phiX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24,349,038
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26,284,182 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1.08
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:bareback-stats"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Illumina sequence processing statistics with Bareback.
+\end_layout
+
+\end_inset
+
+
+\series bold
+Illumina sequence processing statistics with Bareback.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Quality control
+\end_layout
+
+\begin_layout Standard
+Once sequences had been produced by the Bareback processing, the quality
+ of the sequence data was assessed using two tools written by Dr.
+ Simon Andrews of the Babraham bioinformatics department, 
+\emph on
+FastQC
+\emph default
+ and 
+\emph on
+FastQ Analysis
+\emph default
+.
+ I was involved in development of FastQC version 0.9.3 (released 16/6/11)
+ by contributing a new CSS theme to the report structure allowing simultaneous
+ viewing of the overview navigation and report results.
+\end_layout
+
+\begin_layout Standard
+All e4C libraries passed the quality control steps without any cause for
+ concern.
+ Representative results are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-Library-FastQC"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need FastQC plots and stuff here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C-Library-FastQC"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Representative e4C Library FastQC and FastQ Analysis
+\end_layout
+
+\end_inset
+
+Representative e4C Library FastQC and FastQ Analysis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sequence trimming
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "40col%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/e4C sequence structure/e4C sequence structure.eps
+	lyxscale 50
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C-library-structure"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Expected structure of reads in each e4C library
+\end_layout
+
+\end_inset
+
+Expected structure of reads in each e4C library.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The expected structure of each e4C read is a barcode region specific to
+ each library, an 
+\emph on
+AseI
+\emph default
+ recognition site and then unknown partner sequence representing the adjacent
+ DNA fragment in the 3C library (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-structure"
+
+\end_inset
+
+, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-primers"
+
+\end_inset
+
+).
+ In a small proportion of cases, we expected to then see either a second
+ 
+\emph on
+AseI
+\emph default
+ recognition site followed by a third interaction partner, or an 
+\emph on
+NlaIII
+\emph default
+ recognition site followed by Illumina adapter sequence.
+\end_layout
+
+\begin_layout Standard
+Over 97% of the sequences from each sequencing run started with an expected
+ barcode sequence, with the exception of the 
+\emph on
+MLL
+\emph default
+ Run 3 phiX run.
+ For this library, an e4C library was spiked into a phiX control lane and
+ the two sequencing primers were added to the same lane.
+ Unfortunately, more than 95% of the library reads were sequenced by the
+ Illumina PE Ad 1.0 primer instead of the custom sequencing primer.
+ Sequences with this primer gave just the bait sequence with 3 bp of unknown
+ parter sequence.
+\end_layout
+
+\begin_layout Standard
+To pre-process the e4C library reads, Dr.
+ Felix Kreuger in the Babraham Bioinformatics group wrote a script in Perl,
+ which I later modified and used myself (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-library-trimming-script"
+
+\end_inset
+
+).
+ The script goes through the FastQ file and checks the first three base
+ pairs of each sequence to see if it matches the barcode.
+ If so, it trims them off and looks to see if the next six base pairs are
+ an AseI recognition site (ATTAAT).
+ Next, the script searches for 
+\emph on
+AseI
+\emph default
+ and 
+\emph on
+NlaIII
+\emph default
+ sites.
+ If a second 
+\emph on
+AseI
+\emph default
+ site is found the line is rejected, if a 
+\emph on
+NlaIII
+\emph default
+ site is found the sequence is trimmed to that site.
+ If the remaining sequence is less than 25 bp long it is rejected.
+ The remaining content in the FastQ read, such as quality scores, are trimmed
+ to the same length and the line is printed to the output file.
+ The processing statistics from the e4C libraries can be seen in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Library-trimming-statistics"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="7">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<column alignment="right" valignment="middle" width="2cm">
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Reads starting with correct barcode
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Reads with second 
+\emph on
+AseI
+\emph default
+ site (discarded)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Reads with 
+\emph on
+NlaIII
+\emph default
+ site (too short to be mapped)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Reads with 
+\emph on
+NlaIII
+\emph default
+ site (long enough to be mapped)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Total sequences to be mapped
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Aligned reads
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+BCR
+\emph default
+ Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22390498
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+85448 (0.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3823824 (17.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2860849 (12.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+18203128 (81.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14931033 (66.7%) 
+\emph on
+(82.0%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+BCR
+\emph default
+ Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12616122
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+41823 (0.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1493641 (11.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1146963 (9.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10932276 (86.7%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9260876 (73.4%) 
+\emph on
+(84.7%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+55868
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15 (0.03%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+29279 (52.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1819 (3.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+26129 (46.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+21923 (39.2%) 
+\emph on
+(83.9%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+16442664
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+45012 (0.03%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1388307 (8.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+662684 (4.0%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14950490 (90.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13535278 (82.3%) 
+\emph on
+(90.5%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Run 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9960249
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1535 (0.02%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+557742 (5.6%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+450422 (4.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9368936 (94.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8498056 (85.3%) 
+\emph on
+(90.7%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Run 3 phiX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+56994
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+321 (0.6%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1974 (3.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1983 (3.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+48952 (85.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+44194 (77.5%) 
+\emph on
+(90.3%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+ABL
+\emph default
+ Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+32140483
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+434554 (1.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+201658 (0.6%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+988675 (3.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+31082375 (96.7%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+27117770 (84.4%) 
+\emph on
+(87.2%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Promoter 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+27548835
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+243399 (0.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+485996 (1.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1124315 (4.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+26290533 (95.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23688930 (86.0%) 
+\emph on
+(90.1%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+MLL
+\emph default
+ Promoter 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+30333263
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+232741 (0.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1917547 (6.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1875757 (6.2%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+27748869 (91.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22638880 (74.6%) 
+\emph on
+(81.6%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Library-trimming-statistics"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Library trimming statistics
+\end_layout
+
+\end_inset
+
+Library trimming statistics.
+
+\series default
+ Percentage of possible sequences that were successfully aligned are shown
+ in italics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sequence alignment
+\end_layout
+
+\begin_layout Standard
+The resulting trimmed reads were next passed through the genome alignment
+ tool 
+\emph on
+Bowtie
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Langmead2009"
+
+\end_inset
+
+.
+ Reads were aligned with 82% - 92% efficiency (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Library-trimming-statistics"
+
+\end_inset
+
+).The following parameters were used, as explained in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:explanation-of-bowtie-parameters"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+bowtie -q --phred64-quals -p 8 -m 1 hg19 <trimmed_reads.txt> <output_alignment.bow
+tie>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Bowtie alignment parameters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Parameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Input is in FastQ format
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+--phred64-quals
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Correct interpretation of ASCII quality scores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-p 8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Use eight CPU cores for the alignment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+-m 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Ignore any read with more than one alignment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+hg19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Name of the reference genome used for alignment.
+ UCSC genome build hg19 was used
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:explanation-of-bowtie-parameters"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Explanation of bowtie parameters
+\end_layout
+
+\end_inset
+
+Explanation of bowtie parameters.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Importing into SeqMonk
+\end_layout
+
+\begin_layout Standard
+For analysis and quantitation of the e4C libraries, I used a program called
+ 
+\emph on
+SeqMonk
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Andrews2012"
+
+\end_inset
+
+
+\emph on
+\SpecialChar \@.
+ 
+\emph default
+SeqMonk has been developed by Dr.
+ Simon Andrews, head of the Babraham Bioinformatics team, and is written
+ in Java with a graphical user interface.
+ It has been built from the ground up for analysis and visualisation of
+ next generation sequencing data, and has grown extensively throughout the
+ duration of my PhD.
+\end_layout
+
+\begin_layout Standard
+SeqMonk works with aligned sequence reads, and can quantify them with probes
+ - custom windows set across the genome.
+ Probes are simply sets of paired genomic co-ordinates, and can be created
+ over any feature (such as gene or restriction fragment) or as running windows.
+ These probes are then used as bins within which reads can be quantified.
+\end_layout
+
+\begin_layout Section
+Concerning raw data
+\end_layout
+
+\begin_layout Subsection
+Duplicate reads
+\end_layout
+
+\begin_layout Standard
+The first thing that can be seen when viewing the e4C libraries within Seqmonk
+ is the degree of sequence duplication.
+ To generate enough DNA to sequence the e4C libraries are amplified using
+ PCR, however this means that multiple copies of each 3C product may be
+ sequenced.
+ It is clear that some quantitative information is present within the numbers
+ of reads found, as shown by the large number of reads surrounding the bait
+ region (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-library-read-counts"
+
+\end_inset
+
+).
+ However, because each e4C fragment end is defined by a restriction enzyme
+ cut site, duplicates from the 3C library are indistinguisable from duplicates
+ generated by the PCR amplification.
+ Because of this inability to distinguish biologically relevant duplicates
+ from technical duplicates, I removed all non-unique reads from the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="28" columns="6">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Total reads
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Near 
+\emph on
+cis
+\emph default
+ (
+\begin_inset Formula $\leq$
+\end_inset
+
+ 5 megabases)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Far 
+\emph on
+cis 
+\emph default
+(
+\begin_inset Formula $>$
+\end_inset
+
+ 5 megabases)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+trans
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+BCR Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14931033
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3986287 (26.7%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1165115 (7.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9779631 (65.5%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10714
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1007 (9.4%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+873 (8.1%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8834 (82.5%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1394
+\emph on
+ (93)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3959 
+\emph on
+(265)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1335 
+\emph on
+(89)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1107 
+\emph on
+(74)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+BCR Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9260876
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3542934 (38.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+605320 (6.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5112622 (55.2%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8657
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+935 (10.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+767 (8.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6955 (80.3%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1070
+\emph on
+ (116)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3789 
+\emph on
+(409)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+789
+\emph on
+ (85)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+735 
+\emph on
+(79)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+21923
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5030 (22.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1821 (8.3%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15072 (68.7%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+489
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+54 (11.0%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+40 (8.2%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+395 (80.8%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+45
+\emph on
+ (2045)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+93 
+\emph on
+(4249)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+46
+\emph on
+ (2077)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+38 
+\emph on
+(1740)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13535278
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3236378 (23.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1071434 (7.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9227466 (68.2%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+107 (10.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+89 (8.7%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+827 (80.8%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+13231
+\emph on
+ (978)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+30247 
+\emph on
+(2235)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12039 
+\emph on
+(889)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+11158 
+\emph on
+(824)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8498056
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1701901 (20.0%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+808607 (9.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5987548 (70.5%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5589
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+140 (2.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+269 (4.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5180 (92.7%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1520 
+\emph on
+(179)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+12156 
+\emph on
+(1430)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3006 
+\emph on
+(354)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1156 
+\emph on
+(136)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 3 phiX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+44194
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+9054 (20.5%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+3891 (8.8%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+31249 (70.7%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+700
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+83 (11.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+62 (8.9%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+555 (79.3%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+63 
+\emph on
+(1429)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+109 
+\emph on
+(2468)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+63 
+\emph on
+(1420)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+56 
+\emph on
+(1274)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ABL Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Promoter 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Promoter 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Raw
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+De-duplicated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Av.
+ dups / read
+\emph on
+ (per 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6
+\end_layout
+
+\end_inset
+
+ reads)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:e4C-library-read-counts"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+e4C library read counts
+\end_layout
+
+\end_inset
+
+e4C library read counts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Read 
+\emph on
+cis 
+\emph default
+/
+\emph on
+ trans 
+\emph default
+distribution
+\end_layout
+
+\begin_layout Standard
+The strongest predictor of physical sequence association is the linear separatio
+n of the two fragments within their chromosome.
+ If two regions are in 
+\emph on
+cis
+\emph default
+ their movement within three dimensional space relative to each other is
+ constrained by their linkage.
+ This effect can clearly be seen within all of the e4C libraries, with a
+ large proportion of my libraries (29 - 45% raw reads) mapping to the 
+\emph on
+cis
+\emph default
+ chromosome (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-library-read-counts"
+
+\end_inset
+
+).
+ The 
+\emph on
+cis
+\emph default
+ association is several orders of magnitude stronger than 
+\emph on
+trans
+\emph default
+ association.
+\end_layout
+
+\begin_layout Standard
+Because the e4C assay is based off 3C libraries, generated using 
+\emph on
+AseI
+\emph default
+ fragments, the greatest resolution that is possible is dependant on the
+ length of the digested fragments.
+ If we reduce the association data to binary observed / not observed 
+\emph on
+AseI
+\emph default
+ fragments, the close 
+\emph on
+cis
+\emph default
+ interaction data can becomes saturated, especially for the more complex
+ 
+\emph on
+BCR
+\emph default
+ datasets (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:AseI-fragment-stats"
+
+\end_inset
+
+).
+ Additionally, the genes of interest in my project - the oncogenic translocation
+ partners of 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ - are mostly in 
+\emph on
+trans
+\emph default
+.
+ In order to study these interactions without the 
+\emph on
+cis
+\emph default
+ interaction data overwhelming the analysis, I removed all 
+\emph on
+cis
+\emph default
+ interaction data from the datasets from further analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="5">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Observed Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Near 
+\emph on
+cis 
+\emph default
+fragments (
+\begin_inset Formula $\leq$
+\end_inset
+
+ 5 megabases)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Far 
+\emph on
+cis 
+\emph default
+fragments (
+\begin_inset Formula $>$
+\end_inset
+
+ 5 megabases)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\emph on
+trans 
+\emph default
+fragments
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+BCR Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8612 (0.62%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+532 (43.36%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+666 (8.31%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+7414 (0.53%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+BCR Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+7612 (0.54%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+507 (41.32%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+610 (7.61%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+6495 (0.47%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+468 (0.03%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+45 (3.25%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+40 (0.07%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+383 (0.03%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+774 (0.06%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+62 (4.48%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+68 (0.11%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+644 (0.05%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+5176 (0.37%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+91 (6.58%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+236 (0.39%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+4849 (0.36%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Run 3 PhiX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+673 (0.05%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+69 (4.99%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+62 (0.10%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+542 (0.04%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ABL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Promoter 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+MLL Promoter 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Possible 
+\emph on
+BCR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1399460
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1227
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1390220
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Possible 
+\emph on
+MLL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1399460
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1384
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+59813
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1338263
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:AseI-fragment-stats"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+e4C library 
+\emph on
+AseI
+\emph default
+ fragment statistics
+\end_layout
+
+\end_inset
+
+
+\series bold
+e4C library 
+\emph on
+AseI
+\emph default
+ fragment statistics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+e4C library biases
+\end_layout
+
+\begin_layout Standard
+In 2011, a landmark paper was published by the group of Amos Tanay describing
+ new forms of analysis to be used with Hi-C interaction datasets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yaffe2011a"
+
+\end_inset
+
+.
+ Yaffe 
+\emph on
+et al.
+
+\emph default
+ showed biases present within the Hi-C datasets towards higher GC content
+ and particular restriction fragment lengths.
+ To investigate whether my e4C interaction datasets were affected by the
+ same biases, I wrote perl scripts to compare the characteristics of the
+ observed 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragments versus all possible fragments.
+\end_layout
+
+\begin_layout Subsection
+Potential fragment libraries 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Potential-fragment-libraries"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A prerequesite for the analysis of these biases is the generation of an
+ 
+\emph on
+in-silico
+\emph default
+ library of all potential fragments.
+ The original perl script to generate these libraries was written by Marek
+ Piatek, in the Babraham bioinformatics department.
+ I have since re-written the script from scratch, as well as writing other
+ scripts to including an online tool to generate lists of restriction enzyme
+ recognition sites (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-in-silico-restriction-fragments"
+
+\end_inset
+
+).
+ I have made some of these available as online tools at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.tallphil.co.uk/bioinformatics/ 
+\end_layout
+
+\end_inset
+
+ (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:APP-Web-Tools"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+In principle, all of the scripts are similar - the genome is loaded into
+ memory one chromosome at a time, and perl's 
+\emph on
+index
+\emph default
+ function is used to search for the restriction enzyme recognition sites.
+ For 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragments, once an 
+\emph on
+AseI
+\emph default
+ site is found the next 
+\emph on
+NlaIII
+\emph default
+ site is searched for.
+ If one is found before the next 
+\emph on
+AseI
+\emph default
+ site, the resulting fragment length is tested; if it is shorter than 35
+ base pairs or longer than 700 base pairs then it is discarded due to the
+ gel extraction size selection used in the e4C protocol.
+ The resulting library of fragments is then aligned using 
+\emph on
+Bowtie
+\emph default
+ and so filtered for unique mappability (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:in-silico-library-statistics"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fragments Removed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total Fragments
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+All 
+\emph on
+AseI
+\emph default
+ – 
+\emph on
+NlaIII
+\emph default
+ fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2407346
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Filter for length < 35bp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+283205
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2124141 (88.24%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Filter for length > 700bp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74398
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2049743 (85.15%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Filter for unique mappability
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+153862
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1895881 (78.75%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:in-silico-library-statistics"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+in-silico
+\emph default
+ potential AseI - NlaIII fragment
+\emph on
+ 
+\emph default
+library statistics
+\end_layout
+
+\end_inset
+
+in-silico
+\emph default
+ potential AseI - NlaIII fragment
+\emph on
+ 
+\emph default
+library statistics.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+GC content bias and fragment length bias 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:CH5-GC-content-bias"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+in-silico
+\emph default
+ library described above was imported into SeqMonk as an annotation track,
+ and a probe created over each potential fragment.
+ A binary value was assigned to each fragment by using 
+\emph on
+Minimum Coverage Depth
+\emph default
+ quantitation.
+ Results were exported as an annotated probe report, containing the co-ordinates
+ of every potential 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragment with a binary flag to indicate whether it was observed or not.
+ I wrote a Perl script to process these datasets (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-GC-content-bias"
+
+\end_inset
+
+).
+ The script fetches the genomic sequence for each set of co-ordinates and
+ increments counters representing 5% GC content bins, according to the %GC
+ content of the sequence.
+ A second set of counters were also incrememnted if the sequence was observed.
+ A modified version of this script was then used to calculate 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragment lengths.
+\end_layout
+
+\begin_layout Standard
+The resulting counts were plotted and can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:library-biases"
+
+\end_inset
+
+.
+ It can be seen that the e4C libraries are biased towards greater %GC content
+ and shorter fragments.
+ These are likely to be experimental biases that come from the ligation,
+ PCR and sequencing steps.
+ It should be noted that the interaction libraries are enriched for GC rich
+ regions (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Active-genes-share-similar-global-interaction-profiles"
+
+\end_inset
+
+), so this bias may be a reflection of the specificity of the interaction
+ data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/GC_length biases/GC_length biases.eps
+	lyxscale 40
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:library-biases"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+e4C library biases
+\end_layout
+
+\end_inset
+
+e4C library biases.
+
+\series default
+ (A) GC bias in observed fragments (B) Fragment length bias in observed
+ fragments
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Bias correction
+\end_layout
+
+\begin_layout Standard
+To correct the e4C libraries for systematic biases that are due to GC content
+ and fragment length, a library of all potential 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragments was created with associated 'expected probability' values.
+ These were generated with a perl script which calculates a correction value
+ for each bin of GC % and fragment length: (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-systematic-bias-correction"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\frac{hit\, fragments\, in\, bin}{hit\, fragments}\;/\;\frac{all\, fragments\, in\, bin}{all\, fragments}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, for every potential fragment, the appropriate correction values for
+ %GC and fragment length were multiplied against the overall chance of any
+ fragment being hit: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{frag}=\dfrac{observed\, fragments}{potential\, fragments}\times C_{\%GC}\times C_{frag\, length}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This library of expected observation rates for every potential fragment
+ was then used in single window testing (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:significance-of-single-regions"
+
+\end_inset
+
+).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should really do the genome wide stuff with this correction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Validation
+\end_layout
+
+\begin_layout Standard
+To check that the values produced by this script were reliable, I wrote
+ a small Perl script to generate 
+\emph on
+in-silico 
+\emph default
+libraries using the correction values.
+ The script loops through every potential fragment and outputs it as a hit
+ if a random number between 0 and 1 is greater than or equal to the correction
+ factor.
+ This was repeated 5 times to generate a suitable number of reads.
+ This 
+\emph on
+in-silico
+\emph default
+ library was then loaded into SeqMonk for visual inspection before being
+ analysed for biases as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:CH5-GC-content-bias"
+
+\end_inset
+
+.
+ The resulting plot shows the 
+\emph on
+in-silico
+\emph default
+ library with identical biases to the observed library, validating the correctio
+n values.
+\end_layout
+
+\begin_layout Section
+Significance of single regions 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:significance-of-single-regions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To test the significance of the observed hits in a single region, I wrote
+ a script that generates 
+\emph on
+in-silico
+\emph default
+ random libraries for defined regions of the genome.
+ This process can be repeated many times and the number of 
+\emph on
+in-silico
+\emph default
+ reads generated for each run compared to the number of observed reads in
+ the real e4C library.
+ The script was run with 1,000,000 loops and the resulting frequency of
+ each number of 
+\emph on
+in-silico
+\emph default
+ hits plotted in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single-window-testing"
+
+\end_inset
+
+.
+ When the observed hit count for this region is plotted on the same graph
+ it can be seen that it is far above what would be expected from GC content
+ and fragment length of the region.
+ To calculate a 
+\emph on
+p 
+\emph default
+value, I ran the script for for 3.3x10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+
+ iterations and no loops showed ≥ the observed hit count, so 
+\emph on
+p
+\emph default
+ < 3x10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-8
+\end_layout
+
+\end_inset
+
+for this region.
+ For more discussion about this region, see Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:BCR-ABL"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/single window testing/single_window.eps
+	lyxscale 30
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:single-window-testing"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Frequency of 
+\emph on
+in-silico
+\emph default
+ hits for single window in telomeric Chromosome 9
+\end_layout
+
+\end_inset
+
+Frequency of 
+\emph on
+in-silico
+\emph default
+ hits for single window in telomeric Chromosome 9.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A genome wide approach
+\end_layout
+
+\begin_layout Standard
+Expanding the above approach to determine significance across the entire
+ genome.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I haven't done this work yet.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I haven't done this work yet.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+AseI
+\emph default
+ site distribution normalisation
+\end_layout
+
+\begin_layout Standard
+Because e4C uses restriction fragments to analyse sequence proximity, there
+ is a chance that the unequal distribution of 
+\emph on
+AseI
+\emph default
+ sites across the genome could skew the results.
+ To correct for this, I used a Perl script written by Dr.
+ Simon Andrews in the Babraham Bioinformatics department.
+ The script loads a list of potential fragments with binary flags indicating
+ whether they are observed or not, prepared as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:CH5-GC-content-bias"
+
+\end_inset
+
+.
+ It creates 100 Kb rolling windows and counts the number of 
+\emph on
+AseI
+\emph default
+ fragments present.
+ If there are greater than 5 fragments in a window, it calculates an (
+\begin_inset Formula $\frac{observed}{potential}$
+\end_inset
+
+) value and outputs this to the results file.
+ If there are less than 5 fragments it outputs 0; calculating percentages
+ with such small numbers of fragments can give uninformative values for
+ regions with few restriction sites, such as centromeres.
+\end_layout
+
+\begin_layout Standard
+To allow the analysis of these percentage values within SeqMonk, I wrote
+ a Perl script to create a number of 'virtual reads' over each 100 Kb window
+ according to the percentage score.
+ These can then be imported into SeqMonk and quantified by whatever method
+ is desired.
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+In-silico
+\emph default
+ testing
+\end_layout
+
+\begin_layout Standard
+To validate this normalisation, I wrote a Perl script which creates randomised
+ virtual e4C libraries from the list of potential 
+\emph on
+AseI
+\emph default
+ - 
+\emph on
+NlaIII
+\emph default
+ fragments and loaded this into SeqMonk.
+ I then ran the 
+\emph on
+AseI
+\emph default
+ normalisation as described above and loaded the resulting normalised library
+ back into SeqMonk.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/AseI normalisation/AseI_normalisation.eps
+	lyxscale 30
+	height 90theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:AseI-normalisation"
+
+\end_inset
+
+
+\series bold
+\emph on
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+AseI
+\emph default
+ site distribution normalisation
+\end_layout
+
+\end_inset
+
+AseI
+\emph default
+ site distribution normalisation.
+ 
+\series default
+(A) Genome wide plots of BCR e4C Run 2 before and after AseI site distribution
+ normalisation.
+ Standard scores calculated and normalised against maximum value.
+ (B) Chromosome 1 showing the 
+\emph on
+in-silico
+\emph default
+ e4C randomised library before and after normalisation for 
+\emph on
+AseI
+\emph default
+ site distribution.
+ Read counts quantified and normalised against maximum value.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Standard scores
+\end_layout
+
+\begin_layout Standard
+To allow the comparison of different e4C libraries with varying degrees
+ of coverage, I typically converted and final quantification values to 
+\emph on
+standard scores
+\emph default
+, also known as 
+\emph on
+Z scores.
+ 
+\emph default
+A standard score represents how many standard deviations from the mean a
+ single value lies within a dataset.
+ I initially calculated these values by exporting data from SeqMonk and
+ importing it into IBM SPSS Statistics.
+ The ability to requantify probes with standard scores has since been built
+ into SeqMonk.
+\end_layout
+
+\begin_layout Section
+4C data set correlations
+\end_layout
+
+\begin_layout Standard
+Talk about the work I did doing pairwise correlation analysis on multiple
+ different 4C data sets..?
+\end_layout
+
+\begin_layout Section
+Limitations of the e4C data
+\end_layout
+
+\begin_layout Subsection
+Coverage
+\end_layout
+
+\begin_layout Standard
+The problems of low coverage in the libraries, and how this differs for
+ the different bait regions.
+ What we did to try to overcome this (using GM12878 cells, using multiple
+ bait regions).
+ Why this makes the data from the ABL1 and MLL baits have limited use.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Put this in the discussion chapter? 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Put this in the discussion chapter? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
