@@ -30,7 +30,16 @@
 \index_command default
 \paperfontsize default
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
@@ -4272,7 +4281,14 @@ cis
 \emph on
  trans 
 \emph default
-distribution
+distribution 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:cis-trans-distribution"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5563,7 +5579,7 @@ reference "fig:library-biases"
  regions (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:Active-genes-share-similar-global-interaction-profiles"
+reference "sec:Active-genes-reside-in-an-active-nuclear-compartment"
 
 \end_inset
 
@@ -5762,123 +5778,44 @@ in-silico
 \emph on
 in-silico
 \emph default
- reads generated for each run compared to the number of observed reads in
- the real e4C library.
- The script was run with 1,000,000 loops and the resulting frequency of
- each number of 
-\emph on
-in-silico
-\emph default
- hits plotted in Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:single-window-testing"
-
-\end_inset
-
-.
- When the observed hit count for this region is plotted on the same graph
- it can be seen that it is far above what would be expected from GC content
- and fragment length of the region.
- To calculate a 
-\emph on
-p 
-\emph default
-value, I ran the script for for 3.3x10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-
- iterations and no loops showed ≥ the observed hit count, so 
+ fragment hits generated for each run compared to the number of observed
+ reads in the real e4C library.
+ A 
 \emph on
 p
 \emph default
- < 3x10
-\begin_inset script superscript
+ value can be calculated for a single window using this approach by counting
+ the number of times that the 
+\emph on
+in-silico
+\emph default
+ fragment hit counts are 
+\begin_inset Formula $\geq$
+\end_inset
 
-\begin_layout Plain Layout
--8
+ the number of observed fragments hit for the region.
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=\frac{\sum(in\!\!-\!\! silico\: runs\geq observed\: fragments)}{\sum(in\!\!-\!\! silico\: runs<observed\: fragments)}
+\]
 
 \end_inset
 
-for this region.
- For more discussion about this region, see Chapter 
+
+\end_layout
+
+\begin_layout Standard
+For an example of this analysis in use, see Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:BCR-ABL"
+reference "sub:BCR-9q34-single-window-testing"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/chapter 4/single window testing/single_window.eps
-	lyxscale 30
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:single-window-testing"
-
-\end_inset
-
-
-\series bold
-
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Frequency of 
-\emph on
-in-silico
-\emph default
- hits for single window in telomeric Chromosome 9
-\end_layout
-
-\end_inset
-
-Frequency of 
-\emph on
-in-silico
-\emph default
- hits for single window in telomeric Chromosome 9.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -6094,7 +6031,7 @@ Talk about the work I did doing pairwise correlation analysis on multiple
 \end_layout
 
 \begin_layout Section
-Limitations of the e4C data
+Limitations of the e4C data / Discussion
 \end_layout
 
 \begin_layout Subsection

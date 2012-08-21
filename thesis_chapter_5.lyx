@@ -30,7 +30,16 @@
 \index_command default
 \paperfontsize default
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
@@ -81,16 +90,103 @@ Gene associations in CD34
  and GM12878 cells
 \end_layout
 
+\begin_layout Section
+
+\emph on
+cis
+\emph default
+ interaction profiles
+\end_layout
+
 \begin_layout Standard
-Not sure if there’s enough here to warrant its own chapter, could possibly
- do with some reorganising.
+The linear separation of two DNA sequences is a highly constraining factor
+ in the three dimensional organisation of chromatin.
+ If two regions are on the same chromosome, they are physically linked,
+ and the maximum distance that they may separate by is determined by the
+ amount of sequence separating them.
+ Because of this, the linear separation of two sequences is the strongest
+ predictor of three dimensional interaction.
+ As described in Section
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:cis-trans-distribution"
+
+\end_inset
+
+, this effect can clearly be seen within my data, as shown by the proportion
+ of reads that map to the 
+\emph on
+cis
+\emph default
+ chromosome (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-library-read-counts"
+
+\end_inset
+
+).
+ In Section
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:cis-trans-distribution"
+
+\end_inset
+
+ I describe how the near 
+\emph on
+cis
+\emph default
+ interaction data is saturated and why all of the 
+\emph on
+cis
+\emph default
+ interaction data must be separated from the 
+\emph on
+trans
+\emph default
+ to allow analysis of the 
+\emph on
+trans
+\emph default
+ data.
+ Here, I present an overview of the 
+\emph on
+cis 
+\emph default
+data, analysed in isolation from the 
+\emph on
+trans
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Interaction frequency in 
+\emph on
+cis
+\emph default
+ declines as a function of linear separation
+\end_layout
+
+\begin_layout Subsection
+Specific interactions in 
+\emph on
+cis 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:specific-cis-interactions"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Active genes share similar global interaction profiles 
+Active genes reside in an active nuclear compartment 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Active-genes-share-similar-global-interaction-profiles"
+name "sec:Active-genes-reside-in-an-active-nuclear-compartment"
 
 \end_inset
 
@@ -98,14 +194,94 @@ name "sec:Active-genes-share-similar-global-interaction-profiles"
 \end_layout
 
 \begin_layout Standard
-Results of analysis showing overlap with GM12878 RNA PolII ChIP-Seq data
- (and CD34+ SAGE tag data?).
- How this supports the hypothesis that genes are associating in transcription
- factories.
+Upon plotting the e4C 
+\emph on
+trans
+\emph default
+ interaction profiles of the different bait genes, it was clear that they
+ share a number of features.
+ Previous studies have shown that transcribed genes can co-associate at
+ transcription factories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2004"
+
+\end_inset
+
+ and Hi-C studies have suggested that the genome could be organised into
+ active and inactive compartments 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+.
+ My bait genes are actively transcribed within CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Subsection
-Correlation with active genomic marks
+\end_inset
+
+ cells (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-RT-PCR"
+
+\end_inset
+
+) and visual inspection of the interaction profiles appeared to share some
+ features with previously described active regions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Versteeg2003"
+
+\end_inset
+
+, so I was interested in whether my e4C interaction libraries showed correlation
+s with RNA Polymerase II binding and other active chromatin marks.
+\end_layout
+
+\begin_layout Standard
+To investigate the correlation between e4C interaction frequency and chromatin
+ marks, I analysed publicly available genome-wide datasets [#REFS] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFS
+\end_layout
+
+\end_inset
+
+.
+ Gene density was calculated by counting genes labelled as 'protein-coding'
+ in ensembl 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Flicek2012"
+
+\end_inset
+
+.
+ These datasets were quantified by their read counts and the resulting standard
+ scores compared to the those from the 
+\emph on
+trans
+\emph default
+ e4C interaction data.
+ Scatter plots were generated and R scores calculated using SeqMonk.
+ The resulting correlation R scores are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-Correlation-R-Scores"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -394,6 +570,7 @@ BCR 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.718
 \end_layout
 
@@ -405,6 +582,7 @@ BCR 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.688
 \end_layout
 
@@ -416,6 +594,7 @@ BCR 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.743
 \end_layout
 
@@ -504,6 +683,7 @@ BCR 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.731
 \end_layout
 
@@ -515,6 +695,7 @@ BCR 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.713
 \end_layout
 
@@ -526,6 +707,7 @@ BCR 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.760
 \end_layout
 
@@ -614,6 +796,7 @@ BCR Combined
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.744
 \end_layout
 
@@ -625,6 +808,7 @@ BCR Combined
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.718
 \end_layout
 
@@ -636,6 +820,7 @@ BCR Combined
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.772
 \end_layout
 
@@ -724,6 +909,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.275
 \end_layout
 
@@ -735,6 +921,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.242
 \end_layout
 
@@ -746,6 +933,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.291
 \end_layout
 
@@ -834,6 +1022,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.351
 \end_layout
 
@@ -845,6 +1034,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.241
 \end_layout
 
@@ -856,6 +1046,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.316
 \end_layout
 
@@ -944,6 +1135,7 @@ MLL 3
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.268
 \end_layout
 
@@ -955,6 +1147,7 @@ MLL 3
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.280
 \end_layout
 
@@ -966,6 +1159,7 @@ MLL 3
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.275
 \end_layout
 
@@ -1054,6 +1248,7 @@ MLL 3 phiX
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.386
 \end_layout
 
@@ -1065,6 +1260,7 @@ MLL 3 phiX
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.241
 \end_layout
 
@@ -1076,6 +1272,7 @@ MLL 3 phiX
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.320
 \end_layout
 
@@ -1144,6 +1341,7 @@ ABL
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.635
 \end_layout
 
@@ -1155,6 +1353,7 @@ ABL
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.547
 \end_layout
 
@@ -1199,6 +1398,7 @@ ABL
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.034
 \end_layout
 
@@ -1210,6 +1410,7 @@ ABL
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.303
 \end_layout
 
@@ -1254,6 +1455,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.533
 \end_layout
 
@@ -1265,6 +1467,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.491
 \end_layout
 
@@ -1309,6 +1512,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.016
 \end_layout
 
@@ -1320,6 +1524,7 @@ MLL 1
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.317
 \end_layout
 
@@ -1364,6 +1569,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.613
 \end_layout
 
@@ -1375,6 +1581,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.605
 \end_layout
 
@@ -1419,6 +1626,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.132
 \end_layout
 
@@ -1430,6 +1638,7 @@ MLL 2
 \begin_layout Plain Layout
 
 \size scriptsize
+\emph on
 0.374
 \end_layout
 
@@ -1437,6 +1646,18 @@ MLL 2
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Could add Intron length, GC content, SINE content and LINE content? (Versteeg
+ paper).
+ Just run all of the other CD34+ datasets in that huge project?
+\end_layout
 
 \end_inset
 
@@ -1477,6 +1698,7 @@ cis
  Read counts quantified and then Z-scores calculated.
  Scatter plot drawn and R score derived.
  Protein coding genes only used for gene density.
+ Values shown in italics are comparisons across the two different cell types.
 \end_layout
 
 \end_inset
@@ -1489,8 +1711,13 @@ cis
 
 \end_layout
 
-\begin_layout Subsection
-Anti-correlation with inactive genomic marks
+\begin_layout Standard
+The strong correlation between bait interaction and active association score
+ shows that the e4C bait genes are frequently interacting with other active
+ regions of the genome.
+ The low scores seen with the inactive histone modifications signify that
+ there is not more interaction with these regions that could be expected
+ by chance.
 \end_layout
 
 \begin_layout Section
@@ -1498,10 +1725,150 @@ Different genes have different preferred interaction partners
 \end_layout
 
 \begin_layout Standard
-Normalising the interaction data against the PolII / expression data.
- Talk about the specific interactions that remain within the different datasets.
- Explain why low coverage makes most of these interactions dubious.
+To see if any bait-specific 
+\emph on
+trans 
+\emph default
+interactions
+\emph on
  
+\emph default
+were present within the datasets, we normalised the interaction profiles
+ using appropriate datasets: CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ RNA-Seq for the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ e4C libraries and GM12878 RNA Polymerase II ChIP-Seq for the GM12878 e4C
+ libraries.
+ Standard scores from these datasets were subtracted from the interaction
+ library standard scores for each window position, and the resulting values
+ converted to standard scores once more.
+ This normalisation against has the effect of largely flattening the genome
+ wide profile, as expected by the observed correlations (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-normalisation-active-marks"
+
+\end_inset
+
+ A).
+ Despite this flattening, some noticeable peaks remain within the 
+\emph on
+BCR
+\emph default
+ datasets.
+ The low coverage of the 
+\emph on
+MLL
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+ interaction datasets makes the detection of any specific local interaction
+ regions difficult, and those observed unreliable.
+ To confirm these remaining peaks within the 
+\emph on
+BCR
+\emph default
+ datasets we repeated the normalisation against a number of different active
+ marks (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-normalisation-active-marks"
+
+\end_inset
+
+ B).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need to make this figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+e4C normalisation against active marks
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C-normalisation-active-marks"
+
+\end_inset
+
+e4C normalisation against active marks.
+
+\series default
+ (A) Normalisation of the different e4C libraries against CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ RNA-Seq and GM12878 RNAP II ChIP-Seq.
+ (B) Normalisation of the 
+\emph on
+BCR
+\emph default
+ run 1 e4C library, chromosome 9, against different active chromatin marks.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

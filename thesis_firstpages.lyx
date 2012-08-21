@@ -76,7 +76,7 @@ status open
 
 
 \backslash
-vspace*{8cm}
+vspace*{6cm}
 \end_layout
 
 \end_inset
@@ -86,14 +86,73 @@ vspace*{8cm}
 
 \begin_layout Quotation
 \align center
-I'd rather be rich than stupid.
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+If you want to increase your success rate, double your failure rate.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+Tom Watson
+\end_layout
+
+\begin_layout Quotation
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{2cm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Quotation
 \align center
 
 \emph on
-Jack Handey
+\begin_inset Quotes eld
+\end_inset
+
+Science is a lot like rowing:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ although you are relentlessly pushing forwards, it always feels like you're
+ going backwards.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\align center
+Adrian Leonard
 \end_layout
 
 \begin_layout Chapter*

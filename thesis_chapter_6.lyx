@@ -117,63 +117,179 @@ BCR
 \emph on
 BCR
 \emph default
- preferentially co-associates with 9q34
-\end_layout
-
-\begin_layout Subsection
-
-\emph on
-BCR
-\emph default
- associations in CD34+ cells
-\end_layout
-
-\begin_layout Standard
-The most prominent of the specific interactions seen in the 
-\emph on
-BCR
-\emph default
- interaction profiles is 9q34, a gene dense region which is highly transcribed.
- This region contains the gene 
-\emph on
-ABL1
-\emph default
- – a recurrent translocation partner with 
-\emph on
-BCR
-\emph default
- which is found in 95% of chronic myeloid leukaemia (CML) cases 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Neves1999a"
-
-\end_inset
-
-.
- This region of chromosome 9 has approximately 7 fold enrichment of association
- above the mean with the 
-\emph on
-BCR
-\emph default
- bait, with a maximal association of 
-\emph on
-p
-\emph default
- < 1 x 10
+ preferentially co-associates with 9q34 in CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
--4
++
 \end_layout
 
 \end_inset
 
-.
- The entire region has a significance of 
+ cells
+\end_layout
+
+\begin_layout Standard
+The most prominent interaction seen in the two replicate 
 \emph on
-p 
+BCR
 \emph default
-< 1 x 10
+ interaction profiles is 9q34.
+ When the two replicates are combined this interaction gives approximately
+ 7 fold enrichment of association above the mean with a maximal standard
+ score of 17.043, corresponding to 
+\emph on
+p
+\emph default
+ < 3.94 x 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+65
+\end_layout
+
+\end_inset
+
+ .
+ This is the strongest 
+\emph on
+trans
+\emph default
+ interaction that I found in any of my e4C association datasets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/ABL hit/ABL_hit_truncated.eps
+	lyxscale 30
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+BCR
+\emph default
+ association with 9q3
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BCR-association-9q34"
+
+\end_inset
+
+
+\emph on
+BCR
+\emph default
+ association with 9q34.
+ 
+\series default
+Association of the combined 
+\emph on
+BCR
+\emph default
+ replicates, normalised for 
+\emph on
+AseI
+\emph default
+ site distribution, across the q arm of chromosome 9.
+ Light blue fill shows quantification using 10 mb windows with 1 mb separation.
+ Darker blue line shows quantification using 1 mb windows with 100 kb separation.
+ X axis shows chromosome position in mb.
+ 
+\emph on
+ABL1
+\emph default
+ is shown as a yellow highlight.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Single window testing 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BCR-9q34-single-window-testing"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To confirm that this interaction is not an artefact of bias introduced through
+ GC content or restriction fragment length, I used the single-window testing
+ method described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:significance-of-single-regions"
+
+\end_inset
+
+.
+ The script was run with one million loops to generate a million 
+\emph on
+in-silico 
+\emph default
+single window scores.
+ The the resulting frequency of each number of 
+\emph on
+in-silico
+\emph default
+ scores is plotted in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single-window-testing"
+
+\end_inset
+
+.
+ The observed hit count for this region is clearly far above what would
+ be expected from GC content and fragment length of the region.
+ To generate a probability score for the number of observed fragments, I
+ ran the script a second time for ten trillion iterations.
+ None of the resulting scores were greater than or equal to the number of
+ observed fragments, meaning that 
+\emph on
+p
+\emph default
+ < 3x10
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -182,15 +298,119 @@ p
 
 \end_inset
 
- (Supp Fig - single window testing).
- This is the strongest 
+for this region.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/single window testing/single_window.eps
+	lyxscale 30
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:single-window-testing"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Frequency of 
 \emph on
-trans
+in-silico
 \emph default
- interaction that we found in any of our association datasets.
+ hits for single window in telomeric Chromosome 9
+\end_layout
+
+\end_inset
+
+Frequency of 
+\emph on
+in-silico
+\emph default
+ hits for single window in telomeric Chromosome 9.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
+9q34 contains 
+\emph on
+ABL1
+\end_layout
+
+\begin_layout Standard
+Chromosome 9 q34 is a gene dense region containing a large number of highly
+ transcribed genes.
+ Interestingly, it is contains the gene 
+\emph on
+ABL1
+\emph default
+ – a recurrent translocation partner with 
+\emph on
+BCR
+\emph default
+.
+ The t(9;22)(q34;q11) translocation is found in 95% of chronic myeloid leukaemia
+ (CML) cases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hehlmann2007"
+
+\end_inset
+
+ and was the first cytogenetic abnormality of its kind to be characterised
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nowell1960"
+
+\end_inset
+
+.
+ For more information about the 
+\emph on
+BCR-ABL1
+\emph default
+ translocation, please see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:intro-BCR-and-ABL1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 
 \emph on
 ABL
@@ -246,12 +466,254 @@ BCR
 Narrowing the window - the Surfeit Cluster
 \end_layout
 
-\begin_layout Subsection
-1 megabase windows
+\begin_layout Standard
+It can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+ that 
+\emph on
+ABL1
+\emph default
+ is not in the centre of the maximal 10 mb window.
+ To increase the resolution of the area, I plotted the association with
+ 1 mb windows separated by 100 kb (darker outline, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+).
+ At this scale 
+\emph on
+ABL1
+\emph default
+ is located in a shoulder between two peaks within the region of elevated
+ association.
+ I was intrigued with the possibility that 
+\emph on
+BCR
+\emph default
+ may be interacting strongly with another sequence within the region, and
+ interacting with 
+\emph on
+ABL1
+\emph default
+ by association - that 
+\emph on
+ABL1
+\emph default
+ could be a bystander.
 \end_layout
 
 \begin_layout Subsection
-Hi-C work
+Hi-C in GM06990 cells
+\end_layout
+
+\begin_layout Standard
+Due to the limitation of coverage in the e4C, 1 mb is the lower limit of
+ useful resolution windows for the combined 
+\emph on
+BCR
+\emph default
+ libraries.
+ There are between 50 and 80 genes for each 1 mb window within the peak
+ regions of 9q34, so I turned to other data sources to try to pinpoint a
+ region driving the interaction.
+ Job Dekker's group had recently published a Hi-C study using GM06990 cells
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+, a lymphoblastoid cell line.
+ Lymphoblasts are multi-potent progenitor cells which later develop into
+ the different lymphocyte cell types: NK cells, T lymphocytes and B lymphocytes.
+ They are derived from CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ haematopoietic stem cells via common lymphoid progenitor cells, and so
+ have not undergone a great deal of differentiation.
+ I hypothesised that the nuclear organisation of GM06990 cells may be similar
+ to that found within CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells, and that this Hi-C dataset may shed light on the details of the
+ 
+\emph on
+BCR
+\emph default
+ - 9q34 interaction.
+\end_layout
+
+\begin_layout Standard
+Hi-C is a technique based on chromosome conformation capture like e4C, however
+ instead of capturing all interactions from a single region of interest
+ (one-to-all) it can reveal all interactions within the nucleus (all-to-all).
+ See Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:intro-Hi-C"
+
+\end_inset
+
+ for a detailed description of the technique.
+ Hi-C libraries can be manipulated to show the genome-wide interactions
+ of a single bait locus, much like an 
+\emph on
+in-silico
+\emph default
+ e4C.
+ Initial analysis using the Hi-C heat map tool available at 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://hic.umassmed.edu"
+target "http://hic.umassmed.edu/heatmap/heatmap.php"
+
+\end_inset
+
+ shows that telomeric chromosome 9 does interact strongly with two sections
+ of chromosome 22 (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM06990-Hi-C-heatmap"
+
+\end_inset
+
+), though the 
+\emph on
+BCR
+\emph default
+ - 
+\emph on
+ABL1
+\emph default
+ window isn't the point of maximal association.
+ Interestingly, the strong interaction just centromeric of 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL
+\emph default
+ is for windows including the 
+\emph on
+IGL 
+\emph default
+(immoglobulin lambda) genes on chromosome 22, a region that displays a strong
+ interaction with 
+\emph on
+BCR
+\emph default
+ in the e4C 
+\emph on
+cis
+\emph default
+ interaction data (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:specific-cis-interactions"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/lieberman-aiden HiC heatmap/liberman-aiden-HiC-heatmap.ai
+	lyxscale 40
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+GM06990 Hi-C heat map
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GM06990-Hi-C-heatmap"
+
+\end_inset
+
+
+\series bold
+GM06990 Hi-C heat map.
+ 
+\series default
+Interaction heat map showing the q arm of chromosomes 9 and 22.
+ Colours represent observed / expected ratios, blue is weak, red is strong
+ interaction.
+ Each block represents a 1 mb window.
+ Generated using the Hi-C data browser: 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://hic.umassmed.edu"
+target "http://hic.umassmed.edu/heatmap/heatmap.php"
+
+\end_inset
+
+, data from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -308,7 +770,20 @@ s.
 \end_layout
 
 \begin_layout Subsection
-DNA-FISH results
+DNA-FISH in GM12878 cells
+\end_layout
+
+\begin_layout Subsection
+DNA-FISH in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells
 \end_layout
 
 \begin_layout Section
@@ -326,6 +801,26 @@ ation partners in the entire genome).
 
 \begin_layout Standard
 Should this go in the discussion section instead?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

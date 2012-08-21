@@ -41,7 +41,7 @@ tabs-within-sections
 \fontencoding global
 \font_roman times
 \font_sans helvet
-\font_typewriter default
+\font_typewriter courier
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
@@ -104,8 +104,69 @@ tabs-within-sections
 \begin_body
 
 \begin_layout Title
-Spatial organisation of proto-oncogenes in human hematopoietic progenitor
- cells 
+
+\family sans
+\series bold
+\size giant
+Spatial organisation of proto-oncogenes in human hæmatopoietic progenitor
+ cells
+\family default
+\series default
+\size default
+ 
+\family sans
+\size normal
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+vspace*{2cm} 
+\end_layout
+
+\end_inset
+
+
+\family default
+A dissertation submitted for the degree of
+\emph on
+ Doctor of Philosophy
+\emph default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+vspace*{2cm} 
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Graphics
+	filename figures/misc/title-page-crests.eps
+	lyxscale 30
+	height 3cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -274,7 +335,7 @@ References
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "C:/Users/ewelsp/Dropbox/Work/BibTeX/THESIS,/Users/phil/Dropbox/Work/BibTeX/THESIS,/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
 options "bibtotoc,plain"
 
 \end_inset

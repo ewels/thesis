@@ -585,86 +585,82 @@ Two-dimensional organisation
 \end_layout
 
 \begin_layout Standard
-Chromosome banding, 
-\emph on
-cis
-\emph default
- organisation of Hox genes, gene clusters, gene rich areas and gene deserts.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Maybe get rid of this section?
-\end_layout
+Since the inception of cytogenetics, it has been known that not all chromosomes
+ are the same.
+ The development of chromosome banding techniques in the 1970s allowed detailed
+ human karyotypes to be determined, complete with differential staining
+ of regions within each chromosome, termed 'bands' 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Caspersson1970"
 
 \end_inset
 
+.
+ Banding assays can show regions of heterochromatin and euchromatin, highlightin
+g the variation in characteristics across regions of the genome 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Trask2002"
 
-\end_layout
+\end_inset
 
-\begin_layout Section
-Techniques to investigate nuclear organisation
-\end_layout
+.
+ The sequencing of the human genome allowed detailed analysis of GC content,
+ gene density and repetitive sequence content 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lander2001"
 
-\begin_layout Subsection
-Microscopy
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Chromosome painting
-\end_layout
+.
+ Versteeg 
+\emph on
+et al.
 
-\begin_layout Subsubsection
-DNA-FISH
-\end_layout
+\emph default
+ integrated a multitude of 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SAGE"
+description "Serial analysis of gene expression"
 
-\begin_layout Subsubsection
-RNA-FISH
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Electron microscopy
-\end_layout
+ SAGE tag expression profiles from different cell types into the genomic
+ map and built on earlier work defined regions of high transcriptional activity,
+ called ridges 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Versteeg2003"
 
-\begin_layout Subsection
-Chromosome conformation capture
+\end_inset
+
+.
+ They found ridges to be gene-dense, highly transcribed, have a high GC
+ content and low LINE repeat density.
+ These features are based purely on the underlying sequence content and
+ so do not vary amongst cell types.
+ The different ridges and anti-ridges were found to contain different classes
+ of genes, with weakly expressed genes clustering within anti-ridges and
+ clusters of highly expressed housekeeping genes found predominantly in
+ ridges 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Versteeg2003"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Chromosome conformation capture (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "3C"
-description "Chromosome conformation capture"
-
-\end_inset
-
-3C)
-\end_layout
-
-\begin_layout Subsubsection
-Circular 4C
-\end_layout
-
-\begin_layout Subsubsection
-e4C
-\end_layout
-
-\begin_layout Subsubsection
-5C
-\end_layout
-
-\begin_layout Subsubsection
-ChIA-PET
-\end_layout
-
-\begin_layout Subsubsection
-Hi-C
-\end_layout
-
-\begin_layout Subsubsection
-Tethered Hi-C
+Whilst the two-dimensional organisation of the genome cannot completely
+ explain the degree of complexity found with transcriptional control, these
+ studies demonstrate that the order of sequence within the genome is not
+ random, and has a large effect on the way that DNA content is interpreted.
+ 
 \end_layout
 
 \begin_layout Section
@@ -674,11 +670,7 @@ Chromosome Territories
 \begin_layout Standard
 The interphase nucleus is a highly structured organelle.
  As chromosomes decondense after metaphase they retain some degree of structure,
- forming 
-\emph on
-chromosome territories
-\emph default
- (
+ forming 'chromosome territories' (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CT"
@@ -694,8 +686,8 @@ key "Cremer2001"
 \end_inset
 
 .
- Circumstantial evidence for such interphase organisation of the chromosomes
- has existed for a long time, first suggested by Carl Rabl in 1885 
+ Circumstantial evidence for interphase organisation of chromosomes has
+ existed for a long time, first suggested by Carl Rabl in 1885 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Rabl1885"
@@ -731,7 +723,11 @@ key "Cremer1982"
 
 .
  The subsequent development of 'chromosome paints', a method to visualise
- entire- or part- chromosomes with (
+ entire- or part- chromosomes with fluorescence 
+\emph on
+in-situ
+\emph default
+ hybridisation (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FISH"
@@ -742,11 +738,80 @@ description "Fluorescence in-situ hybridisation"
 FISH), confirmed these findings 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Schardin1985a,Manuelidis1985"
+key "Schardin1985a,Manuelidis1985,Bolzer2005"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
+	lyxscale 40
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Chromosome Territories
+\end_layout
+
+\end_inset
+
+Chromosome Territories.
+
+\series default
+ Image of a Human fibroblast cell in G0 with all chromosomes labelled using
+ multi-colour FISH.
+ Taken from Bolzer 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bolzer2005"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -756,7 +821,7 @@ ion can be studied.
  nucleus is not random and correlates with chromosome size 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Sun2000,Cremer2001b"
+key "Sun2000,Cremer2001b,Bolzer2005"
 
 \end_inset
 
@@ -776,31 +841,8 @@ key "Visser1998"
 
 : those near the centre of the nucleus tend to be gene-rich, early replicating
  and small.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Talk about tethering experiments changing gene expression, nuclear pores
- and lamina interactions?
-\end_layout
-
-\begin_layout Plain Layout
-Parada et al, Genome Biol 2004
-\end_layout
-
-\begin_layout Plain Layout
-Bolze et al, Plos Biol 2005
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The specificity of CT positioning is a topic of debate, though studies have
- suggested conservation of CT positioning through evolution 
+ The specificity of CT positioning is a topic of debate, though studies
+ have suggested conservation of CT positioning through evolution 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tanabe2002"
@@ -815,16 +857,75 @@ key "Parada2004b"
 \end_inset
 
 .
- Chromosome position is dynamic and tied to multiple cellular processes
- - inhibition of transcription causes a reversible change in position 
+\end_layout
+
+\begin_layout Subsection
+CTs and transcription
+\end_layout
+
+\begin_layout Standard
+It's known that for some but not all genes, positioning at the nuclear periphery
+ correlates with reduced gene expression 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kosak2002,Dietzel2004,Zink2004a"
+
+\end_inset
+
+.
+ To investigate whether transcriptional activity is the cause or effect
+ of this positioning effect, two groups published studies which artificially
+ tethered genomic regions to the inner nuclear membrane using
+\emph on
+ 
+\emph default
+Lac operators 
+\emph on
+(lacO)
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Finlan2008,Reddy2008"
+
+\end_inset
+
+.
+ Both groups observed a decrease in the transcriptional activity of the
+ regions when tethered, an effect that was ablated when cells were treated
+ with trichostatin A (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TSA"
+description "Trichostatin A"
+
+\end_inset
+
+TSA) to inhibit class I and class II histone deacetylases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Finlan2008"
+
+\end_inset
+
+.
+ Whilst these studies suggest that it is nuclear positioning that leads
+ to transcriptional effects, a study of CT positioning by Croft 
+\emph on
+et al.
+
+\emph default
+ showed that inhibition of transcription causes a reversible change in CT
+ position 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Croft1999"
 
 \end_inset
 
- and large scale rearrangements of CTs has been observed during cell differentia
-tion 
+.
+ Large scale rearrangements of CTs have also been observed during cell different
+iation 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Stadler2004"
@@ -852,18 +953,20 @@ key "Harewood2010"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CT intermingling, genes being buried in CTs or on the surface.
- 
+\begin_layout Subsection
+Chromosome territory dynamics
 \end_layout
 
-\end_inset
+\begin_layout Standard
+CT movement - http://www.ncbi.nlm.nih.gov/pubmed/16631592 actin myosin movement.
+\end_layout
 
+\begin_layout Subsection
+Chromatin decondensation and the inter-chromosomal space
+\end_layout
 
+\begin_layout Subsection
+Chromosome territory intermingling
 \end_layout
 
 \begin_layout Section
@@ -1156,6 +1259,87 @@ key "Osborne2004,Jackson1998"
 Specialised transcription factories
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schoenfelder2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Techniques to investigate nuclear organisation
+\end_layout
+
+\begin_layout Subsection
+Microscopy
+\end_layout
+
+\begin_layout Subsubsection
+Chromosome painting
+\end_layout
+
+\begin_layout Subsubsection
+DNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+RNA-FISH
+\end_layout
+
+\begin_layout Subsubsection
+Electron microscopy
+\end_layout
+
+\begin_layout Subsection
+Chromosome conformation capture
+\end_layout
+
+\begin_layout Standard
+Chromosome conformation capture (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3C"
+description "Chromosome conformation capture"
+
+\end_inset
+
+3C)
+\end_layout
+
+\begin_layout Subsubsection
+Circular 4C
+\end_layout
+
+\begin_layout Subsubsection
+e4C
+\end_layout
+
+\begin_layout Subsubsection
+5C
+\end_layout
+
+\begin_layout Subsubsection
+ChIA-PET
+\end_layout
+
+\begin_layout Subsubsection
+Hi-C 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-Hi-C"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tethered Hi-C
+\end_layout
+
 \begin_layout Section
 Looping
 \end_layout
@@ -1288,7 +1472,14 @@ BCR
 \emph default
  and 
 \emph on
-ABL1
+ABL1 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-BCR-and-ABL1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

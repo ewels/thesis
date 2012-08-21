@@ -1,0 +1,500 @@
+%% LyX 2.0.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[british]{report}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+%\usepackage{geometry}
+%\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=3cm,rmargin=2cm}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\DeclareRobustCommand{\greektext}{%
+  \fontencoding{LGR}\selectfont\def\encodingdefault{LGR}}
+\DeclareRobustCommand{\textgreek}[1]{\leavevmode{%
+  \IfFileExists{grtm10.tfm}{}{\fontfamily{cmr}}\greektext #1}}
+\DeclareFontEncoding{LGR}{}{}
+\DeclareTextSymbol{\~}{LGR}{126}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\input{lyx_preamble}
+\usepackage[landscape,a3paper,left=21cm,marginparsep=1cm]{geometry}
+\marginparwidth=\textwidth
+\reversemarginpar
+\usepackage[style=numeric]{biblatex}
+\addbibresource{/Users/phil/Dropbox/Work/BibTeX/THESIS}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\chapter{Introduction}
+
+The nucleus of a human cell contains approximately 2 metres of DNA
+\cite{Annunziato2008}\marginpar{\fullcite{Annunziato2008}}, requiring a huge degree of compaction to fit
+within the nucleus. In addition to storing DNA the nucleus itself
+is a highly functional organelle, responsible for the huge variety
+of complex cellular processes. To achieve this, the contents of the
+nucleus are very precisely organised into sub-nuclear compartments
+which specialise in processes such as transcription and replication.
+In addition to the organisation of the nuclear proteome, chromatin
+itself is thought to be organised. In this chapter I will discuss
+the current understanding of nuclear structure and organisation, how
+we have obtained this knowledge, and how it may play a part in the
+initiation of certain cancers.
+
+
+\section{Chromatin}
+
+Chromatin is a general term used to describe the DNA found in the
+nucleus along with the plethora of proteins that bind to it. There
+are two principle forms of chromatin: \emph{euchromatin }and \emph{heterochromatin}.
+These were first described in the early twentieth century by the difference
+in staining within the nucleus \cite{Heitz1928}. 
+
+Heterochromatin stains darkly because it remains highly condensed
+during interphase, typically relocating to the nuclear periphery.
+can be split into \emph{constitutive heterochromatin} and \emph{facultative
+heterochromatin}; the former describing heterochromatin found in all
+cell types typically containing repetitive elements found in centromeres
+and telomeres; the latter describing less compacted inactive chromatin
+which may vary between cell types as they differentiate. Heterochromatin
+is well known as being a repressive environment for gene expression;
+studies whereby normally active regions are artificially tethered
+to the inner nuclear membrane show the ablation of gene expression
+\cite{Finlan2008,Reddy2008} though this effect appears to be locus
+specific and is not always observed \cite{Kumaran2008}.  Euchromatin
+is the site of most geneic transcription, as shown by the presence
+of RNA Polymerase and nascent transcriptions found in early fractionation
+studies \cite{Chesterton1974}. Its looser compaction allows access
+to the DNA by the cellular machinery; enabling the binding of transcription
+factors and the initiation of transcription.
+
+The differences between heterochromatin and euchromatin lie within
+the proteins that they contain. Chromatin acts as a platform for proteins
+to bind to, differences in histone modifications, variants, nucleosome
+packing and DNA modifications affect the accessibility and binding
+profile of the chromatin, and so how the DNA is interpreted by the
+cell.
+
+
+\subsection{Histones}
+
+\begin{wrapfigure}{o}{0.4\columnwidth}%
+\begin{centering}
+\includegraphics[width=0.4\columnwidth]{\string"figures/chapter 1/Nucleosome_1KX5_colour_coded\string".png}
+\par\end{centering}
+
+\caption[Structure of the nucleosome]{\label{fig:nucleosome-xray-structure}\textbf{Structure of the nucleosome.
+}X Ray Structure of a Nucleosome core particle at a resolution of
+1.9Å. DNA can be seen wrapped around the core histones. PDB structure
+1KX5 \cite{Davey2002}.}
+\end{wrapfigure}%
+To package DNA, the double helix is wrapped around an octomer of core
+histones: two H2A, two H2B, two H3 and two H4. 146 base pairs of DNA
+wrap around these positively charged proteins to form the nucleosome,
+which is then bound by histone H1 with linker DNA to make a total
+of 166 base pairs \cite{Davey2002}. This packing forms the 10 nm
+fibre, often known as 'beads on a string' due to its appearance in
+electron micrographs. At their most basic level, histones function
+to compact DNA by counteracting the negative charge of the phosphorylated
+back bone. 
+
+
+\subsection{Histone modifications}
+
+Core histones have flexible tails which extend outside of the nucleosome,
+and are accessible to proteins within the nuclear matrix. These tails
+can be post-translationally modified at a large number of residues
+and these modifications can affect the packing of chromatin \cite{Wolffe1999a}
+as well as which proteins can bind. The large number of combinatorial
+possibilities that result result from these modifications have been
+dubbed the 'Histone Code' \cite{Strahl2000a}, different modifications
+are related to different chromatin states: for example, active promoters
+are typically enriched for di- and tri-methylation of histone 3 lysine
+4 (H3K4), inactive promoters for H3K27me3 and H3K9me3 (Figure \ref{fig:Histone-mod-dashboard})
+(for a review, see \cite{Zhou2011}).
+
+As chromatin immunoprecipitation (\nomenclature{ChIP}{Chromatin immunoprecipitation}ChIP)
+has become a common laboratory technique and been combined with microarray
+techniques (ChIP on chip) and next generation sequencing (ChIP-Seq),
+our understanding of how these marks affect chromatin biology on a
+genome-wide scale has advanced dramatically. Profiling chromatin types
+using multiple datasets covering a large number of histone modifications
+is sufficient to predict the identity and function of regions in the
+genome with a high degree of accuracy, revealing previously unknown
+enhancers \cite{Heintzman2007,Ernst2010,Hon2009}. Ernst \emph{et
+al.} used the genome-wide profiles of 9 histone modifications in 9
+different cell types to define 15 different chromatin states, describing
+different states of promoters, enhancers and insulators, amongst others\cite{Ernst2011}.
+They integrated data from genome-wide association studies (\nomenclature{GWAS}{Genome-wide association study}GWAS)
+and found numerous enhancer elements which coincide with disease associated
+mutations. This systems biology approach can reveal the dynamics across
+different cell types and can be a powerful tool in understanding how
+the genome is interpreted in health and disease.
+
+\begin{figure}
+\includegraphics[width=0.8\columnwidth]{\string"figures/chapter 1/nrg2905-f4\string".jpg}
+
+\caption[Histone modification associations in chromatin]{\label{fig:Histone-mod-dashboard}\textbf{Histone modification associations
+in chromatin.} Diagram showing the range of histone modifications
+available within mammalian chromatin and how they can specify the
+behaviour of elements within the DNA. Taken from\cite{Zhou2011}.}
+\end{figure}
+
+
+
+\subsection{Histone variants}
+
+In addition to histone tail modifications, chromatin can be modified
+by the incorporation of histone variants. Canonical core histone genes
+are found in clustered repeat arrays within the genome, are transcribed
+during replication and are extremely tightly conserved between species.
+Histone variants are found as single genes spread through the genome,
+and are subject to far greater diversity \cite{Talbert2010}.
+
+CENP-A is a human variant of histone H3 which replaces the canonical
+histone in centromeric heterochromatin. It is a key factor in the
+establishment of the centromeres and kinetochores required for mitosis.
+The histone variant is incorporated with the help of a number of chaperone
+proteins, including HJURP, after replication of DNA has finished \cite{Dunleavy2009,Foltz2009}.
+CENP-A is essential for the formation of centromeres.
+
+Another frequent histone variant found in humans is H3.3, which differs
+from canonical H3 by just four amino acids \cite{Talbert2010}. This
+histone variant is found within transcribed genes, promoters and regulatory
+elements, and is thought to be laid down during transcriptional elongation
+\cite{Schwartz2005}. Nucleosomes containing H3.3 appear to be less
+stable than canonical nucleosomes, with a high turnover of H3.3 \cite{Schwartz2005}.
+It is possible that this increased turnover of the nucleosomal components
+helps to keep the chromatin open and accessible to the transcriptional
+machinery \cite{Talbert2010}.
+
+Other core histone proteins also have variants, such as H2A.Z, a histone
+variant found on either side of the \emph{nucleosome free regions
+}found at the transcriptional start sites of active genes as well
+as insulator regions \cite{Zlatanova2008}. H2A.Z promotes the recruitment
+of RNA Polymerase II through mediating protein interactions \cite{Adam2001}.
+
+
+
+
+
+\section{Two-dimensional organisation}
+
+Chromosome banding, \emph{cis} organisation of Hox genes, gene clusters,
+gene rich areas and gene deserts. 
+
+
+\section{Techniques to investigate nuclear organisation}
+
+
+\subsection{Microscopy}
+
+
+\subsubsection{Chromosome painting}
+
+
+\subsubsection{DNA-FISH}
+
+
+\subsubsection{RNA-FISH}
+
+
+\subsubsection{Electron microscopy}
+
+
+\subsection{Chromosome conformation capture}
+
+Chromosome conformation capture (\nomenclature{3C}{Chromosome conformation capture}3C)
+
+
+\subsubsection{Circular 4C}
+
+
+\subsubsection{e4C}
+
+
+\subsubsection{5C}
+
+
+\subsubsection{ChIA-PET}
+
+
+\subsubsection{Hi-C}
+
+
+\subsubsection{Tethered Hi-C}
+
+
+\section{Chromosome Territories}
+
+The interphase nucleus is a highly structured organelle. As chromosomes
+decondense after metaphase they retain some degree of structure, forming
+\emph{chromosome territories} (\nomenclature{CT}{Chromosome territory}CTs)
+\cite{Cremer2001}. Circumstantial evidence for interphase organisation
+of chromosomes has existed for a long time, first suggested by Carl
+Rabl in 1885 \cite{Rabl1885}. Oberservations by Stack \emph{et al.}
+using microscopy with giemsa-band staining suggested that chromosomes
+retained some degree of organisation during interphase \cite{Stack1977},
+and in 1982 Cremer \emph{et al., }showed that interphase chromosomes
+exist in 'territories' by studying the pattern of DNA damage in metaphase
+chromosomes after spot irradiation in during interphase \cite{Cremer1982}.
+The subsequent development of 'chromosome paints', a method to visualise
+entire- or part- chromosomes with fluorescence \emph{in-situ} hybridisation
+(\nomenclature{FISH}{Fluorescence in-situ hybridisation}FISH), confirmed
+these findings \cite{Schardin1985a,Manuelidis1985}.
+
+As FISH techniques have developed, so too has the detail with which
+CT organisation can be studied. Several groups have shown that chromosome
+territory position within the nucleus is not random and correlates
+with chromosome size \cite{Sun2000,Cremer2001b}, gene-density \cite{Cremer2001b,Croft1999}
+and replication timing \cite{Visser1998}: those near the centre of
+the nucleus tend to be gene-rich, early replicating and small. The
+specificity of CT positioning is a topic of debate, though studies
+have suggested conservation of CT positioning through evolution \cite{Tanabe2002}
+and shown tissue specificity in chromosome pairing \cite{Parada2004b}.
+
+It's known that for some but not all genes, positioning at the nuclear
+periphery correlates with reduced gene expression \cite{Kosak2002,Dietzel2004,Zink2004a}.
+To investigate whether transcriptional activity is the cause or effect
+of this positioning effect, two groups published studies which artificially
+tethered genomic regions to the inner nuclear membrane using\emph{
+}Lac operators \emph{(lacO)} \cite{Finlan2008,Reddy2008}. Both groups
+observed a decrease in the transcriptional activity of the regions
+when tethered, an effect that was ablated when cells were treated
+with trichostatin A (\nomenclature{TSA}{Trichostatin A}TSA) to inhibit
+class I and class II histone deacetylases \cite{Finlan2008}. Whilst
+these studies suggest that it is nuclear positioning that leads to
+transcriptional effects, a study of CT positioning by Croft \emph{et
+al.} showed that inhibition of transcription causes a reversible change
+in CT position \cite{Croft1999}. Large scale rearrangements of CTs
+have also been observed during cell differentiation \cite{Stadler2004}.
+Interestingly, derivative chromosomes that result from balanced translocations
+affect the organisation of CTs within the nucleus \cite{Harewood2010},
+raising the possibility that the global changes in gene expression
+observed after oncogenic translocations could be in part due to changes
+in genome organisation \cite{Harewood2010}.
+
+
+
+
+\section{Nuclear compartmentalisation}
+
+Cajal bodies, speckles, nucleosomes
+
+
+\section{Transcription factories}
+
+One nuclear subcompartment which has come to light within the past
+twenty years is the \emph{transcription factory}, foci of hyper-phosphorylated
+RNA Polymerase II spread throughout the nucleus. The majority of geneic
+transcription appears to take place at transcription factories \cite{Jackson1993a,Osborne2004,Eskiw2008a},
+challenging the classical model of transcription found in many text
+books.
+
+The term 'transcription factories' was coined by Jackson \emph{et
+al.} in 1993. Fluorescence microscopy was used to label the incorporation
+of bromouridine triphosphate (\nomenclature{BrUTP}{Bromouridine triphosphate}BrUTP)
+into nascent RNA; discrete foci of nascent transcription could be
+seen within the nucleus which did not form in the presence of the
+RNA Polymerase II inhibitor \textgreek{a}-amanitin \cite{Jackson1993a}.
+Further studies showed that these foci contain RNA Polymerase II along
+with many other components required for transcription \cite{Iborra1996,Grande1997}.
+An ultrastructural study by Eskiw \emph{et al.} used correlative microscopy
+with both electron spectroscopic imaging (\nomenclature{ESI}{Electron spectroscopic imaging}ESI)
+and fluorescence microscopy to study nuclei sections. ESI can distinguish
+nitrogen and phosphorous atoms without labelling, and fluorescence
+light microscopy can visualise transcription through labelling BrUTP
+in nascent transcripts. The authors found that nascent RNA is almost
+always associated with the surface of large nitrogen-rich protein
+structures with a diameter of \textasciitilde{}87 nm, comparable in
+size to that of a transcription factory \cite{Eskiw2008a}.
+
+\begin{wrapfigure}{o}{0.35\columnwidth}%
+\begin{centering}
+\includegraphics[width=0.3\columnwidth]{\string"figures/chapter 1/transcription factories/transcription-factories\string".pdf}
+\par\end{centering}
+
+\caption[Nascent RNA and transcription factories.]{\label{fig:transcription-factories} \textbf{Nascent RNA and transcription
+factories.} (A) Transcription foci in HeLa cells, visualised with
+labelled Br-UTP in 100 nm cryosections. Nascent RNA (green) is concentrated
+in punctate foci. (B) Model for a nucleolar factory, showing a transcript
+with multiple polymerases generating a crescent shaped foci. (C) Model
+for a nucleoplasmic factory. Multiple transcribed regions each with
+a single polymerase generate a smaller cloud of nascent transcripts.
+Taken from Cook \emph{et al.}, Science (2009) \cite{Cook1999}.}
+\end{wrapfigure}%
+
+
+The stability of nascent transcripts was shown as far back as 1981
+by Jackson and colleagues \cite{Jackson1981} and the visualisation
+of transcription factories has demanded a new model for the action
+of RNA Polymerase II \cite{Cook1999}. The revised model proposes
+that instead of RNA Polymerase II freely diffusing to active genes
+and tracking along the gene body, it is the genes that are recruited
+to transcription factories and the genes that track through a stationary
+polymerase. Such a model provides a better explanation for the mechanics
+of transcription - clustering of transcriptional activity may enable
+the cell to conduct transcription in a much more efficient manner;
+HeLa nuclei have a 1 \textmu{}M concentration of active RNA Polymerase
+II, whereas the local concentration within transcription factories
+is closer to 1 mM \cite{Carter2008}. Additionally, a polymerase enzyme
+moving along a gene would rotate with the helix of the DNA wrapping
+the nascent transcript around the template. Genes pulled through static
+transcription factories would extrude their RNA transcripts into the
+nucleoplasm \cite{Iborra1996,Cook1999}, creating topological loops
+within the template DNA instead which may be removed through the activity
+of topoisomerases.
+
+Jackson \emph{et al.} went on to work on a quantitative analysis of
+transcription factories in HeLa cells calculating the number of active
+RNA polymerases, the number of transcription sites and the number
+of polymerases associated with each transcriptional unit \cite{Jackson1998}.
+They showed that each HeLa cell nucleus contain \textasciitilde{}
+2400 transcription factories, each with approximately 30 active RNA-Polymerase
+II complexes \cite{Jackson1998}. Importantly, this study showed that
+there are more transcribing units than there are foci of transcription,
+suggesting that genes must colocalise to transcribe. The number of
+transcription factories varies a great deal amongst cell types, but
+the observation that genes colocalise within transcription factories
+has been confirmed by a number of different techniques; Osborne \emph{et
+al.} showed that genes situated within transcription factories are
+actively transcribed, whereas those outside are not \cite{Osborne2004}.
+They went on to demonstrate that transcription is a discontinuous
+process, with the frequency of nascent RNA transcription foci related
+to cellular mRNA concentrations, suggesting that transcription occurs
+in bursts. Multiple genes both in \emph{cis} and in \emph{trans} were
+seen to dynamically colocalise in transcription factories, supporting
+predictions that genes must share transcription factories \cite{Osborne2004,Jackson1998}.
+
+
+\subsection{Specialised transcription factories}
+
+\cite{Schoenfelder2010}
+
+
+\section{Looping}
+
+
+\subsection{Chromatin hubs}
+
+Hbb, Igh and other classical looping examples.
+
+
+\subsection{Long range interactions}
+
+Sonic the hedgehog, other long range \emph{cis} interactions? Any
+evidence of \emph{trans} stuff? Cam's Myc and Igh FISH paper.
+
+
+\section{Domains}
+
+Hi-C domains. Interactions within domains. Talk about how transcription
+depends on context. Spreading of epigenetic marks.
+
+
+\section{What drives nuclear organisation?}
+
+
+\subsection{Actin and myosin}
+
+
+\subsection{Transcription}
+
+Active RNA Polymerases: Mobile or Immobile Molecular Machines? \cite{Papantonis2010}
+
+
+\subsection{CTCF and cohesin}
+
+Jackson, McCreedy and Cook showed in 1981 that nascent RNA transcripts
+labelled with {[}\textsuperscript{3}H{]} uridine remained within
+the nucleus when loops of DNA were removed using a nuclease, suggesting
+that transcription occurs close to points of chromatin attachment
+\cite{Jackson1981}.
+
+Igh forming rosettes for v region selection - http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3070187/
+
+
+\subsection{Transcriptional hubs}
+
+Talk about latest theories about housekeeping genes organising everything
+else. How this ties in with chromatin domains.
+
+
+\subsection{The self-organisation model}
+
+Cook 2002, Iborra and Cook 2002.
+
+
+\section{The annotated genome}
+
+Talking about the use of a systems biology approach to understand
+the linear genomic information of the genome.
+
+
+\section{Chromosomal translocations}
+
+
+\subsection{\emph{BCR} and \emph{ABL1}}
+
+
+\subsection{Mixed lineage leukaemia}
+
+
+\subsection{Formation of chromosomal translocations}
+
+Basics of HR, SSA and NHEJ. Contact first / breakage first models.
+
+
+\subsubsection{Double strand breaks and religation}
+
+
+\subsubsection{Contact first model}
+
+
+\subsubsection{Chromosome Territories}
+
+Branco and Pombo, Plos Biol 2006
+
+\cite{Parada2004b} - tissue specific CT pairing in mouse, correlates
+with tissue translocation incidence
+
+
+\subsubsection{Transcription Factories}
+
+Cam's Myc and Igh RNA-FISH paper.
+
+
+\section{Hypothesis and aim of thesis}
+
+Talk about the why of translocations - specificity and frequency of
+certain translocations means that partner selection can't be completely
+random. Hypothesis and aims: that specific gene pairs are predisposed
+to chromosomal translocations because they are co-localising at transcription
+factories. Aims of the project are to investigate the genome-wide
+association networks of specific oncogenes and see if gene pair co-localisation
+frequency matches up with gene-pair translocation frequency.
+
+%\begin{comment}
+%\bibliographystyle{plain}
+%\bibliography{/Users/phil/Dropbox/Work/BibTeX/THESIS}
+%\end{comment}
+
+\end{document}

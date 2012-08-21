@@ -1,0 +1,27 @@
+LaTeX wishlist:
+
+========================================
+  Remove duplicate nomenclature items
+========================================
+
+
+========================================
+  Facing page references
+========================================
+Have single sided text, numeric references, and have the full references displayed on the facing page? Much like PLoS...
+
+http://tex.stackexchange.com/questions/67569/bibtex-references-on-facing-page
+
+%% In preamble:
+\usepackage[landscape,a3paper,left=21cm,marginparsep=1cm]{geometry}
+\marginparwidth=\textwidth
+\reversemarginpar
+\usepackage[style=numeric]{biblatex}
+\addbibresource{/Users/phil/Dropbox/Work/BibTeX/THESIS}
+
+% cite keys: instead of just \cite{bib2008} this:
+\cite{bib2008}\marginpar{\fullcite{bib2008}}
+
+	- might have to be a LaTeX export followed by some regex find and replace to put in the full citekeys
+	- alternatively, a renewcommand to put the full thing in automatically?
+	- will need to be careful with using {biblatex} instead of {bibtex} but can't see why it wouldn't work
