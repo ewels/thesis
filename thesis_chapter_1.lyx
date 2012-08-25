@@ -633,7 +633,7 @@ description "Serial analysis of gene expression"
  called ridges 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Versteeg2003"
+key "Versteeg2003,Caron2001"
 
 \end_inset
 
@@ -835,7 +835,7 @@ key "Cremer2001b,Croft1999"
  and replication timing 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Visser1998"
+key "Ferreira1997,Visser1998"
 
 \end_inset
 
@@ -852,7 +852,7 @@ key "Tanabe2002"
  and shown tissue specificity in chromosome pairing 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Parada2004b"
+key "Kuroda2004,Parada2004b"
 
 \end_inset
 
@@ -908,9 +908,16 @@ key "Finlan2008"
 
 \end_inset
 
+, though this effect does not appear to apply to all loci 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kumaran2008"
+
+\end_inset
+
 .
  Whilst these studies suggest that it is nuclear positioning that leads
- to transcriptional effects, a study of CT positioning by Croft 
+ to transcriptional effects, a study by Croft 
 \emph on
 et al.
 
@@ -924,15 +931,22 @@ key "Croft1999"
 \end_inset
 
 .
- Large scale rearrangements of CTs have also been observed during cell different
-iation 
+\end_layout
+
+\begin_layout Standard
+Large scale rearrangements of CTs have also been observed during cell differenti
+ation 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Stadler2004"
+key "Stadler2004,Szczerbal2009"
 
 \end_inset
 
-.
+, likely due to changes in transcriptional profiles and chromatin remodelling.
+ As such, it seems that there is a dynamic interplay between CT positioning
+ and transcription - gross transcriptional patterns may drive the position
+ of chromosomes within the nucleus, and those positions may in turn affect
+ the transcription of the genes they contain.
  Interestingly, derivative chromosomes that result from balanced translocations
  affect the organisation of CTs within the nucleus 
 \begin_inset CommandInset citation
@@ -958,15 +972,242 @@ Chromosome territory dynamics
 \end_layout
 
 \begin_layout Standard
-CT movement - http://www.ncbi.nlm.nih.gov/pubmed/16631592 actin myosin movement.
+The movement of chromatin loci within the nucleus is known to be largely
+ due to local brownian motion, or 
+\begin_inset Quotes eld
+\end_inset
+
+constrained diffusion
+\begin_inset Quotes erd
+\end_inset
+
+ and seems to be limited by attachment to a nuclear cytoskeleton, nucleoli
+ and the inner nuclear membrane 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Marshall1997,Chubb2002"
+
+\end_inset
+
+.
+ Other studies have shown a mixture of local diffusion and larger, active
+ movements 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vazquez2001"
+
+\end_inset
+
+.
+ Chuang 
+\emph on
+et al.
+
+\emph default
+ studied Chinese hamster ovary (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CHO"
+description "Chinese hamster ovary cells"
+
+\end_inset
+
+CHO) cells after stimulation with a transcriptional activator and analysed
+ the movement of the target chromosome from the nuclear periphery to the
+ interior of the nucleus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chuang2006"
+
+\end_inset
+
+.
+ They found that chromosome movements happened in rapid unidirectional bursts,
+ suggesting an active mechanism.
+ This was supported by a later study in human fibroblast cells by Mehta
+ 
+\emph on
+et al.
+
+\emph default
+ who demonstrated chromosome movement only 15 minutes after serum starvation,
+ a process that was ablated by the inhibition of actin and myosin polymerisation
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mehta2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Chromatin decondensation and the inter-chromosomal space
 \end_layout
 
+\begin_layout Standard
+In addition to the study of whole chromosome positioning, there has been
+ a great deal of research into the positioning of individual sequences relative
+ to their chromosome territory.
+ Early studies suggested that transcribed genes were found at the surface
+ of chromosome territories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zirbel1993"
+
+\end_inset
+
+ leading to a model whereby transcriptionally inactive genes are buried
+ within territories and expressed genes contact in an inter-chromosome domain
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ICD"
+description "Inter-chromosome domain"
+
+\end_inset
+
+ICD) where they can contact the transcriptional machinery 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cremer1993"
+
+\end_inset
+
+.
+ This model gained support due to studies showing genes at the periphery
+ of CTs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kurz1996"
+
+\end_inset
+
+ and new techniques to visualise the ICD using microscopy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bridger1998"
+
+\end_inset
+
+.
+ A number of FISH studies showed genes moving away from their territories
+ in large loops upon activation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Volpi2000,Mahy2002a,Chambeyron2004"
+
+\end_inset
+
+, suggesting that they may be recruited to the ICD for transcription.
+ 
+\end_layout
+
+\begin_layout Standard
+Despite these case studies, looping is not a prerequisite for transcription;
+ other DNA-FISH studies have shown transcription within the volume of chromosome
+ territories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Verschure1999,Mahy2002"
+
+\end_inset
+
+.
+ Osborne 
+\emph on
+et al.
+
+\emph default
+ showed that actively transcribed 
+\emph on
+Uros
+\emph default
+ gene is more frequently outside it's CT than the inactive gene 
+\emph on
+Fgfr2
+\emph default
+, though this position was not necessary for transcription, suggesting that
+ actively transcribed genes may preferentially locate to the surface of
+ CTs, but this alone is not sufficient to drive transcription 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2004"
+
+\end_inset
+
+.
+ As such, it has been suggested that the inter-chromosomal domain model
+ should be renamed the inter-
+\emph on
+chromatin
+\emph default
+ domain model, whereby chromosomes are invaginated with channels and subdivided
+ into ~1 Mbp domains of chromatin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cremer2001"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Chromosome territory intermingling
+\end_layout
+
+\begin_layout Standard
+A question that followed immediately on from the discovery of loops extending
+ from chromosome territories was that of chromosome intermingling.
+ Mathematical modelling approaches suggested that irradiation induced DNA
+ damage corresponded to the intermingling of chromosome territories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holley2002,Hlatky2002"
+
+\end_inset
+
+.
+ This was later backed up with a study by Branco and Pombo, who studied
+ thin cryosections of nuclei with high resolution light and electron microscopy;
+ they found that there is significant intermingling of chromatin between
+ chromosome territories, and that the extent of this intermingling correlated
+ strongly with previously recorded irradiation induced translocation frequencies
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Branco2006"
+
+\end_inset
+
+.
+ In support of chromosome intermingling, the 
+\emph on
+HoxB
+\emph default
+ extra-chromosomal loops found to extend from the chromosome territory upon
+ gene activation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chambeyron2004"
+
+\end_inset
+
+ were found to make increased 
+\emph on
+trans
+\emph default
+ chromosomal interactions whilst looping out 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wurtele2006"
+
+\end_inset
+
+, suggesting that the loops contact other chromosomes rather than occupying
+ an empty inter-chromosomal space.
 \end_layout
 
 \begin_layout Section
@@ -974,7 +1215,16 @@ Nuclear compartmentalisation
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Cajal bodies, speckles, nucleosomes
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1253,6 +1503,44 @@ key "Osborne2004,Jackson1998"
 \end_inset
 
 .
+ A later paper by Osborne 
+\emph on
+et al.
+
+\emph default
+ showed that the immediate-early gene 
+\emph on
+Myc 
+\emph default
+and 
+\emph on
+Fos
+\emph default
+ are dynamically recruited to existing transcription factories within 5
+ minutes of B-cell stimulation, suggesting that the recruitment of genes
+ to pre-existing transcription factories may be a method of transcriptional
+ control 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should probably throw in a few more references in this section.
+ See Stefan's NG paper.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1260,103 +1548,287 @@ Specialised transcription factories
 \end_layout
 
 \begin_layout Standard
+After the demonstration that genes shared transcription factories, a number
+ of groups postulated that specific genes may colocalise at a subset of
+ transcription factories.
+ The self-organising principle applied to transcription factories would
+ predict this; just as the local concentration of active RNA Polymerase
+ II is elevated by the clustering of transcribed units, the local concentration
+ of transcription factors that bind to those transcribed units will also
+ be elevated 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cook2002"
+
+\end_inset
+
+.
+ Genes that diffuse to a transcription factory already engaged with other
+ genes that share the same factors are more likely to engage and be transcribed
+ themselves 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bartlett2006"
+
+\end_inset
+
+.
+ Indeed, genes regulated by common transcription factors appear to cluster
+ within specific chromosomes in yeast 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Janga2008"
+
+\end_inset
+
+ and testis-specific genes are found clustered in 
+\emph on
+Drosophila
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Boutanaev2002"
+
+\end_inset
+
+ - genes clustered in linear sequence are more likely to associate in three
+ dimensions.
+\end_layout
+
+\begin_layout Standard
+Some evidence that such specialised transcription factories may exist within
+ mammalian cells came from Osborne 
+\emph on
+et al.
+ 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2007"
+
+\end_inset
+
+.
+ They showed that approximately one quarter of actively transcribing 
+\emph on
+Myc
+\emph default
+ alleles shared a transcription factory with 
+\emph on
+Igh
+\emph default
+, over double the rate of colocalisation found with the control genes tested.
+ Using DNA-FISH they showed an overall reduction in spacing between 
+\emph on
+Myc 
+\emph default
+and 
+\emph on
+Igh 
+\emph default
+alleles upon B cell stimulation, suggesting that 
+\emph on
+Myc
+\emph default
+ alleles are being specifically recruited to transcription factories containing
+ transcribing
+\emph on
+ Igh
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2007"
+
+\end_inset
+
+.
+ Xu and Cook later demonstrated 
+\emph on
+in-vitro
+\emph default
+ that cells transfected with thousands of plasmids containing different
+ transcriptional units clustered together at a handful transcription factories
+ according to their promoter and the presence of an intron 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Xu2008a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0col%
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 1/Klf factories/Klf1 factories.eps
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Klf1-specialised-transcription-factories"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Klf1 specialised transcription factories
+\end_layout
+
+\end_inset
+
+
+\series bold
+Klf1 specialised transcription factories.
+
+\series default
+ (A) Immunofluorescence showing Klf1 (red) overlapping with a subset of
+ RNA Polymerase II transcription factories (green).
+ (B) RNA immuno-FISH showing transcribing 
+\emph on
+Hbb
+\emph default
+ alleles (green) co-localising with Klf1 (red).
+ (C) Percentages of co-localising transcript pairs colocalisation with Klf1
+ associated transcription factories (right, black bars) and non-Klf1 associated
+ factories (left, white bars).
+ Expected level of association due to chance shown by green bar.
+ Scale bars show in (A) and (B) represents 2 µm.
+ Taken from Schoenfelder 
+\emph on
+et al.
+
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Schoenfelder2010"
 
 \end_inset
 
+.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Section
-Techniques to investigate nuclear organisation
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Subsection
-Microscopy
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Chromosome painting
-\end_layout
 
-\begin_layout Subsubsection
-DNA-FISH
-\end_layout
-
-\begin_layout Subsubsection
-RNA-FISH
-\end_layout
-
-\begin_layout Subsubsection
-Electron microscopy
-\end_layout
-
-\begin_layout Subsection
-Chromosome conformation capture
 \end_layout
 
 \begin_layout Standard
-Chromosome conformation capture (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "3C"
-description "Chromosome conformation capture"
+Perhaps the best evidence for the existence of specialised transcription
+ factories came in a publication by Schoenfelder 
+\emph on
+et al.
+
+\emph default
+ in 2010 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schoenfelder2010"
 
 \end_inset
 
-3C)
-\end_layout
-
-\begin_layout Subsubsection
-Circular 4C
-\end_layout
-
-\begin_layout Subsubsection
-e4C
-\end_layout
-
-\begin_layout Subsubsection
-5C
-\end_layout
-
-\begin_layout Subsubsection
-ChIA-PET
-\end_layout
-
-\begin_layout Subsubsection
-Hi-C 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:intro-Hi-C"
+.
+ They used a variety of techniques to investigate the nuclear localisation
+ of erythroid genes.
+ A genome-wide screen of genes associating with 
+\emph on
+Hba
+\emph default
+ and 
+\emph on
+Hbb
+\emph default
+ at transcription factories showed enrichment for genes with CACC motifs
+ capable of binding the erythroid-specific transcription factor Klf1.
+ Using immunofluorescence they found that nuclear Klf1 foci overlap with
+ active RNA Polymerase II foci, suggesting that a subset of transcription
+ factories are enriched for Klf1 in erythroid tissues (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Klf1-specialised-transcription-factories"
 
 \end_inset
 
+).
+ Co-localising Klf1 dependent genes associated with these Klf1 specific
+ transcription factories at a high frequency, and a number of these gene
+ associations were lost upon the knockout of Klf1 expression.
+ These data highly suggest that a network of Klf1 specific transcription
+ factories exist within mouse erythroid tissues, and that Klf1 specific
+ genes are preferentially recruited to these sites 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schoenfelder2010"
 
+\end_inset
+
+.
+ If such networks are a general feature in mammalian nuclei, they could
+ be a key driving force in the organisation of the genome.
 \end_layout
 
-\begin_layout Subsubsection
-Tethered Hi-C
+\begin_layout Standard
+It is important to note that the evidence above does not describe 
+\emph on
+exclusively
+\emph default
+ specific transcription factories, factories which are incapable of transcribing
+ genes which are not controlled by Klf1.
+ Indeed, although statistically significant, the gene associations detected
+ still suggest a population bias only.
+ Specialised transcription factories are certainly not required for the
+ transcription of the eukaryotic genome, but may aid efficiency and affect
+ nuclear organisation and function.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Looping
 \end_layout
 
-\begin_layout Subsection
-Chromatin hubs
-\end_layout
-
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Hbb, Igh and other classical looping examples.
+ Transcription as a method to control genomic organisation rather than produce
+ proteins.
 \end_layout
 
-\begin_layout Subsection
-Long range interactions
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 Sonic the hedgehog, other long range 
 \emph on
 cis
@@ -1368,15 +1840,9 @@ trans
  stuff? Cam's Myc and Igh FISH paper.
 \end_layout
 
-\begin_layout Section
-Domains
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Hi-C domains.
- Interactions within domains.
- Talk about how transcription depends on context.
- Spreading of epigenetic marks.
+
 \end_layout
 
 \begin_layout Section
@@ -1392,6 +1858,10 @@ Transcription
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Active RNA Polymerases: Mobile or Immobile Molecular Machines? 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1399,11 +1869,23 @@ key "Papantonis2010"
 
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cook1999"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Subsection
-CTCF and cohesin
+CTCF and cohesin domains
 \end_layout
 
 \begin_layout Standard
@@ -1430,8 +1912,24 @@ key "Jackson1981"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Igh forming rosettes for v region selection - http://www.ncbi.nlm.nih.gov/pmc/articl
 es/PMC3070187/
+\end_layout
+
+\begin_layout Plain Layout
+Hi-C domains.
+ Interactions within domains.
+ Talk about how transcription depends on context.
+ Spreading of epigenetic marks.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1439,9 +1937,18 @@ Transcriptional hubs
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Talk about latest theories about housekeeping genes organising everything
  else.
  How this ties in with chromatin domains.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1449,7 +1956,20 @@ The self-organisation model
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Not totally sure that this section is necessary?
+\end_layout
+
+\begin_layout Plain Layout
 Cook 2002, Iborra and Cook 2002.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1530,6 +2050,11 @@ Transcription Factories
 Cam's Myc and Igh RNA-FISH paper.
 \end_layout
 
+\begin_layout Standard
+http://www.ncbi.nlm.nih.gov/pubmed/22829791 - Mechanism of Generation of Therapy
+ Related Leukemia in Response to Anti-Topoisomerase II Agents.
+\end_layout
+
 \begin_layout Section
 Hypothesis and aim of thesis
 \end_layout
@@ -1552,7 +2077,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
-options "plain"
+options "unsrt"
 
 \end_inset
 
