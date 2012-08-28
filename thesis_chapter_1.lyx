@@ -198,7 +198,7 @@ Histones
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement o
+placement O
 overhang 0in
 width "40col%"
 status open
@@ -748,8 +748,8 @@ key "Schardin1985a,Manuelidis1985,Bolzer2005"
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement o
-overhang 0col%
+placement O
+overhang 0in
 width "50col%"
 status open
 
@@ -1664,8 +1664,8 @@ key "Xu2008a"
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement o
-overhang 0col%
+placement O
+overhang 0in
 width "50col%"
 status open
 
