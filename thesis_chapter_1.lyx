@@ -668,6 +668,71 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
+	lyxscale 40
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Chromosome Territories
+\end_layout
+
+\end_inset
+
+Chromosome Territories.
+
+\series default
+ Image of a Human fibroblast cell in G0 with all chromosomes labelled using
+ multi-colour FISH.
+ Taken from Bolzer 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bolzer2005"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The interphase nucleus is a highly structured organelle.
  As chromosomes decondense after metaphase they retain some degree of structure,
  forming 'chromosome territories' (
@@ -743,75 +808,6 @@ key "Schardin1985a,Manuelidis1985,Bolzer2005"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement O
-overhang 0in
-width "50col%"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
-	lyxscale 40
-	width 45col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Chromosome Territories
-\end_layout
-
-\end_inset
-
-Chromosome Territories.
-
-\series default
- Image of a Human fibroblast cell in G0 with all chromosomes labelled using
- multi-colour FISH.
- Taken from Bolzer 
-\emph on
-et al.
-
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bolzer2005"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1664,7 +1660,7 @@ key "Xu2008a"
 \begin_layout Standard
 \begin_inset Wrap figure
 lines 0
-placement O
+placement o
 overhang 0in
 width "50col%"
 status open
@@ -1816,6 +1812,22 @@ exclusively
 
 \begin_layout Subsection
 Looping
+\end_layout
+
+\begin_layout Standard
+The most distant looping enhancer element yet to be characterised is for
+ the 
+\emph on
+SHH
+\emph default
+ gene 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lettice2003"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

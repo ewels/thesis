@@ -1020,7 +1020,7 @@ It should be noted that different e4C libraries with different sequencing
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2730,7 +2730,7 @@ e4C primers.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3025,7 +3025,7 @@ name "tab:e4C-sequencing-primer-properties"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 e4C sequencing primer properties
@@ -3055,7 +3055,7 @@ e4C sequencing primer properties.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3212,7 +3212,7 @@ name "tab:illumina-adapter-primers"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Illumina e4C adapter primers
@@ -3840,6 +3840,89 @@ reference "chap:Appendix-Hi-C"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Section
+Multiplexing e4C libraries
+\end_layout
+
+\begin_layout Standard
+Although the cost of next generation sequencing is rapidly decreasing, sequencin
+g an Illumina library is an expensive process.
+ In order to make libraries cheaper, 'multiplexing' is a common practice.
+ All multiplexing uses the same principle: Illumina libraries are created
+ with a small number of base pairs constant within each sequence - a barcode.
+ Multiple libraries with different barcodes are mixed and simultaneously
+ sequenced in a single flow cell lane.
+ After the sequences are retrieved from the sequencing run, the libraries
+ are separated by identifying the barcode present at within each sequence.
+ The greater the number of libraries which are multiplexed within a single
+ lane, the less the number of reads retrieved for each library.
+ In many cases the total number of returned sequences is in excess of what
+ is needed, as in the case of my e4C libraries, where a great number of
+ duplicates are returned, showing that the full depth of the e4C library
+ has been sequenced.
+\end_layout
+
+\begin_layout Standard
+A number of variants of multiplexing have been used with the Illumina Genome
+ Analyser IIx, and Illumina itself produces a kit for the production of
+ multiplexed libraries which uses a short paired-end read.
+ Because I was sequencing my e4C libraries with custom sequencing primers,
+ I was able to specify the sequence present at the start of each read.
+ As such, I designed the sequencing primers to leave a few base pairs for
+ sequencing before the 
+\emph on
+AseI
+\emph default
+ restriction site.
+ This has the dual benefit of allowing the multiplexing of multiple e4C
+ libraries with different baits, and ensuring that the sequenced products
+ are not the result of unspecific primer binding; genomic sequence is used
+ as the barcode which is not incorporated with any primers used.
+\end_layout
+
+\begin_layout Subsection
+First libraries: BCR 1 and MLL 1
+\end_layout
+
+\begin_layout Standard
+For the first sequencing runs with my e4C libraries, I multiplexed two libraries
+: a CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+BCR
+\emph default
+ breakpoint region bait and a CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+MLL
+\emph default
+ breakpoint region bait.
+\end_layout
+
+\begin_layout Subsection
+Equalising the bias: BCR 2 and MLL 3
+\end_layout
+
+\begin_layout Subsection
+Cross over products
 \end_layout
 
 \end_body
