@@ -853,6 +853,178 @@ cis
  declines as a function of linear separation
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/cis/cis.eps
+	lyxscale 15
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C-cis-association-profiles"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+e4C 
+\emph on
+cis
+\emph default
+ association profiles
+\end_layout
+
+\end_inset
+
+e4C 
+\emph on
+cis
+\emph default
+ association profiles.
+ (A) 
+\series default
+and 
+\series bold
+(B)
+\series default
+ show the 
+\emph on
+cis
+\emph default
+ interaction profile of the 
+\emph on
+BCR 
+\emph default
+bait on chromosome 22 in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ 
+\series bold
+(A) 
+\series default
+Interaction shown as the proportion of 
+\emph on
+AseI
+\emph default
+ – 
+\emph on
+NlaIII
+\emph default
+ fragments hit within a 50 kb sliding window (minimum 5 fragments).
+ 
+\series bold
+(B)
+\series default
+ Interaction shown using a sliding windows of 10 
+\emph on
+AseI
+\emph default
+ fragments separated by 2 fragments.
+ Profiles 
+\series bold
+(C)
+\series default
+ to 
+\series bold
+(F)
+\series default
+ generated using 100 kb sliding window fragment proportions (minimum 5)
+ summed in 1 mb windows separated by 100 kb.
+ Gray bars show position of bait genes.
+
+\series bold
+ (C) 
+\series default
+Interaction profiles of the 
+\emph on
+BCR
+\emph default
+ breakpoint region bait on chromosome 11 in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+
+\series bold
+ (D)
+\series default
+ Interaction profiles of the 
+\emph on
+MLL
+\emph default
+ breakpoint region bait on chromosome 11 in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ 
+\series bold
+(E)
+\series default
+ Interaction profiles of the two 
+\emph on
+MLL
+\emph default
+ promoter baits on chromosome 11 in GM12878 cells.
+ 
+\series bold
+(F)
+\series default
+ Interaction profile of the 
+\emph on
+ABL1
+\emph default
+ promoter bait on chromosome 9.
+ Black bars are 5 megabases.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Specific interactions in 
 \emph on
@@ -931,7 +1103,14 @@ s with RNA Polymerase II binding and other active chromatin marks.
 
 \begin_layout Standard
 To investigate the correlation between e4C interaction frequency and chromatin
- marks, I analysed publicly available genome-wide datasets [#REFS] 
+ marks, I analysed publicly available genome-wide datasets 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bernstein2010"
+
+\end_inset
+
+ 
 \begin_inset Note Note
 status open
 
@@ -976,7 +1155,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="14" columns="22">
+<lyxtabular version="3" rows="13" columns="22">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="left" valignment="top" width="1cm">
@@ -1733,6 +1912,10 @@ Genome build checked?
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+\emph on
+Yes
 \end_layout
 
 \end_inset
@@ -1742,6 +1925,10 @@ Genome build checked?
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+\emph on
+Yes
 \end_layout
 
 \end_inset
@@ -1751,6 +1938,10 @@ Genome build checked?
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+\emph on
+Yes
 \end_layout
 
 \end_inset
@@ -1760,6 +1951,10 @@ Genome build checked?
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+\emph on
+Yes
 \end_layout
 
 \end_inset
@@ -1943,6 +2138,8 @@ BCR 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.629
 \end_layout
 
 \end_inset
@@ -1952,6 +2149,8 @@ BCR 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.607
 \end_layout
 
 \end_inset
@@ -1961,6 +2160,8 @@ BCR 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.749
 \end_layout
 
 \end_inset
@@ -1970,6 +2171,8 @@ BCR 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.636
 \end_layout
 
 \end_inset
@@ -2164,6 +2367,8 @@ BCR 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.639
 \end_layout
 
 \end_inset
@@ -2173,6 +2378,8 @@ BCR 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.622
 \end_layout
 
 \end_inset
@@ -2182,6 +2389,8 @@ BCR 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.757
 \end_layout
 
 \end_inset
@@ -2191,6 +2400,8 @@ BCR 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.659
 \end_layout
 
 \end_inset
@@ -2342,227 +2553,6 @@ BCR 2
 \begin_layout Plain Layout
 
 \size scriptsize
-BCR Combined
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-0.741
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-0.729
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-0.696
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\emph on
-0.744
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\emph on
-0.718
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\emph on
-0.772
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-0.074
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-0.360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
 MLL 1
 \end_layout
 
@@ -2606,6 +2596,8 @@ MLL 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.279
 \end_layout
 
 \end_inset
@@ -2615,6 +2607,8 @@ MLL 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.263
 \end_layout
 
 \end_inset
@@ -2624,6 +2618,8 @@ MLL 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.306
 \end_layout
 
 \end_inset
@@ -2633,6 +2629,8 @@ MLL 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.263
 \end_layout
 
 \end_inset
@@ -2827,6 +2825,8 @@ MLL 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.379
 \end_layout
 
 \end_inset
@@ -2836,6 +2836,8 @@ MLL 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.333
 \end_layout
 
 \end_inset
@@ -2845,6 +2847,8 @@ MLL 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.366
 \end_layout
 
 \end_inset
@@ -2854,6 +2858,8 @@ MLL 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.345
 \end_layout
 
 \end_inset
@@ -3048,6 +3054,8 @@ MLL 3
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.227
 \end_layout
 
 \end_inset
@@ -3057,6 +3065,8 @@ MLL 3
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.232
 \end_layout
 
 \end_inset
@@ -3066,6 +3076,8 @@ MLL 3
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.292
 \end_layout
 
 \end_inset
@@ -3075,6 +3087,8 @@ MLL 3
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.198
 \end_layout
 
 \end_inset
@@ -3269,6 +3283,8 @@ MLL 3 phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.363
 \end_layout
 
 \end_inset
@@ -3278,6 +3294,8 @@ MLL 3 phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.348
 \end_layout
 
 \end_inset
@@ -3287,6 +3305,8 @@ MLL 3 phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.379
 \end_layout
 
 \end_inset
@@ -3296,6 +3316,8 @@ MLL 3 phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+0.329
 \end_layout
 
 \end_inset
@@ -3494,6 +3516,9 @@ ABL
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.558
 \end_layout
 
 \end_inset
@@ -3503,6 +3528,9 @@ ABL
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.549
 \end_layout
 
 \end_inset
@@ -3512,6 +3540,9 @@ ABL
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.630
 \end_layout
 
 \end_inset
@@ -3521,6 +3552,9 @@ ABL
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.548
 \end_layout
 
 \end_inset
@@ -3716,6 +3750,9 @@ MLL p1
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.501
 \end_layout
 
 \end_inset
@@ -3725,6 +3762,9 @@ MLL p1
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.483
 \end_layout
 
 \end_inset
@@ -3734,6 +3774,9 @@ MLL p1
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.551
 \end_layout
 
 \end_inset
@@ -3743,6 +3786,9 @@ MLL p1
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.463
 \end_layout
 
 \end_inset
@@ -3938,6 +3984,9 @@ MLL p2
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.610
 \end_layout
 
 \end_inset
@@ -3947,6 +3996,9 @@ MLL p2
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.622
 \end_layout
 
 \end_inset
@@ -3956,6 +4008,9 @@ MLL p2
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.655
 \end_layout
 
 \end_inset
@@ -3965,6 +4020,9 @@ MLL p2
 
 \begin_layout Plain Layout
 
+\shape italic
+\size scriptsize
+0.583
 \end_layout
 
 \end_inset
@@ -4150,7 +4208,7 @@ cis
 \emph default
  chromosome removed.
  Read counts quantified and then Z-scores calculated.
- Scatter plot drawn and R score derived.
+ R scores calculated in SeqMonk.
  Protein coding genes only used for gene density.
  Values shown in italics are comparisons across the two different cell types.
 \end_layout
@@ -4172,6 +4230,101 @@ The strong correlation between bait interaction and active association score
  The low scores seen with the inactive histone modifications signify that
  there is not more interaction with these regions that could be expected
  by chance.
+ The correlation of the shape of the profiles can be clearly seen when plotted
+ genome wide (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-e4C-correlation-H3K4me1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/BCR_H3K4me1/BCR_H3K4me1.eps
+	lyxscale 15
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+BCR
+\emph default
+ e4C correlation with H3K4me1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BCR-e4C-correlation-H3K4me1"
+
+\end_inset
+
+
+\emph on
+BCR
+\emph default
+ e4C correlation with H3K4me1.
+ 
+\series default
+Genome wide association profiles of the two 
+\emph on
+BCR
+\emph default
+ e4C technical replicates (green and blue lines) normalised for 
+\emph on
+AseI
+\emph default
+ distribution in 100kb sliding windows (minimum 5 fragments) and summed
+ in 10 Mb windows with 1 Mb separation and quantified with standard scores.
+ H3K4me1 ChIP-Seq data quantified in the same windows with standard scores
+ (orange fill) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bernstein2010"
+
+\end_inset
+
+.
+ Y scale of the H3K4me1 dataset was increased to better show correlation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4188,16 +4341,7 @@ interactions
  
 \emph default
 were present within the datasets, we normalised the interaction profiles
- using appropriate datasets: CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- RNA-Seq for the CD34
+ using the most correlated active marks: H3K4me1 for the CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -4209,17 +4353,16 @@ were present within the datasets, we normalised the interaction profiles
  e4C libraries and GM12878 RNA Polymerase II ChIP-Seq for the GM12878 e4C
  libraries.
  Standard scores from these datasets were subtracted from the interaction
- library standard scores for each window position, and the resulting values
- converted to standard scores once more.
+ library standard scores for each window position.
  This normalisation against has the effect of largely flattening the genome
  wide profile, as expected by the observed correlations (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:e4C-normalisation-active-marks"
+reference "fig:e4C-normalisation-H3K4me1"
 
 \end_inset
 
- A).
+).
  Despite this flattening, some noticeable peaks remain within the 
 \emph on
 BCR
@@ -4243,7 +4386,7 @@ BCR
  marks (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:e4C-normalisation-active-marks"
+reference "fig:e4C-normalisation-H3K4me1"
 
 \end_inset
 
@@ -4257,12 +4400,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Need to make this figure
-\end_layout
+\begin_inset Graphics
+	filename figures/chapter 5/H3K4me1_normalised/H3K4me1_normalised.eps
+	lyxscale 15
+	width 100text%
 
 \end_inset
 
@@ -4279,7 +4420,11 @@ Need to make this figure
 status collapsed
 
 \begin_layout Plain Layout
-e4C normalisation against active marks
+
+\emph on
+BCR
+\emph default
+ e4C normalisation against H3K4me1
 \end_layout
 
 \end_inset
@@ -4287,28 +4432,29 @@ e4C normalisation against active marks
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:e4C-normalisation-active-marks"
+name "fig:e4C-normalisation-H3K4me1"
 
 \end_inset
 
-e4C normalisation against active marks.
 
-\series default
- (A) Normalisation of the different e4C libraries against CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- RNA-Seq and GM12878 RNAP II ChIP-Seq.
- (B) Normalisation of the 
 \emph on
 BCR
 \emph default
- run 1 e4C library, chromosome 9, against different active chromatin marks.
+ e4C normalisation against H3K4me1.
+ 
+\series default
+Association profiles normalised against a H3K4me1 ChIP-Seq profile 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bernstein2010"
+
+\end_inset
+
+.
+ Standard scores were calculated for the normalised association datasets
+ and the ChIP-Seq dataset.
+ Association datasets were normalised against the ChIP-Seq dataset by subtractio
+n.
 \end_layout
 
 \end_inset

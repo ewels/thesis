@@ -1998,16 +1998,221 @@ Chromosomal translocations
 \end_layout
 
 \begin_layout Subsection
+Formation of chromosomal translocations
+\end_layout
 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-ABL1 
+\begin_layout Standard
+Since the development of chromosome banding microscopy, it has been known
+ that the genetic material within cancerous cells is frequently disrupted
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitelman2007"
+
+\end_inset
+
+.
+ Chromosomal translocations involve the rearrangement of genetic material
+ between non-homologous chromosomes through the formation and aberrant repair
+ of two double strand breaks (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DSB"
+description "Double strand break"
+
+\end_inset
+
+DSBs).
+ The resulting product can be a straight swap without any loss or gain of
+ sequence (balanced translocation) or can result in deletions or gain of
+ material (unbalanced translocation).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+DSB repair
+\end_layout
+
+\begin_layout Standard
+Double strand breaks can be caused by exogenous damage (ionizing radiation,
+ free radicals) and endogenous damage (physiological programmed DSBs).
+ As many as 1 million DNA lesions are formed per cell per day 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AlbertsLewisRaffRobertsWalter2007"
+
+\end_inset
+
+ and can be highly deleterious to the cell, casuing loss of genetic material,
+ translocations and ultimately cell death if left unrepaired.
+ Mammalian cells have an array of different DSB repair pathways that depend
+ on the cellular context and type of lesion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Longhese2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Homologous recombination (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HR"
+description "Homologous recombination"
+
+\end_inset
+
+HR, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DSB-repair"
+
+\end_inset
+
+B) repairs double strand breaks by using long regions of homology on undamaged
+ sister chromatids or homologous chromosomes.
+ HR is primarily active during cell replication and rarely leads to serious
+ chromosomal rearrangements or translocations, although ‘crossing-over’
+ can sometimes occur, whereby two sections of homologous chromosomes switch
+ to their partner chromosomes (a process that is encouraged in meiosis with
+ the formation of chiasmata).
+\end_layout
+
+\begin_layout Standard
+Single strand annealing (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SSA"
+description "Single strand annealing"
+
+\end_inset
+
+SSA, Gif 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DSB-repair"
+
+\end_inset
+
+C) creates a short region of single stranded DNA at the site of the DSB
+ which is used to search for regions of microhomology, usually repeat sequences
+ in the same orientation.
+ These regions anneal and any excess single stranded tails are removed to
+ allow the nicks to be ligated.
+ SSA is prone to introducing deletions into the genome, and can form chromosomal
+ translocations if two sequences with similar repeat regions are nearby,
+ and both suffer simultaneous DSBs.
+ 
+\end_layout
+
+\begin_layout Standard
+Non-homologous end joining (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NHEJ"
+description "Non-homologous end joining"
+
+\end_inset
+
+NHEJ, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DSB-repair"
+
+\end_inset
+
+A) is a last resort for the cell, whereby any two adjacent DSBs are ligated,
+ needing little or no sequence homology.
+ This pathway is extremely prone to errors as it is capable of joining any
+ two strands of DNA without knowledge of their identity.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 1/DSB repair/DSB repair.eps
+	lyxscale 40
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:intro-BCR-and-ABL1"
+name "fig:DSB-repair"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+DSB repair
+\end_layout
+
+\end_inset
+
+
+\series bold
+DSB repair.
+ 
+\series default
+Three double strand break repair pathways.
+ 
+\series bold
+(A)
+\series default
+ NHEJ (Non-Homologous End Joining) requires little or no sequence homology
+ and joins any two nearby ends.
+ 
+\series bold
+(B)
+\series default
+ HR (Homologous Recombination) uses a strand of homologous DNA on a duplicated
+ interphase chromosome or sister chromatid to reconstitute sequence before
+ joining.
+ Although it only requires a single double strand break to generate a crossover,
+ the extensive region of homology needed makes errors rare.
+ 
+\series bold
+(C)
+\series default
+ SSA/NHEJ (Single Strand Annealing / Non-Homologous End Joining) searches
+ for regions of homology, such as repeat sequences, and deletes any sequence
+ between.
+ From Longhese 
+\emph on
+et al.
+\emph default
+, 2006 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Longhese2006"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2015,24 +2220,373 @@ name "sub:intro-BCR-and-ABL1"
 \end_layout
 
 \begin_layout Subsection
-Mixed lineage leukaemia
-\end_layout
+Chronic myeloid leukaemia
+\emph on
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:intro-CML"
 
-\begin_layout Subsection
-Formation of chromosomal translocations
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Basics of HR, SSA and NHEJ.
- Contact first / breakage first models.
+Chronic myeloid leukaemia (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CML"
+description "Chronic myeloid leukaemia"
+
+\end_inset
+
+CML) is one of the best studied cancers, despite having a relatively low
+ occurance 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hehlmann2007"
+
+\end_inset
+
+.
+ The term 'leukaemia' was based on CML patients in the mid 1800s 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Geary2000"
+
+\end_inset
+
+, and it was the first cancer for which a direct causative genotype was
+ found 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nowell1960"
+
+\end_inset
+
+.
+ A number of standardised therapies exist for CML and p to 87% of patients
+ achieve complete cytogenetic remission 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hehlmann2007"
+
+\end_inset
+
+, making it one of the success stories of cancer research.
 \end_layout
 
 \begin_layout Subsubsection
-Double strand breaks and religation
+The Philadelphia chromosome
 \end_layout
 
 \begin_layout Subsubsection
-Contact first model
+
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1 
+\end_layout
+
+\begin_layout Subsection
+Mixed lineage leukaemia
+\end_layout
+
+\begin_layout Standard
+The term leukaemia describes cancers of the blood or bone marrow, caused
+ by an over-proliferation of one or more types of white blood cell.
+ Leukaemia symptoms usually result from a drop in the production of other
+ cell types in the bone marrow; additionally the leukaemic cells are usually
+ unable to mount an immune response.
+ Uncontrolled growth of different cell types gives different phenotypes,
+ and there are a number of leukaemia subclasses that describe these.
+\end_layout
+
+\begin_layout Standard
+Acute Lymphoblastic Leukaemia (ALL) is a form of leukaemia defined by the
+ uncontrolled proliferation of lymphoblasts, precursors to lymphocytes which
+ differentiate into B cells, T cells and NK cells.
+ ALL was estimated to account for approximately 12% of all leukaemia cases
+ in the US in 2008 with around five and a half thousand cases occurring
+ annually.
+ ALL is the most common form of cancer in children aged under fourteen [47].
+\end_layout
+
+\begin_layout Standard
+Acute Myeloid Leukaemia (AML) is a cancer of the myeloid lineages of blood
+ cells.
+ AML was responsible for approximately 30% of all cases of leukaemia in
+ the US for 2008, and has a higher mortality rate than ALL (66% and 27%
+ mortality for AML and ALL, respectively) [47].
+ The incidence of AML increases with age, the median age of AML diagnosis
+ between 2002 and 2006 in the US was 67 years, and the median age of mortality
+ was 72 [48].
+\end_layout
+
+\begin_layout Standard
+However, the phenotypic typing of acute leukaemia is not always clear.
+ Chromosomal translocations within band q23 of chromosome 11 have been implicate
+d in both AML and ALL.
+ The gene involved in this translocation was identified by Ziemin-van der
+ Poel et al.
+ in 1991 and named MLL (Myeloid/Lymphoid Leukaemia, or Mixed Lineage Leukaemia)
+ [49].
+ In 2002, Armstrong et al.
+ showed that acute lymphoblastic leukaemias containing a translocation within
+ the MLL gene have a unique expression profile that is different to ALL
+ and AML, and suggests an origin within a less committed progenitor cell
+ which can produce cells in both the myeloid and lymphoid cell lineages,
+ giving a biphenotypic leukaemia (see Figure 8) [50].
+ They stated that these leukaemias are substantially different from AML
+ and ALL and deserve a new, distinct, class of leukaemia called Mixed Lineage
+ Leukaemia (MLL).
+ The leukaemic cells in MLL express cell surface antigens normally present
+ on both myeloid and lymphoid cells, such as CD14 and CD19 [51].
+ 
+\end_layout
+
+\begin_layout Standard
+The work by Armstrong et al adds to existing evidence suggesting that MLL
+ and some cases of ALL and AML are initiated specifically within undifferentiate
+d haematopoietic stem cells (HSCs) [52, 53].
+ Haematopoietic stem cells are present within the CD34+ progenitor cell
+ population, accounting for approximately 3% of normal human bone marrow
+ and 0.3 to 0.5% of human cord blood mononuclear cells [44].
+ They are long lived and capable of self-renewal, differentiating into lineage
+ restricted progenitors and eventually mature terminally differentiated
+ white blood cells (Figure 8).
+ HSCs are necessary for the long term maintenance of the haematopoietic
+ system and are commonly used to repopulate bone marrow after myeloablative
+ therapy, as well as in the treatment of a number of other disorders such
+ as autoimmune, cardiac and vascular diseases [54].
+\end_layout
+
+\begin_layout Standard
+The initiation of these leukaemias within a stem cell population is in line
+ with our increasing understanding of cancer stem cells, shown to be present
+ in both leukaemias and solid tumours [55].
+ Healthy HSCs are already capable of self-renewal, so may require less oncogenic
+ events to become cancerous [56].
+ The concept of a small pool of cancer stem-cells driving the large heterogeneou
+s pool of cancer cells has many implications for how we treat cancer - these
+ are the cells that must be targeted for the efficient and long lasting
+ cure of cancer [56].
+\end_layout
+
+\begin_layout Standard
+Figure 8 – Blood cell lineages, showing the Haematopoietic Stem Cell at
+ the top, capable of differentiating into any one of the cell types below.
+ From Wiki Commons [57].
+\end_layout
+
+\begin_layout Subsubsection
+The MLL gene
+\end_layout
+
+\begin_layout Standard
+Translocations involving the MLL gene (also known as ALL-1, Htrx, HRX) on
+ chromosome 11q23 are found in over 70% of infant leukaemias [58] and approximat
+ely 10% of adult AML cases [51].
+ Leukaemias with this translocation have a unique profile, and often a poor
+ patient prognosis [59].
+ As a result, a great deal of interest has been generated in the MLL gene
+ and its translocation partners.
+\end_layout
+
+\begin_layout Standard
+Homozygous (-/-) MLL mice knockouts are embryonic lethal, and are unable
+ to produce haematopoietic stem cells (HSCs) [60].
+ Heterozygous (+/-) knockouts display retarded growth and anaemia, as well
+ as other haematopoietic abnormalities [61].
+ Inducible mouse knockout models show that MLL is required for bone marrow
+ maintenance, with bone marrow failure approximately three weeks after MLL
+ deletion.
+ Further to this, cells lacking MLL in MLL+/- chimeras are selectively lost
+ from the bone marrow, consistent with a decrease in proliferation of myelo-eryt
+hroid progenitors lacking MLL [62].
+ However, haematopoietic stem cells (HSCs) lacking MLL are locked in ectopic
+ cell cycle entry [62].
+\end_layout
+
+\begin_layout Standard
+There are 87 documented MLL translocation partners of which 51 have been
+ characterised at the molecular level [63].
+ The five most frequent translocation partners, AF4, AF9, ENL, AF10 and
+ AF6 account for approximately 80% of cases [63].
+ Translocations within the MLL gene usually occur within an 8.3 kb region
+ known as the breakpoint cluster region (bcr) [64].
+ The bcr contains exons 5-11 as well as a number of repeat regions, notably
+ 8 direct Alu SINE repeats, 5 direct L1 and L2 LINE repeats and 2 MER elements,
+ as well as a number of putative Topoisomerase II binding sites and a SAR/MAR
+ [65] (see 7 - Abbreviations for full names).
+\end_layout
+
+\begin_layout Standard
+A paper by Scharf et al.
+ in 2007 showed that an internal promoter exists within the bcr of the murine
+ Mll gene, and that etoposide-induced double strand breaks colocalise with
+ the putative RNA Polymerase II binding site in human peripheral blood mononucle
+ar cells, rather than a nearby topoisomerase II binding site [66].
+ The idea than RNAP II might bind to the bcr of MLL is an attractive one
+ – a stretch of DNA cleared of nucleosomes would explain the DNase I hypersensit
+ive site mapped to the same region [67] and the histone modifications that
+ have been found within the MLL bcr [68].
+\end_layout
+
+\begin_layout Subsubsection
+The MLL protein
+\end_layout
+
+\begin_layout Standard
+MLL is a large protein, consisting of multiple domains.
+ It has been shown too require assembly and targeting by multiple other
+ proteins, such as WDR5, RBPB5 and ASH2L [69].
+ MLL contains three N-terminal AT hooks, responsible for binding the minor
+ groove of AT-rich DNA; a CxxC zinc finger domain homologous to that found
+ in DNA methyltransferase I; a transcriptional activation (TA) domain which
+ binds CREB binding protein, a histone acetyltransferase and a SET domain
+ which can methylate the lysine 4 residue of histone 4 (H3K4).
+ Several of these domains are also present within the Drosophila trithorax
+ complex, such as the speckled nuclear localization domains and SET domain.
+ It is thought that MLL binds DNA in a non-sequence-specific manner via
+ its AT-hook domains [70] and zinc finger domain [71].
+\end_layout
+
+\begin_layout Standard
+Chromatin immunoprecipitation (ChIP) experiments pulling down chromatin
+ fragments associated with MLL have shown interactions with 90% of elements
+ occupied by RNAP II, including both promoters and intergenic regions [72,
+ 73].
+ This demonstrates its role as a global regulator of gene expression, much
+ like the Drosophila trithorax genes to which it shares homology.
+\end_layout
+
+\begin_layout Standard
+Figure 11 – Mouse models of MLL-mediated leukaemogenesis.
+ From Daser et al.
+ (2005) [74].
+\end_layout
+
+\begin_layout Standard
+MLL is involved in the maintenance of expression of the Hox genes [61] and
+ is required for embryonic haematopoiesis [75].
+ Much work has gone into the function of MLL fusion proteins and revealed
+ a complex and diverse picture (see reviews [51] and [74]).
+ Many mouse models of MLL-fusion protein mediated leukaemias have been developed
+ using knock-in systems, providing a system with which to study the mechanisms
+ of MLL directed leukaemogenesis (Figure 11).
+ For example, it has been shown that DOT1L knockouts are not susceptible
+ to transformation which the fusion protein MLL-AF10, suggesting that this
+ H3K79 methyltransferase may be involved in the reprogramming of the epigenetic
+ state of certain genes, notably the HoxA cluster genes [76].
+ The up-regulation of the Hoxa7 and Hoxa9 appears to be important, and is
+ required for transformation by the MLL-ENL fusion protein [77].
+\end_layout
+
+\begin_layout Standard
+Generally, it seems that fusion proteins often recruit a large number of
+ chromatin remodelling factors to the normal gene targets of MLL, changing
+ the histone methylation marks and increasing the level of expression.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Effect of nuclear organisation on translocation formation
+\end_layout
+
+\begin_layout Subsubsection
+Breakage first and contact first models
+\end_layout
+
+\begin_layout Standard
+For a chromosomal translocaiton to form, two simultaenous DSBs must be extremely
+ close in three-dimensional space.
+ Two models have been described to explain how DSBs may meet in the nucleus
+ – the breakage first model and the contact first model.
+ The breakage first model states that double strand breaks can form anywhere
+ and are able to freely diffuse in the nuclear space.
+ They undergo large scale movement through the nucleus until they meet and
+ are joined.
+ The contact first model states that the two double strand breaks form in
+ sequences already close to each other within the nuclear space.
+ Large scale chromatin movements are not required for the two DSBs to meet.
+\end_layout
+
+\begin_layout Standard
+In support of the breakage first model Aten 
+\emph on
+et al
+\emph default
+.
+ showed that a linear series of DSBs formed simultaneously in HeLa nuclei
+ clustered 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aten2004"
+
+\end_inset
+
+, however, others have argued that this may be the result of a higher degree
+ of chromatin mobility along the ion bean trajectory used to generate the
+ DSBs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jakob2009a"
+
+\end_inset
+
+.
+ A larger body of evidence supports a contact first model; DSBs created
+ with ultra-soft X-rays by Nelms 
+\emph on
+et al.
+
+\emph default
+ remained in a fixed position for several hours after the damage was caused
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nelms1998"
+
+\end_inset
+
+ and Jakob 
+\emph on
+et al.
+ 
+\emph default
+used live cell microscopy to visualise proteins involved in DNA damage signallin
+g and repair.
+ After accumulation at sites of DNA damage caused by heavy ion impacts the
+ foci exhibited only a small degree of movement 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jakob2009a"
+
+\end_inset
+
+.
+ Soutoglou 
+\emph on
+et al.
+
+\emph default
+ showed a high degree of positional stability of DSB ends created by enodonuclea
+se digestion, with a higher degree of local diffusion seen in the absence
+ of the Ku80 DNA-end binding protein 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Soutoglou2007c"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
