@@ -92,7 +92,14 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
-Chromosome Conformation Capture
+Chromosome Conformation Capture 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:3C-intro"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -125,8 +132,8 @@ key "Dekker2002b"
 
 \begin_layout Standard
 3C works by fixing protein and DNA in place with formaldehyde.
- A restriction enyme is used to cut the DNA, typically recognising a 6 base
- pair sequence, so cutting on average once every 1.2 Kb (
+ A restriction enzyme is used to cut the DNA, typically recognising a 6
+ base pair sequence, so cutting on average once every 1.2 Kb (
 \begin_inset Formula $6^{4}=1296$
 \end_inset
 
@@ -187,7 +194,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 3/3C protocol/3C protocol.eps
+	filename figures/chapter 3/3C protocol/3C protocol.ai
 	width 100col%
 
 \end_inset
@@ -3923,6 +3930,22 @@ Equalising the bias: BCR 2 and MLL 3
 
 \begin_layout Subsection
 Cross over products
+\end_layout
+
+\begin_layout Section
+Increasing e4C library diversity
+\end_layout
+
+\begin_layout Subsection
+Barcoded 
+\emph on
+NlaIII
+\emph default
+ adapter
+\end_layout
+
+\begin_layout Subsection
+
 \end_layout
 
 \end_body

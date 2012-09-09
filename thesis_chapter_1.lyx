@@ -30,7 +30,16 @@
 \index_command default
 \paperfontsize default
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
@@ -1646,8 +1655,8 @@ key "Osborne2007"
 in-vitro
 \emph default
  that cells transfected with thousands of plasmids containing different
- transcriptional units clustered together at a handful transcription factories
- according to their promoter and the presence of an intron 
+ transcriptional units clustered together at a handful transcription factories,
+ segregated according to their promoter and the presence of an intron 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Xu2008a"
@@ -1810,20 +1819,44 @@ exclusively
  nuclear organisation and function.
 \end_layout
 
+\begin_layout Section
+Chromatin interactions in three dimensions
+\end_layout
+
 \begin_layout Subsection
-Looping
+Promoter and enhancer interactions
 \end_layout
 
 \begin_layout Standard
-The most distant looping enhancer element yet to be characterised is for
- the 
+The classical model of gene regulation and their promoters began with the
+ characterisation of the 
 \emph on
-SHH
+Lac
 \emph default
- gene 
+ operon in 
+\emph on
+Escherichia
+\emph default
+ 
+\emph on
+coli 
+\emph default
+in 1961 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Lettice2003"
+key "Jacob1961"
+
+\end_inset
+
+.
+ Three genes required for the digestion of lactose are controlled by the
+ binding of a repressor protein which blocks transcription by RNA Polymerase
+ II.
+ This repressor can form a tetramer and bind two region simultaneously,
+ requiring a topological loop in the chromatin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Savageau2011"
 
 \end_inset
 
@@ -1831,38 +1864,573 @@ key "Lettice2003"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+A number of Eukaryotic genes were later found to require distal enhancer
+ elements 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Banerji1981"
 
-\begin_layout Plain Layout
-Hbb, Igh and other classical looping examples.
- Transcription as a method to control genomic organisation rather than produce
- proteins.
+\end_inset
+
+ prompting speculation that the looping of chromatin to allow direct interaction
+ between sequences may be a common mechanism 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dorsett1999"
+
+\end_inset
+
+.
+ Direct evidence for 
+\emph on
+in-vivo
+\emph default
+ chromatin interactions was provided in 2002 with two papers studying the
+ mouse 
+\emph on
+Hbb 
+\emph default
+locus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carter2002,Tolhuis2002"
+
+\end_inset
+
+.
+ The locus contains five beta-like genes 
+\begin_inset Formula $\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+G, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+A, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, which are arranged in order of their expression.
+ Approximately 50 kilobases upstream is a locus control region (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LCR"
+description "Locus control region"
+
+\end_inset
+
+LCR), containing multiple DNase hypersensitive sites (HS1-6) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bender2000"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Plain Layout
-Sonic the hedgehog, other long range 
+\begin_layout Standard
+Carter 
 \emph on
-cis
+et al.
+
 \emph default
- interactions? Any evidence of 
-\emph on
-trans
-\emph default
- stuff? Cam's Myc and Igh FISH paper.
-\end_layout
+ used a novel technique called 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RNA TRAP"
+description "RNA tagging and recovery of associated proteins"
+
+\end_inset
+
+RNA TRAP (tagging and recovery of associated proteins) which localises horseradi
+sh peroxidase to the site of nascent RNA production of a specific gene.
+ The horseradish peroxidase catalyses biotinylation of nearby chromatin
+ which can be purified and quantified by quantitative real-time PCR (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "qPCR"
+description "Quantitative real-time PCR"
 
 \end_inset
 
 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PCR"
+description "Polymerase chain reaction"
+
+\end_inset
+
+qPCR).
+ They showed a 15-fold enrichment of biotin over the HS2 region of the LCR
+ when the actively transcribing 
+\emph on
+Hbb-b1
+\emph default
+ transcript was used for the horseradish peroxidase localisation, demonstrating
+ that this region of the LCR is in very close proximity to the 
+\emph on
+Hbb-b1
+\emph default
+ gene 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carter2002"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Tolhuis 
+\emph on
+et al.
+
+\emph default
+ used chromatin-conformation-capture technique 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dekker2002b"
+
+\end_inset
+
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "3C"
+description "Chromatin conformation capture"
+
+\end_inset
+
+3C, for discussion of this technique see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:3C-intro"
+
+\end_inset
+
+) to study the same locus and also found evidence for interaction between
+ the LCR hypersensitive regions and the 
+\emph on
+Hbb
+\emph default
+ locus.
+ Importantly they showed that in mouse foetal brain tissue, where the 
+\emph on
+Hbb
+\emph default
+ locus is not expressed, the chromatin adopted a linear conformation without
+ any looping 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tolhuis2002"
+
+\end_inset
+
+.
+ The group went on to show that each gene contacts the LCR as it is expressed,
+ supporting a system where the developmentally controlled genes must contact
+ an enhancer within the LCR in order to be expressed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Palstra2003"
+
+\end_inset
+
+.
+ Palstra 
+\emph on
+et al.
+
+\emph default
+ also showed that erythroid progenitor cells dedicated to the lineage but
+ not yet expressing beta-like globin genes form a 'poised' structure, contacting
+ the LCR but not engaging strongly with the HS2 enhancer 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Palstra2003"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Chromatin hubs
+\end_layout
+
+\begin_layout Standard
+The beta globin locus has become a model system for the active chromatin
+ hub (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ACH"
+description "Active chromatin hub"
+
+\end_inset
+
+ACH) model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DeLaat2003"
+
+\end_inset
+
+, describing a system where loops of chromatin containing elements capable
+ of controlling the expression of genes are held in close three-dimensional
+ space to the genes that they control.
+ Other gene clusters have been shown to behave in a similar manner, notably
+ the T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 locus and 
+\emph on
+Hox
+\emph default
+ clusters.
+\end_layout
+
+\begin_layout Standard
+The T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 locus control region is involved in the transcriptional control of cytokine
+ genes IL4, 5 and 13 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lee2003"
+
+\end_inset
+
+.
+ Spilianakis 
+\emph on
+et al.
+ 
+\emph default
+showed that these genes co-associate in T cells, NK cells, B cells and fibroblas
+ts, despite not being expressed in B cells and fibroblasts.
+ In T cells and NK cells this core unit additionally associates with the
+ T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 LCR and the genes are expressed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Spilianakis2004"
+
+\end_inset
+
+.
+ The authors suggest that this mechanism allows the coordinate expression
+ of the gene cluster in a controlled manner.
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+Hox 
+\emph default
+genes are master regulators of gene transcription and are responsible for
+ the creation of vertebrate segments during development.
+ 
+\emph on
+Hox
+\emph default
+ gene clusters 
+\emph on
+A
+\emph default
+ to 
+\emph on
+D
+\emph default
+ are transcribed in sequence as development of the embyro progresses and
+ have been observed decondensing and looping out from their chromosome territory
+ upon activation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chambeyron2004"
+
+\end_inset
+
+.
+ Noordermeer 
+\emph on
+et al.
+
+\emph default
+ studied the 
+\emph on
+Hox
+\emph default
+ clusters in three different mouse embryonic day 10.5 tissues; forebrain,
+ anterior trunk and posterior trunk 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Noordermeer2011"
+
+\end_inset
+
+.
+ They found that the 
+\emph on
+Hoxd
+\emph default
+ cluster formed a discrete domain in forebrain, where it is inactive.
+ In anterior and posterior trunk the 
+\emph on
+Hoxd
+\emph default
+ cluster is active, but different genes are transcribed.
+ In both tissues they found the cluster to form two distinct compartments
+ correlating with an inactive and active regions.
+ Using 4C, a technique based on chromosome conformation capture (3C), they
+ showed that genes move from the inactive to active compartment as they
+ are activated, correlating with active histone marks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Noordermeer2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Interactions in 
+\emph on
+trans
+\end_layout
+
+\begin_layout Standard
+As the role for distal enhancers has become more established, evidence has
+ been uncovered for increasingly distant interactions.
+ Lettice 
+\emph on
+et al.
+
+\emph default
+ used data from known chromosomal translocations resulting in polydactyly
+ to find and characterise an enhancer element for the 
+\emph on
+SHH
+\emph default
+ gene over a megabase upstream, within an intron of another gene 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lettice2003"
+
+\end_inset
+
+.
+ Spilianakis 
+\emph on
+et al.
+
+\emph default
+ went on from characterising the 
+\emph on
+intrac
+\emph default
+hromosomal interactions of the T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 LCR to show that the same locus forms 
+\emph on
+inter
+\emph default
+chromosomal interactions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Spilianakis2005"
+
+\end_inset
+
+.
+ Naïve T cells can differentiate into either TH1 or TH2 cells, depending
+ on the stimulus received.
+ This isdefined by the expression of either IFN-
+\begin_inset Formula $\gamma$
+\end_inset
+
+ or IL-4.
+ Spiliankis 
+\emph on
+et al.
+
+\emph default
+ showed that the 
+\emph on
+Ifng
+\emph default
+ gene promoter can interact with the T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 LCR to stimulate 
+\emph on
+Ifng
+\emph default
+ expression whilst inhibiting 
+\emph on
+IL4
+\emph default
+ expression.
+ These two loci reside on chromosomes 10 and 11 and their interaction is
+ the first known interchromosomal interaction to regulate gene expression
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Spilianakis2005"
+
+\end_inset
+
+.
+ A number of studies have since shown specific interchromosomal contacts
+ involved in a number of processes ranging from X-inactivation to genomic
+ imprinting, showing that these interactions play an important role in chromatin
+ biology 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schneider2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Global interaction maps
+\end_layout
+
+\begin_layout Standard
+Our understanding of the three-dimensional organisation of the genome has
+ advanced in leaps and bounds during the last decade largely because of
+ the development of chromatin conformation capture (3C) and its derivatives
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2011"
+
+\end_inset
+
+.
+ There are a large number of 3C variants, but they can be grossly categorised
+ into four classes based on how many loci can be interrogated in a single
+ experiment: one-to-one (3C, quantitative 3C), one-to-all (4C, e4C, ACT),
+ many-to-many (5C) and all-to-all (ChIA-PET, Hi-C, TCC).
+\end_layout
+
+\begin_layout Standard
+The recent development of all-to-all methods has allowed the confirmation
+ of the entire genome to be probed in a single experiment.
+ This approach has many advantages; such an unbiased approach allows the
+ detection of unexpected interactions, additionally many associations can
+ be probed in parallel allowing a far higher rate of data collection.
+ Whilst these techniques have had great impact on the field, they are currently
+ limited by the depth of sequencing that is achievable with today's technology.
+ To address this Sanyal 
+\emph on
+et al.
+
+\emph default
+ recently published a paper as part of the ENCODE project describing the
+ interaction profiles of 628 transcription start sites (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TSS"
+description "Transcription start site"
+
+\end_inset
+
+TSS) and 4535 surrounding fragments, representing approximately 1% of the
+ genome 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sanyal2012"
+
+\end_inset
+
+.
+ To achieve the resolution required for the robust detection of promoter-element
+ interactions, Sanyal 
+\emph on
+et al.
+
+\emph default
+ used 5C, a many-to-many technique that uses a library of oligonucleotides
+ with common adapters to anneal to 3C products and create a library capable
+ of being sequenced.
+ They sequenced libraries from three ENCODE cell lines: K562, HeLa-S3 and
+ GM12878.
+ Only a small proportion of the looping interactions uncovered were shared
+ between the three cell types, with ~60% of interactions being unique to
+ a single cell line.
+ The majority of TSS looping interactions could be classified as interacting
+ with enhancer elements, promoters or regions bound by the structural protein
+ CTCF.
+ Looping interactions with enhancer elements were significantly enriched
+ for actively expressed TSS, demonstrating the importance of three-dimensional
+ chromatin contacts in the regulation of gene expression.
+ Whilst this study provides valuable information in the global patterns
+ of gene interactions in the nucleus, it is also a valuable resource to
+ be used by other research groups.
+ It is becoming increasingly clear that to fully understand the biology
+ of chromatin and gene expression, we must understand the involvement of
+ the structure of the nucleus.
 \end_layout
 
 \begin_layout Section
 What drives nuclear organisation?
 \end_layout
 
-\begin_layout Subsection
-Actin and myosin
+\begin_layout Standard
+As our understanding of the structure of the nucleus evolves, an increasing
+ number of structural features and patterns are uncovered.
+ Teasing apart correlation and causation to find the driving forces behind
+ nuclear organisation is not an easy task and remains a hot topic within
+ the field.
 \end_layout
 
 \begin_layout Subsection
@@ -1870,39 +2438,10 @@ Transcription
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Active RNA Polymerases: Mobile or Immobile Molecular Machines? 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Papantonis2010"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Cook1999"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-CTCF and cohesin domains
-\end_layout
-
-\begin_layout Standard
-Jackson, McCreedy and Cook showed in 1981 that nascent RNA transcripts labelled
- with [
+The first study to suggest that Eukaryotic transcription does not take place
+ with a processive RNA Polymerase moving along a DNA template was by Jackson,
+ McCreedy and Cook in 1981.
+ They showed that nascent RNA transcripts labelled with [
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1912,32 +2451,337 @@ Jackson, McCreedy and Cook showed in 1981 that nascent RNA transcripts labelled
 \end_inset
 
 H] uridine remained within the nucleus when loops of DNA were removed using
- a nuclease, suggesting that transcription occurs close to points of chromatin
- attachment 
+ a nuclease
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jackson1981"
 
 \end_inset
 
+, and went on to show that RNA Polymerase II and the active genes were also
+ resitant to elution after chromatin digestion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jackson1985"
+
+\end_inset
+
 .
+ Kimura 
+\emph on
+et al.
+
+\emph default
+ quantified the amount of stable RNA Polymerase II in HeLa cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kimura1999"
+
+\end_inset
+
+ and Mitchell and Fraser later demonstrated that RNA Polymerase II transcription
+ factories remain in the absence of transcription, though gene association
+ with factories is ablated if transcription initiation is inhibited
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell2008"
+
+\end_inset
+
+.
+ This data, along with the observation that genes are recruited to pre-existing
+ transcription factories upon activation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2004"
+
+\end_inset
+
+, support a model whereby transcription factories are attached to a relatively
+ immobile nuclear substructure.
+ If this is the case, RNA Polymerase II may act as a motor, dragging template
+ chromatin through the nucleus as it is transcribed, powered by the removal
+ of phosphate groups during RNA synthesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cook1999"
+
+\end_inset
+
+.
+ Yin 
+\emph on
+et al.
+
+\emph default
+ measured the force produced by a single 
+\emph on
+E.
+ coli
+\emph default
+ RNA Polymerase using an immobilised enzyme transcribing a template bound
+ to a polystyrene bead held by optical tweezers 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yin1995"
+
+\end_inset
+
+.
+ The force they measured (14 pN) makes RNA Polymerase the most powerful
+ known biological motor.
+ Papantonis 
+\emph on
+et al.
+ 
+\emph default
+demonstrated the potential of RNA Polymerase to pull chromatin transcripts
+ through the nucleus 
+\emph on
+in vivo
+\emph default
+ by used 3C to measure the change in association between regions of DNA
+ after activation of the TNF
+\begin_inset Formula $\alpha$
+\end_inset
+
+ gene 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Papantonis2010"
+
+\end_inset
+
+.
+ They found that as the gene was transcribed, downstream regions of chromatin
+ progressively came into contact with other transcribing regions at the
+ transcription factory.
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Not finished
+\end_layout
+
+\begin_layout Standard
+A good example of transcription actively organising a structural motif is
+ within the immunoglobulin heavy-chain locus.
+ The 
+\emph on
+Igh
+\emph default
+ locus contains variable (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+), diversity (D
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+), joining (J
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+) and constant (C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+) coding elements which must contact each other for the process of recombination.
+ The 
+\emph on
+Igh
+\emph default
+ locus spans 3 Mbp and forms a rosette-like structure 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jhunjhunwala2008"
+
+\end_inset
+
+.
+ This structure appears to be driven by association at a transcription factory,
+ with low level antisense transcription of the V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ gene segments prior to recombination [#REF].
+ Interestingly, the level of antisense transcription correlates with the
+ distance of the V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ gene from the C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+region, and if this transcription is inhibited, the V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+gene usage is biased towards V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ genes closer to the C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ region in the linear DNA template [#REF].
+ This data suggests a model whereby the antisense transcription of the V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ genes is required to bring them into contact with the C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+ region to give equal probability of recombination regardless of the linear
+ spacing of the genes.
+ 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Igh forming rosettes for v region selection - http://www.ncbi.nlm.nih.gov/pmc/articl
-es/PMC3070187/
+references needed
 \end_layout
 
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
 \begin_layout Plain Layout
-Hi-C domains.
- Interactions within domains.
- Talk about how transcription depends on context.
- Spreading of epigenetic marks.
+This will need to be re-written after I've found the right references.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The role for non-coding transcription in the organisation of the genome
+ is further supported by the pervasive nature of transcription.
+\end_layout
+
+\begin_layout Standard
+Active enhancers often express enchancer RNAs.
+\end_layout
+
+\begin_layout Standard
+15% of the genome is transcribed - Cheng et al.
+ Transcriptional maps of 10 human chromosomes at 5-nucleotide resolution.
+ Science.
+ 2005.
+\end_layout
+
+\begin_layout Standard
+Housekeeping genes anchoring everything else.
+\end_layout
+
+\begin_layout Subsection
+CTCF and cohesin
+\end_layout
+
+\begin_layout Standard
+Insulators.
+ Chicken beta globin.
+\end_layout
+
+\begin_layout Standard
+CTCF not always marking insulators - interactions skipping CTCF sites in
+ Sanyal 
+\emph on
+et al.
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sanyal2012"
 
 \end_inset
 
@@ -1945,26 +2789,20 @@ Hi-C domains.
 \end_layout
 
 \begin_layout Subsection
-Transcriptional hubs
+Actin and myosin
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Talk about latest theories about housekeeping genes organising everything
- else.
- How this ties in with chromatin domains.
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Replication
 \end_layout
 
 \begin_layout Subsection
 The self-organisation model
+\end_layout
+
+\begin_layout Standard
+Transcription factor networks (Bertie).
+ Cook paper on entropy.
 \end_layout
 
 \begin_layout Standard
@@ -1991,6 +2829,15 @@ The annotated genome
 \begin_layout Standard
 Talking about the use of a systems biology approach to understand the linear
  genomic information of the genome.
+\end_layout
+
+\begin_layout Subsection
+The ENCODE project
+\end_layout
+
+\begin_layout Standard
+Hailed by the media as the next big step after the sequencing of the human
+ genome, the recently published ENCODE project has .
 \end_layout
 
 \begin_layout Section
@@ -2293,16 +3140,6 @@ ABL1
 
 \begin_layout Subsection
 Mixed lineage leukaemia
-\end_layout
-
-\begin_layout Standard
-The term leukaemia describes cancers of the blood or bone marrow, caused
- by an over-proliferation of one or more types of white blood cell.
- Leukaemia symptoms usually result from a drop in the production of other
- cell types in the bone marrow; additionally the leukaemic cells are usually
- unable to mount an immune response.
- Uncontrolled growth of different cell types gives different phenotypes,
- and there are a number of leukaemia subclasses that describe these.
 \end_layout
 
 \begin_layout Standard
