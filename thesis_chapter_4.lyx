@@ -100,7 +100,14 @@ Explain the context of when this work was done, that there was little if
 \end_layout
 
 \begin_layout Section
-Initial data handling
+Initial data handling 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Initial-data-handling"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2243,7 +2250,14 @@ Concerning raw data
 \end_layout
 
 \begin_layout Subsection
-Duplicate reads
+Duplicate reads 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Duplicate-reads"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6073,7 +6087,14 @@ Limitations of the e4C data / Discussion
 \end_layout
 
 \begin_layout Subsection
-Coverage
+Coverage 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Limitations-Coverage"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

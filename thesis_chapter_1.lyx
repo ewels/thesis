@@ -2746,21 +2746,55 @@ height "1pt"
 \begin_layout Standard
 The role for non-coding transcription in the organisation of the genome
  is further supported by the pervasive nature of transcription.
+ As much as 15% of the human genome is actively transcribed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cheng2005"
+
+\end_inset
+
+, and many enhancers are known to be transcribed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ling2005,Kim2010"
+
+\end_inset
+
+.
+ In the recent ENCODE study of TSS interactions, Sanyal 
+\emph on
+et al.
+
+\emph default
+ found that enhancer elements looping to a TSS were significantly more likely
+ to express enhancer RNAs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sanyal2012"
+
+\end_inset
+
+, supporting a model that the transcription of a chromatin template could
+ be responsible for the formation of chromatin loops.
 \end_layout
 
 \begin_layout Standard
-Active enhancers often express enchancer RNAs.
-\end_layout
+On a larger scale of genome organisation, and interesting model comes from
+ the linear clustering of housekeeping genes.
+ Lercher 
+\emph on
+et al.
 
-\begin_layout Standard
-15% of the genome is transcribed - Cheng et al.
- Transcriptional maps of 10 human chromosomes at 5-nucleotide resolution.
- Science.
- 2005.
-\end_layout
+\emph default
+ have shown that genes with high expression in multiple tissue types have
+ a propensity be present in clusters within the genome 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lercher2002"
 
-\begin_layout Standard
-Housekeeping genes anchoring everything else.
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection

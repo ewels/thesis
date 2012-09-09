@@ -28,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing double
 \use_hyperref true
@@ -131,61 +132,6 @@ key "Dekker2002b"
 \end_layout
 
 \begin_layout Standard
-3C works by fixing protein and DNA in place with formaldehyde.
- A restriction enzyme is used to cut the DNA, typically recognising a 6
- base pair sequence, so cutting on average once every 1.2 Kb (
-\begin_inset Formula $6^{4}=1296$
-\end_inset
-
-).
- This results in 
-\begin_inset Quotes eld
-\end_inset
-
-hairballs
-\begin_inset Quotes erd
-\end_inset
-
- of cross linked DNA and protein which are diluted into a large volume.
- A ligation reaction is then run, which favours ligations between sequences
- held together by the formaldehyde cross links.
- Cross links are reversed and the DNA is purified, leaving a 3C 
-\begin_inset Quotes eld
-\end_inset
-
-library
-\begin_inset Quotes erd
-\end_inset
-
-.
- Within this library, the frequency with which restriction fragments are
- found ligated together corresponds to their degree of interaction within
- the nucleus.
-\end_layout
-
-\begin_layout Standard
-The 3C library is a basis for a number of different assays that all measure
- interaction frequencies.
- Traditional 3C uses PCR with primers positioned adjacent to the restriction
- enzyme recognition sites of two loci of interest.
- If a PCR product is detected, these two sequences were physically close
- within the nucleus.
- The strength of bands on a gel can be used to quantify the strength of
- this interaction, and qPCR can be used to accurately assess this for a
- large number of primer pairs (3C qPCR).
- Both of these techniques are used to probe interactions on a 
-\begin_inset Quotes eld
-\end_inset
-
-one-to-one
-\begin_inset Quotes erd
-\end_inset
-
- basis; that is, investigating the interaction between two specific loci
- at a time.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -240,13 +186,64 @@ e.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+3C works by fixing protein and DNA in place with formaldehyde.
+ A restriction enzyme is used to cut the DNA, typically recognising a 6
+ base pair sequence, so cutting on average once every 1.2 Kb (
+\begin_inset Formula $6^{4}=1296$
+\end_inset
+
+).
+ This results in 
+\begin_inset Quotes eld
+\end_inset
+
+hairballs
+\begin_inset Quotes erd
+\end_inset
+
+ of cross linked DNA and protein which are diluted into a large volume.
+ A ligation reaction is then run, which favours ligations between sequences
+ held together by the formaldehyde cross links.
+ Cross links are reversed and the DNA is purified, leaving a 3C 
+\begin_inset Quotes eld
+\end_inset
+
+library
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Within this library, the frequency with which restriction fragments are
+ found ligated together corresponds to their degree of interaction within
+ the nucleus.
+\end_layout
+
+\begin_layout Standard
+The 3C library is a basis for a number of different assays that all measure
+ interaction frequencies.
+ Traditional 3C uses PCR with primers positioned adjacent to the restriction
+ enzyme recognition sites of two loci of interest.
+ If a PCR product is detected, these two sequences were physically close
+ within the nucleus.
+ The strength of bands on a gel can be used to quantify the strength of
+ this interaction, and qPCR can be used to accurately assess this for a
+ large number of primer pairs (3C qPCR).
+ Both of these techniques are used to probe interactions on a 
+\begin_inset Quotes eld
+\end_inset
+
+one-to-one
+\begin_inset Quotes erd
+\end_inset
+
+ basis; that is, investigating the interaction between two specific loci
+ at a time.
 \end_layout
 
 \begin_layout Subsection
@@ -273,61 +270,6 @@ one-to-all
 
  assay, which is capable of revealing the genome-wide interaction profile
  of a single sequence of interest.
-\end_layout
-
-\begin_layout Standard
-A biotinylated primer annealing and extension step is used to do this, with
- magnetic streptavidin beads pulling down all ligation products containing
- the sequence of interest, or 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "bait"
-description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
-
-\end_inset
-
-bait
-\begin_inset Quotes erd
-\end_inset
-
-.
- A second restriction enzyme is then used to cut the enriched library, an
- enzyme with a 4 base pair recognition site is used to cut approximately
- once every 256 base pairs (
-\begin_inset Formula $4^{4}=256$
-\end_inset
-
-).
- The resulting sticky end is then used to ligate an adapter to the end of
- the unknown partner sequence.
- This allows the libary to be amplified using PCR.
- Primers with overhanging tails are used to add the sequence needed for
- sequencing with the Illumina Genome Analyser IIx.
- A custom sequencing primer is used which binds to the bait region immediately
- before the first restriction enzyme cut site, preventing known sequence
- from being unnecessarily sequenced.
- A few remaining few base pairs are left betweenthe sequencing primer and
- the cut site, to use as a barcode region to allow multiplexing of libraries
- on the sequencing run.
- This sequence is also used to confirm the identity of the bait sequence.
- The remaining base pairs that are sequenced after the cut site are aligned
- to the genome, and their distribution used to plot a genome-wide interaction
- profile for the bait sequence.
-\end_layout
-
-\begin_layout Standard
-See Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:e4C-Analysis"
-
-\end_inset
-
- for further details about the analysis of e4C data.
 \end_layout
 
 \begin_layout Standard
@@ -390,6 +332,61 @@ Overview of the e4C methodology.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A biotinylated primer annealing and extension step is used to do this, with
+ magnetic streptavidin beads pulling down all ligation products containing
+ the sequence of interest, or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "bait"
+description "Bait region, or sequence of interest which is enriched for with the e4C protocol."
+
+\end_inset
+
+bait
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A second restriction enzyme is then used to cut the enriched library, an
+ enzyme with a 4 base pair recognition site is used to cut approximately
+ once every 256 base pairs (
+\begin_inset Formula $4^{4}=256$
+\end_inset
+
+).
+ The resulting sticky end is then used to ligate an adapter to the end of
+ the unknown partner sequence.
+ This allows the libary to be amplified using PCR.
+ Primers with overhanging tails are used to add the sequence needed for
+ sequencing with the Illumina Genome Analyser IIx.
+ A custom sequencing primer is used which binds to the bait region immediately
+ before the first restriction enzyme cut site, preventing known sequence
+ from being unnecessarily sequenced.
+ A few remaining few base pairs are left betweenthe sequencing primer and
+ the cut site, to use as a barcode region to allow multiplexing of libraries
+ on the sequencing run.
+ This sequence is also used to confirm the identity of the bait sequence.
+ The remaining base pairs that are sequenced after the cut site are aligned
+ to the genome, and their distribution used to plot a genome-wide interaction
+ profile for the bait sequence.
+\end_layout
+
+\begin_layout Standard
+See Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:e4C-Analysis"
+
+\end_inset
+
+ for further details about the analysis of e4C data.
 \end_layout
 
 \begin_layout Section
@@ -3394,9 +3391,16 @@ Although the chromatin immunoprecipitation steps worked well in my hands
  for test samples, I soon decided to remove this enrichment step in favour
  of keeping as much library DNA as possible.
  I showed by RT-PCR that my bait genes were expressed in the cells I was
- investigating.
- Additionally, all interactions may be relevant to the formation of chromosomal
- translocations, so any resulting interaction data is useful.
+ investigating (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-RT-PCR"
+
+\end_inset
+
+).
+ All interactions may be relevant to the formation of chromosomal translocations
+, so any resulting interaction data is useful.
 \end_layout
 
 \begin_layout Standard
@@ -3890,7 +3894,19 @@ AseI
 \end_layout
 
 \begin_layout Subsection
-First libraries: BCR 1 and MLL 1
+Multiplexed library numbers
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+BCR
+\emph default
+ Run 1 and 
+\emph on
+MLL
+\emph default
+ Run 1
 \end_layout
 
 \begin_layout Standard
@@ -3922,18 +3938,401 @@ BCR
 MLL
 \emph default
  breakpoint region bait.
+ These libraries are known as 
+\emph on
+BCR
+\emph default
+ Run 1 and 
+\emph on
+MLL
+\emph default
+ Run 1 for the rest of this thesis.
+ Once the raw reads were available from the sequencing run, we separated
+ the two e4C libraries bioinformatically (for details, see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Initial-data-handling"
+
+\end_inset
+
+).
+ Despite loading equimolar amounts of both libraries and sequencing primers
+ onto the flow cell, the 
+\emph on
+MLL
+\emph default
+ library only returned 55,868 reads vs.
+ the 
+\emph on
+BCR
+\emph default
+ library with 22,390,498, a 400-fold difference.
+\end_layout
+
+\begin_layout Subsubsection
+Equalising the bias: 
+\emph on
+BCR
+\emph default
+ Run 2 and 
+\emph on
+MLL
+\emph default
+ Run 3
+\end_layout
+
+\begin_layout Standard
+For the next multiplexed run, I changed the relative concentrations of 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ libraries and sequencing primers loaded on the flow cell in order to return
+ an equal number of reads.
+ This time, the 
+\emph on
+MLL
+\emph default
+ library returned 9,960,249 reads and the 
+\emph on
+BCR
+\emph default
+ library returned 12,616,122 reads, only a 1.2 fold difference.
+\end_layout
+
+\begin_layout Subsubsection
+Reasons for the bias
+\end_layout
+
+\begin_layout Standard
+There are several possible reasons for such a bias occurring with the multiplexe
+d libraries.
+ Quantitation of the libraries could be inaccurate, with DNA present without
+ Illumina sequencing adapters.
+ Similarly, there could be a problem with the 
+\emph on
+MLL 
+\emph default
+library causing it to bind to the flow cell or create clusters inefficiently.
+ Both of these seem unlikely however, as the e4C libraries were quantified
+ using quantitative real-time PCR using fluorescent TaqMan probes which
+ only fluoresce when bound to the Illumina adapter sequences.
+ Additionally, the 
+\emph on
+MLL 
+\emph default
+Run 2 e4C library that was sequenced without multiplexing on its own lane
+ generated clusters as expected by its concentration and returned the expected
+ number of reads.
+ Differences in the sequencing chemistry related to the sequencing primers
+ could cause the 
+\emph on
+BCR
+\emph default
+ library to sequence more efficiently than the 
+\emph on
+MLL
+\emph default
+ library, but that would presumably not give a greater number of 
+\emph on
+BCR 
+\emph default
+library clusters, which are generated using the same Illumina adapters for
+ both libraries.
+ The total number of reads returned from the multiplexed lanes were equivalent
+ to those returned from single library lanes, however, indicating that there
+ were more 
+\emph on
+BCR
+\emph default
+ library clusters than 
+\emph on
+MLL
+\emph default
+.
 \end_layout
 
 \begin_layout Subsection
-Equalising the bias: BCR 2 and MLL 3
+Cross over products 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Crossover-products"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Cross over products
+\begin_layout Standard
+Upon initial analysis of the multiplexed 
+\emph on
+BCR 
+\emph default
+Run 2 and 
+\emph on
+MLL 
+\emph default
+Run 3 e4C libraries, it became clear that a significant proportion of the
+ reads present within the 
+\emph on
+MLL
+\emph default
+ library were crossover products from the 
+\emph on
+BCR
+\emph default
+ library.
+ There is significant enrichment around the 
+\emph on
+BCR
+\emph default
+ bait locus (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Crossover-reads"
+
+\end_inset
+
+A) with a familiar drop off interaction associated with 
+\emph on
+cis
+\emph default
+ linkage.
+ Interestingly, an equivalent enrichment around the 
+\emph on
+MLL 
+\emph default
+bait locus was not visible in the 
+\emph on
+BCR
+\emph default
+ e4C library (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Crossover-reads"
+
+\end_inset
+
+B).
+ A similar effect was seen in in mouse ChIP-e4C libraries prepared and sequenced
+ using different baits (unpublished data).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/multiplexing_crossovers/crossovers.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Crossover reads between multiplexed e4C libraries
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Crossover-reads"
+
+\end_inset
+
+
+\series bold
+Crossover reads between multiplexed e4C libraries.
+ (A)
+\series default
+ 35 Mb region of chromosome 22, showing enrichment around the 
+\emph on
+BCR
+\emph default
+ bait for both the 
+\emph on
+BCR
+\emph default
+ and multiplexed 
+\emph on
+MLL
+\emph default
+ e4C libraries.
+ There is no enrichment in the phiX 
+\emph on
+MLL 
+\emph default
+control library.
+ 
+\series bold
+(B)
+\series default
+ 35 Mb region of chromosome 11, showing enrichment around the 
+\emph on
+MLL 
+\emph default
+bait for the two 
+\emph on
+MLL
+\emph default
+ e4c libraries, but not the multiplexed 
+\emph on
+BCR
+\emph default
+ library.
+ Bait regions shown by yellow bars.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We returned to the original raw crossover reads for verification and these
+ crossover reads definitely start with the 
+\emph on
+MLL
+\emph default
+ barcode sequence before proceeding directly into the bait sequence, so
+ there was no error in the bioinformatic separation of the libraries.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+MLL
+\emph default
+ Run 3 phiX
+\end_layout
+
+\begin_layout Standard
+To confirm that the reads are definitely as a result of the multiplexing
+ and not due to contamination during e4C library preparation, we spiked
+ an aliquot of the same 
+\emph on
+MLL 
+\emph default
+e4C library into the phiX control lane on a subsequent Illumina sequencing
+ run.
+ Although competition with the standard Illumina sequencing primer required
+ for the phiX library but also binds the e4C adapters meant that the majority
+ of 
+\emph on
+MLL 
+\emph default
+library reads were of the bait sequence, enough bait regions were returned
+ to carry out some analysis.
+ As can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Crossover-reads"
+
+\end_inset
+
+, the 
+\emph on
+MLL
+\emph default
+ phiX reads correlate precisely with peaks of large read numbers in the
+ multiplexed 
+\emph on
+MLL 
+\emph default
+library.
+\end_layout
+
+\begin_layout Standard
+After removing the two bait chromosomes 11 and 22 and removing all duplicate
+ reads, I analysed the hit 
+\emph on
+AseI 
+\emph default
+fragments between libraries.
+ The multiplexed 
+\emph on
+MLL 
+\emph default
+library had a correlation of 0.656 with the multiplexed 
+\emph on
+BCR 
+\emph default
+library and a correlation of 0.36 with the 
+\emph on
+MLL 
+\emph default
+phiX library.
+ If a threshold of 20 reads was set before removal of duplicate reads, these
+ two correlations became 0.009 and 0.782, respectively.
+ This demonstrates that only a small number of reads are crossing over between
+ libraries, as can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Crossover-reads"
+
+\end_inset
+
+.
+ Unfortunately this threshold was chosen empirically and could lead to inaccurat
+e analysis results.
+ As such, the thresholded library was not used for further analysis.
+\end_layout
+
+\begin_layout Subsubsection
+Reasons for crossover reads
+\end_layout
+
+\begin_layout Standard
+It seems likely that these crossover reads result from an error in the cluster
+ identification during the Illumina sequencing process.
+ We approached Illumina with out observations but received no satisfactory
+ response.
+ Because we could not address this problem without a known cause, we did
+ not multiplex any further e4C libraries.
 \end_layout
 
 \begin_layout Section
 Increasing e4C library diversity
+\end_layout
+
+\begin_layout Standard
+Due to the low coverage of the e4C libraries (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Limitations-Coverage"
+
+\end_inset
+
+ for discussion), I tried to modify the e4C protocol to increase the diversity
+ of the sequencing reads.
 \end_layout
 
 \begin_layout Subsection
@@ -3944,7 +4343,189 @@ NlaIII
  adapter
 \end_layout
 
+\begin_layout Standard
+Because of the large number of duplicates found for each, it was not possible
+ to extract quantitative information from the read counts in the e4C libraries
+ (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Duplicate-reads"
+
+\end_inset
+
+).
+ In an attempt to retain quantitative data about the frequency of 3C ligation
+ products before the PCR steps, I designed a new 
+\emph on
+NlaIII
+\emph default
+ adapter which included 4 base pairs of unspecified sequence in the oligo
+ to use as a barcode.
+ In order to ensure that the two single stranded oligos would hybridise
+ to form a functional adapter, I added a 6 base pair GC-clamp after the
+ barcode before the 
+\emph on
+NlaIII
+\emph default
+ sticky end.
+ After the first round of PCR, the barcode will have a complementary sequence,
+ so the initially different bases should not cause any problems in the sequencin
+g.
+\end_layout
+
+\begin_layout Standard
+The idea behind this new adapter was to use it in a paired end Illumina
+ sequencing run.
+ Read one would use the same custom sequencing primer and methodology as
+ that described above for the single end sequenced e4C libraries.
+ The second read would use the standard Illumina sequencing primer two,
+ which would read through the barcode and into the unknown sequence.
+ The barcode could be used to deconvolute quantitative information about
+ the number of pre-PCR 3C ligation products, and the unknown sequence would
+ provide additional validation of the ligation product.
+ Every pre-PCR 3C product should give two different barcodes from the two
+ strands of random barcode, which could then be quantified to give ligation
+ frequencies and greater coverage information.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/complexity paired end adapter/complexity-e4C-adapter.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Barcoded 
+\emph on
+NlaIII
+\emph default
+ adapter
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Barcoded-NlaIII-adapter"
+
+\end_inset
+
+
+\series bold
+Diagram showing design of the barcoded 
+\emph on
+NlaIII
+\emph default
+ adapter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+Multiplexing same-bait e4C libraries
+\end_layout
+
+\begin_layout Standard
+The high number of duplicates seen for every read in the e4C libraries (Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Duplicate-reads"
+
+\end_inset
+
+) suggests that there is a lack of complexity in the e4C libraries, and
+ we were sequencing the full depth of the libraries.
+ In an effort to increase the diversity in a sequencing run, I created eight
+ e4C libraries using the 
+\emph on
+BCR
+\emph default
+ breakpoint region bait and the new 
+\emph on
+NlaIII
+\emph default
+ adapter described above.
+ The e4C libraries were prepared as biological replicates from new CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C material generated from a recent patient sample.
+\end_layout
+
+\begin_layout Standard
+Whilst multiplexing e4C libraries with different bait regions in a single
+ Illumina lane caused crossover reads which skewed downstream analysis,
+ any crossover reads between libraries sharing the same bait would not affect
+ analysis.
+ Combined with the new 
+\emph on
+NlaIII
+\emph default
+ adapter able to identify unique 3C ligation products, such multiplexing
+ should not suffer the same problems as previous runs.
+\end_layout
+
+\begin_layout Subsection
+Results of e4C modifications
+\end_layout
+
+\begin_layout Standard
+In order to test the e4C protocol modifications described above, I spiked
+ a small amount of the multiplexed e4C libraries with the new 
+\emph on
+NlaIII
+\emph default
+ adapter into the phiX control lane on an Illumina GAIIx sequencing run.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Write about the weird results! (see bioinformatics job for details)
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
