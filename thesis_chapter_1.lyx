@@ -28,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing double
 \use_hyperref true
@@ -56,10 +57,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
+\leftmargin 2.5cm
 \topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\rightmargin 2.5cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -677,71 +678,6 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "50col%"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
-	lyxscale 40
-	width 45col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Chromosome Territories
-\end_layout
-
-\end_inset
-
-Chromosome Territories.
-
-\series default
- Image of a Human fibroblast cell in G0 with all chromosomes labelled using
- multi-colour FISH.
- Taken from Bolzer 
-\emph on
-et al.
-
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bolzer2005"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The interphase nucleus is a highly structured organelle.
  As chromosomes decondense after metaphase they retain some degree of structure,
  forming 'chromosome territories' (
@@ -817,6 +753,71 @@ key "Schardin1985a,Manuelidis1985,Bolzer2005"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 0in
+width "50col%"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
+	lyxscale 40
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Chromosome Territories
+\end_layout
+
+\end_inset
+
+Chromosome Territories.
+
+\series default
+ Image of a Human fibroblast cell in G0 with all chromosomes labelled using
+ multi-colour FISH.
+ Adapted from Bolzer 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bolzer2005"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1232,12 +1233,12 @@ Cajal bodies, speckles, nucleosomes
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Transcription factories
 \end_layout
 
 \begin_layout Standard
-One nuclear subcompartment which has come to light within the past twenty
+One nuclear subcompartment which has come to light within the past thirty
  years is the 
 \emph on
 transcription factory
@@ -1247,75 +1248,11 @@ transcription factory
  factories 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Jackson1993a,Osborne2004,Eskiw2008a"
+key "Jackson1993,Osborne2004,Eskiw2008a"
 
 \end_inset
 
 , challenging the classical model of transcription found in many text books.
-\end_layout
-
-\begin_layout Standard
-The term 'transcription factories' was coined by Jackson 
-\emph on
-et al.
-
-\emph default
- in 1993.
- Fluorescence microscopy was used to label the incorporation of bromouridine
- triphosphate (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "BrUTP"
-description "Bromouridine triphosphate"
-
-\end_inset
-
-BrUTP) into nascent RNA; discrete foci of nascent transcription could be
- seen within the nucleus which did not form in the presence of the RNA Polymeras
-e II inhibitor α-amanitin 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Jackson1993a"
-
-\end_inset
-
-.
- Further studies showed that these foci contain RNA Polymerase II along
- with many other components required for transcription 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Iborra1996,Grande1997"
-
-\end_inset
-
-.
- An ultrastructural study by Eskiw 
-\emph on
-et al.
-
-\emph default
- used correlative microscopy with both electron spectroscopic imaging (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "ESI"
-description "Electron spectroscopic imaging"
-
-\end_inset
-
-ESI) and fluorescence microscopy to study nuclei sections.
- ESI can distinguish nitrogen and phosphorous atoms without labelling, and
- fluorescence light microscopy can visualise transcription through labelling
- BrUTP in nascent transcripts.
- The authors found that nascent RNA is almost always associated with the
- surface of large nitrogen-rich protein structures with a diameter of ~87
- nm, comparable in size to that of a transcription factory 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Eskiw2008a"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -1396,16 +1333,102 @@ key "Cook1999"
 \end_layout
 
 \begin_layout Standard
-The stability of nascent transcripts was shown as far back as 1981 by Jackson
- and colleagues 
+The first study to suggest that Eukaryotic transcription does not take place
+ with a processive RNA Polymerase moving along a DNA template was by Jackson,
+ McCreedy and Cook in 1981.
+ They showed that nascent RNA transcripts labelled with [
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+H] uridine remained within the nucleus when loops of DNA were removed using
+ a nuclease
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jackson1981"
 
 \end_inset
 
- and the visualisation of transcription factories has demanded a new model
- for the action of RNA Polymerase II 
+.
+ They went on to show that RNA Polymerase II and active genes were also
+ resistant to elution after chromatin digestion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jackson1985"
+
+\end_inset
+
+.
+ The term 'transcription factories' was coined by Jackson 
+\emph on
+et al.
+
+\emph default
+ in 1993.
+ Fluorescence microscopy was used to label the incorporation of bromouridine
+ triphosphate (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BrUTP"
+description "Bromouridine triphosphate"
+
+\end_inset
+
+BrUTP) into nascent RNA; discrete foci of nascent transcription could be
+ seen within the nucleus which did not form in the presence of the RNA Polymeras
+e II inhibitor α-amanitin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jackson1993"
+
+\end_inset
+
+.
+ Further studies showed that these foci contain RNA Polymerase II along
+ with many other components required for transcription 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Iborra1996,Grande1997"
+
+\end_inset
+
+.
+ An ultrastructural study by Eskiw 
+\emph on
+et al.
+
+\emph default
+ used correlative microscopy with both electron spectroscopic imaging (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ESI"
+description "Electron spectroscopic imaging"
+
+\end_inset
+
+ESI) and fluorescence microscopy to study nuclei sections.
+ ESI can distinguish nitrogen and phosphorous atoms without labelling, and
+ fluorescence light microscopy can visualise transcription through labelling
+ BrUTP in nascent transcripts.
+ The authors found that nascent RNA is almost always associated with the
+ surface of large nitrogen-rich protein structures with a diameter of ~87
+ nm, comparable in size to that of a transcription factory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eskiw2008a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The discovery of transcription factories has demanded a new model for the
+ action of RNA Polymerase II 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cook1999"
@@ -1548,7 +1571,7 @@ Should probably throw in a few more references in this section.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Specialised transcription factories
 \end_layout
 
@@ -1679,6 +1702,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 1/Klf factories/Klf1 factories.eps
 	lyxscale 50
+	width 45text%
 
 \end_inset
 
@@ -2438,36 +2462,15 @@ Transcription
 \end_layout
 
 \begin_layout Standard
-The first study to suggest that Eukaryotic transcription does not take place
- with a processive RNA Polymerase moving along a DNA template was by Jackson,
- McCreedy and Cook in 1981.
- They showed that nascent RNA transcripts labelled with [
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-3
+The discovery of transcription factories has changed our view of nuclear
+ organisation substantially.
+ If genetic templates are mobile and transcription factories are fixed,
+ then the nucleus may be able to use the process of transcription as a tool
+ to fold the genome into specific conformations.
 \end_layout
 
-\end_inset
-
-H] uridine remained within the nucleus when loops of DNA were removed using
- a nuclease
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Jackson1981"
-
-\end_inset
-
-, and went on to show that RNA Polymerase II and the active genes were also
- resitant to elution after chromatin digestion 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Jackson1985"
-
-\end_inset
-
-.
- Kimura 
+\begin_layout Standard
+Kimura 
 \emph on
 et al.
 
@@ -2479,7 +2482,21 @@ key "Kimura1999"
 
 \end_inset
 
- and Mitchell and Fraser later demonstrated that RNA Polymerase II transcription
+ adding to the work by Jackson 
+\emph on
+et al.
+ 
+\emph default
+demonstrating the stability of nascent transcripts and Polymerase in the
+ nucleus 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jackson1981,Jackson1985"
+
+\end_inset
+
+.
+ Mitchell and Fraser later demonstrated that RNA Polymerase II transcription
  factories remain in the absence of transcription, though gene association
  with factories is ablated if transcription initiation is inhibited
 \begin_inset CommandInset citation
@@ -2499,7 +2516,7 @@ key "Osborne2004"
 
 , support a model whereby transcription factories are attached to a relatively
  immobile nuclear substructure.
- If this is the case, RNA Polymerase II may act as a motor, dragging template
+ If this is the case, RNA Polymerase II can act as a motor, dragging template
  chromatin through the nucleus as it is transcribed, powered by the removal
  of phosphate groups during RNA synthesis 
 \begin_inset CommandInset citation
@@ -2744,8 +2761,8 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
-The role for non-coding transcription in the organisation of the genome
- is further supported by the pervasive nature of transcription.
+The role for transcription in the organisation of the genome is further
+ supported by the pervasive nature of transcription.
  As much as 15% of the human genome is actively transcribed 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2753,7 +2770,7 @@ key "Cheng2005"
 
 \end_inset
 
-, and many enhancers are known to be transcribed 
+, including many enhancers 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ling2005,Kim2010"
@@ -2779,8 +2796,8 @@ key "Sanyal2012"
 \end_layout
 
 \begin_layout Standard
-On a larger scale of genome organisation, and interesting model comes from
- the linear clustering of housekeeping genes.
+An attractive model for larger scale genome organisation revolves around
+ the transcription of housekeeping and tissue-specific genes.
  Lercher 
 \emph on
 et al.
@@ -2794,16 +2811,59 @@ key "Lercher2002"
 
 \end_inset
 
+ and the mouse alpha globin locus has been shown to assemble at a transcription
+ factory already transcribing a cluster of housekeeping genes in erythroid
+ cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhou2006"
+
+\end_inset
+
 .
+ These housekeeping genes have been shown to bind stably to the nuclear
+ matrix, whereas the alpha globin genes are eluted in a high salt extraction
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gavrilov2010"
+
+\end_inset
+
+.
+ These studies may point to a model of the nucleus where persistently transcribe
+d housekeeping genes are responsible for forming transcription factories,
+ with tissue specific genes being recruited to these sites upon activation
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gavrilov2010"
+
+\end_inset
+
+.
+ Such a system could have far reaching consequences, such as chromosome
+ conformation being determined by housekeeping gene hubs.
 \end_layout
 
 \begin_layout Subsection
-CTCF and cohesin
+CTCF
 \end_layout
 
 \begin_layout Standard
 Insulators.
  Chicken beta globin.
+\end_layout
+
+\begin_layout Standard
+ChIA-PET - 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Handoko2011"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2820,6 +2880,10 @@ key "Sanyal2012"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Cohesin
 \end_layout
 
 \begin_layout Subsection
@@ -2863,6 +2927,10 @@ The annotated genome
 \begin_layout Standard
 Talking about the use of a systems biology approach to understand the linear
  genomic information of the genome.
+\end_layout
+
+\begin_layout Standard
+Cis regulatory modules here? CRMs? Bertie's paper.
 \end_layout
 
 \begin_layout Subsection
@@ -3147,7 +3215,7 @@ key "Nowell1960"
 \end_inset
 
 .
- A number of standardised therapies exist for CML and p to 87% of patients
+ A number of standardised therapies exist for CML and up to 87% of patients
  achieve complete cytogenetic remission 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3162,6 +3230,69 @@ key "Hehlmann2007"
 The Philadelphia chromosome
 \end_layout
 
+\begin_layout Standard
+The genetic abnormality associated with CML was first identified in 1960
+ by Nowell 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nowell1960"
+
+\end_inset
+
+.
+ They noticed the presence of an abnormal chromosome and called it the Philadelp
+hia chromosome, or Ph chromosome.
+ The chromosome was initially thought to be the result of a deletion until
+ chromosome banding enabled its identification as a product of a translocation
+ in 1972 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rowley1973"
+
+\end_inset
+
+.
+ The breakpoints within chromosomes 9 and 22 were subsequently identified
+ as being within the 
+\emph on
+c-ABL
+\emph default
+ and 
+\emph on
+BCR
+\emph default
+ genes, respectively.
+ The 
+\emph on
+c-ABL1 
+\emph default
+gene was named as such because of its similarity to the Abelson murine leukaemia
+ virus gene 
+\emph on
+v-ABL 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rowley2001"
+
+\end_inset
+
+.
+
+\emph default
+ Less is known about the 
+\emph on
+BCR
+\emph default
+ gene, so named because it was found at the Breakpoint Cluster Region of
+ chromosome 22 (not related to the B-cell receptor, often referred to as
+ the BCR).
+\end_layout
+
 \begin_layout Subsubsection
 
 \emph on
@@ -3169,7 +3300,79 @@ BCR
 \emph default
  and 
 \emph on
-ABL1 
+ABL1
+\end_layout
+
+\begin_layout Standard
+The
+\emph on
+ ABL1
+\emph default
+ gene encodes a tyrosine kinase which is ubiquitously expressed in mammalian
+ cells.
+ Involved in cell cycle regulation, it is thought to be involved in several
+ cell signalling pathways 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deininger2000"
+
+\end_inset
+
+.
+ Less is known about the endogenous function of the 
+\emph on
+BCR
+\emph default
+ protein; it contains a serine-threonine kinase and has GTPase activity
+ but its function is not known 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deininger2000"
+
+\end_inset
+
+.
+ The t(9;22)(q34;q11) translocation creates a fusion protein lacking the
+ SH2 domain of 
+\emph on
+ABL1
+\emph default
+ which normally regulates its activity.
+ This results in constitutively active tyrosine-kinase activity which drives
+ oncogenesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deininger2000"
+
+\end_inset
+
+.
+ Relatively little is known about the mechanism of translocation formation,
+ though ionising radiation is known to be a risk factor 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tanaka1989,Corso1995"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Identification and characterisation of the 
+\emph on
+BCR-ABL
+\emph default
+ translocation and its product led to the development of a number of kinase
+ inhibitors such as the drug imatinib, which achieve excellent success in
+ the treatment of CML 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hehlmann2007"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3177,134 +3380,256 @@ Mixed lineage leukaemia
 \end_layout
 
 \begin_layout Standard
-Acute Lymphoblastic Leukaemia (ALL) is a form of leukaemia defined by the
- uncontrolled proliferation of lymphoblasts, precursors to lymphocytes which
- differentiate into B cells, T cells and NK cells.
+Acute leukaemia is typically categorised as either Acute Lymphoblastic Leukaemia
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ALL"
+description "Acute Lymphoblastic Leukaemia"
+
+\end_inset
+
+ALL) or Acute Myeloid Leukaemia (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AML"
+description "Acute Myeloid Leukaemia"
+
+\end_inset
+
+AML) according to which lineage of blood cells are cancerous.
+ ALL is defined by the uncontrolled proliferation of lymphoblasts, precursors
+ to lymphocytes which differentiate into B cells, T cells and NK cells.
  ALL was estimated to account for approximately 12% of all leukaemia cases
  in the US in 2008 with around five and a half thousand cases occurring
  annually.
- ALL is the most common form of cancer in children aged under fourteen [47].
-\end_layout
+ ALL is the most common form of cancer in children aged under fourteen 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jemal2009"
 
-\begin_layout Standard
-Acute Myeloid Leukaemia (AML) is a cancer of the myeloid lineages of blood
- cells.
- AML was responsible for approximately 30% of all cases of leukaemia in
- the US for 2008, and has a higher mortality rate than ALL (66% and 27%
- mortality for AML and ALL, respectively) [47].
- The incidence of AML increases with age, the median age of AML diagnosis
+\end_inset
+
+.
+ AML is a cancer of the myeloid lineages of blood cells, responsible for
+ approximately 30% of all cases of leukaemia in the US for 2008 with a higher
+ mortality rate than ALL (66% and 27% mortality for AML and ALL, respectively)
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jemal2009"
+
+\end_inset
+
+.
+ The incidence of AML increases with age; the median age of AML diagnosis
  between 2002 and 2006 in the US was 67 years, and the median age of mortality
- was 72 [48].
+ was 72 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jemal2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-However, the phenotypic typing of acute leukaemia is not always clear.
+The biology of leukaemia is not always as discrete as the classification
+ however, some patients present with expansion of both lymphoid and myeloid
+ lineages 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Matutes1997"
+
+\end_inset
+
+.
+ Common genetic abnormalities found in these patients include the t(9;22)(q34;q1
+1) Philadelphia chromosome and structural changes in 11q23 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Matutes1997"
+
+\end_inset
+
+.
  Chromosomal translocations within band q23 of chromosome 11 have been implicate
-d in both AML and ALL.
- The gene involved in this translocation was identified by Ziemin-van der
- Poel et al.
- in 1991 and named MLL (Myeloid/Lymphoid Leukaemia, or Mixed Lineage Leukaemia)
- [49].
- In 2002, Armstrong et al.
- showed that acute lymphoblastic leukaemias containing a translocation within
- the MLL gene have a unique expression profile that is different to ALL
- and AML, and suggests an origin within a less committed progenitor cell
- which can produce cells in both the myeloid and lymphoid cell lineages,
- giving a biphenotypic leukaemia (see Figure 8) [50].
- They stated that these leukaemias are substantially different from AML
- and ALL and deserve a new, distinct, class of leukaemia called Mixed Lineage
- Leukaemia (MLL).
- The leukaemic cells in MLL express cell surface antigens normally present
- on both myeloid and lymphoid cells, such as CD14 and CD19 [51].
+d in both AML and ALL, all involve the gene 
+\emph on
+MLL
+\emph default
+ (also known as 
+\emph on
+ALL-1
+\emph default
+, 
+\emph on
+Htrx
+\emph default
+, 
+\emph on
+HRX
+\emph default
+) identified by Ziemin-van der Poel 
+\emph on
+et al.
+
+\emph default
+ in 1991 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ziemin-vanderPoel1991"
+
+\end_inset
+
+.
+ Translocations involving the 
+\emph on
+MLL
+\emph default
+ gene are found in over 70% of all infant leukaemias 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Biondi2000"
+
+\end_inset
+
+ and approximately 10% of adult AML cases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krivtsov2007"
+
+\end_inset
+
+.
+ The translocation correlates with poor patient prognosis and is of high
+ clinical interest 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chen1993"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-The work by Armstrong et al adds to existing evidence suggesting that MLL
- and some cases of ALL and AML are initiated specifically within undifferentiate
-d haematopoietic stem cells (HSCs) [52, 53].
- Haematopoietic stem cells are present within the CD34+ progenitor cell
- population, accounting for approximately 3% of normal human bone marrow
- and 0.3 to 0.5% of human cord blood mononuclear cells [44].
+In 2002, Armstrong 
+\emph on
+et al.
+
+\emph default
+ showed that acute lymphoblastic leukaemias containing a translocation within
+ the 
+\emph on
+MLL
+\emph default
+ gene have a unique expression profile that is different to ALL and AML,
+ and suggests an origin within a less committed progenitor cell which can
+ produce cells in both the myeloid and lymphoid cell lineages 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Armstrong2002"
+
+\end_inset
+
+.
+ They suggest that these leukaemias are substantially different from AML
+ and ALL and deserve a new, distinct, class of leukaemia called Mixed Lineage
+ Leukaemia (MLL).
+ Further cytogenetic studies have supported this theory; leukaemic cells
+ in MLL have been found to express cell surface antigens normally present
+ on both myeloid and lymphoid cells, such as CD14 and CD19 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krivtsov2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The suggestion that MLL is initiated within a progenitor cell is in line
+ with previous evidence showing that some cases of ALL and AML are initiated
+ within undifferentiated haematopoietic stem cells (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HSC"
+description "Haematopoietic stem cell"
+
+\end_inset
+
+HSCs) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sutherland1996,Bonnet1997"
+
+\end_inset
+
+.
+ HSCs are present within the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ progenitor cell population, accounting for approximately 3% of normal human
+ bone marrow and 0.3 to 0.5% of human cord blood mononuclear cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Libura2008"
+
+\end_inset
+
+.
  They are long lived and capable of self-renewal, differentiating into lineage
  restricted progenitors and eventually mature terminally differentiated
- white blood cells (Figure 8).
+ white blood cells.
  HSCs are necessary for the long term maintenance of the haematopoietic
  system and are commonly used to repopulate bone marrow after myeloablative
  therapy, as well as in the treatment of a number of other disorders such
- as autoimmune, cardiac and vascular diseases [54].
-\end_layout
+ as autoimmune, cardiac and vascular diseases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Burt2008"
 
-\begin_layout Standard
-The initiation of these leukaemias within a stem cell population is in line
- with our increasing understanding of cancer stem cells, shown to be present
- in both leukaemias and solid tumours [55].
- Healthy HSCs are already capable of self-renewal, so may require less oncogenic
- events to become cancerous [56].
+\end_inset
+
+.
+ Cancer stem cells are thought to be present in both leukaemias and solid
+ tumours 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hamburger1977"
+
+\end_inset
+
+ and HSCs are a probable founder population due to their ability to self-renewal
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reya2001"
+
+\end_inset
+
+.
  The concept of a small pool of cancer stem-cells driving the large heterogeneou
-s pool of cancer cells has many implications for how we treat cancer - these
+s pool of cancer cells has a number of implications for treatment - these
  are the cells that must be targeted for the efficient and long lasting
- cure of cancer [56].
-\end_layout
+ cure of cancer 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reya2001"
 
-\begin_layout Standard
-Figure 8 – Blood cell lineages, showing the Haematopoietic Stem Cell at
- the top, capable of differentiating into any one of the cell types below.
- From Wiki Commons [57].
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-The MLL gene
-\end_layout
-
-\begin_layout Standard
-Translocations involving the MLL gene (also known as ALL-1, Htrx, HRX) on
- chromosome 11q23 are found in over 70% of infant leukaemias [58] and approximat
-ely 10% of adult AML cases [51].
- Leukaemias with this translocation have a unique profile, and often a poor
- patient prognosis [59].
- As a result, a great deal of interest has been generated in the MLL gene
- and its translocation partners.
-\end_layout
-
-\begin_layout Standard
-Homozygous (-/-) MLL mice knockouts are embryonic lethal, and are unable
- to produce haematopoietic stem cells (HSCs) [60].
- Heterozygous (+/-) knockouts display retarded growth and anaemia, as well
- as other haematopoietic abnormalities [61].
- Inducible mouse knockout models show that MLL is required for bone marrow
- maintenance, with bone marrow failure approximately three weeks after MLL
- deletion.
- Further to this, cells lacking MLL in MLL+/- chimeras are selectively lost
- from the bone marrow, consistent with a decrease in proliferation of myelo-eryt
-hroid progenitors lacking MLL [62].
- However, haematopoietic stem cells (HSCs) lacking MLL are locked in ectopic
- cell cycle entry [62].
-\end_layout
-
-\begin_layout Standard
-There are 87 documented MLL translocation partners of which 51 have been
- characterised at the molecular level [63].
- The five most frequent translocation partners, AF4, AF9, ENL, AF10 and
- AF6 account for approximately 80% of cases [63].
- Translocations within the MLL gene usually occur within an 8.3 kb region
- known as the breakpoint cluster region (bcr) [64].
- The bcr contains exons 5-11 as well as a number of repeat regions, notably
- 8 direct Alu SINE repeats, 5 direct L1 and L2 LINE repeats and 2 MER elements,
- as well as a number of putative Topoisomerase II binding sites and a SAR/MAR
- [65] (see 7 - Abbreviations for full names).
-\end_layout
-
-\begin_layout Standard
-A paper by Scharf et al.
- in 2007 showed that an internal promoter exists within the bcr of the murine
- Mll gene, and that etoposide-induced double strand breaks colocalise with
- the putative RNA Polymerase II binding site in human peripheral blood mononucle
-ar cells, rather than a nearby topoisomerase II binding site [66].
- The idea than RNAP II might bind to the bcr of MLL is an attractive one
- – a stretch of DNA cleared of nucleosomes would explain the DNase I hypersensit
-ive site mapped to the same region [67] and the histone modifications that
- have been found within the MLL bcr [68].
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3312,59 +3637,480 @@ The MLL protein
 \end_layout
 
 \begin_layout Standard
-MLL is a large protein, consisting of multiple domains.
- It has been shown too require assembly and targeting by multiple other
- proteins, such as WDR5, RBPB5 and ASH2L [69].
- MLL contains three N-terminal AT hooks, responsible for binding the minor
- groove of AT-rich DNA; a CxxC zinc finger domain homologous to that found
- in DNA methyltransferase I; a transcriptional activation (TA) domain which
- binds CREB binding protein, a histone acetyltransferase and a SET domain
- which can methylate the lysine 4 residue of histone 4 (H3K4).
- Several of these domains are also present within the Drosophila trithorax
- complex, such as the speckled nuclear localization domains and SET domain.
- It is thought that MLL binds DNA in a non-sequence-specific manner via
- its AT-hook domains [70] and zinc finger domain [71].
+The MLL protein is a H3K4 methyltransferase involved in the positive regulation
+ of global gene regulation, including the maintenance of expression of the
+ 
+\emph on
+Hox
+\emph default
+ genes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yu1995"
+
+\end_inset
+
+.
+ 
+\emph on
+MLL
+\emph default
+ is required for embryonic haematopoiesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hess1997"
+
+\end_inset
+
+ and adult bone marrow maintenance 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jude2007"
+
+\end_inset
+
+.
+ MLL is a mammalian homologue of the 
+\emph on
+Drosophila melanogaster
+\emph default
+ trithorax complex and is thought to bind DNA via an AT-hook domain 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zeleznik-Le1994"
+
+\end_inset
+
+ and zinc finger domain 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Birke2002"
+
+\end_inset
+
+.
+ It's thought that the zinc finger domain targets MLL to unmethylated CpG
+ islands DNA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Birke2002"
+
+\end_inset
+
+ and ChIP studies have shown that MLL binds to a subset of transcribed genes
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milne2005"
+
+\end_inset
+
+.
+ MLL binds promoters and gene bodies, associating tightly with RNA Polymerase
+ II 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milne2005"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-Chromatin immunoprecipitation (ChIP) experiments pulling down chromatin
- fragments associated with MLL have shown interactions with 90% of elements
- occupied by RNAP II, including both promoters and intergenic regions [72,
- 73].
- This demonstrates its role as a global regulator of gene expression, much
- like the Drosophila trithorax genes to which it shares homology.
+All known MLL fusion proteins contain exons 8-13 of 
+\emph on
+MLL 
+\emph default
+and in-frame exons of a partner gene 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krivtsov2007"
+
+\end_inset
+
+.
+ Fusion proteins always retain their AT-hook and zinc-finger CxxC motifs,
+ which are essential for their transforming potential 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Slany1998"
+
+\end_inset
+
+.
+ The H3K4 methyltransferase domain of MLL is often lost in fusion proteins
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krivtsov2007"
+
+\end_inset
+
+, despite this the fusion proteins can drive constitutive expression of
+ 
+\emph on
+HOXA9
+\emph default
+ and 
+\emph on
+MEIS1
+\emph default
+, which if over-expressed together in the absence of a MLL fusion protein
+ give a similar phenotype 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zeisig2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+The 
+\emph on
+MLL
+\emph default
+ gene
 \end_layout
 
 \begin_layout Standard
-Figure 11 – Mouse models of MLL-mediated leukaemogenesis.
- From Daser et al.
- (2005) [74].
+Translocations within the 
+\emph on
+MLL 
+\emph default
+gene are found within approximately 10% of all human leukaemias 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huret2001"
+
+\end_inset
+
+.
+ There are 87 documented 
+\emph on
+MLL
+\emph default
+ translocation partners of which 51 have been characterised at the molecular
+ level 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meyer2006"
+
+\end_inset
+
+; the five most frequent translocation partners, 
+\emph on
+AF4
+\emph default
+, 
+\emph on
+AF9
+\emph default
+, 
+\emph on
+ENL
+\emph default
+, 
+\emph on
+AF10
+\emph default
+ and 
+\emph on
+AF6
+\emph default
+ account for approximately 80% of cases 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Meyer2006"
+
+\end_inset
+
+.
+ Translocations within the 
+\emph on
+MLL
+\emph default
+ gene usually occur within an 8.3 kb 
+\emph on
+BamHI
+\emph default
+ fragment known as the breakpoint cluster region 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gu1994"
+
+\end_inset
+
+.
+ This region contains exons 5-11 as well as a number of repeat regions,
+ notably 8 direct 
+\emph on
+Alu
+\emph default
+ SINE repeats, 5 direct L1 and L2 LINE repeats and 2 MER elements, as well
+ as a number of putative Topoisomerase II binding sites and a SAR/MAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sung2006"
+
+\end_inset
+
+.
+ An internal promoter is also present within the murine 
+\emph on
+Mll 
+\emph default
+breakpoint cluster region, correlating with etoposide-induced DSBs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Scharf2007"
+
+\end_inset
+
+, DNase I hypersensitive sites 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Strissel1998"
+
+\end_inset
+
+ and histone modifications associated with transcription 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khobta2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Mechanisms of 
+\emph on
+MLL
+\emph default
+ translocation formation
 \end_layout
 
 \begin_layout Standard
-MLL is involved in the maintenance of expression of the Hox genes [61] and
- is required for embryonic haematopoiesis [75].
- Much work has gone into the function of MLL fusion proteins and revealed
- a complex and diverse picture (see reviews [51] and [74]).
- Many mouse models of MLL-fusion protein mediated leukaemias have been developed
- using knock-in systems, providing a system with which to study the mechanisms
- of MLL directed leukaemogenesis (Figure 11).
- For example, it has been shown that DOT1L knockouts are not susceptible
- to transformation which the fusion protein MLL-AF10, suggesting that this
- H3K79 methyltransferase may be involved in the reprogramming of the epigenetic
- state of certain genes, notably the HoxA cluster genes [76].
- The up-regulation of the Hoxa7 and Hoxa9 appears to be important, and is
- required for transformation by the MLL-ENL fusion protein [77].
+A clue to how translocations form within the 
+\emph on
+MLL 
+\emph default
+gene comes from the observation that 11q23 translocations are especially
+ prevalent in therapy-related leukaemias - secondary leukaemias that develop
+ in patients after treatment for a primary cancer with topoisomerase II
+ inhibitors 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krivtsov2007"
+
+\end_inset
+
+.
+ Topoisomerases are found in all eukaryotic nuclei and are able to relieve
+ supercoiling and promote chromosome disentanglement 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Buck2004"
+
+\end_inset
+
+.
+ They function by binding DNA, forming a transient double strand break and
+ passing another strand of DNA through the gap, before ligating the double
+ strand break.
+ 
 \end_layout
 
 \begin_layout Standard
-Generally, it seems that fusion proteins often recruit a large number of
- chromatin remodelling factors to the normal gene targets of MLL, changing
- the histone methylation marks and increasing the level of expression.
+Topoisomerases are important in transcription, which creates supercoils
+ as template DNA is processed through static RNA Polymerase II enzymes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu1987"
+
+\end_inset
+
+.
+ DNA topoisomerase II associates with gene promoters 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Collins2001"
+
+\end_inset
+
+ and is required for the transcription of genes longer than 3 Kbp in yeast
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joshi2012"
+
+\end_inset
+
+.
+ Topoisomerase II induced double strand breaks have been implicated in the
+ regulation of certain genes via the assembly of transcription complexes
+ and changes in chromatin structure 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ju2006"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
+DNA topoisomerase II inhibitors are commonly used as chemotherapeutic agents
+ and work by decreasing the ligation rate, disrupting the cleavage / ligation
+ equilibrium.
+ This leads to an increase in DNA cleavage and an accumulation of double
+ strand breaks, triggering the cell DNA damage response and leading to cell
+ death by apoptosis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Burden1998"
 
+\end_inset
+
+.
+ Topoisomerase II inhibitors are widely used chemotherapeutic agents, effective
+ against a range of malignancies including small-cell lung cancer and gonadal
+ tumours 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arnold1981"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 1/MLL locus/MLL locus.eps
+	lyxscale 60
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Diagram of the 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MLL-breakpoint-cluster-region"
+
+\end_inset
+
+
+\series bold
+Diagram of the 
+\emph on
+MLL
+\emph default
+ breakpoint cluster region
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+MLL 
+\emph default
+breakpoint cluster region contains a number of putative topoisomerase II
+ binding sites, prompting a number of groups to hypothesise a mechanism
+ of topoisomerase inhibitor related translocations.
+ Libura 
+\emph on
+et al.
+
+\emph default
+ showed that CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ HSPCs exposed to etoposide formed 11q23 chromosomal aberrations typical
+ of those seen in clinical samples 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Libura2005"
+
+\end_inset
+
+.
+ They went on to show that such exposure to etoposide increased the proliferativ
+e potential of the cells in a bone marrow graft assay using immune-deficient
+ mice 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Libura2008"
+
+\end_inset
+
+.
+ This data supports a model whereby poisoned topoisomerase II may create
+ double strand breaks within the 
+\emph on
+MLL
+\emph default
+ gene, allowing the NHEJ machinery to aberrantly repair the locus due to
+ microhomology found in the nearby repetitive elements (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MLL-breakpoint-cluster-region"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
