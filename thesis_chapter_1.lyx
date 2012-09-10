@@ -1220,17 +1220,20 @@ key "Wurtele2006"
 Nuclear compartmentalisation
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Cajal bodies, speckles, nucleosomes
+\begin_layout Itemize
+Cajal bodies
 \end_layout
 
-\end_inset
+\begin_layout Itemize
+Speckles
+\end_layout
 
+\begin_layout Itemize
+Nucleoli
+\end_layout
 
+\begin_layout Itemize
+Polycomb / silencing bodies
 \end_layout
 
 \begin_layout Subsection
@@ -2458,7 +2461,14 @@ As our understanding of the structure of the nucleus evolves, an increasing
 \end_layout
 
 \begin_layout Subsection
-Transcription
+Transcription 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:drives-organisation-Transcription"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2588,7 +2598,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Subsubsection
-Not finished
+Not finished - write about transcription stop cassette in T cells
 \end_layout
 
 \begin_layout Standard
@@ -2850,12 +2860,12 @@ key "Gavrilov2010"
 CTCF
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Insulators.
  Chicken beta globin.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 ChIA-PET - 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2866,7 +2876,7 @@ key "Handoko2011"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 CTCF not always marking insulators - interactions skipping CTCF sites in
  Sanyal 
 \emph on
@@ -2882,64 +2892,122 @@ key "Sanyal2012"
 
 \end_layout
 
+\begin_layout Itemize
+Talk about CTCF bordering domains, Hi-C papers
+\end_layout
+
 \begin_layout Subsection
 Cohesin
+\end_layout
+
+\begin_layout Itemize
+Introduction to standard stuff about sister chromatid adhesion
+\end_layout
+
+\begin_layout Itemize
+Basically all of Suzie's papers showing that Cohesin binds CTCF in interphase
 \end_layout
 
 \begin_layout Subsection
 Actin and myosin
 \end_layout
 
+\begin_layout Itemize
+Nuclear actin and myosin and stuff.
+\end_layout
+
 \begin_layout Subsection
 Replication
+\end_layout
+
+\begin_layout Itemize
+Should probably write quite a bit here as haven't talked about it at all
+ yet
+\end_layout
+
+\begin_layout Itemize
+Similarity to transcription / factories etc
 \end_layout
 
 \begin_layout Subsection
 The self-organisation model
 \end_layout
 
-\begin_layout Standard
-Transcription factor networks (Bertie).
- Cook paper on entropy.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Not totally sure that this section is necessary?
-\end_layout
-
-\begin_layout Plain Layout
-Cook 2002, Iborra and Cook 2002.
-\end_layout
+\begin_layout Itemize
+Cook paper on entropy basics, nature of everything wanting to cluster.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cook2002,Iborra1996"
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Itemize
+Transcription factor networks (Bertie).
+\end_layout
+
+\begin_layout Itemize
+Mention specialised transcription factories again?
+\end_layout
+
 \begin_layout Section
 The annotated genome
 \end_layout
 
-\begin_layout Standard
-Talking about the use of a systems biology approach to understand the linear
- genomic information of the genome.
+\begin_layout Itemize
+Talk about how wonderful systems biology is
 \end_layout
 
-\begin_layout Standard
-Cis regulatory modules here? CRMs? Bertie's paper.
+\begin_layout Itemize
+Integration of datasets - ChIP Seq is two dimensional and needs interaction
+ data to be understood
 \end_layout
 
+\begin_layout Itemize
+Correlation between different marks gives the full picture
+\end_layout
+
+\begin_layout Itemize
+Genome wide studies paving the way for a different type of analysis
+\end_layout
+
+\begin_layout Itemize
+Talk about the systems biology of networks
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This is where I extoll the virtues of Bertie's work looking at transcription
+ factor networks
+\end_layout
+
+\begin_layout Itemize
+Use 
+\emph on
+cis 
+\emph default
+regulatory modules as an example? Then shoot down with Dekker 5C paper?
+ Check Bertie doesn't love them first (I think he might)
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 The ENCODE project
 \end_layout
 
-\begin_layout Standard
-Hailed by the media as the next big step after the sequencing of the human
- genome, the recently published ENCODE project has .
+\begin_layout Itemize
+Description of ENCODE project
+\end_layout
+
+\begin_layout Itemize
+Couple of key findings
+\end_layout
+
+\begin_layout Itemize
+Mention value of ENCODE datasets beyond initial publications
 \end_layout
 
 \begin_layout Section
@@ -4122,8 +4190,8 @@ Breakage first and contact first models
 \end_layout
 
 \begin_layout Standard
-For a chromosomal translocaiton to form, two simultaenous DSBs must be extremely
- close in three-dimensional space.
+For a chromosomal translocation to form, two double strand breaks must exist
+ simultaneously and be adjacent in three-dimensional space.
  Two models have been described to explain how DSBs may meet in the nucleus
  – the breakage first model and the contact first model.
  The breakage first model states that double strand breaks can form anywhere
@@ -4154,7 +4222,7 @@ key "Aten2004"
  DSBs 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Jakob2009a"
+key "Jakob2009"
 
 \end_inset
 
@@ -4184,7 +4252,7 @@ g and repair.
  foci exhibited only a small degree of movement 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Jakob2009a"
+key "Jakob2009"
 
 \end_inset
 
@@ -4194,12 +4262,12 @@ key "Jakob2009a"
 et al.
 
 \emph default
- showed a high degree of positional stability of DSB ends created by enodonuclea
-se digestion, with a higher degree of local diffusion seen in the absence
+ showed a high degree of positional stability of DSB ends created by endonucleas
+e digestion, with a greater degree of local diffusion seen in the absence
  of the Ku80 DNA-end binding protein 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Soutoglou2007c"
+key "Soutoglou2007"
 
 \end_inset
 
@@ -4211,18 +4279,105 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
-Branco and Pombo, Plos Biol 2006
-\end_layout
+The large scale organisation of chromosome territories has been implicated
+ in translocation frequency by a number of studies.
+ Kozubek 
+\emph on
+et al.
 
-\begin_layout Standard
+\emph default
+ showed that chromosomes 9 and 22 were found in the centre nuclei more frequentl
+y that would be expected by chance in lymphocytes, T- and B-cells, HL60
+ cells and bone marrow cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kozubek1999"
+
+\end_inset
+
+.
+ They used neutron irradiation to show that transfer of genetic material
+ was much higher than that found with chromosome 8, which was found towards
+ the nuclear periphery 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kozubek1999"
+
+\end_inset
+
+.
+ Parada 
+\emph on
+et al.
+
+\emph default
+ investigated the positions of chromosomes 12, 14 and 15 in a mouse lymphoma
+ cell line and mouse splenocytes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parada2002a"
+
+\end_inset
+
+.
+ The found that two translocated chromosomes preferentially paired together
+ in the nucleus of the cell line as well as in normal cells not containing
+ the translocation.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parada2002a"
+
+\end_inset
+
+.
+ Parada 
+\emph on
+et al.
+
+\emph default
+ went on in a further study to examine the positioning of a larger range
+ of chromosomes in a number of different tissue types 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Parada2004b"
 
 \end_inset
 
- - tissue specific CT pairing in mouse, correlates with tissue translocation
- incidence
+.
+ They found that chromosome pairing was tissue specific and correlated with
+ the occurrence of tissue-specific translocation events 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parada2004b"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In 2006, Branco and Pombo published a study where they developed a new technique
+ known as cryo-FISH to enhance the resolution of chromosome territory detection
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Branco2006"
+
+\end_inset
+
+.
+ This technique had sufficient resolution to study the degree of intermingling
+ between chromosome territories and they found that the degree of intermingling
+ between chromosome pairs correlated strongly with their propensity to form
+ translocations when subjected to radiation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Branco2006"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4230,28 +4385,116 @@ Transcription Factories
 \end_layout
 
 \begin_layout Standard
-Cam's Myc and Igh RNA-FISH paper.
-\end_layout
+Mounting evidence has shown that in addition to CT pairing, the position
+ of specific genes involved in chromosomal translocations are frequently
+ found in close proximity 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Neves1999,Roix2003a"
 
-\begin_layout Standard
-http://www.ncbi.nlm.nih.gov/pubmed/22829791 - Mechanism of Generation of Therapy
- Related Leukemia in Response to Anti-Topoisomerase II Agents.
+\end_inset
+
+.
+ As discussed in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:drives-organisation-Transcription"
+
+\end_inset
+
+, localisation at transcription factories can drive organisation within
+ the genome.
+ Osborne 
+\emph on
+et al.
+
+\emph default
+ used DNA- and RNA-FISH to study the localisation of the 
+\emph on
+Myc
+\emph default
+ proto-oncogene upon activation of B cells 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2007"
+
+\end_inset
+
+.
+ They showed that 
+\emph on
+Myc
+\emph default
+ on mouse chromosome 15 is dynamically recruited to an existing transcription
+ factory and that this transcription factory was preferentially occupied
+ by 
+\emph on
+Igh 
+\emph default
+on mouse chromosome 12.
+ This preferential association at transcription factories leads to a model
+ whereby genes sharing transcription factories are predisposed to the formation
+ of chromosomal translocations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Osborne2007"
+
+\end_inset
+
+.
+ Similar transcriptional associations have been observed for 
+\emph on
+MLL
+\emph default
+ and its frequent translocation partners 
+\emph on
+AF4 
+\emph default
+and 
+\emph on
+AF9
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cowell2012"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Hypothesis and aim of thesis
 \end_layout
 
-\begin_layout Standard
-Talk about the why of translocations - specificity and frequency of certain
- translocations means that partner selection can't be completely random.
- Hypothesis and aims: that specific gene pairs are predisposed to chromosomal
- translocations because they are co-localising at transcription factories.
- Aims of the project are to investigate the genome-wide association networks
- of specific oncogenes and see if gene pair co-localisation frequency matches
- up with gene-pair translocation frequency.
+\begin_layout Itemize
+State hypothesis - Preferential gene co-association within transcription
+ factories predisposes specific gene pairs to the formation of chromosomal
+ translocations.
 \end_layout
 
+\begin_layout Itemize
+Aims - investigate the genome-wide association networks of specific oncogenes
+ and see if gene pair co-localisation frequency matches up with gene-pair
+ translocation frequency
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Do this in an unbiased manner (not purely by RNA- and DNA-FISH), mention
+ biased nature of such studies
+\end_layout
+
+\begin_layout Itemize
+Do this with a genome wide technique
+\end_layout
+
+\begin_layout Itemize
+Do this in the cell type where we think the translocations are taking place
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Note Comment
 status open
