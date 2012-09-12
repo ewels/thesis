@@ -28,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement h
 \paperfontsize default
 \spacing double
 \use_hyperref true
@@ -3740,6 +3741,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+27304920
 \end_layout
 
 \end_inset
@@ -3749,6 +3752,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+10005936 (36.6%)
 \end_layout
 
 \end_inset
@@ -3758,6 +3763,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+4121827 (15.1%)
 \end_layout
 
 \end_inset
@@ -3767,6 +3774,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+13177157 (43.8%)
 \end_layout
 
 \end_inset
@@ -3798,6 +3807,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+2170
 \end_layout
 
 \end_inset
@@ -3807,6 +3818,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+512 (23.6%)
 \end_layout
 
 \end_inset
@@ -3816,6 +3829,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+331 (15.3%)
 \end_layout
 
 \end_inset
@@ -3825,6 +3840,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+1327 (61.2%)
 \end_layout
 
 \end_inset
@@ -3870,6 +3887,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+12583 
+\emph on
+(461)
 \end_layout
 
 \end_inset
@@ -3879,6 +3900,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+19543
+\emph on
+ (1953)
 \end_layout
 
 \end_inset
@@ -3888,6 +3913,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+12453
+\emph on
+ (3021)
 \end_layout
 
 \end_inset
@@ -3897,6 +3926,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+9930
+\emph on
+ (754)
 \end_layout
 
 \end_inset
@@ -3930,6 +3963,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+23693130
 \end_layout
 
 \end_inset
@@ -3939,6 +3974,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+11118007 (46.9%)
 \end_layout
 
 \end_inset
@@ -3948,6 +3985,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+3868012 (16.3%)
 \end_layout
 
 \end_inset
@@ -3957,6 +3996,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+8707111 (36.7%)
 \end_layout
 
 \end_inset
@@ -3988,6 +4029,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+2171
 \end_layout
 
 \end_inset
@@ -3997,6 +4040,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+467 (21.5%)
 \end_layout
 
 \end_inset
@@ -4006,6 +4051,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+324 (14,.9%)
 \end_layout
 
 \end_inset
@@ -4015,6 +4062,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+1380 (63.6%%)
 \end_layout
 
 \end_inset
@@ -4060,6 +4109,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+10913 
+\emph on
+(461)
 \end_layout
 
 \end_inset
@@ -4069,6 +4122,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+23807
+\emph on
+ (2141)
 \end_layout
 
 \end_inset
@@ -4078,6 +4135,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+11938
+\emph on
+ (3086)
 \end_layout
 
 \end_inset
@@ -4087,6 +4148,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+6310
+\emph on
+ (725)
 \end_layout
 
 \end_inset
@@ -4120,6 +4185,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+22727268
 \end_layout
 
 \end_inset
@@ -4129,6 +4196,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+8803028 (38.7%)
 \end_layout
 
 \end_inset
@@ -4138,6 +4207,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+4359567 (19.2%)
 \end_layout
 
 \end_inset
@@ -4147,6 +4218,8 @@ Raw
 
 \begin_layout Plain Layout
 
+\size scriptsize
+9564673 (42.1%)
 \end_layout
 
 \end_inset
@@ -4178,6 +4251,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+2439
 \end_layout
 
 \end_inset
@@ -4187,6 +4262,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+470 (19.3%)
 \end_layout
 
 \end_inset
@@ -4196,6 +4273,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+397 (16.3%)
 \end_layout
 
 \end_inset
@@ -4205,6 +4284,8 @@ De-duplicated
 
 \begin_layout Plain Layout
 
+\size scriptsize
+1572 (64.5%)
 \end_layout
 
 \end_inset
@@ -4250,6 +4331,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+9318
+\emph on
+ (410)
 \end_layout
 
 \end_inset
@@ -4259,6 +4344,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+18730
+\emph on
+ (2128)
 \end_layout
 
 \end_inset
@@ -4268,6 +4357,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+10981
+\emph on
+ (2519)
 \end_layout
 
 \end_inset
@@ -4277,6 +4370,10 @@ Av.
 
 \begin_layout Plain Layout
 
+\size scriptsize
+6084
+\emph on
+ (636)
 \end_layout
 
 \end_inset
@@ -4303,7 +4400,7 @@ name "tab:e4C-library-read-counts"
 \series bold
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 e4C library read counts
@@ -4312,6 +4409,11 @@ e4C library read counts
 \end_inset
 
 e4C library read counts.
+ 
+\series default
+Percentages in brackets show proportion of total number of reads.
+ Italicised numbers in brackets show the duplicates normalised to the total
+ number of reads in that region for easier comparison between libraries.
 \end_layout
 
 \end_inset
@@ -4438,10 +4540,11 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="5">
+<lyxtabular version="3" rows="19" columns="6">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
-<column alignment="right" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <column alignment="right" valignment="top" width="0">
 <column alignment="right" valignment="top" width="0">
 <column alignment="right" valignment="top" width="0">
@@ -4455,13 +4558,40 @@ status open
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Total 
+\emph on
+AseI
+\emph default
+ Fragments
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-Observed Fragments
+\emph on
+trans
+\emph default
+ Fragments
 \end_layout
 
 \end_inset
@@ -4480,12 +4610,12 @@ fragments (
 \begin_inset Formula $\leq$
 \end_inset
 
- 5 megabases)
+ 5 Mb)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4499,28 +4629,14 @@ fragments (
 \begin_inset Formula $>$
 \end_inset
 
- 5 megabases)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\emph on
-trans 
-\emph default
-fragments
+ 5 Mb)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4531,13 +4647,22 @@ BCR Run 1
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-8612 (0.62%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4547,8 +4672,6 @@ BCR Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-532 (43.36%)
 \end_layout
 
 \end_inset
@@ -4558,8 +4681,6 @@ BCR Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-666 (8.31%)
 \end_layout
 
 \end_inset
@@ -4569,15 +4690,71 @@ BCR Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-7414 (0.53%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4588,13 +4765,22 @@ BCR Run 2
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-7612 (0.54%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4604,8 +4790,6 @@ BCR Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-507 (41.32%)
 \end_layout
 
 \end_inset
@@ -4615,8 +4799,6 @@ BCR Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-610 (7.61%)
 \end_layout
 
 \end_inset
@@ -4626,15 +4808,71 @@ BCR Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-6495 (0.47%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4645,13 +4883,22 @@ MLL Run 1
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-468 (0.03%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4661,8 +4908,6 @@ MLL Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-45 (3.25%)
 \end_layout
 
 \end_inset
@@ -4672,8 +4917,6 @@ MLL Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-40 (0.07%)
 \end_layout
 
 \end_inset
@@ -4683,15 +4926,71 @@ MLL Run 1
 
 \begin_layout Plain Layout
 
-\size scriptsize
-383 (0.03%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4702,13 +5001,22 @@ MLL Run 2
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-774 (0.06%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4718,8 +5026,6 @@ MLL Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-62 (4.48%)
 \end_layout
 
 \end_inset
@@ -4729,8 +5035,6 @@ MLL Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-68 (0.11%)
 \end_layout
 
 \end_inset
@@ -4740,15 +5044,71 @@ MLL Run 2
 
 \begin_layout Plain Layout
 
-\size scriptsize
-644 (0.05%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4759,13 +5119,22 @@ MLL Run 3
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-5176 (0.37%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4775,8 +5144,6 @@ MLL Run 3
 
 \begin_layout Plain Layout
 
-\size scriptsize
-91 (6.58%)
 \end_layout
 
 \end_inset
@@ -4786,8 +5153,6 @@ MLL Run 3
 
 \begin_layout Plain Layout
 
-\size scriptsize
-236 (0.39%)
 \end_layout
 
 \end_inset
@@ -4797,15 +5162,71 @@ MLL Run 3
 
 \begin_layout Plain Layout
 
-\size scriptsize
-4849 (0.36%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4816,13 +5237,22 @@ MLL Run 3 PhiX
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-673 (0.05%)
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4832,8 +5262,6 @@ MLL Run 3 PhiX
 
 \begin_layout Plain Layout
 
-\size scriptsize
-69 (4.99%)
 \end_layout
 
 \end_inset
@@ -4843,8 +5271,6 @@ MLL Run 3 PhiX
 
 \begin_layout Plain Layout
 
-\size scriptsize
-62 (0.10%)
 \end_layout
 
 \end_inset
@@ -4854,15 +5280,71 @@ MLL Run 3 PhiX
 
 \begin_layout Plain Layout
 
-\size scriptsize
-542 (0.04%)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4873,7 +5355,18 @@ ABL
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4911,7 +5404,65 @@ ABL
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4922,7 +5473,18 @@ MLL Promoter 1
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4960,7 +5522,65 @@ MLL Promoter 1
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+% Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4971,53 +5591,22 @@ MLL Promoter 2
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-Possible 
-\emph on
-BCR
+Hit Fragments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -5027,8 +5616,6 @@ BCR
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1399460
 \end_layout
 
 \end_inset
@@ -5038,19 +5625,6 @@ BCR
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1227
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-8013
 \end_layout
 
 \end_inset
@@ -5060,67 +5634,64 @@ BCR
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1390220
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size scriptsize
-Possible 
-\emph on
-MLL
+% Fragments
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1399460
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1384
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
-59813
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\size scriptsize
-1338263
 \end_layout
 
 \end_inset
@@ -5871,36 +6442,6 @@ reference "sub:BCR-9q34-single-window-testing"
 \end_layout
 
 \begin_layout Section
-A genome wide approach
-\end_layout
-
-\begin_layout Standard
-Expanding the above approach to determine significance across the entire
- genome.
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-I haven't done this work yet.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I haven't done this work yet.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 
 \emph on
 AseI
@@ -6080,52 +6621,6 @@ A standard score represents how many standard deviations from the mean a
 \begin_layout Standard
 Talk about the work I did doing pairwise correlation analysis on multiple
  different 4C data sets..?
-\end_layout
-
-\begin_layout Section
-Limitations of the e4C data / Discussion
-\end_layout
-
-\begin_layout Subsection
-Coverage 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Limitations-Coverage"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The problems of low coverage in the libraries, and how this differs for
- the different bait regions.
- What we did to try to overcome this (using GM12878 cells, using multiple
- bait regions).
- Why this makes the data from the ABL1 and MLL baits have limited use.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Put this in the discussion chapter? 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Put this in the discussion chapter? 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

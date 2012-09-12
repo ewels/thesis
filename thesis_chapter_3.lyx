@@ -28,7 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
+\float_placement h
 \paperfontsize default
 \spacing double
 \use_hyperref true

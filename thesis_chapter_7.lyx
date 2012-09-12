@@ -9,7 +9,7 @@
 \use_default_options true
 \master thesis_master.lyx
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -73,6 +73,29 @@ Discussion
 \end_layout
 
 \begin_layout Section
+Limitations of the e4C data / Discussion
+\end_layout
+
+\begin_layout Subsection
+Coverage 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Limitations-Coverage"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The problems of low coverage in the libraries, and how this differs for
+ the different bait regions.
+ What we did to try to overcome this (using GM12878 cells, using multiple
+ bait regions).
+ Why this makes the data from the ABL1 and MLL baits have limited use.
+\end_layout
+
+\begin_layout Section
 Sample choice
 \end_layout
 
@@ -82,7 +105,13 @@ Why I'm using CD34+ cells - initiation of cancers in haematopoietic stem
 \end_layout
 
 \begin_layout Section
-BCR and ABL1
+Association between 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
 \end_layout
 
 \begin_layout Standard
@@ -93,7 +122,10 @@ CML and Philadelphia Chromosome.
  not why it is.
  Talk about DNA-FISH study looking at BCR-ABL-PMLa association through developme
 nt.
- 
+\end_layout
+
+\begin_layout Subsection
+Evidence for a bystander effect
 \end_layout
 
 \begin_layout Section

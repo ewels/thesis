@@ -89,8 +89,7 @@ The nucleus is a highly functional organelle, responsible for a huge variety
  compartments which specialise in processes such as transcription and replicatio
 n.
  In this chapter I will discuss the current understanding of nuclear structure
- and organisation, how we have obtained this knowledge, and how it may play
- a part in the initiation of certain cancers.
+ and organisation and how it may be involved in cancer.
 \end_layout
 
 \begin_layout Section
@@ -100,15 +99,11 @@ Chromatin
 \begin_layout Standard
 Chromatin is a general term used to describe the DNA packaged in the plethora
  of proteins that bind to it.
- There are two principle forms of chromatin: 
+ There are two principle forms of chromatin: euchromatin
 \emph on
-euchromatin 
+ 
 \emph default
-and 
-\emph on
-heterochromatin
-\emph default
-.
+and heterochromatin.
  These were first described in the early twentieth century due to their
  differential staining within the nucleus 
 \begin_inset CommandInset citation
@@ -118,27 +113,24 @@ key "Heitz1928"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Heterochromatin stains darkly because it remains highly condensed during
+ Heterochromatin stains darkly because it remains highly condensed during
  interphase, typically relocating to the nuclear periphery.
- It can be split into 
+ It can be split into constitutive
 \emph on
-constitutive heterochromatin
+ 
 \emph default
- and 
+heterochromatin and facultative
 \emph on
-facultative heterochromatin
+ 
 \emph default
-; the former describing heterochromatin found in all cell types, typically
- containing repetitive elements found in centromeres and telomeres; the
- latter describing less compacted inactive chromatin which can vary between
- cell types as they differentiate.
+heterochromatin, the former describing heterochromatin found in all cell
+ types, typically containing repetitive elements found in centromeres and
+ telomeres and the latter the less compacted inactive chromatin that can
+ vary between cell types as they differentiate.
  Heterochromatin is well known as being a repressive environment for gene
- expression; studies whereby normally active regions are artificially tethered
- to the inner nuclear membrane show the ablation of gene expression 
+ expression.
+ Studies whereby normally active regions are artificially tethered to the
+ inner nuclear membrane show the ablation of gene expression 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Finlan2008,Reddy2008"
@@ -154,7 +146,22 @@ key "Kumaran2008"
 \end_inset
 
 .
- 
+ Euchromatin is the site of most genic transcription, as shown by the presence
+ of RNA polymerase and nascent transcripts found in early fractionation
+ studies 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chesterton1974"
+
+\end_inset
+
+.
+ Its looser compaction allows the cellular machinery access to the DNA,
+ enabling the binding of transcription factors and the initiation of transcripti
+on.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -167,28 +174,16 @@ Talk about other heterochromatin functions? Reviewed in Grewal and Jia,
 
 \end_inset
 
- Euchromatin is the site of most geneic transcription, as shown by the presence
- of RNA Polymerase and nascent transcriptions found in early fractionation
- studies 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Chesterton1974"
 
-\end_inset
-
-.
- Its looser compaction allows access to the DNA by the cellular machinery;
- enabling the binding of transcription factors and the initiation of transcripti
-on.
 \end_layout
 
 \begin_layout Standard
 The differences between heterochromatin and euchromatin lie within the proteins
  that they contain.
- Chromatin acts as a platform for proteins to bind to, differences in histone
- modifications, variants, nucleosome packing and DNA modifications affect
- the accessibility and binding profile of the chromatin, and so how the
- DNA is interpreted by the cell.
+ Chromatin acts as a platform for proteins to bind to.
+ Differences in histone modifications, histone variants, nucleosome packing
+ and DNA modifications affect the accessibility and binding profile of the
+ chromatin, and therefore affect how the DNA is interpreted by the cell.
 \end_layout
 
 \begin_layout Subsection
@@ -277,16 +272,6 @@ key "Davey2002"
  At their most basic level, histones function to compact DNA by counteracting
  the negative charge of the phosphorylated back bone.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-nucleosome spacing? chromatin fibres?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -313,10 +298,11 @@ key "Strahl2000a"
 
 \end_inset
 
-, different modifications are related to different chromatin states.
+.
+ Different modifications are related to different chromatin states.
  For example, active promoters are typically enriched for di- and tri-methylatio
 n of histone 3 lysine 4 (H3K4) whilst inactive promoters are enriched for
- H3K27me3 and H3K9me3 (Fig 
+ trimethylation at lysine residues 27 (H3K27me3) and 9 (H3K9me3) (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Histone-mod-dashboard"
@@ -373,9 +359,9 @@ key "Heintzman2007,Ernst2010,Hon2009"
 et al.
 
 \emph default
- used the genome-wide profiles of 9 histone modifications in 9 different
- cell types to define 15 different chromatin states, describing different
- states of promoters, enhancers and insulators, amongst others
+ used the genome-wide profiles of nine histone modifications in nine different
+ cell types to define fifteen chromatin states, including promoters, enhancers,
+ insulators and transcribed regions 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ernst2011"
@@ -391,8 +377,8 @@ description "Genome-wide association study"
 
 \end_inset
 
-GWAS) and found numerous enhancer elements which coincide with disease associate
-d mutations.
+GWAS) and found numerous enhancer elements that coincide with disease associated
+ mutations.
  This systems biology approach can reveal the dynamics across different
  cell types and can be a powerful tool in understanding how the genome is
  interpreted in health and disease (see Section 
@@ -481,7 +467,7 @@ In addition to histone tail modifications, chromatin can be modified by
  Canonical core histone genes are found in clustered repeat arrays within
  the genome, are transcribed during replication and are highly conserved
  between species.
- Histone variants are found as single genes spread through the genome, and
+ Histone variants are found as single genes spread through the genome and
  are subject to far greater diversity 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -565,7 +551,7 @@ key "Zlatanova2008"
 \end_inset
 
 .
- H2A.Z promotes the recruitment of RNA Polymerase II by mediating protein
+ H2A.Z promotes the recruitment of RNA polymerase II by mediating protein
  interactions 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -575,16 +561,6 @@ key "Adam2001"
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ieuan writes that H2A.Z is involved in centromere formation...
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -592,7 +568,7 @@ Ieuan writes that H2A.Z is involved in centromere formation...
 status open
 
 \begin_layout Plain Layout
-H3.3, H2A.Z, H2A.X (DNA damage)
+H3.3, H2A.Z, H2A.X (DNA damage), H2A.Z in centromere formation...
 \end_layout
 
 \end_inset
@@ -626,30 +602,43 @@ key "Trask2002"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-
-\series bold
+ In prokaryotes, genes are often found in cistrons and can be coexpressed
+ in single polycistronic mRNAs.
+ This type of linear organisation is not present in eukaryotes, though gene
+ clusters resulting from tandem duplication are found throughout the genome.
+ Some specific examples of two-dimensional clustering have been shown: testes-sp
+ecific genes in 
 \emph on
-Put in stuff about yeast and drosophila gene clustering here 
+Drosophila melanogaster 
+\emph default
+have been found in clusters more frequently than would be expected by chance
+\emph on
+ 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Janga2008,Boutanaev2002"
+key "Boutanaev2002"
 
 \end_inset
 
-
-\end_layout
+ and genes sharing transcription factors can be found in clusters in the
+ yeast 
+\emph on
+Saccharomyces
+\emph default
+ 
+\emph on
+cerevisiae
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Janga2008"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -706,7 +695,7 @@ key "Versteeg2003"
 Whilst the two-dimensional organisation of the genome cannot completely
  explain the degree of complexity found within the transcriptome, these
  studies demonstrate that the order of sequence within the genome is not
- entirely random, and can affect the transcriptional control of genes.
+ entirely random and can affect the transcriptional control of genes.
 \end_layout
 
 \begin_layout Section
@@ -832,8 +821,8 @@ key "Stack1977"
 et al., 
 \emph default
 showed that interphase chromosomes exist in territories by studying the
- pattern of DNA damage in metaphase chromosomes after spot irradiation in
- during interphase 
+ pattern of DNA damage in metaphase chromosomes after spot irradiation during
+ interphase 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cremer1982"
@@ -891,18 +880,17 @@ key "Ferreira1997,Visser1998"
 
  - those near the centre of the nucleus tend to be gene-rich, early replicating
  and small.
- The specificity of CT positioning is a topic of debate, though studies
- have suggested conservation of CT positioning through evolution 
+ CT positioning appears to be conserved through evolution 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tanabe2002"
 
 \end_inset
 
- and shown tissue specificity in chromosome pairing 
+ and is cell type specific 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kuroda2004,Parada2004b"
+key "Parada2004b,Kuroda2004"
 
 \end_inset
 
@@ -914,8 +902,8 @@ CTs and transcription
 \end_layout
 
 \begin_layout Standard
-It's known that for some but not all genes, positioning at the nuclear periphery
- correlates with reduced gene expression 
+It is known that for some but not all genes, positioning at the nuclear
+ periphery correlates with reduced gene expression 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kosak2002,Dietzel2004,Zink2004a"
@@ -923,13 +911,13 @@ key "Kosak2002,Dietzel2004,Zink2004a"
 \end_inset
 
 .
- To investigate nuclear positioning can cause changes in transcriptional
+ To investigate whether nuclear positioning can cause changes in transcriptional
  activity or is simply a consequence, two groups published studies which
  artificially tethered genomic regions to the inner nuclear membrane using
 \emph on
- 
+ lac
 \emph default
-Lac operators 
+ operators 
 \emph on
 (lacO)
 \emph default
@@ -982,6 +970,19 @@ key "Croft1999"
 
 \end_inset
 
+ and Bridger 
+\emph on
+et al.
+
+\emph default
+ showed a difference in CT positioning between proliferating and senescent
+ human fibroblasts 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bridger2000"
+
+\end_inset
+
 .
  Large scale rearrangements of CTs have also been observed during cell different
 iation 
@@ -1009,7 +1010,7 @@ Chromosome territory dynamics
 
 \begin_layout Standard
 The movement of chromatin loci within the nucleus is known to be largely
- due to local brownian motion, or 
+ due to local Brownian motion, or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1025,9 +1026,8 @@ key "Marshall1997,Chubb2002"
 
 \end_inset
 
-.
- Other studies have shown a mixture of local diffusion and larger, active
- movements 
+, though some studies have shown a mixture of local diffusion and larger,
+ active movements 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Vazquez2001"
@@ -1076,6 +1076,7 @@ key "Mehta2010"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1095,8 +1096,8 @@ key "Zirbel1993"
 \end_inset
 
  leading to a model whereby transcriptionally inactive genes are buried
- within territories and expressed genes contact in an inter-chromosome domain
- (
+ within territories and expressed genes are able to contact transcriptional
+ machinery in an inter-chromosome domain (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ICD"
@@ -1104,7 +1105,7 @@ description "Inter-chromosome domain"
 
 \end_inset
 
-ICD) where they can contact the transcriptional machinery 
+ICD) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cremer1993"
@@ -1156,17 +1157,17 @@ key "Verschure1999,Mahy2002"
 et al.
 
 \emph default
- showed that actively transcribed 
+ showed that the actively transcribed 
 \emph on
 Uros
 \emph default
- gene is more frequently outside it's CT than the inactive gene 
+ gene is more frequently outside the CT than the inactive gene 
 \emph on
 Fgfr2
 \emph default
 , though this position was not necessary for transcription, suggesting that
  actively transcribed genes may preferentially locate to the surface of
- CTs, but this alone is not sufficient to drive transcription 
+ CTs, but that this alone is not sufficient to drive transcription 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Osborne2004"
@@ -1212,6 +1213,20 @@ key "Holley2002,Hlatky2002"
  chromosome territories, and that the extent of this intermingling correlated
  strongly with previously recorded irradiation induced translocation frequencies
  
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Branco2006"
+
+\end_inset
+
+.
+ Intermingling volumes changed significantly for three chromosome pairs
+ after transcription inhibition with 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-amanatin, suggesting a role for specific transcription interactions in
+ the organisation of the nucleus 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Branco2006"
@@ -1275,12 +1290,12 @@ Transcription factories
 
 \begin_layout Standard
 One nuclear subcompartment which has come to light within the past thirty
- years is the 
+ years are 
 \emph on
-transcription factory
+transcription factories
 \emph default
-, foci of hyper-phosphorylated RNA Polymerase II spread throughout the nucleus.
- The majority of geneic transcription appears to take place at transcription
+, foci of hyper-phosphorylated RNA polymerase II spread throughout the nucleus.
+ The majority of genic transcription appears to take place at transcription
  factories 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1340,7 +1355,7 @@ Nascent RNA and transcription factories.
  100 nm cryosections.
  Nascent RNA (green) is concentrated in punctate foci.
  (B) Model for a nucleolar factory, showing a transcript with multiple polymeras
-es generating a crescent shaped foci.
+es generating a crescent shaped focus.
  (C) Model for a nucleoplasmic factory.
  Multiple transcribed regions each with a single polymerase generate a smaller
  cloud of nascent transcripts.
@@ -1369,8 +1384,8 @@ key "Cook1999"
 \end_layout
 
 \begin_layout Standard
-The first study to suggest that Eukaryotic transcription does not take place
- with a processive RNA Polymerase moving along a DNA template was by Jackson,
+The first study to suggest that eukaryotic transcription does not take place
+ with a processive RNA polymerase moving along a DNA template was by Jackson,
  McCreedy and Cook in 1981.
  They showed that nascent RNA transcripts labelled with [
 \begin_inset script superscript
@@ -1390,7 +1405,7 @@ key "Jackson1981"
 \end_inset
 
 .
- They went on to show that RNA Polymerase II and active genes were also
+ They went on to show that RNA polymerase II and active genes were also
  resistant to elution after chromatin digestion 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1414,9 +1429,9 @@ description "Bromouridine triphosphate"
 
 \end_inset
 
-BrUTP) into nascent RNA; discrete foci of nascent transcription could be
- seen within the nucleus which did not form in the presence of the RNA Polymeras
-e II inhibitor α-amanitin 
+BrUTP) into nascent RNA; discrete foci of nascent transcription could then
+ be seen within the nucleus which did not form in the presence of the RNA
+ polymerase II inhibitor α-amanitin 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jackson1993"
@@ -1424,7 +1439,7 @@ key "Jackson1993"
 \end_inset
 
 .
- Further studies showed that these foci contain RNA Polymerase II along
+ Further studies showed that these foci contained RNA polymerase II along
  with many other components required for transcription 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1464,7 +1479,7 @@ key "Eskiw2008a"
 
 \begin_layout Standard
 The discovery of transcription factories has demanded a new model for the
- action of RNA Polymerase II 
+ action of RNA polymerase II 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Cook1999"
@@ -1472,17 +1487,17 @@ key "Cook1999"
 \end_inset
 
 .
- The revised model proposes that instead of RNA Polymerase II freely diffusing
+ The revised model proposes that instead of RNA polymerase II freely diffusing
  to active genes and tracking along the gene body, genes are recruited to
  transcription factories and are pulled through a stationary polymerase.
  Such a model provides a better explanation for the mechanics of transcription
  - clustering of transcriptional activity may enable the cell to conduct
  transcription in a much more efficient manner; HeLa nuclei have a 1 µM
- concentration of active RNA Polymerase II, whereas the local concentration
+ concentration of active RNA polymerase II, whereas the local concentration
  within transcription factories is closer to 1 mM 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Carter2008"
+key "Cook2002"
 
 \end_inset
 
@@ -1518,8 +1533,9 @@ key "Jackson1998"
 \end_inset
 
 .
- They showed that each HeLa cell nucleus contain ~ 2400 transcription factories,
- each with approximately 30 active RNA-Polymerase II complexes 
+ They showed that each HeLa cell nucleus contain approximately 2400 transcriptio
+n factories, each with approximately 30 active RNA polymerase II complexes
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jackson1998"
@@ -1532,7 +1548,8 @@ key "Jackson1998"
  to transcribe.
  The number of transcription factories varies a great deal amongst cell
  types, but the observation that genes colocalise within transcription factories
- has been confirmed by a number of different techniques; Osborne 
+ has been confirmed by a number of different techniques.
+ Osborne 
 \emph on
 et al.
 
@@ -1545,8 +1562,7 @@ key "Osborne2004"
 
 \end_inset
 
-.
- They went on to demonstrate that transcription is a discontinuous process,
+ and went on to demonstrate that transcription is a discontinuous process,
  with the frequency of nascent RNA transcription foci related to cellular
  mRNA concentrations, suggesting that transcription occurs in bursts.
  Multiple genes both in 
@@ -1571,7 +1587,7 @@ key "Osborne2004,Jackson1998"
 et al.
 
 \emph default
- showed that the immediate-early gene 
+ showed that the immediate-early genes 
 \emph on
 Myc 
 \emph default
@@ -1579,7 +1595,7 @@ and
 \emph on
 Fos
 \emph default
- are dynamically recruited to existing transcription factories within 5
+ are dynamically recruited to existing transcription factories within five
  minutes of B-cell stimulation, suggesting that the recruitment of genes
  to pre-existing transcription factories may be a method of transcriptional
  control 
@@ -1615,7 +1631,7 @@ After the demonstration that genes share transcription factories, a number
  of groups postulated that specific genes may colocalise at a subset of
  transcription factories.
  The self-organising principle applied to transcription factories would
- predict this; just as the local concentration of active RNA Polymerase
+ predict this; just as the local concentration of active RNA polymerase
  II is elevated by the clustering of transcribing units, the local concentration
  of transcription factors that bind to those transcribed units will also
  be elevated 
@@ -1674,6 +1690,15 @@ key "Osborne2007"
 \end_inset
 
 .
+ 
+\emph on
+Myc 
+\emph default
+and 
+\emph on
+Igh 
+\emph default
+are commonly translocated in Burkitt's lymphoma and mouse plasmacytoma.
  They showed that approximately one quarter of actively transcribing 
 \emph on
 Myc
@@ -1713,8 +1738,9 @@ key "Osborne2007"
 in-vitro
 \emph default
  that cells transfected with thousands of plasmids containing different
- transcriptional units clustered together at a handful transcription factories,
- segregated according to their promoter and the presence of an intron 
+ transcriptional units clustered together at a handful of transcription
+ factories, segregated according to their promoter and the presence of an
+ intron 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Xu2008a"
@@ -1840,7 +1866,7 @@ Hbb
  at transcription factories showed enrichment for genes with CACC motifs
  capable of binding the erythroid-specific transcription factor Klf1.
  Using immunofluorescence they found that nuclear Klf1 foci overlap with
- active RNA Polymerase II foci, suggesting that a subset of transcription
+ active RNA polymerase II foci, suggesting that a subset of transcription
  factories are enriched for Klf1 in erythroid tissues (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1851,7 +1877,22 @@ reference "fig:Klf1-specialised-transcription-factories"
 ).
  Co-localising Klf1 dependent genes associated with these Klf1 specific
  transcription factories at a high frequency, and a number of these gene
- associations were lost upon the knockout of Klf1 expression.
+ associations were lost in 
+\emph on
+Klf
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\emph on
+-/-
+\end_layout
+
+\end_inset
+
+
+\emph default
+ knockout mice.
  These data suggest that a network of Klf1 specific transcription factories
  exist within mouse erythroid tissues, and that Klf1 specific genes are
  preferentially recruited to these sites 
@@ -1871,8 +1912,8 @@ It is important to note that the evidence above does not describe
 \emph on
 exclusively
 \emph default
- specific transcription factories, factories which are incapable of transcribing
- genes not controlled by Klf1.
+ specific transcription factories, i.e.
+ factories which are incapable of transcribing genes not controlled by Klf1.
  Indeed, although statistically significant, the gene associations detected
  suggest a population bias.
  Specialised transcription factories are certainly not required for the
@@ -1892,7 +1933,7 @@ Promoter and enhancer interactions
 The classical model of gene promoter regulation began with the characterisation
  of the 
 \emph on
-Lac
+lac
 \emph default
  operon in 
 \emph on
@@ -1911,7 +1952,7 @@ key "Jacob1961"
 
 .
  Three genes required for the digestion of lactose are controlled by the
- binding of a repressor protein which blocks transcription by RNA Polymerase
+ binding of a repressor protein which blocks transcription by RNA polymerase
  II.
  This repressor can form a tetramer and bind two region simultaneously,
  requiring a topological loop in the chromatin 
@@ -1925,7 +1966,7 @@ key "Savageau2011"
 \end_layout
 
 \begin_layout Standard
-A number of Eukaryotic genes were later found to require distal enhancer
+A number of eukaryotic genes were later found to require distal enhancer
  elements 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1933,8 +1974,8 @@ key "Banerji1981"
 
 \end_inset
 
- prompting speculation that the looping of chromatin allowing direct interaction
- between sequences may be a common mechanism 
+, prompting speculation that the looping of chromatin allowing direct interactio
+n between sequences may be a common mechanism 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Dorsett1999"
@@ -1947,9 +1988,9 @@ key "Dorsett1999"
 in-vivo
 \emph default
  chromatin interactions was provided in 2002 with two papers studying the
- mouse 
+ mouse beta globin 
 \emph on
-Hbb 
+(Hbb) 
 \emph default
 locus 
 \begin_inset CommandInset citation
@@ -1959,7 +2000,7 @@ key "Carter2002,Tolhuis2002"
 \end_inset
 
 .
- The locus contains five beta-like genes 
+ This locus contains five beta-like genes 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -2010,9 +2051,17 @@ description "RNA tagging and recovery of associated proteins"
 \end_inset
 
 RNA TRAP (tagging and recovery of associated proteins) which localises horseradi
-sh peroxidase to the site of nascent RNA production of a specific gene.
- The horseradish peroxidase catalyses biotinylation of nearby chromatin
- which can be purified and quantified by quantitative real-time PCR (
+sh peroxidase (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HRP"
+description "Horseradish peroxidase"
+
+\end_inset
+
+HRP) to the site of nascent RNA production of a specific gene.
+ The HRP catalyses biotinylation of nearby chromatin which can be purified
+ and quantified by quantitative real-time PCR (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "qPCR"
@@ -2034,8 +2083,8 @@ qPCR).
 \emph on
 Hbb-b1
 \emph default
- transcript was used for the horseradish peroxidase localisation, demonstrating
- that this region of the LCR is in very close proximity to the 
+ transcript was used for the HRP localisation, demonstrating that this region
+ of the LCR is in very close proximity to the 
 \emph on
 Hbb-b1
 \emph default
@@ -2056,7 +2105,14 @@ Tolhuis
 et al.
 
 \emph default
- used the chromatin-conformation-capture technique (
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tolhuis2002"
+
+\end_inset
+
+ used the chromosome conformation capture technique (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "3C"
@@ -2154,8 +2210,8 @@ key "DeLaat2003"
 , describing a system where loops of chromatin containing elements capable
  of controlling the expression of genes are held in close three-dimensional
  space to the genes that they control.
- Other gene clusters have been shown to behave in a similar manner, notably
- the T
+ Other gene clusters have also been shown to behave in a similar manner,
+ notably the T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -2196,9 +2252,8 @@ et al.
  
 \emph default
 showed that these genes co-associate in T cells, NK cells, B cells and fibroblas
-ts, despite not being expressed in B cells and fibroblasts.
- In T cells and NK cells expressing these genes, they associate with the
- T
+ts, despite not being expressed in the last two cell types.
+ In T cells and NK cells the genes associate with the T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -2239,8 +2294,8 @@ A
 D
 \emph default
  are transcribed in sequence as development of the embyro progresses and
- have been observed decondensing and looping out from their chromosome territory
- upon activation 
+ have been observed decondensing and looping out from their chromosome territori
+es upon activation 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Chambeyron2004"
@@ -2257,7 +2312,7 @@ et al.
 \emph on
 Hox
 \emph default
- clusters in three different mouse embryonic day 10.5 tissues; forebrain,
+ clusters in three different mouse embryonic day 10.5 tissues: forebrain,
  anterior trunk and posterior trunk 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2278,12 +2333,134 @@ Hoxd
  cluster is active, but different genes are transcribed.
  In both tissues they found the cluster to form two distinct compartments
  correlating with an inactive and active regions.
- Using 4C, a technique based on chromosome conformation capture (3C), they
- showed that genes move from the inactive to active compartment as they
- are activated, correlating with active histone marks 
+ Using circularised chromosome conformation capture (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "4C"
+description "Circularised chromosome conformation capture"
+
+\end_inset
+
+4C), a technique based on 3C, they showed that genes move from the inactive
+ to active compartment as they are activated, correlating with active histone
+ marks 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Noordermeer2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Long range interactions
+\end_layout
+
+\begin_layout Standard
+As the role for distal enhancers has become more established, evidence has
+ been uncovered for increasingly distant interactions.
+ For example, Sharpe 
+\emph on
+et al.
+
+\emph default
+ developed a mouse model for preaxial polydactyly by random insertion of
+ a reporter casette 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sharpe1999"
+
+\end_inset
+
+ which they found to affect a 
+\emph on
+cis
+\emph default
+ regulatory site over a megabase upstream of the gene 
+\emph on
+Shh
+\emph default
+, known to be important in the condition 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lettice2002"
+
+\end_inset
+
+.
+ Lettice 
+\emph on
+et al.
+
+\emph default
+ went on to characterise this enhancer, which lies within an intron of the
+ gene 
+\emph on
+Lmbr1
+\emph default
+ unrelated to the condition, demonstrating that 7q36 aboromalities found
+ in patients with preaxial polydactyly disrupt this enhancer 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lettice2003"
+
+\end_inset
+
+.
+ In 2005, Velagaleti 
+\emph on
+et al.
+
+\emph default
+ characterised breakpoints found in two patients with the skeletal malformation
+ syndrome campomelic dysplasia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Velagaleti2005"
+
+\end_inset
+
+.
+ They found the breakpoints corresponded to two different regulatory elements,
+ one 1.1 Mb upstream of the target gene 
+\emph on
+SOX9
+\emph default
+ and one 1.3 Mb downstream.
+ Kleinjan 
+\emph on
+et al.
+
+\emph default
+ used mouse models carrying yeast artificial chromosomes (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "YACs"
+description "Yeast artificial chromosome"
+
+\end_inset
+
+YACs) to characterise multiple distal enhancers of the developmental control
+ gene 
+\emph on
+Pax6
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kleinjan2006"
+
+\end_inset
+
+.
+ They found that as different enhancers were removed, expression of the
+ gene was abolished in different tissues, suggesting a complex system of
+ enhancer - promoter interactions driving the pattern of tissue-specific
+ expression 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kleinjan2006"
 
 \end_inset
 
@@ -2297,27 +2474,7 @@ trans
 \end_layout
 
 \begin_layout Standard
-As the role for distal enhancers has become more established, evidence has
- been uncovered for increasingly distant interactions.
- Lettice 
-\emph on
-et al.
-
-\emph default
- used data from known chromosomal translocations resulting in polydactyly
- to find and characterise an enhancer element for the 
-\emph on
-SHH
-\emph default
- gene over a megabase upstream, within an intron of another gene 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lettice2003"
-
-\end_inset
-
-.
- Spilianakis 
+Spilianakis 
 \emph on
 et al.
 
@@ -2335,7 +2492,8 @@ H
 
 \end_inset
 
-2 LCR to show that the same locus forms inter-chromosomal interactions 
+2 LCR (described above) to show that the same locus forms inter-chromosomal
+ interactions 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Spilianakis2005"
@@ -2388,14 +2546,14 @@ key "Spilianakis2005"
  A number of studies have since shown specific interchromosomal contacts
  involved in a number of processes ranging from X-inactivation to genomic
  imprinting, showing that these interactions play an important role in chromatin
- biology 
+ biology (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Schneider2007"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Subsection
@@ -2405,15 +2563,14 @@ Global interaction maps
 \begin_layout Standard
 Our understanding of the three-dimensional organisation of the genome has
  advanced in leaps and bounds during the last decade largely because of
- the development of chromatin conformation capture (3C) and its derivatives
- 
+ the development of the 3C method and its derivatives (for review, see 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Osborne2011"
 
 \end_inset
 
-.
+).
  There are a large number of 3C variants, but they can be grossly categorised
  into four classes based on how many loci can be interrogated in a single
  experiment: one-to-one (3C, quantitative 3C), one-to-all (4C, e4C, ACT),
@@ -2457,14 +2614,14 @@ key "Sanyal2012"
 et al.
 
 \emph default
- used 5C, a many-to-many technique that uses a library of oligonucleotides
+ used 5C, a many-to-many technique that uses a panel of oligonucleotides
  with common adapters to anneal to 3C products and create a library capable
  of being sequenced.
  They sequenced libraries from three ENCODE cell lines: K562, HeLa-S3 and
  GM12878.
  Only a small proportion of the looping interactions uncovered were shared
- between the three cell types, with ~60% of interactions being unique to
- a single cell line.
+ between the three cell types, with approximately 60% of interactions being
+ unique to a single cell line.
  The majority of TSS looping interactions could be classified as interacting
  with enhancer elements, promoters or regions bound by the structural protein
  CTCF.
@@ -2480,7 +2637,7 @@ What drives nuclear organisation?
 
 \begin_layout Standard
 As our understanding of the structure of the nucleus evolves, an increasing
- number of structural features and patterns are uncovered.
+ number of structural features and patterns are being uncovered.
  Teasing apart correlation and causation to find the driving forces behind
  nuclear organisation is not an easy task and remains a hot topic within
  the field.
@@ -2511,7 +2668,7 @@ Kimura
 et al.
 
 \emph default
- quantified the amount of stable RNA Polymerase II in HeLa cells 
+ quantified the amount of stable RNA polymerase II in HeLa cells 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kimura1999"
@@ -2532,7 +2689,7 @@ key "Jackson1981,Jackson1985"
 \end_inset
 
 .
- Mitchell and Fraser later demonstrated that RNA Polymerase II transcription
+ Mitchell and Fraser later demonstrated that RNA polymerase II transcription
  factories remain in the absence of transcription, though gene association
  with factories is ablated if transcription initiation is inhibited 
 \begin_inset CommandInset citation
@@ -2552,7 +2709,7 @@ key "Osborne2004"
 
 , support a model whereby transcription factories are attached to a relatively
  immobile nuclear substructure.
- This means that RNA Polymerase II can act as a motor, dragging template
+ This means that RNA polymerase II can act as a motor, dragging template
  chromatin through the nucleus as it is transcribed, powered by the removal
  of phosphate groups during RNA synthesis 
 \begin_inset CommandInset citation
@@ -2572,7 +2729,7 @@ et al.
 E.
  coli
 \emph default
- RNA Polymerase using an immobilised enzyme transcribing a template bound
+ RNA polymerase using an immobilised enzyme transcribing a template bound
  to a polystyrene bead held by optical tweezers 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2581,14 +2738,14 @@ key "Yin1995"
 \end_inset
 
 .
- RNA Polymerase stalled when the force applied was greater than 14 pN, making
- RNA Polymerase the most powerful biological motor known.
+ RNA polymerase stalled when the force applied was greater than 14 piconewtons
+ (pN), making RNA polymerase the most powerful biological motor known.
  Papantonis 
 \emph on
 et al.
  
 \emph default
-demonstrated the potential of RNA Polymerase to pull chromatin transcripts
+demonstrated the potential of RNA polymerase to pull chromatin transcripts
  through the nucleus 
 \emph on
 in vivo
@@ -2629,7 +2786,7 @@ Not finished - write about transcription stop cassette in T cells
 
 \begin_layout Standard
 A good example of transcription actively organising a structural motif is
- within the immunoglobulin heavy-chain locus.
+ seen within the immunoglobulin heavy-chain locus.
  The 
 \emph on
 Igh
@@ -2840,7 +2997,7 @@ et al.
 
 \emph default
  have shown that genes with high expression in multiple tissue types have
- a propensity be present in clusters within the genome 
+ a propensity be be present in clusters within the genome 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lercher2002"
@@ -3052,18 +3209,25 @@ Formation of chromosomal translocations
 
 \begin_layout Standard
 Since the development of chromosome banding microscopy, it has been known
- that the genetic material within cancerous cells is frequently disrupted
- 
+ that the genetic material within cancerous cells is frequently disrupted.
+ Specific chromosomal rearragements are frequently associated with certain
+ cancer types, and can be highly predictive of patient prognosis.
+ Furthermore, cancers involving different translocations can respond to
+ treatments in different ways, paving the way for patient-specific treatment
+ regimes (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mitelman2007"
 
 \end_inset
 
-.
- Chromosomal translocations involve the rearrangement of genetic material
+).
+\end_layout
+
+\begin_layout Standard
+Chromosomal translocations involve the rearrangement of genetic material
  between non-homologous chromosomes through the formation and aberrant repair
- of two double strand breaks (
+ of at least two double strand breaks (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DSB"
@@ -3071,11 +3235,13 @@ description "Double strand break"
 
 \end_inset
 
-DSBs).
- The resulting product can be a straight swap without any loss or gain of
- sequence (balanced translocation) or can result in deletions or gain of
- material (unbalanced translocation).
- 
+DSBs) that are situated on different chromosomes.
+ The resulting product can be a straight swap (balanced translocations)
+ or can result in deletions or even gain of material after malsegregation
+ in mitosis (unbalanced translocations).
+ Chromosomal translocations can involve multiple DSBs on different chromosmes
+ resulting in hugely complex karyotypes, especially in cells predisposed
+ to translocations due to defects in repair.
 \end_layout
 
 \begin_layout Standard
@@ -3107,7 +3273,7 @@ name "fig:DSB-repair"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 DSB repair
@@ -3143,6 +3309,7 @@ Three double strand break repair pathways.
  SSA/NHEJ (Single Strand Annealing / Non-Homologous End Joining) searches
  for regions of homology, such as repeat sequences, and deletes any sequence
  between.
+ HJ is Holliday junction.
  From Longhese 
 \emph on
 et al.
@@ -3172,7 +3339,7 @@ DSB repair
 \end_layout
 
 \begin_layout Standard
-Double strand breaks can be caused by exogenous damage (ionizing radiation,
+Double strand breaks can be caused by exogenous damage (ionising radiation,
  free radicals) and endogenous damage (physiological programmed DSBs).
  As many as 1 million DNA lesions are formed per cell per day 
 \begin_inset CommandInset citation
@@ -3215,8 +3382,81 @@ B) repairs double strand breaks by using long regions of homology on undamaged
  HR is primarily active during cell replication and rarely leads to serious
  chromosomal rearrangements or translocations, although ‘crossing-over’
  can sometimes occur, whereby two sections of homologous chromosomes switch
- to their partner chromosomes (a process that is encouraged in meiosis with
- the formation of chiasmata).
+ to their partner chromosomes.
+ This process is encouraged during meiosis with the formation of chiasmata,
+ crossovers that are 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+ to 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+
+ times more frequent than in mitosis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lee2009"
+
+\end_inset
+
+.
+ During meiosis homologous chromosomes are preferentially used for HR to
+ promote crossovers, but sister chromatids are more commonly used in mitosis
+ to minimise variation [#REF] 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Louise: ref?
+\end_layout
+
+\end_inset
+
+.
+ Non-allelic homologous recombination (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NAHR"
+description "Non-allelic homologous recombination"
+
+\end_inset
+
+NAHR) is a variation of HR characterised by the aberrant use of low-copy
+ repeats during strand invasion.
+ NAHR can result in duplications, inversions and translocations and is responsib
+le for a number of spontaneous genetic disorders such as Potocki-Lupski
+ syndrome 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Potocki2007"
+
+\end_inset
+
+ and cancers involving recurring breakpoints 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Darai-Ramqvist2008"
+
+\end_inset
+
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gu2008"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -3266,6 +3506,38 @@ A) is a last resort for the cell, whereby any two adjacent DSBs are ligated,
  needing little or no sequence homology.
  This pathway is extremely prone to errors as it is capable of joining any
  two strands of DNA without knowledge of their identity.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Talk about AT / XP / Fanconi's / Blooms to illustrate failings in each mechanism...
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Leukaemia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Linking sentence from translocations to cancer
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3314,7 +3586,7 @@ key "Nowell1960"
 
 \end_inset
 
-.
+ (see below).
  A number of standardised therapies exist for CML and up to 87% of patients
  achieve complete cytogenetic remission 
 \begin_inset CommandInset citation
@@ -3326,27 +3598,35 @@ key "Hehlmann2007"
 , making it one of the success stories of cancer research.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Write more introduction to CML here.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 The Philadelphia chromosome
 \end_layout
 
 \begin_layout Standard
-The genetic abnormality associated with CML was first identified in 1960
- by Nowell 
-\emph on
-et al.
-
-\emph default
- 
+This genetic abnormality, primarily associated with CML, was first the first
+ consistent chromosomal abnormality found with any cancer.
+ Identified in 1960 by Nowell and Hungerford 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Nowell1960"
 
 \end_inset
 
-.
- They noticed the presence of an abnormal chromosome and called it the Philadelp
-hia chromosome, or Ph chromosome.
+ they noticed the presence of an abnormal chromosome and called it the Philadelp
+hia chromosome, or Ph chromosome, after the city in which it was discovered.
  The chromosome was initially thought to be the result of a deletion until
  chromosome banding enabled its identification as a product of a translocation
  
@@ -3357,8 +3637,8 @@ key "Rowley1973"
 \end_inset
 
 .
- The breakpoints within chromosomes 9 and 22 were subsequently identified
- as being within the 
+ The breakpoints within chromosomes 9 (cytogenetic band q34) and 22 (band
+ q22) were subsequently identified as being within the 
 \emph on
 c-ABL
 \emph default
@@ -3369,7 +3649,7 @@ BCR
  genes, respectively.
  The 
 \emph on
-c-ABL1 
+c-ABL 
 \emph default
 gene (also known as 
 \emph on
@@ -3396,14 +3676,17 @@ BCR
  chromosome 22.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-ABL1
+\begin_layout Plain Layout
+Occurance stats
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3459,10 +3742,7 @@ key "Tanaka1989,Corso1995"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Identification and characterisation of the 
+ Identification and characterisation of the 
 \emph on
 BCR-ABL
 \emph default
@@ -3472,6 +3752,16 @@ BCR-ABL
 imatinib
 \emph default
 , which achieve excellent success in the treatment of CML 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+and other cancers
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hehlmann2007"
@@ -3518,6 +3808,16 @@ key "Jemal2009"
 
 .
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Better stats? UK?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3545,6 +3845,16 @@ key "Jemal2009"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Re-write this para.
+ See Louise's notes.
+\end_layout
+
+\end_inset
+
 The biology of leukaemia is not always as discrete as this classification
  however, some patients present with expansion of both lymphoid and myeloid
  lineages 
@@ -3720,7 +4030,7 @@ key "Hamburger1977"
 
 \end_inset
 
- and HSCs are a probable founder population due to their ability to self-renewal
+ and HSCs are a probable founder population due to their ability to self-renew
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3791,7 +4101,7 @@ key "Zeleznik-Le1994"
 
 \end_inset
 
- and zinc finger domain 
+ and a zinc finger domain 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Birke2002"
@@ -3799,8 +4109,8 @@ key "Birke2002"
 \end_inset
 
 .
- It's thought that the zinc finger domain targets MLL to unmethylated CpG
- islands DNA 
+ It is thought that the zinc finger domain targets MLL to unmethylated CpG
+ island DNA 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Birke2002"
@@ -3816,7 +4126,7 @@ key "Milne2005"
 \end_inset
 
 .
- MLL binds promoters and gene bodies, associating tightly with RNA Polymerase
+ MLL binds promoters and gene bodies, associating tightly with RNA polymerase
  II 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3867,7 +4177,7 @@ HOXA9
 \emph on
 MEIS1
 \emph default
-, which if over-expressed together in the absence of a MLL fusion protein
+ which, if over-expressed together in the absence of a MLL fusion protein,
  give a similar phenotype 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3891,7 +4201,7 @@ Translocations within the
 \emph on
 MLL 
 \emph default
-gene are found within approximately 10% of all human leukaemias 
+gene are found in approximately 10% of all human leukaemias 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Huret2001"
@@ -3956,12 +4266,13 @@ key "Gu1994"
 
 .
  This region contains exons 5-11 as well as a number of repeat regions,
- notably 8 direct 
+ notably eight direct 
 \emph on
 Alu
 \emph default
- SINE repeats, 5 direct L1 and L2 LINE repeats and 2 MER elements, as well
- as a number of putative Topoisomerase II binding sites and a SAR/MAR 
+ SINE repeats, five direct L1 and L2 LINE repeats and two MER elements,
+ as well as a number of putative topoisomerase II binding sites and a SAR/MAR
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sung2006"
@@ -4038,14 +4349,13 @@ key "Buck2004"
 
 .
  They function by binding DNA, forming a transient double strand break and
- passing another strand of DNA through the gap, before ligating the double
- strand break.
+ passing another strand of DNA through the gap, before ligating the DSB.
  
 \end_layout
 
 \begin_layout Standard
 Topoisomerases are important in transcription, which creates supercoils
- as template DNA is processed through static RNA Polymerase II enzymes 
+ as template DNA is processed through static RNA polymerase II enzymes 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Liu1987"
@@ -4069,9 +4379,9 @@ key "Joshi2012"
 \end_inset
 
 .
- Topoisomerase II induced double strand breaks have been implicated in the
- regulation of certain genes via the assembly of transcription complexes
- and changes in chromatin structure 
+ Topoisomerase II induced DSBs have been implicated in the regulation of
+ certain genes via the assembly of transcription complexes and changes in
+ chromatin structure 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ju2006"
@@ -4085,9 +4395,9 @@ key "Ju2006"
 DNA topoisomerase II inhibitors are commonly used as chemotherapeutic agents
  and work by decreasing the ligation rate, disrupting the cleavage / ligation
  equilibrium.
- This leads to an increase in DNA cleavage and an accumulation of double
- strand breaks, triggering the cell DNA damage response and leading to cell
- death by apoptosis 
+ This leads to an increase in DNA cleavage and an accumulation of DSBs,
+ triggering the cell DNA damage response and leading to cell death by apoptosis
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Burden1998"
@@ -4179,8 +4489,15 @@ The
 MLL 
 \emph default
 breakpoint cluster region contains a number of putative topoisomerase II
- binding sites, prompting a number of groups to hypothesise a mechanism
- of topoisomerase inhibitor related translocations.
+ binding sites suggesting a mechanism of topoisomerase inhibitor related
+ translocations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Broeker1996"
+
+\end_inset
+
+.
  Libura 
 \emph on
 et al.
@@ -4228,13 +4545,24 @@ reference "fig:MLL-breakpoint-cluster-region"
 \end_inset
 
 ).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+topo II sites in translocation partner genes?
 \end_layout
 
-\begin_layout Subsection
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Effect of nuclear organisation on translocation formation
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Breakage first and contact first models
 \end_layout
 
@@ -4243,31 +4571,32 @@ For a chromosomal translocation to form, two double strand breaks must exist
  simultaneously and be adjacent in three-dimensional space.
  Two models have been described to explain how DSBs may meet in the nucleus
  – the breakage first model and the contact first model.
- The breakage first model states that double strand breaks can form anywhere
- and are able to freely diffuse in the nuclear space.
+ The breakage first model states that DSBs can form anywhere and are able
+ to freely diffuse in the nuclear space.
  They undergo large scale movement through the nucleus until they meet and
  are joined.
- The contact first model states that the two double strand breaks form in
- sequences already close to each other within the nuclear space.
- Large scale chromatin movements are not required for the two DSBs to meet.
+ The contact first model states that the two DSBs form in sequences already
+ close to each other within the nuclear space, therefore large scale chromatin
+ movements are not required for the two breaks to meet.
 \end_layout
 
 \begin_layout Standard
-In support of the breakage first model Aten 
+In support of the breakage first model, Aten 
 \emph on
 et al
 \emph default
 .
  showed that a linear series of DSBs formed simultaneously in HeLa nuclei
- clustered 
+ clustered together 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Aten2004"
 
 \end_inset
 
-, however, others have argued that this may be the result of a higher degree
- of chromatin mobility along the ion bean trajectory used to generate the
+.
+ However, others have argued that this may be the result of a higher degree
+ of chromatin mobility along the ion beam trajectory used to generate the
  DSBs 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4297,8 +4626,8 @@ et al.
 \emph default
 used live cell microscopy to visualise proteins involved in DNA damage signallin
 g and repair.
- After accumulation at sites of DNA damage caused by heavy ion impacts the
- foci exhibited only a small degree of movement 
+ After accumulation at sites of DNA damage caused by heavy ion impacts,
+ the foci exhibited only a small degree of movement 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Jakob2009"
@@ -4323,7 +4652,20 @@ key "Soutoglou2007"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Summarise subsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Chromosome Territories
 \end_layout
 
@@ -4335,9 +4677,9 @@ The large scale organisation of chromosome territories has been implicated
 et al.
 
 \emph default
- showed that chromosomes 9 and 22 were found in the centre nuclei more frequentl
-y that would be expected by chance in lymphocytes, T- and B-cells, HL60
- cells and bone marrow cells 
+ showed that chromosomes 9 and 22 were found in the centre of nuclei more
+ frequently than would be expected by chance in lymphocytes, T- and B-cells,
+ HL60 cells and bone marrow cells 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kozubek1999"
@@ -4346,7 +4688,7 @@ key "Kozubek1999"
 
 .
  They used neutron irradiation to show that transfer of genetic material
- was much higher than that found with chromosome 8, which was found towards
+ was much higher than that found with chromosome 8, which was situated towards
  the nuclear periphery 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4399,6 +4741,22 @@ key "Parada2004b"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Parada2004b"
+
+\end_inset
+
+.
+ Kuroda 
+\emph on
+et al.
+
+\emph default
+ published a similar study in the same year, showing that association between
+ chromomes 12 and 16 varies through adipocyte differentiation.
+ These two chromosomes are involved a chromosomal translocation that can
+ lead to liposarcomas, thought to be initiated within pre-adipocytes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kuroda2004"
 
 \end_inset
 
@@ -4507,8 +4865,8 @@ key "Harewood2010"
 \end_inset
 
 , raising the possibility that the global changes in gene expression observed
- after oncogenic translocations could be in part due to changes in genome
- organisation 
+ after oncogenic translocation formation could be in part due to changes
+ in genome organisation 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Harewood2010"
@@ -4518,7 +4876,7 @@ key "Harewood2010"
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Transcription Factories
 \end_layout
 
@@ -4561,13 +4919,13 @@ key "Osborne2007"
 .
  They showed that 
 \emph on
-Myc
+Myc,
 \emph default
- on mouse chromosome 15 is dynamically recruited to an existing transcription
+ on mouse chromosome 15, is dynamically recruited to an existing transcription
  factory and that this transcription factory was preferentially occupied
  by 
 \emph on
-Igh 
+Igh, 
 \emph default
 on mouse chromosome 12.
  These observations of preferential association at transcription factories
@@ -4580,7 +4938,7 @@ key "Osborne2007"
 \end_inset
 
 .
- Similar transcriptional associations have been observed for 
+ Similar transcriptional associations have recently been observed for 
 \emph on
 MLL
 \emph default
