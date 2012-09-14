@@ -6,11 +6,7 @@
 \begin_preamble
 \input{lyx_preamble}
 
-\bibpunct[; ]{(}{)}{;}{a}{,}{;}
-
-\usepackage{setspace}
-\let\oldbibliography\bibliography
-\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}
+\bibpunct[; ]{(}{)}{,}{a}{}{;}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -113,7 +109,7 @@ and heterochromatin.
  These were first described in the early twentieth century due to their
  differential staining within the nucleus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Heitz1928"
 
 \end_inset
@@ -138,7 +134,7 @@ heterochromatin, the former describing heterochromatin found in all cell
  Studies whereby normally active regions are artificially tethered to the
  inner nuclear membrane show the ablation of gene expression 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Finlan2008,Reddy2008"
 
 \end_inset
@@ -146,7 +142,7 @@ key "Finlan2008,Reddy2008"
  though this effect appears to be locus specific and is not always observed
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kumaran2008"
 
 \end_inset
@@ -156,7 +152,7 @@ key "Kumaran2008"
  of RNA polymerase and nascent transcripts found in early fractionation
  studies 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chesterton1974"
 
 \end_inset
@@ -246,7 +242,7 @@ X-ray structure of a nucleosome core particle at a resolution of 1.9Å.
  extending into the nuclear matrix.
  PDB structure 1KX5 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Davey2002"
 
 \end_inset
@@ -267,7 +263,7 @@ To package DNA, the double helix is wrapped around an octomer of core histones:
  form the nucleosome, which is then bound by histone H1 with linker DNA
  to make a total of 166 base pairs 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Davey2002"
 
 \end_inset
@@ -290,7 +286,7 @@ Core histones have flexible tails which extend outside of the nucleosome,
  These tails can be post-translationally modified at a large number of residues
  and these modifications can affect the packing of chromatin 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Wolffe1999a"
 
 \end_inset
@@ -299,7 +295,7 @@ key "Wolffe1999a"
  The large number of combinatorial possibilities that result result from
  these modifications have been dubbed the 'Histone Code' 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Strahl2000a"
 
 \end_inset
@@ -317,7 +313,7 @@ reference "fig:Histone-mod-dashboard"
 
 , for review, see 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zhou2011"
 
 \end_inset
@@ -354,7 +350,7 @@ ChIP) has become a common laboratory technique, combined with microarray
  of regions in the genome with a high degree of accuracy, revealing previously
  unknown enhancers 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Heintzman2007,Ernst2010,Hon2009"
 
 \end_inset
@@ -369,7 +365,7 @@ et al.
  cell types to define fifteen chromatin states, including promoters, enhancers,
  insulators and transcribed regions 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ernst2011"
 
 \end_inset
@@ -444,7 +440,7 @@ Histone modification associations in chromatin.
  DNA.
  Taken from
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zhou2011"
 
 \end_inset
@@ -476,7 +472,7 @@ In addition to histone tail modifications, chromatin can be modified by
  Histone variants are found as single genes spread through the genome and
  are subject to far greater diversity 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Talbert2010"
 
 \end_inset
@@ -492,7 +488,7 @@ CENP-A is a human variant of histone H3 which replaces the canonical histone
  The histone variant is incorporated with the help of a number of chaperone
  proteins, including HJURP, after replication of DNA has finished 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Dunleavy2009,Foltz2009"
 
 \end_inset
@@ -505,7 +501,7 @@ key "Dunleavy2009,Foltz2009"
 Another frequent histone variant found in humans is H3.3, which differs from
  canonical H3 by just four amino acids 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Talbert2010"
 
 \end_inset
@@ -515,7 +511,7 @@ key "Talbert2010"
 y elements, and is thought to be laid down during transcriptional elongation
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schwartz2005"
 
 \end_inset
@@ -524,7 +520,7 @@ key "Schwartz2005"
  Nucleosomes containing H3.3 appear to be less stable than canonical nucleosomes,
  with a high turnover 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schwartz2005"
 
 \end_inset
@@ -534,7 +530,7 @@ key "Schwartz2005"
  helps to keep the chromatin open and accessible to the transcriptional
  machinery 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Talbert2010"
 
 \end_inset
@@ -551,7 +547,7 @@ Other core histone proteins also have variants, such as H2A.Z, a histone
 found at the transcriptional start sites of active genes as well as insulator
  regions 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zlatanova2008"
 
 \end_inset
@@ -560,7 +556,7 @@ key "Zlatanova2008"
  H2A.Z promotes the recruitment of RNA polymerase II by mediating protein
  interactions 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Adam2001"
 
 \end_inset
@@ -593,7 +589,7 @@ Since the inception of cytogenetics, it has been known that not all chromosomes
  human karyotypes to be determined, complete with differential staining
  of regions within each chromosome 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Caspersson1970"
 
 \end_inset
@@ -602,7 +598,7 @@ key "Caspersson1970"
  Banding assays can show regions of heterochromatin and euchromatin, highlightin
 g the variation in characteristics across regions of the genome 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Trask2002"
 
 \end_inset
@@ -623,7 +619,7 @@ have been found in clusters more frequently than would be expected by chance
 \emph default
 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Boutanaev2002"
 
 \end_inset
@@ -639,7 +635,7 @@ cerevisiae
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Janga2008"
 
 \end_inset
@@ -651,7 +647,7 @@ key "Janga2008"
 The sequencing of the human genome allowed detailed analysis of GC content,
  gene density and repetitive sequence content 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lander2001"
 
 \end_inset
@@ -674,7 +670,7 @@ description "Serial analysis of gene expression"
  map and built on earlier work defined regions of high transcriptional activity,
  called ridges 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Versteeg2003,Caron2001"
 
 \end_inset
@@ -689,7 +685,7 @@ key "Versteeg2003,Caron2001"
  clusters of highly expressed housekeeping genes found predominantly in
  ridges 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Versteeg2003"
 
 \end_inset
@@ -755,7 +751,7 @@ et al.
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bolzer2005"
 
 \end_inset
@@ -794,7 +790,7 @@ description "Chromosome territory"
 
 CTs) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cremer2001"
 
 \end_inset
@@ -803,7 +799,7 @@ key "Cremer2001"
  Circumstantial evidence for interphase organisation of chromosomes has
  existed for a long time, first suggested by Carl Rabl in 1885 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Rabl1885"
 
 \end_inset
@@ -817,7 +813,7 @@ et al.
  using microscopy with giemsa-band staining suggested that chromosomes retained
  some degree of organisation during interphase 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Stack1977"
 
 \end_inset
@@ -830,7 +826,7 @@ showed that interphase chromosomes exist in territories by studying the
  pattern of DNA damage in metaphase chromosomes after spot irradiation during
  interphase 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cremer1982"
 
 \end_inset
@@ -851,7 +847,7 @@ description "Fluorescence in-situ hybridisation"
 
 FISH), confirmed these findings 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schardin1985a,Manuelidis1985,Bolzer2005"
 
 \end_inset
@@ -865,21 +861,21 @@ ion can be studied.
  Several groups have shown that chromosome territory position within the
  nucleus is not random and correlates with chromosome size 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sun2000,Cremer2001b,Bolzer2005"
 
 \end_inset
 
 , gene-density 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cremer2001b,Croft1999"
 
 \end_inset
 
  and replication timing 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ferreira1997,Visser1998"
 
 \end_inset
@@ -888,14 +884,14 @@ key "Ferreira1997,Visser1998"
  and small.
  CT positioning appears to be conserved through evolution 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Tanabe2002"
 
 \end_inset
 
  and is cell type specific 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Parada2004b,Kuroda2004"
 
 \end_inset
@@ -911,7 +907,7 @@ CTs and transcription
 It is known that for some but not all genes, positioning at the nuclear
  periphery correlates with reduced gene expression 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kosak2002,Dietzel2004,Zink2004a"
 
 \end_inset
@@ -929,7 +925,7 @@ key "Kosak2002,Dietzel2004,Zink2004a"
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Finlan2008,Reddy2008"
 
 \end_inset
@@ -947,7 +943,7 @@ description "Trichostatin A"
 
 TSA) to inhibit class I and class II histone deacetylases 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Finlan2008"
 
 \end_inset
@@ -956,7 +952,7 @@ key "Finlan2008"
  It should be noted that this effect does not appear to apply to all loci
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kumaran2008"
 
 \end_inset
@@ -971,7 +967,7 @@ et al.
  showed that inhibition of transcription causes a reversible change in CT
  position 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Croft1999"
 
 \end_inset
@@ -984,7 +980,7 @@ et al.
  showed a difference in CT positioning between proliferating and senescent
  human fibroblasts 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bridger2000"
 
 \end_inset
@@ -993,7 +989,7 @@ key "Bridger2000"
  Large scale rearrangements of CTs have also been observed during cell different
 iation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Stadler2004,Szczerbal2009"
 
 \end_inset
@@ -1027,7 +1023,7 @@ constrained diffusion
  and seems to be limited by attachment to a nuclear cytoskeleton, nucleoli
  and the inner nuclear membrane 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Marshall1997,Chubb2002"
 
 \end_inset
@@ -1035,7 +1031,7 @@ key "Marshall1997,Chubb2002"
 , though some studies have shown a mixture of local diffusion and larger,
  active movements 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Vazquez2001"
 
 \end_inset
@@ -1058,7 +1054,7 @@ CHO) cells after stimulation with a transcriptional activator and analysed
  the movement of the target chromosome from the nuclear periphery to the
  interior of the nucleus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chuang2006"
 
 \end_inset
@@ -1076,7 +1072,7 @@ et al.
  a process that was ablated by the inhibition of actin and myosin polymerisation
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Mehta2010"
 
 \end_inset
@@ -1096,7 +1092,7 @@ In addition to the study of whole chromosome positioning, there has been
  Early studies suggested that transcribed genes were found at the surface
  of chromosome territories 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zirbel1993"
 
 \end_inset
@@ -1113,7 +1109,7 @@ description "Inter-chromosome domain"
 
 ICD) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cremer1993"
 
 \end_inset
@@ -1122,14 +1118,14 @@ key "Cremer1993"
  This model gained support due to studies showing genes at the periphery
  of CTs 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kurz1996"
 
 \end_inset
 
  and new techniques to visualise the ICD using microscopy 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bridger1998"
 
 \end_inset
@@ -1138,7 +1134,7 @@ key "Bridger1998"
  A number of FISH studies showed genes moving away from their territories
  in large loops upon activation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Volpi2000,Mahy2002a,Chambeyron2004"
 
 \end_inset
@@ -1152,7 +1148,7 @@ Despite these case studies, looping is not a prerequisite for transcription;
  DNA-FISH studies have shown transcription within the volume of chromosome
  territories 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Verschure1999,Mahy2002"
 
 \end_inset
@@ -1175,7 +1171,7 @@ Fgfr2
  actively transcribed genes may preferentially locate to the surface of
  CTs, but that this alone is not sufficient to drive transcription 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2004"
 
 \end_inset
@@ -1189,7 +1185,7 @@ chromatin
  domain model, whereby chromosomes are invaginated with channels and subdivided
  into ~1 Mbp domains of chromatin 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cremer2001"
 
 \end_inset
@@ -1207,7 +1203,7 @@ A question that followed immediately on from the discovery of loops extending
  Mathematical modelling approaches suggested that irradiation induced DNA
  damage corresponded to the intermingling of chromosome territories 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Holley2002,Hlatky2002"
 
 \end_inset
@@ -1220,7 +1216,7 @@ key "Holley2002,Hlatky2002"
  strongly with previously recorded irradiation induced translocation frequencies
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Branco2006"
 
 \end_inset
@@ -1234,7 +1230,7 @@ key "Branco2006"
 -amanatin, suggesting a role for specific transcription interactions in
  the organisation of the nucleus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Branco2006"
 
 \end_inset
@@ -1250,7 +1246,7 @@ HoxB
  extra-chromosomal loops found to extend from the chromosome territory upon
  gene activation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chambeyron2004"
 
 \end_inset
@@ -1261,7 +1257,7 @@ trans
 \emph default
  chromosomal interactions whilst looping out 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Wurtele2006"
 
 \end_inset
@@ -1304,7 +1300,7 @@ transcription factories
  The majority of genic transcription appears to take place at transcription
  factories 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1993,Osborne2004,Eskiw2008a"
 
 \end_inset
@@ -1371,7 +1367,7 @@ et al.
 \emph default
 , Science (2009) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook1999"
 
 \end_inset
@@ -1405,7 +1401,7 @@ The first study to suggest that eukaryotic transcription does not take place
 H] uridine remained within the nucleus when loops of DNA were removed using
  a nuclease 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1981"
 
 \end_inset
@@ -1414,7 +1410,7 @@ key "Jackson1981"
  They went on to show that RNA polymerase II and active genes were also
  resistant to elution after chromatin digestion 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1985"
 
 \end_inset
@@ -1439,7 +1435,7 @@ BrUTP) into nascent RNA; discrete foci of nascent transcription could then
  be seen within the nucleus which did not form in the presence of the RNA
  polymerase II inhibitor α-amanitin 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1993"
 
 \end_inset
@@ -1448,7 +1444,7 @@ key "Jackson1993"
  Further studies showed that these foci contained RNA polymerase II along
  with many other components required for transcription 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Iborra1996,Grande1997"
 
 \end_inset
@@ -1475,7 +1471,7 @@ ESI) and fluorescence microscopy to study nuclei sections.
  surface of large nitrogen-rich protein structures with a diameter of ~87
  nm, comparable in size to that predicted for a transcription factory 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Eskiw2008a"
 
 \end_inset
@@ -1487,7 +1483,7 @@ key "Eskiw2008a"
 The discovery of transcription factories has demanded a new model for the
  action of RNA polymerase II 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook1999"
 
 \end_inset
@@ -1502,7 +1498,7 @@ key "Cook1999"
  concentration of active RNA polymerase II, whereas the local concentration
  within transcription factories is closer to 1 mM 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook2002"
 
 \end_inset
@@ -1513,7 +1509,7 @@ key "Cook2002"
  Genes pulled through static transcription factories would extrude their
  RNA transcripts into the nucleoplasm 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Iborra1996,Cook1999"
 
 \end_inset
@@ -1533,7 +1529,7 @@ et al.
  of transcription sites and the number of polymerases associated with each
  transcriptional unit 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1998"
 
 \end_inset
@@ -1543,7 +1539,7 @@ key "Jackson1998"
 n factories, each with approximately 30 active RNA polymerase II complexes
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1998"
 
 \end_inset
@@ -1563,7 +1559,7 @@ et al.
  showed that genes situated within transcription factories are actively
  transcribed, whereas those outside are not 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2004"
 
 \end_inset
@@ -1582,7 +1578,7 @@ trans
  were seen to dynamically colocalise in transcription factories, supporting
  predictions that genes must share transcription factories 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2004,Jackson1998"
 
 \end_inset
@@ -1606,7 +1602,7 @@ Fos
  to pre-existing transcription factories may be a method of transcriptional
  control 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2007"
 
 \end_inset
@@ -1642,7 +1638,7 @@ After the demonstration that genes share transcription factories, a number
  of transcription factors that bind to those transcribed units will also
  be elevated 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook2002"
 
 \end_inset
@@ -1652,7 +1648,7 @@ key "Cook2002"
  genes that share the same factors are more likely to engage and be transcribed
  themselves 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bartlett2006"
 
 \end_inset
@@ -1661,7 +1657,7 @@ key "Bartlett2006"
  Indeed, genes regulated by common transcription factors appear to cluster
  within specific chromosomes in yeast 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Janga2008"
 
 \end_inset
@@ -1672,7 +1668,7 @@ Drosophila
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Boutanaev2002"
 
 \end_inset
@@ -1690,7 +1686,7 @@ et al.
 \emph default
 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2007"
 
 \end_inset
@@ -1733,7 +1729,7 @@ Myc
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2007"
 
 \end_inset
@@ -1748,7 +1744,7 @@ in-vitro
  factories, segregated according to their promoter and the presence of an
  intron 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Xu2008a"
 
 \end_inset
@@ -1822,7 +1818,7 @@ et al.
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schoenfelder2010"
 
 \end_inset
@@ -1853,7 +1849,7 @@ et al.
 \emph default
  in 2010 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schoenfelder2010"
 
 \end_inset
@@ -1903,7 +1899,7 @@ Klf
  exist within mouse erythroid tissues, and that Klf1 specific genes are
  preferentially recruited to these sites 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schoenfelder2010"
 
 \end_inset
@@ -1951,7 +1947,7 @@ coli
 \emph default
 in 1961 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jacob1961"
 
 \end_inset
@@ -1963,7 +1959,7 @@ key "Jacob1961"
  This repressor can form a tetramer and bind two region simultaneously,
  requiring a topological loop in the chromatin 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Savageau2011"
 
 \end_inset
@@ -1975,7 +1971,7 @@ key "Savageau2011"
 A number of eukaryotic genes were later found to require distal enhancer
  elements 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Banerji1981"
 
 \end_inset
@@ -1983,7 +1979,7 @@ key "Banerji1981"
 , prompting speculation that the looping of chromatin allowing direct interactio
 n between sequences may be a common mechanism 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Dorsett1999"
 
 \end_inset
@@ -2000,7 +1996,7 @@ in-vivo
 \emph default
 locus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Carter2002,Tolhuis2002"
 
 \end_inset
@@ -2037,7 +2033,7 @@ description "Locus control region"
 
 LCR), containing multiple DNase hypersensitive sites (HS1-6) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bender2000"
 
 \end_inset
@@ -2096,7 +2092,7 @@ Hbb-b1
 \emph default
  gene 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Carter2002"
 
 \end_inset
@@ -2113,7 +2109,7 @@ et al.
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Tolhuis2002"
 
 \end_inset
@@ -2133,7 +2129,7 @@ et al.
 \emph default
  to study the organisation of chromatin within yeast 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Dekker2002b"
 
 \end_inset
@@ -2159,7 +2155,7 @@ Hbb
  locus is not expressed, the chromatin adopted a linear conformation without
  any looping 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Tolhuis2002"
 
 \end_inset
@@ -2174,7 +2170,7 @@ key "Tolhuis2002"
  a system where the developmentally controlled genes must contact an enhancer
  within the LCR in order to be expressed 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Palstra2003"
 
 \end_inset
@@ -2184,7 +2180,7 @@ key "Palstra2003"
  not yet expressing beta-like globin genes form a 'poised' structure, contacting
  the LCR but not engaging strongly with the HS2 enhancer 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Palstra2003"
 
 \end_inset
@@ -2208,7 +2204,7 @@ description "Active chromatin hub"
 
 ACH) model 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "DeLaat2003"
 
 \end_inset
@@ -2246,7 +2242,7 @@ H
 2 locus control region is involved in the transcriptional control of cytokine
  genes IL4, 5 and 13 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lee2003"
 
 \end_inset
@@ -2270,7 +2266,7 @@ H
 
 2 LCR 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Spilianakis2004"
 
 \end_inset
@@ -2303,7 +2299,7 @@ D
  have been observed decondensing and looping out from their chromosome territori
 es upon activation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chambeyron2004"
 
 \end_inset
@@ -2321,7 +2317,7 @@ Hox
  clusters in three different mouse embryonic day 10.5 tissues: forebrain,
  anterior trunk and posterior trunk 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Noordermeer2011"
 
 \end_inset
@@ -2351,7 +2347,7 @@ description "Circularised chromosome conformation capture"
  to active compartment as they are activated, correlating with active histone
  marks 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Noordermeer2011"
 
 \end_inset
@@ -2374,7 +2370,7 @@ et al.
  developed a mouse model for preaxial polydactyly by random insertion of
  a reporter casette 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sharpe1999"
 
 \end_inset
@@ -2389,7 +2385,7 @@ Shh
 \emph default
 , known to be important in the condition 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lettice2002"
 
 \end_inset
@@ -2408,7 +2404,7 @@ Lmbr1
  unrelated to the condition, demonstrating that 7q36 aboromalities found
  in patients with preaxial polydactyly disrupt this enhancer 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lettice2003"
 
 \end_inset
@@ -2422,7 +2418,7 @@ et al.
  characterised breakpoints found in two patients with the skeletal malformation
  syndrome campomelic dysplasia 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Velagaleti2005"
 
 \end_inset
@@ -2454,7 +2450,7 @@ Pax6
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kleinjan2006"
 
 \end_inset
@@ -2465,7 +2461,7 @@ key "Kleinjan2006"
  enhancer - promoter interactions driving the pattern of tissue-specific
  expression 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kleinjan2006"
 
 \end_inset
@@ -2501,7 +2497,7 @@ H
 2 LCR (described above) to show that the same locus forms inter-chromosomal
  interactions 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Spilianakis2005"
 
 \end_inset
@@ -2543,7 +2539,7 @@ IL4
  This interaction is the first interchromosomal interaction known to regulate
  gene expression 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Spilianakis2005"
 
 \end_inset
@@ -2554,7 +2550,7 @@ key "Spilianakis2005"
  imprinting, showing that these interactions play an important role in chromatin
  biology (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Schneider2007"
 
 \end_inset
@@ -2571,7 +2567,7 @@ Our understanding of the three-dimensional organisation of the genome has
  advanced in leaps and bounds during the last decade largely because of
  the development of the 3C method and its derivatives (for review, see 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2011"
 
 \end_inset
@@ -2608,7 +2604,7 @@ description "Transcription start site"
 TSS) and 4535 surrounding fragments, representing approximately 1% of the
  genome 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sanyal2012"
 
 \end_inset
@@ -2676,7 +2672,7 @@ et al.
 \emph default
  quantified the amount of stable RNA polymerase II in HeLa cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kimura1999"
 
 \end_inset
@@ -2689,7 +2685,7 @@ et al.
 demonstrating the stability of nascent transcripts and Polymerase in the
  nucleus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jackson1981,Jackson1985"
 
 \end_inset
@@ -2699,7 +2695,7 @@ key "Jackson1981,Jackson1985"
  factories remain in the absence of transcription, though gene association
  with factories is ablated if transcription initiation is inhibited 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Mitchell2008"
 
 \end_inset
@@ -2708,7 +2704,7 @@ key "Mitchell2008"
  These data, along with the observation that genes are recruited to pre-existing
  transcription factories upon activation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2004"
 
 \end_inset
@@ -2719,7 +2715,7 @@ key "Osborne2004"
  chromatin through the nucleus as it is transcribed, powered by the removal
  of phosphate groups during RNA synthesis 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook1999"
 
 \end_inset
@@ -2738,7 +2734,7 @@ E.
  RNA polymerase using an immobilised enzyme transcribing a template bound
  to a polystyrene bead held by optical tweezers 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Yin1995"
 
 \end_inset
@@ -2763,7 +2759,7 @@ in vivo
 
  gene 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Papantonis2010"
 
 \end_inset
@@ -2779,14 +2775,14 @@ The role for transcription in the organisation of the genome is further
  supported by the pervasive nature of transcription.
  As much as 15% of the human genome is actively transcribed 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cheng2005"
 
 \end_inset
 
 , including many enhancers 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ling2005,Kim2010"
 
 \end_inset
@@ -2800,7 +2796,7 @@ et al.
  found that enhancer elements looping to a TSS were significantly more likely
  to express enhancer RNAs 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sanyal2012"
 
 \end_inset
@@ -2820,7 +2816,7 @@ et al.
  have shown that genes with high expression in multiple tissue types have
  a propensity be be present in clusters within the genome 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lercher2002"
 
 \end_inset
@@ -2829,7 +2825,7 @@ key "Lercher2002"
  factory already transcribing a cluster of housekeeping genes in erythroid
  cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zhou2006"
 
 \end_inset
@@ -2838,7 +2834,7 @@ key "Zhou2006"
  These housekeeping genes were bound stably to the nuclear matrix, whereas
  the alpha globin genes were eluted in a high salt extraction 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Gavrilov2010"
 
 \end_inset
@@ -2849,7 +2845,7 @@ d housekeeping genes are responsible for forming transcription factories,
  with tissue specific genes being recruited to these sites upon activation
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Gavrilov2010"
 
 \end_inset
@@ -2913,7 +2909,7 @@ et al.
 \emph default
 2001 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ohlsson2001"
 
 \end_inset
@@ -2943,7 +2939,7 @@ CTCF (CCCTC-binding factor) is a highly conserved DNA-binding protein with
  well as a range of variant sequences using combinations of different zinc
  fingers 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Filippova1996"
 
 \end_inset
@@ -2962,7 +2958,7 @@ et al.
 \emph default
 2001 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ohlsson2001"
 
 \end_inset
@@ -2976,7 +2972,7 @@ key "Ohlsson2001"
  chicken and human and mice homozygous for the gene knockout exhibit early
  embryonic lethality 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Splinter2006"
 
 \end_inset
@@ -2985,7 +2981,7 @@ key "Splinter2006"
  The protein is expressed ubiquitously and misregulation by over-expression
  or RNAi knockdown have a wide range of effects 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Torrano2005"
 
 \end_inset
@@ -3001,7 +2997,7 @@ c-Myc
 \emph default
 gene 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lobanenkov1990"
 
 \end_inset
@@ -3010,7 +3006,7 @@ key "Lobanenkov1990"
  Since then its proposed functions have included transcriptional activator
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Vostrov1997"
 
 \end_inset
@@ -3019,7 +3015,7 @@ key "Vostrov1997"
  Bell, West and Felsenfeld were the first to characterise the role of CTCF
  as an insulator in a study of the chicken beta-globin locus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bell1999"
 
 \end_inset
@@ -3032,7 +3028,7 @@ key "Bell1999"
 -globin LCR, a region previously shown to act as an insulator in a transgene
  enhancer-blocking assay 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chung1997"
 
 \end_inset
@@ -3054,7 +3050,7 @@ description "Imprinting control region"
 
 ICR) which exhibit methylation-sensitive binding 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Bell2000,Hark2000,Szabo2000"
 
 \end_inset
@@ -3083,7 +3079,7 @@ H19
  This model is supported by 3C data showing parent-of-origin specific interactio
 ns between the enhancer and the two genes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Murrell2004,Kurukuti2006"
 
 \end_inset
@@ -3098,7 +3094,7 @@ Genome wide studies of CTCF binding using ChIP-on-chip and ChIP-Seq have
  has been largely abandoned; binding by CTCF is not able to predict transcriptio
 nal activity or correlate with specific classes of genes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chen2008"
 
 \end_inset
@@ -3113,7 +3109,7 @@ et al.
  analysis and derived a dataset containing divergent pairs of genes with
  an without a CTCF separating them 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Xie2007"
 
 \end_inset
@@ -3122,7 +3118,7 @@ key "Xie2007"
  Divergent gene pairs facing away from each other frequently show correlated
  expression patterns 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Trinklein2004,Li2006b"
 
 \end_inset
@@ -3131,7 +3127,7 @@ key "Trinklein2004,Li2006b"
  to be coexpressed, yet those with a CTCF site had a close to background
  level chance of coexpression 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Xie2007"
 
 \end_inset
@@ -3141,7 +3137,7 @@ key "Xie2007"
  however, as demonstrated by looping over CTCF sites in the human beta-globin
  locus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Tolhuis2002"
 
 \end_inset
@@ -3156,7 +3152,7 @@ et al.
  sites, prompting the authors to suggest that additional factors may be
  needed for the insulator function of CTCF 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sanyal2012"
 
 \end_inset
@@ -3176,7 +3172,7 @@ description "Embryonic stem cell"
 
 ES) cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Handoko2011"
 
 \end_inset
@@ -3197,7 +3193,7 @@ ter interactions; barrier insulator behaviour, separating active and inactive
  chromatin compartments; and finally, loops with no known correlation or
  function 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Handoko2011"
 
 \end_inset
@@ -3283,7 +3279,7 @@ The self-organisation model
 Cook paper on entropy basics, nature of everything wanting to cluster.
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Cook2002,Iborra1996"
 
 \end_inset
@@ -3380,7 +3376,7 @@ Since the development of chromosome banding microscopy, it has been known
  treatments in different ways, paving the way for patient-specific treatment
  regimes (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Mitelman2007"
 
 \end_inset
@@ -3480,7 +3476,7 @@ et al.
 \emph default
 , 2006 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Longhese2006"
 
 \end_inset
@@ -3507,7 +3503,7 @@ Double strand breaks can be caused by exogenous damage (ionising radiation,
  free radicals) and endogenous damage (physiological programmed DSBs).
  As many as 1 million DNA lesions are formed per cell per day 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "AlbertsLewisRaffRobertsWalter2007"
 
 \end_inset
@@ -3517,7 +3513,7 @@ key "AlbertsLewisRaffRobertsWalter2007"
  Mammalian cells have an array of different DSB repair pathways that depend
  on the cellular context and type of lesion 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Longhese2006"
 
 \end_inset
@@ -3568,7 +3564,7 @@ B) repairs double strand breaks by using long regions of homology on undamaged
 
  times more frequent than in mitosis 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Lee2009"
 
 \end_inset
@@ -3601,21 +3597,21 @@ NAHR) is a variation of HR characterised by the aberrant use of low-copy
 le for a number of spontaneous genetic disorders such as Potocki-Lupski
  syndrome 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Potocki2007"
 
 \end_inset
 
  and cancers involving recurring breakpoints 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Darai-Ramqvist2008"
 
 \end_inset
 
  (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Gu2008"
 
 \end_inset
@@ -3729,7 +3725,7 @@ description "Chronic myeloid leukaemia"
 CML) is one of the best studied cancers, despite having a relatively low
  occurance 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Hehlmann2007"
 
 \end_inset
@@ -3737,7 +3733,7 @@ key "Hehlmann2007"
 .
  The term 'leukaemia' was based on CML patients in the mid 1800s 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Geary2000"
 
 \end_inset
@@ -3745,7 +3741,7 @@ key "Geary2000"
 , and it was the first cancer for which a direct causative genotype was
  found 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Nowell1960"
 
 \end_inset
@@ -3754,7 +3750,7 @@ key "Nowell1960"
  A number of standardised therapies exist for CML and up to 87% of patients
  achieve complete cytogenetic remission 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Hehlmann2007"
 
 \end_inset
@@ -3784,7 +3780,7 @@ This genetic abnormality, primarily associated with CML, was first the first
  consistent chromosomal abnormality found with any cancer.
  Identified in 1960 by Nowell and Hungerford 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Nowell1960"
 
 \end_inset
@@ -3795,7 +3791,7 @@ hia chromosome, or Ph chromosome, after the city in which it was discovered.
  chromosome banding enabled its identification as a product of a translocation
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Rowley1973"
 
 \end_inset
@@ -3824,7 +3820,7 @@ was named as such because of its similarity to the Abelson murine leukaemia
 \emph on
 v-ABL 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Rowley2001"
 
 \end_inset
@@ -3863,7 +3859,7 @@ The
  Involved in cell cycle regulation, it is thought to be involved in several
  cell signalling pathways 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Deininger2000"
 
 \end_inset
@@ -3876,7 +3872,7 @@ BCR
  protein; it contains a serine-threonine kinase and has GTPase activity
  but its function is not known 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Deininger2000"
 
 \end_inset
@@ -3891,7 +3887,7 @@ ABL1
  This results in constitutively active tyrosine-kinase activity which drives
  oncogenesis 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Deininger2000"
 
 \end_inset
@@ -3900,7 +3896,7 @@ key "Deininger2000"
  Relatively little is known about the mechanism of translocation formation,
  though ionising radiation is known to be a risk factor 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Tanaka1989,Corso1995"
 
 \end_inset
@@ -3927,7 +3923,7 @@ and other cancers
 
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Hehlmann2007"
 
 \end_inset
@@ -3965,7 +3961,7 @@ AML) according to which lineage of blood cells are cancerous.
  annually.
  It is the most common form of cancer in children aged under fourteen 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jemal2009"
 
 \end_inset
@@ -3990,7 +3986,7 @@ AML is a cancer of the myeloid lineages of blood cells, responsible for
  mortality rate than ALL (66% and 27% mortality for AML and ALL, respectively)
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jemal2009"
 
 \end_inset
@@ -4000,7 +3996,7 @@ key "Jemal2009"
  between 2002 and 2006 in the US was 67 years, and the median age of mortality
  was 72 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jemal2009"
 
 \end_inset
@@ -4023,7 +4019,7 @@ The biology of leukaemia is not always as discrete as this classification
  however, some patients present with expansion of both lymphoid and myeloid
  lineages 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Matutes1997"
 
 \end_inset
@@ -4032,7 +4028,7 @@ key "Matutes1997"
  Common genetic abnormalities found in these patients include the t(9;22)(q34;q1
 1) Philadelphia chromosome and structural changes in 11q23 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Matutes1997"
 
 \end_inset
@@ -4062,7 +4058,7 @@ et al.
 \emph default
  in 1991 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ziemin-vanderPoel1991"
 
 \end_inset
@@ -4074,14 +4070,14 @@ MLL
 \emph default
  gene are found in over 70% of all infant leukaemias 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Biondi2000"
 
 \end_inset
 
  and approximately 10% of adult AML cases 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Krivtsov2007"
 
 \end_inset
@@ -4090,7 +4086,7 @@ key "Krivtsov2007"
  The translocation correlates with poor patient prognosis and is of high
  clinical interest 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Chen1993"
 
 \end_inset
@@ -4114,7 +4110,7 @@ MLL
  and suggests an origin within a less committed progenitor cell which can
  produce cells in both the myeloid and lymphoid cell lineages 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Armstrong2002"
 
 \end_inset
@@ -4127,7 +4123,7 @@ key "Armstrong2002"
  in MLL have been found to express cell surface antigens normally present
  on both myeloid and lymphoid cells such as CD14 and CD19 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Krivtsov2007"
 
 \end_inset
@@ -4148,7 +4144,7 @@ description "Haematopoietic stem cell"
 
 HSCs) 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sutherland1996,Bonnet1997"
 
 \end_inset
@@ -4166,7 +4162,7 @@ key "Sutherland1996,Bonnet1997"
  progenitor cell population, accounting for approximately 3% of normal human
  bone marrow and 0.3 to 0.5% of human cord blood mononuclear cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Libura2008"
 
 \end_inset
@@ -4180,7 +4176,7 @@ key "Libura2008"
  therapy, as well as in the treatment of a number of other disorders such
  as autoimmune, cardiac and vascular diseases 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Burt2008"
 
 \end_inset
@@ -4189,7 +4185,7 @@ key "Burt2008"
  Cancer stem cells are thought to be present in both leukaemias and solid
  tumours 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Hamburger1977"
 
 \end_inset
@@ -4197,7 +4193,7 @@ key "Hamburger1977"
  and HSCs are a probable founder population due to their ability to self-renew
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Reya2001"
 
 \end_inset
@@ -4208,7 +4204,7 @@ s pool of cancer cells has a number of implications for treatment - these
  are the cells that must be targeted for the efficient and long lasting
  cure of cancer 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Reya2001"
 
 \end_inset
@@ -4229,7 +4225,7 @@ Hox
 \emph default
  genes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Yu1995"
 
 \end_inset
@@ -4241,14 +4237,14 @@ MLL
 \emph default
  is required for embryonic haematopoiesis 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Hess1997"
 
 \end_inset
 
  and adult bone marrow maintenance 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jude2007"
 
 \end_inset
@@ -4260,14 +4256,14 @@ Drosophila melanogaster
 \emph default
  trithorax complex and is thought to bind DNA via an AT-hook domain 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zeleznik-Le1994"
 
 \end_inset
 
  and a zinc finger domain 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Birke2002"
 
 \end_inset
@@ -4276,7 +4272,7 @@ key "Birke2002"
  It is thought that the zinc finger domain targets MLL to unmethylated CpG
  island DNA 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Birke2002"
 
 \end_inset
@@ -4284,7 +4280,7 @@ key "Birke2002"
  and ChIP studies have shown that MLL binds to a subset of transcribed genes
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Milne2005"
 
 \end_inset
@@ -4293,7 +4289,7 @@ key "Milne2005"
  MLL binds promoters and gene bodies, associating tightly with RNA polymerase
  II 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Milne2005"
 
 \end_inset
@@ -4309,7 +4305,7 @@ MLL
 \emph default
 and in-frame exons of a partner gene 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Krivtsov2007"
 
 \end_inset
@@ -4318,7 +4314,7 @@ key "Krivtsov2007"
  Fusion proteins always retain their AT-hook and zinc-finger CxxC motifs,
  which are essential for their transforming potential 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Slany1998"
 
 \end_inset
@@ -4327,7 +4323,7 @@ key "Slany1998"
  The H3K4 methyltransferase domain of MLL is often lost in fusion proteins
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Krivtsov2007"
 
 \end_inset
@@ -4344,7 +4340,7 @@ MEIS1
  which, if over-expressed together in the absence of a MLL fusion protein,
  give a similar phenotype 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Zeisig2004"
 
 \end_inset
@@ -4367,7 +4363,7 @@ MLL
 \emph default
 gene are found in approximately 10% of all human leukaemias 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Huret2001"
 
 \end_inset
@@ -4380,7 +4376,7 @@ MLL
  translocation partners of which 51 have been characterised at the molecular
  level 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Meyer2006"
 
 \end_inset
@@ -4407,7 +4403,7 @@ AF6
 \emph default
  account for approximately 80% of cases 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Meyer2006"
 
 \end_inset
@@ -4423,7 +4419,7 @@ BamHI
 \emph default
  fragment known as the breakpoint cluster region 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Gu1994"
 
 \end_inset
@@ -4438,7 +4434,7 @@ Alu
  as well as a number of putative topoisomerase II binding sites and a SAR/MAR
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Sung2006"
 
 \end_inset
@@ -4457,21 +4453,21 @@ Mll
 \emph default
 breakpoint cluster region, correlating with etoposide-induced DSBs 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Scharf2007"
 
 \end_inset
 
 , DNase I hypersensitive sites 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Strissel1998"
 
 \end_inset
 
  and histone modifications associated with transcription 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Khobta2004"
 
 \end_inset
@@ -4497,7 +4493,7 @@ gene comes from the observation that 11q23 translocations are especially
  in patients after treatment for a primary cancer with topoisomerase II
  inhibitors 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Krivtsov2007"
 
 \end_inset
@@ -4506,7 +4502,7 @@ key "Krivtsov2007"
  Topoisomerases are found in all eukaryotic nuclei and are able to relieve
  supercoiling and promote chromosome disentanglement 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Buck2004"
 
 \end_inset
@@ -4521,7 +4517,7 @@ key "Buck2004"
 Topoisomerases are important in transcription, which creates supercoils
  as template DNA is processed through static RNA polymerase II enzymes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Liu1987"
 
 \end_inset
@@ -4529,7 +4525,7 @@ key "Liu1987"
 .
  DNA topoisomerase II associates with gene promoters 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Collins2001"
 
 \end_inset
@@ -4537,7 +4533,7 @@ key "Collins2001"
  and is required for the transcription of genes longer than 3 Kbp in yeast
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Joshi2012"
 
 \end_inset
@@ -4547,7 +4543,7 @@ key "Joshi2012"
  certain genes via the assembly of transcription complexes and changes in
  chromatin structure 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Ju2006"
 
 \end_inset
@@ -4563,7 +4559,7 @@ DNA topoisomerase II inhibitors are commonly used as chemotherapeutic agents
  triggering the cell DNA damage response and leading to cell death by apoptosis
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Burden1998"
 
 \end_inset
@@ -4573,7 +4569,7 @@ key "Burden1998"
  against a range of malignancies including small-cell lung cancer and gonadal
  tumours 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Arnold1981"
 
 \end_inset
@@ -4656,7 +4652,7 @@ breakpoint cluster region contains a number of putative topoisomerase II
  binding sites suggesting a mechanism of topoisomerase inhibitor related
  translocations 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Broeker1996"
 
 \end_inset
@@ -4679,7 +4675,7 @@ et al.
  HSPCs exposed to etoposide formed 11q23 chromosomal aberrations typical
  of those seen in clinical samples 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Libura2005"
 
 \end_inset
@@ -4689,7 +4685,7 @@ key "Libura2005"
 e potential of the cells in a bone marrow graft assay using immune-deficient
  mice 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Libura2008"
 
 \end_inset
@@ -4753,7 +4749,7 @@ et al
  showed that a linear series of DSBs formed simultaneously in HeLa nuclei
  clustered together 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Aten2004"
 
 \end_inset
@@ -4763,7 +4759,7 @@ key "Aten2004"
  of chromatin mobility along the ion beam trajectory used to generate the
  DSBs 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jakob2009"
 
 \end_inset
@@ -4778,7 +4774,7 @@ et al.
  remained in a fixed position for several hours after the damage was caused
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Nelms1998"
 
 \end_inset
@@ -4793,7 +4789,7 @@ g and repair.
  After accumulation at sites of DNA damage caused by heavy ion impacts,
  the foci exhibited only a small degree of movement 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Jakob2009"
 
 \end_inset
@@ -4808,7 +4804,7 @@ et al.
 e digestion, with a greater degree of local diffusion seen in the absence
  of the Ku80 DNA-end binding protein 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Soutoglou2007"
 
 \end_inset
@@ -4845,7 +4841,7 @@ et al.
  frequently than would be expected by chance in lymphocytes, T- and B-cells,
  HL60 cells and bone marrow cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kozubek1999"
 
 \end_inset
@@ -4855,7 +4851,7 @@ key "Kozubek1999"
  was much higher than that found with chromosome 8, which was situated towards
  the nuclear periphery 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kozubek1999"
 
 \end_inset
@@ -4869,7 +4865,7 @@ et al.
  investigated the positions of chromosomes 12, 14 and 15 in a mouse lymphoma
  cell line and mouse splenocytes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Parada2002a"
 
 \end_inset
@@ -4880,7 +4876,7 @@ key "Parada2002a"
  the translocation.
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Parada2002a"
 
 \end_inset
@@ -4894,7 +4890,7 @@ et al.
  went on in a further study to examine the positioning of a larger range
  of chromosomes in a number of different tissue types 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Parada2004b"
 
 \end_inset
@@ -4903,7 +4899,7 @@ key "Parada2004b"
  They found that chromosome pairing was tissue specific and correlated with
  the occurrence of tissue-specific translocation events 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Parada2004b"
 
 \end_inset
@@ -4919,7 +4915,7 @@ et al.
  These two chromosomes are involved a chromosomal translocation that can
  lead to liposarcomas, thought to be initiated within pre-adipocytes 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Kuroda2004"
 
 \end_inset
@@ -4973,7 +4969,7 @@ Correlation of CT intermingling and radiation induced translocation frequencies.
 \series default
 Adapted from Branco and Pombo, 2006 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Branco2006"
 
 \end_inset
@@ -5000,7 +4996,7 @@ In 2006, Branco and Pombo published a study where they developed a new technique
  known as cryo-FISH to enhance the resolution of chromosome territory detection
  
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Branco2006"
 
 \end_inset
@@ -5011,7 +5007,7 @@ key "Branco2006"
  between chromosome pairs correlated strongly with their propensity to form
  translocations when subjected to radiation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Branco2006"
 
 \end_inset
@@ -5023,7 +5019,7 @@ key "Branco2006"
 Interestingly, derivative chromosomes that result from balanced translocations
  affect the organisation of CTs within the nucleus 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Harewood2010"
 
 \end_inset
@@ -5032,7 +5028,7 @@ key "Harewood2010"
  after oncogenic translocation formation could be in part due to changes
  in genome organisation 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Harewood2010"
 
 \end_inset
@@ -5049,7 +5045,7 @@ Mounting evidence has shown that in addition to CT pairing, the position
  of specific genes involved in chromosomal translocations are frequently
  found in close proximity 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Neves1999,Roix2003a"
 
 \end_inset
@@ -5075,7 +5071,7 @@ Myc
 \emph default
  proto-oncogene upon activation of B cells 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2007"
 
 \end_inset
@@ -5096,7 +5092,7 @@ on mouse chromosome 12.
  support to a model whereby genes sharing transcription factories are predispose
 d to the formation of chromosomal translocations 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand cite
 key "Osborne2007"
 
 \end_inset
@@ -5179,7 +5175,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
-options "klunamed"
+options "plainnat"
 
 \end_inset
 
