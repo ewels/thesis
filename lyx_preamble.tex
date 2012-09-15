@@ -1,3 +1,8 @@
+%%%%%%%%%%%%
+%%% COMPILING CHAPTERS ONLY
+%%% thesis_master.lyx has its own preamble in document
+%%%%%%%%%%%%
+
 % include the comments when we output. This is so we get the bibliography when previewing this chapter on its own
 \usepackage{comment}
 \includecomment{comment}
@@ -36,3 +41,11 @@
 
 % package that allows \resizebox to squeeze tables
 \usepackage{graphicx}
+
+% format the natbib citations to be separated with semi-colons etc
+\bibpunct[; ]{(}{)}{;}{a}{,}{;}
+
+% make the bibliography have single line spacing
+\usepackage{setspace}
+\let\oldbibliography\bibliography
+\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}

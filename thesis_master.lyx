@@ -27,6 +27,31 @@
   \originalfigure[#1]
   \centering}%
   {\endoriginalfigure}
+
+% package that allows \resizebox to squeeze tables
+\usepackage{graphicx}
+
+% format the natbib citations to be separated with semi-colons etc
+\bibpunct[; ]{(}{)}{;}{a}{,}{;}
+
+% make the bibliography have single line spacing
+\usepackage{setspace}
+\let\oldbibliography\bibliography
+\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}
+
+%%
+% fancyheader customisation
+%%
+\usepackage{fancyhdr}
+% don't make chapters and sections upper-case
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+
+% no lines
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\pagestyle{fancy}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -72,7 +97,7 @@ tabs-within-sections
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine natbib_numerical
+\cite_engine natbib_authoryear
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -87,13 +112,13 @@ tabs-within-sections
 \rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
-\tocdepth 3
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
-\paperpagestyle default
+\papersides 2
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -335,8 +360,8 @@ References
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
-options "bibtotoc,plain"
+bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
+options "bibtotoc,klunamed"
 
 \end_inset
 

@@ -5,12 +5,6 @@
 \textclass report
 \begin_preamble
 \input{lyx_preamble}
-
-\bibpunct[; ]{(}{)}{;}{a}{,}{;}
-
-\usepackage{setspace}
-\let\oldbibliography\bibliography
-\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}
 \end_preamble
 \use_default_options true
 \master thesis_master.lyx
@@ -89,13 +83,19 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The nucleus is a highly functional organelle, responsible for a huge variety
- of complex cellular processes.
- To achieve this, the contents of the nucleus are organised into sub-nuclear
- compartments which specialise in processes such as transcription and replicatio
-n.
+The nucleus is a highly complex organelle.
+ It is primarily responsible for the faithful replication and maintenance
+ of the DNA template and control of the transcriptional products resulting
+ from that DNA.
+ To achieve this the contents of the nucleus are organised into compartments
+ specialising in processes such as transcription and replication.
+ These compartments are not membrane bound and seem to be both the result
+ of function and active processes.
+ Abnormalities in the organisation of the nucleus are often associated with
+ disease, including cancer.
  In this chapter I will discuss the current understanding of nuclear structure
- and organisation and how it may be involved in cancer.
+ and organisation and how it may be involved in the initiation of cancer
+ causing chromosomal translocations.
 \end_layout
 
 \begin_layout Section
@@ -1272,6 +1272,11 @@ key "Wurtele2006"
 
 \begin_layout Section
 Nuclear compartmentalisation
+\end_layout
+
+\begin_layout Standard
+Brief introduction to the history of nuclear organisation studies, then
+ whip through the bigguns':
 \end_layout
 
 \begin_layout Itemize
@@ -2554,7 +2559,7 @@ key "Spilianakis2005"
  imprinting, showing that these interactions play an important role in chromatin
  biology (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Schneider2007"
 
 \end_inset
@@ -2955,14 +2960,9 @@ reference "fig:ctcf-structure"
 
 \end_inset
 
-, reviewed in Ohlsson 
-\emph on
-et al.
- 
-\emph default
-2001 
+, reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Ohlsson2001"
 
 \end_inset
@@ -3205,48 +3205,284 @@ key "Handoko2011"
 .
  This study illustrates the complexity of CTCF binding within the genome
  and points to multiple roles for the protein involving chromatin organisation.
+ This interaction has subsequently been shown to be dependent on protein-protein
+ contacts between the SA2 subunit of cohesin and the C-terminal domain of
+ CTCF 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Xiao2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Cohesin
 \end_layout
 
-\begin_layout Itemize
-Brief intro to Cohesin's basic functions
-\end_layout
+\begin_layout Standard
+The structural maintenance of chromosome (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SMC"
+description "Structural maintenance of chromosome proteins"
 
-\begin_layout Itemize
-Discovery of Cohesin - CTCF interaction
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Many of the above CTCF dependent interactions 
+SMC) proteins, also known as cohesin, form complexes required for sister
+ chromatid cohesion and chromosome segregation in mitosis.
+ Originally characterised in 
 \emph on
-also
+Drosophila melanogaster 
 \emph default
- dependent on cohesin (examples)
+due to mutants having a defect in sister chromatid separation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Michaelis1997"
+
+\end_inset
+
+, cohesin is a multi subunit complex consisting of two large coiled-coil
+ domain proteins (Smc1, Smc3) connected by a smaller dimer of Scc1 and Scc3.
+ Cohesin complexes are thought to function in mitosis by holding sister
+ chromatids together through topological looping (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hudson2009"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+A number of studies suggested that cohesin may play a role in the interphase
+ nucleus as well as in mitosis, being implicated in gene regulation, recombinati
+on, repair and domain formation (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hagstrom2003"
+
+\end_inset
+
+).
+ In 2008 three studies showed that the genome-wide binding profiles of cohesin
+ subunits in mammalian cells correlates highly with that of CTCF 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parelho2008,Wendt2008,Rubio2008"
+
+\end_inset
+
+.
+ Parelho 
+\emph on
+et al.
+
+\emph default
+ expressed a FLAG-tagged cohesin subunit of Rad21 in mouse lymphoid cell
+ lines which was able to pull down the SMC1, SMC3 and SA1 cohesin subunits.
+ They generated ChIP-chip libraries covering approximately 3% of the mouse
+ genome and determined that cohesin binds DNAse hypersensitive regions enriched
+ for a motif highly similar to the CTCF consensus binding sequence 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parelho2008"
+
+\end_inset
+
+.
+ Wendt 
+\emph on
+et al.
+
+\emph default
+ followed a similar path, using the HeLa cell line to create ChIP-chip libraries
+ covering approximately 1% of the human genome for both SMC3 and CTCF 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wendt2008"
+
+\end_inset
+
+.
+ Rubio 
+\emph on
+et al.
+
+\emph default
+ studied the binding partners of CTCF by mass spectrometry and found that
+ Scc3/SA1 was a key binding partner, leading them to create ChIP-chip libraries
+ for CTCF and Scc3/SA1 in HBL100 cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rubio2008"
+
+\end_inset
+
+.
+ All three studies came to the same conclusion - that the majority of CTCF
+ and cohesin binding sites overlap in mammalian genomes, leading to a model
+ where the sequence specific binding of CTCF is responsible for the targeting
+ of the cohesin complex.
+\end_layout
+
+\begin_layout Standard
+In these and investigations, cohesin has been implicated at many if not
+ most of the loci described in the above sections.
+ Stedman 
+\emph on
+et al.
+
+\emph default
+ and Wendt 
+\emph on
+et al.
+
+\emph default
+ both demonstrated that cohesin is enriched at the CTCF binding sites of
+ the imprinted 
+\emph on
+H19/Igf2
+\emph default
+ locus in the same methylation- and parent of origin- sensitive manner and
+ that this binding is ablated upon mutation of the CTCF sites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stedman2008,Wendt2008"
+
+\end_inset
+
+.
+ Enrichment of cohesin at this locus is also disrupted in mutants lacking
+ the C-terminal domain of CTCF responsible for binding cohesin 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Xiao2011"
+
+\end_inset
+
+ and the presence of cohesin is required for the three-dimensional conformation
+ of the locus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nativio2009"
+
+\end_inset
+
+.
+ Cohesin has also been implicated in the control of the beta-globin locus
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wendt2008,Hou2010"
+
+\end_inset
+
+ and 
+\emph on
+Ifng
+\emph default
+ / T
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+
+2 LCR 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parelho2008,Hadjur2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+CTCF depletion does not affect the amount of cohesin bound to the genome,
+ but rather the enrichment of cohesin at specific sites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parelho2008,Wendt2008"
+
+\end_inset
+
+.
+ Schmidt 
+\emph on
+et al.
+ 
+\emph default
+showed
+\emph on
+ 
+\emph default
+a subset of cohesin bound regions independent of CTCF binding in MCF-7 cells
+ which colocalise with ER-
+\begin_inset Formula $\alpha$
+\end_inset
+
+ binding 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schmidt2010"
+
+\end_inset
+
+.
+ A similar association of cohesin and mediator / Nipb1 at promoters and
+ enhancers in ES cells has been described 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kagey2010"
+
+\end_inset
+
+.
+ These studies suggest an attractive hypothesis that multiple tissue-specific
+ proteins may be able to target cohesin binding to specific sites to affect
+ transcriptional profiles.
+\end_layout
+
+\begin_layout Subsection
+Tethering
+\end_layout
+
+\begin_layout Standard
+The nucleus is a structured organelle which contains a number of architectural
+ features such as nuclear pores, the inner nuclear membrane (nuclear lamina)
+ and the nucleolus.
+ Chromatin can bind to these regions in a specific nature leading to changes
+ in nuclear organisation and gene expression.
 \end_layout
 
 \begin_layout Itemize
-Model whereby CTCF recruits cohesin
+nuclear pores
 \end_layout
 
 \begin_layout Itemize
-CTCF might not be the only thing that can recruit cohesin
+nuclear lamina
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Nipb1
+nucleolus
 \end_layout
 
-\end_deeper
 \begin_layout Subsection
 Actin and myosin
 \end_layout
 
 \begin_layout Itemize
-Nuclear actin and myosin and stuff.
+Nuclear actin and stuff.
+\end_layout
+
+\begin_layout Itemize
+SARS / MARS
 \end_layout
 
 \begin_layout Subsection
@@ -3276,29 +3512,55 @@ Tiwari 2008 - A novel 6C assay uncovers Polycomb-mediated higher order chromatin
 \end_layout
 
 \begin_layout Subsection
-The self-organisation model
+Loops and domains
 \end_layout
 
 \begin_layout Itemize
-Cook paper on entropy basics, nature of everything wanting to cluster.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cook2002,Iborra1996"
-
-\end_inset
-
-
+These different models are not mutually exclusive
 \end_layout
 
 \begin_layout Itemize
-Transcription factor networks (Bertie).
+Summary / conclusion model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Loops and domains: HiC
 \end_layout
 
 \begin_layout Itemize
-Mention specialised transcription factories again?
+Stabilised by CTCF and cohesin
 \end_layout
 
+\begin_layout Itemize
+Functionally relevant for transcription, silencing and replication
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Histone marks
+\end_layout
+
+\begin_layout Itemize
+Polycomb
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Change driven by nuclear motors
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+RNAPII
+\end_layout
+
+\begin_layout Itemize
+Actin and myosin
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 The annotated genome 
 \begin_inset CommandInset label
@@ -3325,6 +3587,10 @@ Correlation between different marks gives the full picture
 
 \begin_layout Itemize
 Genome wide studies paving the way for a different type of analysis
+\end_layout
+
+\begin_layout Itemize
+HiC Domains and loops
 \end_layout
 
 \begin_layout Itemize
@@ -3380,7 +3646,7 @@ Since the development of chromosome banding microscopy, it has been known
  treatments in different ways, paving the way for patient-specific treatment
  regimes (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Mitelman2007"
 
 \end_inset
@@ -3403,7 +3669,7 @@ DSBs) that are situated on different chromosomes.
  The resulting product can be a straight swap (balanced translocations)
  or can result in deletions or even gain of material after malsegregation
  in mitosis (unbalanced translocations).
- Chromosomal translocations can involve multiple DSBs on different chromosmes
+ Chromosomal translocations can involve multiple DSBs on different chromosomes
  resulting in hugely complex karyotypes, especially in cells predisposed
  to translocations due to defects in repair.
 \end_layout
@@ -3615,7 +3881,7 @@ key "Darai-Ramqvist2008"
 
  (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Gu2008"
 
 \end_inset
