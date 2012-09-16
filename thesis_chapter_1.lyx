@@ -904,7 +904,14 @@ key "Parada2004b,Kuroda2004"
 \end_layout
 
 \begin_layout Subsection
-CTs and transcription
+CTs and transcription 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:CTs-and-transcription"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3461,16 +3468,127 @@ The nucleus is a structured organelle which contains a number of architectural
  in nuclear organisation and gene expression.
 \end_layout
 
-\begin_layout Itemize
-nuclear pores
+\begin_layout Standard
+As microscopy studies have advanced our understanding of how the genomic
+ positioning of genes can affect expression, it has became clear that associatio
+n with the nuclear periphery generally correlates with gene silencing (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kosak2002,Dietzel2004,Zink2004a,Finlan2008,Reddy2008"
+
+\end_inset
+
+; discussed in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:CTs-and-transcription"
+
+\end_inset
+
+).
+ In 2008, Guelen 
+\emph on
+et al.
+
+\emph default
+ used the DamID technique with lamin-B1 tethered to DNA adenine methyltransferas
+e (Dam) to identify regions of the genome associated with the nuclear lamina
+ in human lung fibroblasts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Guelen2008"
+
+\end_inset
+
+.
+ They found that the fraction of lamina-associated chromatin on each chromosome
+ correlated with known CT positioning preferences in fibroblasts.
+ Their key finding was that chromatin-lamina associations existed as distinct
+ regions, termed lamina associated domains (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LAD"
+description "Lamina associated domain"
+
+\end_inset
+
+LADs).
+ The domains range from 0.1 to 10 megabases in size and are enriched for
+ chromatin marks associated with transcriptional repression: H3K27me3, H3K9me2,
+ low H3K4me2, low RNA polymerase II, low gene expression and low gene density.
+ LAD boundaries are enriched for CTCF binding and CpG island, suggesting
+ a mechanism of association 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Guelen2008"
+
+\end_inset
+
+.
+ Shimi 
+\emph on
+et al.
+
+\emph default
+ showed in the same year that Lamins A and B form separate meshes on the
+ inner nuclear membrane and relatively static structures within the nuclear
+ matrix, hinting at the existence of highly complex micro-environments based
+ on the binding of chromatin to lamin networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shimi2008"
+
+\end_inset
+
+.
+ A subsequent study investigating cells with a mutation in the 
+\emph on
+LMNA
+\emph default
+ lamin gene has shown that the position, compaction and transcriptional
+ activity of some lamin-associated regions are affected 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mewborn2010"
+
+\end_inset
+
+, suggesting that the many diverse conditions caused by lamin mutations
+ may arise due to changes in chromatin structure and so gene expression.
 \end_layout
 
-\begin_layout Itemize
-nuclear lamina
-\end_layout
+\begin_layout Standard
+Although LADs are associated with low gene expression, not all chromatin
+ at the nuclear membrane is silenced.
+ Early electron micrographs showed regions of less dense chromatin at nuclear
+ pores, an observation recently validated with the observation of nuclear
+ pore complexes (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NPC"
+description "Nuclear pore complex"
 
-\begin_layout Itemize
-nucleolus
+\end_inset
+
+NPCs) contacting channels with heterochromatin using a new form of sub-diffracti
+on limit light microscopy able to simultaneously image NPCs, lamins and
+ chromatin 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schermelleh2008"
+
+\end_inset
+
+.
+ Nuclear pore proteins have been found to be associated with active regions
+ of chromatin and are present both at NPC and within the nucleoplasm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vaquerizas2010,Kalverda2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3561,6 +3679,10 @@ Actin and myosin
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Section
 The annotated genome 
 \begin_inset CommandInset label
@@ -3627,6 +3749,11 @@ Couple of key findings
 
 \begin_layout Itemize
 Mention value of ENCODE datasets beyond initial publications
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
