@@ -28,7 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
+\float_placement !th
 \paperfontsize default
 \spacing double
 \use_hyperref true
@@ -57,9 +57,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
+\leftmargin 2.5cm
 \topmargin 2cm
-\rightmargin 2cm
+\rightmargin 2.5cm
 \bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
@@ -67,7 +67,7 @@
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -83,19 +83,16 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The nucleus is a highly complex organelle.
- It is primarily responsible for the faithful replication and maintenance
- of the DNA template and control of the transcriptional products resulting
- from that DNA.
- To achieve this the contents of the nucleus are organised into compartments
+The nucleus is a highly complex organelle responsible for the faithful replicati
+on and maintenance of the DNA template and regulation its transcriptional
+ products.
+ To achieve this, the contents of the nucleus are organised into compartments
  specialising in processes such as transcription and replication.
- These compartments are not membrane bound and seem to be both the result
- of function and active processes.
  Abnormalities in the organisation of the nucleus are often associated with
- disease, including cancer.
+ diseases such as cancer.
  In this chapter I will discuss the current understanding of nuclear structure
- and organisation and how it may be involved in the initiation of cancer
- causing chromosomal translocations.
+ and organisation and how it may be involved in the initiation of oncogenic
+ chromosomal translocations.
 \end_layout
 
 \begin_layout Section
@@ -103,8 +100,9 @@ Chromatin
 \end_layout
 
 \begin_layout Standard
-Chromatin is a general term used to describe the DNA packaged in the plethora
- of proteins that bind to it.
+Chromatin is a general term used to describe DNA packaged around histone
+ proteins to form nucleosomes, and the plethora of additional proteins that
+ bind to them both.
  There are two principle forms of chromatin: euchromatin
 \emph on
  
@@ -120,67 +118,46 @@ key "Heitz1928"
 
 .
  Heterochromatin stains darkly because it remains highly condensed during
- interphase, typically relocating to the nuclear periphery.
- It can be split into constitutive
-\emph on
- 
-\emph default
-heterochromatin and facultative
-\emph on
- 
-\emph default
-heterochromatin, the former describing heterochromatin found in all cell
- types, typically containing repetitive elements found in centromeres and
- telomeres and the latter the less compacted inactive chromatin that can
- vary between cell types as they differentiate.
+ interphase and often associated with the nuclear periphery.
+ Constitutive heterochromatin consists of repetitive elements found in centromer
+es and telomeres, it plays a structural role within the genome and is highly
+ compacted during interphase.
+ Facultative heterochromatin is less compact and consists of inactive chromatin
+ that can vary between cell types as they differentiate.
  Heterochromatin is well known as being a repressive environment for gene
  expression.
- Studies whereby normally active regions are artificially tethered to the
- inner nuclear membrane show the ablation of gene expression 
+ An example of this is the position-effect variegation seen in 
+\emph on
+Drosophila melanogaster - 
+\emph default
+a chromosomal inversion in the X chromosome characterised in the early 1930s
+ can place the 
+\emph on
+white
+\emph default
+ gene close to pericentric heterochromatin, leading to the spreading of
+ heterochromatin marks which silences the 
+\emph on
+white 
+\emph default
+gene and results in a change in eye colour 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Finlan2008,Reddy2008"
-
-\end_inset
-
- though this effect appears to be locus specific and is not always observed
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Kumaran2008"
+key "Vogel2009"
 
 \end_inset
 
 .
- Euchromatin is the site of most genic transcription, as shown by the presence
- of RNA polymerase and nascent transcripts found in early fractionation
- studies 
+ In contrast, euchromatin is the site of most genic transcription 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chesterton1974"
 
 \end_inset
 
-.
- Its looser compaction allows the cellular machinery access to the DNA,
- enabling the binding of transcription factors and the initiation of transcripti
-on.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Talk about other heterochromatin functions? Reviewed in Grewal and Jia,
- 2007.
- Sister chromatid adhesions, meiotic homologue pairing, organising centres
- ofr mitotic condensation.
-\end_layout
-
-\end_inset
-
-
+, its looser compaction allowing cellular machinery access to the DNA, enabling
+ the binding of transcription factors and the initiation of transcription.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -263,16 +240,23 @@ key "Davey2002"
 
 To package DNA, the double helix is wrapped around an octomer of core histones:
  two H2A, two H2B, two H3 and two H4.
- 146 base pairs of DNA wrap around these positively charged proteins to
+ 146 base pairs of DNA interact with these positively charged proteins to
  form the nucleosome, which is then bound by histone H1 with linker DNA
- to make a total of 166 base pairs 
+ to make a total of 166 base pairs (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nucleosome-xray-structure"
+
+\end_inset
+
+, 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Davey2002"
 
 \end_inset
 
-.
+).
  This packing forms the 10 nm fibre, often known as 'beads on a string'
  due to its appearance in electron micrographs.
  At their most basic level, histones function to compact DNA by counteracting
@@ -285,10 +269,12 @@ Histone modifications
 \end_layout
 
 \begin_layout Standard
-Core histones have flexible tails which extend outside of the nucleosome,
- and are accessible to proteins within the nuclear matrix.
+Core histones have flexible amino-terminal tails which extend outside of
+ the nucleosome, and are accessible to proteins within the nucleoplasm.
  These tails can be post-translationally modified at a large number of residues
- and these modifications can affect the packing of chromatin 
+ - lysine (methylation, acetylation, ubiquitination, sumoylation, ADP-Ribosylati
+on), arginine (methylation) as well as serine and threonine (phosphorylation).
+ These modifications can affect the packing of chromatin 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Wolffe1999a"
@@ -296,8 +282,8 @@ key "Wolffe1999a"
 \end_inset
 
  as well as which proteins can bind.
- The large number of combinatorial possibilities that result result from
- these modifications have been dubbed the 'Histone Code' 
+ The large number of combinatorial possibilities that result from these
+ modifications have been dubbed the 'Histone Code' 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Strahl2000a"
@@ -308,27 +294,932 @@ key "Strahl2000a"
  Different modifications are related to different chromatin states.
  For example, active promoters are typically enriched for di- and tri-methylatio
 n of histone 3 lysine 4 (H3K4) whilst inactive promoters are enriched for
- trimethylation at lysine residues 27 (H3K27me3) and 9 (H3K9me3) (Fig 
+ trimethylation at lysine residues 27 (H3K27me3) and 9 (H3K9me3) (See table
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Histone-mod-dashboard"
+reference "tab:histone-mods"
 
 \end_inset
 
-, for review, see 
+ for a summary.
+ For review, see 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Zhou2011"
 
 \end_inset
 
 ).
  
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-I think I'll replace this with a table of common histone modifications
+\begin_inset Tabular
+<lyxtabular version="3" rows="19" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Modification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Histone
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Residue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Effects on transcription
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Acetylation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K5, K12, K15, K20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K4, K14, K18, K23, K27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Histone deposition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K5, K12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Histone deposition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K8, K16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Methylation
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K4, K79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Euchromatin
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K9, K27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Silencing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+R17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Elongation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+R3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Silencing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Phosphorylation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+S1, T119
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Mitosis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2AX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+S139
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+DNA repair
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+T3, S10, T11, S28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Mitosis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+S1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Mitosis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Ubiquitination
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K119
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Silencing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+H2B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+K120
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Activation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Summary of known mammalian histone modifications
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:histone-mods"
+
+\end_inset
+
+
+\series bold
+Summary of known mammalian histone modifications.
+
+\series default
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+H, histone; K, lysine; R, arginine; S, serine; T, threonine.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sadri-Vakili2006"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -385,9 +1276,9 @@ description "Genome-wide association study"
 
 GWAS) and found numerous enhancer elements that coincide with disease associated
  mutations.
- This systems biology approach can reveal the dynamics across different
- cell types and can be a powerful tool in understanding how the genome is
- interpreted in health and disease (see Section 
+ Such genome-wide approaches can reveal the dynamics across different cell
+ types and are powerful tools in understanding how the genome is interpreted
+ in health and disease (see Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:The-annotated-genome"
@@ -395,72 +1286,6 @@ reference "sec:The-annotated-genome"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/chapter 1/nrg2905-f4.jpg
-	lyxscale 40
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Histone-mod-dashboard"
-
-\end_inset
-
-
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Histone modification associations in chromatin
-\end_layout
-
-\end_inset
-
-
-\series bold
-Histone modification associations in chromatin.
-
-\series default
- Diagram showing the range of histone modifications available within mammalian
- chromatin and how they can specify the behaviour of elements within the
- DNA.
- Taken from
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Zhou2011"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -544,7 +1369,7 @@ key "Talbert2010"
 
 \begin_layout Standard
 Other core histone proteins also have variants, such as H2A.Z, a histone
- variant found on either side of the nucleosome free regions
+ variant located on either side of the nucleosome free regions
 \emph on
  
 \emph default
@@ -557,8 +1382,17 @@ key "Zlatanova2008"
 \end_inset
 
 .
- H2A.Z promotes the recruitment of RNA polymerase II by mediating protein
- interactions 
+ H2A.Z is able to promote the recruitment of RNA polymerase II to certain
+ regions, such as the yeast 
+\emph on
+GAL1-10
+\emph default
+ genes,
+\emph on
+ 
+\emph default
+by mediating C-terminal interactions with the transcriptional machinery
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Adam2001"
@@ -571,7 +1405,7 @@ key "Adam2001"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 H3.3, H2A.Z, H2A.X (DNA damage), H2A.Z in centromere formation...
@@ -610,8 +1444,20 @@ key "Trask2002"
 .
  In prokaryotes, genes are often found in cistrons and can be coexpressed
  in single polycistronic mRNAs.
- This type of linear organisation is not present in eukaryotes, though gene
- clusters resulting from tandem duplication are found throughout the genome.
+ This type of linear organisation is not present in most higher eukaryotes,
+ with the notable exception of the nematode worm 
+\emph on
+Caenorhabditis elegans
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Blumenthal2002"
+
+\end_inset
+
+, though gene clusters resulting from tandem duplication are frequently
+ found throughout mammalian genomes.
  Some specific examples of two-dimensional clustering have been shown: testes-sp
 ecific genes in 
 \emph on
@@ -645,6 +1491,7 @@ key "Janga2008"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -826,9 +1673,9 @@ key "Stack1977"
 \emph on
 et al., 
 \emph default
-showed that interphase chromosomes exist in territories by studying the
- pattern of DNA damage in metaphase chromosomes after spot irradiation during
- interphase 
+showed that interphase chromosomes occupy territories by studying the pattern
+ of DNA damage in metaphase chromosomes after spot irradiation during interphase
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cremer1982"
@@ -837,7 +1684,7 @@ key "Cremer1982"
 
 .
  The subsequent development of chromosome paints, a method to visualise
- entire- or part- chromosomes with fluorescence 
+ entire or part-chromosomes with fluorescence 
 \emph on
 in-situ
 \emph default
@@ -925,7 +1772,7 @@ key "Kosak2002,Dietzel2004,Zink2004a"
 
 .
  To investigate whether nuclear positioning can cause changes in transcriptional
- activity or is simply a consequence, two groups published studies which
+ activity or is simply a consequence, three groups published studies which
  artificially tethered genomic regions to the inner nuclear membrane using
 \emph on
  lac
@@ -937,14 +1784,31 @@ key "Kosak2002,Dietzel2004,Zink2004a"
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Finlan2008,Reddy2008"
+key "Finlan2008,Reddy2008,Kumaran2008"
 
 \end_inset
 
 .
- Both groups observed a decrease in the transcriptional activity of the
- regions when tethered, an effect that was ablated when cells were treated
- with trichostatin A (
+ Finlan 
+\emph on
+et al.
+ 
+\emph default
+and Reddy 
+\emph on
+et al.
+
+\emph default
+ both observed a decrease in the transcriptional activity of the regions
+ when tethered 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Finlan2008,Reddy2008"
+
+\end_inset
+
+, an effect that was ablated when cells were treated with trichostatin A
+ (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "TSA"
@@ -1062,8 +1926,8 @@ description "Chinese hamster ovary cells"
 \end_inset
 
 CHO) cells after stimulation with a transcriptional activator and analysed
- the movement of the target chromosome from the nuclear periphery to the
- interior of the nucleus 
+ the movement of a reporter locus from the nuclear periphery to the interior
+ of the nucleus 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chuang2006"
@@ -1080,8 +1944,8 @@ et al.
 
 \emph default
  who demonstrated chromosome movement only 15 minutes after serum starvation,
- a process that was ablated by the inhibition of actin and myosin polymerisation
- 
+ a process that was ablated by the inhibition of actin polymerisation or
+ myosin activity 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mehta2010"
@@ -1209,10 +2073,10 @@ Chromosome territory intermingling
 \end_layout
 
 \begin_layout Standard
-A question that followed immediately on from the discovery of loops extending
+A question that followed immediately from the discovery of loops extending
  from chromosome territories was that of chromosome intermingling.
- Mathematical modelling approaches suggested that irradiation induced DNA
- damage corresponded to the intermingling of chromosome territories 
+ Mathematical modelling approaches capable of predicting intermingling volumes
+ correlated with known rates irradiation induced DNA damage 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Holley2002,Hlatky2002"
@@ -1233,12 +2097,12 @@ key "Branco2006"
 \end_inset
 
 .
- Intermingling volumes changed significantly for three chromosome pairs
- after transcription inhibition with 
+ The degree of intermingling changed significantly for three chromosome
+ pairs after transcription inhibition with 
 \begin_inset Formula $\alpha$
 \end_inset
 
--amanatin, suggesting a role for specific transcription interactions in
+-amanitin, suggesting a role for specific transcription interactions in
  the organisation of the nucleus 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1275,6 +2139,16 @@ key "Wurtele2006"
 
 , suggesting that the loops contact other chromosomes rather than occupying
  an empty inter-chromosomal space.
+ A large number of inter-chromosomal contacts have been detected by recent
+ genome-wide chromosome conformation studies, supporting the presence of
+ chromosome intermingling 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1282,24 +2156,21 @@ Nuclear compartmentalisation
 \end_layout
 
 \begin_layout Standard
-Brief introduction to the history of nuclear organisation studies, then
- whip through the bigguns':
-\end_layout
+Because the nuclear interior is devoid of membrane bound structures its
+ organisation is defined by a dynamic equilibrium - a sum product of the
+ many processes and requirements involved in nuclear biology.
+ In addition to the non-random positioning of chromosomes, a number of proteins
+ are also found in aggregates typically referred to as subnuclear compartments.
+ The clustering of proteins into compartments increases the efficiency of
+ biochemical processes and is predicted by the principle of molecular crowding
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Cook2002"
 
-\begin_layout Itemize
-Cajal bodies
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Speckles
-\end_layout
-
-\begin_layout Itemize
-Nucleoli
-\end_layout
-
-\begin_layout Itemize
-Polycomb / silencing bodies
+) and is a key feature in the organisation of the nucleus.
 \end_layout
 
 \begin_layout Subsection
@@ -1307,12 +2178,13 @@ Transcription factories
 \end_layout
 
 \begin_layout Standard
-One nuclear subcompartment which has come to light within the past thirty
- years are 
+One class of nuclear subcompartment which has come to light within the past
+ thirty years is the
 \emph on
-transcription factories
+ 
 \emph default
-, foci of hyper-phosphorylated RNA polymerase II spread throughout the nucleus.
+transcription factory, seen as foci of hyper-phosphorylated RNA polymerase
+ II scattered throughout the nucleus.
  The majority of genic transcription appears to take place at transcription
  factories 
 \begin_inset CommandInset citation
@@ -1321,7 +2193,8 @@ key "Jackson1993,Osborne2004,Eskiw2008a"
 
 \end_inset
 
-, challenging the classical model of transcription found in many text books.
+, challenging the classical model of transcription found in many text books
+ (discussed below).
 \end_layout
 
 \begin_layout Standard
@@ -1496,6 +2369,19 @@ key "Eskiw2008a"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure from Chris' ESI paper here?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The discovery of transcription factories has demanded a new model for the
  action of RNA polymerase II 
 \begin_inset CommandInset citation
@@ -1580,9 +2466,11 @@ key "Osborne2004"
 
 \end_inset
 
- and went on to demonstrate that transcription is a discontinuous process,
- with the frequency of nascent RNA transcription foci related to cellular
- mRNA concentrations, suggesting that transcription occurs in bursts.
+.
+ They went on to demonstrate that transcription is a discontinuous process
+ with the frequency of nascent RNA transcription foci related to primary
+ transcript RNA concentrations, suggesting that transcription occurs in
+ bursts.
  Multiple genes both in 
 \emph on
 cis
@@ -1627,17 +2515,16 @@ key "Osborne2007"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Should probably throw in a few more references in this section.
- See Stefan's NG paper.
-\end_layout
+It is worth noting that the concept of genes being recruited to immobile
+ transcription factories is not universally accepted, with some doubt over
+ the resolution achievable by FISH and 3C studies (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sutherland2009"
 
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Subsubsection
@@ -1660,9 +2547,9 @@ key "Cook2002"
 \end_inset
 
 .
- Genes that diffuse to a transcription factory already engaged with other
- genes that share the same factors are more likely to engage and be transcribed
- themselves 
+ It is thought that genes diffusing to a transcription factory already engaged
+ with other genes that share the same factors are more likely to engage
+ and be transcribed themselves 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Bartlett2006"
@@ -1751,14 +2638,11 @@ key "Osborne2007"
 \end_inset
 
 .
- Xu and Cook later demonstrated 
-\emph on
-in-vitro
-\emph default
- that cells transfected with thousands of plasmids containing different
- transcriptional units clustered together at a handful of transcription
- factories, segregated according to their promoter and the presence of an
- intron 
+ Xu and Cook later demonstrated that the transcription of plasmids transfected
+ into cells clustered together at a handful of transcription factories.
+ The plasmids were generated with one of four promoter types, one of three
+ genes and one of three 3' regions and were found to segregate according
+ to their promoter and the presence of an intron 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Xu2008a"
@@ -1970,8 +2854,7 @@ key "Jacob1961"
 
 .
  Three genes required for the digestion of lactose are controlled by the
- binding of a repressor protein which blocks transcription by RNA polymerase
- II.
+ binding of a repressor protein which blocks transcription by RNA polymerase.
  This repressor can form a tetramer and bind two region simultaneously,
  requiring a topological loop in the chromatin 
 \begin_inset CommandInset citation
@@ -2018,27 +2901,8 @@ key "Carter2002,Tolhuis2002"
 \end_inset
 
 .
- This locus contains five beta-like genes 
-\begin_inset Formula $\beta$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma$
-\end_inset
-
-G, 
-\begin_inset Formula $\gamma$
-\end_inset
-
-A, 
-\begin_inset Formula $\delta$
-\end_inset
-
- and 
-\begin_inset Formula $\varepsilon$
-\end_inset
-
-, which are arranged in order of their expression through development.
+ This locus contains four beta-like genes arranged in order of their expression
+ through development.
  Approximately 50 kilobases upstream is a locus control region (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -2269,9 +3133,9 @@ key "Lee2003"
 et al.
  
 \emph default
-showed that these genes co-associate in T cells, NK cells, B cells and fibroblas
-ts, despite not being expressed in the last two cell types.
- In T cells and NK cells the genes associate with the T
+showed that these genes cluster together in T cells, NK cells, B cells and
+ fibroblasts, despite not being expressed in the last two cell types.
+ In T cells and NK cells the genes additionally associate with the T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -2384,7 +3248,7 @@ et al.
 
 \emph default
  developed a mouse model for preaxial polydactyly by random insertion of
- a reporter casette 
+ a reporter cassette 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sharpe1999"
@@ -2417,7 +3281,7 @@ et al.
 \emph on
 Lmbr1
 \emph default
- unrelated to the condition, demonstrating that 7q36 aboromalities found
+ unrelated to the condition, demonstrating that 7q36 abnormalities found
  in patients with preaxial polydactyly disrupt this enhancer 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2561,10 +3425,49 @@ key "Spilianakis2005"
 \end_inset
 
 .
- A number of studies have since shown specific interchromosomal contacts
+ 
+\end_layout
+
+\begin_layout Standard
+Lomvardas 
+\emph on
+et al.
+
+\emph default
+ used 3C to demonstrate the association of an olfactory receptor gene enhancer
+ made specific contacts to multiple other olfactory genes across the genome
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lomvardas2006"
+
+\end_inset
+
+.
+ Mouse dendrites can express one of approximately 1300 odorant receptor
+ genes and Lomvardas 
+\emph on
+et al\SpecialChar \@.
+
+\emph default
+ suggested that this enhancer-gene interaction was the mechanism responsible
+ for the expression of that gene.
+ However, it should be noted that deletion of this enhancer had little effect
+ on the usage of olfactory genes outside of it's cluster 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fuss2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A number of other studies have shown specific interchromosomal contacts
  involved in a number of processes ranging from X-inactivation to genomic
- imprinting, showing that these interactions play an important role in chromatin
- biology (reviewed in 
+ imprinting, showing that these interactions may play an important role
+ in chromatin biology (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Schneider2007"
@@ -2596,7 +3499,7 @@ key "Osborne2011"
 \end_layout
 
 \begin_layout Standard
-The recent development of all-to-all methods has allowed the confirmation
+The recent development of all-to-all methods has allowed the conformation
  of the entire genome to be probed in a single experiment.
  This approach has many advantages; such an unbiased approach allows the
  detection of unexpected interactions and associations can be probed in
@@ -2657,8 +3560,8 @@ What drives nuclear organisation?
 As our understanding of the structure of the nucleus evolves, an increasing
  number of structural features and patterns are being uncovered.
  Teasing apart correlation and causation to find the driving forces behind
- nuclear organisation is not an easy task and remains a hot topic within
- the field.
+ nuclear organisation is not an easy task and remains a major challenge
+ within the field.
 \end_layout
 
 \begin_layout Subsection
@@ -2676,7 +3579,7 @@ name "sub:drives-organisation-Transcription"
 The discovery of transcription factories has changed our view of nuclear
  organisation substantially.
  If genetic templates are mobile and transcription factories are fixed,
- then the nucleus may be able to use the process of transcription as a tool
+ then it maybe be possible to use the process of transcription as a tool
  to fold the genome into specific conformations.
 \end_layout
 
@@ -2757,7 +3660,8 @@ key "Yin1995"
 
 .
  RNA polymerase stalled when the force applied was greater than 14 piconewtons
- (pN), making RNA polymerase the most powerful biological motor known.
+ (pN), substantially more than kinesin or myosin, making RNA polymerase
+ the most powerful biological motor known.
  Papantonis 
 \emph on
 et al.
@@ -2789,14 +3693,15 @@ key "Papantonis2010"
 \begin_layout Standard
 The role for transcription in the organisation of the genome is further
  supported by the pervasive nature of transcription.
- As much as 15% of the human genome is actively transcribed 
+ As much as 93% of genomic bases in the human genome are though to be transcribe
+d in at least one cell type (described in 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "Cheng2005"
+LatexCommand citealp
+key "Clark2011"
 
 \end_inset
 
-, including many enhancers 
+), including many enhancers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Ling2005,Kim2010"
@@ -2830,7 +3735,7 @@ et al.
 
 \emph default
  have shown that genes with high expression in multiple tissue types have
- a propensity be be present in clusters within the genome 
+ a propensity to be present in clusters within the genome 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lercher2002"
@@ -2847,8 +3752,14 @@ key "Zhou2006"
 \end_inset
 
 .
- These housekeeping genes were bound stably to the nuclear matrix, whereas
- the alpha globin genes were eluted in a high salt extraction 
+ Gavrilov 
+\emph on
+et al.
+ 
+\emph default
+showed that these housekeeping genes were bound stably to the nuclear matrix
+ and resistant to high salt extraction, whereas the alpha globin genes were
+ less stable and could be eluted 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Gavrilov2010"
@@ -3561,7 +4472,15 @@ key "Mewborn2010"
 Although LADs are associated with low gene expression, not all chromatin
  at the nuclear membrane is silenced.
  Early electron micrographs showed regions of less dense chromatin at nuclear
- pores, an observation recently validated with the observation of nuclear
+ pores (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Capelson2009,Arib2011"
+
+\end_inset
+
+).
+ This observation was recently validated with the observation of nuclear
  pore complexes (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -3595,25 +4514,120 @@ key "Vaquerizas2010,Kalverda2010"
 Actin and myosin
 \end_layout
 
-\begin_layout Itemize
-Nuclear actin and stuff.
-\end_layout
+\begin_layout Standard
+The presence of nuclear actin has been debated for many years; its initial
+ detection often labelled as artefacts due to the inability of phalloidin
+ to stain actin fibrils within the nucleus (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hofmann2006"
 
-\begin_layout Itemize
-SARS / MARS
+\end_inset
+
+).
+ Despite this skepticism, nuclear actin research has had a resurgence in
+ recent years with a studies linking filamentous actin to processes such
+ as transcription 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hofmann2004"
+
+\end_inset
+
+ and nuclear export 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hofmann2001"
+
+\end_inset
+
+.
+ McDonald 
+\emph on
+et al.
+
+\emph default
+ used fluorescence recovery after photobleaching (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FRAP"
+description "Fluorescence recovery after photobleaching"
+
+\end_inset
+
+FRAP) microscopy to study nuclear actin in HeLa cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "McDonald2006"
+
+\end_inset
+
+.
+ Treatment with latrunculin which inhibits the polymerisation of actin lead
+ to a loss of a slow moving population of actin, suggesting the existence
+ of polymeric actin in the nucleus.
+ Within the cytoplasm, force is generated through interaction between bundles
+ of filamentous actin and polymerised myosin II.
+ The nucleus does not contain any myosin II, though an isoform of myosin
+ I incapable of forming filaments has been detected 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pestic-Dragovich2000"
+
+\end_inset
+
+.
+ Our understanding of how nuclear actin and myosin are involved in nuclear
+ organisation is still in its infancy, yet is rapidly gaining traction as
+ techniques are developed which allow us to probe and manipulate their behaviour
+ within the nucleus without disrupting cytoplasmic processes.
 \end_layout
 
 \begin_layout Subsection
 Replication
 \end_layout
 
-\begin_layout Itemize
-Should probably write quite a bit here as haven't talked about it at all
- yet
-\end_layout
+\begin_layout Standard
+Proliferating cells must replicate their genomes once per cell cycle and
+ do so in only a few hours, despite their size.
+ This is accomplished by simultaneously replicating many regions of the
+ genome at shared sites of replicated called replication factories 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jackson1998b,Ma1998"
 
-\begin_layout Itemize
-Similarity to transcription / factories etc
+\end_inset
+
+.
+ The genome is replicated in an organised manner; active genes are linked
+ to early replication and inactive genes tend to replicate late (reviewed
+ in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Goren2003"
+
+\end_inset
+
+).
+ Clusters of replication foci that share replication factories continue
+ to associate through multiple cycles of cell division 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jackson1998b"
+
+\end_inset
+
+.
+ Many studies have shown correlation between behaviour in replication and
+ genomic features or activity, though causative links are still lacking
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chakalova2005"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
@@ -3621,64 +4635,73 @@ Polycomb
 \end_layout
 
 \begin_layout Standard
-Tiwari 2008 -0 PcG proteins, DNA methylation and gene repression by looping
-\end_layout
+Another nuclear subcompartment known to be involved in genomic organisation
+ and looping is the polycomb body.
+ The Polycomb protein complex (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PcG"
+description "Polycomb protein complex"
 
-\begin_layout Standard
-Tiwari 2008 - A novel 6C assay uncovers Polycomb-mediated higher order chromatin
- conformations
+\end_inset
+
+PcG) is involved in the directed silencing of regions at polycomb response
+ elements (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PRE"
+description "Polycomb response element"
+
+\end_inset
+
+PREs), mediated by repressive histone modifications such as H3K27me3 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cao2002"
+
+\end_inset
+
+, and are important for the maintenance of silencing of the 
+\emph on
+Hox
+\emph default
+ genes (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Pirrotta1998"
+
+\end_inset
+
+).
+ Long range interactions and chromatin looping has been implicated in repression
+ by PcG proteins 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Tiwari2008,Tiwari2008a"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-Loops and domains
+The bigger picture
 \end_layout
 
-\begin_layout Itemize
-These different models are not mutually exclusive
+\begin_layout Standard
+When seen as a whole, many of the models described above are not mutually
+ exclusive.
+ Many hold in common the presence of chromatin loops within the nucleus
+ and describe domains of chromatin defined by epigenetic marks.
+ It seems entirely plausible that the overall structure of the nucleus is
+ determined by the combined result of many different processes directing
+ specific interactions, driven by different processes and stabilised by
+ different types of contact.
+ Whilst this picture is still developing, it is clear that the nucleus is
+ a highly dynamic and plastic organelle defined by millions of years of
+ evolutionary pressures on every aspect of its content.
 \end_layout
 
-\begin_layout Itemize
-Summary / conclusion model
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Loops and domains: HiC
-\end_layout
-
-\begin_layout Itemize
-Stabilised by CTCF and cohesin
-\end_layout
-
-\begin_layout Itemize
-Functionally relevant for transcription, silencing and replication
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Histone marks
-\end_layout
-
-\begin_layout Itemize
-Polycomb
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Change driven by nuclear motors
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-RNAPII
-\end_layout
-
-\begin_layout Itemize
-Actin and myosin
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Note Note
 status open
@@ -3760,14 +4783,10 @@ Mention value of ENCODE datasets beyond initial publications
 Chromosomal translocations
 \end_layout
 
-\begin_layout Subsection
-Formation of chromosomal translocations
-\end_layout
-
 \begin_layout Standard
-Since the development of chromosome banding microscopy, it has been known
- that the genetic material within cancerous cells is frequently disrupted.
- Specific chromosomal rearragements are frequently associated with certain
+One of the major medical implications of genomic organisation is how it
+ may relate to the formation of chromosomal translocations.
+ Specific chromosomal rearrangements are frequently associated with certain
  cancer types, and can be highly predictive of patient prognosis.
  Furthermore, cancers involving different translocations can respond to
  treatments in different ways, paving the way for patient-specific treatment
@@ -3779,10 +4798,18 @@ key "Mitelman2007"
 \end_inset
 
 ).
+ Understanding the principles of chromosomal translocation formation is
+ an important step in the development of novel treatments.
+\end_layout
+
+\begin_layout Subsection
+Formation of chromosomal translocations
 \end_layout
 
 \begin_layout Standard
-Chromosomal translocations involve the rearrangement of genetic material
+Since the development of chromosome banding microscopy, it has been known
+ that the genetic material within cancerous cells is frequently disrupted.
+ Chromosomal translocations involve the rearrangement of genetic material
  between non-homologous chromosomes through the formation and aberrant repair
  of at least two double strand breaks (
 \begin_inset CommandInset nomenclature
@@ -3905,7 +4932,7 @@ key "AlbertsLewisRaffRobertsWalter2007"
 
 \end_inset
 
- and can be highly deleterious to the cell, casuing loss of genetic material,
+ and can be highly deleterious to the cell, causing loss of genetic material,
  translocations and ultimately cell death if left unrepaired.
  Mammalian cells have an array of different DSB repair pathways that depend
  on the cellular context and type of lesion 
@@ -3969,13 +4996,10 @@ key "Lee2009"
 .
  During meiosis homologous chromosomes are preferentially used for HR to
  promote crossovers, but sister chromatids are more commonly used in mitosis
- to minimise variation [#REF] 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Louise: ref?
-\end_layout
+ to minimise variation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schwacha1997,Haber2000"
 
 \end_inset
 
@@ -4062,22 +5086,37 @@ reference "fig:DSB-repair"
 A) is a last resort for the cell, whereby any two adjacent DSBs are ligated,
  needing little or no sequence homology.
  This pathway is extremely prone to errors as it is capable of joining any
- two strands of DNA without knowledge of their identity.
+ two strands of DNA irrespective of their identity.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Talk about AT / XP / Fanconi's / Blooms to illustrate failings in each mechanism...
-?
-\end_layout
+A number of serious conditions exist due to mutations in genes key in the
+ DSB repair pathways described above.
+ Ataxia telangiectasia is an autosomal-recessive neurodegenerative disease
+ caused by mutations in the 
+\emph on
+ATM
+\emph default
+ gene which is involved in NHEJ and HR 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beucher2009"
 
 \end_inset
 
-
+.
+ Fanconi anaemia is a condition caused by mutations in one of a number of
+ proteins involved in DSB recognition and repair which is associated with
+ a high incidence of leukaemia and a number of congenital defects.
+ Blooms syndrome is characterised by a excessive HR and genomic instability
+ caused by mutations in the 
+\emph on
+BLM
+\emph default
+ gene.
+ These, and other similar diseases, are indicative of the importance of
+ DSB repair and the danger of genomic instability.
 \end_layout
 
 \begin_layout Section
@@ -4085,16 +5124,12 @@ Leukaemia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Linking sentence from translocations to cancer
-\end_layout
-
-\end_inset
-
-
+Chromosomal translocations are frequently observed within cancer cells and
+ can be one of the initiating events leading to oncogenesis.
+ Leukaemias are one of the best studied cancer models due to the ease of
+ accessibility of the affected cells; many of the best characterised cancer
+ pathologies have been within leukaemias.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -4120,7 +5155,7 @@ description "Chronic myeloid leukaemia"
 \end_inset
 
 CML) is one of the best studied cancers, despite having a relatively low
- occurance 
+ occurrence 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hehlmann2007"
@@ -4262,12 +5297,12 @@ key "Deininger2000"
 \end_inset
 
 .
- Less is known about the endogenous function of the 
+ The 
 \emph on
 BCR
 \emph default
- protein; it contains a serine-threonine kinase and has GTPase activity
- but its function is not known 
+ protein contains a serine-threonine kinase and has GTPase activity, but
+ its function is not known 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Deininger2000"
@@ -4290,8 +5325,8 @@ key "Deininger2000"
 \end_inset
 
 .
- Relatively little is known about the mechanism of translocation formation,
- though ionising radiation is known to be a risk factor 
+ The mechanism of translocation formation is yet to be characterised, though
+ ionising radiation is known to be a risk factor 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Tanaka1989,Corso1995"
@@ -4308,17 +5343,12 @@ BCR-ABL
 \emph on
 imatinib
 \emph default
-, which achieve excellent success in the treatment of CML 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-and other cancers
-\end_layout
-
-\end_inset
-
- 
+ (also known as 
+\emph on
+gleevec
+\emph default
+), which achieve excellent success in the treatment of CML and a number
+ of other cancers involving the t(9;22)(q34;q11) translocation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hehlmann2007"
@@ -4402,16 +5432,6 @@ key "Jemal2009"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Re-write this para.
- See Louise's notes.
-\end_layout
-
-\end_inset
-
 The biology of leukaemia is not always as discrete as this classification
  however, some patients present with expansion of both lymphoid and myeloid
  lineages 
@@ -4422,8 +5442,9 @@ key "Matutes1997"
 \end_inset
 
 .
- Common genetic abnormalities found in these patients include the t(9;22)(q34;q1
-1) Philadelphia chromosome and structural changes in 11q23 
+ Two genetic abnormalities sometimes found in these patients include the
+ t(9;22)(q34;q11) Philadelphia chromosome and structural changes in 11q23
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Matutes1997"
@@ -4982,7 +6003,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 1/MLL locus/MLL locus.eps
+	filename figures/chapter 1/MLL locus/MLL_locus.eps
 	lyxscale 60
 	width 100text%
 
@@ -5143,8 +6164,8 @@ In support of the breakage first model, Aten
 et al
 \emph default
 .
- showed that a linear series of DSBs formed simultaneously in HeLa nuclei
- clustered together 
+ showed that DSBs formed simultaneously in HeLa nuclei clustered together
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Aten2004"
@@ -5210,20 +6231,13 @@ key "Soutoglou2007"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Summarise subsection
-\end_layout
-
-\end_inset
-
-
+The contact first model of translocation formation has large implications
+ within the field of nuclear organisation, as it requires specific chromosomal
+ contacts within cells prior to translocation.
 \end_layout
 
 \begin_layout Subsection
-Chromosome Territories
+Chromosome territories and translocations
 \end_layout
 
 \begin_layout Standard
@@ -5325,14 +6339,14 @@ key "Kuroda2004"
 lines 0
 placement o
 overhang 0in
-width "40text%"
+width "45text%"
 status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/chapter 1/branco intermingling translocations/branco intermingling translocations.eps
-	width 35text%
+	width 40text%
 
 \end_inset
 
@@ -5379,10 +6393,6 @@ key "Branco2006"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5402,14 +6412,21 @@ key "Branco2006"
  This technique had sufficient resolution to study the degree of intermingling
  between chromosome territories and they found that the degree of intermingling
  between chromosome pairs correlated strongly with their propensity to form
- translocations when subjected to radiation 
+ translocations when subjected to radiation (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pombo-intermingling-translocations"
+
+\end_inset
+
+, 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Branco2006"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
@@ -5434,7 +6451,7 @@ key "Harewood2010"
 \end_layout
 
 \begin_layout Subsection
-Transcription Factories
+Transcription factories and translocations
 \end_layout
 
 \begin_layout Standard
@@ -5517,37 +6534,153 @@ key "Cowell2012"
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Hypothesis and aim of thesis
+Thesis overview
 \end_layout
 
-\begin_layout Itemize
-State hypothesis - Preferential gene co-association within transcription
- factories predisposes specific gene pairs to the formation of chromosomal
- translocations.
+\begin_layout Standard
+Our understanding of nuclear architecture and organisation has developed
+ rapidly in the last twenty years, in concert with the development of techniques
+ allowing ever larger and less biased studies.
+ Correlations have been found between the organisation of specific chromosomes
+ and gene loci and their propensity to form chromosomal translocations which
+ can lead to oncogenesis.
+ A limitation of many of these studies is their scope: either they describe
+ the gross organisation of chromosomes and large genomic features, or they
+ describe the association of specific loci.
+ Gross nuclear organisation is valuable in determining global rules and
+ patterns of genomic organisation, but lacks the resolution needed to study
+ specific loci.
+ Studying the positions of individual genes is also useful, but limited
+ to the study of anticipated associations, leading to candidate choice bias.
 \end_layout
 
-\begin_layout Itemize
-Aims - investigate the genome-wide association networks of specific oncogenes
- and see if gene pair co-localisation frequency matches up with gene-pair
- translocation frequency
+\begin_layout Standard
+In this thesis I describe the further development of the e4C technique which
+ allows the interrogation of the three-dimensional contacts made by a chosen
+ locus in a relatively unbiased, genome-wide manner.
+ I investigate the association profiles of three proto-oncogenes: 
+\emph on
+BCR, ABL1
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+.
+ I do so in human CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Do this in an unbiased manner (not purely by RNA- and DNA-FISH), mention
- biased nature of such studies
+\end_inset
+
+ haematopoietic stem cells, the tissue though to be the site of initial
+ chromosomal translocations for these genes, and the human lymphoblastoid
+ cell line GM12878.
+ 
 \end_layout
 
-\begin_layout Itemize
-Do this with a genome wide technique
+\begin_layout Standard
+The e4C protocol was previously used in mouse foetal liver cells for analysis
+ with microarrays 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schoenfelder2010"
+
+\end_inset
+
+.
+ In chapter three I describe my modification of the protocol for use with
+ limited numbers of human CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
 \end_layout
 
-\begin_layout Itemize
-Do this in the cell type where we think the translocations are taking place
+\end_inset
+
+ cells and analysis with high-throughput sequencing technologies.
+ This work demonstrates the potential of the technique to analyse the interactio
+n profiles of any genomic locus, as well as a number of pitfalls which must
+ be negotiated in its use.
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+Chapter four describes my subsequent development of analysis tools and technique
+s which I use to understand the sequencing data.
+ At the time this work was carried out, such genome-wide interaction datasets
+ were being produced for the first time and a great deal of exploration
+ was required in order to find useful forms of analysis which could provide
+ accurate and unbiased representations of the association data.
+ In this chapter I describe a number of steps developed to normalise biases
+ and analyse the data, several of which can be found in parallel studies
+ published during the same period.
+\end_layout
+
+\begin_layout Standard
+In chapter five I describe the initial analysis of association data from
+ the three genes, which exhibit a common association with actively transcribed
+ regions of the genome.
+ This analysis is feasible due to the availability of a number of publicly
+ accessible datasets describing the binding profiles of RNA polymerase,
+ histone modifications and abundance of transcripts.
+ The patterns I uncover support similar findings by other groups showing
+ the separation of the genome into active and inactive compartments.
+\end_layout
+
+\begin_layout Standard
+In chapter six I analyse the interaction of 
+\emph on
+BCR
+\emph default
+ with the telomeric region of chromosome 9, containing its recurrent translocati
+on partner 
+\emph on
+ABL1
+\emph default
+.
+ I demonstrate that this interaction is the strongest in the genome and
+ highly significant.
+ Interestingly, the maximal point of association with 
+\emph on
+BCR
+\emph default
+ is not at the 
+\emph on
+ABL1
+\emph default
+ locus, but rather in three loci several megabases away.
+ I describe my use of DNA-FISH to validate these interactions in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells and GM12878 cells.
+\end_layout
+
+\begin_layout Standard
+Unbiased yet specific studies of genomic interactions such as those described
+ within this thesis help to demonstrate the importance of genomic organisation
+ in the formation of chromosomal translocations and initiation of cancer.
+ By furthering our understanding of how healthy cells are regulated, we
+ may better understand how to prevent disease causing events.
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
