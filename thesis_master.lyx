@@ -14,8 +14,14 @@
 \usepackage[{sf,bf}]{titlesec}
 
 % Make tables use a small sans-serif font
-\usepackage{floatrow}
-\floatsetup[table]{font={small,sf}}
+%\usepackage{floatrow}
+%\floatsetup[table]{font={small,sf}}
+\makeatletter
+\renewenvironment{table}%
+  {\renewcommand{\familydefault}{\sfdefault}\selectfont
+  \@float{table}}
+  {\end@float}
+\makeatother
 
 % centre tables and figures on the page
 \let\originaltable\table

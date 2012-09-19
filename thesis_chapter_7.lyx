@@ -73,6 +73,15 @@ Discussion
 \end_layout
 
 \begin_layout Section
+Introduction / Context
+\end_layout
+
+\begin_layout Standard
+Talk about how the stuff I've developed fits into wider context.
+ Especially analysis - de Laat 4C analysis paper, Amos Tanay etc.
+\end_layout
+
+\begin_layout Section
 Limitations of the e4C data / Discussion
 \end_layout
 
@@ -93,6 +102,14 @@ The problems of low coverage in the libraries, and how this differs for
  What we did to try to overcome this (using GM12878 cells, using multiple
  bait regions).
  Why this makes the data from the ABL1 and MLL baits have limited use.
+\end_layout
+
+\begin_layout Subsection
+Things I'd have done differently
+\end_layout
+
+\begin_layout Standard
+Multiplexing similar libraries with barcodes (not wobble)
 \end_layout
 
 \begin_layout Section

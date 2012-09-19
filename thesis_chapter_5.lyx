@@ -110,7 +110,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="5">
+<lyxtabular version="3" rows="11" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0">
@@ -210,16 +210,7 @@ BCR 1
 \begin_layout Plain Layout
 
 \size scriptsize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-need dates
-\end_layout
-
-\end_inset
-
-
+June 2010
 \end_layout
 
 \end_inset
@@ -277,6 +268,8 @@ BCR 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Oct 2010
 \end_layout
 
 \end_inset
@@ -304,58 +297,6 @@ Technical replicated of BCR 1, library generated from the same 3C material.
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-BCR combined
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-For much of the analysis shown, I have combined the deduplicated reads for
- libraries BCR 1 and BCR 2.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -369,6 +310,8 @@ For much of the analysis shown, I have combined the deduplicated reads for
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 BCR phiX
 \end_layout
 
@@ -379,6 +322,8 @@ BCR phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Mar 2011
 \end_layout
 
 \end_inset
@@ -428,6 +373,8 @@ MLL 1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+June 2010
 \end_layout
 
 \end_inset
@@ -485,6 +432,8 @@ MLL 2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Sept 2010
 \end_layout
 
 \end_inset
@@ -548,6 +497,8 @@ MLL 3
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Oct 2010
 \end_layout
 
 \end_inset
@@ -600,6 +551,8 @@ MLL  3 phiX
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Dec 2010
 \end_layout
 
 \end_inset
@@ -653,6 +606,8 @@ ABL
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Dec 2010
 \end_layout
 
 \end_inset
@@ -708,6 +663,8 @@ MLL p1
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Dec 2010
 \end_layout
 
 \end_inset
@@ -767,6 +724,8 @@ MLL p2
 
 \begin_layout Plain Layout
 
+\size scriptsize
+Dec 2010
 \end_layout
 
 \end_inset
