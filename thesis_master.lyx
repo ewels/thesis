@@ -8,10 +8,14 @@
 \hyphenpenalty=10000
 
 % Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
-\usepackage[margin=10pt,font={small,sf},labelfont=bf,labelsep=endash]{caption}
+\usepackage[margin=10pt,font={footnotesize,sf},labelfont=bf,labelsep=endash]{caption}
 
 % Make chapter headings use a sans-serif font
 \usepackage[{sf,bf}]{titlesec}
+
+% Make tables use a small sans-serif font
+\usepackage{floatrow}
+\floatsetup[table]{font={small,sf}}
 
 % centre tables and figures on the page
 \let\originaltable\table
@@ -79,6 +83,7 @@ tabs-within-sections
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement !th
 \paperfontsize default
 \spacing double
 \use_hyperref true
@@ -110,7 +115,7 @@ tabs-within-sections
 \leftmargin 3cm
 \topmargin 3cm
 \rightmargin 2cm
-\bottommargin 3cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation indent

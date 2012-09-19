@@ -3791,13 +3791,13 @@ CTCF
 lines 0
 placement o
 overhang 0in
-width "30text%"
+width "40text%"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 1/ctcf structure/CTCF_structure.eps
-	width 30text%
+	width 40text%
 
 \end_inset
 

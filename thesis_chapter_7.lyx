@@ -13,10 +13,10 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman times
 \font_sans helvet
 \font_typewriter default
-\font_default_family sfdefault
+\font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -37,7 +37,7 @@
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_authoryear
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -165,6 +165,58 @@ Go on to talk about implications - how this understanding can aid other
  Talk about recent developments and where the field is going.
  Suggest useful future studies.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+options "klunamed"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

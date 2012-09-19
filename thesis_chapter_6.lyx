@@ -13,10 +13,10 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman times
 \font_sans helvet
 \font_typewriter default
-\font_default_family sfdefault
+\font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
@@ -37,7 +37,7 @@
 \use_esint 1
 \use_mhchem 1
 \use_mathdots 1
-\cite_engine basic
+\cite_engine natbib_authoryear
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -382,7 +382,7 @@ BCR
  The t(9;22)(q34;q11) translocation is found in 95% of chronic myeloid leukaemia
  (CML) cases 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Hehlmann2007"
 
 \end_inset
@@ -390,7 +390,7 @@ key "Hehlmann2007"
  and was the first cytogenetic abnormality of its kind to be characterised
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Nowell1960"
 
 \end_inset
@@ -444,7 +444,7 @@ height "1pt"
 For additional validation of this specific interaction, we used Hi-C data
  obtained in GM06990 cells 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Lieberman-Aiden2009"
 
 \end_inset
@@ -527,7 +527,7 @@ BCR
  Job Dekker's group had recently published a Hi-C study using GM06990 cells
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Lieberman-Aiden2009"
 
 \end_inset
@@ -694,7 +694,7 @@ target "http://hic.umassmed.edu/heatmap/heatmap.php"
 
 , data from 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Lieberman-Aiden2009"
 
 \end_inset
@@ -804,18 +804,50 @@ Should this go in the discussion section instead?
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
-options "plain"
+bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+options "klunamed"
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linespread{2}
 \end_layout
 
 \end_inset

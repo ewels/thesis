@@ -11,10 +11,20 @@
 \hyphenpenalty=10000
 
 % Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
-\usepackage[margin=10pt,font={small,sf},labelfont=bf,labelsep=endash]{caption}
+\usepackage[margin=10pt,font={footnotesize,sf},labelfont=bf,labelsep=endash]{caption}
 
 % Make chapter headings use a sans-serif font
 \usepackage[{sf,bf}]{titlesec}
+
+% Make tables use a small sans-serif font
+%\usepackage{floatrow}
+%\floatsetup[table]{font={small,sf}}
+\makeatletter
+\renewenvironment{table}%
+  {\renewcommand{\familydefault}{\sfdefault}\selectfont
+  \@float{table}}
+  {\end@float}
+\makeatother
 
 % centre tables and figures on the page
 \let\originaltabular\tabular
