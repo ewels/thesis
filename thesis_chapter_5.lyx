@@ -1707,10 +1707,39 @@ Both normalisation techniques show several hits above the expected baseline
 BCR
 \emph default
  bait three distinct clusters of interaction can be seen.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+What are these? Further discussion?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Active genes reside in an active nuclear compartment 
+
+\emph on
+BCR
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ reside in an active nuclear compartment 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Active-genes-reside-in-an-active-nuclear-compartment"
@@ -1727,23 +1756,6 @@ trans
 \emph default
  interaction profiles of the different bait genes, it was clear that they
  share a number of features.
- Previous studies have shown that transcribed genes can co-associate at
- transcription factories 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Osborne2004"
-
-\end_inset
-
- and Hi-C studies have suggested that the genome could be organised into
- active and inactive compartments 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Lieberman-Aiden2009"
-
-\end_inset
-
-.
  My bait genes are actively transcribed within CD34
 \begin_inset script superscript
 
@@ -1772,26 +1784,27 @@ key "Versteeg2003"
 s with RNA polymerase II binding and other active chromatin marks.
 \end_layout
 
-\begin_layout Standard
-To investigate the correlation between e4C interaction frequency and chromatin
- marks, I analysed publicly available genome-wide datasets 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Bernstein2010"
-
-\end_inset
-
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFS
+\begin_layout Subsection
+Correlation with active epigenetic marks
 \end_layout
 
+\begin_layout Standard
+To investigate the correlation between e4C interaction frequency and chromatin
+ marks, I analysed publicly available genome-wide datasets (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Bernstein2010,Raha2010,Hu2011"
+
 \end_inset
 
-.
+; See Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:active-correlation-accessions"
+
+\end_inset
+
+ for NCBI GEO accession numbers).
  Gene density was calculated by counting genes labelled as 'protein-coding'
  in ensembl 
 \begin_inset CommandInset citation
@@ -1807,7 +1820,7 @@ key "Flicek2012"
 trans
 \emph default
  e4C interaction data.
- Scatter plots were generated and R scores calculated using SeqMonk.
+ Pearson's correlation coefficients were calculated using SeqMonk.
  The resulting correlation R scores are shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1826,24 +1839,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 5/correlations/correlations.eps
+	filename figures/chapter 5/active mark correlations/active_correlations.eps
 	lyxscale 30
 	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Could add Intron length, GC content, SINE content and LINE content? (Versteeg
- paper).
- Just run all of the other CD34+ datasets in that huge project?
-\end_layout
 
 \end_inset
 
@@ -1864,30 +1862,25 @@ name "tab:e4C-Correlation-R-Scores"
 \series bold
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Correlation R Scores
+e4C: active epigenomic mark correlation scores
 \end_layout
 
 \end_inset
 
-Correlation R Scores.
+e4C: active epigenomic mark correlation scores.
 
 \series default
- 10 megabase windows, 1 megabase separation.
- 
+ Standard scores were calculated using quantified reads in ten megabase
+ windows separated by one megabase.
+ e4C bait 
 \emph on
 cis
 \emph default
- chromosome removed (both 
-\emph on
-cis
-\emph default
- chromosomes when comparing two e4C libraries).
- Read counts quantified and then Z-scores calculated.
- R scores calculated in SeqMonk.
- Protein coding genes only used for gene density.
+ chromosomes were removed from analysis.
+ Gene density was calculated using protein coding genes only.
  Values shown in italics are comparisons across different cell types.
 \end_layout
 
@@ -1902,8 +1895,8 @@ cis
 \end_layout
 
 \begin_layout Standard
-The strong correlation between bait interaction and active association score
- shows that the e4C bait genes are frequently interacting with other active
+The strong correlation between bait interaction and active mark association
+ score shows that the e4C bait genes are frequently interacting with active
  regions of the genome.
  The low scores seen with the inactive histone modifications signify that
  there is not more interaction with these regions that could be expected
@@ -1920,24 +1913,6 @@ reference "fig:BCR-e4C-correlation-H3K4me1"
 \end_layout
 
 \begin_layout Standard
-Sanyal 
-\emph on
-et al.
- 
-\emph default
-also observe a lack of enrichment for H3K27me3 as opposed to a significant
- depletion, correlating with the lack of an anti-correlation seen above
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Sanyal2012"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1947,7 +1922,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 5/BCR_H3K4me1/BCR_H3K4me1.eps
 	lyxscale 15
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -1995,8 +1970,9 @@ BCR
 \emph on
 AseI
 \emph default
- distribution in 100kb sliding windows (minimum 5 fragments) and summed
- in 10 Mb windows with 1 Mb separation and quantified with standard scores.
+ distribution in 100 Kb sliding windows (minimum five fragments) and summed
+ in ten megabase windows with one megabase separation and quantified with
+ standard scores.
  H3K4me1 ChIP-Seq data quantified in the same windows with standard scores
  (orange fill) 
 \begin_inset CommandInset citation
@@ -2006,8 +1982,108 @@ key "Bernstein2010"
 \end_inset
 
 .
- Y scale of the H3K4me1 dataset was increased to better show correlation.
+ Y scales of the datasets were adjusted to have equal maximal values to
+ better show correlation.
+ Negative standard scores hidden to aid visibility.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The differences in correlation scores between the 
+\emph on
+BCR
+\emph default
+, 
+\emph on
+MLL
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+ e4C datasets are due to the differences in e4C coverage - the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+MLL
+\emph default
+ libraries do not have enough reads to show strong enrichment regions.
+ It should be noted that these correlations are not dependent on cell type;
+ this is consistent with the large scale organisation of ridges and anti-ridges
+ in the genome 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lercher2002,Versteeg2003"
+
+\end_inset
+
+.
+ The lack of correlation with inactive histone marks as opposed to an anti-corre
+lation is in line with the recently published ENCODE 5C dataset, where Sanyal
+ 
+\emph on
+et al.
+ 
+\emph default
+also observe a lack of enrichment for H3K27me3 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sanyal2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Correlations between e4C libraries
+\end_layout
+
+\begin_layout Standard
+As all of the bait e4C profiles associate with active marks to some degree,
+ I was interested to see the correlation between the different datasets.
+ Pearson's correlation coefficients were calculated as described above,
+ though with both bait 
+\emph on
+cis
+\emph default
+ chromosomes removed.
+ A number of interesting observations can be made from the resulting correlation
+ scores: the higher data complexity and reproducible nature of the BCR technical
+ replicates can be seen by their strong correlation; the effect of the crossover
+ reads in the MLL Run 3 library can be seen by its correlation with the
+ BCR profiles; MLL 1 and MLL 3 show good correlation which could be due
+ to them both being multiplexed with BCR runs, MLL 1 had very low complexity
+ which could explain its lack of correlation with BCR.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 5/e4C correlations/e4C_correlations.eps
+	lyxscale 60
+	width 100text%
 
 \end_inset
 
@@ -2015,12 +2091,78 @@ key "Bernstein2010"
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C-library-correlations"
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+e4C library correlations
+\end_layout
+
+\end_inset
+
+e4C library correlations.
+
+\series default
+ Standard scores were calculated using quantified reads in ten megabase
+ windows separated by one megabase.
+ Both e4C bait 
+\emph on
+cis
+\emph default
+ chromosomes were removed from analysisValues shown in italics are comparisons
+ across different cell types.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Interestingly, the GM12878 ABL dataset shows strong correlation with the
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ BCR datasets.
+ This is unlikely to be due to differences in complexity as the GM12878
+ MLL p1 and MLL p2 which have similar read numbers and complexity do not
+ show this correlation.
+ This suggests that the correlation could indicate a matching of specific
+ genome-wide contacts by the two loci caused by colocalisation within the
+ nucleus.
+ Using genome-wide association correlations to measure proximity instead
+ of direct contact frequency as measured by 3C product reads is often used
+ in Hi-C data analysis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009,Yaffe2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -2036,7 +2178,7 @@ interactions
 \emph on
  
 \emph default
-were present within the datasets, we normalised the interaction profiles
+were present within the datasets, I normalised the interaction profiles
  using the most correlated active marks: H3K4me1 for the CD34
 \begin_inset script superscript
 
@@ -2046,20 +2188,34 @@ were present within the datasets, we normalised the interaction profiles
 
 \end_inset
 
- e4C libraries and GM12878 RNA polymerase II ChIP-Seq for the GM12878 e4C
- libraries.
- Standard scores from these datasets were subtracted from the interaction
- library standard scores for each window position.
- This normalisation against has the effect of largely flattening the genome
- wide profile, as expected by the observed correlations (Figure 
+ e4C libraries (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:e4C-normalisation-H3K4me1"
 
 \end_inset
 
+) and GM12878 RNA polymerase II ChIP-Seq for the GM12878 e4C libraries (data
+ not shown).
+ Standard scores from the epigenomic datasets were subtracted from the interacti
+on library standard scores for each window position.
+ This normalisation against has the effect of largely flattening the genome
+ wide profile (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-normalisation-H3K4me1"
+
+\end_inset
+
+), as expected by the observed correlations (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-Correlation-R-Scores"
+
+\end_inset
+
 ).
- Despite this flattening, some noticeable peaks remain within the 
+ Despite this, some noticeable peaks remain within the 
 \emph on
 BCR
 \emph default
@@ -2074,19 +2230,18 @@ ABL1
 \emph default
  interaction datasets makes the detection of any specific local interaction
  regions difficult, and those observed unreliable.
- To confirm these remaining peaks within the 
+ I discuss the main peak of the 
 \emph on
 BCR
 \emph default
- datasets we repeated the normalisation against a number of different active
- marks (Figure 
+ datasets in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:e4C-normalisation-H3K4me1"
+reference "chap:BCR-ABL"
 
 \end_inset
 
- B).
+.
 \end_layout
 
 \begin_layout Standard
@@ -2099,7 +2254,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 5/H3K4me1_normalised/H3K4me1_normalised.eps
 	lyxscale 15
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -2190,7 +2345,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
 options "klunamed"
 
 \end_inset

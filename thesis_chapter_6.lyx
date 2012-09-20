@@ -134,23 +134,10 @@ The most prominent interaction seen in the two replicate
 \emph on
 BCR
 \emph default
- interaction profiles is 9q34.
+ interaction profiles is on chromosome 9, cytogenetic band q34.
  When the two replicates are combined this interaction gives approximately
  7 fold enrichment of association above the mean with a maximal standard
- score of 17.043, corresponding to 
-\emph on
-p
-\emph default
- < 3.94 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-65
-\end_layout
-
-\end_inset
-
- .
+ score of 17.043.
  This is the strongest 
 \emph on
 trans
@@ -216,15 +203,18 @@ BCR
 \emph on
 AseI
 \emph default
- site distribution, across the q arm of chromosome 9.
- Light blue fill shows quantification using 10 mb windows with 1 mb separation.
- Darker blue line shows quantification using 1 mb windows with 100 kb separation.
- X axis shows chromosome position in mb.
+ site distribution, across the q arm of chromosome 9 (centromere to the
+ left, telomere to the right).
+ Light blue fill shows quantification using ten megabase windows with one
+ megabase separation.
+ Darker blue line shows quantification using one megabase windows with 100
+ Kb separation.
+ X axis shows chromosome position in megabases.
  
 \emph on
 ABL1
 \emph default
- is shown as a yellow highlight.
+ is shown as a grey bar.
 \end_layout
 
 \end_inset
@@ -239,6 +229,49 @@ ABL1
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Chromosome 9 q34 is a gene dense region containing a large number of highly
+ transcribed genes.
+ It contains the gene 
+\emph on
+ABL1
+\emph default
+, a recurrent translocation partner with 
+\emph on
+BCR
+\emph default
+.
+ The t(9;22)(q34;q11) translocation is found in 95% of chronic myeloid leukaemia
+ cases 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hehlmann2007"
+
+\end_inset
+
+ and was the first cytogenetic abnormality of its kind to be characterised
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nowell1960"
+
+\end_inset
+
+.
+ For more discussion about the 
+\emph on
+BCR-ABL1
+\emph default
+ translocation, please see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:intro-CML"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -263,7 +296,7 @@ reference "sec:significance-of-single-regions"
 \end_inset
 
 .
- The script was run with one million loops to generate a million 
+ The script was run with one million loops to generate one million 
 \emph on
 in-silico 
 \emph default
@@ -298,7 +331,7 @@ p
 
 \end_inset
 
-for this region.
+ for this region.
 \end_layout
 
 \begin_layout Standard
@@ -361,65 +394,24 @@ in-silico
 
 \end_layout
 
-\begin_layout Subsection
-9q34 contains 
-\emph on
-ABL1
-\end_layout
-
-\begin_layout Standard
-Chromosome 9 q34 is a gene dense region containing a large number of highly
- transcribed genes.
- Interestingly, it is contains the gene 
-\emph on
-ABL1
-\emph default
- – a recurrent translocation partner with 
-\emph on
-BCR
-\emph default
-.
- The t(9;22)(q34;q11) translocation is found in 95% of chronic myeloid leukaemia
- (CML) cases 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Hehlmann2007"
-
-\end_inset
-
- and was the first cytogenetic abnormality of its kind to be characterised
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Nowell1960"
-
-\end_inset
-
-.
- For more information about the 
-\emph on
-BCR-ABL1
-\emph default
- translocation, please see Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:intro-BCR-and-ABL1"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Section
 
 \emph on
 ABL
 \emph default
- 4C associations in ENCODE cell line GM12878
+ e4C associations in GM12878 cells
+\end_layout
+
+\begin_layout Section
+Validation using publicly available datasets
+\end_layout
+
+\begin_layout Standard
+To gather additional validations 
 \end_layout
 
 \begin_layout Subsection
-Associations in ENCODE cell line GM06990
+Hi-C associations in GM06990 cells
 \end_layout
 
 \begin_layout Standard
@@ -462,56 +454,16 @@ BCR
  
 \end_layout
 
-\begin_layout Section
-Narrowing the window - the Surfeit Cluster
-\end_layout
-
 \begin_layout Standard
-It can be seen in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BCR-association-9q34"
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
 
 \end_inset
 
- that 
-\emph on
-ABL1
-\emph default
- is not in the centre of the maximal 10 mb window.
- To increase the resolution of the area, I plotted the association with
- 1 mb windows separated by 100 kb (darker outline, Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BCR-association-9q34"
 
-\end_inset
-
-).
- At this scale 
-\emph on
-ABL1
-\emph default
- is located in a shoulder between two peaks within the region of elevated
- association.
- I was intrigued with the possibility that 
-\emph on
-BCR
-\emph default
- may be interacting strongly with another sequence within the region, and
- interacting with 
-\emph on
-ABL1
-\emph default
- by association - that 
-\emph on
-ABL1
-\emph default
- could be a bystander.
-\end_layout
-
-\begin_layout Subsection
-Hi-C in GM06990 cells
 \end_layout
 
 \begin_layout Standard
@@ -681,9 +633,9 @@ GM06990 Hi-C heat map.
  
 \series default
 Interaction heat map showing the q arm of chromosomes 9 and 22.
- Colours represent observed / expected ratios, blue is weak, red is strong
- interaction.
- Each block represents a 1 mb window.
+ Colours represent observed / expected ratios; blue colours are weak interaction
+s, red are strong.
+ Each block represents a one megabase window.
  Generated using the Hi-C data browser: 
 \begin_inset CommandInset href
 LatexCommand href
@@ -717,6 +669,58 @@ key "Lieberman-Aiden2009"
 \end_layout
 
 \begin_layout Subsection
+Hi-C and TCC associations in GM12878 cells
+\end_layout
+
+\begin_layout Section
+Narrowing the window - the Surfeit Cluster
+\end_layout
+
+\begin_layout Standard
+It can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+ that 
+\emph on
+ABL1
+\emph default
+ is not in the centre of the maximal 10 mb window.
+ To increase the resolution of the area, I plotted the association with
+ 1 mb windows separated by 100 kb (darker outline, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+).
+ At this scale 
+\emph on
+ABL1
+\emph default
+ is located in a shoulder between two peaks within the region of elevated
+ association.
+ I was intrigued with the possibility that 
+\emph on
+BCR
+\emph default
+ may be interacting strongly with another sequence within the region, and
+ interacting with 
+\emph on
+ABL1
+\emph default
+ by association - that 
+\emph on
+ABL1
+\emph default
+ could be a bystander.
+\end_layout
+
+\begin_layout Subsection
 Candidate genes
 \end_layout
 
@@ -734,10 +738,6 @@ name "sec:Validation-by-3C"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Introduction
 \end_layout
 
 \begin_layout Standard
@@ -826,7 +826,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
 options "klunamed"
 
 \end_inset
