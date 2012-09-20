@@ -4852,7 +4852,14 @@ It seems likely that these crossover reads result from an error in the cluster
 \end_layout
 
 \begin_layout Section
-Increasing e4C library diversity
+Increasing e4C library complexity 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:e4C-complexity-barcodes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
