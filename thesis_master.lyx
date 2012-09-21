@@ -56,11 +56,20 @@
 % don't make chapters and sections upper-case
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}{}}
-
 % no lines
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
+% clear defaults
+\fancyhf{}
+% set up font
+\newcommand{\headerfont}{\color[gray]{0.7}\fontfamily{phv}\fontsize{10}{11}\selectfont}
+\newcommand{\footerfont}{\fontfamily{phv}\fontsize{11}{11}\selectfont}
+% header - right
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter: #1}{}}
+\lhead{\headerfont\leftmark}
+% footer - center
+\fancyfoot[C]{\footerfont- \thepage \ -}
+% make it so
 \pagestyle{fancy}
 \end_preamble
 \use_default_options true
@@ -90,19 +99,19 @@ tabs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement !th
-\paperfontsize default
+\paperfontsize 12
 \spacing double
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
-\pdf_bookmarksopen false
+\pdf_bookmarksopen true
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
 \pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle true
-\papersize default
+\papersize a4paper
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
@@ -118,17 +127,17 @@ tabs-within-sections
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
+\leftmargin 4cm
 \topmargin 3cm
-\rightmargin 2cm
-\bottommargin 2cm
+\rightmargin 3cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle fancy
 \tracking_changes false
 \output_changes false
@@ -362,10 +371,6 @@ filename "thesis_appendices.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Chapter*
-References
 \end_layout
 
 \begin_layout Standard

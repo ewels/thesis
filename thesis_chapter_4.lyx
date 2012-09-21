@@ -94,10 +94,9 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-At the time that my first e4C libraries were sequenced the technology was
- new.
+At the time that my first e4C libraries were sequenced the method was novel.
  Unlike RNA-Seq and ChIP-Seq which are established enough to have accepted
- analysis pipelines, e4C sequencing data analysis had not been developed.
+ analysis pipelines, e4C data analysis had not been developed.
  As such I spent a great deal of time discovering how to analyse the data
  in a way that is accurate and informative.
 \end_layout
@@ -1094,7 +1093,7 @@ Library trimming and alignments.
  Proportion of e4C libraries discarded due to AseI or NlaIII sites being
  too close to the bait, or not being mapped to the genome / being suppressed
  due to multiple alignments.
- Raw numbers can be seen in Table 
+ Raw numbers can be seen in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:APP-library-trimming"
@@ -1233,12 +1232,14 @@ Bowtie alignment parameters
 q:
 \family default
  Input is in FastQ format.
+
 \family typewriter
---phred64-quals:
+ --phred64-quals:
 \family default
  Correct interpretation of ASCII quality scores.
+
 \family typewriter
--p 8
+ -p 8
 \family default
 : Use eight CPU cores for the alignment.
  
@@ -1246,8 +1247,9 @@ q:
 -m 1:
 \family default
  Ignore any read with more than one alignment.
+
 \family typewriter
-hg19:
+ hg19:
 \family default
  Name of the reference genome used for alignment.
  UCSC genome build hg19 was used.
@@ -2274,10 +2276,14 @@ A standard score represents how many standard deviations from the mean a
 \end_layout
 
 \begin_layout Section
+\begin_inset Note Note
+status open
+
+\begin_layout Section
 4C data set correlations
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -2290,9 +2296,14 @@ NEIGHBOUR JOINING TREES
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Talk about the work I did doing pairwise correlation analysis on multiple
  different 4C data sets..?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -28,7 +28,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\float_placement !th
+\paperfontsize 11
 \spacing double
 \use_hyperref false
 \papersize default
@@ -48,9 +49,9 @@
 \color #008000
 \end_index
 \leftmargin 3cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -402,12 +403,217 @@ ABL
  e4C associations in GM12878 cells
 \end_layout
 
+\begin_layout Standard
+If 
+\emph on
+BCR
+\emph default
+ preferentially contacts regions in telomeric chromosome 9 we should be
+ able to detect reciprocal ligation products by using a bait region within
+ this region.
+ To investigate the interaction profile of this region I made e4C libraries
+ with a bait in the 
+\emph on
+ABL1
+\emph default
+ promoter in GM12878 cells.
+ This cell line is one of the top tier ENCODE project cell types and has
+ numerous publicly accessible epigenomic datasets available.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/GM12878 ABL e4C/ABL_e4C.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+ABL e4C 
+\emph on
+trans
+\emph default
+ association profile
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ABL-e4C-trans"
+
+\end_inset
+
+ABL e4C 
+\emph on
+trans
+\emph default
+ association profile.
+
+\series default
+ Genome-wide plot of 
+\emph on
+ABL
+\emph default
+ e4C trans associations in GM12878 cells.
+ Reads normalised for 
+\emph on
+AseI
+\emph default
+ distribution with 100 Kb windows, minimum five fragments.
+ Association scores summed in ten megabase windows separated by one megabase.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As described in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Initial-analysis"
+
+\end_inset
+
+, the ABL e4C library did not reach the level of coverage of either of the
+ BCR e4C libraries, with approximately five fold less unique reads.
+ The ABL e4C library shows stronger correlation with the BCR libraries than
+ any of the MLL libraries, suggesting that these two regions have similar
+ genome-wide interactions.
+ When visually inspected, the 
+\emph on
+trans
+\emph default
+ interaction plot of the e4C library has somewhat sharp peaks of association
+ due to the lack of complexity.
+ While the 
+\emph on
+BCR
+\emph default
+ locus on chromosome 22 is enriched, it is not the strongest interaction
+ genome-wide.
+ This could be due to the low coverage not providing enough resolution to
+ pick out specific interactions, a lack of association between these regions
+ in GM12878 cells, or it could be due to the lack of a direct specific interacti
+on between the 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL
+\emph default
+ genes.
+\end_layout
+
+\begin_layout Standard
+When the BCR e4C libraries are combined and the 
+\emph on
+trans
+\emph default
+ association plotted with ten fold smaller one megabase windows separated
+ by 100 Kb, a triplet peak can be seen to emerge over the 9q34 locus (Fig
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+).
+ The 
+\emph on
+ABL1
+\emph default
+ gene sits between two of these peaks, leading to the intriguing possibility
+ that the 
+\emph on
+BCR-ABL1
+\emph default
+ interaction could be driven by the association of other nearby loci.
+ The ABL1 locus shows strong association with the entire 9q34 region, above
+ the expected base level of 
+\emph on
+cis
+\emph default
+ interactions (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-cis-association-profiles"
+
+\end_inset
+
+).
+ These observations suggest that 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+ could be bystander genes brought together through specific interactions
+ of different genes within the region.
+ Such a model would explain the triplet peak of BCR association over the
+ region, with ABL sitting in a trough above the base level of genome-wide
+ 
+\emph on
+trans
+\emph default
+ association but not at the maximum point of association.
+ It would also explain why I do not see specific 
+\emph on
+BCR-ABL1
+\emph default
+ interactions from the viewpoint of 
+\emph on
+ABL1
+\emph default
+.
+\end_layout
+
 \begin_layout Section
 Validation using publicly available datasets
 \end_layout
 
 \begin_layout Standard
-To gather additional validations 
+To gather additional evidence about the association between these regions,
+ I made use of publicly available Hi-C and TCC datasets published at the
+ time I was generating the e4C interaction data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009,Kalhor2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -415,26 +621,15 @@ Hi-C associations in GM06990 cells
 \end_layout
 
 \begin_layout Standard
-Description of analysis of Dekker Hi-C dataset.
- Limitations in resolution of Hi-C data, but ability to adjust bait region
- and produce heat maps to show interacting regions.
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
+In 2009 Dr Job Dekker's group, responsible for the first use of 3C to probe
+ nuclear structure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dekker2002b"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-For additional validation of this specific interaction, we used Hi-C data
- obtained in GM06990 cells 
+, published a study using a new technique called Hi-C 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lieberman-Aiden2009"
@@ -442,49 +637,23 @@ key "Lieberman-Aiden2009"
 \end_inset
 
 .
- We took reads with one end contained within a 1 Mbp region surrounding
- the 
-\emph on
-BCR
-\emph default
- gene, and analysed the partner reads as if they were from an e4C experiment.
- The Hi-C data has a lower signal to noise ratio, and so a flatter profile,
- but a peak of association over the same region of chromosome 9 can still
- clearly be seen (supplementary Fig XX).
- 
+ Hi-C is a technique based on 3C able to capture all interactions within
+ the nucleus (all-to-all).
+ In brief, 3C ligation products are enriched using the incorporation of
+ a biotin moiety, adapters are added and the entire library sequenced.
+ Hi-C libraries are incredibly complex due to the huge range of ligation
+ events captured and require great sequencing power to achieve a useful
+ interaction resolution.
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Due to the limitation of coverage in the e4C, 1 mb is the lower limit of
- useful resolution windows for the combined 
+The study by Lieberman-Aiden 
 \emph on
-BCR
+et al.
+
 \emph default
- libraries.
- There are between 50 and 80 genes for each 1 mb window within the peak
- regions of 9q34, so I turned to other data sources to try to pinpoint a
- region driving the interaction.
- Job Dekker's group had recently published a Hi-C study using GM06990 cells
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Lieberman-Aiden2009"
-
-\end_inset
-
-, a lymphoblastoid cell line.
+ investigated interactions in the ENCODE cell lines K562 and GM06990.
+ Like GM12878 cells, the GM06990 cell line is a lymphoblastoid cell line.
  Lymphoblasts are multi-potent progenitor cells which later develop into
  the different lymphocyte cell types: NK cells, T lymphocytes and B lymphocytes.
  They are derived from CD34
@@ -496,44 +665,7 @@ key "Lieberman-Aiden2009"
 
 \end_inset
 
- haematopoietic stem cells via common lymphoid progenitor cells, and so
- have not undergone a great deal of differentiation.
- I hypothesised that the nuclear organisation of GM06990 cells may be similar
- to that found within CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- cells, and that this Hi-C dataset may shed light on the details of the
- 
-\emph on
-BCR
-\emph default
- - 9q34 interaction.
-\end_layout
-
-\begin_layout Standard
-Hi-C is a technique based on chromosome conformation capture like e4C, however
- instead of capturing all interactions from a single region of interest
- (one-to-all) it can reveal all interactions within the nucleus (all-to-all).
- See Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:intro-Hi-C"
-
-\end_inset
-
- for a detailed description of the technique.
- Hi-C libraries can be manipulated to show the genome-wide interactions
- of a single bait locus, much like an 
-\emph on
-in-silico
-\emph default
- e4C.
+ haematopoietic stem cells via common lymphoid progenitor cells.
  Initial analysis using the Hi-C heat map tool available at 
 \begin_inset CommandInset href
 LatexCommand href
@@ -542,24 +674,32 @@ target "http://hic.umassmed.edu/heatmap/heatmap.php"
 
 \end_inset
 
- shows that telomeric chromosome 9 does interact strongly with two sections
- of chromosome 22 (Fig 
+ shows that telomeric chromosome 9 does interact strongly with two large
+ regions of chromosome 22 with the strongest association slightly centromeric
+ of 
+\emph on
+BCR
+\emph default
+ and either side of 
+\emph on
+ABL1
+\emph default
+ (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:GM06990-Hi-C-heatmap"
 
 \end_inset
 
-), though the 
-\emph on
-BCR
-\emph default
- - 
-\emph on
-ABL1
-\emph default
- window isn't the point of maximal association.
- Interestingly, the strong interaction just centromeric of 
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Interestingly, the strong interaction just centromeric of 
 \emph on
 BCR
 \emph default
@@ -567,12 +707,12 @@ BCR
 \emph on
 ABL
 \emph default
- is for windows including the 
+ is for windows including the immunoglobulin lambda (
 \emph on
-IGL 
+IGL
 \emph default
-(immoglobulin lambda) genes on chromosome 22, a region that displays a strong
- interaction with 
+) genes on chromosome 22, a region that displays a strong interaction with
+ 
 \emph on
 BCR
 \emph default
@@ -588,6 +728,11 @@ reference "sub:specific-cis-interactions"
 \end_inset
 
 ).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -659,6 +804,139 @@ key "Lieberman-Aiden2009"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To analyse the interaction profiles in the Hi-C data in more detail, I took
+ paired reads with one end within a one megabase region surrounding the
+ 
+\emph on
+BCR
+\emph default
+ gene from the GM06990 
+\emph on
+NcoI
+\emph default
+ Hi-C replicates and analysed the partner reads.
+ I did not use the 
+\emph on
+HindIII
+\emph default
+ Hi-C replicates as they had four fold fewer reads (4395 for 
+\emph on
+HindIII
+\emph default
+ 
+\emph on
+vs
+\emph default
+.
+ 18388 for 
+\emph on
+NcoI
+\emph default
+).
+ I analysed the partner reads as if they were from an e4C experiment with
+ normalisation for 
+\emph on
+NcoI
+\emph default
+ restriction site distribution.
+\end_layout
+
+\begin_layout Standard
+The Hi-C data has a lower signal to noise ratio, and so a flatter profile,
+ but a peak of association over the same region of chromosome 9 is visible
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM06990-HiC-BCR-chr9"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/HiC_GM06990/GM06990_BCR_chr9_truncated.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+GM06990 Hi-C 
+\emph on
+BCR
+\emph default
+ locus association with chromosome 9
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GM06990-HiC-BCR-chr9"
+
+\end_inset
+
+GM06990 Hi-C 
+\emph on
+BCR
+\emph default
+ locus association with chromosome 9.
+ 
+\series default
+Association of reads within one megabase of the 
+\emph on
+BCR
+\emph default
+ gene, normalised for 
+\emph on
+NcoI
+\emph default
+ site distribution, across the q arm of chromosome 9 (centromere to the
+ left, telomere to the right).
+ Light green fill shows quantification using ten megabase windows with one
+ megabase separation.
+ Darker green line shows quantification using one megabase windows with
+ 100 Kb separation.
+ X axis shows chromosome position in megabases.
+ 
+\emph on
+ABL1
+\emph default
+ is shown as a grey bar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
@@ -672,52 +950,172 @@ key "Lieberman-Aiden2009"
 Hi-C and TCC associations in GM12878 cells
 \end_layout
 
+\begin_layout Standard
+In 2011 a study by Kalhor 
+\emph on
+et al.
+
+\emph default
+ described a modified version of Hi-C called tethered chromosome capture
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TCC"
+description "Tethered chromosome capture "
+
+\end_inset
+
+TCC) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kalhor2011"
+
+\end_inset
+
+.
+ This study was done in GM12878 cells and the Hi-C dataset was sequenced
+ to a greater depth.
+ The authors claim that TCC, a modified version of Hi-C which tethers proteinace
+ous 3C complexes to solid phase beads before ligation, reduces non-specific
+ ligation events and so removes background noise from the interaction data
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kalhor2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As with with the Hi-C data described above, genome-wide profiles of specific
+ loci can be generated from this data.
+ I plotted the association of a one megabase window surrounding the 
+\emph on
+BCR
+\emph default
+ gene on chromosome 9 after normalisation against 
+\emph on
+HindIII
+\emph default
+ restriction fragment distribution (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-HiC-TCC-BCR-chr9"
+
+\end_inset
+
+).
+ A strong association can be seen over telomeric chromosome 9 using ten
+ megabase windows.
+ This splits into smaller peaks when the window size is dropped to one megabase,
+ similar to the profile of the e4C association.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/kalhor_GM12878/Kalhor_BCR_chr9_truncated.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+GM12878 HiC and TCC 
+\emph on
+BCR
+\emph default
+ locus association with chromosome 9
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GM12878-HiC-TCC-BCR-chr9"
+
+\end_inset
+
+GM12878 HiC and TCC 
+\emph on
+BCR
+\emph default
+ locus association with chromosome 9.
+
+\series default
+ Association of reads within one megabase of the 
+\emph on
+BCR
+\emph default
+ gene, normalised for 
+\emph on
+HindIII
+\emph default
+ site distribution, across the q arm of chromosome 9 (centromere to the
+ left, telomere to the right).
+ Light orange fill shows quantification using ten megabase windows with
+ one megabase separation.
+ Darker orange line shows quantification using one megabase windows with
+ 100 Kb separation.
+ X axis shows chromosome position in megabases.
+ 
+\emph on
+ABL1
+\emph default
+ is shown as a grey bar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Narrowing the window - the Surfeit Cluster
 \end_layout
 
 \begin_layout Standard
-It can be seen in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BCR-association-9q34"
-
-\end_inset
-
- that 
+To investigate the hypothesis that 
+\emph on
+BCR-ABL1
+\emph default
+ association could be driven by a bystander effect of nearby gene associations,
+ I studied the genes present within the vicinity of 
 \emph on
 ABL1
 \emph default
- is not in the centre of the maximal 10 mb window.
- To increase the resolution of the area, I plotted the association with
- 1 mb windows separated by 100 kb (darker outline, Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BCR-association-9q34"
-
-\end_inset
-
-).
- At this scale 
-\emph on
-ABL1
-\emph default
- is located in a shoulder between two peaks within the region of elevated
- association.
- I was intrigued with the possibility that 
-\emph on
-BCR
-\emph default
- may be interacting strongly with another sequence within the region, and
- interacting with 
-\emph on
-ABL1
-\emph default
- by association - that 
-\emph on
-ABL1
-\emph default
- could be a bystander.
+.
+ This region is very gene dense, containing approximately 50 to 80 genes
+ per one megabase window.
 \end_layout
 
 \begin_layout Subsection
@@ -741,7 +1139,50 @@ name "sec:Validation-by-3C"
 \end_layout
 
 \begin_layout Standard
-Explain why trying to validate this interaction by 3C is a logical step
+The results of the e4C demonstrate interaction frequencies.
+ The analysis of the data makes a number of assumptions, one of which is
+ that the results of the e4C library sequencing accurately represent the
+ frequency of ligation products found within the original 3C libraries.
+ There are a number of steps within the e4C library preparation which could
+ affect this representation, not least the two PCR amplification steps which
+ may preferentially amplify some ligation products irrespective of their
+ initial frequency.
+ Because of these potential biases the validation of interaction frequencies
+ by traditional RT-qPCR 3C was a logical step to take.
+ In addition to this validation, I hoped that the RT-qPCR 3C may provide
+ a resolution of interaction frequencies at a superior resolution than the
+ e4C, both in terms of quantitative interaction of individual fragments
+ and in differences between fragments within close proximity.
+\end_layout
+
+\begin_layout Subsection
+Design
+\end_layout
+
+\begin_layout Standard
+Primers for the qPCR were designed for a number of 
+\emph on
+HindIII
+\emph default
+ fragments within the promoters of candidate genes described above.
+ Four primers were used for each fragment, two either side of both restriction
+ sites.
+ 3C material prepared with 
+\emph on
+HindIII
+\emph default
+ was used to be compatible with co-worker's experiments and to avoid any
+ biases that may be introduced by 
+\emph on
+AseI
+\emph default
+ digestion.
+ A control library was prepared by amplifying the fragments with genomic
+ DNA, digesting with 
+\emph on
+AseI
+\emph default
+, mixing in equimolar concentrations and randomly ligating.
 \end_layout
 
 \begin_layout Subsection
