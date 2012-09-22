@@ -1389,6 +1389,39 @@ key "Dekker2006,Cope2009"
 \end_layout
 
 \begin_layout Standard
+I interrogated three 
+\emph on
+HindIII
+\emph default
+ fragments covering the 
+\emph on
+Surfeit
+\emph default
+ locus, two fragments covering the 
+\emph on
+ABL1
+\emph default
+ promoters 1a and 1b.
+ For use as a negative control I used a 
+\emph on
+HindIII
+\emph default
+ fragment covering the promoter of 
+\emph on
+SMC2
+\emph default
+, an expressed gene 27 Mb centromeric of 
+\emph on
+ABL1
+\emph default
+ with low 
+\emph on
+BCR
+\emph default
+ e4C association.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1457,36 +1490,13 @@ HindIII
 \end_layout
 
 \begin_layout Standard
-I interrogated three 
+I ran the 3C RT-qPCR using GM12878 3C material prepared with 
 \emph on
 HindIII
 \emph default
- fragments covering the 
-\emph on
-Surfeit
-\emph default
- locus, two fragments covering the 
-\emph on
-ABL1
-\emph default
- promoters 1a and 1b.
- For use as a negative control I used a 
-\emph on
-HindIII
-\emph default
- fragment covering the promoter of 
-\emph on
-SMC2
-\emph default
-, an expressed gene 27 Mb centromeric of 
-\emph on
-ABL1
-\emph default
- with low 
-\emph on
-BCR
-\emph default
- e4C association.
+.
+ I used GM12878 cells because the method uses a lot of 3C material and I
+ wanted to do any optimisation required using a plentiful supply of cells.
 \end_layout
 
 \begin_layout Subsection
@@ -1494,8 +1504,142 @@ Results
 \end_layout
 
 \begin_layout Standard
-Results, explain why they’re not conclusive (interaction too weak to reliably
- quantitate using traditional 3C)
+I ran two biological replicates of the 3C RT-qPCR with four technical replicates
+ per primer pair.
+ To calculate 3C product concentration I used a standard curve for each
+ primer pair generated from six concentrations of the randomly ligated control
+ library and a no template control.
+ To reach a final value for each primer pair I averaged the concentrations
+ of the four technical replicates and plotted this with a standard deviation
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C-qPCR-Results"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/3C qPCR results/3C_qPCR_results.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+3C qPCR Results
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3C-qPCR-Results"
+
+\end_inset
+
+
+\series bold
+3C qPCR Results.
+ 
+\series default
+Two repeats 
+\series bold
+(A)
+\series default
+ and 
+\series bold
+(B)
+\series default
+ showing average values for four replicates per sample in 3C RT-qPCR.
+ Y values are concentration in μM, calculated from standard curve for each
+ primer pair.
+ Error bars show standard deviations.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Unfortunately, as can be seen in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C-qPCR-Results"
+
+\end_inset
+
+, 3C ligation product concentrations were not reproducible between biological
+ or technical replicates.
+ To check for non-specific amplification I plotted a dissociation curve
+ of samples from 58 °C to 85 °C.
+ The dissociation curve for the standard curve samples looked good, however
+ the 3C samples and lowest standard curve concentration showed very small
+ peaks at varying temperatures, throwing into question the validity of the
+ qPCR C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+
+ values.
+ To look for specific amplification visually, I ran the 3C qPCR samples
+ and the two least concentrated standard curve samples on a gel (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C_qPCR_gel"
+
+\end_inset
+
+).
+ This shows specific bands in the more concentrated standard curve lanes
+ for all replicates, but a mixture of specific bands, non-specific smears
+ and empty lanes for the 3C samples and lowest concentration of standard
+ curve (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C_qPCR_gel"
+
+\end_inset
+
+).
+ From the 8 lanes for each primer pair, Surf H1 appears to have one band,
+ Surf H4 eight bands, ABL H1 seven bands, ABL H2 four bands and SMC2 two
+ very weak bands.
 \end_layout
 
 \begin_layout Standard
@@ -1519,7 +1663,658 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
 Gel showing 3C qPCR Products
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3C_qPCR_gel"
+
+\end_inset
+
+
+\series bold
+Gel showing 3C qPCR Products.
+ 
+\series default
+1% agarose gel showing 3C RT-qPCR products, stained with Ethidium Bromide.
+ Std = Standard curve products, 1.28 and 0.25 μM.
+ 3C = four 3C RT-qPCR duplicates.
+ NTC = No template control.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Empirically, this shows that the 
+\emph on
+Surfeit
+\emph default
+ cluster and 
+\emph on
+ABL1
+\emph default
+ have stronger interactions with 
+\emph on
+BCR
+\emph default
+ gene than 
+\emph on
+SMC2.
+ 
+\emph default
+The presence and absence of bands in replicates demonstrates that these
+ ligation products are very rare, due to the weak nature of 
+\emph on
+trans
+\emph default
+ contacts.
+ This very low level of 3C ligation events and non-specific smearing due
+ to lack of template means that 3C RT-qPCR cannot be used to accurately
+ discern the relative interaction frequencies of these loci.
+\end_layout
+
+\begin_layout Section
+Validation by microscopy
+\end_layout
+
+\begin_layout Standard
+Microscopy techniques are an excellent method of validating e4C data.
+ Because the protocols are fundamentally different, they do not suffer the
+ same biases as 3C- derived techniques, and are able to give information
+ on a single-cell basis instead of just cell populations.
+\end_layout
+
+\begin_layout Subsection
+RNA-FISH and DNA-FISH
+\end_layout
+
+\begin_layout Standard
+Initially, I attempted to use RNA-Fluorescence 
+\emph on
+In-Situ
+\emph default
+ Hybridisation (RNA-FISH) for this validation to show only genes that are
+ being actively transcribed.
+ RNA-FISH has excellent resolution as it only labels nascent transcripts,
+ giving small sharp foci.
+ However, after a great deal of setup and optimisation I switched to DNA-Fluores
+cence 
+\emph on
+In-Situ
+\emph default
+ Hybridisation (DNA-FISH).
+ Because human blood products are a category II sample, they must be killed
+ by fixation before being brought to the main laboratory.
+ This change in the RNA-FISH protocol caused large problems and I was never
+ able to collect any meaningful data.
+\end_layout
+
+\begin_layout Standard
+DNA-FISH labels regions of genomic DNA using fluorescently labelled bacterial
+ artificial chromosomes (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BAC"
+description "Bacterial artificial chromosome"
+
+\end_inset
+
+BACs).
+ It is a substantially less fickle technique than RNA-FISH due to the relative
+ stability of DNA and the larger labelling target; a BAC is typically around
+ one hundred kilobases in length whereas RNA-FISH probes are designed in
+ non-repetitive intron sequences, usually a few hundred base pairs long.
+ Additionally, DNA-FISH labels two genomic loci in every nuclei, whereas
+ RNA-FISH only labels nascent transcripts which may be far fewer in number.
+\end_layout
+
+\begin_layout Subsection
+DNA-FISH study design
+\end_layout
+
+\begin_layout Standard
+For use in the DNA-FISH I used BAC probes covering target genes directly
+ labelled with fluorescent moieties (555 nm for 
+\emph on
+BCR
+\emph default
+, 488 nm for other genes).
+ I used the genes tested in the 3C RT-qPCR: 
+\emph on
+BCR
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+, 
+\emph on
+Surfeit
+\emph default
+ cluster and the 
+\emph on
+SMC2
+\emph default
+ negative control.
+ I also used two new loci, 
+\emph on
+SPTAN1
+\emph default
+ and 
+\emph on
+QSOX2
+\emph default
+, which are found at the apex of the centromeric and telomeric triplet peaks
+ of association in chromosome 9.
+ For use as a negative control in the DNA-FISH I also used 
+\emph on
+HLA-DMA
+\emph default
+, a highly expressed gene on chromosome 6 within a region enriched for active
+ marks but not displaying a specific interaction with 
+\emph on
+BCR
+\emph default
+ in the e4C (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:DNA-FISH-BACs"
+
+\end_inset
+
+, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DNA-FISH-probe-locations"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Gene
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+BAC ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Chromosomal Position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+BCR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+CTD-2571K3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr22:23,455,715-23,679,062
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+ABL1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-83J21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr9:133,652,008-133,828,473
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Surfeit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-152J3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr9:136,206,288-136,374,469
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+SPTAN1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-589E16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr9:131,241,008-131,450,093
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+QSOX2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-83N9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr9:138,981,971-139,136,889
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+SMC2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-989F24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr9:106,791,249-106,969,527
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+HLA-DMA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RP11-629J17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+chr6:32,449,530-32,684,058
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+DNA-FISH BACs
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:DNA-FISH-BACs"
+
+\end_inset
+
+DNA-FISH BACs.
+ 
+\series default
+Table showing the BAC name and chromosomal position for each DNA-FISH probe
+ used.
 \end_layout
 
 \end_inset
@@ -1536,49 +2331,71 @@ Gel showing 3C qPCR Products
 
 \end_layout
 
-\begin_layout Section
-Validation by DNA-FISH
-\end_layout
-
 \begin_layout Standard
-To validate the associations we see in the e4C and Hi-C data, we used DNA-Fluore
-scence 
-\emph on
-In-Situ
-\emph default
- Hybridization (DNA-FISH).
- DNA-FISH is able to show the distance between genetic loci on a single-cell
- basis, and does not share any of the potential biases present in 3C technologie
-s.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/DNA-FISH probes/DNA-FISH_probes.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Design
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+DNA-FISH probe locations
 \end_layout
 
-\begin_layout Standard
-For use in the DNA-FISH, I also used the genes 
-\emph on
-SPTAN1
-\emph default
- and 
-\emph on
-QSOX2
-\emph default
-, found at the apex of the centromeric and telomeric peaks of association.
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:DNA-FISH-probe-locations"
+
+\end_inset
+
+
+\series bold
+DNA-FISH probe locations.
+ Location of DNA-FISH probes on chromosome 9.
+ 
+\series default
+e4C association profile with BCR using ten megabase windows with one megabase
+ separation shown in light blue solid colour; association using one megabase
+ windows with 100 Kb separation shown as solid blue line.
+ HLA-DMA probe is located on chromosome 6.
+ Identities and exact locations of BAC probes can be found in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:DNA-FISH-BACs"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-For use as a negative control in the DNA-FISH I also used 
-\emph on
-HLA-DMA
-\emph default
-, a highly expressed gene on chromosome 6 within a region enriched for active
- marks but not displaying a specific interaction with 
-\emph on
-BCR
-\emph default
- in the e4C.
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1596,23 +2413,6 @@ DNA-FISH in CD34
 \end_inset
 
  cells
-\end_layout
-
-\begin_layout Section
-Discussion
-\end_layout
-
-\begin_layout Standard
-Describe why this work is new, and different to what has already been shown
- with purely DNA-FISH - eg.
- the Neves paper (not only do the genes co-localize, they are the top co-localiz
-ation partners in the entire genome).
- Talk about the bystander effect (?).
- 
-\end_layout
-
-\begin_layout Standard
-Should this go in the discussion section instead?
 \end_layout
 
 \begin_layout Standard
