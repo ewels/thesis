@@ -7,8 +7,12 @@
 \usepackage{comment}
 \includecomment{comment}
 
-% stop LaTeX from putting hyphens everywhere
+% stop LaTeX from putting hyphens everywhere (but allow a few)
 \hyphenpenalty=5000
+
+%Attempt to avoid nasty widows and orphans
+\clubpenalty=9999
+\widowpenalty=9999
 
 % Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
 \usepackage[margin=10pt,font={footnotesize,sf},labelfont=bf,labelsep=endash]{caption}

@@ -4984,7 +4984,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 3/complexity paired end adapter/complexity-e4C-adapter.eps
 	lyxscale 30
-	width 80text%
+	width 100text%
 
 \end_inset
 

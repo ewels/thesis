@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \float_placement !th
-\paperfontsize default
+\paperfontsize 12
 \spacing double
 \use_hyperref true
 \pdf_bookmarks true
@@ -57,9 +57,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
-\topmargin 2cm
-\rightmargin 2.5cm
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 3cm
 \bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
@@ -174,15 +174,39 @@ Histones
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement O
-overhang 0in
-width "40col%"
+To package DNA, the double helix is wrapped around an octamer of core histones:
+ two H2A, two H2B, two H3 and two H4.
+ 146 base pairs of DNA interact with these positively charged proteins to
+ form the nucleosome, which is then bound by histone H1 with linker DNA
+ to make a total of 166 base pairs (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nucleosome-xray-structure"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Davey2002"
+
+\end_inset
+
+).
+ This packing forms the 10 nm fibre, often known as 'beads on a string'
+ due to its appearance in electron micrographs.
+ At their most basic level, histones function to compact DNA by counteracting
+ the negative charge of the phosphorylated back bone.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/chapter 1/Nucleosome_1KX5_colour_coded.png
 	lyxscale 10
@@ -205,7 +229,7 @@ name "fig:nucleosome-xray-structure"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Structure of the nucleosome
@@ -238,30 +262,7 @@ key "Davey2002"
 
 \end_inset
 
-To package DNA, the double helix is wrapped around an octomer of core histones:
- two H2A, two H2B, two H3 and two H4.
- 146 base pairs of DNA interact with these positively charged proteins to
- form the nucleosome, which is then bound by histone H1 with linker DNA
- to make a total of 166 base pairs (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:nucleosome-xray-structure"
 
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Davey2002"
-
-\end_inset
-
-).
- This packing forms the 10 nm fibre, often known as 'beads on a string'
- due to its appearance in electron micrographs.
- At their most basic level, histones function to compact DNA by counteracting
- the negative charge of the phosphorylated back bone.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -1556,71 +1557,6 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "50col%"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 1/chromosome territories/bolzer-CTs.eps
-	lyxscale 40
-	width 45col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Chromosome Territories
-\end_layout
-
-\end_inset
-
-Chromosome Territories.
-
-\series default
- Image of a Human fibroblast cell in G0 with all chromosomes labelled using
- multi-colour FISH.
- Adapted from Bolzer 
-\emph on
-et al.
-
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Bolzer2005"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The interphase nucleus is a highly structured organelle.
  As chromosomes decondense after metaphase they retain some degree of structure,
  forming 
@@ -1704,6 +1640,72 @@ key "Schardin1985a,Manuelidis1985,Bolzer2005"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 1/chromosome territories/bolzer_CTs.eps
+	lyxscale 40
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Chromosome Territories
+\end_layout
+
+\end_inset
+
+Chromosome Territories.
+
+\series default
+ Image of a Human fibroblast cell in G0 with all chromosomes labelled using
+ multi-colour FISH.
+ Adapted from Bolzer 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bolzer2005"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2198,19 +2200,16 @@ key "Jackson1993,Osborne2004,Eskiw2008a"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "35col%"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/chapter 1/transcription factories/transcription-factories.eps
 	lyxscale 20
-	width 30col%
+	width 100col%
 
 \end_inset
 
@@ -2266,6 +2265,10 @@ key "Cook1999"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2653,94 +2656,6 @@ key "Xu2008a"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "40col%"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 1/Klf factories/Klf1 factories.eps
-	lyxscale 50
-	width 35text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Klf1-specialised-transcription-factories"
-
-\end_inset
-
-
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Klf1 specialised transcription factories
-\end_layout
-
-\end_inset
-
-
-\series bold
-Klf1 specialised transcription factories.
-
-\series default
- 
-\size footnotesize
-(A) Immunofluorescence showing Klf1 (red) overlapping with a subset of RNA
- Polymerase II transcription factories (green).
- (B) RNA immuno-FISH showing transcribing 
-\emph on
-Hbb
-\emph default
- alleles (green) co-localising with Klf1 (red).
- (C) Percentages of co-localising transcript pairs colocalisation with Klf1
- associated transcription factories (right, black bars) and non-Klf1 associated
- factories (left, white bars).
- Expected level of association due to chance shown by green bar.
- Scale bars show in (A) and (B) represents 2 µm.
- Taken from Schoenfelder 
-\emph on
-et al.
-
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Schoenfelder2010"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Perhaps the best evidence for the existence of specialised transcription
  factories came in a publication by Schoenfelder 
 \emph on
@@ -2807,6 +2722,85 @@ key "Schoenfelder2010"
 .
  If such specialised transcription factories are a general feature in mammalian
  nuclei, they could be a key driving force in the organisation of the genome.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 1/Klf factories/Klf1 factories.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Klf1-specialised-transcription-factories"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Klf1 specialised transcription factories
+\end_layout
+
+\end_inset
+
+
+\series bold
+Klf1 specialised transcription factories.
+
+\series default
+ (A) Immunofluorescence showing Klf1 (red) overlapping with a subset of
+ RNA Polymerase II transcription factories (green).
+ (B) RNA immuno-FISH showing transcribing 
+\emph on
+Hbb
+\emph default
+ alleles (green) co-localising with Klf1 (red).
+ (C) Percentages of co-localising transcript pairs colocalisation with Klf1
+ associated transcription factories (right, black bars) and non-Klf1 associated
+ factories (left, white bars).
+ Expected level of association due to chance shown by green bar.
+ Scale bars show in (A) and (B) represents 2 µm.
+ Taken from Schoenfelder 
+\emph on
+et al.
+
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schoenfelder2010"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6345,7 +6339,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/chapter 1/branco intermingling translocations/branco intermingling translocations.eps
+	filename figures/chapter 1/branco intermingling translocations/branco_intermingling_translocations.eps
 	width 40text%
 
 \end_inset
@@ -6532,13 +6526,6 @@ key "Cowell2012"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section

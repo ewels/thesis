@@ -4,8 +4,12 @@
 \begin_header
 \textclass report
 \begin_preamble
-% stop LaTeX from putting hyphens everywhere
-\hyphenpenalty=10000
+% stop LaTeX from putting hyphens everywhere (but allow a few)
+\hyphenpenalty=5000
+
+%Attempt to avoid nasty widows and orphans
+\clubpenalty=9999
+\widowpenalty=9999
 
 % Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
 \usepackage[margin=10pt,font={footnotesize,sf},labelfont=bf,labelsep=endash]{caption}
@@ -180,7 +184,7 @@ vspace*{2cm}
 
 
 \family default
-A dissertation submitted for the degree of
+This dissertation is submitted for the degree of
 \emph on
  Doctor of Philosophy
 \emph default

@@ -328,6 +328,7 @@ status open
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Illumina SCS processing
 \end_layout
 
@@ -339,6 +340,7 @@ Illumina SCS processing
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Bareback processing
 \end_layout
 
@@ -350,6 +352,7 @@ Bareback processing
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Fold increase
 \end_layout
 
@@ -361,6 +364,8 @@ Fold increase
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 BCR and MLL
 \end_layout
 
@@ -370,6 +375,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14,409,580
 \end_layout
 
@@ -379,6 +386,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 22,167,823
 \end_layout
 
@@ -388,6 +397,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1.54
 \end_layout
 
@@ -399,6 +410,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL
 \end_layout
 
@@ -408,6 +421,8 @@ MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13,147,751
 \end_layout
 
@@ -417,6 +432,8 @@ MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 16,704,073
 \end_layout
 
@@ -427,17 +444,7 @@ MLL
 
 \begin_layout Plain Layout
 
-\family sans
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 1.27
 \end_layout
 
@@ -449,6 +456,8 @@ MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 BCR and MLL
 \end_layout
 
@@ -458,6 +467,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 18,434,991
 \end_layout
 
@@ -467,6 +478,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 23,251,377
 \end_layout
 
@@ -477,17 +490,7 @@ BCR and MLL
 
 \begin_layout Plain Layout
 
-\family sans
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 1.26
 \end_layout
 
@@ -499,6 +502,8 @@ BCR and MLL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL p1
 \end_layout
 
@@ -508,6 +513,8 @@ MLL p1
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4,690,956
 \end_layout
 
@@ -517,6 +524,8 @@ MLL p1
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 27,868,955
 \end_layout
 
@@ -527,17 +536,7 @@ MLL p1
 
 \begin_layout Plain Layout
 
-\family sans
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 5.94
 \end_layout
 
@@ -549,6 +548,8 @@ MLL p1
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL p2
 \end_layout
 
@@ -558,6 +559,8 @@ MLL p2
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 272,927
 \end_layout
 
@@ -567,6 +570,8 @@ MLL p2
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 30,632,135
 \end_layout
 
@@ -577,17 +582,7 @@ MLL p2
 
 \begin_layout Plain Layout
 
-\family sans
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 112.24
 \end_layout
 
@@ -599,6 +594,8 @@ MLL p2
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ABL
 \end_layout
 
@@ -608,6 +605,8 @@ ABL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
@@ -617,6 +616,8 @@ ABL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 33,157,523
 \end_layout
 
@@ -626,6 +627,8 @@ ABL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula $\infty$
 \end_inset
 
@@ -640,6 +643,8 @@ ABL
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL phiX
 \end_layout
 
@@ -649,6 +654,8 @@ MLL phiX
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 24,349,038
 \end_layout
 
@@ -658,6 +665,8 @@ MLL phiX
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 26,284,182 
 \end_layout
 
@@ -668,17 +677,7 @@ MLL phiX
 
 \begin_layout Plain Layout
 
-\family sans
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 1.08
 \end_layout
 
@@ -690,6 +689,8 @@ MLL phiX
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 BCR phiX
 \end_layout
 
@@ -742,7 +743,7 @@ name "tab:bareback-stats"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Illumina sequence processing statistics with Bareback.
@@ -753,6 +754,11 @@ Illumina sequence processing statistics with Bareback.
 
 \series bold
 Illumina sequence processing statistics with Bareback.
+ 
+\series default
+Number of sequences returned from the standard Illumina SCS processing pipeline
+ and from the bareback processing pipeline.
+ Numbers shown for analysis of identical sequencing images.
 \end_layout
 
 \end_inset
@@ -882,7 +888,7 @@ Sequence trimming
 lines 0
 placement O
 overhang 0in
-width "35col%"
+width "45col%"
 status open
 
 \begin_layout Plain Layout
@@ -890,7 +896,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/e4C sequence structure/e4C sequence structure.eps
 	lyxscale 50
-	width 30col%
+	width 40col%
 
 \end_inset
 
@@ -1058,7 +1064,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/processing survival/processing survival.eps
 	lyxscale 30
-	width 80col%
+	width 100col%
 
 \end_inset
 
@@ -1467,6 +1473,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Fragments Removed
 \end_layout
 
@@ -1476,6 +1484,8 @@ Fragments Removed
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Total Fragments
 \end_layout
 
@@ -1487,6 +1497,8 @@ Total Fragments
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 All 
 \emph on
 AseI
@@ -1504,6 +1516,8 @@ NlaIII
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
@@ -1513,6 +1527,8 @@ NlaIII
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2407346
 \end_layout
 
@@ -1524,6 +1540,8 @@ NlaIII
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Filter for length < 35bp
 \end_layout
 
@@ -1533,6 +1551,8 @@ Filter for length < 35bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 283205
 \end_layout
 
@@ -1542,6 +1562,8 @@ Filter for length < 35bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2124141 (88.24%)
 \end_layout
 
@@ -1553,6 +1575,8 @@ Filter for length < 35bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Filter for length > 700bp
 \end_layout
 
@@ -1562,6 +1586,8 @@ Filter for length > 700bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 74398
 \end_layout
 
@@ -1571,6 +1597,8 @@ Filter for length > 700bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2049743 (85.15%)
 \end_layout
 
@@ -1582,6 +1610,8 @@ Filter for length > 700bp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Filter for unique mappability
 \end_layout
 
@@ -1591,6 +1621,8 @@ Filter for unique mappability
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 153862
 \end_layout
 
@@ -1600,6 +1632,8 @@ Filter for unique mappability
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1895881 (78.75%)
 \end_layout
 
@@ -2058,7 +2092,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/AseI normalisation/AseI_normalisation.eps
 	lyxscale 30
-	width 90col%
+	width 100col%
 
 \end_inset
 
@@ -2178,7 +2212,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/AseI in-silico/AseI_in-silico.eps
 	lyxscale 30
-	width 90col%
+	width 100col%
 
 \end_inset
 
@@ -2275,7 +2309,7 @@ A standard score represents how many standard deviations from the mean a
  into SeqMonk.
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
