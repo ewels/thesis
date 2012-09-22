@@ -1952,6 +1952,14 @@ cis
  chromosomes were removed from analysis.
  Gene density was calculated using protein coding genes only.
  Values shown in italics are comparisons across different cell types.
+ See Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:active-correlation-accessions"
+
+\end_inset
+
+ for NCBI GEO accession numbers
 \end_layout
 
 \end_inset

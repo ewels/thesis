@@ -1100,7 +1100,7 @@ ABL1
 \end_layout
 
 \begin_layout Section
-Narrowing the window - the Surfeit Cluster
+Narrowing the window of interactions
 \end_layout
 
 \begin_layout Standard
@@ -1116,15 +1116,210 @@ ABL1
 .
  This region is very gene dense, containing approximately 50 to 80 genes
  per one megabase window.
+ Using RNA-Seq and RNA pol II ChIP-Seq datasets (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:active-correlation-accessions"
+
+\end_inset
+
+ for NCBI GEO accession numbers) I selected highly expressed genes and generated
+ 4C-like association datasets for them.
+ Taking this approach instead of studying two-dimensional heatmaps gives
+ better resolution and allows finer control of interaction visualisations.
 \end_layout
 
 \begin_layout Subsection
-Candidate genes
+The Surfeit Cluster
 \end_layout
 
 \begin_layout Standard
-Description of data analysis (“narrowing the window”) with the 4C and Hi-C
- that led me to the Surfeit Cluster.
+The consensus association for 
+\emph on
+BCR
+\emph default
+ across the datasets is that there are three major peaks of association
+ in chromosome 9 q34.
+ The 
+\emph on
+ABL1
+\emph default
+ gene sits between the two most centromeric of these.
+ The closest of these peaks contains the 
+\emph on
+Surfeit
+\emph default
+ cluster of genes.
+ This is a cluster six housekeeping genes not related in sequence contained
+ within 45 Kb.
+ The
+\emph on
+ SURF1 
+\emph default
+-
+\emph on
+ SURF5
+\emph default
+ genes alternate in orientation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Huxley1990"
+
+\end_inset
+
+ and 
+\emph on
+SURF1
+\emph default
+ and 
+\emph on
+SURF2
+\emph default
+ share a bidirectional promoter 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lennard1994"
+
+\end_inset
+
+.
+ 
+\emph on
+SURF3
+\emph default
+ (also known as 
+\emph on
+RPL7A
+\emph default
+) encodes the 60S ribosomal protein L7a and is co-transcribed with the small
+ nucleolar RNA genes U24, U36a, U36b, and U36c 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Giallongo1989,Nicoloso1996"
+
+\end_inset
+
+.
+ The cluster is highly conserved from mouse and chicken to human 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Duhig1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+I hypothesised that a cluster of genes with such high expression may be
+ responsible for the organisation of the surrounding chromatin and could
+ be driving the observed association with chromosome 22.
+ Generating 4C like association profiles from Hi-C and TCC reads in the
+ 
+\emph on
+Surfeit
+\emph default
+ cluster shows strong interactions over the region of chromosome 22 containing
+ the 
+\emph on
+BCR
+\emph default
+ gene (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Surfeit-BCR-association"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\size giant
+NEED TO GENERATE THIS FIGURE WITH THE HiC AND TCC DATA
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Surfeit
+\emph default
+ locus association with 
+\emph on
+BCR
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Surfeit-BCR-association"
+
+\end_inset
+
+
+\series bold
+Surfeit
+\emph default
+ locus association with 
+\emph on
+BCR.
+
+\series default
+ 
+\emph default
+Association of reads in a one megabase surrounding the 
+\emph on
+Surfeit
+\emph default
+ cluster, normalised for 
+\emph on
+HindIII
+\emph default
+ site distribution, across chromosome 22 (centromere to the left, telomere
+ to the right).
+ Light orange fill shows quantification using ten megabase windows with
+ one megabase separation.
+ Darker orange line shows quantification using one megabase windows with
+ 100 Kb separation.
+ X axis shows chromosome position in megabases.
+ 
+\emph on
+BCR
+\emph default
+ is shown as a grey bar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1139,20 +1334,20 @@ name "sec:Validation-by-3C"
 \end_layout
 
 \begin_layout Standard
-The results of the e4C demonstrate interaction frequencies.
- The analysis of the data makes a number of assumptions, one of which is
- that the results of the e4C library sequencing accurately represent the
- frequency of ligation products found within the original 3C libraries.
+The results of the e4C indicate interaction frequencies.
+ The analysis of the data makes a number of assumptions, namely that the
+ results of the e4C library sequencing accurately represent the frequency
+ of ligation products found within the original 3C libraries.
  There are a number of steps within the e4C library preparation which could
- affect this representation, not least the two PCR amplification steps which
+ affect this representation, notably the two PCR amplification steps which
  may preferentially amplify some ligation products irrespective of their
  initial frequency.
- Because of these potential biases the validation of interaction frequencies
- by traditional RT-qPCR 3C was a logical step to take.
- In addition to this validation, I hoped that the RT-qPCR 3C may provide
- a resolution of interaction frequencies at a superior resolution than the
- e4C, both in terms of quantitative interaction of individual fragments
- and in differences between fragments within close proximity.
+ Because of these potential biases traditional RT-qPCR 3C was a logical
+ method to validate the association.
+ Additionally, I hoped that the RT-qPCR 3C may provide a resolution of interacti
+on frequencies at a superior to the e4C, both in terms of quantitative interacti
+on of individual fragments and in differences between fragments within close
+ proximity.
 \end_layout
 
 \begin_layout Subsection
@@ -1177,12 +1372,121 @@ HindIII
 AseI
 \emph default
  digestion.
- A control library was prepared by amplifying the fragments with genomic
- DNA, digesting with 
+ An equimolar mix library to control for varying primer efficiencies was
+ prepared by amplifying the fragments with genomic DNA, digesting with 
 \emph on
-AseI
+HindIII
 \emph default
-, mixing in equimolar concentrations and randomly ligating.
+, mixing in equimolar concentrations and randomly ligating as described
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dekker2006,Cope2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/3C qPCR primers/3C_qPCR_primers.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+3C RT-qPCR Primer Locations
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3C-RT-qPCR-Primers"
+
+\end_inset
+
+
+\series bold
+3C RT-qPCR Primer Locations.
+ (A)
+\series default
+ BCR e4C association over telomeric chromosome 9 (shading - ten megabase
+ windows, line - one megabase windows).
+
+\series bold
+ (B) 
+\series default
+Screenshots of candidate genes taken from UCSC.
+ 
+\emph on
+HindIII
+\emph default
+ restriction sites shown as blue lines, named fragments labelled in green
+ text.
+ Not shown at equal scale.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I interrogated three 
+\emph on
+HindIII
+\emph default
+ fragments covering the 
+\emph on
+Surfeit
+\emph default
+ locus, two fragments covering the 
+\emph on
+ABL1
+\emph default
+ promoters 1a and 1b.
+ For use as a negative control I used a 
+\emph on
+HindIII
+\emph default
+ fragment covering the promoter of 
+\emph on
+SMC2
+\emph default
+, an expressed gene 27 Mb centromeric of 
+\emph on
+ABL1
+\emph default
+ with low 
+\emph on
+BCR
+\emph default
+ e4C association.
 \end_layout
 
 \begin_layout Subsection
@@ -1192,6 +1496,44 @@ Results
 \begin_layout Standard
 Results, explain why they’re not conclusive (interaction too weak to reliably
  quantitate using traditional 3C)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/3C qPCR gel/3C_qPCR_gel.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gel showing 3C qPCR Products
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1208,6 +1550,35 @@ In-Situ
  DNA-FISH is able to show the distance between genetic loci on a single-cell
  basis, and does not share any of the potential biases present in 3C technologie
 s.
+\end_layout
+
+\begin_layout Subsection
+Design
+\end_layout
+
+\begin_layout Standard
+For use in the DNA-FISH, I also used the genes 
+\emph on
+SPTAN1
+\emph default
+ and 
+\emph on
+QSOX2
+\emph default
+, found at the apex of the centromeric and telomeric peaks of association.
+\end_layout
+
+\begin_layout Standard
+For use as a negative control in the DNA-FISH I also used 
+\emph on
+HLA-DMA
+\emph default
+, a highly expressed gene on chromosome 6 within a region enriched for active
+ marks but not displaying a specific interaction with 
+\emph on
+BCR
+\emph default
+ in the e4C.
 \end_layout
 
 \begin_layout Subsection
