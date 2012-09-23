@@ -106,8 +106,11 @@ tabs-within-sections
 \paperfontsize 12
 \spacing double
 \use_hyperref true
+\pdf_title "Spatial organisation of proto-oncogenes in human hæmatopoietic progenitor cells"
+\pdf_author "Philip Ewels"
+\pdf_subject "A dissertation is submitted for the degree of Doctor of Philosophy"
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
+\pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false

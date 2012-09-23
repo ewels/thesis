@@ -931,7 +931,14 @@ Chromosomal positions in Bait Position column describe the bait AseI fragment
 \end_layout
 
 \begin_layout Section
-Concerning raw data
+Concerning raw data 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Concerning-raw-data"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

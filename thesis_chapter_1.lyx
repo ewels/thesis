@@ -1229,15 +1229,7 @@ key "Sadri-Vakili2006"
 \end_layout
 
 \begin_layout Standard
-As chromatin immunoprecipitation (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "ChIP"
-description "Chromatin immunoprecipitation"
-
-\end_inset
-
-ChIP) has become a common laboratory technique, combined with microarray
+As chromatin immunoprecipitation (ChIP) has become a common laboratory technique, combined with microarray
  techniques (ChIP on chip) and next generation sequencing (ChIP-Seq), our
  understanding of how histone modifications affect chromatin biology on
  a genome-wide scale has advanced dramatically.
@@ -2988,15 +2980,7 @@ key "Tolhuis2002"
 
 \end_inset
 
- used the chromosome conformation capture technique (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "3C"
-description "Chromatin conformation capture"
-
-\end_inset
-
-3C) developed by Dekker 
+ used the chromosome conformation capture technique (3C) developed by Dekker 
 \emph on
 et al.
 

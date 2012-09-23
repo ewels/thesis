@@ -3911,7 +3911,7 @@ I had originally hoped to incorporate a
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ChIP"
-description "Chromatin immuno-precipitation"
+description "Chromatin immunoprecipitation"
 
 \end_inset
 
@@ -4914,12 +4914,12 @@ name "sec:e4C-complexity-barcodes"
 Due to the low coverage of the e4C libraries (see Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Limitations-Coverage"
+reference "sec:Concerning-raw-data"
 
 \end_inset
 
- for discussion), I tried to modify the e4C protocol to increase the diversity
- of the sequencing reads.
+), I tried to modify the e4C protocol to increase the diversity of the sequencin
+g reads.
  
 \end_layout
 

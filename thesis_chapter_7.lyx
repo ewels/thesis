@@ -30,7 +30,16 @@
 \index_command default
 \paperfontsize 12
 \spacing double
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry true
 \use_amsmath 1
@@ -76,13 +85,14 @@ Discussion
 e4C
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 technical aspects, review low coverage and differences between baits.
  Talk about MLL paper where they couldn't do 3C.
- What I'd do differently now.
+ What I'd do differently now (Multiplexing similar libraries with barcodes
+ (not wobble))
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 analysis aspects, talk about de Laat 4C analysis paper and Tanay and how
  what I've done compares to all of this
@@ -173,107 +183,8 @@ How HiC can be used in new ways - comparative interactions, tissues, diseases,
 \end_layout
 
 \end_deeper
-\begin_layout Section
-Limitations of the e4C data / Discussion
-\end_layout
-
-\begin_layout Subsection
-Coverage 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Limitations-Coverage"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-The problems of low coverage in the libraries, and how this differs for
- the different bait regions.
- What we did to try to overcome this (using GM12878 cells, using multiple
- bait regions).
- Why this makes the data from the ABL1 and MLL baits have limited use.
-\end_layout
-
-\begin_layout Subsection
-Things I'd have done differently
-\end_layout
-
-\begin_layout Standard
-Multiplexing similar libraries with barcodes (not wobble)
-\end_layout
-
-\begin_layout Section
-Sample choice
-\end_layout
-
-\begin_layout Standard
-Why I'm using CD34+ cells - initiation of cancers in haematopoietic stem
- cells.
-\end_layout
-
-\begin_layout Section
-Association between 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-ABL1
-\end_layout
-
-\begin_layout Standard
-CML and Philadelphia Chromosome.
- BCR and ABL genes and proteins in normal context.
- Description of fusion protein and path to oncogenesis.
- Emphasise that lots is known about how the translocation is formed, but
- not why it is.
- Talk about DNA-FISH study looking at BCR-ABL-PMLa association through developme
-nt.
-\end_layout
-
-\begin_layout Subsection
-Evidence for a bystander effect
-\end_layout
-
-\begin_layout Section
-A model for the formation of chromosomal translocations
-\end_layout
-
-\begin_layout Standard
-Lay out the idea that non-random co-association at transcription factories
- is bringing together specific gene pairs, which in turn leads to an increased
- likelihood that they will form a chromosomal translocation which will go
- on to cause cancer.
- Talk about the order of events (are there other prerequisites, such as
- genomic instability?).
- 
-\end_layout
-
-\begin_layout Subsection
-MLL - topoisomerases?
-\end_layout
-
-\begin_layout Standard
-Go on to talk about the more detailed translocation mechanism regarding
- topoisomerase described by Libura et al., and how this ties in nicely with
- transcription and torsional stress on the DNA.
- Expand out to the bigger picture, and how this could be a common mechanism
- for all/many translocations.
-\end_layout
-
-\begin_layout Section
-Future perspectives
-\end_layout
-
-\begin_layout Standard
-Go on to talk about implications - how this understanding can aid other
- areas of research and possibly lead to new treatments (eg.
- preventative drugs during topoisomerase inhibitor treatment).
- Talk about recent developments and where the field is going.
- Suggest useful future studies.
- 
+And some other stuff here.
 \end_layout
 
 \begin_layout Standard
@@ -299,7 +210,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/Users/philewels/Dropbox/Work/BibTeX/THESIS"
+bibfiles "/Users/phil/Dropbox/Work/BibTeX/THESIS"
 options "klunamed"
 
 \end_inset
