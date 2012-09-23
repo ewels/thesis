@@ -11,6 +11,9 @@
 \clubpenalty=9999
 \widowpenalty=9999
 
+% Call nomenclature something else
+\renewcommand{\nomname}{List of Abbreviations}
+
 % Make figure captions look nice. Small, sans-serif, bold Fig X.X bit
 \usepackage[margin=10pt,font={footnotesize,sf},labelfont=bf,labelsep=endash]{caption}
 
@@ -49,9 +52,9 @@
 \bibpunct[; ]{(}{)}{;}{a}{,}{;}
 
 % make the bibliography have single line spacing
-\usepackage{setspace}
-\let\oldbibliography\bibliography
-\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}
+%\usepackage{setspace}
+%\let\oldbibliography\bibliography
+%\renewcommand{\bibliography}[1]{\setstretch{1}\oldbibliography{#1}}
 
 %%
 % fancyheader customisation
@@ -72,9 +75,10 @@
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter: #1}{}}
 \lhead{\headerfont\leftmark}
 % footer - center
-\fancyfoot[C]{\footerfont- \thepage \ -}
+\fancyfoot[C]{\footerfont\thepage}
 % make it so
-\pagestyle{fancy}
+\pagestyle{plain}
+% \pagestyle{fancy} % after ToC etc
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -104,7 +108,7 @@ tabs-within-sections
 \index_command default
 \float_placement !th
 \paperfontsize 12
-\spacing double
+\spacing onehalf
 \use_hyperref true
 \pdf_title "Spatial organisation of proto-oncogenes in human hæmatopoietic progenitor cells"
 \pdf_author "Philip Ewels"
@@ -252,6 +256,38 @@ filename "thesis_firstpages.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{List of Abbreviations}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "auto"
@@ -262,17 +298,57 @@ set_width "auto"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+listfigurename}
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset FloatList figure
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+listtablename}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset FloatList table
 
 \end_inset
@@ -283,6 +359,13 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -374,6 +457,22 @@ filename "thesis_chapter_7.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "thesis_appendices.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
 
 \end_inset
 

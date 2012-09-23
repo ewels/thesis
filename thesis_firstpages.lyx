@@ -91,7 +91,22 @@ vspace*{6cm}
 \begin_inset Quotes eld
 \end_inset
 
-If you want to increase your success rate, double your failure rate.
+If you want to increase your success rate,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+double your failure rate.
 \begin_inset Quotes erd
 \end_inset
 
@@ -126,23 +141,8 @@ vspace*{2cm}
 \begin_inset Quotes eld
 \end_inset
 
-Science is a lot like rowing:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
- although you are relentlessly pushing forwards, it always feels like you're
- going backwards.
+Science is a lot like rowing: although you are relentlessly pushing forwards,
+ it always feels like you're going backwards.
 \begin_inset Quotes erd
 \end_inset
 
@@ -156,6 +156,22 @@ Adrian Leonard
 
 \begin_layout Chapter*
 Declaration
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Declaration}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -204,6 +220,22 @@ Phil Ewels
 
 \begin_layout Chapter*
 Summary
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Summary}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -285,37 +317,216 @@ My data supports a hypothesis that gene transcription has a direct role
  may promote the occurrence of specific chromosomal translocations.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter*
 Acknowledgements
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-I would like to thank my group.
+
+
+\backslash
+addcontentsline{toc}{chapter}{Acknowledgements}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I'd like to start by thanking my supervisor, Cameron Osborne, for inviting
+ me into his group and letting me carry out my PhD in his laboratory despite
+ my complete lack of ability to discuss anything about football.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement o
+overhang 1cm
+width "45col%"
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/misc/hip.jpg
-	lyxscale 50
-	width 80text%
+	lyxscale 30
+	width 40text%
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Plain Layout
+\align center
+
+\family sans
+\size footnotesize
+The Osborne 
+\strikeout on
+lab
+\strikeout default
+ 
+\emph on
+posse
+\emph default
+.
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The Osborne lab has been a tight knit group throughout my PhD - I'd like
+ to thank Alan Chong for teaching me my baby steps, Mayra Furlan-Magaril
+ for helping me through some of the most difficult parts of my project,
+ Lauren Ferreira for being a great friend as well as an excellent pair of
+ hands, Alice Young for inspiring me to keep trying and Cam for putting
+ up with my appalling writing style.
+\end_layout
+
+\begin_layout Standard
+Being a small lab I relied heavily on those across the hall, especially
+ Stefan Schoenfelder, Daniel Bolland, Chris Eskiw, Louise Harewood, Joana
+ Martins and Mayra.
+ Notably there was some extreme speed-reading of this thesis for which I
+ am very grateful.
+ I'd like to thank the Babraham bioinformatics group for getting so good
+ at hiding their despair at seeing my face pop around the corner, in particular
+ Simon Andrews who has had a large role in shaping what will hopefully become
+ a career in bioinformatics of my own.
+ Fellow PhD students including but not limited to Nicola Stead, Catherine
+ Moir, the other 
+\begin_inset Quotes eld
+\end_inset
+
+BI Newbies
+\begin_inset Quotes erd
+\end_inset
+
+, Mike Stubbington, Luke Edelman and Andrew Dimond have all become good
+ friends without who I would have lost my sanity long ago.
+\end_layout
+
+\begin_layout Standard
+A big part of my life in Cambridge has been Trinity Hall, its MCR and the
+ mighty THBC.
+ I'd like to say a huge thanks to those who were part of this life with
+ me - Sophie 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Beast
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ Machin, Rachel Linn, 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Little
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ Phil Maltas, 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+French
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ Stef Jacquot, Luch 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+I hate rowing
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ Harland-Lang and everyone else who made it such a memorable few years.
+ You're all cheeky devils.
+ Row Hall!
+\end_layout
+
+\begin_layout Standard
+I think it would be rude not to thank my family, who are ultimately responsible
+ for my love of science and exploration.
+ What with weddings and babies, these four years have represented big changes
+ for all of us and I look forward to spending more time with all of you
+ in the near future!
+\end_layout
+
+\begin_layout Standard
+My PhD has truly shaped who I am and taught me what a life in science involves.
+ I owe a lot to many people for that privilege.
 \end_layout
 
 \begin_layout Chapter*
 Acknowledgement of assistance
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onehalfspacing
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Acknowledgement of assistance}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
