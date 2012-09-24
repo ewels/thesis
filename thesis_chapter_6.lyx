@@ -2399,7 +2399,7 @@ reference "tab:DNA-FISH-BACs"
 \end_layout
 
 \begin_layout Subsection
-DNA-FISH in GM12878 cells
+DNA-FISH analysis
 \end_layout
 
 \begin_layout Subsection
@@ -2413,6 +2413,509 @@ DNA-FISH in CD34
 \end_inset
 
  cells
+\end_layout
+
+\begin_layout Standard
+For the DNA-FISH with human CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells I was able to make two sets of biological replicate slides.
+ Cell numbers were limiting so I was not able to test all probe combinations
+ for each sample.
+ With slides from the first sample I tested the association of 
+\emph on
+BCR
+\emph default
+ (555 nm, red) against the 
+\emph on
+HLA-DMA
+\emph default
+, 
+\emph on
+SMC2
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ probes (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+, Run 1).
+ 
+\emph on
+BCR
+\emph default
+ was found significantly closer to 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ than the negative control 
+\emph on
+SMC2
+\emph default
+ (
+\emph on
+p
+\emph default
+ < 0.001), validating the observation of increased association over chromosome
+ 9 q34 seen in the e4C (block colour ten megabase window analysis, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DNA-FISH-probe-locations"
+
+\end_inset
+
+).
+ The median association of 
+\emph on
+BCR
+\emph default
+ with the control probe 
+\emph on
+HLA-DMA
+\emph default
+ was found to be slightly closer than 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ in this experiment, though not by a significant margin.
+ This gene was chosen as a control due to it's association with 
+\emph on
+BCR
+\emph default
+ in the e4C, so this result is not entirely unexpected.
+ The reason for including it as a control was because the e4C data suggested
+ that this association was no stronger than would be expected by the activity
+ of the region.
+ The expression of 
+\emph on
+HLA-DMA
+\emph default
+ is very strong in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells, so 
+\emph on
+BCR
+\emph default
+ may associate specifically with this gene below the level of resolution
+ achieved in the e4C.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/DNA-FISH - CD34/DNA-FISH_CD34.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+CD34 DNA-FISH results.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+
+\series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
++
+\end_layout
+
+\end_inset
+
+ DNA-FISH results.
+ (A)
+\series default
+ Box plots showing target gene separation with 
+\emph on
+BCR
+\emph default
+ in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells.
+ Nuclei with zero or greater than two signals in either channel were ignored.
+ Central line shows median, box edges show 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ and 90
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ percentiles, whiskers show 5
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ and 95
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ percentiles.
+ 
+\series bold
+(B)
+\series default
+ Representative DNA-FISH images in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ nuclei.
+ Scale bar is 2 µm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second biological replicate experiment was not as successful as the
+ first, with a number of slides not reaching the required number of cells
+ for analysis: any slides with less than 200 signals were discarded.
+ I was able to record association of 
+\emph on
+BCR
+\emph default
+ with 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+QSOX2.
+ 
+\emph default
+The association with 
+\emph on
+QSOX2
+\emph default
+ was slightly tighter than with 
+\emph on
+ABL1
+\emph default
+, though this margin was not significant (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+DNA-FISH in GM12878 cells
+\end_layout
+
+\begin_layout Standard
+I performed two replicate experiments with GM12878 cells using two batches
+ of slides prepared from independent cell collections.
+ In the first experiment I tested 
+\emph on
+BCR
+\emph default
+ (555
+\begin_inset space ~
+\end_inset
+
+nm, red) in combination with the 
+\emph on
+HLA-DMA
+\emph default
+, 
+\emph on
+SMC2
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ genes (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+).
+ A similar pattern was observed to that seen in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+), with 
+\emph on
+BCR
+\emph default
+ exhibiting significantly closer association with 
+\emph on
+ABL1
+\emph default
+, 
+\emph on
+Surf
+\emph default
+ and 
+\emph on
+HLA-DMA
+\emph default
+ (
+\emph on
+p
+\emph default
+ < 0.001, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+)..
+ One difference was that the association of 
+\emph on
+BCR
+\emph default
+ with 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ was closer than that with HLA-DMA (
+\emph on
+p
+\emph default
+ < 0.1, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/DNA-FISH - GM12878/DNA-FISH_GM12878.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+GM12878 DNA-FISH results
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+
+\series bold
+GM12878 DNA-FISH results.
+ (A)
+\series default
+ Box plots showing target gene separation with 
+\emph on
+BCR
+\emph default
+ in GM12878 cells.
+ Nuclei with zero or greater than two signals in either channel were ignored.
+ Central line shows median, box edges show 10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ and 90
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ percentiles, whiskers show 5
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ and 95
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ percentiles.
+ 
+\series bold
+(B)
+\series default
+ Representative DNA-FISH images in GM12878 nuclei.
+ Scale bar is 2 µm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
