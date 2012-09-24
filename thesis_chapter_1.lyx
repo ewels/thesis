@@ -109,7 +109,7 @@ Chromatin is a general term used to describe DNA packaged around histone
 \emph default
 and heterochromatin.
  These were first described in the early twentieth century due to their
- differential staining within the nucleus 
+ differential staining with carmine acetic acid within the nucleus 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Heitz1928"
@@ -117,8 +117,8 @@ key "Heitz1928"
 \end_inset
 
 .
- Heterochromatin stains darkly because it remains highly condensed during
- interphase and often associated with the nuclear periphery.
+ Heterochromatin stains darkly with giemsa stains because it remains highly
+ condensed during interphase and often associated with the nuclear periphery.
  Constitutive heterochromatin consists of repetitive elements found in centromer
 es and telomeres, it plays a structural role within the genome and is highly
  compacted during interphase.
@@ -166,7 +166,7 @@ The differences between heterochromatin and euchromatin lie within the proteins
  Chromatin acts as a platform for proteins to bind to.
  Differences in histone modifications, histone variants, nucleosome packing
  and DNA modifications affect the accessibility and binding profile of the
- chromatin, and therefore affect how the DNA is interpreted by the cell.
+ chromatin and can control how the sequences within are used.
 \end_layout
 
 \begin_layout Subsection
@@ -1229,10 +1229,10 @@ key "Sadri-Vakili2006"
 \end_layout
 
 \begin_layout Standard
-As chromatin immunoprecipitation (ChIP) has become a common laboratory technique, combined with microarray
- techniques (ChIP on chip) and next generation sequencing (ChIP-Seq), our
- understanding of how histone modifications affect chromatin biology on
- a genome-wide scale has advanced dramatically.
+As chromatin immunoprecipitation (ChIP) has become a common laboratory technique
+, combined with microarray techniques (ChIP on chip) and next generation
+ sequencing (ChIP-Seq), our understanding of how histone modifications affect
+ chromatin biology on a genome-wide scale has advanced dramatically.
  Profiling chromatin types using multiple datasets covering a large number
  of histone modifications is sufficient to predict the identity and function
  of regions in the genome with a high degree of accuracy, revealing previously
@@ -1269,9 +1269,9 @@ description "Genome-wide association study"
 
 GWAS) and found numerous enhancer elements that coincide with disease associated
  mutations.
- Such genome-wide approaches can reveal the dynamics across different cell
- types and are powerful tools in understanding how the genome is interpreted
- in health and disease (see Section 
+ Such genome-wide approaches can reveal differences between cell types and
+ are powerful tools in understanding how the genome is interpreted in health
+ and disease (see Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:The-annotated-genome"
@@ -1549,8 +1549,7 @@ Chromosome Territories
 \end_layout
 
 \begin_layout Standard
-The interphase nucleus is a highly structured organelle.
- As chromosomes decondense after metaphase they retain some degree of structure,
+As chromosomes decondense after metaphase they retain some degree of structure,
  forming 
 \begin_inset Quotes eld
 \end_inset
@@ -2179,11 +2178,11 @@ One class of nuclear subcompartment which has come to light within the past
 \emph default
 transcription factory, seen as foci of hyper-phosphorylated RNA polymerase
  II scattered throughout the nucleus.
- The majority of genic transcription appears to take place at transcription
+ The vast majority of genic transcription appears to take place at transcription
  factories 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Jackson1993,Osborne2004,Eskiw2008a"
+key "Jackson1993,Osborne2004,Ragoczy2006,Eskiw2008a,Schoenfelder2010"
 
 \end_inset
 
@@ -2257,10 +2256,6 @@ key "Cook1999"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2980,7 +2975,8 @@ key "Tolhuis2002"
 
 \end_inset
 
- used the chromosome conformation capture technique (3C) developed by Dekker 
+ used the chromosome conformation capture technique (3C) developed by Dekker
+ 
 \emph on
 et al.
 
@@ -3746,12 +3742,11 @@ key "Gavrilov2010"
 
 .
  These studies may point to a model of the nucleus where persistently transcribe
-d housekeeping genes are responsible for forming transcription factories,
- with tissue specific genes being recruited to these sites upon activation
- 
+d housekeeping genes are held in transcription factories, with tissue specific
+ genes being recruited to these sites upon activation 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Gavrilov2010"
+key "Mitchell2008,Gavrilov2010"
 
 \end_inset
 
@@ -3769,13 +3764,13 @@ CTCF
 lines 0
 placement o
 overhang 0in
-width "40text%"
+width "45text%"
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 1/ctcf structure/CTCF_structure.eps
-	width 40text%
+	width 45text%
 
 \end_inset
 
