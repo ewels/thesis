@@ -135,7 +135,7 @@ key "Simonis2006a"
 et al.
 
 \emph default
- used e4C to probe the interactions of the globin genes 
+ used e4C to probe the genome-wide associations of the globin genes 
 \emph on
 Hba
 \emph default
@@ -144,9 +144,9 @@ Hba
 Hbb
 \emph default
  in mouse foetal liver cells.
- They used ChIP to purify ligation products associated with elongating RNA
- polymerase II and identified association partners by hybridising the e4C
- library to a microarray.
+ They used ChIP to purify ligation products associated with hyper-phosphorylated
+ RNA polymerase II and identified association partners by hybridising the
+ e4C library to a microarray.
  
 \end_layout
 
@@ -211,8 +211,8 @@ key "Osborne2011"
 The 3C protocol begins with formaldehyde fixation used to preserve nuclear
  structure.
  A restriction endonuclease is used to cut the DNA, typically recognising
- a 6 base pair sequence cutting on average once every 1.2 Kb (
-\begin_inset Formula $6^{4}=1296$
+ a 6 base pair sequence cutting on average once every 4 Kb (
+\begin_inset Formula $4^{6}=4096$
 \end_inset
 
 ).
@@ -225,8 +225,8 @@ hairballs
 \end_inset
 
  of cross linked DNA and protein which are diluted into a large volume.
- A ligation reaction is run favouring ligations between sequences held together
- by formaldehyde linkages.
+ A ligation reaction is carried out which favours ligations between sequences
+ held together by formaldehyde linkages.
  These cross links are reversed and the DNA is purified, resulting in a
  3C library (Fig 
 \begin_inset CommandInset ref
@@ -237,7 +237,7 @@ reference "fig:3C_protocol"
 
 ).
  The frequency with which restriction fragments are found ligated together
- corresponds to the degree of their interaction within the nucleus.
+ corresponds to the degree of their association within the nucleus.
 \end_layout
 
 \begin_layout Standard
@@ -629,7 +629,7 @@ The lack of a smear could be the result of a number of factors - inefficient
  PCR amplification; loss of library through purification steps; inefficient
  enrichment of bait; low ligation efficiency in 3C or adapter ligation or
  poor digestion in initial 3C and e4C four cutter digestion steps.
- I ran a number of diagnostic tests to identify the cause, including a digestion
+ I ran a series of diagnostic tests to identify the cause, including a digestion
  efficiency assay which quantifies the amount of PCR product produced by
  primers spanning a restriction endonuclease recognition site (see Section
  
@@ -688,9 +688,9 @@ The steps immediately before the
 \emph on
 BamHI
 \emph default
- digestion in the protocol are SDS treatment to permeabilise the fixed nuclei
- to aid access for the restriction enzyme, followed by treatment with Triton-X10
-0 to quench the SDS.
+ digestion in the protocol include an SDS treatment to permeabilise the
+ fixed nuclei to aid access for the restriction enzyme, followed by treatment
+ with Triton-X100 to quench the SDS.
  To test if the SDS was inhibiting 
 \emph on
 BamHI
@@ -699,7 +699,7 @@ BamHI
  of Triton-X100 concentrations (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Restriction-Enzyme-Tests"
+reference "fig:BamHI-TritonX100"
 
 \end_inset
 
@@ -726,20 +726,13 @@ BamHI
  (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Restriction-Enzyme-Tests"
+reference "fig:BamHI-TritonX100"
 
 \end_inset
 
  B).
  The nuclei treated with the higher concentration of Triton-X100 showed
- a higher digestion efficiency as shown by the lower smear in (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Restriction-Enzyme-Tests"
-
-\end_inset
-
- B), though this digestion is still not satisfactory for e4C.
+ a higher digestion efficiency, though still unsatisfactory for e4C.
 \end_layout
 
 \begin_layout Standard

@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \float_placement !th
-\paperfontsize default
+\paperfontsize 12
 \spacing double
 \use_hyperref true
 \pdf_bookmarks true
@@ -57,9 +57,9 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
+\leftmargin 4cm
 \topmargin 3cm
-\rightmargin 2cm
+\rightmargin 3cm
 \bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
@@ -126,8 +126,17 @@ Bareback processing
 \end_layout
 
 \begin_layout Standard
-Illumina next generation sequencing machine such as the Genome Analyser
- IIx 'sequence by synthesis'.
+The Illumina next generation sequencing technologies including the Genome
+ Analyser IIx (GA IIx) determine the order of nucleotides by using fluorescently
+ tagged nucleotides: 
+\begin_inset Quotes eld
+\end_inset
+
+sequencing by synthesis
+\begin_inset Quotes erd
+\end_inset
+
+.
  Libraries are hybridised to oligonucleotides on a chip and clusters are
  generated surrounding each library sequence with multiple rounds of amplificati
 on.
@@ -2338,6 +2347,15 @@ Talk about the work I did doing pairwise correlation analysis on multiple
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+In this chapter I discuss my development of new analysis methodologies to
+ extract, normalise and quantify e4C sequencing association data.
 \end_layout
 
 \begin_layout Standard

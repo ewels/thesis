@@ -138,7 +138,7 @@ BCR
  interaction profiles is on chromosome 9, cytogenetic band q34.
  When the two replicates are combined this interaction gives approximately
  7 fold enrichment of association above the mean with a maximal standard
- score of 17.043.
+ score of 17.04.
  This is the strongest 
 \emph on
 trans
@@ -417,8 +417,8 @@ BCR
 ABL1
 \emph default
  promoter in GM12878 cells.
- This cell line is one of the top tier ENCODE project cell types and has
- numerous publicly accessible epigenomic datasets available.
+ This cell line is a tier 1 ENCODE project cell type and has numerous publicly
+ accessible epigenomic datasets available.
 \end_layout
 
 \begin_layout Standard
@@ -1241,10 +1241,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 6/Surf HiC Profile/GM06990_Surf1mb_100kb_min5.eps
+	lyxscale 30
+	width 100text%
 
-\series bold
-\size giant
-NEED TO GENERATE THIS FIGURE WITH THE HiC AND TCC DATA
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1277,11 +1281,18 @@ name "fig:Surfeit-BCR-association"
 
 
 \series bold
-Surfeit
 \emph default
- locus association with 
+GM06990 HiC
 \emph on
-BCR.
+ Surfeit
+\emph default
+ locus association with
+\emph on
+ 
+\emph default
+chromosome 22
+\emph on
+.
 
 \series default
  
@@ -1292,13 +1303,13 @@ Surfeit
 \emph default
  cluster, normalised for 
 \emph on
-HindIII
+NcoI
 \emph default
  site distribution, across chromosome 22 (centromere to the left, telomere
  to the right).
- Light orange fill shows quantification using ten megabase windows with
+ Light purple fill shows quantification using ten megabase windows with
  one megabase separation.
- Darker orange line shows quantification using one megabase windows with
+ Darker purple line shows quantification using one megabase windows with
  100 Kb separation.
  X axis shows chromosome position in megabases.
  
@@ -2402,6 +2413,44 @@ reference "tab:DNA-FISH-BACs"
 DNA-FISH analysis
 \end_layout
 
+\begin_layout Standard
+Slides were analysed with the MetaSystems MetaCyte microscope and analysis
+ software and a classifier set up able to identify DNA-FISH spots accurately.
+ I exported data from the MetaCyte workstation with the three-dimensional
+ co-ordinates of each spot identified within each nuclei.
+ Using a perl script written by Dr Felix Krueger in the Babraham Bioinformatics
+ department I then calculated the distance between each pair of spots.
+ I filtered this data in Microsoft Excel to give a list of signals corresponding
+ to the shortest pair distance between each 
+\emph on
+BCR
+\emph default
+ signal and any target signal.
+ I imported this data into GraphPad Prism for statistical analysis, using
+ a one-way ANOVA test with a Tukey's range test to calculate significance
+ and create box plots.
+ The exception to this method was for the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ Run 2 which only had two samples, where I used 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+WHAT DID I USE?
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 DNA-FISH in CD34
 \begin_inset script superscript
@@ -2501,7 +2550,18 @@ ABL1
 \emph on
 Surf
 \emph default
- in this experiment, though not by a significant margin.
+ in this experiment (
+\emph on
+p
+\emph default
+ < 0.1, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+).
  This gene was chosen as a control due to it's association with 
 \emph on
 BCR
@@ -2916,6 +2976,184 @@ th
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+In this chapter I describe data from my CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cell e4C with 
+\emph on
+BCR
+\emph default
+ bait showing that the strongest 
+\emph on
+trans 
+\emph default
+association with 
+\emph on
+BCR
+\emph default
+ is in chromosome 9 band q34 (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-association-9q34"
+
+\end_inset
+
+).
+ I demonstrate that this association is also present in Hi-C and TCC libraries
+ generated from GM06990 and GM12878 cells (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM06990-HiC-BCR-chr9"
+
+\end_inset
+
+, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-HiC-TCC-BCR-chr9"
+
+\end_inset
+
+) and that this association is reciprocal (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ABL-e4C-trans"
+
+\end_inset
+
+, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM06990-Hi-C-heatmap"
+
+\end_inset
+
+).
+ I go on to discuss analysis to identify a candidate region driving the
+ association and experiments designed to validate it using RT-qPCR 3C (Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Validation-by-3C"
+
+\end_inset
+
+) and DNA-FISH (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-DNA-FISH-results"
+
+\end_inset
+
+, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+This data shows a large scale enrichment of association between two regions
+ of chromosomes 9 and 22 containing the genes 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+.
+ This association is specific and significant (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:BCR-9q34-single-window-testing"
+
+\end_inset
+
+) and validated by observations in both RT-qPCR 3C (empirical gel band counting,
+ Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3C_qPCR_gel"
+
+\end_inset
+
+) and DNA-FISH (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM06990-HiC-BCR-chr9"
+
+\end_inset
+
+, Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-HiC-TCC-BCR-chr9"
+
+\end_inset
+
+).
+ The data suggests that there may be specific loci within these regions
+ driving the association and causing 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+ to associate through a bystander effect, however the identification of
+ specific loci with variations in association within chromosome 9 q34 was
+ not conclusive.
+ This could could be due to a number of reasons: the candidate loci chosen
+ for the validation may have not been the genes driving the association;
+ the variations in association between loci in this region may be too small
+ to detect, or the variations shown in the e4C data may not be accurate.
+ Chromatin associations in 
+\emph on
+trans
+\emph default
+ are significantly weaker than those in 
+\emph on
+cis
+\emph default
+, making quantitative measurements difficult.
+\end_layout
+
+\begin_layout Standard
+The observation that the most significant trans association of 
+\emph on
+BCR
+\emph default
+ is the region of chromosome 9 containing 
+\emph on
+ABL1
+\emph default
+ is an important finding.
+ I discuss the implications of this in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Discussion"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

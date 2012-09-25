@@ -29,7 +29,7 @@
 \bibtex_command default
 \index_command default
 \float_placement !h
-\paperfontsize default
+\paperfontsize 12
 \spacing double
 \use_hyperref true
 \pdf_bookmarks true
@@ -57,10 +57,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -1219,7 +1219,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/read count stats/read count stats.eps
 	lyxscale 40
-	width 80col%
+	width 90col%
 
 \end_inset
 
@@ -1344,7 +1344,14 @@ trans
 \end_layout
 
 \begin_layout Subsection
-Library complexity
+Library complexity 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Library-complexity"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1425,6 +1432,14 @@ reference "tab:e4C-library-read-counts"
 ).
  Sequence density variations are so large between the cis and trans chromosomes
  that I analyse them independently.
+ This observation is in line with other reports in the literature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yokota1995,Dekker2002b,Lieberman-Aiden2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1432,7 +1447,14 @@ Interaction frequency in
 \emph on
 cis
 \emph default
- declines as a function of linear separation
+ declines as a function of linear separation 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:cis-common-interaction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1465,6 +1487,29 @@ reference "fig:e4C-cis-association-profiles"
 cis
 \emph default
 ).
+ A similar observation of biphasic 
+\emph on
+cis
+\emph default
+ association within this range has been made using DNA-FISH and HiC 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yokota1995,Lieberman-Aiden2009"
+
+\end_inset
+
+, though other studies investigating local 
+\emph on
+cis
+\emph default
+ conformation show abrupt drops in association much closer to the bait 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tolhuis2002,Noordermeer2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2007,7 +2052,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 5/BCR_H3K4me1/BCR_H3K4me1.eps
 	lyxscale 15
-	width 80text%
+	width 90text%
 
 \end_inset
 
@@ -2256,7 +2301,14 @@ key "Lieberman-Aiden2009,Yaffe2011"
 \end_layout
 
 \begin_layout Section
-Different genes have different preferred interaction partners
+Different genes have different preferred interaction partners 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Different-genes-have-preferred-interaction-partners"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2410,6 +2462,123 @@ n.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+In this chapter I describe the initial analysis performed on all of my e4C
+ association libraries.
+ I detail the problems encountered with the high level of duplicate sequences
+ (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Duplicate-reads"
+
+\end_inset
+
+) and low complexity (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Library-complexity"
+
+\end_inset
+
+) encountered in the libraries and the common features observed between
+ association profiles in 
+\emph on
+cis
+\emph default
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-cis-association-profiles"
+
+\end_inset
+
+).
+ I discuss the specific interactions seen within the e4C data in 
+\emph on
+cis
+\emph default
+ (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:specific-cis-interactions"
+
+\end_inset
+
+) and demonstrate that the more complex and informative association libraries
+ correlate with active epigenetic marks, suggesting that these genes reside
+ within an active genomic compartment (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-Correlation-R-Scores"
+
+\end_inset
+
+).
+ I go on to describe specific interactions seen in 
+\emph on
+trans
+\emph default
+ beyond that expected by genome-wide profiles of active epigenetic marks
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-normalisation-H3K4me1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+My observations of 
+\emph on
+cis
+\emph default
+ profiles are similar to those seen in other association studies 
+\series bold
+[#REFS]
+\series default
+, demonstrating the universal principle that 
+\emph on
+cis
+\emph default
+ linkage is the most dominant force in determining chromatin contacts.
+ This concept has a number of implications for genomic organisation, such
+ as evolutionary pressure on sequences required to co-associate within the
+ nucleus to cluster within regions of the genome.
+ An example where this evolutionary pressure is manifested is the clustering
+ of highly expressed housekeeping genes throughout the genome 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lercher2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The correlation of bait gene association with regions enriched for active
+ epigenetic marks is supported by a number of studies published during the
+ course of my PhD 
+\series bold
+[#REFS]
+\series default
+.
+ I discuss the implications of this finding in more detail in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Discussion"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
