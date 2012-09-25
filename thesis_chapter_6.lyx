@@ -69,6 +69,22 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Preferential association of 
 \emph on
@@ -131,19 +147,35 @@ BCR
 \end_layout
 
 \begin_layout Standard
-The most prominent interaction seen in the two replicate 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The most prominent association observed in the two replicate 
 \emph on
 BCR
 \emph default
- interaction profiles is on chromosome 9, cytogenetic band q34.
- When the two replicates are combined this interaction gives approximately
+ association profiles is on chromosome 9, cytogenetic band q34.
+ When the two replicates are combined this association gives approximately
  7 fold enrichment of association above the mean with a maximal standard
  score of 17.04.
  This is the strongest 
 \emph on
 trans
 \emph default
- interaction that I found in any of my e4C association datasets.
+ association that I found in any of my e4C association datasets.
 \end_layout
 
 \begin_layout Standard
@@ -204,12 +236,10 @@ BCR
 \emph on
 AseI
 \emph default
- site distribution, across the q arm of chromosome 9 (centromere to the
- left, telomere to the right).
- Light blue fill shows quantification using ten megabase windows with one
- megabase separation.
- Darker blue line shows quantification using one megabase windows with 100
- Kb separation.
+ site distribution, across the q arm of chromosome 9.
+ Association calculated using ten megabase windows with one megabase separation
+ (light blue fill) and one megabase windows with 100 Kb separation (ark
+ blue line).
  X axis shows chromosome position in megabases.
  
 \emph on
@@ -287,7 +317,7 @@ name "sub:BCR-9q34-single-window-testing"
 \end_layout
 
 \begin_layout Standard
-To confirm that this interaction is not an artefact of bias introduced through
+To confirm that this association is not an artefact of bias introduced through
  GC content or restriction fragment length, I used the single-window testing
  method described in Section 
 \begin_inset CommandInset ref
@@ -306,7 +336,7 @@ single window scores.
 \emph on
 in-silico
 \emph default
- scores is plotted in Fig 
+ scores is plotted in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:single-window-testing"
@@ -314,25 +344,6 @@ reference "fig:single-window-testing"
 \end_inset
 
 .
- The observed hit count for this region is clearly far above what would
- be expected from GC content and fragment length of the region.
- To generate a probability score for the number of observed fragments, I
- ran the script a second time for ten trillion iterations.
- None of the resulting scores were greater than or equal to the number of
- observed fragments, meaning that 
-\emph on
-p
-\emph default
- < 3x10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--13
-\end_layout
-
-\end_inset
-
- for this region.
 \end_layout
 
 \begin_layout Standard
@@ -383,6 +394,20 @@ Frequency of
 in-silico
 \emph default
  hits for single window in telomeric Chromosome 9.
+ 
+\series default
+Result of 
+\emph on
+in-silico
+\emph default
+ random e4C libraries accounting for GC% and fragment length bias.
+ X axis shows the number of fragments hit per interaction, Y axis shows
+ the frequency with which that number was observed.
+ Actual number of fragments observed in the 
+\emph on
+BCR
+\emph default
+ e4C shown as a red line.
 \end_layout
 
 \end_inset
@@ -393,6 +418,28 @@ in-silico
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The observed hit count for this region is clearly far above what would be
+ expected from GC content and fragment length of the region.
+ To generate a probability score for the number of observed fragments, I
+ ran the script a second time for ten trillion iterations.
+ None of the resulting scores were greater than or equal to the number of
+ observed fragments, meaning that 
+\emph on
+p
+\emph default
+ < 3x10
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-13
+\end_layout
+
+\end_inset
+
+ for this region.
 \end_layout
 
 \begin_layout Section
@@ -411,7 +458,7 @@ BCR
  preferentially contacts regions in telomeric chromosome 9 we should be
  able to detect reciprocal ligation products by using a bait region within
  this region.
- To investigate the interaction profile of this region I made e4C libraries
+ To investigate the association profile of this region, I made e4C libraries
  with a bait in the 
 \emph on
 ABL1
@@ -503,25 +550,41 @@ reference "chap:Initial-analysis"
 \end_inset
 
 , the ABL e4C library did not reach the level of coverage of either of the
- BCR e4C libraries, with approximately five fold less unique reads.
+ BCR e4C libraries, with approximately five fold fewer unique reads.
  The ABL e4C library shows stronger correlation with the BCR libraries than
- any of the MLL libraries, suggesting that these two regions have similar
- genome-wide interactions.
+ any of the MLL libraries (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-correlations"
+
+\end_inset
+
+), suggesting that these two regions have similar genome-wide associations.
  When visually inspected, the 
 \emph on
 trans
 \emph default
- interaction plot of the e4C library has somewhat sharp peaks of association
- due to the lack of complexity.
+ association plot of the e4C library has somewhat sharp peaks of association
+ due to the lack of complexity (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ABL-e4C-trans"
+
+\end_inset
+
+).
  While the 
 \emph on
 BCR
 \emph default
- locus on chromosome 22 is enriched, it is not the strongest interaction
- genome-wide.
+ locus on chromosome 22 is enriched to a significant level (
+\emph on
+p
+\emph default
+ < 0.01), it is not the strongest association genome-wide.
  This could be due to the low coverage not providing enough resolution to
- pick out specific interactions, a lack of association between these regions
- in GM12878 cells, or it could be due to the lack of a direct specific interacti
+ pick out specific associations, a lack of association between these regions
+ in GM12878 cells, or it could be due to the lack of a direct specific associati
 on between the 
 \emph on
 BCR
@@ -557,13 +620,17 @@ ABL1
 \emph on
 BCR-ABL1
 \emph default
- interaction could be driven by the association of other nearby loci.
- The ABL1 locus shows strong association with the entire 9q34 region, above
- the expected base level of 
+ association could be driven by the association of other nearby loci.
+ The 
+\emph on
+ABL1
+\emph default
+ locus shows strong association with the entire 9q34 region, above the expected
+ base level of 
 \emph on
 cis
 \emph default
- interactions (Fig 
+ associations (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:e4C-cis-association-profiles"
@@ -579,8 +646,8 @@ BCR
 \emph on
 ABL1
 \emph default
- could be bystander genes brought together through specific interactions
- of different genes within the region.
+ could be bystander genes brought together through associations of different
+ genes within the region.
  Such a model would explain the triplet peak of BCR association over the
  region, with ABL sitting in a trough above the base level of genome-wide
  
@@ -588,11 +655,11 @@ ABL1
 trans
 \emph default
  association but not at the maximum point of association.
- It would also explain why I do not see specific 
+ It might also explain why I do not see specific 
 \emph on
 BCR-ABL1
 \emph default
- interactions from the viewpoint of 
+ associations from the viewpoint of 
 \emph on
 ABL1
 \emph default
@@ -606,7 +673,7 @@ Validation using publicly available datasets
 \begin_layout Standard
 To gather additional evidence about the association between these regions,
  I made use of publicly available Hi-C and TCC datasets published at the
- time I was generating the e4C interaction data 
+ time I was generating the e4C association data 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lieberman-Aiden2009,Kalhor2011"
@@ -637,13 +704,13 @@ key "Lieberman-Aiden2009"
 \end_inset
 
 .
- Hi-C is a technique based on 3C able to capture all interactions within
+ Hi-C is a technique based on 3C able to capture all associations within
  the nucleus (all-to-all).
  In brief, 3C ligation products are enriched using the incorporation of
  a biotin moiety, adapters are added and the entire library sequenced.
  Hi-C libraries are incredibly complex due to the huge range of ligation
  events captured and require great sequencing power to achieve a useful
- interaction resolution.
+ association resolution.
 \end_layout
 
 \begin_layout Standard
@@ -652,7 +719,7 @@ The study by Lieberman-Aiden
 et al.
 
 \emph default
- investigated interactions in the ENCODE cell lines K562 and GM06990.
+ investigated associations in the ENCODE cell lines K562 and GM06990.
  Like GM12878 cells, the GM06990 cell line is a lymphoblastoid cell line.
  Lymphoblasts are multi-potent progenitor cells which later develop into
  the different lymphocyte cell types: NK cells, T lymphocytes and B lymphocytes.
@@ -699,7 +766,7 @@ reference "fig:GM06990-Hi-C-heatmap"
 status open
 
 \begin_layout Plain Layout
-Interestingly, the strong interaction just centromeric of 
+Interestingly, the strong association just centromeric of 
 \emph on
 BCR
 \emph default
@@ -711,7 +778,7 @@ ABL
 \emph on
 IGL
 \emph default
-) genes on chromosome 22, a region that displays a strong interaction with
+) genes on chromosome 22, a region that displays a strong association with
  
 \emph on
 BCR
@@ -720,7 +787,7 @@ BCR
 \emph on
 cis
 \emph default
- interaction data (Section 
+ association data (Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:specific-cis-interactions"
@@ -777,8 +844,8 @@ name "fig:GM06990-Hi-C-heatmap"
 GM06990 Hi-C heat map.
  
 \series default
-Interaction heat map showing the q arm of chromosomes 9 and 22.
- Colours represent observed / expected ratios; blue colours are weak interaction
+Association heat map showing the q arm of chromosomes 9 and 22.
+ Colours represent observed / expected ratios; blue colours are weak association
 s, red are strong.
  Each block represents a one megabase window.
  Generated using the Hi-C data browser: 
@@ -810,7 +877,7 @@ key "Lieberman-Aiden2009"
 \end_layout
 
 \begin_layout Standard
-To analyse the interaction profiles in the Hi-C data in more detail, I took
+To analyse the association profiles in the Hi-C data in more detail, I took
  paired reads with one end within a one megabase region surrounding the
  
 \emph on
@@ -977,7 +1044,7 @@ key "Kalhor2011"
  to a greater depth.
  The authors claim that TCC, a modified version of Hi-C which tethers proteinace
 ous 3C complexes to solid phase beads before ligation, reduces non-specific
- ligation events and so removes background noise from the interaction data
+ ligation events and so removes background noise from the association data
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1100,7 +1167,7 @@ ABL1
 \end_layout
 
 \begin_layout Section
-Narrowing the window of interactions
+Narrowing the window of associations
 \end_layout
 
 \begin_layout Standard
@@ -1126,7 +1193,7 @@ reference "sec:active-correlation-accessions"
  for NCBI GEO accession numbers) I selected highly expressed genes and generated
  4C-like association datasets for them.
  Taking this approach instead of studying two-dimensional heatmaps gives
- better resolution and allows finer control of interaction visualisations.
+ better resolution and allows finer control of association visualisations.
 \end_layout
 
 \begin_layout Subsection
@@ -1219,7 +1286,7 @@ I hypothesised that a cluster of genes with such high expression may be
 \emph on
 Surfeit
 \emph default
- cluster shows strong interactions over the region of chromosome 22 containing
+ cluster shows strong associations over the region of chromosome 22 containing
  the 
 \emph on
 BCR
@@ -1345,7 +1412,7 @@ name "sec:Validation-by-3C"
 \end_layout
 
 \begin_layout Standard
-The results of the e4C indicate interaction frequencies.
+The results of the e4C indicate association frequencies.
  The analysis of the data makes a number of assumptions, namely that the
  results of the e4C library sequencing accurately represent the frequency
  of ligation products found within the original 3C libraries.
@@ -1355,9 +1422,9 @@ The results of the e4C indicate interaction frequencies.
  initial frequency.
  Because of these potential biases traditional RT-qPCR 3C was a logical
  method to validate the association.
- Additionally, I hoped that the RT-qPCR 3C may provide a resolution of interacti
-on frequencies at a superior to the e4C, both in terms of quantitative interacti
-on of individual fragments and in differences between fragments within close
+ Additionally, the RT-qPCR 3C may provide a resolution of association frequencie
+s at a superior to the e4C, both in terms of quantitative association of
+ individual fragments and in differences between fragments within close
  proximity.
 \end_layout
 
@@ -1720,7 +1787,7 @@ Surfeit
 \emph on
 ABL1
 \emph default
- have stronger interactions with 
+ have stronger associations with 
 \emph on
 BCR
 \emph default
@@ -1737,7 +1804,7 @@ trans
  contacts.
  This very low level of 3C ligation events and non-specific smearing due
  to lack of template means that 3C RT-qPCR cannot be used to accurately
- discern the relative interaction frequencies of these loci.
+ discern the relative association frequencies of these loci.
 \end_layout
 
 \begin_layout Section
@@ -1838,7 +1905,7 @@ QSOX2
 HLA-DMA
 \emph default
 , a highly expressed gene on chromosome 6 within a region enriched for active
- marks but not displaying a specific interaction with 
+ marks but not displaying a specific association with 
 \emph on
 BCR
 \emph default

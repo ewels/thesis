@@ -124,11 +124,11 @@ MLL
 \emph on
 cis
 \emph default
- as in 
+ and in 
 \emph on
 trans
 \emph default
- and show that these genes interact with an active nuclear compartment.
+ and demonstrate that these genes interact with an active nuclear compartment.
 \end_layout
 
 \begin_layout Subsection
@@ -215,23 +215,13 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="5">
+<lyxtabular version="3" rows="11" columns="4">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="middle" width="4cm">
-<column alignment="left" valignment="middle" width="8cm">
+<column alignment="left" valignment="middle" width="3cm">
+<column alignment="left" valignment="middle" width="7cm">
 <row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -249,7 +239,7 @@ Name
 \begin_layout Plain Layout
 
 \size scriptsize
-Date Sequenced
+Date
 \end_layout
 
 \end_inset
@@ -278,26 +268,6 @@ Description
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="top" topline="true" leftline="true" rotate="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -326,7 +296,23 @@ June 2010
 \begin_layout Plain Layout
 
 \size scriptsize
-chr22: 23,596,613 - 23,612,935 Breakpoint region of 
+chr22: 23,596,613 - 23,612,935 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+Breakpoint region of 
 \emph on
 BCR
 \emph default
@@ -342,21 +328,24 @@ BCR
 
 \size scriptsize
 First e4C library sequenced, multiplexed with MLL 1.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -395,22 +384,25 @@ Oct 2010
 
 \size scriptsize
 Technical replicated of BCR 1, library generated from the same 3C material.
- Sequenced in multiplex with MLL 2
+ Sequenced in multiplex with MLL 2.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -433,7 +425,7 @@ Mar 2011
 
 \end_inset
 </cell>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -442,7 +434,7 @@ Mar 2011
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -457,21 +449,24 @@ reference "sec:e4C-complexity-barcodes"
 \end_inset
 
 .
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -500,7 +495,23 @@ June 2010
 \begin_layout Plain Layout
 
 \size scriptsize
-chr11: 118,354,809 - 118,356,055 Breakpoint region of 
+chr11: 118,354,809 - 118,356,055 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+Breakpoint region of 
 \emph on
 MLL
 \emph default
@@ -516,21 +527,24 @@ MLL
 
 \size scriptsize
 First e4C library sequenced, multiplexed with BCR 1.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -570,6 +584,18 @@ Sept 2010
 \size scriptsize
 Technical replicate of MLL 1, generated from the same 3C material.
  Sequenced in its own lane.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
  
 \begin_inset Note Note
 status open
@@ -587,15 +613,6 @@ What kind of replicates are these?
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -635,21 +652,24 @@ Oct 2010
 \size scriptsize
 Technical replicate of MLL 1, generated from the same 3C material.
  Sequenced in multiplex with BCR 2.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -688,23 +708,24 @@ Dec 2010
 
 \size scriptsize
 Repeat sequencing of MLL 3, multiplexed in phiX lane.
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\size scriptsize
++
+\end_layout
+
+\end_inset
+
+ cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size scriptsize
-GM12878
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -748,22 +769,14 @@ Promoter of
 \emph on
 ABL1
 \emph default
- gene
+ gene.
+ GM12878 cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -811,22 +824,14 @@ MLL
 \emph on
 AseI
 \emph default
- fragment)
+ fragment).
+ GM12878 cells.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -874,7 +879,8 @@ MLL
 \emph on
 AseI
 \emph default
- fragment)
+ fragment).
+ GM12878 cells.
 \end_layout
 
 \end_inset
@@ -912,8 +918,12 @@ e4C Libraries
 e4C Libraries.
  
 \series default
-Chromosomal positions in Bait Position column describe the bait AseI fragment
- in UCSC genome build hg19.
+Chromosomal positions in Bait Position column describe the co-ordinates
+ of the bait 
+\emph on
+AseI
+\emph default
+ fragment in UCSC genome build hg19.
 \end_layout
 
 \end_inset
@@ -953,8 +963,8 @@ name "sub:Duplicate-reads"
 \end_layout
 
 \begin_layout Standard
-The first thing that can be seen when viewing the e4C libraries is the degree
- of sequence duplication.
+Visual inspection of the e4C library sequence data within SeqMonk quickly
+ reveals a large degree of sequence duplication.
  The e4C protocol involves two rounds PCR resulting in multiple copies of
  each initial 3C product being sequenced.
  It is clear that some quantitative information is present within the numbers
@@ -986,7 +996,8 @@ reference "tab:e4C-library-read-counts"
  cut site, duplicates from multiple 3C ligation events are indistinguishable
  from duplicates generated by the PCR amplification.
  Because of this inability to distinguish biologically relevant duplicates
- from technical duplicates, I removed all non-unique reads from the data.
+ from technical duplicates, I removed all non-unique reads from the data
+ and analysed binary fragment observations instead of sequence read counts.
 \end_layout
 
 \begin_layout Standard
@@ -1075,7 +1086,7 @@ AseI
 \end_layout
 
 \begin_layout Standard
-Because the e4C assay is based off 3C libraries, the highest achievable
+Because the e4C assay uses 3C libraries at its core, the highest achievable
  resolution is dependant on the length of 
 \emph on
 AseI
@@ -1208,6 +1219,17 @@ reference "tab:AseI-fragment-stats"
 
 \end_layout
 
+\begin_layout Subsection
+Library complexity 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Library-complexity"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement !h
@@ -1219,7 +1241,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/read count stats/read count stats.eps
 	lyxscale 40
-	width 90col%
+	width 100col%
 
 \end_inset
 
@@ -1249,13 +1271,9 @@ name "fig:e4C-library-read-stats"
 \end_inset
 
 e4C library read statistics.
- (
+
 \series default
-A) 
-\series bold
-Aligned raw read counts
-\series default
- for near 
+ (A) Aligned raw read counts for near 
 \emph on
 cis
 \emph default
@@ -1268,86 +1286,16 @@ cis
 trans
 \emph default
 .
- Reads within 5 Mb of the bait can be seen to represent a large proportion
- of all reads.
- Low read counts can be seen for MLL Run 1 (due to biased multiplexing,
- see Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:BCR-MLL-multiplex-1"
-
-\end_inset
-
-) and MLL Run 3 phiX (due to competition with Illumina sequencing primer).
- Increased total read counts can be seen in the ABL, MLL p1 and MLL p2 libraries
- due to advances in achievable cluster densities on the Illumina GA IIx.
- 
-\series bold
-(B) Read counts after removal of duplicate reads.
-
-\series default
- The number of near 
-\emph on
-cis
-\emph default
- reads can be seen to drop relative to (A), due to saturation of 
-\emph on
-AseI
-\emph default
- fragments near the bait.
- A large number of 
-\emph on
-trans
-\emph default
- reads can be seen in MLL Run 3 due to crossover reads from the BCR Run
- 2 in multiplexing (see Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Crossover-products"
-
-\end_inset
-
-).
- This plot shows the ~ 10 fold difference in library complexity between
- the BCR bait and all other baits.
- 
-\series bold
-(C) Number of duplicates per unique read.
- 
-\series default
-Profiles of duplication can be seen to be similar for all e4C libraries,
- despite highly variant total read counts.
- Near 
-\emph on
-cis 
-\emph default
-and far 
-\emph on
-cis
-\emph default
- have far more duplicates per unique read than the 
-\emph on
-trans
-\emph default
- hits.
- The number of duplicates per read is high for all hits.
+ (B) Read counts after removal of duplicate reads.
+ (C) Number of duplicates per unique read.
+ Numbers were calculated in SeqMonk and plotted in Microsoft Excel and Adobe
+ Illustrator.
 \end_layout
 
 \end_inset
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Library complexity 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Library-complexity"
 
 \end_inset
 
@@ -1370,8 +1318,148 @@ reference "tab:AseI-fragment-stats"
 \end_inset
 
 .
- Two observations can be made: the detail in coverage is not very great
- in 
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-read-stats"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+A shows the aligned raw read counts for near 
+\emph on
+cis
+\emph default
+, far 
+\emph on
+cis
+\emph default
+ and 
+\emph on
+trans
+\emph default
+.
+ Reads within near 
+\emph on
+cis 
+\emph default
+(5 Mb window surrounding the bait) can be seen to represent a large proportion
+ of all reads due to physical linkage in 
+\emph on
+cis
+\emph default
+.
+ Low read counts can be seen for MLL Run 1 (due to biased multiplexing,
+ see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:BCR-MLL-multiplex-1"
+
+\end_inset
+
+) and MLL Run 3 phiX (due to competition with Illumina sequencing primer).
+ Increased total read counts can be seen in the ABL, MLL p1 and MLL p2 libraries
+ due to advances in the Illumina GA IIx sequencing chemistry allowing greater
+ cluster densities and so number of sequenced reads.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-read-stats"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+B shows the read counts for the same libraries after removal of duplicate
+ reads.
+
+\series bold
+ 
+\series default
+The number of near 
+\emph on
+cis
+\emph default
+ reads can be seen to drop relative to Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-read-stats"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+A, due to saturation of 
+\emph on
+AseI
+\emph default
+ fragments near the bait.
+ A large number of 
+\emph on
+trans
+\emph default
+ reads can be seen in MLL Run 3 due to crossover reads from the BCR Run
+ 2 in multiplexing (see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Crossover-products"
+
+\end_inset
+
+).
+ This plot shows the ~ 10 fold difference in library complexity between
+ the BCR bait and all other baits.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:e4C-library-read-stats"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+C shows the number of duplicates per unique read.
+
+\series bold
+ 
+\series default
+Profiles of duplication can be seen to be similar for all e4C libraries,
+ despite highly variant total read counts.
+ Near 
+\emph on
+cis 
+\emph default
+and far 
+\emph on
+cis
+\emph default
+ have many more duplicates per unique read than the 
+\emph on
+trans
+\emph default
+ hits.
+ The number of duplicates per read is high for all e4C libraries, showing
+ that they are being sequenced to saturation.
+\end_layout
+
+\begin_layout Standard
+Two general observations can be made from these plots: the detail in coverage
+ is not very great in 
 \emph on
 trans
 \emph default
@@ -1392,7 +1480,7 @@ BCR
 \emph on
 cis
 \emph default
- interaction profiles 
+ association profiles 
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:cis-trans-distribution"
@@ -1443,7 +1531,7 @@ key "Yokota1995,Dekker2002b,Lieberman-Aiden2009"
 \end_layout
 
 \begin_layout Subsection
-Interaction frequency in 
+Association frequency in 
 \emph on
 cis
 \emph default
@@ -1480,36 +1568,7 @@ reference "fig:e4C-cis-association-profiles"
 \end_inset
 
 ).
- Large association peaks can be seen surrounding the bait regions (grey
- bars) as expected, falling off sharply ~ 2.5 Mb from the bait region on
- either side (the 5 Mb window I refer to as near 
-\emph on
-cis
-\emph default
-).
- A similar observation of biphasic 
-\emph on
-cis
-\emph default
- association within this range has been made using DNA-FISH and HiC 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Yokota1995,Lieberman-Aiden2009"
-
-\end_inset
-
-, though other studies investigating local 
-\emph on
-cis
-\emph default
- conformation show abrupt drops in association much closer to the bait 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Tolhuis2002,Noordermeer2011"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1562,22 +1621,22 @@ cis
  association profiles.
  
 \series default
-\emph on
-cis 
-\emph default
-interaction profiles generated using 100 kb sliding window fragment proportions
- (minimum 5) summed in 1 mb windows separated by 100 kb.
+Profiles generated using 100 kb sliding window fragment proportions (minimum
+ 5 frags) summed in 1 mb windows separated by 100 kb.
  Grey bars show position of bait genes.
  Black horizontal bars are 5 Mb.
 
 \series bold
- (A) 
+ 
 \series default
-Interaction profiles of the 
+Association profiles of the 
+\series bold
+(A) 
+\series default
 \emph on
 BCR
 \emph default
- breakpoint region bait in CD34
+ bait in CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1586,17 +1645,15 @@ BCR
 
 \end_inset
 
- cells.
- Non-repetitive region of chromosome 22 q arm shown.
-
+ cells,
 \series bold
  (B)
 \series default
- Interaction profiles of the 
+ 
 \emph on
 MLL
 \emph default
- breakpoint region bait on chromosome 11 in CD34
+ bait CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1605,25 +1662,23 @@ MLL
 
 \end_inset
 
- cells.
- 
+ cells, 
 \series bold
 (C)
 \series default
- Interaction profiles of the two 
+ 
 \emph on
 MLL
 \emph default
- promoter baits on chromosome 11 in GM12878 cells.
- 
+ promoter baits in GM12878 cells and 
 \series bold
 (D)
 \series default
- Interaction profile of the 
+ 
 \emph on
 ABL1
 \emph default
- promoter bait on chromosome 9.
+ bait in GM12878 cells.
 \end_layout
 
 \end_inset
@@ -1634,10 +1689,43 @@ ABL1
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Large association peaks can be seen surrounding the bait regions (grey bars)
+ as expected, falling off sharply ~ 2.5 Mb from the bait region on either
+ side (the 5 Mb window I refer to as near 
+\emph on
+cis
+\emph default
+).
+ A similar observation of biphasic 
+\emph on
+cis
+\emph default
+ association within this range has been made using DNA-FISH and HiC 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yokota1995,Lieberman-Aiden2009"
+
+\end_inset
+
+, though other studies investigating local 
+\emph on
+cis
+\emph default
+ conformation show abrupt drops in association much closer to the bait 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tolhuis2002,Noordermeer2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-Specific interactions in 
+Specific associations in 
 \emph on
 cis 
 \begin_inset CommandInset label
@@ -1658,7 +1746,7 @@ cis
 \emph on
 cis
 \emph default
- bait-specific interactions can be seen (Fig 
+ bait-specific associations can be seen (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:e4C-cis-association-profiles"
@@ -1684,12 +1772,16 @@ reference "fig:e4C-cis-association-profiles"
 \end_inset
 
 ).
- To see 
+ 
+\end_layout
+
+\begin_layout Standard
+To see 
 \emph on
 cis
 \emph default
- interactions in more detail in the BCR datasets with higher complexity,
- I plotted the fragment interaction percentages summed in ten fold smaller
+ associations in more detail in the BCR datasets with higher complexity,
+ I plotted the fragment association percentages summed in ten fold smaller
  one megabase windows separated by 100 Kb (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1716,26 +1808,6 @@ reference "fig:BCR-e4C-cis"
 \end_inset
 
  B).
-\end_layout
-
-\begin_layout Standard
-Both normalisation techniques show several hits above the expected baseline
- in both replicates.
- To the centromeric (left) side of the 
-\emph on
-BCR
-\emph default
- bait three distinct clusters of interaction can be seen.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-What are these? Further discussion?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1799,7 +1871,7 @@ cis
 \emph on
 cis
 \emph default
- interaction profile of the 
+ association profile of the 
 \emph on
 BCR 
 \emph default
@@ -1817,7 +1889,7 @@ bait on chromosome 22 in CD34
 \series bold
 (A) 
 \series default
-Interaction shown as the proportion of 
+Association shown as the proportion of 
 \emph on
 AseI
 \emph default
@@ -1830,7 +1902,7 @@ NlaIII
 \series bold
 (B)
 \series default
- Interaction shown using a sliding windows of 10 
+ Association shown using a sliding windows of 10 
 \emph on
 AseI
 \emph default
@@ -1841,6 +1913,32 @@ AseI
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Both normalisation techniques show several hits above the expected baseline
+ in both replicates.
+ To the centromeric (left) side of the 
+\emph on
+BCR
+\emph default
+ bait three distinct clusters of association can be seen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
 \end_layout
 
 \end_inset
@@ -1861,10 +1959,41 @@ ABL1
 \emph on
 MLL
 \emph default
- reside in an active nuclear compartment 
+ reside in an
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ active nuclear compartment 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Active-genes-reside-in-an-active-nuclear-compartment"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
 
 \end_inset
 
@@ -1876,7 +2005,7 @@ Upon plotting the e4C
 \emph on
 trans
 \emph default
- interaction profiles of the different bait genes, it was clear that they
+ association profiles of the different bait genes, it was clear that they
  share a number of features.
  My bait genes are actively transcribed within CD34
 \begin_inset script superscript
@@ -1894,7 +2023,7 @@ reference "fig:CD34-RT-PCR"
 
 \end_inset
 
-) and visual inspection of the interaction profiles appeared to share some
+) and visual inspection of the association profiles appeared to share some
  features with previously described active regions 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1902,7 +2031,7 @@ key "Versteeg2003"
 
 \end_inset
 
-, so I was interested in whether my e4C interaction libraries showed correlation
+, so I was interested in whether my e4C association libraries showed correlation
 s with RNA polymerase II binding and other active chromatin marks.
 \end_layout
 
@@ -1911,7 +2040,7 @@ Correlation with active epigenetic marks
 \end_layout
 
 \begin_layout Standard
-To investigate the correlation between e4C interaction frequency and chromatin
+To investigate the correlation between e4C association frequency and chromatin
  marks, I analysed publicly available genome-wide datasets (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -1941,7 +2070,7 @@ key "Flicek2012"
 \emph on
 trans
 \emph default
- e4C interaction data.
+ e4C association data.
  Pearson's correlation coefficients were calculated using SeqMonk.
  The resulting correlation R scores are shown in Table 
 \begin_inset CommandInset ref
@@ -2025,11 +2154,11 @@ reference "sec:active-correlation-accessions"
 \end_layout
 
 \begin_layout Standard
-The strong correlation between bait interaction and active mark association
+The strong correlation between bait association and active mark association
  score shows that the e4C bait genes are frequently interacting with active
  regions of the genome.
  The low scores seen with the inactive histone modifications signify that
- there is not more interaction with these regions that could be expected
+ there is not more association with these regions that could be expected
  by chance.
  The correlation of the shape of the profiles can be clearly seen when plotted
  genome wide (Fig 
@@ -2040,6 +2169,7 @@ reference "fig:BCR-e4C-correlation-H3K4me1"
 \end_inset
 
 ).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2052,7 +2182,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 5/BCR_H3K4me1/BCR_H3K4me1.eps
 	lyxscale 15
-	width 90text%
+	width 95text%
 
 \end_inset
 
@@ -2140,12 +2270,8 @@ MLL
 \emph on
 ABL1
 \emph default
- e4C datasets can be attributed to differences in e4C coverage; 
-\emph on
-ie
-\emph default
-.
- the CD34
+ e4C datasets can be attributed to differences in e4C coverage.
+ The CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -2159,7 +2285,34 @@ ie
 MLL
 \emph default
  libraries do not have enough reads to show strong enrichment regions.
- It should be noted that these correlations are not dependent on cell type;
+ Although the difference between the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+MLL
+\emph default
+ library correlations with active and inactive marks are difficult to see
+ in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-Correlation-R-Scores"
+
+\end_inset
+
+ the majority of the correlation R scores are greater for active marks than
+ inactive, a pattern that can be seen more clearly if the colour scale is
+ adjusted.
+\end_layout
+
+\begin_layout Standard
+It should be noted that these correlations are not dependent on cell type;
  this is consistent with the large scale organisation of ridges and anti-ridges
  in the genome 
 \begin_inset CommandInset citation
@@ -2191,8 +2344,8 @@ Correlations between e4C libraries
 \end_layout
 
 \begin_layout Standard
-As all of the bait e4C profiles associate with active marks to some degree,
- I was interested to see the correlation between the different datasets.
+Due to the association of the bait e4C profiles with active marks, I was
+ interested to see the correlation scores between the different datasets.
  Pearson's correlation coefficients were calculated as described above,
  though with both bait 
 \emph on
@@ -2285,15 +2438,14 @@ Interestingly, the GM12878 ABL dataset shows strong correlation with the
  This is unlikely to be due to differences in complexity as the GM12878
  MLL p1 and MLL p2 which have similar read numbers and complexity do not
  show this correlation.
- This suggests that the correlation could indicate a matching of specific
- genome-wide contacts by the two loci caused by colocalisation within the
- nucleus.
+ This correlation could indicate a matching of specific genome-wide association
+ profiles by the two loci due to bait colocalisation within the nucleus.
  Using genome-wide association correlations to measure proximity instead
- of direct contact frequency as measured by 3C product reads is often used
- in Hi-C data analysis 
+ of direct contact frequency as measured by 3C product reads has been used
+ for Hi-C data analysis in the literature 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Lieberman-Aiden2009,Yaffe2011"
+key "Lieberman-Aiden2009,Yaffe2011,Kalhor2011"
 
 \end_inset
 
@@ -2301,7 +2453,7 @@ key "Lieberman-Aiden2009,Yaffe2011"
 \end_layout
 
 \begin_layout Section
-Different genes have different preferred interaction partners 
+Different genes have different preferred association partners 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Different-genes-have-preferred-interaction-partners"
@@ -2312,16 +2464,16 @@ name "sec:Different-genes-have-preferred-interaction-partners"
 \end_layout
 
 \begin_layout Standard
-To see if any bait-specific 
+To investigate bait-specific 
 \emph on
 trans 
 \emph default
-interactions
+associations
 \emph on
  
 \emph default
-were present within the datasets, I normalised the interaction profiles
- using the most correlated active marks: H3K4me1 for the CD34
+within the datasets, I normalised the association profiles using the most
+ correlated active marks: H3K4me1 for the CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -2339,7 +2491,7 @@ reference "fig:e4C-normalisation-H3K4me1"
 
 ) and GM12878 RNA polymerase II ChIP-Seq for the GM12878 e4C libraries (data
  not shown).
- Standard scores from the epigenomic datasets were subtracted from the interacti
+ Standard scores from the epigenomic datasets were subtracted from the associati
 on library standard scores for each window position.
  This normalisation against has the effect of largely flattening the genome
  wide profile (Figure 
@@ -2370,7 +2522,7 @@ MLL
 \emph on
 ABL1
 \emph default
- interaction datasets makes the detection of any specific local interaction
+ association datasets makes the detection of any specific local association
  regions difficult, and those observed unreliable.
  I discuss the main peak of the 
 \emph on
@@ -2499,7 +2651,7 @@ reference "fig:e4C-cis-association-profiles"
 \end_inset
 
 ).
- I discuss the specific interactions seen within the e4C data in 
+ I discuss the specific associations seen within the e4C data in 
 \emph on
 cis
 \emph default
@@ -2520,7 +2672,7 @@ reference "tab:e4C-Correlation-R-Scores"
 \end_inset
 
 ).
- I go on to describe specific interactions seen in 
+ I go on to describe specific associations seen in 
 \emph on
 trans
 \emph default

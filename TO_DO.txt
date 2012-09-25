@@ -1,7 +1,35 @@
+============   TO DO   =============
 
-
-
-=== CHAPTER 3 ===
-
-Triton X-100 concentrations in Fig 3.2.2
-Check figure legend is correct for good AseI e4C gel
+  === MAIN CHECKLIST ===
+* Go through Cam's basic corrections in introduction
+* Finish discussion sections at the end of each chapter
+* Re-read and re-write discussion chapter as necessary
+  Print, read and tidy / re-write chapter 3
+  Go through big changes suggested by Cam for introduction
+  
+  === BEFORE SUBMISSION ===
+  Make sure all specific points listed below are finished
+  Complete all general tidying points
+  Print personal copy on nice paper and printer
+  Bind and read entire personal copy
+  Print and bind two submission copies
+  Print multiple copies of forms, title sheets and summary
+  
+  
+  === CHAPTER 3 ===
+  
+  Triton X-100 concentrations in Fig 3.2.2
+  Check figure legend is correct for good AseI e4C gel
+  WRITE SECTION DESCRIBING AN ENTIRE e4C WITH GELS
+  
+  === CHAPTER 4 ===
+  Check type of MLL library duplicates (biological or technical)
+  
+  
+  === GENERAL TIDYING ===
+  Go through checking references to near cis being 5 Mbp
+  Put in single spacing wherever a heading breaks two lines
+  Check all figures for stupid placements
+  Check all pages for text over page numbers
+* Check all LyX files for outstanding yellow notes
+  Do test print of some pages with gels on nice printer & paper

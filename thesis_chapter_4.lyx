@@ -94,7 +94,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-At the time that my first e4C libraries were sequenced the method was novel.
+At the time that my first e4C libraries were sequenced, the method was novel.
  Unlike RNA-Seq and ChIP-Seq which are established enough to have accepted
  analysis pipelines, e4C data analysis had not been developed.
  As such I spent a great deal of time discovering how to analyse the data
@@ -801,8 +801,9 @@ FastQ Screen
 \emph default
 .
  I was involved in development of FastQC version 0.9.3 (released 16/6/11)
- by contributing a new CSS theme to the report structure allowing simultaneous
- viewing of the overview navigation and report results.
+ by contributing a new cascading style sheet (web page theme) to the report
+ structure allowing simultaneous viewing of the overview navigation and
+ report results.
 \end_layout
 
 \begin_layout Standard
@@ -1009,7 +1010,7 @@ AseI
 
 \begin_layout Standard
 To pre-process the e4C library reads, Dr.
- Felix Kreuger in the Babraham Bioinformatics group wrote a script in Perl,
+ Felix Krueger in the Babraham Bioinformatics group wrote a script in Perl,
  which I later modified and used myself (Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1018,10 +1019,10 @@ reference "sec:APP-library-trimming"
 \end_inset
 
 ).
- The script goes through the FastQ file and checks the first three base
- pairs of each sequence to see if it matches the barcode.
- If so, it trims them off and looks to see if the next six base pairs are
- an 
+ The script loops through the FastQ file and attempts to match the first
+ three base pairs against expected barcodes.
+ If so, the barcode is trimmed and the next six base pairs are matched against
+ the 
 \emph on
 AseI
 \emph default
@@ -1038,19 +1039,20 @@ AseI
 \emph on
 NlaIII
 \emph default
- sites.
+ sites in the unknown sequence.
  If a second 
 \emph on
 AseI
 \emph default
- site is found the line is rejected, if a 
+ site is found, the sequence is rejected.
+ If a 
 \emph on
 NlaIII
 \emph default
- site is found the sequence is trimmed to that site.
+ site is found, the sequence is trimmed to that site.
  If the remaining sequence is less than 25 bp long it is rejected.
  The remaining content in the FastQ read, such as quality scores, are trimmed
- to the same length and the line is printed to the output file which is
+ to the same length and the line is printed to the output file, which is
  then aligned to the genome.
  The processing statistics from the e4C libraries can be seen in Figure
  
@@ -1205,6 +1207,7 @@ status open
 \align center
 
 \family typewriter
+\size scriptsize
 bowtie -q --phred64-quals -p 8 -m 1 hg19 <trimmed_reads.txt> <output_alignment.bow
 tie>
 \end_layout
@@ -1296,7 +1299,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/
+http://www.bioinformatics.babraham.ac.uk/projects/seqmonk
 \end_layout
 
 \end_inset
@@ -1315,10 +1318,17 @@ SeqMonk has been developed by Dr.
 \end_layout
 
 \begin_layout Standard
-SeqMonk works with aligned sequence reads, and can quantify them with probes
- - custom windows set across the genome.
- Probes are simply sets of paired genomic co-ordinates, and can be created
- over any feature (such as gene or restriction fragment) or as running windows.
+SeqMonk works with aligned sequence reads, and can quantify them with 
+\begin_inset Quotes eld
+\end_inset
+
+probes
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Probes are sets of paired genomic co-ordinates and can be created over
+ any feature (such as gene or restriction fragment) or as running windows.
  These probes are then used as bins within which reads can be quantified.
 \end_layout
 
@@ -1370,7 +1380,7 @@ name "sub:Potential-fragment-libraries"
 \end_layout
 
 \begin_layout Standard
-A prerequesite for the analysis of these biases is the generation of an
+A prerequisite for the analysis of these biases is the generation of an
  
 \emph on
 in-silico
@@ -1379,7 +1389,7 @@ in-silico
  The original perl script to generate these libraries was written by Marek
  Piatek, in the Babraham bioinformatics department.
  I have since re-written the script from scratch, as well as writing other
- scripts to including an online tool to generate lists of restriction enzyme
+ scripts including an online tool to generate lists of restriction enzyme
  recognition sites (Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1763,31 +1773,6 @@ NlaIII
 \end_layout
 
 \begin_layout Standard
-The resulting counts were plotted and can be seen in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:library-biases"
-
-\end_inset
-
-.
- It can be seen that the e4C libraries are biased towards greater %GC content
- and shorter fragments.
- These are likely to be experimental biases that come from the ligation,
- PCR and sequencing steps.
- It should be noted that the interaction libraries are enriched for GC rich
- regions (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Active-genes-reside-in-an-active-nuclear-compartment"
-
-\end_inset
-
-), so this bias may be a reflection of the specificity of the interaction
- data.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1818,7 +1803,7 @@ name "fig:library-biases"
 
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 e4C library biases
@@ -1873,6 +1858,40 @@ AseI-NlaIII
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The resulting counts were plotted and can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:library-biases"
+
+\end_inset
+
+.
+ It can be seen that the e4C libraries are biased towards greater %GC content
+ and shorter fragments.
+ This bias towards increased GC content and shorter fragment lengths is
+ similar to observations made by Yaffe and Tanay in HiC data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yaffe2011"
+
+\end_inset
+
+.
+ These are likely to be experimental biases that come from the digestion,
+ ligation, PCR and sequencing steps.
+ It should be noted that the interaction libraries are enriched for GC rich
+ regions (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Active-genes-reside-in-an-active-nuclear-compartment"
+
+\end_inset
+
+), so this bias may be a reflection of the specificity of the interaction
+ data.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1940,16 +1959,6 @@ reference "sec:significance-of-single-regions"
 
 ).
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Should really do the genome wide stuff with this correction.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection
@@ -1980,12 +1989,19 @@ reference "sub:CH5-GC-content-bias"
 \end_inset
 
 .
- The resulting plot shows the 
+ The resulting plot showed the 
 \emph on
 in-silico
 \emph default
- library with identical biases to the observed library, validating the correctio
-n values.
+ library to have identical biases to the observed library, with the same
+ GC and fragment length profiles plotted with a red line in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:library-biases"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
