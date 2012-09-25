@@ -1396,19 +1396,6 @@ key "Adam2001"
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-H3.3, H2A.Z, H2A.X (DNA damage), H2A.Z in centromere formation...
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Two-dimensional organisation
 \end_layout
@@ -1657,7 +1644,7 @@ status open
 
 \series bold
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Chromosome Territories
@@ -2448,8 +2435,8 @@ key "Jackson1998"
 et al.
 
 \emph default
- showed that genes situated within transcription factories are actively
- transcribed, whereas those outside are not 
+ showed that approximately 90% of actively transcribed genes are associated
+ with transcription factories 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Osborne2004"
@@ -2457,10 +2444,9 @@ key "Osborne2004"
 \end_inset
 
 .
- They went on to demonstrate that transcription is a discontinuous process
- with the frequency of nascent RNA transcription foci related to primary
- transcript RNA concentrations, suggesting that transcription occurs in
- bursts.
+ They demonstrated that transcription is a discontinuous process with the
+ frequency of nascent RNA transcription foci related to primary transcript
+ RNA concentrations, suggesting that transcription occurs in bursts.
  Multiple genes both in 
 \emph on
 cis
@@ -4557,7 +4543,21 @@ key "Pestic-Dragovich2000"
 \end_inset
 
 .
- Our understanding of how nuclear actin and myosin are involved in nuclear
+ Two papers from the Belmont and Bridger groups recently demonstrated active
+ reorganisation of chromosome territory positioning which was dependent
+ on the action of actin and myosin 1 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chuang2006,Mehta2010"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Our understanding of how nuclear actin and myosin are involved in nuclear
  organisation is still in its infancy, yet is rapidly gaining traction as
  techniques are developed which allow us to probe and manipulate their behaviour
  within the nucleus without disrupting cytoplasmic processes.
@@ -4677,9 +4677,6 @@ When seen as a whole, many of the models described above are not mutually
  determined by the combined result of many different processes directing
  specific interactions, driven by different processes and stabilised by
  different types of contact.
- Whilst this picture is still developing, it is clear that the nucleus is
- a highly dynamic and plastic organelle defined by millions of years of
- evolutionary pressures on every aspect of its content.
 \end_layout
 
 \begin_layout Standard
@@ -5491,6 +5488,10 @@ key "Chen1993"
 
 .
  
+\end_layout
+
+\begin_layout Subsubsection
+Leukaemia stem cells
 \end_layout
 
 \begin_layout Standard

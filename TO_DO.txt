@@ -6,6 +6,7 @@
 * Re-read and re-write discussion chapter as necessary
   Print, read and tidy / re-write chapter 3
   Go through big changes suggested by Cam for introduction
+  Sort out Appendices
   
   === BEFORE SUBMISSION ===
   Make sure all specific points listed below are finished
