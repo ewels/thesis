@@ -1,10 +1,8 @@
 ============   TO DO   =============
 
   === MAIN CHECKLIST ===
-* Finish discussion sections at the end of each chapter
   Print, read and tidy / re-write chapter 3
   Go through big changes suggested by Cam for introduction
-  BAC prep method
 
 
   === GENERAL TIDYING === (not critical)

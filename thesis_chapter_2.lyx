@@ -1475,14 +1475,72 @@ BAC preparation
 \begin_layout Standard
 The DNA used to create the DNA-FISH probes was generated using bacterial
  artificial chromosomes (BACs).
+ BACs were ordered from Invitrogen and grown on agar plates with chloramphenicol.
+ A single BAC colony was picked into 3 ml of LB containing chloramphenicol
+ and incubated at 37˚C with shaking for 8 hours.
+ Cultures were diluted 
+\begin_inset Formula $\frac{1}{500}$
+\end_inset
+
+ to 
+\begin_inset Formula $\frac{1}{1000}$
+\end_inset
+
+ in 100 ml of LB with chloramphenicol according to growth and placed in
+ a large conical flask before incubation for 16 hours at 37˚C with shaking.
+\end_layout
+
+\begin_layout Standard
+Cells were centrifuged in 50 ml tubes at 3500 rpm, 4˚C for 10 minutes.
+ Cell pellets were resuspended in 4ml of buffer P1 [Qiagen] before adding
+ 8ml buffer P2 [Qiagen] and mixing by inversion.
+ Cells were incubated at room temperature for 5 minutes.
+ 8ml buffer P3 [Qiagen] was added and mixed by inversion then left on ice
+ for 5 minutes.
+ Solutions were centrifuged at 4500 rpm for 10 minutes.
+ Supernatant was filtered through pre-wetted filter papers placed inside
+ clean glass funnels, held in centrifuge tubes.
+ 0.7 volumes of isopropanol was added and BAC DNA allowed to precipitate
+ for 10 minutes on ice.
+\end_layout
+
+\begin_layout Standard
+DNA was centrifuged at 20,000x 
+\emph on
+g
+\emph default
+ for 15 minutes at 4˚C.
+ The supernatant was discarded and the pellet resuspended in 1 ml 70% ethanol
+ before being transferred to 1.5ml microcentrifuge tubes.
+ Tubes were centrifuged at 13,000 rpm for 5 minutes before aspiration of
+ the ethanol.
+ Pellets were allowed to dry briefly at room temperature and resuspended
+ in 400 μl molecular biology grade water [Qiagen].
+ DNA was precipitated with 100 μl of 4M NaCl and 540 μl 13% PEG-8000 solution
+ (autoclaved).
+ Tubes were centrifuged for 1 minute at 13,000 rpm and the pellet washed
+ with 500 μl 70% EtOH.
+ Tubes were again spun at 13,000 rpm for 1 minute and the pellete allowed
+ to air dry briefly.
+\end_layout
+
+\begin_layout Standard
+Pellets were resuspend in 250 μl TE buffer and added to 250 μl Phenol:chloroform
+:isoamyl alcohol (25:24:1, pH 8).
+ Tubes were vortexed and centrifuged before removal of the aqueous phase
+ into a fresh microcentrifuge tube.
+ DNA was precipitated with 0.1 volume of 3M NaOAc (pH 5.2) and 2.5 volumes
+ of 100% ethanol.
+ Tubes were spun at 13,000 rpm for 10 minutes.
+ DNA was washed with 500 μl 70% ethanol and then spun again 13,000 rpm for
+ 1 minute.
+ Ethanol was removed and the pellet allowed to air dry pellet before being
+ resuspended in 100 μl molecular biology grade water [Qiagen].
+ DNA was quantified using a NanoDrop machine.
 \end_layout
 
 \begin_layout Standard
 
-\family sans
-\size giant
-\color red
-THIS IS NOT DONE YET
 \end_layout
 
 \begin_layout Subsection
