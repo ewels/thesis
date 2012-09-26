@@ -89,11 +89,24 @@ name "chap:Discussion"
 \end_layout
 
 \begin_layout Standard
-The role of three-dimensional organisation in the functional regulation
- of mammalian genomes is increasingly being recognised as being critical.
+The three-dimensional organisation of the nucleus has a direct impact on
+ the functional regulation of mammalian genomes (discussed in Chapter 1).
  In this thesis I describe how I have extended and further developed e4C,
- a technique based on chromosome conformation capture, to investigate the
- genome-wide association profiles of three proto-oncogenes in human CD34
+ a technique based on chromosome conformation capture.
+ I have used e4C to investigate the genome-wide association profiles of
+ the proto-oncogenes 
+\emph on
+BCR
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ in human CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -105,173 +118,58 @@ The role of three-dimensional organisation in the functional regulation
  cells and the GM12878 cell line.
 \end_layout
 
+\begin_layout Standard
+In this chapter I discuss the broader context and implications of the work
+ presented in this thesis.
+\end_layout
+
 \begin_layout Section
 The e4C methodology
 \end_layout
 
 \begin_layout Standard
-The past ten years has seen a rapid adoption of 3C and 3C-based techniques.
- The slew of protocols to investigate the make up of 3C libraries has allowed
- us to investigate differences in association between different loci in
- an increasingly high throughput manner.
- The e4C sequencing technique discussed in this thesis represents another
- step towards the aim of understanding the contacts made by genes and how
- they may affect us in health and disease.
-\end_layout
-
-\begin_layout Standard
-The data presented here is not without its flaws.
- The clearest example of this are the CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- MLL e4C libraries.
- These libraries exhibit approximately ten-fold less coverage than the BCR
- bait e4C libraries for reasons currently unknown.
- It is of note that a recent paper by Cowell 
-\emph on
-et al.
-
-\emph default
- attempted to use traditional 3C to measure contact frequencies between
- the 
-\emph on
-MLL
-\emph default
- gene and its translocation partner 
-\emph on
-AF9 
-\emph default
-without
-\emph on
- 
-\emph default
-success 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cowell2012"
-
-\end_inset
-
-.
- Although the study was able to demonstrate transcriptional co-association
- between these genes using RNA-FISH they were unable to detect any products
- by 3C.
- The authors attribute this to the low overall proportion of the cell population
- exhibiting a close interaction (2-3%) and the possibility that the large
- size of transcription factories may not allow efficient cross-linking of
- the fragments 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cowell2012"
-
-\end_inset
-
-.
- It is an interesting possibility that the 
-\emph on
-MLL
-\emph default
- locus may not be amenable to analysis by 3C based techniques, perhaps due
- to local inaccessibility of the chromatin, however this explanation does
- fully explain the variation in complexity seen between my libraries: the
- lower complexity of the GM12878 ABL e4C library relative to the CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- BCR or the higher complexity of the GM12878 MLL e4C libraries relative
- to the CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- e4C library.
- Given extra time and funds it would be interesting to replicate my e4C
- libraries for all baits in both cell types and create more e4C libraries
- using different baits to elucidate a pattern.
-\end_layout
-
-\begin_layout Standard
-In chapter three I describe my efforts to further develop the e4C method
- to improve library complexity through the incorporation of a random barcode
- sequence to track individual ligation products and the multiplexing of
- e4C libraries prepared in parallel.
- Whilst this experiment resulted in captured sequences that suggested problems
- in the library preparation, I believe that the concepts behind the attempt
- are sound.
- With the benefit of hindsight I think that multiplexed e4C libraries prepared
- in parallel have the potential to greatly improve the standard of data
- produced by e4C.
- It seems likely that the non-homology in the random barcode sequence caused
- the problems in library preparation; using 
-\emph on
-NlaIII
-\emph default
- adapters prepared using homologous oligos with a single barcode sequence
- should not cause the same problems and can still be used to detect identical
- ligation products found in more than one multiplexed library.
- In my hands up to eight e4C libraries could be prepared in parallel, so
- it would not be infeasible to multiplex many tens of libraries with the
- same bait on a single flow cell, greatly improving the coverage and resolution
- of the resulting data.
-\end_layout
-
-\begin_layout Standard
 The technology behind many molecular biology techniques has undergone a
- radical transformation in the past twenty years, especially through the
- development of next generation sequencing techniques in a trend that seems
- set to continue.
- As the quantity of data produced by our experiments exceeds immediate analysis
- through observation the methods we use to process and digest that data
- become more important.
- The development of e4C sequencing described in this thesis acts as a paradigm
- of this story: the original 3C technique is analysed through the visualisation
- of bands on a gel 
+ radical transformation in the past twenty years.
+ The capacity of next generation sequencing techniques has rapidly increased,
+ in a trend that seems set to continue.
+ As the quantity of data produced by experiments makes analysis through
+ direct observation impossible, the methods we use to process and digest
+ data become increasingly important.
+\end_layout
+
+\begin_layout Standard
+The development of e4C sequencing described in this thesis acts as a paradigm
+ of this progression: the original 3C technique is analysed through the
+ visualisation of bands on a gel 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Dekker2002b"
 
 \end_inset
 
-; RT-qPCR 3C improves this by accurately quantifying the amplification;
- 4C scaled this technique to use microarray technology to study seven mouse
- chromosomes 
+; RT-qPCR 3C improves this by accurately quantifying the amplification 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Simonis2006a"
+key "Hagege2007"
 
 \end_inset
 
- and later a representative selection of all mouse chromosomes 
+; 4C scaled this technique to use microarray technology 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Schoenfelder2010"
+key "Simonis2006a,Schoenfelder2010"
 
 \end_inset
 
-; this thesis describes the use of e4C sequencing to produce many millions
+ and this thesis describes the use of e4C sequencing to produce many millions
  of sequencing reads across the genome.
- With greater quantities of data comes a need for more careful analysis,
- with a large enough dataset one can choose tests to demonstrate any hypothesis.
- To address this, analysis methodologies must be systematic and as free
- of bias as possible.
+\end_layout
+
+\begin_layout Standard
+With such large datasets, analysis methodologies must be systematic and
+ as free of bias as possible.
  It is interesting to note the convergent approaches in techniques used
- to analyse 3C derived association data that have been published independently
- during the time that the analysis concepts in this thesis were developed.
+ to analyse association data found in the literature.
  In 2012 a methods paper was written by the de Laat laboratory describing
  the 4C-seq protocol and analysis 
 \begin_inset CommandInset citation
@@ -281,14 +179,16 @@ key "VandeWerken2012"
 \end_inset
 
 .
- They describe many of the same problems (low library complexity in sequencing,
- restriction endonuclease site distribution) and suggest some solutions
- that differ from those proposed in this thesis (spiking in phiX library
- instead of Bareback processing, using running probes created over multiple
- restriction fragments instead of calculating the proportion of fragments
- observed).
- In this way, future studies using similar techniques can review a variety
- of analysis methodologies and choose those that suit their data best.
+ They describe many of the same problems and suggest some solutions that
+ differ from those proposed in this thesis.
+ For example, to overcome problems with cluster calling due to bait region
+ similarity in sequencing they recommend spiking in phiX library, instead
+ of Bareback processing.
+ To normalise restriction endonuclease site distribution they use running
+ probes created over multiple restriction fragments instead of calculating
+ the proportion of fragments observed in fixed window sizes.
+ Future studies using similar techniques can review a variety of analysis
+ methodologies and choose those that suit their data best.
 \end_layout
 
 \begin_layout Subsection
@@ -296,9 +196,9 @@ Future directions
 \end_layout
 
 \begin_layout Standard
-The further development of e4C represents just one of many 3C based techniques.
- The trend so far has generally been one of individual loci investigation
- to global investigation with recent techniques such as HiC 
+The further development of e4C represents just one of many 3C derived techniques.
+ These methodologies have generally scaled up from the investigation of
+ individual loci to global all-to-all techniques such as HiC 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lieberman-Aiden2009"
@@ -312,8 +212,8 @@ key "Kalhor2011"
 
 \end_inset
 
- able to investigate all genomic associations within a cell population in
- one experiment.
+, able to investigate all genomic associations within a cell population
+ in a single experiment.
  On initial inspection one might think that these techniques therefore supersede
  those before them, however they still suffer from an Achilles' heel: sequencing
  depth.
@@ -336,8 +236,8 @@ AseI
 \end_inset
 
 752000).
- In order for a single association event to be recorded for every fragment
- in the genome once, over half a billion sequence reads are needed (
+ In order for a single association event to be recorded between every fragment
+ in the genome, over half a billion sequence reads are needed (
 \begin_inset Formula $752000^{2}=5.7\times10^{11}$
 \end_inset
 
@@ -345,13 +245,13 @@ AseI
  Quantitative analysis of association frequencies requires a great many
  more reads per fragment.
  For the level of complexity seen in the BCR e4C datasets described in this
- dataset a HiC library would require over seven quadrillion reads (seven
- thousand billion, 
+ thesis a HiC library would require over seven thousand billion reads (
 \begin_inset Formula $5.7\times10^{11}\;\times\;12500=7.125\times10^{15}$
 \end_inset
 
-) requiring many thousands of runs with today's sequencing technology (Illumina
- HiSeq 2500 is capable of three billion single end reads per run).
+), a number that would require thousands of runs with today's sequencing
+ technology (the Illumina HiSeq 2500 is capable of three billion single
+ end reads per run).
 \end_layout
 
 \begin_layout Standard
@@ -377,11 +277,11 @@ key "Duan2010,Sexton2012"
 \end_inset
 
 .
- However, until sequencing technologies are able to reach similar levels
- of deep sequencing with the human genome, there is a role for e4C and other
- techniques able to interrogate a specific subsection of 3C libraries.
- As described in this thesis, e4C enriched 3C libraries for a specific bait,
- revealing an in-depth genome wide map of association for that sequence.
+ However, until sequencing technologies are able to reach similar depths
+ of sequencing with the human genome, there is a role for e4C and other
+ techniques able to interrogate specific subsets of 3C libraries.
+ As described in this thesis, e4C enriches 3C libraries for a specific bait,
+ revealing an in-depth genome wide map of association for that fragment.
  Other approaches exist such as ChIP-e4C 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -398,28 +298,26 @@ key "Fullwood2009a"
 
  which use chromatin immunoprecipitation to enrich for associations taking
  place in concert with proteins of interest.
- I believe that similar techniques will continue to flourish to allow investigat
-ion of a myriad of micro-environments of the nucleus.
+ I believe that similar techniques will continue to flourish to allowing
+ the investigation of a myriad of micro-environments within the nucleus.
 \end_layout
 
 \begin_layout Standard
-I believe that as 3C based techniques continue to gain interest and sequencing
- power, we will see a flourishing of studies investigating comparative and
- dynamic nuclear organisation.
- Comparative studies may yield new understanding of the differences in genomic
- organisation between different tissues, healthy and disease states, the
- evolution of genome structure and the heterogeneity of structure between
- single cells and populations.
- Studying the dynamics of genome organisations can teach us new insights
- into cell cycle progression, tissue differentiation, the processes driving
+A number of as yet unexplored avenues exist within comparative and dynamic
+ nuclear organisation.
+ Comparative studies may yield new understanding of the differences between
+ different tissues, healthy and disease states, the evolution of genome
+ structure and heterogeneity between single cells and populations.
+ Studying the dynamics of genome organisation can give us new insights into
+ cell cycle progression, tissue differentiation, the processes driving nuclear
  organisation and the effect of pharmacological agents.
- As our understanding of the gross rules governing nuclear organisation
- increases we will be able to better understand how differences in organisation
- can affect biological function and how biological function can affect organisat
-ion.
- In the future I think that diagnostic tests for nuclear organisations may
- reach the clinic, and drugs able to modify organisation may become common
- place, especially as preventative measures.
+ As our understanding of the gross rules governing these processes increases
+ we will be able to better understand how differences in nuclear organisation
+ can affect biological function, and how biological function can affect
+ organisation.
+ It is not unreasonable to expect diagnostic tests based on nuclear organisation
+s to reach the clinic in the future, along with drugs able to modify organisatio
+n, especially as preventative measures.
 \end_layout
 
 \begin_layout Section
@@ -439,7 +337,7 @@ ABL1
 \emph on
 MLL
 \emph default
- reside within an active nuclear compartment defined by the presence of
+ reside within an active nuclear compartment, defined by the presence of
  active epigenetic marks.
  The existence of such active and inactive nuclear compartments has been
  suggested by a number of recent studies.
@@ -452,11 +350,11 @@ et al.
  They proposed that if two genomic loci are nearby in three-dimensional
  space, they will have similar genome wide association profiles.
  They plotted intrachromosomal heat maps of Pearson correlation matrices
- and observed a stark plaid pattern which could be split into two genomic
- compartments using principal component analysis.
- The authors characterised the components as active and inactive compartments,
- the active showing looser compaction and a correlation with gene density,
- mRNA expression, DNAse sensitivity and active histone marks 
+ and observed a stark plaid pattern, which was split into two genomic compartmen
+ts using principal component analysis.
+ The authors characterised the active component as showing looser compaction
+ and correlating with gene density, mRNA expression, DNAse sensitivity and
+ active histone marks 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lieberman-Aiden2009"
@@ -464,8 +362,7 @@ key "Lieberman-Aiden2009"
 \end_inset
 
 .
- This observation of active and inactive compartments in the human and mouse
- genomes has been replicated by other groups 
+ This observation has been replicated by other groups 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Yaffe2011,Kalhor2011,Zhang2012"
@@ -493,8 +390,7 @@ key "Guelen2008"
 \begin_layout Standard
 The existence of active and inactive compartments within the genome is compatibl
 e with the observation of transcription occurring at fixed transcription
- factories and models of chromatin loops described in detail in Section
- 
+ factories, as well as models of chromatin loops described in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:What-drives-nuclear-organisation"
@@ -502,15 +398,19 @@ reference "sec:What-drives-nuclear-organisation"
 \end_inset
 
 .
- Clustering of active regions gives suggests a model of genomic organisation
- whereby the transcriptional activity of genomic loci can be controlled
- by the adjustment of their position in the nucleus.
+ Clustering of active regions suggests a model of genomic organisation whereby
+ the transcriptional activity of genomic loci can be controlled by the adjustmen
+t of their position in the nucleus.
  As inactive genes are stimulated by external factors, they can be epigeneticall
 y remodelled allowing escape from a repressive environment and recruitment
- to a transcription factory.
- Such a model has a number implications for our understanding of nuclear
- function, partly in appreciation of the complexity of the nucleus but also
- through explaining the role of many nuclear factors in transcription.
+ to a transcription factory 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chambeyron2004,Osborne2004"
+
+\end_inset
+
+.
  Future studies into the dynamics and control of these compartments will
  surely elucidate finer detail in the mechanisms by which mammalian gene
  expression is controlled.
@@ -538,7 +438,7 @@ key "Kozubek1997,Lukasova1997,Neves1999,Kozubek1999,Schwarz-Finsterle2005"
 
 \end_inset
 
-, as well as the association of 
+, as has the association of 
 \emph on
 MLL 
 \emph default
@@ -550,16 +450,28 @@ key "Murmann2005,Gue2006,Cowell2012"
 \end_inset
 
 .
- Where these studies differ from the work described in this thesis is that
- they all use DNA- or RNA-FISH to measure association.
- As such, whilst they are able to show significantly enriched association
- in comparison to candidate negative control loci, they cannot describe
- this association in the context of all genomic contacts.
+ These studies differ from the work described in this thesis by their use
+ of FISH to measure association.
+ While they are able to show significantly enriched association in comparison
+ to candidate control loci, they cannot describe the association in the
+ context of all genomic contacts.
  The BCR bait e4C data in this thesis suggests that the 
 \emph on
 BCR
 \emph default
- - chr9 q34 association is the strongest 
+
+\begin_inset space ~
+\end_inset
+
+:
+\begin_inset space ~
+\end_inset
+
+chr9
+\begin_inset space ~
+\end_inset
+
+q34 association is the strongest 
 \emph on
 trans
 \emph default
@@ -571,8 +483,16 @@ BCR
 \end_layout
 
 \begin_layout Standard
-This data suggests that chromosomal associations may play an important role
- in the formation of chromosomal translocations.
+This data supports the hypothesis that chromosomal associations may play
+ an important role in the formation of chromosomal translocations (Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Effect-of-nuclear-organisation-on-translocation-formation"
+
+\end_inset
+
+).
  Understanding the process of translocation formation is important for the
  continued development of cancer treatments.
  For example, if therapy-related leukaemias involving the 
@@ -580,15 +500,14 @@ This data suggests that chromosomal associations may play an important role
 MLL 
 \emph default
 gene are caused by topoisomerase induced DSBs during transcription, in the
- future we may see precautionary drugs able to modify the activity of localisati
+ future we may see precautionary drugs able to modify the activity or localisati
 on of the 
 \emph on
 MLL 
 \emph default
-gene to prevent these translocations.
- Whilst clinical applications such as this still are still some way from
- reaching the clinic,  further development of our understanding of the biologica
-l processes governing disease initiating events is critical.
+gene.
+ The greater our understanding of biological processes, the greater our
+ ability to control them to prevent and cure disease.
 \end_layout
 
 \begin_layout Standard

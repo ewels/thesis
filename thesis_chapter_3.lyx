@@ -781,7 +781,7 @@ Effect of Triton-X100 on
 BamHI
 \emph default
  digestion.
- 
+ (A) 
 \series default
 \emph on
 BamHI
@@ -789,16 +789,58 @@ BamHI
  digestion efficiency of purified plasmid DNA with increasing Triton-X100
  concentrations after SDS treatment.
  
+\series bold
+(1)
+\series default
+ - Plasmid DNA without SDS, Triton-X100 or 
 \emph on
 BamHI
 \emph default
- can be seen to be inactive at the lower four Triton-X100 concentrations.
+ digestion.
+ 
+\series bold
+(2)
+\series default
+ - Plasmid DNA with SDS, Triton-X100 and 
+\emph on
+BamHI
+\emph default
+ digestion.
+ Triton-X100 concentrations range from 1.8% to 5%.
+ 
+\series bold
+(3)
+\series default
+ - Plasmid DNA with Triton-X100 and 
+\emph on
+BamHI
+\emph default
+ digestion but no SDS treatment.
+ Triton-X100 concentrations as in 2.
+ 
+\series bold
+(3)
+\series default
+ - Plasmid DNA with no SDS or Triton-X100, digested by 
+\emph on
+BamHI
+\emph default
+.
+ 
+\series bold
+(B)
+\series default
+ - Digestion of crosslinked chromatin with 
+\emph on
+BamHI
+\emph default
+ after treatment with SDS and Triton-X100 (3.8%, 5%).
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Need Triton-X100 concentrations
+Mayra's lab book, page 70
 \end_layout
 
 \end_inset
@@ -1015,42 +1057,36 @@ BCR
 MLL
 \emph default
  baits.
- 1 - 
-\emph on
-BCR
-\emph default
- 
+ 1 - Sample 1 
 \emph on
 AseI
 \emph default
  e4C, no SPRI.
- 2 - 
-\emph on
-BCR
-\emph default
- 
+ 2 - Sample 1 
 \emph on
 AseI
 \emph default
  e4C after SPRI.
- 3 - 
-\emph on
-MLL
-\emph default
- 
+ 3 - Sample 2 
 \emph on
 AseI
 \emph default
  e4C, no SPRI.
- 4 - 
-\emph on
-MLL
-\emph default
- 
+ 4 - Sample 2 
 \emph on
 AseI
 \emph default
  e4C after SPRI.
+ Samples 1 and 2 were libraries generated in parallel from CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ material.
 \end_layout
 
 \end_inset
@@ -5599,6 +5635,7 @@ BCR
 MLL
 \emph default
  Run 1 for the rest of this thesis.
+ Primers for both baits were used together through the e4C library preparation.
  Once the raw reads were available from the sequencing run, we separated
  the two e4C libraries 
 \emph on
@@ -5612,8 +5649,7 @@ reference "sec:Initial-data-handling"
 \end_inset
 
 ).
- Despite loading equimolar amounts of both libraries and sequencing primers
- onto the flow cell, the 
+ The 
 \emph on
 MLL
 \emph default
@@ -5623,69 +5659,22 @@ MLL
 BCR
 \emph default
  library with 22,390,498, a 400-fold difference.
+ This difference is likely to be due to a variation in primer efficiencies
+ causing the 
+\emph on
+BCR
+\emph default
+ bait ligation products to be preferentially amplified above the level of
+ the 
+\emph on
+MLL
+\emph default
+ bait products.
 \end_layout
 
 \begin_layout Standard
-There are several possible reasons for such a bias occurring with the multiplexe
-d libraries.
- Problems with the structure of e4C products within 
-\emph on
-MLL 
-\emph default
-library could have caused it to bind to the flow cell poorly or create clusters
- inefficiently.
- Alternatively, the library could have DNA lacking Illumina adapters which
- skewed concentration measurements meaning that less library was loaded
- on the flow cell.
- Neither of these possibilities seem likely however, as the e4C libraries
- were quantified using quantitative real-time PCR using fluorescent TaqMan
- probes which only fluoresce when bound to the Illumina adapter sequences.
- Additionally, the 
-\emph on
-MLL 
-\emph default
-Run 2 e4C library that was sequenced without multiplexing on its own lane
- generated clusters as expected by its concentration and returned the expected
- number of reads.
- Differences in the sequencing chemistry related to the sequencing primers
- might cause the 
-\emph on
-BCR
-\emph default
- library to be sequenced more efficiently than the 
-\emph on
-MLL
-\emph default
- library, but that would presumably not give a greater number of 
-\emph on
-BCR 
-\emph default
-library clusters, generated using the same Illumina adapters for both libraries.
- The total number of reads returned from the multiplexed lanes were equivalent
- to those returned from single library lanes, however, indicating that there
- were more 
-\emph on
-BCR
-\emph default
- library clusters than 
-\emph on
-MLL
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-For my second multiplexed run, I changed the relative concentrations of
- 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-MLL
-\emph default
- libraries and sequencing primers loaded on the flow cell in order to return
- an equal number of reads.
+For my second multiplexed run, I prepared the e4C libraries separately in
+ parallel and mixed them immediately before sequencing in equimolar amounts.
  This time, the 
 \emph on
 MLL
@@ -6295,6 +6284,150 @@ NlaIII
  e4C libraries multiplexed on a single flow cell.
  This approach would increase coverage depth and give semi-quantitative
  information in the association data.
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+The past ten years has seen a rapid adoption of 3C and 3C-derived techniques.
+ The slew of protocols to investigate the composition of 3C libraries has
+ allowed us to investigate differences in association between loci in an
+ increasingly high throughput manner.
+ The e4C sequencing technique discussed in this chapter represents another
+ step towards the aim of understanding the associations made by genes.
+\end_layout
+
+\begin_layout Standard
+The data presented here is not without its flaws.
+ The clearest example of this is the poor quality of the CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+MLL
+\emph default
+ e4C libraries.
+ These libraries exhibit approximately ten-fold less coverage than the BCR
+ bait e4C libraries for reasons currently unknown (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Library-complexity"
+
+\end_inset
+
+).
+ It is of note that a recent paper by Cowell 
+\emph on
+et al.
+
+\emph default
+ attempted to use traditional 3C to measure contact frequencies between
+ the 
+\emph on
+MLL
+\emph default
+ gene and its translocation partner 
+\emph on
+AF9 
+\emph default
+without
+\emph on
+ 
+\emph default
+success 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cowell2012"
+
+\end_inset
+
+.
+ Although the study was able to demonstrate transcriptional co-association
+ between these genes using RNA-FISH, they were unable to detect any products
+ by 3C.
+ The authors attribute this to the low overall proportion of the cell population
+ exhibiting a close interaction (2-3% cells) and the possibility that the
+ large size of transcription factories may not allow efficient cross-linking
+ of the fragments 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cowell2012"
+
+\end_inset
+
+.
+ It is an interesting possibility that the 
+\emph on
+MLL
+\emph default
+ locus may not be amenable to analysis by 3C based techniques, perhaps due
+ to local inaccessibility of the chromatin.
+ However, this explanation does fully explain the variation in complexity
+ seen between my libraries: the low complexity of the GM12878 ABL e4C library
+ or the difference in complexity between the GM12878 and CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+MLL
+\emph default
+ e4C libraries (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Library-complexity"
+
+\end_inset
+
+).
+ Given extra time and funds, it would be interesting to replicate my e4C
+ libraries for all baits in both cell types to examine the influence of
+ cell type and bait fragments.
+\end_layout
+
+\begin_layout Standard
+In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Multiplexing-e4C-libraries"
+
+\end_inset
+
+, I describe my efforts to further develop the e4C method to improve library
+ complexity through the incorporation of a random barcode sequence to track
+ individual ligation products and the multiplexing of e4C libraries prepared
+ in parallel.
+ Whilst this experiment resulted in captured sequences that suggested problems
+ in the library preparation, I believe that the concepts behind the attempt
+ are sound.
+ With the benefit of hindsight, I think that multiplexed e4C libraries prepared
+ in parallel have the potential to greatly improve the standard of data
+ produced by e4C.
+ It seems likely that the lack of homology in the random barcode sequence
+ caused the problems in library preparation, using 
+\emph on
+NlaIII
+\emph default
+ adapters prepared using homologous oligos with a single barcode sequence
+ may not cause the same problems and could still be used to detect identical
+ ligation products found in multiple multiplexed libraries.
+ Up to eight e4C libraries can be prepared in parallel without difficulty,
+ so it would be feasible to multiplex many tens of libraries with the same
+ bait on a single flow cell, greatly improving the coverage of the resulting
+ data.
 \end_layout
 
 \begin_layout Standard

@@ -71,6 +71,10 @@
 
 \begin_layout Chapter
 \start_of_appendix
+Appendices
+\end_layout
+
+\begin_layout Section
 Primers
 \end_layout
 
@@ -90,11 +94,11 @@ singlespacing
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 e4C Library Statistics
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Numbers of e4C reads per Chromosome
 \end_layout
 
@@ -9990,7 +9994,7 @@ AseI Frags
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \emph on
 AseI
@@ -11837,7 +11841,7 @@ far
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Datasets used for active mark correlations 
 \begin_inset CommandInset label
 LatexCommand label
@@ -12387,7 +12391,7 @@ GSM325935
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Library trimming statistics
 \begin_inset CommandInset label
 LatexCommand label
@@ -13448,7 +13452,7 @@ MLL
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 e4C library read counts
 \end_layout
 
@@ -15797,11 +15801,11 @@ Av.
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 e4C analysis scripts
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Bait processing
 \end_layout
 
@@ -15826,7 +15830,7 @@ lstinputlisting{figures/scripts/sort_prey_seqs_according_to_bait_barcode.pl}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 
 \emph on
 In-silico
@@ -15857,7 +15861,7 @@ lstinputlisting{figures/scripts/potential_hits.pl}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 GC content and fragment length bias detection 
 \begin_inset CommandInset label
 LatexCommand label
@@ -15868,7 +15872,7 @@ name "sec:APP-GC-content-bias"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Systematic bias correction 
 \begin_inset CommandInset label
 LatexCommand label
@@ -15879,7 +15883,7 @@ name "sec:APP-systematic-bias-correction"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Restriction site search
 \end_layout
 
@@ -15899,7 +15903,7 @@ lstinputlisting{figures/scripts/single_RE_fragments.pl}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Restriction fragment distribution normalisation
 \end_layout
 
@@ -15924,7 +15928,7 @@ lstinputlisting{figures/scripts/make_windows.pl}
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Web Tools 
 \begin_inset CommandInset label
 LatexCommand label
@@ -15935,16 +15939,16 @@ name "chap:APP-Web-Tools"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Publicly available tools I’ve written - Cytobands, Genome RE Sites, Sequences.
  Mention traffic.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Talk about contribution to FastQC 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Publications
 \end_layout
 

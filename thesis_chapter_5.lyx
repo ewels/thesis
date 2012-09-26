@@ -302,7 +302,6 @@ status open
 
 \begin_layout Plain Layout
 
-\size scriptsize
 
 \backslash
 
@@ -327,7 +326,7 @@ BCR
 \begin_layout Plain Layout
 
 \size scriptsize
-First e4C library sequenced, multiplexed with MLL 1.
+First e4C library sequenced, multiplexed library preparation with MLL 1.
  CD34
 \begin_inset script superscript
 
@@ -501,7 +500,6 @@ status open
 
 \begin_layout Plain Layout
 
-\size scriptsize
 
 \backslash
 
@@ -526,7 +524,7 @@ MLL
 \begin_layout Plain Layout
 
 \size scriptsize
-First e4C library sequenced, multiplexed with BCR 1.
+First e4C library sequenced, multiplexed library preparation with BCR 1.
  CD34
 \begin_inset script superscript
 
@@ -1473,6 +1471,16 @@ BCR
  The reason for this difference in complexity is not known but is likely
  to be due to a primer-specific effect in bait enrichment, PCR amplification
  or sequencing.
+ This hypothesis is supported by the preferential amplification of the BCR
+ bait in the first e4C library sequenced, where BCR and MLL baits were multiplex
+ed in the same tubes for e4C library preparation (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Multiplexing-e4C-libraries"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -2452,11 +2460,58 @@ key "Lieberman-Aiden2009,Yaffe2011,Kalhor2011"
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Different genes have different preferred association partners 
+Different genes have different preferred
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ association partners 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Different-genes-have-preferred-interaction-partners"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
 
 \end_inset
 
@@ -2611,6 +2666,13 @@ n.
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
