@@ -3514,6 +3514,9 @@ PE Ad 1.0 Primer
 
 \begin_layout Plain Layout
 
+\family typewriter
+\size scriptsize
+AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT
 \end_layout
 
 \end_inset
@@ -3546,6 +3549,9 @@ PE Ad 2.0 Primer
 
 \begin_layout Plain Layout
 
+\family typewriter
+\size scriptsize
+AAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT
 \end_layout
 
 \end_inset
@@ -3919,7 +3925,7 @@ name "fig:CD34-Separation-FACS"
 \series default
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 CD34
@@ -4674,7 +4680,828 @@ HindIII
 \end_layout
 
 \begin_layout Section
-Walkthrough of a successful e4C experiment
+Walkthrough of a successful e4C library preparation
+\end_layout
+
+\begin_layout Standard
+A typical example of e4C library preparation is described below, detailing
+ the results of the experiments to create the BCR Run 2 e4C library (chosen
+ due to clear gels).
+ This preparation came in several steps: the collection, fixation, sorting
+ and flash freezing of CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+cells, the creation of 3C material from that cell pellet and finally the
+ generation of an e4C library from an aliquot of that 3C material.
+\end_layout
+
+\begin_layout Standard
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cell collection is described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:chap4-CD34-cell-prep"
+
+\end_inset
+
+.
+ The patient identifier was 
+\family typewriter
+Ref 2593P
+\family default
+, undergoing treatment for T-cell lymphoma.
+ I collected 
+\begin_inset Formula $2.88\times10^{7}$
+\end_inset
+
+ CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells from a total count of 
+\begin_inset Formula $7.88\times10^{9}$
+\end_inset
+
+ white blood cells.
+ FACS analysis showed a CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ purity of 96.39% (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34-FACS-analysis-plot"
+
+\end_inset
+
+, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:CD34-FACS-analysis"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/BCR e4C FACS/BCR_e4C_FACS.jpg
+	lyxscale 15
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ FACS analysis plot
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34-FACS-analysis-plot"
+
+\end_inset
+
+
+\series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ FACS analysis plot.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Marker
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+Events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+% Gated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size footnotesize
+% Total
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+All
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+50000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+100.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+98.68
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+M1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+47478
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+94.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+93.71
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+M2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+2416
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+4.83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+4.77
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ FACS analysis analysis
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:CD34-FACS-analysis"
+
+\end_inset
+
+
+\series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ FACS analysis analysis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C material was generated as described in the protocol in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+.
+ PicoGreen analysis showed the yield to be 130 μg, 75% efficiency (assuming
+ a hypothetical potential yield of 172.8 μg calculated by number of cells
+ 
+\begin_inset Formula $\times$
+\end_inset
+
+ 6 pg DNA per nucleus).
+ I ran 1 μg of 3C material on a 1% gel which looked good, despite some distortio
+n due to salt remaining after the ethanol precipitation (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34+-3C-library-gel"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/BCR e4C 3C gel/BCR_e4C_3C_gel.jpg
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C library gel
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34+-3C-library-gel"
+
+\end_inset
+
+
+\series bold
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C library gel.
+ 
+\series default
+1% agarose gel showing 3C library smear.
+ Distortion due to presence of salt.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ e4C 3C material was cleaned using SPRI to remove salt contamination and
+ processed according to the method described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-e4C"
+
+\end_inset
+
+.
+ Genomic DNA (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "gDNA"
+description "Genomic DNA"
+
+\end_inset
+
+gDNA) control was used as a positive control for germline bands and a no
+ template control (NTC) was used as a negative control.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-e4C-libraries-gel-firstPCR"
+
+\end_inset
+
+ A shows the BCR e4C library after the first round PCR and germline band
+ digestion.
+ It can be seen that the strong germline band is digested in the gDNA control
+ and that non-specific primer dimers are reduced in the NTC with SPRI (Fig
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BCR-e4C-libraries-gel-firstPCR"
+
+\end_inset
+
+ A).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/BCR e4C gels/e4C_germline_gel.eps
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+BCR e4C libraries after first round PCR
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:BCR-e4C-libraries-gel-firstPCR"
+
+\end_inset
+
+BCR e4C libraries after first round PCR.
+ 
+\series default
+1 - BCR CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ e4C.
+ 2 - gDNA control.
+ 3 - gDNA before germline removal.
+ 4 - NTC.
+ 5 - gDNA before germline removal or SPRI.
+ 6 - NTC before SPRI.
+ gDNA = genomic DNA control.
+ NTC = no template control.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To size select fragments of a length suitable for sequencing, the e4C library
+ was purified using a gel extraction with a band from approximately 250
+ bp to 700 bp (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34+-e4C-library-gel-extraction"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/BCR e4C gels/e4C_gel_extraction.eps
+	lyxscale 30
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+CD34+ e4C library gel extraction
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CD34+-e4C-library-gel-extraction"
+
+\end_inset
+
+
+\series bold
+CD34+ e4C library gel extraction.
+
+\series default
+ 1% agarose gels showing e4C library gel before and after gel extraction.
+ Several empty lanes were run between the ladder and library to avoid contaminat
+ion which have been removed from this image for clarity.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the gel extraction the second round PCR was prepared to add the full
+ Illumina sequencing adapters (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Completed-BCR-e4C-library"
+
+\end_inset
+
+).
+ The smear was the correct size for sequencing so I submitted the sample
+ to the Babraham Sequencing Facility.
+ Kristina Tabbada then quantified and sequenced the sample on a Illumina
+ Genome Analyser IIx.
+ Data analysis is described in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:e4C-Analysis"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/BCR e4C gels/BCR_e4C_gel.eps
+	lyxscale 30
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Completed BCR e4C library
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Completed-BCR-e4C-library"
+
+\end_inset
+
+
+\series bold
+Completed BCR e4C library.
+ 
+\series default
+1 = BCR e4C library.
+ 2 = Second round PCR no template control after SPRI cleanup.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
