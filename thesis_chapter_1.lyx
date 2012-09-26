@@ -5979,10 +5979,36 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1cm}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename figures/chapter 1/MLL locus/MLL_locus.eps
 	lyxscale 60
 	width 100text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{0.5cm}
+\end_layout
 
 \end_inset
 

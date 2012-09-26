@@ -540,19 +540,16 @@ reference "fig:BamHI-e4C-Libraries"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "7cm"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/chapter 3/bad e4C gel/BamHI e4C.eps
 	lyxscale 50
-	width 4cm
+	height 6cm
 
 \end_inset
 
@@ -600,21 +597,33 @@ Test e4C library prepared from human buffy coat cells using
 BamHI
 \emph default
  as the primary 3C restriction endonuclease.
- Lanes correspond to the test library, 4x the concentration of the same
- library loaded for extra visibility and a positive control mouse e4C library
- with 
+ 1 - Human 
 \emph on
-Myc
+BamHI
 \emph default
- bait prepared with 
+ e4C test library.
+ 2 - Human 
+\emph on
+BamHI
+\emph default
+ e4C library at 4x concentration.
+ 3 - Mouse 
 \emph on
 HindIII
 \emph default
-.
+ e4C library positive control prepared with a 
+\emph on
+Myc
+\emph default
+ bait.
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -693,7 +702,7 @@ BamHI
 BamHI
 \emph default
  digestion, I digested purified plasmid DNA after SDS treatment and a range
- of Triton-X100 concentrations (Fig 
+ of Triton-X100 concentrations (1.8% to 5% Triton-X100, Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:BamHI-TritonX100"
@@ -701,35 +710,6 @@ reference "fig:BamHI-TritonX100"
 \end_inset
 
  A).
- This showed that 
-\emph on
-BamHI
-\emph default
- digestion is inhibited if the SDS is not adequately sequestered.
- To test the effect of an increased Triton-X100 concentration in fixed nuclei
- I prepared human buffy coat cells as described in the e4C protocol (Section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:M&M-3C"
-
-\end_inset
-
-) and ran 
-\emph on
-BamHI
-\emph default
- digestions after treatment with SDS and two Triton-X100 concentrations
- (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BamHI-TritonX100"
-
-\end_inset
-
- B).
- The nuclei treated with the higher concentration of Triton-X100 showed
- a higher digestion efficiency, though still unsatisfactory for e4C.
 \end_layout
 
 \begin_layout Standard
@@ -787,40 +767,7 @@ BamHI
 \emph default
  digestion efficiency of purified plasmid DNA with increasing Triton-X100
  concentrations after SDS treatment.
- 
-\series bold
-(1)
-\series default
- - Plasmid DNA without SDS, Triton-X100 or 
-\emph on
-BamHI
-\emph default
- digestion.
- 
-\series bold
-(2)
-\series default
- - Plasmid DNA with SDS, Triton-X100 and 
-\emph on
-BamHI
-\emph default
- digestion.
- Triton-X100 concentrations range from 1.8% to 5%.
- 
-\series bold
-(3)
-\series default
- - Plasmid DNA with Triton-X100 and 
-\emph on
-BamHI
-\emph default
- digestion but no SDS treatment.
- Triton-X100 concentrations as in 2.
- 
-\series bold
-(3)
-\series default
- - Plasmid DNA with no SDS or Triton-X100, digested by 
+ P, S, T and B show presence of Plasmid, SDS, Triton-X100 and 
 \emph on
 BamHI
 \emph default
@@ -852,13 +799,41 @@ Mayra's lab book, page 70
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+This showed that 
+\emph on
+BamHI
+\emph default
+ digestion is inhibited if the SDS is not adequately sequestered.
+ To test the effect of an increased Triton-X100 concentration in fixed nuclei
+ I prepared human buffy coat cells as described in the e4C protocol (Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+) and ran 
+\emph on
+BamHI
+\emph default
+ digestions after treatment with SDS and two Triton-X100 concentrations
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:BamHI-TritonX100"
+
+\end_inset
+
+ B).
+ The nuclei treated with the higher concentration of Triton-X100 showed
+ a higher digestion efficiency, though still unsatisfactory for e4C.
 \end_layout
 
 \begin_layout Standard
@@ -866,13 +841,13 @@ Mayra's lab book, page 70
 placement !th
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 3/enzyme gels/enzyme gels.eps
 	lyxscale 30
-	width 90text%
+	width 100text%
 
 \end_inset
 
@@ -1148,6 +1123,13 @@ reference "fig:Gel-of-AseI-e4C"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5306,7 +5288,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 3/BCR e4C gels/e4C_germline_gel.eps
 	lyxscale 30
-	height 6cm
+	height 5cm
 
 \end_inset
 
@@ -5368,13 +5350,6 @@ BCR e4C libraries after first round PCR.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 To size select fragments of a length suitable for sequencing, the e4C library
  was purified using a gel extraction with a band from approximately 250
  bp to 700 bp (Fig 
@@ -5397,7 +5372,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 3/BCR e4C gels/e4C_gel_extraction.eps
 	lyxscale 30
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -5482,7 +5457,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 3/BCR e4C gels/BCR_e4C_gel.eps
 	lyxscale 30
-	height 7cm
+	height 5cm
 
 \end_inset
 
@@ -5735,7 +5710,10 @@ vs
 \emph default
 .
  2,000 - 40,000 duplicates).
- e4C libraries exhibit strong association in close 
+\end_layout
+
+\begin_layout Standard
+e4C libraries exhibit strong association in close 
 \emph on
 cis
 \emph default
@@ -5780,25 +5758,6 @@ reference "fig:Crossover-reads"
 \end_inset
 
  B).
- To rule out ruling errors in the 
-\emph on
-in-silico
-\emph default
- processing of the libraries I examined the original sequencing data before
- processing to confirm that the crossover sequences began with the 
-\emph on
-MLL
-\emph default
- barcode sequence.
- The 
-\emph on
-MLL 
-\emph default
-barcodes were present exactly as would be expected for an 
-\emph on
-MLL
-\emph default
- e4C library product.
 \end_layout
 
 \begin_layout Standard
@@ -5886,13 +5845,31 @@ BCR
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+To rule out ruling errors in the 
+\emph on
+in-silico
+\emph default
+ processing of the libraries I examined the original sequencing data before
+ processing to confirm that the crossover sequences began with the 
+\emph on
+MLL
+\emph default
+ barcode sequence.
+ The 
+\emph on
+MLL 
+\emph default
+barcodes were present exactly as would be expected for an 
+\emph on
+MLL
+\emph default
+ e4C library product.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6287,8 +6264,9 @@ The past ten years has seen a rapid adoption of 3C and 3C-derived techniques.
  The slew of protocols to investigate the composition of 3C libraries has
  allowed us to investigate differences in association between loci in an
  increasingly high throughput manner.
- The e4C sequencing technique discussed in this chapter represents another
- step towards the aim of understanding the associations made by genes.
+ The e4C sequencing technique discussed in this chapter represents a further
+ step towards the high throughput investigation of genome-wide chromatin
+ associations.
 \end_layout
 
 \begin_layout Standard
@@ -6316,7 +6294,10 @@ reference "sub:Library-complexity"
 \end_inset
 
 ).
- It is of note that a recent paper by Cowell 
+\end_layout
+
+\begin_layout Standard
+In a recent paper Cowell 
 \emph on
 et al.
 
@@ -6356,7 +6337,10 @@ key "Cowell2012"
 \end_inset
 
 .
- It is an interesting possibility that the 
+\end_layout
+
+\begin_layout Standard
+It is an interesting possibility that the 
 \emph on
 MLL
 \emph default
@@ -6402,12 +6386,11 @@ reference "sec:Multiplexing-e4C-libraries"
  complexity through the incorporation of a random barcode sequence to track
  individual ligation products and the multiplexing of e4C libraries prepared
  in parallel.
- Whilst this experiment resulted in captured sequences that suggested problems
+ While this experiment resulted in captured sequences that suggested problems
  in the library preparation, I believe that the concepts behind the attempt
  are sound.
- With the benefit of hindsight, I think that multiplexed e4C libraries prepared
- in parallel have the potential to greatly improve the standard of data
- produced by e4C.
+ Multiplexed e4C libraries prepared in parallel have the potential to greatly
+ improve the standard of data produced by e4C.
  It seems likely that the lack of homology in the random barcode sequence
  caused the problems in library preparation, using 
 \emph on

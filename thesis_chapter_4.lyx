@@ -89,16 +89,12 @@ name "chap:e4C-Analysis"
 
 \end_layout
 
-\begin_layout Section
-Introduction
-\end_layout
-
 \begin_layout Standard
 At the time that my first e4C libraries were sequenced, the method was novel.
  Unlike RNA-Seq and ChIP-Seq which are established enough to have accepted
  analysis pipelines, e4C data analysis had not been developed.
- As such I spent a great deal of time discovering how to analyse the data
- in a way that is accurate and informative.
+ As such I developed a method to analyse the data in a way that is accurate
+ and informative.
 \end_layout
 
 \begin_layout Section
@@ -118,7 +114,7 @@ All of the e4C libraries discussed were sequenced using the Illumina Genome
  Initial data processing up to the point of a SeqMonk library was done by
  the Babraham Bioinformatics team, primarily Dr.
  Felix Krueger and Dr.
- Simon Andrews, in discussion with myself.
+ Simon Andrews.
 \end_layout
 
 \begin_layout Subsection
@@ -172,7 +168,10 @@ RTA) once the first fluorescent base is added.
  spots will usually be different colours, and so discernible from each other.
  However, every sequence within e4C libraries begins with a barcode region
  followed by the restriction enzyme recognition sequence.
- This lack of diversity within the first bases of the sequence can cause
+\end_layout
+
+\begin_layout Standard
+This lack of diversity within the first bases of the sequence can cause
  problems for the cluster calling; merged clusters may be called as one
  which can be thrown out by the purity filter because of its size, or rejected
  later when the sequence diverges and it starts to exhibit mixed fluorescence
@@ -200,7 +199,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/bareback/bareback.eps
 	lyxscale 50
-	width 70col%
+	width 100col%
 
 \end_inset
 
@@ -241,7 +240,7 @@ key "Krueger2011"
 
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
@@ -303,8 +302,12 @@ reference "tab:bareback-stats"
 
 \end_inset
 
-), completely rescuing the ABL library with particularly dense clusters
- from which the standard SCS processing returned no reads.
+), completely rescuing the 
+\emph on
+ABL
+\emph default
+ library with particularly dense clusters from which the standard SCS processing
+ returned no reads.
 \end_layout
 
 \begin_layout Standard
@@ -829,7 +832,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 4/fastQC/fastQC.eps
 	lyxscale 30
-	width 90col%
+	width 100col%
 
 \end_inset
 
@@ -1206,9 +1209,48 @@ status open
 \begin_layout Plain Layout
 \align center
 
+\family sans
+\size normal
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{0.01cm}
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \family typewriter
-\size scriptsize
-bowtie -q --phred64-quals -p 8 -m 1 hg19 <input.fastq> <output.bowtie>
+\size small
+bowtie -q --phred64-quals -p 8 -m 1 hg19 <input> <output>
+\family sans
+\size normal
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+ 
+\backslash
+vspace*{0.3cm} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2371,6 +2413,99 @@ Discussion
 \begin_layout Standard
 In this chapter I discuss my development of new analysis methodologies to
  extract, normalise and quantify e4C sequencing association data.
+\end_layout
+
+\begin_layout Standard
+Because e4C sequencing is a novel technique under active development, custom
+ bioinformatics tools must be written to process the raw sequence reads
+ into a form that can be used for analysis.
+ Large sequencing datasets are prone to systematic bias which can affect
+ coverage 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cheung2011,Yaffe2011"
+
+\end_inset
+
+.
+ I describe a method to normalise variation across the genome in 
+\emph on
+AseI
+\emph default
+ cut site distribution.
+ GC content and
+\emph on
+ 
+\emph default
+3C fragment lengths have also been shown to bias 3C- derived datasets 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Yaffe2011"
+
+\end_inset
+
+ and I describe a method to create a normalised matrix of expected fragment
+ hit probabilities.
+ The use 
+\begin_inset Formula $\frac{observed}{expected}$
+\end_inset
+
+ enrichment is a common method for analysing association data 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009,Yaffe2011,Kalhor2011"
+
+\end_inset
+
+.
+ Developing methods to test these normalisation techniques 
+\emph on
+in-silico
+\emph default
+ is a valuable exercise and helps to identify any problems in their development.
+\end_layout
+
+\begin_layout Standard
+A good control experiment would be to sequence an 
+\begin_inset Quotes eld
+\end_inset
+
+input
+\begin_inset Quotes erd
+\end_inset
+
+ e4C library, created by removing formaldehyde cross-links prior to the
+ ligation step.
+ This control would include all biases introduced by the methodology and
+ could be used to normalise experimental libraries.
+ Unfortunately, such control libraries would need to be sequenced for each
+ different bait fragment to control for variations in primer efficiencies
+ and represents a significant expenditure.
+\end_layout
+
+\begin_layout Standard
+In depth understanding of the processes generating the data is needed for
+ proper analysis.
+ In this chapter I describe how I chose to analyse association by quantification
+ of the proportion of 
+\emph on
+AseI
+\emph default
+ fragments observed.
+ This avoids any bias caused by differences in the efficiency of amplification
+ between ligation products.
+ Such binarisation of association data in 
+\emph on
+trans
+\emph default
+ analysis has been used by other groups for this reason 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VandeWerken2012"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

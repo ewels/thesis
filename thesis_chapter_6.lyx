@@ -3071,68 +3071,12 @@ association with
 \emph on
 BCR
 \emph default
- is in chromosome 9 band q34 (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:BCR-association-9q34"
-
-\end_inset
-
-).
- I demonstrate that this association is also present in Hi-C and TCC libraries
- generated from GM06990 and GM12878 cells (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM06990-HiC-BCR-chr9"
-
-\end_inset
-
-, Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM12878-HiC-TCC-BCR-chr9"
-
-\end_inset
-
-) and that this association is reciprocal (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:ABL-e4C-trans"
-
-\end_inset
-
-, Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM06990-Hi-C-heatmap"
-
-\end_inset
-
-).
+ is in chromosome 9 band q34 I demonstrate that this association is also
+ present in Hi-C and TCC libraries generated from GM06990 and GM12878 cells
+ and that this association is reciprocal.
  I go on to discuss analysis to identify a candidate region driving the
- association and experiments designed to validate it using RT-qPCR 3C (Section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Validation-by-3C"
-
-\end_inset
-
-) and DNA-FISH (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:CD34-DNA-FISH-results"
-
-\end_inset
-
-, Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM12878-DNA-FISH-results"
-
-\end_inset
-
-).
+ association and experiments designed to validate it using RT-qPCR 3Cand
+ DNA-FISH.
 \end_layout
 
 \begin_layout Standard
@@ -3146,36 +3090,15 @@ BCR
 ABL1
 \emph default
 .
- This association is specific and significant (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:BCR-9q34-single-window-testing"
-
-\end_inset
-
-) and validated by observations in both RT-qPCR 3C (empirical gel band counting,
- Fig 
+ This association is specific and significant and validated by observations
+ in both RT-qPCR 3C (empirical gel band counting, Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:3C_qPCR_gel"
 
 \end_inset
 
-) and DNA-FISH (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM06990-HiC-BCR-chr9"
-
-\end_inset
-
-, Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GM12878-HiC-TCC-BCR-chr9"
-
-\end_inset
-
-).
+) and DNA-FISH.
  The data suggests that there may be specific loci within these regions
  driving the association and causing 
 \emph on

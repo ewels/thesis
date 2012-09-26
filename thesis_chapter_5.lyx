@@ -2698,7 +2698,7 @@ n.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -2712,67 +2712,24 @@ Discussion
 In this chapter I describe the initial analysis performed on all of my e4C
  association libraries.
  I detail the problems encountered with the high level of duplicate sequences
- (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Duplicate-reads"
-
-\end_inset
-
-) and low complexity (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Library-complexity"
-
-\end_inset
-
-) encountered in the libraries and the common features observed between
- association profiles in 
+ and low complexity encountered in the libraries and the common features
+ observed between association profiles in 
 \emph on
 cis
 \emph default
- (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:e4C-cis-association-profiles"
-
-\end_inset
-
-).
+.
  I discuss the specific associations seen within the e4C data in 
 \emph on
 cis
 \emph default
- (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:specific-cis-interactions"
-
-\end_inset
-
-) and demonstrate that the more complex and informative association libraries
+ and demonstrate that the more complex and informative association libraries
  correlate with active epigenetic marks, suggesting that these genes reside
- within an active genomic compartment (Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:e4C-Correlation-R-Scores"
-
-\end_inset
-
-).
+ within an active genomic compartment.
  I go on to describe specific associations seen in 
 \emph on
 trans
 \emph default
- beyond that expected by genome-wide profiles of active epigenetic marks
- (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:e4C-normalisation-H3K4me1"
-
-\end_inset
-
-).
+ beyond that expected by genome-wide profiles of active epigenetic marks.
 \end_layout
 
 \begin_layout Standard
@@ -2781,9 +2738,12 @@ My observations of
 cis
 \emph default
  profiles are similar to those seen in other association studies 
-\series bold
-[#REFS]
-\series default
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Simonis2006a,Lieberman-Aiden2009,Sanyal2012"
+
+\end_inset
+
 , demonstrating the universal principle that 
 \emph on
 cis
@@ -2807,9 +2767,12 @@ key "Lercher2002"
 The correlation of bait gene association with regions enriched for active
  epigenetic marks is supported by a number of studies published during the
  course of my PhD 
-\series bold
-[#REFS]
-\series default
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009,Kalhor2011,Yaffe2011,Simonis2006a"
+
+\end_inset
+
 .
  I discuss the implications of this finding in more detail in Chapter 
 \begin_inset CommandInset ref

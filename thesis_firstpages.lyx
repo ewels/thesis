@@ -219,6 +219,18 @@ Phil Ewels
 \end_layout
 
 \begin_layout Chapter*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2cm}
+\end_layout
+
+\end_inset
+
 Summary
 \end_layout
 
@@ -334,6 +346,18 @@ singlespacing
 \end_layout
 
 \begin_layout Chapter*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2cm}
+\end_layout
+
+\end_inset
+
 Acknowledgements
 \end_layout
 
