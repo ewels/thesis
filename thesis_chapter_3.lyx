@@ -247,9 +247,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename figures/chapter 3/3C protocol/3C protocol.ai
+	filename figures/chapter 3/3C protocol/3C protocol.eps
 	lyxscale 50
 	width 100col%
 
@@ -274,7 +273,7 @@ name "fig:3C_protocol"
 \series default
 
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Overview of the 3C methodology
@@ -350,6 +349,68 @@ reference "fig:e4C_protocol"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/4C protocol/4C protocol.eps
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:e4C_protocol"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Overview of the e4C methodology
+\end_layout
+
+\end_inset
+
+
+\series bold
+Overview of the e4C methodology.
+
+\series default
+ R' denotes the recognition site for the second four-cutter restriction
+ endonuclease.
+ BC denotes the barcode region used to confirm the identity of the bait
+ sequence and identify sequences when multiplexing libraries for sequencing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 To use the e4C library with the Illumina Genome Analyser IIx (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -401,68 +462,6 @@ reference "chap:e4C-Analysis"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/chapter 3/4C protocol/4C protocol.eps
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:e4C_protocol"
-
-\end_inset
-
-
-\series default
-
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Overview of the e4C methodology
-\end_layout
-
-\end_inset
-
-
-\series bold
-Overview of the e4C methodology.
-
-\series default
- R' denotes the recognition site for the second four-cutter restriction
- endonuclease.
- BC denotes the barcode region used to confirm the identity of the bait
- sequence and identify sequences when multiplexing libraries for sequencing.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -940,8 +939,6 @@ reference "sec:M&M-3C"
 \end_inset
 
 .
- All samples shown were run on 1% gels with a Fermentas MassRuler™ DNA Ladder
- Mix; 80 - 10,000 bp.
 \end_layout
 
 \end_inset
@@ -1000,15 +997,12 @@ reference "fig:Restriction-Enzyme-Tests"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 1cm
-width "40col%"
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/chapter 3/good e4C gel/AseI_e4C.eps
 	lyxscale 30
@@ -1156,13 +1150,6 @@ reference "fig:Gel-of-AseI-e4C"
 ).
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Primer Design
 \end_layout
@@ -1238,7 +1225,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 3/custom_sequencing_primer/custom_sequencing_primer.eps
-	width 60text%
+	lyxscale 50
+	width 80text%
 
 \end_inset
 
@@ -4716,7 +4704,11 @@ HindIII
 \end_layout
 
 \begin_layout Section
-Walkthrough of a successful e4C library preparation
+
+\emph on
+BCR
+\emph default
+ e4C library preparation
 \end_layout
 
 \begin_layout Standard

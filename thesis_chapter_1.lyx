@@ -3753,6 +3753,57 @@ CTCF
 \end_layout
 
 \begin_layout Standard
+CTCF (CCCTC-binding factor) is a highly conserved DNA-binding protein with
+ eleven zinc finger domains which binds the consensus sequence CCCTC as
+ well as a range of variant sequences using combinations of different zinc
+ fingers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Filippova1996"
+
+\end_inset
+
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ctcf-structure"
+
+\end_inset
+
+, reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Ohlsson2001"
+
+\end_inset
+
+
+\emph on
+)
+\emph default
+.
+ The core sequence has extremely high sequence conservation between mouse,
+ chicken and human and mice homozygous for the gene knockout exhibit early
+ embryonic lethality 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Splinter2006"
+
+\end_inset
+
+.
+ The protein is expressed ubiquitously and misregulation by over-expression
+ or RNAi knockdown have a wide range of effects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Torrano2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Wrap figure
 lines 0
 placement o
@@ -3817,64 +3868,9 @@ key "Ohlsson2001"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-CTCF (CCCTC-binding factor) is a highly conserved DNA-binding protein with
- eleven zinc finger domains which binds the consensus sequence CCCTC as
- well as a range of variant sequences using combinations of different zinc
- fingers 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Filippova1996"
-
-\end_inset
-
- (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:ctcf-structure"
-
-\end_inset
-
-, reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Ohlsson2001"
-
-\end_inset
-
-
-\emph on
-)
-\emph default
-.
- The core sequence has extremely high sequence conservation between mouse,
- chicken and human and mice homozygous for the gene knockout exhibit early
- embryonic lethality 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Splinter2006"
-
-\end_inset
-
-.
- The protein is expressed ubiquitously and misregulation by over-expression
- or RNAi knockdown have a wide range of effects 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Torrano2005"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -6117,11 +6113,58 @@ topo II sites in translocation partner genes?
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Effect of nuclear organisation on translocation formation 
+Effect of nuclear organisation on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+translocation formation 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Effect-of-nuclear-organisation-on-translocation-formation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
 
 \end_inset
 
@@ -6323,18 +6366,46 @@ key "Kuroda2004"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Wrap figure
-lines 0
-placement o
-overhang 0in
-width "45text%"
+In 2006, Branco and Pombo published a study where they developed a new technique
+ known as cryo-FISH to enhance the resolution of chromosome territory detection
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Branco2006"
+
+\end_inset
+
+.
+ This technique had sufficient resolution to study the degree of intermingling
+ between chromosome territories and they found that the degree of intermingling
+ between chromosome pairs correlated strongly with their propensity to form
+ translocations when subjected to radiation (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pombo-intermingling-translocations"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Branco2006"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename figures/chapter 1/branco intermingling translocations/branco_intermingling_translocations.eps
-	width 40text%
+	width 50text%
 
 \end_inset
 
@@ -6381,40 +6452,13 @@ key "Branco2006"
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-In 2006, Branco and Pombo published a study where they developed a new technique
- known as cryo-FISH to enhance the resolution of chromosome territory detection
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Branco2006"
-
 \end_inset
 
-.
- This technique had sufficient resolution to study the degree of intermingling
- between chromosome territories and they found that the degree of intermingling
- between chromosome pairs correlated strongly with their propensity to form
- translocations when subjected to radiation (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:pombo-intermingling-translocations"
 
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Branco2006"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Standard

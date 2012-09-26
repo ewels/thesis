@@ -1208,8 +1208,7 @@ status open
 
 \family typewriter
 \size scriptsize
-bowtie -q --phred64-quals -p 8 -m 1 hg19 <trimmed_reads.txt> <output_alignment.bow
-tie>
+bowtie -q --phred64-quals -p 8 -m 1 hg19 <input.fastq> <output.bowtie>
 \end_layout
 
 \end_inset

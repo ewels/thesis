@@ -85,8 +85,9 @@
 % code highlighting
 \usepackage{listings}
 \usepackage{color}
+\usepackage{xcolor}
 \lstset{ %
-language=C++,                % choose the language of the code
+language=Perl,                % choose the language of the code
 basicstyle={\scriptsize,\ttfamily},       % the size of the fonts that are used for the code
 numbers=left,                   % where to put the line-numbers
 numberstyle=\tiny,      % the size of the fonts that are used for the line-numbers
