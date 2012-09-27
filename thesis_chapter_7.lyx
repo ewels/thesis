@@ -561,7 +561,7 @@ key "Hakim2012"
 et al.
 
 \emph default
- published a study using similar methodologies that came to the the opposite
+ published a study using similar methodologies that came to the opposite
  conclusion; that off target AID activity does correlate with genomic associatio
 n 
 \begin_inset CommandInset citation
@@ -717,129 +717,6 @@ With the increasing capability of molecular biology techniques able to probe
  nuclear structure, we will soon be able to investigate how the activity
  of other genes can affect proto oncogenes on a more general scale.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-e4C
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-technical aspects, review low coverage and differences between baits.
- Talk about MLL paper where they couldn't do 3C.
- What I'd do differently now (Multiplexing similar libraries with barcodes
- (not wobble))
-\end_layout
-
-\begin_layout Itemize
-analysis aspects, talk about de Laat 4C analysis paper and Tanay and how
- what I've done compares to all of this
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-genes in active compartments
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-review evidence in thesis
-\end_layout
-
-\begin_layout Itemize
-talk at length about other studies finding the same thing - HiC and TCC
- papers especially.
-\end_layout
-
-\begin_layout Itemize
-implications of genomic compartmentalisation in a biological context
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-specific interaction between BCR and 9q34
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-review evidence
-\end_layout
-
-\begin_layout Itemize
-explain how this fits into (but is different to) previous studies with BCR
- and ABL
-\end_layout
-
-\begin_layout Itemize
-explain how this sites alongside other similar studies - MLL FISH paper
- for example
-\end_layout
-
-\begin_layout Itemize
-talk about implications of specific interactions and how this may help cells,
- evolve
-\end_layout
-
-\begin_layout Itemize
-talk about implications in cancer and formation of translocations.
- future medicines?
-\end_layout
-
-\end_deeper
-\begin_layout Section
-Future Directions
-\end_layout
-
-\begin_layout Itemize
-e4C
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-how e4C / 4C is still useful today despite HiC - numbers
-\end_layout
-
-\begin_layout Itemize
-How the shortcomings of HiC can be overcome (enrichment)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-genomic organisation
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-big picture stuff.
- why it's important to understand genomic organisation
-\end_layout
-
-\begin_layout Itemize
-How HiC can be used in new ways - comparative interactions, tissues, diseases,
- timescales, cell cycle, development, species conservation, drug effects,
- disease diagnosis, single cells vs populations
-\end_layout
-
-\end_deeper
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

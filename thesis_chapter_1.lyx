@@ -146,7 +146,7 @@ key "Pederson2011"
 \end_layout
 
 \begin_layout Standard
-A large number of other protein subcompartments exist, many whose function
+A large number of other protein subcompartments exist, some whose function
  have not been fully characterised.
  Many have been associated with nuclear processes such as silencing (PcG
  bodies) and transcription (transcription factories).
@@ -159,7 +159,7 @@ key "Osborne2008"
 \end_inset
 
 ).
- Transcription factories are discussed in detail below, in Section 
+ Transcription factories are discussed in detail in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Transcription-factories"
@@ -2125,10 +2125,61 @@ key "Mehta2010"
  Such rapid movements on such a large scale come at a large energy cost
  to the cell and indicate the importance of chromosome positioning in nuclear
  function.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Chromatin decondensation and the inter-chromosomal space
+Chromatin decondensation and the
+ 
+\lang british
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+inter-chromosomal space
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2526,11 +2577,9 @@ key "Eskiw2008a"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Figure from Chris' ESI paper here?
@@ -5282,11 +5331,9 @@ key "Hehlmann2007"
 \end_inset
 
 , making it one of the success stories of cancer research.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Write more introduction to CML here.
@@ -5360,11 +5407,9 @@ BCR
 \emph default
  gene, so named because it was found at the Breakpoint Cluster Region of
  chromosome 22.
-\end_layout
-
-\begin_layout Standard
+ 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Occurance stats
@@ -5490,7 +5535,7 @@ key "Jemal2009"
 .
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Better stats? UK?
@@ -6249,7 +6294,7 @@ reference "fig:MLL-breakpoint-cluster-region"
 ).
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 topo II sites in translocation partner genes?

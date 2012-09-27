@@ -784,47 +784,6 @@ reference "fig:GM06990-Hi-C-heatmap"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Interestingly, the strong association just centromeric of 
-\emph on
-BCR
-\emph default
- and 
-\emph on
-ABL
-\emph default
- is for windows including the immunoglobulin lambda (
-\emph on
-IGL
-\emph default
-) genes on chromosome 22, a region that displays a strong association with
- 
-\emph on
-BCR
-\emph default
- in the e4C 
-\emph on
-cis
-\emph default
- association data (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:specific-cis-interactions"
-
-\end_inset
-
-).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false

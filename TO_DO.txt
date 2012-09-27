@@ -1,16 +1,7 @@
 ============   TO DO   =============
 
-  === MAIN CHECKLIST ===
-  Print, read and tidy / re-write chapter 3
-
-
   === GENERAL TIDYING === (not critical)
   Go through checking references to near cis being 5 Mbp
-  Put in single spacing wherever a heading breaks two lines
-  Check all figures for stupid placements
-  Check all pages for text over page numbers
-* Check all LyX files for outstanding yellow notes
-  Do test print of some pages with gels on nice printer & paper
 
   
   === BEFORE SUBMISSION ===

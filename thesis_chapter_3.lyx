@@ -78,11 +78,58 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+singlespacing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
-Developing an assay for gene association 
+Developing an assay for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+gene association 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap4-e4C-dev"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+doublespacing
+\end_layout
 
 \end_inset
 
@@ -838,96 +885,6 @@ reference "fig:BamHI-TritonX100"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement !th
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/chapter 3/enzyme gels/enzyme gels.eps
-	lyxscale 30
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\series bold
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Restriction-Enzyme-Tests"
-
-\end_inset
-
-
-\series default
-
-\begin_inset Argument
-status collapsed
-
-\begin_layout Plain Layout
-Restriction Enzyme Tests
-\end_layout
-
-\end_inset
-
-
-\series bold
-Restriction Enzyme Tests.
-
-\series default
- 
-\emph on
-BamHI
-\emph default
- digestion efficiency of fixed human buffy coat nuclei with increasing Triton-X1
-00 concentrations after SDS treatment.
- The lower smear at the higher Triton-X100 concentration indicates an increased
- digestion efficiency.
- 
-\series bold
-(C)
-\series default
- Digestion tests with six enzymes in four different conditions.
- Cells were fixed in either 1% or 2% formaldehyde as described in Materials
- and Methods: 3C (Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:M&M-3C"
-
-\end_inset
-
-), with or without the pre-digestion SDS / Triton-X100 steps.
- Samples were treated with proteinase K, RNase A and cleaned with a phenol
- / chloroform extraction and precipitation, as described in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:M&M-3C"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 To compare the digestion efficiencies of 
 \emph on
 BamHI
@@ -982,7 +939,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 3/good e4C gel/AseI_e4C.eps
 	lyxscale 30
-	width 30text%
+	height 6cm
 
 \end_inset
 
@@ -1124,6 +1081,96 @@ reference "fig:Gel-of-AseI-e4C"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !th
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/enzyme gels/enzyme gels.eps
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Restriction-Enzyme-Tests"
+
+\end_inset
+
+
+\series default
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Restriction Enzyme Tests
+\end_layout
+
+\end_inset
+
+
+\series bold
+Restriction Enzyme Tests.
+
+\series default
+ 
+\emph on
+BamHI
+\emph default
+ digestion efficiency of fixed human buffy coat nuclei with increasing Triton-X1
+00 concentrations after SDS treatment.
+ The lower smear at the higher Triton-X100 concentration indicates an increased
+ digestion efficiency.
+ 
+\series bold
+(C)
+\series default
+ Digestion tests with six enzymes in four different conditions.
+ Cells were fixed in either 1% or 2% formaldehyde as described in Materials
+ and Methods: 3C (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+), with or without the pre-digestion SDS / Triton-X100 steps.
+ Samples were treated with proteinase K, RNase A and cleaned with a phenol
+ / chloroform extraction and precipitation, as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:M&M-3C"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4345,9 +4392,7 @@ CD34
 
  cells were not treated with DNaseI due to low cell numbers and limited
  sample, hence genomic band contamination.
-\end_layout
-
-\begin_layout Plain Layout
+ 
 \begin_inset Note Note
 status collapsed
 
@@ -5527,6 +5572,7 @@ Completed BCR e4C library.
 \series default
 1 = BCR e4C library.
  2 = Second round PCR no template control after SPRI cleanup.
+ PCR control lanes removed for clarity.
 \end_layout
 
 \end_inset
@@ -5887,6 +5933,13 @@ BCR
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 To rule out ruling errors in the 
 \emph on
 in-silico
@@ -6193,7 +6246,7 @@ NlaIII
 
 \end_inset
 
- 3C material generated from a second patient sample.
+ 3C material generated from a second patient.
 \end_layout
 
 \begin_layout Standard
@@ -6301,8 +6354,7 @@ The past ten years has seen a rapid adoption of 3C and 3C-derived techniques.
  allowed us to investigate differences in association between loci in an
  increasingly high throughput manner.
  The e4C sequencing technique discussed in this chapter represents a further
- step towards the high throughput investigation of genome-wide chromatin
- associations.
+ step towards the high throughput investigation of genome-wide associations.
 \end_layout
 
 \begin_layout Standard
