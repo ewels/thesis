@@ -616,6 +616,7 @@ HindIII
 Myc
 \emph default
  bait.
+ Middle control lanes removed for clarity.
 \end_layout
 
 \end_inset
@@ -766,7 +767,7 @@ BamHI
 BamHI
 \emph default
  digestion efficiency of purified plasmid DNA with increasing Triton-X100
- concentrations after SDS treatment.
+ concentrations (1.8% to 5%) after SDS treatment.
  P, S, T and B show presence of Plasmid, SDS, Triton-X100 and 
 \emph on
 BamHI
@@ -4396,8 +4397,8 @@ key "O'Neill2006,Ficz2011"
 \end_inset
 
 .
- This is achieved by spiking in cells or DNA from another organism in with
- the sample, giving larger quantities of DNA to work with.
+ This is achieved by spiking in cells or DNA from another organism, giving
+ larger quantities of DNA with which to work.
  Loss through non-specific binding to plastic such as tubes and pipette
  tips has less of an effect on the sample DNA and steps such as precipitations
  are aided by having larger pellets to work with.

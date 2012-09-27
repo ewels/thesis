@@ -96,6 +96,80 @@ on and maintenance of the DNA template and regulation its transcriptional
 \end_layout
 
 \begin_layout Section
+Nuclear compartmentalisation
+\end_layout
+
+\begin_layout Standard
+Because the nuclear interior is devoid of membrane bound structures its
+ organisation is defined by a dynamic equilibrium - a sum product of the
+ many processes and requirements involved in nuclear biology.
+ The organisation of DNA within the nucleus is tied to the organisation
+ of the nuclear proteome and together they control all nuclear processes.
+ A number of nuclear proteins are found in aggregates typically referred
+ to as subnuclear compartments.
+ The clustering of proteins into compartments increases the efficiency of
+ biochemical processes and is predicted by the principle of molecular crowding
+ (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Cook2002"
+
+\end_inset
+
+) and is a key feature in the organisation of the nucleus.
+\end_layout
+
+\begin_layout Standard
+The largest subcompartment found in the mammalian nucleus is the nucleolus.
+ The only subcompartment to be visible with light microscopy alone, the
+ nucleolus is formed by the clustering of ribosomal RNA gene clusters known
+ as Nucleolar Organising Regions (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NOR"
+description "Nucleolar organising region"
+
+\end_inset
+
+NORs) and facilitates efficient transcription of these genes by RNA polymerase
+ I.
+ The colocalisation of the template genes with the transcriptional machinery
+ allows rapid and efficient cycling of the polymerases as well as the assembly
+ with ribosomal proteins (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Pederson2011"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+A large number of other protein subcompartments exist, many whose function
+ have not been fully characterised.
+ Many have been associated with nuclear processes such as silencing (PcG
+ bodies) and transcription (transcription factories).
+ The organisation of the genome is directed in part to access these subcompartme
+nts (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Osborne2008"
+
+\end_inset
+
+).
+ Transcription factories are discussed in detail below, in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Transcription-factories"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 Chromatin
 \end_layout
 
@@ -1386,7 +1460,113 @@ key "Adam2001"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Higher order chromatin structure
+\end_layout
+
+\begin_layout Standard
+One of the key functions of histones are to package DNA into a compact form.
+ The phosphate backbone of DNA carries a strong negative charge, negated
+ by positively charged residues within the histone core particle.
+ In its least compact configuration, chromatin forms a 10
+\begin_inset space ~
+\end_inset
+
+nm fibre known as 
+\begin_inset Quotes eld
+\end_inset
+
+beads on a string
+\begin_inset Quotes erd
+\end_inset
+
+.
+ At the other extreme chromatin forms mitotic chromosomes, condensing DNA
+ 10- to 20,000 fold 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Woodcock2010"
+
+\end_inset
+
+.
+ Despite a great deal of research on forms of chromatin that exist between
+ these two structures, definitive packing structures have not been forthcoming,
+ primarily due to problems resolving individual chromatin strands within
+ the nucleus by microscopy.
+ Some evidence shows that a 30
+\begin_inset space ~
+\end_inset
+
+nm fibre may exist, though the packing of nucleosomes in this structure
+ is still a topic of debate (reviewed in 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Tremethick2007a"
+
+\end_inset
+
+).
+ A recent paper by Fussner 
+\emph on
+et al.
+
+\emph default
+ suggests that all chromatin within 
+\emph on
+in-vivo
+\emph default
+ mouse nuclei is present as 10
+\begin_inset space ~
+\end_inset
+
+nm fibres and that the 30
+\begin_inset space ~
+\end_inset
+
+nm is not a common form of chromatin 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fussner2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Recent investigations of genomic organisation using genome-wide association
+ techniques have investigated the higher order packing of interphase chromatin
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009,Kalhor2011"
+
+\end_inset
+
+.
+ Modelling approaches using this association data suggests that chromatin
+ behaves like a fractal globule; unentangled chromatin packed upon itself
+ in series of ever increasing 
+\begin_inset Quotes eld
+\end_inset
+
+globules
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Such a structure satisfies the need for chromatin to pack and unpack for
+ mitosis without forming knots and is highly space efficient 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lieberman-Aiden2009"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1515,6 +1695,22 @@ key "Versteeg2003"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+On a gross scale, chromosomes are formed by two arms denoted p and q, connected
+ by a centromere and capped by telomeres.
+ Centromeres and telomeres contain primarily repetitive sequence and are
+ important for the structural maintenance of chromosomes.
+ Chromosomes 13, 14, 15, 21, 22 and Y are 
+\begin_inset Quotes eld
+\end_inset
+
+acrocentric
+\begin_inset Quotes erd
+\end_inset
+
+: the p arms are so short that they are difficult to observe.
 \end_layout
 
 \begin_layout Standard
@@ -1926,7 +2122,9 @@ key "Mehta2010"
 \end_inset
 
 .
- 
+ Such rapid movements on such a large scale come at a large energy cost
+ to the cell and indicate the importance of chromosome positioning in nuclear
+ function.
 \end_layout
 
 \begin_layout Subsection
@@ -2031,7 +2229,7 @@ key "Osborne2004"
 chromatin
 \emph default
  domain model, whereby chromosomes are invaginated with channels and subdivided
- into ~1 Mbp domains of chromatin 
+ into domains of chromatin approximately one megabase in size 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cremer2001"
@@ -2125,29 +2323,21 @@ key "Lieberman-Aiden2009"
 \end_layout
 
 \begin_layout Section
-Nuclear compartmentalisation
-\end_layout
-
-\begin_layout Standard
-Because the nuclear interior is devoid of membrane bound structures its
- organisation is defined by a dynamic equilibrium - a sum product of the
- many processes and requirements involved in nuclear biology.
- In addition to the non-random positioning of chromosomes, a number of proteins
- are also found in aggregates typically referred to as subnuclear compartments.
- The clustering of proteins into compartments increases the efficiency of
- biochemical processes and is predicted by the principle of molecular crowding
- (reviewed in 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Cook2002"
+Transcription factories 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Transcription-factories"
 
 \end_inset
 
-) and is a key feature in the organisation of the nucleus.
+
 \end_layout
 
-\begin_layout Subsection
-Transcription factories
+\begin_layout Standard
+To fully understand the structure and function of the genome, we must see
+ it in the context of the nuclear proteome.
+ Proteinaceous subcompartments are found within the nucleus and aid the
+ control of chromatin dynamics and efficient functioning of related processes.
 \end_layout
 
 \begin_layout Standard
@@ -2496,7 +2686,7 @@ key "Sutherland2009"
 ).
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Specialised transcription factories
 \end_layout
 
@@ -2733,7 +2923,7 @@ Klf1 specialised transcription factories.
 
 \series default
  (A) Immunofluorescence showing Klf1 (red) overlapping with a subset of
- RNA Polymerase II transcription factories (green).
+ RNA polymerase II transcription factories (green).
  (B) RNA immuno-FISH showing transcribing 
 \emph on
 Hbb
@@ -3043,7 +3233,7 @@ key "DeLaat2003"
 \end_inset
 
 , describing a system where loops of chromatin containing elements capable
- of controlling the expression of genes are held in close three-dimensional
+ of controlling the expression of genes are found in close three-dimensional
  space to the genes that they control.
  Other gene clusters have also been shown to behave in a similar manner,
  notably the T
@@ -3406,7 +3596,7 @@ et al\SpecialChar \@.
  suggested that this enhancer-gene interaction was the mechanism responsible
  for the expression of that gene.
  However, it should be noted that deletion of this enhancer had little effect
- on the usage of olfactory genes outside of it's cluster 
+ on the usage of olfactory genes outside of its cluster 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Fuss2007"
@@ -3561,7 +3751,7 @@ key "Kimura1999"
 et al.
  
 \emph default
-demonstrating the stability of nascent transcripts and Polymerase in the
+demonstrating the stability of nascent transcripts and polymerase in the
  nucleus 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3633,7 +3823,11 @@ demonstrated the potential of RNA polymerase to pull chromatin transcripts
 in vivo
 \emph default
  by using 3C to measure the change in association between regions of DNA
- after activation of the TNF
+ after activation of the 
+\emph on
+TNF
+\emph default
+
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -3979,7 +4173,7 @@ et al.
 \emph default
  determined a large number of conserved CTCF binding sites using computational
  analysis and derived a dataset containing divergent pairs of genes with
- an without a CTCF separating them 
+ and without a CTCF separating them 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Xie2007"
@@ -4034,18 +4228,11 @@ key "Sanyal2012"
 
 \begin_layout Standard
 The development of the ChIA-PET technique has allowed an in depth interrogation
- of all CTCF bound chromatin interactions in mouse embryonic stem (
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "ES cell"
-description "Embryonic stem cell"
-
-\end_inset
-
-ES) cells 
+ of chromatin interactions associated with specific proteins by incorporating
+ a ChIP step with a 3C-derived assay 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Handoko2011"
+key "Fullwood2009a"
 
 \end_inset
 
@@ -4055,9 +4242,25 @@ key "Handoko2011"
 et al.
 
 \emph default
- demonstrated with this technique that CTCF acts in multiple roles with
- different sizes of loops.
- Correlative analysis using data about surrounding histone modifications
+ used ChIA-PET to investigate CTCF bound chromatin interactions in mouse
+ embryonic stem (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ES cell"
+description "Embryonic stem cell"
+
+\end_inset
+
+ES) cells and suggested that CTCF acts in multiple roles with different
+ sizes of loops 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Handoko2011"
+
+\end_inset
+
+.
+ Correlative analysis using data describing surrounding histone modifications
  allowed the authors to determine five distinct classes of CTCF-derived
  loops: active domains enriched for H3K4me1, H3K4me2 and H3K36me3; repressive
  domains enriched for H3K9, H3K20 and H3K27 methylation; putative enhancer-promo
@@ -4197,8 +4400,8 @@ key "Rubio2008"
 \end_layout
 
 \begin_layout Standard
-In these and investigations, cohesin has been implicated at many if not
- most of the loci described in the above sections.
+In these investigations, cohesin has been implicated at many if not most
+ of the loci described in the above sections.
  Stedman 
 \emph on
 et al.
@@ -4663,83 +4866,6 @@ When seen as a whole, many of the models described above are not mutually
  different types of contact.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Section
-The annotated genome 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:The-annotated-genome"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Talk about how wonderful systems biology is
-\end_layout
-
-\begin_layout Itemize
-Integration of datasets - ChIP Seq is two dimensional and needs interaction
- data to be understood
-\end_layout
-
-\begin_layout Itemize
-Correlation between different marks gives the full picture
-\end_layout
-
-\begin_layout Itemize
-Genome wide studies paving the way for a different type of analysis
-\end_layout
-
-\begin_layout Itemize
-HiC Domains and loops
-\end_layout
-
-\begin_layout Itemize
-Talk about the systems biology of networks
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-This is where I extoll the virtues of Bertie's work looking at transcription
- factor networks
-\end_layout
-
-\begin_layout Itemize
-Use 
-\emph on
-cis 
-\emph default
-regulatory modules as an example? Then shoot down with Dekker 5C paper?
- Check Bertie doesn't love them first (I think he might)
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-The ENCODE project
-\end_layout
-
-\begin_layout Itemize
-Description of ENCODE project
-\end_layout
-
-\begin_layout Itemize
-Couple of key findings
-\end_layout
-
-\begin_layout Itemize
-Mention value of ENCODE datasets beyond initial publications
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Chromosomal translocations
 \end_layout
@@ -5081,7 +5207,14 @@ BLM
 \end_layout
 
 \begin_layout Section
-Leukaemia
+Leukaemia 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Leukaemia"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5752,15 +5885,15 @@ key "Huret2001"
 \end_inset
 
 .
- There are 87 documented 
+ There are over 100 documented 
 \emph on
 MLL
 \emph default
- translocation partners of which 51 have been characterised at the molecular
- level 
+ translocation partners of which at least 64 have been characterised at
+ the molecular level 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Meyer2006"
+key "Meyer2009"
 
 \end_inset
 
@@ -6578,6 +6711,32 @@ key "Cowell2012"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Transcription represents a high risk process for the integrity of DNA; torsional
+ stress created by the rotation of the double helix as it is processed through
+ the static RNA polymerase II holoenzyme and protective nucleosomes are
+ temporarily stripped 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nelson1999,Sathyanarayana1999"
+
+\end_inset
+
+.
+ Protein factors involved in repair have been found to colocalise with transcrip
+tion factories, such as the Ku protein, involved in stabilising DSBs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mo2002"
+
+\end_inset
+
+.
+ This suggests that transcription factories may also aid the efficient repair
+ of DSBs created during transcription, but also that the nuclear organisation
+ of genes as they are transcribed is of particular importance.
 \end_layout
 
 \begin_layout Section

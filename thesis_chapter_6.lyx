@@ -1899,7 +1899,14 @@ SPTAN1
 QSOX2
 \emph default
 , which are found at the apex of the centromeric and telomeric triplet peaks
- of association in chromosome 9.
+ of association in chromosome 9 (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:DNA-FISH-probe-locations"
+
+\end_inset
+
+).
  For use as a negative control in the DNA-FISH I also used 
 \emph on
 HLA-DMA
@@ -1913,13 +1920,6 @@ BCR
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:DNA-FISH-BACs"
-
-\end_inset
-
-, Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:DNA-FISH-probe-locations"
 
 \end_inset
 
@@ -2352,11 +2352,11 @@ DNA-FISH analysis
 
 \begin_layout Standard
 Slides were analysed with the MetaSystems MetaCyte microscope and analysis
- software and a classifier set up able to identify DNA-FISH spots accurately.
- I exported data from the MetaCyte workstation with the three-dimensional
- co-ordinates of each spot identified within each nuclei.
+ software with a classifier set up able to identify DNA-FISH signals accurately.
+ I exported data from the MetaCyte workstation with three-dimensional co-ordinat
+es of each signal.
  Using a perl script written by Dr Felix Krueger in the Babraham Bioinformatics
- department I then calculated the distance between each pair of spots.
+ department I then calculated the distance between each pair of signals.
  I filtered this data in Microsoft Excel to give a list of signals corresponding
  to the shortest pair distance between each 
 \emph on
@@ -2366,26 +2366,6 @@ BCR
  I imported this data into GraphPad Prism for statistical analysis, using
  a one-way ANOVA test with a Tukey's range test to calculate significance
  and create box plots.
- The exception to this method was for the CD34
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-+
-\end_layout
-
-\end_inset
-
- Run 2 which only had two samples, where I used 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-WHAT DID I USE?
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection
@@ -2463,7 +2443,7 @@ SMC2
 p
 \emph default
  < 0.001), validating the observation of increased association over chromosome
- 9 q34 seen in the e4C (block colour ten megabase window analysis, Fig 
+ 9 q34 seen in the e4C (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:DNA-FISH-probe-locations"
@@ -2499,14 +2479,12 @@ reference "fig:CD34-DNA-FISH-results"
 \end_inset
 
 ).
- This gene was chosen as a control due to it's association with 
+ This gene was chosen as a control because the e4C data suggested that its
+ association with 
 \emph on
 BCR
 \emph default
- in the e4C, so this result is not entirely unexpected.
- The reason for including it as a control was because the e4C data suggested
- that this association was no stronger than would be expected by the activity
- of the region.
+ was no stronger than would be expected by the activity of the region.
  The expression of 
 \emph on
 HLA-DMA
@@ -2682,11 +2660,15 @@ ABL1
 QSOX2.
  
 \emph default
-The association with 
+The 
+\emph on
+BCR
+\emph default
+ signals were found slightly closer to 
 \emph on
 QSOX2
 \emph default
- was slightly tighter than with 
+ signals than 
 \emph on
 ABL1
 \emph default
@@ -2705,8 +2687,8 @@ DNA-FISH in GM12878 cells
 \end_layout
 
 \begin_layout Standard
-I performed two replicate experiments with GM12878 cells using two batches
- of slides prepared from independent cell collections.
+I performed two replicate experiments with GM12878 cells using independent
+ cell collections.
  In the first experiment I tested 
 \emph on
 BCR
@@ -2771,6 +2753,10 @@ Surf
 \emph on
 HLA-DMA
 \emph default
+ than with the negative control 
+\emph on
+SMC2
+\emph default
  (
 \emph on
 p
@@ -2782,8 +2768,8 @@ reference "fig:GM12878-DNA-FISH-results"
 
 \end_inset
 
-)..
- One difference was that the association of 
+).
+ In this experiment, the association of 
 \emph on
 BCR
 \emph default
@@ -2819,7 +2805,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 6/DNA-FISH - GM12878/DNA-FISH_GM12878.eps
 	lyxscale 30
-	width 100text%
+	width 90text%
 
 \end_inset
 
@@ -2895,7 +2881,7 @@ th
 
  percentiles.
  Grey numbers below x axis denote number of signals counted.
-  
+ 
 \series bold
 (B)
 \series default
@@ -2908,13 +2894,74 @@ th
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+With the second batch of slides I repeated probes 
+\emph on
+SMC2
+\emph default
+, 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf
+\emph default
+ and included 
+\emph on
+SPTAN1
+\emph default
+ and 
+\emph on
+QSOX2
+\emph default
+.
+ All test probes were closer to 
+\emph on
+BCR
+\emph default
+ than the negative control 
+\emph on
+SMC2
+\emph default
+.
+ 
+\emph on
+ABL1
+\emph default
+ and 
+\emph on
+Surf 
+\emph default
+displayed the closes association, with median separations ~
+\begin_inset space ~
+\end_inset
+
+0.5
+\begin_inset space ~
+\end_inset
+
+μm less than 
+\emph on
+SPTAN1
+\emph default
+ and 
+\emph on
+QSOX2
+\emph default
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GM12878-DNA-FISH-results"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section

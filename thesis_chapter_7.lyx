@@ -493,6 +493,8 @@ reference "sec:Effect-of-nuclear-organisation-on-translocation-formation"
 \end_inset
 
 ).
+ Such observations give greater weight to the need to understand the organisatio
+n of the human genome in health and disease.
  Understanding the process of translocation formation is important for the
  continued development of cancer treatments.
  For example, if therapy-related leukaemias involving the 
@@ -508,6 +510,213 @@ MLL
 gene.
  The greater our understanding of biological processes, the greater our
  ability to control them to prevent and cure disease.
+\end_layout
+
+\begin_layout Standard
+My hypothesis at the start of this PhD was that chromosomal translocation
+ partner genes specifically associate at transcription factories.
+ This was supported by evidence showing the recruitment of 
+\emph on
+Myc
+\emph default
+ to pre-existing transcription factories containing transcribing 
+\emph on
+Igh
+\emph default
+ alleles 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Osborne2007"
+
+\end_inset
+
+.
+ There has been some dispute to this finding since; Hakim 
+\emph on
+et al.
+
+\emph default
+ used 4C-seq to characterise the associations of 
+\emph on
+Myc
+\emph default
+ and 
+\emph on
+Igh
+\emph default
+ in cultured B cells with and without AID, a protein involved in somatic
+ hypermutation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hakim2012"
+
+\end_inset
+
+.
+ They found the frequency of translocations correlated with genomic association
+ frequencies in the absence of AID, but that AID translocation hotspots
+ did not.
+ Rocha 
+\emph on
+et al.
+
+\emph default
+ published a study using similar methodologies that came to the the opposite
+ conclusion; that off target AID activity does correlate with genomic associatio
+n 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rocha2012"
+
+\end_inset
+
+.
+ However, Rocha 
+\emph on
+et al\SpecialChar \@.
+ 
+\emph default
+did not find 
+\emph on
+Myc
+\emph default
+ to be the most frequent association partner with 
+\emph on
+Igh
+\emph default
+.
+ It is of note that both of these studies investigated cultured B cells
+ undergoing steady state transcription, whereas Osborne 
+\emph on
+et al.
+
+\emph default
+ used 
+\emph on
+ex-vivo
+\emph default
+ cells stimulated for five minutes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Osborne2007"
+
+\end_inset
+
+.
+ 
+\emph on
+Myc
+\emph default
+ is an immediate-early gene, meaning that it undergoes rapid activation
+ and transcription after activation.
+ As such, the cells analysed by Osborne 
+\emph on
+et al.
+
+\emph default
+ will have been undergoing a synchronised wave of transcriptional activity
+ and may exhibit different patterns of nuclear organisation to those studied
+ by Hakim and Rocha.
+\end_layout
+
+\begin_layout Standard
+In my studies I investigated whether association between translocation partner
+ genes may be a general phenomenon.
+ If so, e4C analysis would reveal association between proto oncogenes in
+ healthy cells.
+
+\emph on
+ BCR 
+\emph default
+and
+\emph on
+ MLL 
+\emph default
+have very different portfolios of translocation partners, the former only
+ found partnered with a handful of genes and the latter more promiscuous
+ with over 100 partners found to date (discussed in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Leukaemia"
+
+\end_inset
+
+).
+ I expected the e4C 
+\emph on
+trans
+\emph default
+ association profiles to show association with all of these genes, and for
+ their association to correlate with translocation frequency.
+ In general, the profiles that we discovered were not so simple.
+ 
+\emph on
+BCR
+\emph default
+ did show strong association with 
+\emph on
+ABL1
+\emph default
+, but not in order of magnitude that we expected.
+ Instead of the specific gene
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+gene associations, 
+\emph on
+BCR
+\emph default
+ was found to associate with the entire telomeric arm of chromosome 9.
+ These results suggest that while association may affect the frequency of
+ chromosomal translocations, it is unlikely the be the sole cause for partner
+ selection.
+ Certainly, our view of nuclear organisation is becoming increasingly complex.
+\end_layout
+
+\begin_layout Standard
+An interesting observation described in this thesis is the presence of strong
+ 
+\emph on
+BCR
+\emph default
+ association in the vicinity of the 
+\emph on
+ABL1
+\emph default
+ gene.
+ Such a 
+\begin_inset Quotes eld
+\end_inset
+
+bystander
+\begin_inset Quotes erd
+\end_inset
+
+ effect has a number of implications.
+ For example, bystander genes may account for risk factors seen in genome
+ wide association studies (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GWAS"
+description "Genome wide association study"
+
+\end_inset
+
+GWAS) which are not yet understood.
+ To modify deleterious gene associations, the behaviour of adjacent loci
+ causing the contact may need to be changed rather than the translocation
+ partner genes themselves.
+\end_layout
+
+\begin_layout Standard
+With the increasing capability of molecular biology techniques able to probe
+ nuclear structure, we will soon be able to investigate how the activity
+ of other genes can affect proto oncogenes on a more general scale.
+ 
 \end_layout
 
 \begin_layout Standard

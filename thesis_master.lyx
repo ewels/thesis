@@ -69,7 +69,7 @@
 % clear defaults
 \fancyhf{}
 % set up font
-\newcommand{\headerfont}{\color[gray]{0.5}\fontfamily{phv}\fontsize{10}{11}\selectfont}
+\newcommand{\headerfont}{\color[gray]{0.7}\fontfamily{phv}\fontsize{10}{11}\selectfont}
 \newcommand{\footerfont}{\fontfamily{phv}\fontsize{11}{11}\selectfont}
 % header - right
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter: #1}{}}

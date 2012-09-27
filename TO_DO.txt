@@ -2,7 +2,6 @@
 
   === MAIN CHECKLIST ===
   Print, read and tidy / re-write chapter 3
-  Go through big changes suggested by Cam for introduction
 
 
   === GENERAL TIDYING === (not critical)
