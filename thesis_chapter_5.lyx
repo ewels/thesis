@@ -222,44 +222,48 @@ status open
 <column alignment="left" valignment="middle" width="3cm">
 <column alignment="left" valignment="middle" width="7cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Name
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Date
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Bait Position
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\series bold
 \size scriptsize
 Description
 \end_layout
@@ -1231,7 +1235,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/chapter 4/read count stats/read count stats.eps
+	filename figures/chapter 5/read count stats/read count stats.eps
 	lyxscale 40
 	width 100col%
 

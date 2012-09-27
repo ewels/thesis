@@ -1650,7 +1650,7 @@ Two repeats
 (B)
 \series default
  showing average values for four replicates per sample in 3C RT-qPCR.
- Y values are concentration in μM, calculated from standard curve for each
+ Y values are concentration in µM, calculated from standard curve for each
  primer pair.
  Error bars show standard deviations.
  
@@ -1763,7 +1763,7 @@ Gel showing 3C qPCR Products.
  
 \series default
 1% agarose gel showing 3C RT-qPCR products, stained with Ethidium Bromide.
- Std = Standard curve products, 1.28 and 0.25 μM.
+ Std = Standard curve products, 1.28 and 0.25 µM.
  3C = four 3C RT-qPCR duplicates.
  NTC = No template control.
 \end_layout
@@ -1940,34 +1940,37 @@ status open
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Gene
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 BAC ID
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Chromosomal Position
 \end_layout
 
@@ -1980,6 +1983,7 @@ Chromosomal Position
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 BCR
 \end_layout
@@ -1991,17 +1995,7 @@ BCR
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 CTD-2571K3
 \end_layout
 
@@ -2012,17 +2006,7 @@ CTD-2571K3
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr22:23,455,715-23,679,062
 \end_layout
 
@@ -2035,6 +2019,7 @@ chr22:23,455,715-23,679,062
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 ABL1
 \end_layout
@@ -2046,17 +2031,7 @@ ABL1
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-83J21
 \end_layout
 
@@ -2067,17 +2042,7 @@ RP11-83J21
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr9:133,652,008-133,828,473
 \end_layout
 
@@ -2090,6 +2055,7 @@ chr9:133,652,008-133,828,473
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 Surfeit
 \end_layout
@@ -2101,17 +2067,7 @@ Surfeit
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-152J3
 \end_layout
 
@@ -2122,17 +2078,7 @@ RP11-152J3
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr9:136,206,288-136,374,469
 \end_layout
 
@@ -2145,6 +2091,7 @@ chr9:136,206,288-136,374,469
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 SPTAN1
 \end_layout
@@ -2156,17 +2103,7 @@ SPTAN1
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-589E16
 \end_layout
 
@@ -2177,17 +2114,7 @@ RP11-589E16
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr9:131,241,008-131,450,093
 \end_layout
 
@@ -2200,6 +2127,7 @@ chr9:131,241,008-131,450,093
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 QSOX2
 \end_layout
@@ -2211,17 +2139,7 @@ QSOX2
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-83N9
 \end_layout
 
@@ -2232,17 +2150,7 @@ RP11-83N9
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr9:138,981,971-139,136,889
 \end_layout
 
@@ -2255,6 +2163,7 @@ chr9:138,981,971-139,136,889
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 SMC2
 \end_layout
@@ -2266,17 +2175,7 @@ SMC2
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-989F24
 \end_layout
 
@@ -2287,17 +2186,7 @@ RP11-989F24
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr9:106,791,249-106,969,527
 \end_layout
 
@@ -2310,6 +2199,7 @@ chr9:106,791,249-106,969,527
 
 \begin_layout Plain Layout
 
+\size footnotesize
 \emph on
 HLA-DMA
 \end_layout
@@ -2321,17 +2211,7 @@ HLA-DMA
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 RP11-629J17
 \end_layout
 
@@ -2342,17 +2222,7 @@ RP11-629J17
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 chr6:32,449,530-32,684,058
 \end_layout
 
@@ -2763,6 +2633,7 @@ th
 \end_inset
 
  percentiles.
+ Grey numbers below x axis denote number of signals counted.
  
 \series bold
 (B)
@@ -3023,7 +2894,8 @@ th
 \end_inset
 
  percentiles.
- 
+ Grey numbers below x axis denote number of signals counted.
+  
 \series bold
 (B)
 \series default

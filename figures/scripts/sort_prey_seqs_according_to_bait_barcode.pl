@@ -2,11 +2,6 @@
 use warnings;
 use strict;
 
-### This script intends to analyse Phil's FastQ files and sort the sequences according to the first 3 bp barcode information. The experiment was a 4C
-### analysis with two different baits which were ligated to prey sequences using an AseI digest. Therefore all of the sequences should look like:
-### XXX ATTAAT NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN whereby XXX is the bait-specific barcode information, ATTAAT is the AseI site, and NNNN is the prey
-### sequence.
-
 my %baits = (
 	     MLL => {
 	     	     name => 'MLL_bait',

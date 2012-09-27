@@ -1534,6 +1534,7 @@ status open
 
 \begin_layout Plain Layout
 
+\series bold
 \size footnotesize
 Fragments Removed
 \end_layout
@@ -1545,6 +1546,7 @@ Fragments Removed
 
 \begin_layout Plain Layout
 
+\series bold
 \size footnotesize
 Total Fragments
 \end_layout
@@ -1981,7 +1983,7 @@ Then, for every potential fragment, the appropriate correction values for
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho_{frag}=\dfrac{observed\, fragments}{potential\, fragments}\times C_{\%GC}\times C_{frag\, length}
+\rho_{frag}=\dfrac{observed\; fragments}{potential\; fragments}\times C_{\%GC}\times C_{frag\; length}
 \]
 
 \end_inset
@@ -2214,8 +2216,15 @@ AseI
 
 \begin_layout Standard
 To allow the analysis of these percentage values within SeqMonk, I wrote
- a Perl script to create a number of 'virtual reads' over each 100 Kb window
- according to the percentage score.
+ a Perl script to create a number of 
+\begin_inset Quotes eld
+\end_inset
+
+virtual reads
+\begin_inset Quotes erd
+\end_inset
+
+ over each 100 Kb window according to the percentage score.
  These can then be imported into SeqMonk and quantified by whatever method
  is desired (Fig 
 \begin_inset CommandInset ref

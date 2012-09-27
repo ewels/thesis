@@ -95,7 +95,14 @@ singlespacing
 \end_layout
 
 \begin_layout Subsection
-RT-qPCR Primers
+RT-qPCR Primers 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:RT-qPCR-Primers"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12797,7 +12804,7 @@ Accession codes for publicly available datasets:
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="20" columns="2">
+<lyxtabular version="3" rows="17" columns="2">
 <features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0pt">
@@ -13140,7 +13147,7 @@ GSM822292
 \family sans
 \series bold
 \size footnotesize
-GM12878 Cells
+Other Cell Types
 \end_layout
 
 \end_inset
@@ -13176,70 +13183,6 @@ GM12878 RNAP II
 \family sans
 \size footnotesize
 GSE19550
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family sans
-\series bold
-\size footnotesize
-Other Cell Types
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -16745,31 +16688,6 @@ e4C analysis scripts
 \end_layout
 
 \begin_layout Subsection
-Bait processing
-\end_layout
-
-\begin_layout Standard
-This script was originally written by Dr Felix Krueger of the Babraham Bioinform
-atics department.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting{figures/scripts/sort_prey_seqs_according_to_bait_barcode.pl}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 
 \emph on
 In-silico
@@ -16793,38 +16711,6 @@ status open
 
 \backslash
 lstinputlisting{figures/scripts/potential_hits.pl}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-GC content and fragment length bias detection 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:APP-GC-content-bias"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The fragment length bias script is very similar to the GC bias and so not
- printed here due to space constraints.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting{figures/scripts/GC_bias.pl}
 \end_layout
 
 \end_inset
@@ -16896,31 +16782,6 @@ status open
 
 \backslash
 lstinputlisting{figures/scripts/single_RE_fragments.pl}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Restriction fragment distribution normalisation
-\end_layout
-
-\begin_layout Standard
-This script was originally written by Dr Simon Andrews of the Babraham Bioinform
-atics department.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting{figures/scripts/make_windows.pl}
 \end_layout
 
 \end_inset

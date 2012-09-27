@@ -113,9 +113,9 @@ Mobilised CD34
 
 \end_inset
 
- cells were collected from peripheral blood samples supplied by Dr.
- George Follows with the help of apheresis coordinator / specialist nurse
- Paul Boraks.
+ cells were collected from peripheral blood samples supplied by Dr George
+ Follows with the help of apheresis coordinator / specialist nurse Paul
+ Boraks.
  These blood samples were taken with consent from the patient at the same
  time as clinical samples used to test the mobilisation efficacy of the
  
@@ -127,7 +127,11 @@ description "Granulocyte colony-stimulating factor"
 \end_inset
 
 GCSF stimulation.
- Blood samples were collected and immediately diluted into 5ml 
+ Blood samples were collected and immediately diluted into 5
+\begin_inset space ~
+\end_inset
+
+ml 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RPMI"
@@ -146,7 +150,19 @@ Buffy coat isolation and fixation of cells
 \end_layout
 
 \begin_layout Standard
-Samples were diluted with 2-4 volumes of 
+Samples were diluted with 2
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+4
+\begin_inset space ~
+\end_inset
+
+volumes of 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PBS"
@@ -154,7 +170,11 @@ description "Phosphate buffered saline"
 
 \end_inset
 
-PBS (Dulbecco's PBS; PAA) containing 2mM 
+PBS (Dulbecco's PBS; PAA) containing 2
+\begin_inset space ~
+\end_inset
+
+mM 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "EDTA"
@@ -162,24 +182,70 @@ description "Ethylene-diamine-tetraacetic acid"
 
 \end_inset
 
-EDTA (ultra-pure; GIBCO).
- 15 ml Ficoll (Ficoll-Paque Premium; GE Healthcare) was added to empty 50
- ml tubes, and 35 ml cell suspension was layered on top.
- Samples were centrifuged at 400x 
+EDTA [GIBCO].
+ 15
+\begin_inset space ~
+\end_inset
+
+ml Ficoll (Ficoll-Paque Premium; [GE Healthcare]) was added to empty 50
+\begin_inset space ~
+\end_inset
+
+ml  tubes, and 35
+\begin_inset space ~
+\end_inset
+
+ml  cell suspension was layered on top.
+ Samples were centrifuged at 400
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 40 minutes at at room temperature.
+ for 40
+\begin_inset space ~
+\end_inset
+
+minutes at at room temperature.
  The central buffy coat found at the interface between the plasma and Ficoll
  layer, containing primarily mononuclear cells, was carefully pipetted into
- a new labelled 50 ml tube.
- This was washed in PBS containing 2 mM EDTA and centrifuged at 300x 
+ a new labelled 50
+\begin_inset space ~
+\end_inset
+
+ml  tube.
+ This was washed in PBS containing 2
+\begin_inset space ~
+\end_inset
+
+mM EDTA and centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 minutes at room temperature.
- Cell pellets were washed twice by resuspending in 50 ml MACS Buffer (D-PBS
- [PAA] with 0.5% 
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Cell pellets were washed twice by resuspending in 50
+\begin_inset space ~
+\end_inset
+
+ml  MACS Buffer (D-PBS [PAA] with 0.5% 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BSA"
@@ -187,13 +253,32 @@ description "Bovine serum albumin"
 
 \end_inset
 
-BSA [Sigma] and 2 mM EDTA [Gibco]) and re-centrifuged at 200x 
+BSA [Sigma] and 2
+\begin_inset space ~
+\end_inset
+
+mM  EDTA [Gibco]) and re-centrifuged at 200
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 15 minutes at room temperature.
- Cell pellets were resuspend cells in 2 ml total volume MACS Buffer and
- transferred to tubes containing 
+  for 15
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Cell pellets were resuspend cells in 2
+\begin_inset space ~
+\end_inset
+
+ml  total volume MACS Buffer and transferred to tubes containing 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMEM"
@@ -201,7 +286,7 @@ description "Dulbecco's modified Eagle's medium"
 
 \end_inset
 
-DMEM (PAA) with 10% 
+DMEM [PAA] with 10% 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FBS"
@@ -209,16 +294,44 @@ description "Foetal bovine serum"
 
 \end_inset
 
-FBS (PAA).
- Cells were then fixed with 2% formaldehyde (histology-grade, min 37% free
- from acid; Merck) for 10 minutes at room temperature with constant mixing.
+FBS [PAA].
+ Cells were then fixed with 2% formaldehyde (histology-grade, minimum 37%
+ free from acid [Merck]) for 10
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature with constant mixing.
  The fixation was quenched by adding glycine to a final concentration of
- 0.125 M.
- Fixed cells were centrifuged at 300x 
+ 0.125
+\begin_inset space ~
+\end_inset
+
+M.
+ Fixed cells were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 mins at 4°C before being resuspend in 50 ml ice-cold MACS Buffer.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C before being resuspend in 50
+\begin_inset space ~
+\end_inset
+
+ml  ice-cold MACS Buffer.
  Cells were counted using a haemocytometer.
 \end_layout
 
@@ -243,9 +356,8 @@ Mobilised CD34
 
 \end_inset
 
-cells were collected from leukapheresis collections supplied by Dr.
- George Follows and Dr.
- Kevin Jestice.
+cells were collected from leukapheresis collections supplied by Dr George
+ Follows and Dr Kevin Jestice.
  These samples were made available after the harvesting of mobilised CD34
 \begin_inset script superscript
 
@@ -275,33 +387,124 @@ n in the processing of these samples.
 \end_layout
 
 \begin_layout Standard
-The sample was aliquoted into 50 ml tubes and diluted with 2 - 4 volumes
- of PBS with 2 mM EDTA, to a final volume of 50 ml.
- Tubes were centrifuged at 300x 
+The sample was aliquoted into 50
+\begin_inset space ~
+\end_inset
+
+ml  tubes and diluted with 2
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+4 volumes of PBS with 2
+\begin_inset space ~
+\end_inset
+
+mM  EDTA, to a final volume of 50
+\begin_inset space ~
+\end_inset
+
+ml .
+ Tubes were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 minutes at room temperature.
- Cells were washed twice by resuspending in 50 ml PBS with 2 mM EDTA and
- centrifuged at 200x 
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Cells were washed twice by resuspending in 50
+\begin_inset space ~
+\end_inset
+
+ml  PBS with 2
+\begin_inset space ~
+\end_inset
+
+mM  EDTA and centrifuged at 200
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 15 minutes at room temperature.
- Each cell pellet was resuspended in 50 ml PBS with 2 mM EDTA and transferred
- to a 500 ml bottle of DMEM (PAA) supplemented with 10% FBS (PAA).
- Cells were fixed by adding 26 ml 37% formaldehyde was added to a final
- concentration of 2% (histology-grade, min 37% free from acid; Merck) and
- being placed on a rocker for 10 minutes at room temperature.
+ for 15
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Each cell pellet was resuspended in 50
+\begin_inset space ~
+\end_inset
+
+ml  PBS with 2
+\begin_inset space ~
+\end_inset
+
+mM  EDTA and transferred to a 500
+\begin_inset space ~
+\end_inset
+
+ml  bottle of DMEM [PAA] supplemented with 10% FBS [PAA].
+ Cells were fixed by adding 26
+\begin_inset space ~
+\end_inset
+
+ml  37% formaldehyde was added to a final concentration of 2% (histology-grade,
+ minimum 37% free from acid [Merck]) and being placed on a rocker for 10
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
  The fixation was quenched by adding glycine to a final concentration of
- 0.125 M.
- Samples were centrifuged at 300x 
+ 0.125
+\begin_inset space ~
+\end_inset
+
+M.
+ Samples were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 mins at 4°C.
- The supernatant was removed and each cell pellet resuspended in 50 ml ice-cold
- MACS buffer.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ The supernatant was removed and each cell pellet resuspended in 50
+\begin_inset space ~
+\end_inset
+
+ml  ice-cold MACS buffer.
  Cells were counted using a haemocytometer.
 \end_layout
 
@@ -398,62 +601,188 @@ doublespacing
 
 \begin_layout Standard
 Cell separation was carried out as per the manufacturer's instructions.
- Samples were centrifuged at 400x 
+ Samples were centrifuged at 400
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 8 mins at 4°C and resuspended in Sort Buffer (D-PBS [PAA] supplemented
- with 0.1% BSA [Sigma] and 2 mM EDTA [Gibco]) at a concentration of 4 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
+ for 8
+\begin_inset space ~
 \end_inset
 
- to 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
+minutes at 4
+\begin_inset space ~
 \end_inset
 
- per ml in 2 ml microcentrifuge tubes.
- Invitrogen Dynalbeads were pipetted into a 2 ml microcentrifuge tube (100
- µl per ml sample).
- 1 ml Sort Buffer was added and the tubes placed on a separation magnet.
- The supernatant was removed and the beads resuspended in 100 µl sort buffer
- per ml sample.
+°C and resuspended in Sort Buffer (D-PBS [PAA] supplemented with 0.1% BSA
+ [Sigma] and 2
+\begin_inset space ~
+\end_inset
+
+mM  EDTA [Gibco]) at a concentration of 
+\begin_inset Formula $4\times10^{7}$
+\end_inset
+
+ to 
+\begin_inset Formula $1\times10^{8}$
+\end_inset
+
+ per
+\begin_inset space ~
+\end_inset
+
+ml  in 2
+\begin_inset space ~
+\end_inset
+
+ml  microcentrifuge tubes.
+ Invitrogen Dynalbeads were pipetted into a 2
+\begin_inset space ~
+\end_inset
+
+ml  microcentrifuge tube (100
+\begin_inset space ~
+\end_inset
+
+µl per
+\begin_inset space ~
+\end_inset
+
+ml sample).
+ 1
+\begin_inset space ~
+\end_inset
+
+ml Sort Buffer was added and the tubes placed on a separation magnet.
+ The supernatant was removed and the beads resuspended in 100
+\begin_inset space ~
+\end_inset
+
+µl sort buffer per
+\begin_inset space ~
+\end_inset
+
+ml  sample.
  The beads were then added to the samples and mixed, before incubating on
- a rotating wheel at 4°C for 30 minutes.
- 700 µl Sort Buffer was added to each tube before placing each tube on the
- separation magnet for at least 2 minutes.
- The supernatant was then removed and kept at 4°C to use as a negative control
- in the FACS analysis.
- The beads were then washed three times in 2 ml Sort Buffer, separating
- on the magnet for at least 1 minute each wash.
- The beads were resuspended in 100 µl Sort Buffer and 100 µl DETACHaBEAD
- added per tube.
- Samples were incubated at room temperature on a shaker at 600 rpm for 45
- minutes.
- 1.8 ml Sort Buffer was added to each tube before being placed on the separation
- magnet for at least 2 minutes.
- The supernatant was then transferred to a 15 ml tube and the beads washed
- three times with 500 µl Sort Buffer, the supernatant being added to the
- 15 ml tube each time.
+ a rotating wheel at 4
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+minutes.
+ 700
+\begin_inset space ~
+\end_inset
+
+µl Sort Buffer was added to each tube before placing each tube on the separation
+ magnet for at least 2
+\begin_inset space ~
+\end_inset
+
+minutes.
+ The supernatant was then removed and kept at 4
+\begin_inset space ~
+\end_inset
+
+°C to use as a negative control in the FACS analysis.
+ The beads were then washed three times in 2
+\begin_inset space ~
+\end_inset
+
+ml  Sort Buffer, separating on the magnet for at least 1
+\begin_inset space ~
+\end_inset
+
+minute each wash.
+ The beads were resuspended in 100
+\begin_inset space ~
+\end_inset
+
+µl Sort Buffer and 100
+\begin_inset space ~
+\end_inset
+
+µl DETACHaBEAD added per tube.
+ Samples were incubated at room temperature on a shaker at 600
+\begin_inset space ~
+\end_inset
+
+rpm for 45
+\begin_inset space ~
+\end_inset
+
+minutes.
+ 1.8
+\begin_inset space ~
+\end_inset
+
+ml  Sort Buffer was added to each tube before being placed on the separation
+ magnet for at least 2
+\begin_inset space ~
+\end_inset
+
+minutes.
+ The supernatant was then transferred to a 15
+\begin_inset space ~
+\end_inset
+
+ml  tube and the beads washed three times with 500
+\begin_inset space ~
+\end_inset
+
+µl Sort Buffer, the supernatant being added to the 15
+\begin_inset space ~
+\end_inset
+
+ml  tube each time.
  An aliquot was taken to count the cells using a haemocytometer and the
- remaining sample was made up to 15 ml with Sort Buffer.
- 1 ml was removed into fresh tube for the FACS purity analysis.
- The remaining sample was centrifuged at 400x 
+ remaining sample was made up to 15
+\begin_inset space ~
+\end_inset
+
+ml  with Sort Buffer.
+ 1
+\begin_inset space ~
+\end_inset
+
+ml  was removed into fresh tube for the FACS purity analysis.
+ The remaining sample was centrifuged at 400
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 8 minutes at 4°C.
+ for 8
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
  The supernatant was discarded and the cell pellet flash frozen in liquid
- nitrogen before storage at -80°C.
+ nitrogen before storage at -80
+\begin_inset space ~
+\end_inset
+
+°C.
 \end_layout
 
 \begin_layout Standard
@@ -465,39 +794,43 @@ Cell separation using the Miltenyi MACS CD34 MicroBead Kit
 \end_layout
 
 \begin_layout Standard
-Samples were centrifuged at 300x 
+Samples were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 mins at 4°C and resuspend in 300 µl MACS buffer per 1 x 10
-\begin_inset script superscript
+ for 10
+\begin_inset space ~
+\end_inset
 
-\begin_layout Plain Layout
-8
-\end_layout
+minutes at 4
+\begin_inset space ~
+\end_inset
 
+°C and resuspend in 300
+\begin_inset space ~
+\end_inset
+
+µl MACS buffer per  
+\begin_inset Formula $1\times10^{8}$
 \end_inset
 
  cells.
- The following assumes a single aliquot of 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
+ The following assumes a single aliquot of 
+\begin_inset Formula $1\times10^{8}$
 \end_inset
 
  cells, and was scaled up as necessary.
  Some leukapheresis samples had enough cells to warrant thousands of pounds
- worth of MACS beads, in these cases I used aliquots of greater than 1 x
- 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
+ worth of MACS beads, in these cases I used aliquots of greater than 
+\begin_inset Formula $1\times10^{8}$
 \end_inset
 
  cells.
@@ -505,35 +838,123 @@ g
 
 \begin_layout Standard
 Cell separation was carried out as per the manufacturer's instructions.
- In brief, 100 µl MACS FcR Blocking reagent was added to block non-specific
- binding of the MicroBeads before adding 100 µl CD34 MicroBeads.
- Samples were mixed and refrigerated for 30 minutes at 4°C.
- 10 ml MACS Buffer was added and samples centrifuged at 300x 
+ In brief, 100
+\begin_inset space ~
+\end_inset
+
+µl MACS FcR Blocking reagent was added to block non-specific binding of
+ the MicroBeads before adding 100
+\begin_inset space ~
+\end_inset
+
+µl CD34 MicroBeads.
+ Samples were mixed and refrigerated for 30
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ 10
+\begin_inset space ~
+\end_inset
+
+ml  MACS Buffer was added and samples centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 mins at 4°C.
- Samples were resuspend in 500 µl MACS Buffer and applied to pre-wetted
- MACS MS columns held in an OctoMACS separator magnet at 4°C.
- Flow through was collected and stored at 4°C to use as a control in the
- later FACS analysis.
- Columns were washed three times with 500 µl MACS Buffer and cells were
- eluted from their columns in 1 ml MACS Buffer directly into a second pre-wetted
- MACS MS column.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ Samples were resuspend in 500
+\begin_inset space ~
+\end_inset
+
+µl MACS Buffer and applied to pre-wetted MACS MS columns held in an OctoMACS
+ separator magnet at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ Flow through was collected and stored at 4
+\begin_inset space ~
+\end_inset
+
+°C to use as a control in the later FACS analysis.
+ Columns were washed three times with 500
+\begin_inset space ~
+\end_inset
+
+µl MACS Buffer and cells were eluted from their columns in 1
+\begin_inset space ~
+\end_inset
+
+ml  MACS Buffer directly into a second pre-wetted MACS MS column.
  Multiple samples were combined into a single column at this point.
  This second magnetic separation step greatly increases the purity of the
  separated cells.
- The column was washed three times with 500 µl MACS buffer and cells eluted
- in 1 ml MACS Buffer.
- Purified cells were counted and made up to 15 ml with MACS buffer.
- A 1 ml aliquot was taken for later FACS purity analysis before the remaining
- sample was centrifuged at 300x 
+ The column was washed three times with 500
+\begin_inset space ~
+\end_inset
+
+µl MACS buffer and cells eluted in 1
+\begin_inset space ~
+\end_inset
+
+ml  MACS Buffer.
+ Purified cells were counted and made up to 15
+\begin_inset space ~
+\end_inset
+
+ml  with MACS buffer.
+ A 1
+\begin_inset space ~
+\end_inset
+
+ml  aliquot was taken for later FACS purity analysis before the remaining
+ sample was centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 minutes at 4°C.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
  The supernatant was discarded and the cell pellet flash frozen in liquid
- nitrogen before storage at -80°C.
+ nitrogen before storage at -80
+\begin_inset space ~
+\end_inset
+
+°C.
 \end_layout
 
 \begin_layout Subsubsection
@@ -563,32 +984,89 @@ reference "fig:CD34-Separation-FACS"
 \end_layout
 
 \begin_layout Standard
-The 1 ml aliquot taken after the magnetic sort was transferred into a 2
- ml microcentrifuge tube, along with two aliquots of no more than 1 x 10
-\begin_inset script superscript
+The 1
+\begin_inset space ~
+\end_inset
 
-\begin_layout Plain Layout
-6
-\end_layout
+ml  aliquot taken after the magnetic sort was transferred into a 2
+\begin_inset space ~
+\end_inset
 
+ml  microcentrifuge tube, along with two aliquots of no more than 
+\begin_inset Formula $1\times10^{6}$
 \end_inset
 
  cells was taken from the unbound magnetic sort.
- Cells were centrifuged at 300x 
+ Cells were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 minutes at 4°C and resuspended in 100 µl in MACS buffer.
- 10 µl CD34-APC antibody was added to the purified sample and one of the
- two unbound controls, and all three samples were and incubated in the dark
- at 4°C for 10 minutes.
- Cells were diluted with 1.8 ml MACS buffer and centrifuged at 300x 
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C and resuspended in 100
+\begin_inset space ~
+\end_inset
+
+µl in MACS buffer.
+ 10
+\begin_inset space ~
+\end_inset
+
+µl CD34-APC antibody was added to the purified sample and one of the two
+ unbound controls, and all three samples were and incubated in the dark
+ at 4
+\begin_inset space ~
+\end_inset
+
+°C for 10
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Cells were diluted with 1.8
+\begin_inset space ~
+\end_inset
+
+ml  MACS buffer and centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 10 mins at 4°C.
- Cell pellets were resuspend in 200 µl PBS and analysed using a BD FACSCalibur
- flow cytometer.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ Cell pellets were resuspend in 200
+\begin_inset space ~
+\end_inset
+
+µl PBS and analysed using a BD FACSCalibur flow cytometer.
 \end_layout
 
 \begin_layout Section
@@ -607,12 +1085,30 @@ ENCODE cell lines GM12878 and GM06990 were grown in cell culture facilities
  at the Babraham Institute.
  Both cell lines were obtained from Coriell Cell Repositories and grown
  according to their recommendations.
- Cell lines were grown in RPMI 1640 with 2mM L-glutamine (PAA; E15-840),
- supplemented with 15% foetal bovine serum (PAA; A11-152) and 1x Penicillin
- / Streptomycin (PAA; P11-010).
+ Cell lines were grown in RPMI
+\begin_inset space ~
+\end_inset
+
+1640 with 2
+\begin_inset space ~
+\end_inset
+
+mM L-glutamine [PAA], supplemented with 15% foetal bovine serum [PAA] and
+ 1
+\begin_inset Formula $\times$
+\end_inset
+
+ Penicillin / Streptomycin [PAA].
  Separate bottles of culture were kept for each cell line.
- Cultures were kept in T25 flasks, stood upright with loose caps at 37 ºC
- in 5% CO
+ Cultures were kept in T25 flasks, stood upright with loose caps at 37
+\begin_inset space ~
+\end_inset
+
+ºC in 5%
+\begin_inset space ~
+\end_inset
+
+CO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -625,63 +1121,93 @@ ENCODE cell lines GM12878 and GM06990 were grown in cell culture facilities
 \end_layout
 
 \begin_layout Standard
-Cultures were passaged when cell densities reached 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
+Cultures were passaged when cell densities reached 
+\begin_inset Formula $1\times10^{6}$
 \end_inset
 
- cells / ml, typically every other day.
- Cell culture media was made up if required and warmed to 37 ºC in a water
- bath.
+ cells
+\begin_inset space ~
+\end_inset
+
+/
+\begin_inset space ~
+\end_inset
+
+ml, typically every other day.
+ Cell culture media was made up if required and warmed to 37
+\begin_inset space ~
+\end_inset
+
+ºC in a water bath.
  Cell cultures were removed from the incubators into a cell culture laminar
- flood hood, and resuspended using a 10 ml pipette.
- Cultures were transferred to a 50 ml tube and counted using a haemocytometer.
- Tubes were centrifuged at 300x
+ flood hood, and resuspended using a 10
+\begin_inset space ~
+\end_inset
+
+ml  pipette.
+ Cultures were transferred to a 50
+\begin_inset space ~
+\end_inset
+
+ml  tube and counted using a haemocytometer.
+ Tubes were centrifuged at 300
+\begin_inset Formula $\times$
+\end_inset
+
+
 \emph on
- g
+
+\begin_inset space \space{}
+\end_inset
+
+g
 \emph default
- for 3 minutes at room temperature.
+ for 3
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
  Supernatants were discarded, and the cell pellet resuspended in fresh media
- to between 2 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-5
-\end_layout
-
+ to between 
+\begin_inset Formula $2\times10^{5}$
 \end_inset
 
- and 5 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-5
-\end_layout
-
+ and 
+\begin_inset Formula $5\times10^{5}$
 \end_inset
 
- cells / ml.
+ cells
+\begin_inset space ~
+\end_inset
+
+/
+\begin_inset space ~
+\end_inset
+
+ml .
  Resuspended cell solutions were transferred to fresh T25 flasks and put
  back into the incubator.
 \end_layout
 
 \begin_layout Standard
-Stocks of both cell lines were stored in liquid nitrogen, frozen in 1 ml
- aliquots of 5 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
+Stocks of both cell lines were stored in liquid nitrogen, frozen in 1
+\begin_inset space ~
 \end_inset
 
- cells in RPMI 1640 with 2mM L-glutamine (PAA; E15-840), supplemented with
- 20% foetal bovine serum (PAA; A11-152) and 6% Dimethyl Sulfoxide (
+ml  aliquots of 
+\begin_inset Formula $5\times10^{6}$
+\end_inset
+
+ cells in RPMI
+\begin_inset space ~
+\end_inset
+
+1640 with 2
+\begin_inset space ~
+\end_inset
+
+mM L-glutamine [PAA], supplemented with 20% foetal bovine serum [PAA] and
+ 6% Dimethyl Sulfoxide (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DMSO"
@@ -689,7 +1215,7 @@ description "Dimethyl Sulfoxide"
 
 \end_inset
 
-DMSO - Sigma-Aldrich; #154938).
+DMSO [Sigma-Aldrich]).
 \end_layout
 
 \begin_layout Section
@@ -773,17 +1299,67 @@ reference "sec:M&M-CD34-cell-handling"
 .
  GM12878 cells were fixed in 2% formaldehyde and quenched in glycine and
  washed in PBS twice.
- Cell pellets were thawed on ice and resuspended in 50 ml permeabilisation
- buffer (10 mM Tris-HCl, 10 mM NaCl, 0.2% Igepal CA-360 [Sigma], 1 tablet
- complete EDTA-free protease inhibitor [Roche]).
- Cells were incubated on ice for 30 minutes on a rocker whilst an aliquot
- was taken to count the nuclei using a haemocytometer.
- Samples were centrifuged at 760x 
+ Cell pellets were thawed on ice and resuspended in 50
+\begin_inset space ~
+\end_inset
+
+ml  permeabilisation buffer (10
+\begin_inset space ~
+\end_inset
+
+mM  Tris-HCl, 10
+\begin_inset space ~
+\end_inset
+
+mM  NaCl, 0.2% Igepal CA-360 [Sigma], 1 tablet complete EDTA-free protease
+ inhibitor [Roche]).
+ Cells were incubated on ice for 30
+\begin_inset space ~
+\end_inset
+
+minutes on a rocker whilst an aliquot was taken to count the nuclei using
+ a haemocytometer.
+ Samples were centrifuged at 760
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 5 minutes at 4°C and resuspended in 500 µl 1.2x NEB3 buffer (100 mM
- NaCl, 50 mM Tris-HCl, 10 mM MgCl
+ for 5
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C and resuspended in 500
+\begin_inset space ~
+\end_inset
+
+µl 1.2
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB3 buffer (100
+\begin_inset space ~
+\end_inset
+
+mM  NaCl, 50
+\begin_inset space ~
+\end_inset
+
+mM  Tris-HCl, 10
+\begin_inset space ~
+\end_inset
+
+mM  MgCl
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -792,14 +1368,45 @@ g
 
 \end_inset
 
-, 1 mM Dithiothreitol, pH 7.9 [New England Biolabs]).
- Samples were transferred into a 1.5 ml microcentrifuge tube and centrifuged
- at 760x 
+, 1
+\begin_inset space ~
+\end_inset
+
+mM Dithiothreitol, pH 7.9 [New England Biolabs]).
+ Samples were transferred into a 1.5
+\begin_inset space ~
+\end_inset
+
+ml  microcentrifuge tube and centrifuged at 760
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 5 min at 4°C.
- Nuclei pellets were resuspended in 500 µl fresh 1.2x NEB3 and 
+ for 5
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ Nuclei pellets were resuspended in 500
+\begin_inset space ~
+\end_inset
+
+µl fresh 1.2
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB3 and 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SDS"
@@ -808,11 +1415,35 @@ description "Sodium dodecyl sulfate"
 \end_inset
 
 SDS was added to a final concentration of 0.3% to further permeabilise the
- nuclei and remove protein that has not been cross linked..
- Nuclei were incubated at 37°C for 1 hour, shaking at 950 rpm.
+ nuclei and remove protein that has not been cross linked.
+ Nuclei were incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+hour, shaking at 950 rpm.
  Triton-X100 was added to a final concentration of 1.8% to sequester the
- SDS and samples incubated at 37°C for 1 hour, shaking at 950 rpm.
- A 10µl aliquot was taken for later digestion efficiency analysis (See Section
+ SDS and samples incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+hour, shaking at 950
+\begin_inset space ~
+\end_inset
+
+rpm.
+ A 10
+\begin_inset space ~
+\end_inset
+
+µl aliquot was taken for later digestion efficiency analysis (See Section
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -824,21 +1455,63 @@ reference "sub:M&M-3C-digestion-efficiency-analysis"
 \end_layout
 
 \begin_layout Standard
-To digest the cross linked chromatin 30 µl high concentration 
+To digest the cross linked chromatin 30
+\begin_inset space ~
+\end_inset
+
+µl high concentration 
 \emph on
 AseI
 \emph default
- was added (1500 units [New England Biolabs]) and samples incubated at 37°C
- overnight, shaking at 950 rpm.
- An additional 10 μl 
+ was added (1500 units [New England Biolabs]) and samples incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C overnight, shaking at 950
+\begin_inset space ~
+\end_inset
+
+rpm.
+ An additional 10
+\begin_inset space ~
+\end_inset
+
+µl 
 \emph on
 AseI
 \emph default
- (500 units) was added and incubated for a further 3 hours at 37°C, 950
- rpm.
- Another 10µl aliquot was taken to check for digestion efficiency later
- and the digestion stopped by the addition of SDS to a final concentration
- of 1.6% before incubating at 65°C, 950 rpm for 25 minutes.
+ (500 units) was added and incubated for a further 3
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+°C, 950
+\begin_inset space ~
+\end_inset
+
+rpm.
+ Another 10
+\begin_inset space ~
+\end_inset
+
+µl aliquot was taken to check for digestion efficiency later and the digestion
+ stopped by the addition of SDS to a final concentration of 1.6% before incubatin
+g at 65
+\begin_inset space ~
+\end_inset
+
+°C, 950
+\begin_inset space ~
+\end_inset
+
+rpm for 25
+\begin_inset space ~
+\end_inset
+
+minutes.
 \end_layout
 
 \begin_layout Subsection
@@ -846,9 +1519,35 @@ Ligation and purification
 \end_layout
 
 \begin_layout Standard
-Samples were cooled to room temperature and added to 15 ml tubes containing
-  7 ml 1.1x T4 DNA ligase buffer (Made using 10x buffer [New England Biolabs]
- - 55 mM Tris-HCl pH 7.5, 11 mM MgCl
+Samples were cooled to room temperature and added to 15
+\begin_inset space ~
+\end_inset
+
+ml  tubes containing  7
+\begin_inset space ~
+\end_inset
+
+ml  1.1
+\begin_inset Formula $\times$
+\end_inset
+
+ T4 DNA ligase buffer (Made using 10
+\begin_inset Formula $\times$
+\end_inset
+
+ buffer [New England Biolabs] - 55
+\begin_inset space ~
+\end_inset
+
+mM  Tris-HCl pH
+\begin_inset space ~
+\end_inset
+
+7.5, 11
+\begin_inset space ~
+\end_inset
+
+mM  MgCl
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -857,27 +1556,109 @@ Samples were cooled to room temperature and added to 15 ml tubes containing
 
 \end_inset
 
-, 1.1 mM ATP, 11 mM DTT, 27.5 µg/ml BSA).
+, 1.1
+\begin_inset space ~
+\end_inset
+
+mM  ATP, 11
+\begin_inset space ~
+\end_inset
+
+mM  DTT, 27.5
+\begin_inset space ~
+\end_inset
+
+µg/ml BSA).
  To sequester the SDS, Triton-X100 was added to a final concentration of
- 1% and samples incubated at 37°C for 1 hour with mixing by inversion every
- 10 minutes.
- Samples were allowed to equilibrate in a 16°C in water bath before the
- addition of 2 µl T4 DNA ligase (800 units [NEB]).
- Samples were incubated at 16°C for 4 hours, then at room temperature for
- 30 minutes.
- Proteinase K was added to a final concentration of 100 µg/ml and samples
- incubated at 65°C overnight.
- Tubes were cooled to room temperature and RNase A added to a final concentratio
-n of 40 µg/ml before incubation at 37°C for 1 hour.
- Samples were split into two and transferred into 15 ml Phase Lock Gel Tubes
- (Phase Lock Gel Light 15 ml [5 PRIME]).
+ 1% and samples incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+hour with mixing by inversion every 10
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Samples were allowed to equilibrate in a 16
+\begin_inset space ~
+\end_inset
+
+°C in water bath before the addition of 2
+\begin_inset space ~
+\end_inset
+
+µl T4 DNA ligase (800
+\begin_inset space ~
+\end_inset
+
+units [NEB]).
+ Samples were incubated at 16
+\begin_inset space ~
+\end_inset
+
+°C for 4
+\begin_inset space ~
+\end_inset
+
+hours, then at room temperature for 30
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Proteinase
+\begin_inset space ~
+\end_inset
+
+K was added to a final concentration of 100
+\begin_inset space ~
+\end_inset
+
+µg/ml and samples incubated at 65
+\begin_inset space ~
+\end_inset
+
+°C overnight.
+ Tubes were cooled to room temperature and RNase
+\begin_inset space ~
+\end_inset
+
+A added to a final concentration of 40
+\begin_inset space ~
+\end_inset
+
+µg/ml before incubation at 37
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+hour.
+ Samples were split into two and transferred into 15
+\begin_inset space ~
+\end_inset
+
+ml  Phase Lock Gel Tubes (Phase Lock Gel Light 15
+\begin_inset space ~
+\end_inset
+
+ml  [5 PRIME]).
  DNA was purified using a phenol / chloroform extraction followed by precipitati
 on in ethanol and sodium acetate.
- DNA pellets were resuspended in 250 μl Molecular Biology grade water (Qiagen).
+ DNA pellets were resuspended in 250
+\begin_inset space ~
+\end_inset
+
+µl Molecular Biology grade water [Qiagen].
 \end_layout
 
 \begin_layout Standard
-3C samples were quantified using the Quant-iT PicoGreen assay (Invitrogen).
+3C samples were quantified using the Quant-iT PicoGreen assay [Invitrogen].
  Dilutions of 3C product in 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -886,9 +1667,20 @@ description "Tris-EDTA Buffer"
 
 \end_inset
 
-TE Buffer (200 mM Tris-HCl, 20 mM EDTA, pH 7.5) were measured in duplicate
- and compared to standard curves made using lambda DNA supplied within the
- Quant-iT PicoGreen kit.
+TE Buffer (200
+\begin_inset space ~
+\end_inset
+
+mM  Tris-HCl, 20
+\begin_inset space ~
+\end_inset
+
+mM  EDTA, pH
+\begin_inset space ~
+\end_inset
+
+7.5) were measured in duplicate and compared to standard curves made using
+ lambda DNA supplied within the Quant-iT PicoGreen kit.
  Fluorescence of the PicoGreen dye was assayed using a Cytofluor II multi-well
  plate reader (485 nm excitation wavelength , 530 nm emission wavelength
  [PerSeptive Biosystems]).
@@ -916,22 +1708,94 @@ To determine the efficiency of the restriction enzyme digestion step in
 \end_layout
 
 \begin_layout Standard
-5 µl aliquots are taken from the 3C samples, before the addition of the
- restriction enzyme and after the end of the digestion incubation.
- 500 µl of Proteinase K buffer (5 mM EDTA, pH 8.0; 10 mM Tris-HCl, pH 8.0;
- 0.5 % SDS) was added with 1 µl of 10 mg/ml Proteinase K (10 µg final).
- Samples were incubated at 65 ºC for at least 30 minutes before being equilibrat
-ed at 37 ºC.
- 1 µl of 1 mg/ml RNase A (1 µg final) was then added, and samples incubated
- for 2 hours at 37 ºC.
+5
+\begin_inset space ~
+\end_inset
+
+µl aliquots are taken from the 3C samples, before the addition of the restrictio
+n enzyme and after the end of the digestion incubation.
+ 500
+\begin_inset space ~
+\end_inset
+
+µl of Proteinase
+\begin_inset space ~
+\end_inset
+
+K buffer (5
+\begin_inset space ~
+\end_inset
+
+mM  EDTA, pH
+\begin_inset space ~
+\end_inset
+
+8.0; 10
+\begin_inset space ~
+\end_inset
+
+mM  Tris-HCl, pH
+\begin_inset space ~
+\end_inset
+
+8.0; 0.5% SDS) was added with 1
+\begin_inset space ~
+\end_inset
+
+µl of 10 mg/ml Proteinase
+\begin_inset space ~
+\end_inset
+
+K (10
+\begin_inset space ~
+\end_inset
+
+µg final).
+ Samples were incubated at 65
+\begin_inset space ~
+\end_inset
+
+ºC for at least 30
+\begin_inset space ~
+\end_inset
+
+minutes before being equilibrated at 37
+\begin_inset space ~
+\end_inset
+
+ºC.
+ 1
+\begin_inset space ~
+\end_inset
+
+µl of 1 mg/ml RNase
+\begin_inset space ~
+\end_inset
+
+A (1
+\begin_inset space ~
+\end_inset
+
+µg final) was then added, and samples incubated for 2
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+ºC.
  Samples were then phenol-chloroform extracted with ethanol precipitation
- and resuspended in 60 µl of molecular biology grade water.
+ and resuspended in 60
+\begin_inset space ~
+\end_inset
+
+µl of molecular biology grade water.
 \end_layout
 
 \begin_layout Standard
 Samples are now assayed for digestion efficiency using qPCR.
- I used SYBR Green Master (Roche - 04913850001), with the manufacturer's
- protocol.
+ I used SYBR Green Master [Roche], with the manufacturer's protocol.
  Restriction digestion efficiency is calculated using cycle thresholds,
  Ct values:
 \end_layout
@@ -939,7 +1803,7 @@ Samples are now assayed for digestion efficiency using qPCR.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\%\, Restriction=100-\frac{100}{2^{(CtR-CtC)DIG-(CtR-CtC)UND}}
+\%\, Restriction=100-\frac{100}{2^{(C_{t}R-C_{t}C)DIG-(C_{t}R-C_{t}C)UND}}
 \]
 
 \end_inset
@@ -948,8 +1812,34 @@ Samples are now assayed for digestion efficiency using qPCR.
 \end_layout
 
 \begin_layout Standard
-Where CtR is the Ct value of the primer pair spanning a restriction enzyme
- site, CtC is the control primer pair.
+Where C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+
+R is the C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+
+ value of the primer pair spanning a restriction enzyme site, C
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+
+C is the control primer pair.
  DIG is the digested sample and UND is the pre-digestion sample.
  Typically, primers were designed for the region of interest (for example,
  the e4C bait region) as well as an inactive region of heterochromatin.
@@ -1003,8 +1893,20 @@ m
 
 \end_inset
 
- - minimum 60 °C, optimal 62 °C, maximum 64 °C; primer GC% - minimum 30%,
- optimal 50%, maximum 70%; product size ~ 150-230 bp; difference in T
+ - minimum 60
+\begin_inset space ~
+\end_inset
+
+°C, optimal 62
+\begin_inset space ~
+\end_inset
+
+°C, maximum 64
+\begin_inset space ~
+\end_inset
+
+°C; primer GC% - minimum 30%, optimal 50%, maximum 70%; product size ~ 150-230
+ bp; difference in T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1013,13 +1915,36 @@ m
 
 \end_inset
 
- between primers - 1.5 °C.
+ between primers - 1.5
+\begin_inset space ~
+\end_inset
+
+°C.
  Chosen primers were analysed using Primera to check for secondary structure
  and primer dimer potential.
  Primers were then blasted using ensembl to check for unique binding.
  Primers were ordered from Sigma-Aldrich as dehydrated and deionised oligos
  before being resuspended in molecular biology grade water [Qiagen] at a
- concentration of 100 μM for stock and a 10 μM working dilution.
+ concentration of 100
+\begin_inset space ~
+\end_inset
+
+µM for stock and a 10
+\begin_inset space ~
+\end_inset
+
+µM working dilution.
+\end_layout
+
+\begin_layout Standard
+See Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:RT-qPCR-Primers"
+
+\end_inset
+
+ for primer sequences.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1039,15 +1964,63 @@ An equimolar mix is used with RT-qPCR 3C to standardise primer efficiencies
 \emph on
 HindIII 
 \emph default
-[New England Biolabs] in 90 μl volume for 2 hours at 37 °C.
- Mix was then incubated at 65 °C for 30 minutes to heat-kill the restriction
- endonuclease.
- Samples were cooled and spun down before being added to a 15 ml tube with
- 800 units T4 ligase [New England Biolabs], 700 μl 10x T4 ligase buffer
- and 6208 μl molecular biology grade water.
- Sample was incubated at 16 °C for four hours and then room temperature
- for 30 minutes.
- Equimolar mix was stored at 4 °C.
+[New England Biolabs] in 90
+\begin_inset space ~
+\end_inset
+
+µl volume for 2
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+°C.
+ Mix was then incubated at 65
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+minutes to heat-kill the restriction endonuclease.
+ Samples were cooled and spun down before being added to a 15
+\begin_inset space ~
+\end_inset
+
+ml  tube with 800 units T4 ligase [New England Biolabs], 700
+\begin_inset space ~
+\end_inset
+
+µl 10
+\begin_inset Formula $\times$
+\end_inset
+
+ T4 ligase buffer and 6208
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade water.
+ Sample was incubated at 16
+\begin_inset space ~
+\end_inset
+
+°C for four
+\begin_inset space ~
+\end_inset
+
+hours and then room temperature for 30
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Equimolar mix was stored at 4
+\begin_inset space ~
+\end_inset
+
+°C.
  Mix was tested by using combinations of 3C primers in a PCR using Qiagen
  HotStar Taq and running products on a gel to check size of bands.
 \end_layout
@@ -1084,24 +2057,20 @@ RT-qPCR 3C was done using an ABI Prism Sequence Detection System.
 \end_inset
 
  and a no template control.
- Four replicates of 3C template were used, 125 ng each.
+ Four replicates of 3C template were used, 125
+\begin_inset space ~
+\end_inset
+
+ng each.
  Reaction mixtures were set up to a final volume of 25
-\series bold
- 
-\series default
-μl
-\series bold
- 
-\series default
-with 6
-\series bold
- 
-\series default
-μl
-\series bold
- 
-\series default
-H
+\begin_inset space ~
+\end_inset
+
+µl with 6
+\begin_inset space ~
+\end_inset
+
+µl H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1110,13 +2079,85 @@ H
 
 \end_inset
 
-O, 5 μl 3C material, 0.75 μl forward and reverse primers (final 300 nM) and
- 12.5 μl SYBRgreen 2x mix [ABI].
- qPCR was run with an step of 50 °C for 2 minutes and 95 °C for 10 minutes
- followed by 40 cycles of 95 °C for 15 seconds and 60 °C for 1 min.
- Upon completion of amplification a dissociation curve was run at 95 °C
- for 1 minute, 55 °C for 30 seconds, 95 °C for 30 seconds and 60 °C for
- 1 minute.
+O, 5
+\begin_inset space ~
+\end_inset
+
+µl 3C material, 0.75
+\begin_inset space ~
+\end_inset
+
+µl forward and reverse primers (final 300 nM) and 12.5
+\begin_inset space ~
+\end_inset
+
+µl SYBRgreen 2
+\begin_inset Formula $\times$
+\end_inset
+
+ mix [ABI].
+ qPCR was run with an step of 50
+\begin_inset space ~
+\end_inset
+
+°C for 2
+\begin_inset space ~
+\end_inset
+
+minutes and 95
+\begin_inset space ~
+\end_inset
+
+°C for 10
+\begin_inset space ~
+\end_inset
+
+minutes followed by 40 cycles of 95
+\begin_inset space ~
+\end_inset
+
+°C for 15
+\begin_inset space ~
+\end_inset
+
+seconds and 60
+\begin_inset space ~
+\end_inset
+
+°C for 1 min.
+ Upon completion of amplification a dissociation curve was run at 95
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+minute, 55
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds, 95
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds and 60
+\begin_inset space ~
+\end_inset
+
+°C for 1
+\begin_inset space ~
+\end_inset
+
+minute.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1214,7 +2255,11 @@ NlaIII
 \end_layout
 
 \begin_layout Standard
-12 µg of 3C material was defrosted and cleaned using 
+12
+\begin_inset space ~
+\end_inset
+
+µg of 3C material was defrosted and cleaned using 
 \emph on
 solid-phase reversible immobilisation
 \emph default
@@ -1228,13 +2273,35 @@ description "Solid-phase revsersible immobilization"
 
 SPRI), as described in the manufacturer's protocol (Beckman & Coulter Agencourt
  AMPure XP+ beads).
- Samples were eluted in 252 μl molecular biology grade water.
- Six primer extensions were set up with 2 µg template 3C material, alongside
- a positive control primer extension using 1 µg of human genomic DNA, cut
- with EcoRI.
- 50 µl reaction volumes were made up containing capture DNA, 1x ThermoPol
- buffer (supplied with Vent), 200 µM each dNTPs, 10 pmol biotinylated bait
- enrichment primer and 2 units Vent (exo
+ Samples were eluted in 252
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade water.
+ Six primer extensions were set up with 2
+\begin_inset space ~
+\end_inset
+
+µg template 3C material, alongside a positive control primer extension using
+ 1
+\begin_inset space ~
+\end_inset
+
+µg of human genomic DNA, cut with EcoRI.
+ 50
+\begin_inset space ~
+\end_inset
+
+µl reaction volumes were made up containing capture DNA, 1
+\begin_inset Formula $\times$
+\end_inset
+
+ ThermoPol buffer (supplied with Vent), 200
+\begin_inset space ~
+\end_inset
+
+µM each dNTPs, 10 pmol biotinylated bait enrichment primer and 2 units Vent
+ (exo
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1245,8 +2312,23 @@ SPRI), as described in the manufacturer's protocol (Beckman & Coulter Agencourt
 
 ) DNA polymerase (NEB).
  The primer extension was then run on a thermocycler with the following
- cycle parameters: 95 °C for 4 min, 61 °C for 2 min (primer specific; ~2.5°C
- below T
+ cycle parameters: 95
+\begin_inset space ~
+\end_inset
+
+°C for 4 min, 61
+\begin_inset space ~
+\end_inset
+
+°C for 2
+\begin_inset space ~
+\end_inset
+
+minutes (primer specific; ~2.5
+\begin_inset space ~
+\end_inset
+
+°C below T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1255,23 +2337,53 @@ m
 
 \end_inset
 
-of biotinylated primer), 72 °C for 10 min.
+of biotinylated primer), 72
+\begin_inset space ~
+\end_inset
+
+°C for 10 min.
  Tubes were snap chilled on ice and then briefly pulsed in the microcentrifuge.
  The six sample tubes were pooled into two microcentrifuge tubes and cleaned
  using a SPRI cleanup.
- Samples were eluted in 80 µl molecular biology water (40 µl for the genomic
- DNA positive control).
+ Samples were eluted in 80
+\begin_inset space ~
+\end_inset
+
+µl molecular biology water (40
+\begin_inset space ~
+\end_inset
+
+µl for the genomic DNA positive control).
  Samples were digested with 20 units of 
 \emph on
 NlaIII 
 \emph default
-(NEB) in 1x NEB4 buffer and 1x BSA (both supplied with 
+(NEB) in 1
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB4 buffer and 1
+\begin_inset Formula $\times$
+\end_inset
+
+ BSA (both supplied with 
 \emph on
 NlaIII
 \emph default
-) for 3 hours at 37 °C.
- Samples were purified using SPRI beads and eluted in 50 µl of Molecular
- Biology water.
+) for 3
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+°C.
+ Samples were purified using SPRI beads and eluted in 50
+\begin_inset space ~
+\end_inset
+
+µl of Molecular Biology water.
  
 \end_layout
 
@@ -1287,40 +2399,167 @@ NlaIII
 To enrich the e4C bait regions, bound with biotinylated primers from the
  extension step, the magnetic streptavidin Invitrogen Dynalbeads kilobaseBINDER
  Kit (M-280) was used.
- Beads were aliquoted into microcentrifuge tubes, 10 µl (100 µg) per sample.
+ Beads were aliquoted into microcentrifuge tubes, 10
+\begin_inset space ~
+\end_inset
+
+µl (100
+\begin_inset space ~
+\end_inset
+
+µg) per sample.
  The  preservative was removed on a magnet and the beads resuspended in
- 50 µl binding buffer (provided in Dynalbeads kilobaseBINDER kit).
- This was removed on the magnet and the beads resuspended in 50 µl fresh
- binding buffer.
- The primer extension material (50 µl) was added and the tubes incubated
- on a shaker set to 1200 rpm overnight at room temperature.
+ 50
+\begin_inset space ~
+\end_inset
+
+µl binding buffer (provided in Dynalbeads kilobaseBINDER kit).
+ This was removed on the magnet and the beads resuspended in 50
+\begin_inset space ~
+\end_inset
+
+µl fresh binding buffer.
+ The primer extension material (50
+\begin_inset space ~
+\end_inset
+
+µl) was added and the tubes incubated on a shaker set to 1200
+\begin_inset space ~
+\end_inset
+
+rpm overnight at room temperature.
  The supernatant was then removed on a magnet and the beads washed twice
- in 100 µl wash buffer, once in 100 µl 1x TE Buffer and once in 50 µl 1x
- NEB4 buffer with 1x BSA (NEB) before being resuspended in 50 µl NEB4 with
- BSA.
+ in 100
+\begin_inset space ~
+\end_inset
+
+µl wash buffer, once in 100
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
+ TE Buffer and once in 50
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB4 buffer with 1
+\begin_inset Formula $\times$
+\end_inset
+
+ BSA (NEB) before being resuspended in 50
+\begin_inset space ~
+\end_inset
+
+µl NEB4 with BSA.
 \end_layout
 
 \begin_layout Standard
 A second digestion step was then carried out with the enriched 3C material.
- To the resuspended beads, 0.5 µl (2.5 units) 
+ To the resuspended beads, 0.5
+\begin_inset space ~
+\end_inset
+
+µl (2.5 units) 
 \emph on
 NlaIII
 \emph default
- was added and tubes were incubate for 2 hours at 37°C, shaking at 1200
- rpm.
+ was added and tubes were incubate for 2
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+°C, shaking at 1200
+\begin_inset space ~
+\end_inset
+
+rpm.
  The supernatant was then removed on the magnet and the beads washed twice
- in 100 µl wash buffer, once in 100 µl 1x TE Buffer and once in 50 µl 1x
+ in 100
+\begin_inset space ~
+\end_inset
+
+µl wash buffer, once in 100
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
+ TE Buffer and once in 50
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
  NEB Ligase Buffer (supplied with NEB T4 ligase).
- Beads were resuspended in 50 µl fresh 1x NEB Ligase Buffer heated to 55°C
- for 5 minutes on a heating block along side a 7.5 µl aliquot of 100 µM stock
- PE Ad 2.0 NlaIII adapter.
+ Beads were resuspended in 50
+\begin_inset space ~
+\end_inset
+
+µl fresh 1
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB Ligase Buffer heated to 55
+\begin_inset space ~
+\end_inset
+
+°C for 5
+\begin_inset space ~
+\end_inset
+
+minutes on a heating block along side a 7.5
+\begin_inset space ~
+\end_inset
+
+µl aliquot of 100
+\begin_inset space ~
+\end_inset
+
+µM stock PE Ad 2.0 NlaIII adapter.
  Both were snap chilled on ice.
  Beads were placed on the magnet and the supernatant removed before being
- resuspended in 40 µl ligation mixture (1x NEB Ligase Buffer; 200 pmol PE
- Ad 2.0 NlaIII adapter; 2000 units NEB T4 DNA ligase).
- Tubes were incubated at room temperature for 2 hours on a rotating wheel.
+ resuspended in 40
+\begin_inset space ~
+\end_inset
+
+µl ligation mixture (1
+\begin_inset Formula $\times$
+\end_inset
+
+ NEB Ligase Buffer; 200 pmol PE Ad 2.0 NlaIII adapter; 2000 units NEB T4
+ DNA ligase).
+ Tubes were incubated at room temperature for 2
+\begin_inset space ~
+\end_inset
+
+hours on a rotating wheel.
  The supernatant was removed on a magnet and the beads washed twice in 100
- µl wash buffer and twice in 100 µl 1x TE Buffer.
+\begin_inset space ~
+\end_inset
+
+µl wash buffer and twice in 100
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
+ TE Buffer.
 \end_layout
 
 \begin_layout Subsection
@@ -1328,28 +2567,109 @@ PCR and germ-line removal
 \end_layout
 
 \begin_layout Standard
-Beads were washed in PCR wash mix (1x Phusion HF Reaction Buffer (NEB) with
- 200 µM each dNTPs) and split into a strip of 8 PCR tubes.
+Beads were washed in PCR wash mix (1
+\begin_inset Formula $\times$
+\end_inset
+
+ Phusion HF Reaction Buffer [NEB] with 200
+\begin_inset space ~
+\end_inset
+
+µM each dNTPs) and split into a strip of 8 PCR tubes.
  4 strip PCR tubes were used for half of the gDNA positive control and two
  tubes were used as no template controls.
  Using the magnet outside its housing, the PCR wash mix was removed and
- the beads resuspended in 50 μl of PCR master mix - 1x Phusion HF Reaction
- Buffer (NEB); 200 µM each dNTPs; 10 pmol PE Ad 1.0 + nested primer; 10 pmol
- PE Ad 2.0 
+ the beads resuspended in 50
+\begin_inset space ~
+\end_inset
+
+µl of PCR master mix - 1
+\begin_inset Formula $\times$
+\end_inset
+
+ Phusion HF Reaction Buffer [NEB]; 200
+\begin_inset space ~
+\end_inset
+
+µM each dNTPs; 10 pmol PE Ad 1.0 + nested primer; 10 pmol PE Ad 2.0 
 \emph on
 NlaIII
 \emph default
- adaptor primer; 1 unit HF Phusion Pol II (NEB).
- The PCR was run on a thermocycler with the following program: 98 °C for
- 30 seconds; 35 cycles of 98 °C for 10 seconds, 65 °C for 30 seconds and
- 72 °C for 30 seconds; 72 °C for 5 minutes; hold at 4 °C.
+ adaptor primer; 1 unit HF Phusion Pol II [NEB].
+ The PCR was run on a thermocycler with the following program: 98
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds; 35 cycles of 98
+\begin_inset space ~
+\end_inset
+
+°C for 10
+\begin_inset space ~
+\end_inset
+
+seconds, 65
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds and 72
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds; 72
+\begin_inset space ~
+\end_inset
+
+°C for 5
+\begin_inset space ~
+\end_inset
+
+minutes; hold at 4
+\begin_inset space ~
+\end_inset
+
+°C.
  The PCR tubes were pooled back into single sample tubes and the PCR supernatant
  transferred into a fresh microcentrifuge tube using a magnet.
- The beads were washed twice in 100 µl wash buffer and once in 100 µl 1x
- TE Buffer before storing at 4 °C as a backup.
- The PCR supernatant was cleaned using SPRI beads and eluted in 400 µl Molecular
- Biology water.
- 5 µl sample was kept back for the later gel.
+ The beads were washed twice in 100
+\begin_inset space ~
+\end_inset
+
+µl wash buffer and once in 100
+\begin_inset space ~
+\end_inset
+
+µl 1
+\begin_inset Formula $\times$
+\end_inset
+
+ TE Buffer before storing at 4
+\begin_inset space ~
+\end_inset
+
+°C as a backup.
+ The PCR supernatant was cleaned using SPRI beads and eluted in 400
+\begin_inset space ~
+\end_inset
+
+µl Molecular Biology water.
+ 5
+\begin_inset space ~
+\end_inset
+
+µl sample was kept back for the later gel.
 \end_layout
 
 \begin_layout Standard
@@ -1361,9 +2681,17 @@ AseI
 \emph default
  site.
  Aliquots of each sample were taken and processed from this point forwards,
- taking 100 μl aliquots and keeping the remainder as a backup.
- Each aliquot was made up to 1x with NEB buffer for the relevant restriction
- enzyme and then ~65 units of restriction enzyme (
+ taking 100
+\begin_inset space ~
+\end_inset
+
+µl aliquots and keeping the remainder as a backup.
+ Each aliquot was made up to 1
+\begin_inset Formula $\times$
+\end_inset
+
+ with NEB buffer for the relevant restriction enzyme and then ~65 units
+ of restriction enzyme (
 \emph on
 BspEI
 \emph default
@@ -1390,10 +2718,28 @@ what was it for ABL and MLL promoters?
 \end_inset
 
 ).
- Samples were incubated at 37°C for 2 hours before being cleaned with SPRI
- beads and eluted in 100 µl of molecular biology grade water.
- A 1.5% gel was run with 5 µl of the digested gDNA sample and 5 µl of the
- undigested gDNA sample to check removal of germ-line bands.
+ Samples were incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C for 2
+\begin_inset space ~
+\end_inset
+
+hours before being cleaned with SPRI beads and eluted in 100
+\begin_inset space ~
+\end_inset
+
+µl of molecular biology grade water.
+ A 1.5% gel was run with 5
+\begin_inset space ~
+\end_inset
+
+µl of the digested gDNA sample and 5
+\begin_inset space ~
+\end_inset
+
+µl of the undigested gDNA sample to check removal of germ-line bands.
 \end_layout
 
 \begin_layout Subsection
@@ -1407,20 +2753,80 @@ Half of the e4C sample was run on a 1.5% gel and stained in fresh Ethidium
  sample from 250bp to 700bp.
  The samples were extracted from these gel blocks using the Qiagen Gel Extractio
 n Kit, as per the manufacturer's instructions (without heating to resuspend).
- Samples were eluted in 30 µl Qiagen Elution Buffer.
+ Samples were eluted in 30
+\begin_inset space ~
+\end_inset
+
+µl Qiagen Elution Buffer.
 \end_layout
 
 \begin_layout Standard
 To add the full illumina adapters for sequencing, a second PCR is used.
- 3 µl e4C sample is made up to a 50 µl PCR mix with 1x Phusion HF Reaction
- Buffer (NEB); 200 µM each dNTPs; 10 pmol PE PCR 1.0 Primer; 10 pmol PE PCR
- 2.0 Primer; 1 unit Phusion HF Taq (NEB).
- The Phusion two step PCR was then run: 98 °C for 30 seconds; 15 cycles
- of 98 °C for 10 seconds and 72 °C for 30 seconds; 72 °C for 5 minutes;
- hold at 4 °C.
- PCR products were cleaned using SPRI beads and eluted in 40 µl molecular
- biology grade water.
- To check the products, 10 µl was run on a 1% gel.
+ 3
+\begin_inset space ~
+\end_inset
+
+µl e4C sample is made up to a 50
+\begin_inset space ~
+\end_inset
+
+µl PCR mix with 1
+\begin_inset Formula $\times$
+\end_inset
+
+ Phusion HF Reaction Buffer [NEB]; 200
+\begin_inset space ~
+\end_inset
+
+µM each dNTPs; 10 pmol PE PCR 1.0 Primer; 10 pmol PE PCR 2.0 Primer; 1 unit
+ Phusion HF Taq [NEB].
+ The Phusion two step PCR was then run: 98
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds; 15 cycles of 98
+\begin_inset space ~
+\end_inset
+
+°C for 10
+\begin_inset space ~
+\end_inset
+
+seconds and 72
+\begin_inset space ~
+\end_inset
+
+°C for 30
+\begin_inset space ~
+\end_inset
+
+seconds; 72
+\begin_inset space ~
+\end_inset
+
+°C for 5
+\begin_inset space ~
+\end_inset
+
+minutes; hold at 4
+\begin_inset space ~
+\end_inset
+
+°C.
+ PCR products were cleaned using SPRI beads and eluted in 40
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade water.
+ To check the products, 10
+\begin_inset space ~
+\end_inset
+
+µl was run on a 1% gel.
 \end_layout
 
 \begin_layout Subsection
@@ -1476,8 +2882,19 @@ BAC preparation
 The DNA used to create the DNA-FISH probes was generated using bacterial
  artificial chromosomes (BACs).
  BACs were ordered from Invitrogen and grown on agar plates with chloramphenicol.
- A single BAC colony was picked into 3 ml of LB containing chloramphenicol
- and incubated at 37˚C with shaking for 8 hours.
+ A single BAC colony was picked into 3
+\begin_inset space ~
+\end_inset
+
+ml  of LB containing chloramphenicol and incubated at 37
+\begin_inset space ~
+\end_inset
+
+˚C with shaking for 8
+\begin_inset space ~
+\end_inset
+
+hours.
  Cultures were diluted 
 \begin_inset Formula $\frac{1}{500}$
 \end_inset
@@ -1486,56 +2903,196 @@ The DNA used to create the DNA-FISH probes was generated using bacterial
 \begin_inset Formula $\frac{1}{1000}$
 \end_inset
 
- in 100 ml of LB with chloramphenicol according to growth and placed in
- a large conical flask before incubation for 16 hours at 37˚C with shaking.
+ in 100
+\begin_inset space ~
+\end_inset
+
+ml  of LB with chloramphenicol according to growth and placed in a large
+ conical flask before incubation for 16
+\begin_inset space ~
+\end_inset
+
+hours at 37
+\begin_inset space ~
+\end_inset
+
+˚C with shaking.
 \end_layout
 
 \begin_layout Standard
-Cells were centrifuged in 50 ml tubes at 3500 rpm, 4˚C for 10 minutes.
+Cells were centrifuged in 50
+\begin_inset space ~
+\end_inset
+
+ml  tubes at 3500
+\begin_inset space ~
+\end_inset
+
+rpm, 4
+\begin_inset space ~
+\end_inset
+
+˚C for 10
+\begin_inset space ~
+\end_inset
+
+minutes.
  Cell pellets were resuspended in 4ml of buffer P1 [Qiagen] before adding
  8ml buffer P2 [Qiagen] and mixing by inversion.
- Cells were incubated at room temperature for 5 minutes.
+ Cells were incubated at room temperature for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
  8ml buffer P3 [Qiagen] was added and mixed by inversion then left on ice
- for 5 minutes.
- Solutions were centrifuged at 4500 rpm for 10 minutes.
+ for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Solutions were centrifuged at 4500
+\begin_inset space ~
+\end_inset
+
+rpm for 10
+\begin_inset space ~
+\end_inset
+
+minutes.
  Supernatant was filtered through pre-wetted filter papers placed inside
  clean glass funnels, held in centrifuge tubes.
  0.7 volumes of isopropanol was added and BAC DNA allowed to precipitate
- for 10 minutes on ice.
+ for 10
+\begin_inset space ~
+\end_inset
+
+minutes on ice.
 \end_layout
 
 \begin_layout Standard
-DNA was centrifuged at 20,000x 
+DNA was centrifuged at 20,000
+\begin_inset Formula $\times$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
 \emph on
 g
 \emph default
- for 15 minutes at 4˚C.
- The supernatant was discarded and the pellet resuspended in 1 ml 70% ethanol
- before being transferred to 1.5ml microcentrifuge tubes.
- Tubes were centrifuged at 13,000 rpm for 5 minutes before aspiration of
- the ethanol.
+ for 15
+\begin_inset space ~
+\end_inset
+
+minutes at 4
+\begin_inset space ~
+\end_inset
+
+˚C.
+ The supernatant was discarded and the pellet resuspended in 1
+\begin_inset space ~
+\end_inset
+
+ml  70% ethanol before being transferred to 1.5ml microcentrifuge tubes.
+ Tubes were centrifuged at 13,000
+\begin_inset space ~
+\end_inset
+
+rpm for 5
+\begin_inset space ~
+\end_inset
+
+minutes before aspiration of the ethanol.
  Pellets were allowed to dry briefly at room temperature and resuspended
- in 400 μl molecular biology grade water [Qiagen].
- DNA was precipitated with 100 μl of 4M NaCl and 540 μl 13% PEG-8000 solution
- (autoclaved).
- Tubes were centrifuged for 1 minute at 13,000 rpm and the pellet washed
- with 500 μl 70% EtOH.
- Tubes were again spun at 13,000 rpm for 1 minute and the pellete allowed
- to air dry briefly.
+ in 400
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade water [Qiagen].
+ DNA was precipitated with 100
+\begin_inset space ~
+\end_inset
+
+µl of 4M NaCl and 540
+\begin_inset space ~
+\end_inset
+
+µl 13% PEG-8000 solution (autoclaved).
+ Tubes were centrifuged for 1
+\begin_inset space ~
+\end_inset
+
+minute at 13,000
+\begin_inset space ~
+\end_inset
+
+rpm and the pellet washed with 500
+\begin_inset space ~
+\end_inset
+
+µl 70% EtOH.
+ Tubes were again spun at 13,000
+\begin_inset space ~
+\end_inset
+
+rpm for 1
+\begin_inset space ~
+\end_inset
+
+minute and the pellete allowed to air dry briefly.
 \end_layout
 
 \begin_layout Standard
-Pellets were resuspend in 250 μl TE buffer and added to 250 μl Phenol:chloroform
-:isoamyl alcohol (25:24:1, pH 8).
+Pellets were resuspend in 250
+\begin_inset space ~
+\end_inset
+
+µl TE buffer and added to 250
+\begin_inset space ~
+\end_inset
+
+µl Phenol: chloroform: isoamyl alcohol (25: 24: 1, pH
+\begin_inset space ~
+\end_inset
+
+8).
  Tubes were vortexed and centrifuged before removal of the aqueous phase
  into a fresh microcentrifuge tube.
- DNA was precipitated with 0.1 volume of 3M NaOAc (pH 5.2) and 2.5 volumes
- of 100% ethanol.
- Tubes were spun at 13,000 rpm for 10 minutes.
- DNA was washed with 500 μl 70% ethanol and then spun again 13,000 rpm for
- 1 minute.
+ DNA was precipitated with 0.1 volume of 3M NaOAc (pH
+\begin_inset space ~
+\end_inset
+
+5.2) and 2.5 volumes of 100% ethanol.
+ Tubes were spun at 13,000
+\begin_inset space ~
+\end_inset
+
+rpm for 10
+\begin_inset space ~
+\end_inset
+
+minutes.
+ DNA was washed with 500
+\begin_inset space ~
+\end_inset
+
+µl 70% ethanol and then spun again 13,000
+\begin_inset space ~
+\end_inset
+
+rpm for 1
+\begin_inset space ~
+\end_inset
+
+minute.
  Ethanol was removed and the pellet allowed to air dry pellet before being
- resuspended in 100 μl molecular biology grade water [Qiagen].
+ resuspended in 100
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade water [Qiagen].
  DNA was quantified using a NanoDrop machine.
 \end_layout
 
@@ -1554,8 +3111,11 @@ I used directly-labeled DNA probes for the FISH, generated with nick translation
 \end_layout
 
 \begin_layout Standard
-To generate nick translated aminoallyl-dUTP labelled probes I added 4 μg
- BAC DNA in H
+To generate nick translated aminoallyl-dUTP labelled probes I added 4
+\begin_inset space ~
+\end_inset
+
+µg BAC DNA in H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1564,8 +3124,31 @@ To generate nick translated aminoallyl-dUTP labelled probes I added 4 μg
 
 \end_inset
 
-O to 20 μl 10 × NTB 5 μl (for 5 ml - 2.5 ml 1 M Tris-HCl, pH 7.5, 0.25 ml 1
- M MgCl
+O to 20
+\begin_inset space ~
+\end_inset
+
+µl 10 × NTB 5
+\begin_inset space ~
+\end_inset
+
+µl (for 5
+\begin_inset space ~
+\end_inset
+
+ml  - 2.5
+\begin_inset space ~
+\end_inset
+
+ml  1 M Tris-HCl, pH
+\begin_inset space ~
+\end_inset
+
+7.5, 0.25
+\begin_inset space ~
+\end_inset
+
+ml  1 M MgCl
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1574,10 +3157,40 @@ O to 20 μl 10 × NTB 5 μl (for 5 ml - 2.5 ml 1 M Tris-HCl, pH 7.5, 0.25 ml 1
 
 \end_inset
 
-, 250 μl 10 mg/ml BSA fraction V, 2 ml nuclease-free water), 20 μl 0.1M DTT
- [invitrogen], 16 μl d(GAC)TP mix (0.5mM each), 4 μl 0.5 mM dTTP, 24 μl 0.5mM
- aminoallyl-dUTP, 40 units DNA Polymerase I [NEB], 4 μl 1:30 dilution DNase
- I [Roche] (dilution tested empirically for each new tube) and H
+, 250
+\begin_inset space ~
+\end_inset
+
+µl 10 mg/ml BSA fraction V, 2
+\begin_inset space ~
+\end_inset
+
+ml  nuclease-free water), 20
+\begin_inset space ~
+\end_inset
+
+µl 0.1M DTT [invitrogen], 16
+\begin_inset space ~
+\end_inset
+
+µl d(GAC)TP mix (0.5mM each), 4
+\begin_inset space ~
+\end_inset
+
+µl 0.5
+\begin_inset space ~
+\end_inset
+
+mM  dTTP, 24
+\begin_inset space ~
+\end_inset
+
+µl 0.5mM aminoallyl-dUTP, 40 units DNA Polymerase I [NEB], 4
+\begin_inset space ~
+\end_inset
+
+µl 1:30 dilution DNase I [Roche] (dilution tested empirically for each new
+ tube) and H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1586,17 +3199,45 @@ O to 20 μl 10 × NTB 5 μl (for 5 ml - 2.5 ml 1 M Tris-HCl, pH 7.5, 0.25 ml 1
 
 \end_inset
 
-O to a final volume 200 μl.
+O to a final volume 200
+\begin_inset space ~
+\end_inset
+
+µl.
 \end_layout
 
 \begin_layout Standard
-Tubes were incubated at 16 °C for 2 hours.
- A 1 μl aliquot was run on a 2% agarose gel to check the size of the fragments
+Tubes were incubated at 16
+\begin_inset space ~
+\end_inset
+
+°C for 2
+\begin_inset space ~
+\end_inset
+
+hours.
+ A 1
+\begin_inset space ~
+\end_inset
+
+µl aliquot was run on a 2% agarose gel to check the size of the fragments
  - the optimal size is a smear of products from 1kb to 150bp with the peak
  around 200-300bp.
- Samples were heated to 75 ˚C for 5 minutes to inactivate the DNase I.
+ Samples were heated to 75
+\begin_inset space ~
+\end_inset
+
+˚C for 5
+\begin_inset space ~
+\end_inset
+
+minutes to inactivate the DNase I.
  Amine-modified DNA was cleaned using a Qiagen PCR purification kit, eluted
- in 200 μl molecular biology grade H
+ in 200
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1605,11 +3246,37 @@ Tubes were incubated at 16 °C for 2 hours.
 
 \end_inset
 
-O [Qiagen] and precipitated with 20 μl NaOAc and 550 μl 100% ethanol at
- -20 ˚C for at least an hour (typically overnight).
- Samples were centrifuged at 13,500 rpm for 15 minutes at 4 Pellets were
- washed with 100 μl 70% ethanol, spun and dried at room temperature.
- Pellets were then resuspended in 5 μl molecular biology grade H
+O [Qiagen] and precipitated with 20
+\begin_inset space ~
+\end_inset
+
+µl NaOAc and 550
+\begin_inset space ~
+\end_inset
+
+µl 100% ethanol at -20
+\begin_inset space ~
+\end_inset
+
+˚C for at least an hour (typically overnight).
+ Samples were centrifuged at 13,500
+\begin_inset space ~
+\end_inset
+
+rpm for 15
+\begin_inset space ~
+\end_inset
+
+minutes at 4 Pellets were washed with 100
+\begin_inset space ~
+\end_inset
+
+µl 70% ethanol, spun and dried at room temperature.
+ Pellets were then resuspended in 5
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1619,14 +3286,33 @@ O [Qiagen] and precipitated with 20 μl NaOAc and 550 μl 100% ethanol at
 \end_inset
 
 O.
- Amine-modified DNA was stored at -20 ˚C.
+ Amine-modified DNA was stored at -20
+\begin_inset space ~
+\end_inset
+
+˚C.
 \end_layout
 
 \begin_layout Standard
 For labelling, Invitrogen Alexa Fluor® reactive dyes were warmed to room
- temperature and resuspended in 2 μl anhydrous DMSO.
- One tube was used for 4 μg aminoallyl labelled DNA in 5 μl with 3 μl 0.2
- M NaHCO
+ temperature and resuspended in 2
+\begin_inset space ~
+\end_inset
+
+µl anhydrous DMSO.
+ One tube was used for 4
+\begin_inset space ~
+\end_inset
+
+µg aminoallyl labelled DNA in 5
+\begin_inset space ~
+\end_inset
+
+µl with 3
+\begin_inset space ~
+\end_inset
+
+µl 0.2 M NaHCO
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1635,16 +3321,35 @@ For labelling, Invitrogen Alexa Fluor® reactive dyes were warmed to room
 
 \end_inset
 
- buffer (pH 8.3 [Sigma]) to make a total volume of 10 μl (tubes were split
- to label different probes on occasion, but ratios kept the same).
- Amine-modified DNA was heated to 95˚C for 5 and snap cooled on ice before
- addition.
+ buffer (pH
+\begin_inset space ~
+\end_inset
+
+8.3 [Sigma]) to make a total volume of 10
+\begin_inset space ~
+\end_inset
+
+µl (tubes were split to label different probes on occasion, but ratios kept
+ the same).
+ Amine-modified DNA was heated to 95
+\begin_inset space ~
+\end_inset
+
+˚C for 5 and snap cooled on ice before addition.
  Reaction mixture was vortexed, spun down and incubated at room temperature
- in the dark for at least 1 hour.
+ in the dark for at least 1
+\begin_inset space ~
+\end_inset
+
+hour.
 \end_layout
 
 \begin_layout Standard
-To remove unincorporated dye, 40 μl molecular biology grade H
+To remove unincorporated dye, 40
+\begin_inset space ~
+\end_inset
+
+µl molecular biology grade H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1655,7 +3360,11 @@ To remove unincorporated dye, 40 μl molecular biology grade H
 
 O was added and probes cleaned using a Qiagen PCR cleanup kit, washing the
  column twice with PE.
- Probes were eluted in 200 μl H
+ Probes were eluted in 200
+\begin_inset space ~
+\end_inset
+
+µl H
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1667,17 +3376,59 @@ O was added and probes cleaned using a Qiagen PCR cleanup kit, washing the
 O (less if the dye was split).
  Probes were analysed on a Thermo Scientific NanoDrop using the ‘proteins
  and labels’ setting to measure dye incorporation and DNA concentration
- and stored at -20 ˚C.
+ and stored at -20
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+˚C.
 \end_layout
 
 \begin_layout Standard
-Before use, 20 ng of probe was added to 1 μg Cot-1 DNA [Roche] and 9.7 μg
- salmon sperm DNA [Roche] before precipitation with sodium acetate and 100%
- ethanol at -20 °C overnight.
+Before use, 20
+\begin_inset space ~
+\end_inset
+
+ng of probe was added to 1
+\begin_inset space ~
+\end_inset
+
+µg Cot-1 DNA [Roche] and 9.7
+\begin_inset space ~
+\end_inset
+
+µg salmon sperm DNA [Roche] before precipitation with sodium acetate and
+ 100% ethanol at -20
+\begin_inset space ~
+\end_inset
+
+°C overnight.
  Tubes were spun, washed in 70% ethanol and dried.
- Pellets were resuspended in 5 μl deionized formamide (pH 7.0 [Sigma]) and
- incubated at 37 °C, shaking at 300 - 500 rpm, for at least 30 min.
- 5 μl 50% dextran sulfate in in 
+ Pellets were resuspended in 5
+\begin_inset space ~
+\end_inset
+
+µl deionized formamide (pH
+\begin_inset space ~
+\end_inset
+
+7.0 [Sigma]) and incubated at 37
+\begin_inset space ~
+\end_inset
+
+°C, shaking at 300 - 500
+\begin_inset space ~
+\end_inset
+
+rpm, for at least 30 min.
+ 5
+\begin_inset space ~
+\end_inset
+
+µl 50% dextran sulfate in in 
 \begin_inset Formula $2\times$
 \end_inset
 
@@ -1716,18 +3467,48 @@ reference "sec:M&M-Cell-culture"
 
 .
  Cell pellets were resuspended in PBS and counted.
- 100 μl containing approximately 
+ 100
+\begin_inset space ~
+\end_inset
+
+µl containing approximately 
 \begin_inset Formula $1\times10^{5}$
 \end_inset
 
  cells was pipetted into into an assembled cytospin funnel [Thermo Scientific]
- and polypro poly-L-lysine slide [Sigma] and spin at 300 rpm for 3 minutes
- in the Shandon cytospinner.
+ and polypro poly-L-lysine slide [Sigma] and spin at 300
+\begin_inset space ~
+\end_inset
+
+rpm for 3
+\begin_inset space ~
+\end_inset
+
+minutes in the Shandon cytospinner.
  Slides were placed into a coplin jar containing PBS.
  Cells were permeabilised in 0.1% saponin and 0.1% triton X-100 in PBS for
- 10 minutes at room temperature.
- Slides were washed in PBS for 5 minutes twice and stored in 50% glycerol
- and PBS at -20 ˚C for at least two days.
+ 10
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Slides were washed in PBS for 5
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+minutes twice and stored in 50% glycerol and PBS at -20
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+˚C for at least two days.
 \end_layout
 
 \begin_layout Subsection
@@ -1735,8 +3516,19 @@ Probe hybridisation and washing
 \end_layout
 
 \begin_layout Standard
-Slides were removed from -20 ˚C storage and placed in 20% glycerol and PBS
- at room temperature for 5 minutes.
+Slides were removed from -20
+\begin_inset space ~
+\end_inset
+
+˚C storage and placed in 20% glycerol and PBS at room temperature for 5
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+minutes.
  Nuclei were permeabilised using three freeze - thaw cycles in liquid nitrogen;
  slides were placed in the liquid N
 \begin_inset script subscript
@@ -1747,37 +3539,104 @@ Slides were removed from -20 ˚C storage and placed in 20% glycerol and PBS
 
 \end_inset
 
- for 3 - 4 seconds or until a characteristic 'popping' noise was heard.
+ for 3
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+4 seconds or until a characteristic 'popping' noise was heard.
  Slides were laid on tissue to thaw and placed back in 20% glycerol and
  PBS.
  After three repeats of this freeze - thaw cycle slides were washed in PBS
- for 5 minutes twice.
- Slides were then incubated in 0.1 N HCl at room temperature for 30 minutes.
- Slides were washed in PBS for 5 minutes before the addition of 100 μl of
- 100 μg/ml RNase A [Roche] in 
+ for 5
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+minutes twice.
+ Slides were then incubated in 0.1 N HCl at room temperature for 30
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Slides were washed in PBS for 5
+\begin_inset space ~
+\end_inset
+
+minutes before the addition of 100
+\begin_inset space ~
+\end_inset
+
+µl of 100
+\begin_inset space ~
+\end_inset
+
+µg/ml RNase
+\begin_inset space ~
+\end_inset
+
+A [Roche] in 
 \begin_inset Formula $2\times$
 \end_inset
 
 SSC on a coverslip.
- Slides were incubated horizontally at 37 ˚C for 60 minutes.
+ Slides were incubated horizontally at 37
+\begin_inset space ~
+\end_inset
+
+˚C for 60
+\begin_inset space ~
+\end_inset
+
+minutes.
  Slides were washed in 
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC for 5 minutes and then PBS for 5 minutes.
+SSC for 5
+\begin_inset space ~
+\end_inset
+
+minutes and then PBS for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
  Slides were permeabilised in 0.5% saponin with 0.5% triton X-100 in PBS for
- 30 minutes at room temperature.
- Slides were washed in PBS for five minutes, twice.
+ 30
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Slides were washed in PBS for five
+\begin_inset space ~
+\end_inset
+
+minutes, twice.
  Slides were then equilibrated in 50% formamide and 
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC for at least 10 minutes.
+SSC for at least 10
+\begin_inset space ~
+\end_inset
+
+minutes.
  
 \end_layout
 
 \begin_layout Standard
-10 μl of probe mix was pipetted onto a 
+10
+\begin_inset space ~
+\end_inset
+
+µl of probe mix was pipetted onto a 
 \begin_inset Formula $22\times22$
 \end_inset
 
@@ -1786,8 +3645,19 @@ SSC for at least 10 minutes.
  off and coverslips with probe mixes were inverted and placed onto the cell
  spot.
  Slides were sealed with Fixogum rubber cement [Marabu] and heated to 78
- ˚C for 2 minutes on a hot plate.
- Slides were then incubated at 37 ˚C in a humidified chamber overnight.
+\begin_inset space ~
+\end_inset
+
+˚C for 2
+\begin_inset space ~
+\end_inset
+
+minutes on a hot plate.
+ Slides were then incubated at 37
+\begin_inset space ~
+\end_inset
+
+˚C in a humidified chamber overnight.
 \end_layout
 
 \begin_layout Standard
@@ -1801,29 +3671,87 @@ SSC to remove coverslips and washed in 50% formamide with
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC for 15 minutes at 45 ˚C.
+SSC for 15
+\begin_inset space ~
+\end_inset
+
+minutes at 45
+\begin_inset space ~
+\end_inset
+
+˚C.
  Slides were then washed in 
 \begin_inset Formula $0.2\times$
 \end_inset
 
-SSC at 63 ˚C for 15 minutes and then 
+SSC at 63
+\begin_inset space ~
+\end_inset
+
+˚C for 15
+\begin_inset space ~
+\end_inset
+
+minutes and then 
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC at 45 ˚C for 5 minutes.
+SSC at 45
+\begin_inset space ~
+\end_inset
+
+˚C for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
  Slides were equilibrated back to room temperature in 
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC for five minutes and rinsed in PBS for 5 minutes.
- Slides were then stained in 80 ng/ml DAPI and 
+SSC for five
+\begin_inset space ~
+\end_inset
+
+minutes and rinsed in PBS for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
+ Slides were then stained in 80
+\begin_inset space ~
+\end_inset
+
+ng/ml DAPI and 
 \begin_inset Formula $2\times$
 \end_inset
 
-SSC for 2 minutes at room temperature.
- Slides were washed in PBS for 10 minutes and fixed in 3.7% formaldehyde
- and PBS for 5 minutes.Slides were quenched in 155 mM glycine for at least
- 30 minutes before being washed in PBS for 5 minutes.
+SSC for 2
+\begin_inset space ~
+\end_inset
+
+minutes at room temperature.
+ Slides were washed in PBS for 10
+\begin_inset space ~
+\end_inset
+
+minutes and fixed in 3.7% formaldehyde and PBS for 5
+\begin_inset space ~
+\end_inset
+
+minutes.Slides were quenched in 155
+\begin_inset space ~
+\end_inset
+
+mM  glycine for at least 30
+\begin_inset space ~
+\end_inset
+
+minutes before being washed in PBS for 5
+\begin_inset space ~
+\end_inset
+
+minutes.
  Slides had 
 \begin_inset Formula $64\times22$
 \end_inset

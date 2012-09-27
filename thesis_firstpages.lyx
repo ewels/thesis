@@ -408,15 +408,7 @@ status open
 
 \family sans
 \size footnotesize
-The Osborne 
-\strikeout on
-lab
-\strikeout default
- 
-\emph on
-posse
-\emph default
-.
+The Osborne lab.
 \end_layout
 
 \end_inset
@@ -434,7 +426,7 @@ The Osborne lab has been a tight knit group throughout my PhD - I'd like
 \end_layout
 
 \begin_layout Standard
-Being a small lab I relied heavily on those across the hall, especially
+Being a small lab I relied heavily on those across the corridor, especially
  Stefan Schoenfelder, Daniel Bolland, Chris Eskiw, Louise Harewood, Joana
  Martins and Mayra.
  Notably there was some extreme speed-reading of this thesis for which I

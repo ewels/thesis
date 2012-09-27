@@ -1275,7 +1275,7 @@ status open
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1284,19 +1284,25 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size footnotesize
 Length (bp)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size footnotesize
 T
 \begin_inset script subscript
 
@@ -1311,10 +1317,13 @@ m
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
+\size footnotesize
 GC Content
 \end_layout
 
@@ -1326,6 +1335,8 @@ GC Content
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Illumina Sequencing Primer 1.0
 \end_layout
 
@@ -1335,6 +1346,8 @@ Illumina Sequencing Primer 1.0
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 33
 \end_layout
 
@@ -1344,6 +1357,8 @@ Illumina Sequencing Primer 1.0
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 77.4°C
 \end_layout
 
@@ -1353,6 +1368,8 @@ Illumina Sequencing Primer 1.0
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 51.5%
 \end_layout
 
@@ -1364,6 +1381,8 @@ Illumina Sequencing Primer 1.0
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 BCR Sequencing Primer
 \end_layout
 
@@ -1373,6 +1392,8 @@ BCR Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 38
 \end_layout
 
@@ -1382,6 +1403,8 @@ BCR Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 73.4°C
 \end_layout
 
@@ -1391,6 +1414,8 @@ BCR Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 36.8%
 \end_layout
 
@@ -1402,6 +1427,8 @@ BCR Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL Sequencing Primer
 \end_layout
 
@@ -1411,6 +1438,8 @@ MLL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 35
 \end_layout
 
@@ -1420,6 +1449,8 @@ MLL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 74.2°C
 \end_layout
 
@@ -1429,6 +1460,8 @@ MLL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 34.3%
 \end_layout
 
@@ -1440,6 +1473,8 @@ MLL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ABL Sequencing Primer
 \end_layout
 
@@ -1449,6 +1484,8 @@ ABL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 32
 \end_layout
 
@@ -1458,6 +1495,8 @@ ABL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 77.9°C
 \end_layout
 
@@ -1467,6 +1506,8 @@ ABL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 46.9%
 \end_layout
 
@@ -1478,6 +1519,8 @@ ABL Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL-p1 Sequencing Primer
 \end_layout
 
@@ -1487,6 +1530,8 @@ MLL-p1 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 34
 \end_layout
 
@@ -1496,6 +1541,8 @@ MLL-p1 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 76.1°C
 \end_layout
 
@@ -1505,6 +1552,8 @@ MLL-p1 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 41.2%
 \end_layout
 
@@ -1516,6 +1565,8 @@ MLL-p1 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 MLL-p2 Sequencing Primer
 \end_layout
 
@@ -1525,6 +1576,8 @@ MLL-p2 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 40
 \end_layout
 
@@ -1534,6 +1587,8 @@ MLL-p2 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 74.7°C
 \end_layout
 
@@ -1543,6 +1598,8 @@ MLL-p2 Sequencing Primer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 42.5%
 \end_layout
 
@@ -3647,8 +3704,7 @@ NlaIII
  e4C adapter (ordered as two oligos and hybridised before use) and second
  round PCR primers used to incorporate full Illumina PE adapters.
  Illumina sequencing primer shown as reference (not used for any e4C sequencing).
- º denotes a biotinylation moiety.
- § denotes a phosphorylation modification.
+ ° denotes a biotinylation moiety.
  * denotes a phosphorothioate modification.
 \end_layout
 
@@ -4082,13 +4138,8 @@ reference "sec:M&M-CD34-cell-handling"
 
 .
  Typically, between 12 and 30 ml whole blood was received in each sample,
- giving a median final count of 3.6 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-5
-\end_layout
-
+ giving a median final count of 
+\begin_inset Formula $3.6\times10^{5}$
 \end_inset
 
  CD34
@@ -4101,24 +4152,14 @@ reference "sec:M&M-CD34-cell-handling"
 \end_inset
 
  cells per collection.
- Typically, 3C experiments use 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
+ Typically, 3C experiments use 
+\begin_inset Formula $1\times10^{7}$
 \end_inset
 
  cells, equivalent to 28 collections pooled together.
  Between 2008 and 2009 I managed to collect and sort 23 peripheral blood
- samples, giving a total of 1.04 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
+ samples, giving a total of 
+\begin_inset Formula $1.04\times10^{6}$
 \end_inset
 
  total cells, however 10 of these samples had to be discarded due to poor
@@ -4130,21 +4171,15 @@ reference "sec:chap4-CD34-cell-prep"
 \end_inset
 
 ).
- This left me with 13 samples and a total of 7 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
+ This left me with 13 samples and a total of  
+\begin_inset Formula $7\times10^{6}$
 \end_inset
 
  cells (minimum 76% purity, average 91.6% purity).
  Because of this low cell number I worked on optimising the 3C protocol
  for use with low cell numbers.
- Some of this work was done with the help of Dr.
- Mayra Furlan-Magaril, who was a visiting student in our laboratory at the
- time.
+ Some of this work was done with the help of Dr Mayra Furlan-Magaril, who
+ was a visiting student in our laboratory at the time.
  
 \end_layout
 
@@ -4383,22 +4418,12 @@ reference "sec:M&M-3C"
 \end_inset
 
 , up until the point of permeabilisation.
- Sf9 cells were then split into two aliquots of 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
+ Sf9 cells were then split into two aliquots of 
+\begin_inset Formula $1\times10^{7}$
 \end_inset
 
- cells, and 1 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-6
-\end_layout
-
+ cells, and 
+\begin_inset Formula $1\times10^{6}$
 \end_inset
 
  sample cells were added to one aliquot.
@@ -4585,13 +4610,8 @@ reference "sub:M&M-Leukapheresis-collections"
 
 \end_inset
 
- cells from this single collection was 2.88 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
+ cells from this single collection was 
+\begin_inset Formula $2.88\times10^{7}$
 \end_inset
 
  cells, over four times the number of cells collected from a year of weekly
@@ -4608,22 +4628,12 @@ reference "sub:M&M-Leukapheresis-collections"
  These collections also had the added benefit of coming from a single patient,
  so not risking any population variation we may see within the association
  datasets.
- In a further two leukapheresis collections 3.99 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-7
-\end_layout
-
+ In a further two leukapheresis collections 
+\begin_inset Formula $3.99\times10^{7}$
 \end_inset
 
- and 1.4 x 10
-\begin_inset script superscript
-
-\begin_layout Plain Layout
-8
-\end_layout
-
+ and 
+\begin_inset Formula $1.4\times10^{8}$
 \end_inset
 
  CD34
@@ -4731,7 +4741,11 @@ reference "sec:chap4-CD34-cell-prep"
 .
  The patient identifier was 
 \family typewriter
-Ref 2593P
+Ref
+\begin_inset space ~
+\end_inset
+
+2593P
 \family default
 , undergoing treatment for T-cell lymphoma.
  I collected 
@@ -5132,15 +5146,29 @@ reference "sec:M&M-3C"
 \end_inset
 
 .
- PicoGreen analysis showed the yield to be 130 μg, 75% efficiency (assuming
- a hypothetical potential yield of 172.8 μg calculated by number of cells
- 
+ PicoGreen analysis showed the yield to be 130
+\begin_inset space ~
+\end_inset
+
+µg, 75% efficiency (assuming a hypothetical potential yield of 172.8
+\begin_inset space ~
+\end_inset
+
+µg calculated by number of cells 
 \begin_inset Formula $\times$
 \end_inset
 
- 6 pg DNA per nucleus).
- I ran 1 μg of 3C material on a 1% gel which looked good, despite some distortio
-n due to salt remaining after the ethanol precipitation (Fig 
+ 6
+\begin_inset space ~
+\end_inset
+
+pg DNA per nucleus).
+ I ran 1
+\begin_inset space ~
+\end_inset
+
+µg of 3C material on a 1% gel which looked good, despite some distortion
+ due to salt remaining after the ethanol precipitation (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:CD34+-3C-library-gel"
@@ -5352,7 +5380,14 @@ BCR e4C libraries after first round PCR.
 \begin_layout Standard
 To size select fragments of a length suitable for sequencing, the e4C library
  was purified using a gel extraction with a band from approximately 250
- bp to 700 bp (Fig 
+\begin_inset space ~
+\end_inset
+
+bp to 700
+\begin_inset space ~
+\end_inset
+
+bp (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:CD34+-e4C-library-gel-extraction"

@@ -69,7 +69,7 @@
 % clear defaults
 \fancyhf{}
 % set up font
-\newcommand{\headerfont}{\color[gray]{0.7}\fontfamily{phv}\fontsize{10}{11}\selectfont}
+\newcommand{\headerfont}{\color[gray]{0.5}\fontfamily{phv}\fontsize{10}{11}\selectfont}
 \newcommand{\footerfont}{\fontfamily{phv}\fontsize{11}{11}\selectfont}
 % header - right
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter: #1}{}}
@@ -240,7 +240,7 @@ vspace*{2cm}
 \begin_inset Graphics
 	filename figures/misc/title-page-crests.eps
 	lyxscale 30
-	height 3cm
+	height 4cm
 
 \end_inset
 
@@ -248,6 +248,8 @@ vspace*{2cm}
 \end_layout
 
 \begin_layout Author
+
+\size larger
 Philip Ewels
 \end_layout
 

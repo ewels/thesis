@@ -210,7 +210,7 @@ status open
 \begin_inset Graphics
 	filename figures/chapter 1/Nucleosome_1KX5_colour_coded.png
 	lyxscale 10
-	width 40col%
+	width 50col%
 
 \end_inset
 
@@ -1271,14 +1271,7 @@ GWAS) and found numerous enhancer elements that coincide with disease associated
  mutations.
  Such genome-wide approaches can reveal differences between cell types and
  are powerful tools in understanding how the genome is interpreted in health
- and disease (see Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:The-annotated-genome"
-
-\end_inset
-
-).
+ and disease.
 \end_layout
 
 \begin_layout Subsection
@@ -3846,14 +3839,9 @@ name "fig:ctcf-structure"
 Putative structure of CTCF.
  
 \series default
-Adapted from Ohlsson 
-\emph on
-et al.
- 
-\emph default
-2001 
+Adapted from 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Ohlsson2001"
 
 \end_inset
