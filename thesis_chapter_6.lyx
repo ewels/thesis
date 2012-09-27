@@ -455,7 +455,7 @@ If
 \emph on
 BCR
 \emph default
- preferentially contacts regions in telomeric chromosome 9 we should be
+ preferentially contacts regions in telomeric chromosome 9, I should be
  able to detect reciprocal ligation products by using a bait region within
  this region.
  To investigate the association profile of this region, I made e4C libraries
@@ -618,7 +618,15 @@ ABL1
  gene sits between two of these peaks, leading to the intriguing possibility
  that the 
 \emph on
-BCR-ABL1
+BCR
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ABL1
 \emph default
  association could be driven by the association of other nearby loci.
  The 
@@ -648,16 +656,30 @@ ABL1
 \emph default
  could be bystander genes brought together through associations of different
  genes within the region.
- Such a model would explain the triplet peak of BCR association over the
- region, with ABL sitting in a trough above the base level of genome-wide
- 
+ Such a model would explain the triplet peak of 
+\emph on
+BCR
+\emph default
+ association over the region, with 
+\emph on
+ABL1
+\emph default
+ sitting in a trough above the base level of genome-wide 
 \emph on
 trans
 \emph default
  association but not at the maximum point of association.
  It might also explain why I do not see specific 
 \emph on
-BCR-ABL1
+BCR
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ABL1
 \emph default
  associations from the viewpoint of 
 \emph on
@@ -1040,8 +1062,8 @@ key "Kalhor2011"
 \end_inset
 
 .
- This study was done in GM12878 cells and the Hi-C dataset was sequenced
- to a greater depth.
+ This study used GM12878 cells and the Hi-C dataset was sequenced to a greater
+ depth.
  The authors claim that TCC, a modified version of Hi-C which tethers proteinace
 ous 3C complexes to solid phase beads before ligation, reduces non-specific
  ligation events and so removes background noise from the association data
@@ -1190,8 +1212,10 @@ reference "sec:active-correlation-accessions"
 
 \end_inset
 
- for NCBI GEO accession numbers) I selected highly expressed genes and generated
- 4C-like association datasets for them.
+ for NCBI GEO accession numbers) I selected highly expressed genes in the
+ region.
+ I investigated their associations with chromosome 22 by generating 4C-like
+ association datasets from HiC data.
  Taking this approach instead of studying two-dimensional heatmaps gives
  better resolution and allows finer control of association visualisations.
 \end_layout
@@ -1671,7 +1695,7 @@ Two repeats
 \end_layout
 
 \begin_layout Standard
-Unfortunately, as can be seen in Fig 
+As can be seen in Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:3C-qPCR-Results"
@@ -1682,10 +1706,9 @@ reference "fig:3C-qPCR-Results"
  or technical replicates.
  To check for non-specific amplification I plotted a dissociation curve
  of samples from 58 °C to 85 °C.
- The dissociation curve for the standard curve samples looked good, however
- the 3C samples and lowest standard curve concentration showed very small
- peaks at varying temperatures, throwing into question the validity of the
- qPCR C
+ The dissociation curve for the standard curve samples looked as expected,
+ however the 3C samples and lowest standard curve concentration showed very
+ small peaks at varying temperatures, suggesting that the qPCR C
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1694,7 +1717,7 @@ t
 
 \end_inset
 
- values.
+ values are not reliable.
  To look for specific amplification visually, I ran the 3C qPCR samples
  and the two least concentrated standard curve samples on a gel (Fig 
 \begin_inset CommandInset ref
@@ -1812,10 +1835,28 @@ Validation by microscopy
 \end_layout
 
 \begin_layout Standard
-Microscopy techniques are an excellent method of validating e4C data.
+Microscopy techniques are commonly used to investigate the association between
+ genomic loci and offer a suitable method for validating e4C data.
  Because the protocols are fundamentally different, they do not suffer the
- same biases as 3C- derived techniques, and are able to give information
- on a single-cell basis instead of just cell populations.
+ same biases as 3C- derived techniques.
+ Light microscopy techniques do not have as good resolution as 3C- derived
+ methods, but are able to give information on a single
+\emph on
+
+\begin_inset space ~
+\end_inset
+
+
+\emph default
+-
+\emph on
+
+\begin_inset space ~
+\end_inset
+
+
+\emph default
+cell basis
 \end_layout
 
 \begin_layout Subsection
@@ -1827,20 +1868,13 @@ Initially, I attempted to use RNA-Fluorescence
 \emph on
 In-Situ
 \emph default
- Hybridisation (RNA-FISH) for this validation to show only genes that are
- being actively transcribed.
- RNA-FISH has excellent resolution as it only labels nascent transcripts,
- giving small sharp foci.
- However, after a great deal of setup and optimisation I switched to DNA-Fluores
-cence 
-\emph on
-In-Situ
-\emph default
- Hybridisation (DNA-FISH).
- Because human blood products are a category II sample, they must be killed
- by fixation before being brought to the main laboratory.
- This change in the RNA-FISH protocol caused large problems and I was never
- able to collect any meaningful data.
+ Hybridisation (RNA-FISH) to show the association of actively transcribed
+ genes.
+ Due to human blood products being a category II sample, they must be fixed
+ before being brought to the main laboratory.
+ This change in the RNA-FISH protocol caused problems and I was never able
+ to collect any meaningful data.
+ Because of this I switched to using DNA-FISH.
 \end_layout
 
 \begin_layout Standard
@@ -1854,12 +1888,12 @@ description "Bacterial artificial chromosome"
 \end_inset
 
 BACs).
- It is a substantially less fickle technique than RNA-FISH due to the relative
+ It is more resistant to modifications than RNA-FISH due to the relative
  stability of DNA and the larger labelling target; a BAC is typically around
  one hundred kilobases in length whereas RNA-FISH probes are designed in
- non-repetitive intron sequences, usually a few hundred base pairs long.
- Additionally, DNA-FISH labels two genomic loci in every nuclei, whereas
- RNA-FISH only labels nascent transcripts which may be far fewer in number.
+ intron sequences, usually a few hundred base pairs long.
+ DNA-FISH labels two genomic loci in every nuclei, whereas RNA-FISH labels
+ nascent transcripts which may be fewer in number.
 \end_layout
 
 \begin_layout Subsection
@@ -2993,9 +3027,8 @@ BCR
  is in chromosome 9 band q34 I demonstrate that this association is also
  present in Hi-C and TCC libraries generated from GM06990 and GM12878 cells
  and that this association is reciprocal.
- I go on to discuss analysis to identify a candidate region driving the
- association and experiments designed to validate it using RT-qPCR 3Cand
- DNA-FISH.
+ I discuss analysis to identify a candidate region driving the association
+ and experiments designed to validate it using RT-qPCR 3Cand DNA-FISH.
 \end_layout
 
 \begin_layout Standard
@@ -3027,9 +3060,16 @@ BCR
 \emph on
 ABL1
 \emph default
- to associate through a bystander effect, however the identification of
- specific loci with variations in association within chromosome 9 q34 was
- not conclusive.
+ to associate through a 
+\begin_inset Quotes eld
+\end_inset
+
+bystander effect
+\begin_inset Quotes erd
+\end_inset
+
+, however the identification of specific loci with variations in association
+ within chromosome 9 q34 was not conclusive.
  This could could be due to a number of reasons: the candidate loci chosen
  for the validation may have not been the genes driving the association;
  the variations in association between loci in this region may be too small

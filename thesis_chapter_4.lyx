@@ -2384,37 +2384,6 @@ A standard score represents how many standard deviations from the mean a
  into SeqMonk.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Section
-4C data set correlations
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-NEIGHBOUR JOINING TREES
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Talk about the work I did doing pairwise correlation analysis on multiple
- different 4C data sets..?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Discussion
 \end_layout
@@ -2475,7 +2444,7 @@ in-silico
 \end_layout
 
 \begin_layout Standard
-A good control experiment would be to sequence an 
+A useful control experiment would be to sequence an 
 \begin_inset Quotes eld
 \end_inset
 
