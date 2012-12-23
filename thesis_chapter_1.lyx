@@ -84,7 +84,7 @@ Introduction
 
 \begin_layout Standard
 The nucleus is a highly complex organelle responsible for the faithful replicati
-on and maintenance of the DNA template and regulation its transcriptional
+on and maintenance of the DNA template and regulation of its transcriptional
  products.
  To achieve this, the contents of the nucleus are organised into compartments
  specialising in processes such as transcription and replication.
@@ -2145,10 +2145,7 @@ singlespacing
 \end_layout
 
 \begin_layout Subsection
-Chromatin decondensation and the
- 
-\lang british
-
+Chromatin decondensation and the 
 \begin_inset ERT
 status open
 
@@ -2298,7 +2295,7 @@ Chromosome territory intermingling
 A question that followed immediately from the discovery of loops extending
  from chromosome territories was that of chromosome intermingling.
  Mathematical modelling approaches capable of predicting intermingling volumes
- correlated with known rates irradiation induced DNA damage 
+ correlated with known rates of irradiation induced DNA damage 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Holley2002,Hlatky2002"
@@ -4728,8 +4725,8 @@ key "Hofmann2006"
 
 ).
  Despite this skepticism, nuclear actin research has had a resurgence in
- recent years with a studies linking filamentous actin to processes such
- as transcription 
+ recent years with studies linking filamentous actin to processes such as
+ transcription 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hofmann2004"
@@ -4807,7 +4804,7 @@ Replication
 Proliferating cells must replicate their genomes once per cell cycle and
  do so in only a few hours, despite their size.
  This is accomplished by simultaneously replicating many regions of the
- genome at shared sites of replicated called replication factories 
+ genome at shared sites called replication factories 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Jackson1998b,Ma1998"
@@ -6505,7 +6502,7 @@ key "Parada2002a"
 \end_inset
 
 .
- The found that two translocated chromosomes preferentially paired together
+ They found that two translocated chromosomes preferentially paired together
  in the nucleus of the cell line as well as in normal cells not containing
  the translocation.
  
@@ -6546,8 +6543,9 @@ et al.
 \emph default
  published a similar study in the same year, showing that association between
  chromomes 12 and 16 varies through adipocyte differentiation.
- These two chromosomes are involved a chromosomal translocation that can
- lead to liposarcomas, thought to be initiated within pre-adipocytes 
+ These two chromosomes are involved in a chromosomal translocation that
+ can lead to liposarcomas, thought to be initiated within pre-adipocytes
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kuroda2004"
@@ -6727,8 +6725,8 @@ Igh,
 \emph default
 on mouse chromosome 12.
  These observations of preferential association at transcription factories
- support to a model whereby genes sharing transcription factories are predispose
-d to the formation of chromosomal translocations 
+ support a model whereby genes sharing transcription factories are predisposed
+ to the formation of chromosomal translocations 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Osborne2007"
@@ -6827,7 +6825,7 @@ MLL
 
 \end_inset
 
- haematopoietic stem cells, the tissue though to be the site of initial
+ haematopoietic stem cells, the tissue thought to be the site of initial
  chromosomal translocations for these genes, and the human lymphoblastoid
  cell line GM12878.
  

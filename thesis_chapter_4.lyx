@@ -1795,7 +1795,7 @@ NlaIII
  I wrote a Perl script to process these datasets (Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:APP-GC-content-bias"
+reference "sec:APP-systematic-bias-correction"
 
 \end_inset
 
@@ -1803,7 +1803,7 @@ reference "sec:APP-GC-content-bias"
  The script fetches the genomic sequence for each set of co-ordinates and
  increments counters representing 5% GC content bins, according to the %GC
  content of the sequence.
- A second set of counters were also incrememnted if the sequence was observed.
+ A second set of counters were also incremented if the sequence was observed.
  A modified version of this script was then used to calculate 
 \emph on
 AseI

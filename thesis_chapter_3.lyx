@@ -1227,7 +1227,7 @@ reference "fig:Custom-sequencing-primer"
  to be aligned to the genome.
  The sequences of the Illumina sequencing primers had recently became publicly
  available, allowing me to design our custom sequencing primers with similar
- in length, T
+ length, T
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -4517,8 +4517,8 @@ reference "fig:S2R+3C-test"
 \end_inset
 
 ).
- However, due to the removal of the removal of the RNA polymerase II ChIP
- step (Section 
+ However, due to the removal of the RNA polymerase II ChIP step (Section
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ChIP-e4C"

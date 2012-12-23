@@ -238,7 +238,7 @@ AseI
 \emph default
  site distribution, across the q arm of chromosome 9.
  Association calculated using ten megabase windows with one megabase separation
- (light blue fill) and one megabase windows with 100 Kb separation (ark
+ (light blue fill) and one megabase windows with 100 Kb separation (dark
  blue line).
  X axis shows chromosome position in megabases.
  
@@ -1406,9 +1406,9 @@ The results of the e4C indicate association frequencies.
  Because of these potential biases traditional RT-qPCR 3C was a logical
  method to validate the association.
  Additionally, the RT-qPCR 3C may provide a resolution of association frequencie
-s at a superior to the e4C, both in terms of quantitative association of
- individual fragments and in differences between fragments within close
- proximity.
+s at a superior level to that of the e4C, both in terms of quantitative
+ association of individual fragments and in differences between fragments
+ within close proximity.
 \end_layout
 
 \begin_layout Subsection
@@ -3029,9 +3029,9 @@ bystander effect
 
 , however the identification of specific loci with variations in association
  within chromosome 9 q34 was not conclusive.
- This could could be due to a number of reasons: the candidate loci chosen
- for the validation may have not been the genes driving the association;
- the variations in association between loci in this region may be too small
+ This could be due to a number of reasons: the candidate loci chosen for
+ the validation may have not been the genes driving the association; the
+ variations in association between loci in this region may be too small
  to detect, or the variations shown in the e4C data may not be accurate.
  Chromatin associations in 
 \emph on
