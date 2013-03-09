@@ -116,7 +116,8 @@ key "Cook2002"
 
 \end_inset
 
-) and is a key feature in the organisation of the nucleus.
+).
+ It is a key feature in the organisation of the nucleus.
 \end_layout
 
 \begin_layout Standard
@@ -1355,9 +1356,9 @@ Histone variants
 \begin_layout Standard
 In addition to histone tail modifications, chromatin can be modified by
  the incorporation of histone variants.
- Canonical core histone genes are found in clustered repeat arrays within
- the genome, are transcribed during replication and are highly conserved
- between species.
+ The genes encoding canonical core histones are found in clustered repeat
+ arrays within the genome, are transcribed during replication and are highly
+ conserved between species.
  Histone variants are found as single genes spread through the genome and
  are subject to far greater diversity 
 \begin_inset CommandInset citation
@@ -1537,9 +1538,9 @@ key "Fussner2012"
 \end_layout
 
 \begin_layout Standard
-Recent investigations of genomic organisation using genome-wide association
- techniques have investigated the higher order packing of interphase chromatin
- 
+Recent investigations of genomic organisation using genome-wide interaction
+ mapping techniques have investigated the higher order packing of interphase
+ chromatin 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lieberman-Aiden2009,Kalhor2011"
@@ -1587,14 +1588,15 @@ key "Caspersson1970"
 
 .
  Banding assays can show regions of heterochromatin and euchromatin, highlightin
-g the variation in characteristics across regions of the genome 
+g the variation in characteristics across regions of the genome (reviewed
+ in 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Trask2002"
 
 \end_inset
 
-.
+).
  In prokaryotes, genes are often found in cistrons and can be coexpressed
  in single polycistronic mRNAs.
  This type of linear organisation is not present in most higher eukaryotes,
@@ -1671,8 +1673,8 @@ description "Serial analysis of gene expression"
 \end_inset
 
  SAGE tag expression profiles from different cell types into the genomic
- map and built on earlier work defined regions of high transcriptional activity,
- called ridges 
+ map and built on earlier work, defining regions of high transcriptional
+ activity called ridges 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Versteeg2003,Caron2001"
@@ -2664,7 +2666,7 @@ key "Jackson1998"
 et al.
 
 \emph default
- showed that approximately 90% of actively transcribed genes are associated
+ showed that greater than 90% of actively transcribed genes are associated
  with transcription factories 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2787,14 +2789,9 @@ key "Boutanaev2002"
 
 \begin_layout Standard
 Some evidence that such specialised transcription factories may exist within
- mammalian cells came from Osborne 
-\emph on
-et al.
- 
-\emph default
-
+ mammalian cells came from 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "Osborne2007"
 
 \end_inset
@@ -3010,7 +3007,11 @@ It is important to note that the evidence above does not describe
 \emph on
 exclusively
 \emph default
- specific transcription factories, i.e.
+ specific transcription factories, 
+\emph on
+i.e.
+
+\emph default
  factories which are incapable of transcribing genes not controlled by Klf1.
  Indeed, although statistically significant, the gene associations detected
  suggest a population bias.
@@ -3668,7 +3669,7 @@ Our understanding of the three-dimensional organisation of the genome has
  advanced in leaps and bounds during the last decade largely because of
  the development of the 3C method and its derivatives (for review, see 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citealp
 key "Osborne2011"
 
 \end_inset
@@ -4609,7 +4610,7 @@ LADs).
  The domains range from 0.1 to 10 megabases in size and are enriched for
  chromatin marks associated with transcriptional repression: H3K27me3, H3K9me2,
  low H3K4me2, low RNA polymerase II, low gene expression and low gene density.
- LAD boundaries are enriched for CTCF binding and CpG island, suggesting
+ LAD boundaries are enriched for CTCF binding and CpG islands, suggesting
  a mechanism of association 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -4617,7 +4618,7 @@ key "Guelen2008"
 
 \end_inset
 
-.
+ though no direct evidence has yet been shown for this.
  Shimi 
 \emph on
 et al.
@@ -4875,8 +4876,8 @@ key "Pirrotta1998"
  Long range interactions and chromatin looping has been implicated in repression
  by PcG proteins 
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "Tiwari2008,Tiwari2008a"
+LatexCommand citep
+key "Tiwari2008a,Tiwari2008"
 
 \end_inset
 
@@ -6787,9 +6788,8 @@ key "Mo2002"
 \end_inset
 
 .
- This suggests that transcription factories may also aid the efficient repair
- of DSBs created during transcription, but also that the nuclear organisation
- of genes as they are transcribed is of particular importance.
+ This suggests that transcription factories may aid the efficient repair
+ of DSBs created during transcription.
 \end_layout
 
 \begin_layout Section
