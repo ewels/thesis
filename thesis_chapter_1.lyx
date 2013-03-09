@@ -5236,13 +5236,27 @@ key "Beucher2009"
 .
  Fanconi anaemia is a condition caused by mutations in one of a number of
  proteins involved in DSB recognition and repair which is associated with
- a high incidence of leukaemia and a number of congenital defects.
- Blooms syndrome is characterised by a excessive HR and genomic instability
+ a high incidence of leukaemia and a number of congenital defects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kottemann2013"
+
+\end_inset
+
+.
+ Blooms syndrome is characterised by excessive HR and genomic instability
  caused by mutations in the 
 \emph on
 BLM
 \emph default
- gene.
+ gene 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Amor-Gueret2006"
+
+\end_inset
+
+.
  These, and other similar diseases, are indicative of the importance of
  DSB repair and the danger of genomic instability.
 \end_layout
