@@ -4248,21 +4248,6 @@ key "Tolhuis2002"
 \end_inset
 
 .
- The recent 5C study by Sanyal 
-\emph on
-et al.
-
-\emph default
- found that 79% of long range interactions skip one or more CTCF binding
- sites, prompting the authors to suggest that additional factors may be
- needed for the insulator function of CTCF 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Sanyal2012"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -4315,9 +4300,19 @@ key "Handoko2011"
 .
  This study illustrates the complexity of CTCF binding within the genome
  and points to multiple roles for the protein involving chromatin organisation.
- This interaction has subsequently been shown to be dependent on protein-protein
- contacts between the SA2 subunit of cohesin and the C-terminal domain of
- CTCF 
+ It is worth mentioning that the ChIA-PET technique only identifies DNA
+ fragments bound directly to the protein of interest, as such it is subject
+ to some biases due to the necessity for any interacting fragments to contact
+ the same protein.
+ It is likely that CTCF mediated organisation involves many different proteins,
+ interactions mediated by some classes of these complexes may be missed
+ using this technique.
+\end_layout
+
+\begin_layout Standard
+Recent data has shown that CTCF mediated interactions are dependent on protein-p
+rotein contacts between the SA2 subunit of cohesin and the C-terminal domain
+ of CTCF 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Xiao2011"
@@ -4325,6 +4320,8 @@ key "Xiao2011"
 \end_inset
 
 .
+ This raises the intriguing possibility that CTCF and cohesin may work in
+ concert to establish topological loops of chromatin.
 \end_layout
 
 \begin_layout Subsection
@@ -4516,16 +4513,7 @@ key "Parelho2008,Hadjur2009"
 \end_layout
 
 \begin_layout Standard
-CTCF depletion does not affect the amount of cohesin bound to the genome,
- but rather the enrichment of cohesin at specific sites 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Parelho2008,Wendt2008"
-
-\end_inset
-
-.
- Schmidt 
+Schmidt 
 \emph on
 et al.
  
@@ -4826,16 +4814,19 @@ key "Jackson1998b"
 \end_inset
 
 .
- Many studies have shown correlation between behaviour in replication and
- genomic features or activity, though causative links are still lacking
- (reviewed in 
+ A recent paper from the David Gilbert's laboratory details the replication
+ timing profiles of several mouse and human embryonic cell lines and finds
+ a strong correlation with interaction domains as defined by contact enrichment
+ in Hi-C studies 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Chakalova2005"
+key "Ryba2010"
 
 \end_inset
 
-).
+.
+ This suggests that replication and three-dimensional chromatin organisation
+ may be closely linked, potentially due to varying accessibility of DNA.
 \end_layout
 
 \begin_layout Subsection
@@ -6679,6 +6670,16 @@ key "Harewood2010"
 \end_inset
 
 .
+ In support of this hypothesis is the observation that the organisation
+ of nuclei within a breast cancer model differs to that of a nonmalignant
+ control 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Meaburn2008a"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -6795,21 +6796,245 @@ key "Mo2002"
 Thesis overview
 \end_layout
 
+\begin_layout Subsection
+Hypothesis
+\end_layout
+
 \begin_layout Standard
 Our understanding of nuclear architecture and organisation has developed
  rapidly in the last twenty years, in concert with the development of techniques
  allowing ever larger and less biased studies.
- Correlations have been found between the organisation of specific chromosomes
- and gene loci and their propensity to form chromosomal translocations which
- can lead to oncogenesis.
- A limitation of many of these studies is their scope: either they describe
- the gross organisation of chromosomes and large genomic features, or they
- describe the association of specific loci.
+ It is now widely accepted that nuclear structure can affect the function
+ of the nucleus and that preferred states of nuclear organisation exist.
+ These observations raise the possibility that the frequent association
+ of specific regions of chromatin may lead to an elevated level of chromosomal
+ translocation rates between loci.
+ I hypothesised that genes known to be frequently engaged in chromosomal
+ translocations may be found adjacent to each other in healthy cells and
+ that this association may lead to a predisposition to form chromosomal
+ translocations.
+ Specifically, I proposed that the canonical proto-oncogenes 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1
+\emph default
+ may be adjacent in CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ cells, where their leukaemogenic translocations are thought to occur.
+ Additionally, I proposed that the proto-oncogene 
+\emph on
+MLL
+\emph default
+ may be found adjacent to its portfolio of translocation partners with frequenci
+es correlating to its rate of translocation.
+\end_layout
+
+\begin_layout Subsection
+Existing evidence
+\end_layout
+
+\begin_layout Standard
+The association of the 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1 
+\emph default
+genes has been studied using microscopy in several publications.
+ In 1997, two papers were published by the Horneck laboratory studying the
+ localisation of 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+ABL1 
+\emph default
+in human lymphocytes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kozubek1997"
+
+\end_inset
+
+ and bone marrow cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lukasova1997"
+
+\end_inset
+
+.
+ The authors describe distances between the two genes which are closer than
+ between homologous alleles and suggest that this could lead to increased
+ levels of translocation in bone marrow cells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lukasova1997"
+
+\end_inset
+
+.
+ Conclusions from these papers about the variation in positioning throughout
+ the cell cycle were queried in a later paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Neves1999"
+
+\end_inset
+
+ although the observation that these two genes are found closer than would
+ be expected by chance was replicated.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kozubek1999"
+
+\end_inset
+
+ studied the organisation of chromosomes 9 and 22, upon which the 
+\emph on
+BCR 
+\emph default
+and 
+\emph on
+ABL1
+\emph default
+ genes reside, using chromosome painting and found a high level of territory
+ pairing.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Schwarz-Finsterle2005"
+
+\end_inset
+
+ later used a new microscopy methodology termed COMBO-FISH and also showed
+ the same finding.
+\end_layout
+
+\begin_layout Standard
+Similar microscopy studies have been conducted with the 
+\emph on
+MLL
+\emph default
+ gene and its translocation partners.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Murmann2005"
+
+\end_inset
+
+ found enhanced association of genes which they attributed to a correlation
+ with gene density.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gue2006"
+
+\end_inset
+
+ used triple-label DNA-FISH to simultaneously visualise the location of
+ the 
+\emph on
+MLL 
+\emph default
+gene with two of its translocation partners.
+ They found that 
+\emph on
+MLL
+\emph default
+ was more tightly associated with 
+\emph on
+ENL
+\emph default
+ than 
+\emph on
+AF4
+\emph default
+, opposing the relative translocation frequencies of the two genes.
+ It is worth noting that these gene pairings were not compared to any control
+ genes which do not partake in 
+\emph on
+MLL
+\emph default
+ translocations.
+ A recent paper by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cowell2012"
+
+\end_inset
+
+ investigated the location of actively transcribing 
+\emph on
+MLL
+\emph default
+ alleles with respect to the translocation partner genes 
+\emph on
+AF4
+\emph default
+ and 
+\emph on
+AF9
+\emph default
+.
+ They found an enriched pool of alleles close enough to be transcribing
+ in a shared transcription factory, above that seen for 
+\emph on
+MLL
+\emph default
+ with genes not found as translocation partners.
+\end_layout
+
+\begin_layout Subsection
+Aims
+\end_layout
+
+\begin_layout Standard
+A limitation of many the studies described above is their scope: either
+ they describe the gross organisation of chromosomes and large genomic features,
+ or they describe the association of specific loci.
  Gross nuclear organisation is valuable in determining global rules and
  patterns of genomic organisation, but lacks the resolution needed to study
  specific loci.
  Studying the positions of individual genes is also useful, but limited
  to the study of anticipated associations, leading to candidate choice bias.
+\end_layout
+
+\begin_layout Standard
+In this thesis, I aimed to modify the 4C method, previously used to study
+ nuclear architecture using microarrays, for next generation sequencing.
+ Such an assay using a bait region localised within the 
+\emph on
+BCR
+\emph default
+ and 
+\emph on
+MLL
+\emph default
+ genes would reveal the genome-wide contacts made by these loci in a relatively
+ unbiased way.
+ This technique would be able to detect previously unpredicted associations
+ and empirically quantify the strengths of known interactions in a genomic
+ context.
+\end_layout
+
+\begin_layout Subsection
+Summary of chapters
 \end_layout
 
 \begin_layout Standard
@@ -6837,7 +7062,6 @@ MLL
  haematopoietic stem cells, the tissue thought to be the site of initial
  chromosomal translocations for these genes, and the human lymphoblastoid
  cell line GM12878.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6864,6 +7088,16 @@ key "Schoenfelder2010"
  This work demonstrates the potential of the technique to analyse the interactio
 n profiles of any genomic locus, as well as a number of pitfalls which must
  be negotiated in its use.
+ Similar adaptation of the 4C protocol has recently been published by another
+ group which shares many parallels to my work 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VandeWerken2012a,VandeWerken2012"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard

@@ -2563,7 +2563,7 @@ hours on a rotating wheel.
 \end_layout
 
 \begin_layout Subsection
-PCR and germ-line removal
+PCR and genomic sequence removal
 \end_layout
 
 \begin_layout Standard
@@ -2675,7 +2675,7 @@ minutes; hold at 4
 \begin_layout Standard
 To avoid sequencing re-ligation events, which make up the majority of the
  e4C library, a digestion step is undertaken using a rare-cutting enzyme
- that recognises a sequence within the germ-line locus after the 
+ that recognises a sequence within the genomic configuration after the 
 \emph on
 AseI
 \emph default
@@ -2739,7 +2739,7 @@ hours before being cleaned with SPRI beads and eluted in 100
 \begin_inset space ~
 \end_inset
 
-µl of the undigested gDNA sample to check removal of germ-line bands.
+µl of the undigested gDNA sample to check removal of genomic sequence bands.
 \end_layout
 
 \begin_layout Subsection

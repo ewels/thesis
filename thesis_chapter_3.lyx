@@ -568,15 +568,15 @@ reference "fig:BamHI-e4C-Libraries"
 \end_inset
 
 ).
- Bands are sometimes visible due to the germ line sequences being the most
- common ligation products, removed at a later state by digestion with a
- rare-cutting restriction endonuclease.
+ Bands are sometimes visible due to the genomic religation sequences being
+ the most common ligation products, removed at a later state by digestion
+ with a rare-cutting restriction endonuclease.
  In my human 
 \emph on
 BamHI
 \emph default
- e4C libraries the germ line band was visible but little or no smear was
- present (Fig 
+ e4C libraries the genomic configuration band was visible but little or
+ no smear was present (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:BamHI-e4C-Libraries"
@@ -1773,7 +1773,7 @@ BCR
 
 \family sans
 \size scriptsize
-Germline
+Genomic
 \end_layout
 
 \end_inset
@@ -2198,7 +2198,7 @@ MLL
 
 \family sans
 \size scriptsize
-Germline
+Genomic
 \end_layout
 
 \end_inset
@@ -2488,7 +2488,7 @@ MLL 1
 
 \family sans
 \size scriptsize
-Germline
+Genomic
 \end_layout
 
 \end_inset
@@ -2806,7 +2806,7 @@ MLL 2
 
 \family sans
 \size scriptsize
-Germline
+Genomic
 \end_layout
 
 \end_inset
@@ -3219,7 +3219,7 @@ ABL
 
 \family sans
 \size scriptsize
-Germline
+Genomic
 \end_layout
 
 \end_inset
@@ -3735,7 +3735,7 @@ e4C primers
 e4C primers.
  
 \series default
-Germline shows bait locus, barcode region in bold pink, 
+Genomic shows bait locus, barcode region in bold pink, 
 \emph on
 AseI
 \emph default
@@ -5329,8 +5329,8 @@ description "Genomic DNA"
 
 \end_inset
 
-gDNA) control was used as a positive control for germline bands and a no
- template control (NTC) was used as a negative control.
+gDNA) control was used as a positive control for genomic configuration religatio
+n bands and a no template control (NTC) was used as a negative control.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5338,11 +5338,11 @@ reference "fig:BCR-e4C-libraries-gel-firstPCR"
 
 \end_inset
 
- A shows the BCR e4C library after the first round PCR and germline band
- digestion.
- It can be seen that the strong germline band is digested in the gDNA control
- and that non-specific primer dimers are reduced in the NTC with SPRI (Fig
- 
+ A shows the BCR e4C library after the first round PCR and genomic configuration
+ band digestion.
+ It can be seen that the strong genomic sequence band is digested in the
+ gDNA control and that non-specific primer dimers are reduced in the NTC
+ with SPRI (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:BCR-e4C-libraries-gel-firstPCR"
@@ -5405,9 +5405,9 @@ BCR e4C libraries after first round PCR.
 
  e4C.
  2 - gDNA control.
- 3 - gDNA before germline removal.
+ 3 - gDNA before genomic configuration religation sequence removal.
  4 - NTC.
- 5 - gDNA before germline removal or SPRI.
+ 5 - gDNA before genomic configuration removal or SPRI.
  6 - NTC before SPRI.
  gDNA = genomic DNA control.
  NTC = no template control.
@@ -6185,8 +6185,8 @@ NlaIII
  
 \series default
 Top panel shows an overview of a typical e4C library product.
- Read 1 confirms the identity of the bait region with a few bases of germ
- line sequence before reading through the 
+ Read 1 confirms the identity of the bait region with a few bases of genomic
+ configuration sequence before reading through the 
 \emph on
 AseI
 \emph default
@@ -6200,10 +6200,6 @@ NlaIII
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
