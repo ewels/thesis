@@ -214,14 +214,14 @@ white
 \emph on
 white 
 \emph default
-gene and results in a change in eye colour 
+gene and results in a change in eye colour (reviewed in 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "Vogel2009"
+LatexCommand citealp
+key "Girton2008"
 
 \end_inset
 
-.
+).
  In contrast, euchromatin is the site of most genic transcription 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3052,14 +3052,7 @@ key "Jacob1961"
  Three genes required for the digestion of lactose are controlled by the
  binding of a repressor protein which blocks transcription by RNA polymerase.
  This repressor can form a tetramer and bind two region simultaneously,
- requiring a topological loop in the chromatin 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Savageau2011"
-
-\end_inset
-
-.
+ requiring a topological loop in the chromatin.
 \end_layout
 
 \begin_layout Standard
@@ -4349,28 +4342,30 @@ description "Structural maintenance of chromosome proteins"
 
 SMC) proteins, also known as cohesin, form complexes required for sister
  chromatid cohesion and chromosome segregation in mitosis.
- Originally characterised in 
+ Cohesins were originally characterised in 
 \emph on
-Drosophila melanogaster 
+S.
+ cerevisiae
 \emph default
-due to mutants having a defect in sister chromatid separation 
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Michaelis1997"
+key "Guacci1997,Michaelis1997"
 
 \end_inset
 
-, cohesin is a multi subunit complex consisting of two large coiled-coil
- domain proteins (Smc1, Smc3) connected by a smaller dimer of Scc1 and Scc3.
+ by screening mutants defective in sister chromatid separation.
  Cohesin complexes are thought to function in mitosis by holding sister
- chromatids together through topological looping (reviewed in 
+ chromatids together via a pentameric complex involving two large coiled-coil
+ domain proteins (Smc1, Smc3) able to form a topological loop around two
+ strands of DNA 
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "Hudson2009"
+LatexCommand citep
+key "Haering2002"
 
 \end_inset
 
-).
+
 \end_layout
 
 \begin_layout Standard
@@ -4379,7 +4374,7 @@ A number of studies suggested that cohesin may play a role in the interphase
 on, repair and domain formation (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "Hagstrom2003"
+key "Sofueva2012a"
 
 \end_inset
 
