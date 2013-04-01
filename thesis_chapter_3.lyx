@@ -501,6 +501,91 @@ reference "sec:Multiplexing-e4C-libraries"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/chapter 3/bait locations/bait locations.eps
+	lyxscale 50
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Position-of-e4C-baits"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Position of e4C bait sequences
+\end_layout
+
+\end_inset
+
+
+\series bold
+Position of e4C bait sequences.
+ 
+\series default
+Genes of interest shown overlaid with 
+\emph on
+AseI
+\emph default
+ recognition sites (vertical grey lines).
+ Biotinylated primers shown as black arrows with yellow background.
+ Fragments enriched by the e4C highlighted in yellow.
+ Bait primer sequences can be seen in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:e4C-primers"
+
+\end_inset
+
+.
+ Figure adapted from UCSC genome browser: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://genome.ucsc.edu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 For discussion of e4C data analysis see Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5361,7 +5446,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 3/BCR e4C gels/e4C_germline_gel.eps
-	lyxscale 30
+	lyxscale 50
 	height 5cm
 
 \end_inset
@@ -5394,7 +5479,7 @@ name "fig:BCR-e4C-libraries-gel-firstPCR"
 BCR e4C libraries after first round PCR.
  
 \series default
-1 - BCR CD34
+e4C: BCR CD34
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -5403,14 +5488,22 @@ BCR e4C libraries after first round PCR.
 
 \end_inset
 
- e4C.
- 2 - gDNA control.
- 3 - gDNA before genomic configuration religation sequence removal.
- 4 - NTC.
- 5 - gDNA before genomic configuration removal or SPRI.
- 6 - NTC before SPRI.
- gDNA = genomic DNA control.
- NTC = no template control.
+ e4C library.
+ gDNA: genomic DNA positive control.
+ NTC: No template control.
+ +/- GR: With / without genomic sequence religation digestion.
+ +/- SPRI: With / without SPRI cleanup.
+ Hollow arrow shows band present due to genomic sequence religation events.
+ Filled arrow shows this DNA shifted down the gel after digestion.
+ Lowest band is product from non-specific amplification.
+ This band is later removed using a gel-extraction step (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CD34+-e4C-library-gel-extraction"
+
+\end_inset
+
+).
 \end_layout
 
 \end_inset
@@ -5537,7 +5630,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/chapter 3/BCR e4C gels/BCR_e4C_gel.eps
-	lyxscale 30
+	lyxscale 60
 	height 5cm
 
 \end_inset
@@ -5570,9 +5663,20 @@ name "fig:Completed-BCR-e4C-library"
 Completed BCR e4C library.
  
 \series default
-1 = BCR e4C library.
- 2 = Second round PCR no template control after SPRI cleanup.
- PCR control lanes removed for clarity.
+Mouse e4C: Positive control library generated from mouse tissue.
+ BCR e4C: BCR CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ e4C library.
+ NTC: No template control.
+ BCR library shows optimal smear through range of sizes appropriate for
+ Illumina GAIIx sequencing.
 \end_layout
 
 \end_inset

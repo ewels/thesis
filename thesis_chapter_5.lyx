@@ -916,6 +916,16 @@ Chromosomal positions in Bait Position column describe the co-ordinates
 AseI
 \emph default
  fragment in UCSC genome build hg19.
+ All e4C libraries described above were prepared from a single CD34
+\begin_inset script superscript
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+
+ 3C library.
 \end_layout
 
 \end_inset

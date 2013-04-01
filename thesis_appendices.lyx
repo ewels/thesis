@@ -16683,6 +16683,52 @@ Av.
 
 \end_layout
 
+\begin_layout Subsection
+Genome wide association with 
+\emph on
+BCR
+\emph default
+ in GM12878 Cells 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:kalhor_genome_wide"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hi-C other ends were extracted for the region surrounding the BCR gene in
+ the publicly available Hi-C data from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kalhor2011"
+
+\end_inset
+
+, SRA accession code SRA025848.
+ These reads were then processed as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:e4C-Analysis"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/appendices/Kalhor_HiC_gw.eps
+	lyxscale 30
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 e4C analysis scripts
 \end_layout

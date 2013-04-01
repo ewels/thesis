@@ -1131,6 +1131,14 @@ HindIII
 ABL1
 \emph default
  is shown as a grey bar.
+ Genome wide association plot can be seen in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:kalhor_genome_wide"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
