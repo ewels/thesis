@@ -995,33 +995,6 @@ reference "fig:Restriction-Enzyme-Tests"
 \end_inset
 
 ).
- 
-\emph on
-BamHI
-\emph default
- showed markedly improved digestion for nuclei fixed in 1% formaldehyde
- without SDS or Triton-X100, as shown by the extended smear in the bottom
- right gel.
- However, restriction enzymes 
-\emph on
-AseI
-\emph default
-, 
-\emph on
-HindIII
-\emph default
- and 
-\emph on
-PvuII
-\emph default
- all showed far superior digestion efficiency in all conditions (Fig 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Restriction-Enzyme-Tests"
-
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Standard
@@ -1072,18 +1045,10 @@ Restriction Enzyme Tests.
 
 \series default
  
-\emph on
-BamHI
-\emph default
- digestion efficiency of fixed human buffy coat nuclei with increasing Triton-X1
-00 concentrations after SDS treatment.
- The lower smear at the higher Triton-X100 concentration indicates an increased
- digestion efficiency.
- 
 \series bold
-(C)
+(A) 
 \series default
- Digestion tests with six enzymes in four different conditions.
+Digestion tests with six enzymes in four different conditions.
  Cells were fixed in either 1% or 2% formaldehyde as described in Materials
  and Methods: 3C (Section 
 \begin_inset CommandInset ref
@@ -1102,6 +1067,16 @@ reference "sec:M&M-3C"
 \end_inset
 
 .
+ 
+\series bold
+(B)
+\series default
+ Composite reference gel showing purified genomic DNA, an 
+\emph on
+AseI
+\emph default
+ digested 3C sample without ligation (NLC: no ligase control) and a re-ligated
+ 3C sample.
 \end_layout
 
 \end_inset
@@ -1115,10 +1090,33 @@ reference "sec:M&M-3C"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+
+\emph on
+BamHI
+\emph default
+ showed markedly improved digestion for nuclei fixed in 1% formaldehyde
+ without SDS or Triton-X100, as shown by the extended smear in the bottom
+ right gel.
+ However, restriction enzymes 
+\emph on
+AseI
+\emph default
+, 
+\emph on
+HindIII
+\emph default
+ and 
+\emph on
+PvuII
+\emph default
+ all showed far superior digestion efficiency in all conditions (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Restriction-Enzyme-Tests"
+
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Standard
