@@ -4835,9 +4835,7 @@ Polycomb
 \end_layout
 
 \begin_layout Standard
-Another nuclear subcompartment known to be involved in genomic organisation
- and looping is the polycomb body.
- The Polycomb protein complex (
+Polycomb group (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PcG"
@@ -4845,8 +4843,41 @@ description "Polycomb protein complex"
 
 \end_inset
 
-PcG) is involved in the directed silencing of regions at polycomb response
- elements (
+PcG) genes were first studied in 
+\emph on
+Drosophila melanogaster
+\emph default
+, where they were found to disrupt normal segmentation during embryonic
+ development 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lewis1949"
+
+\end_inset
+
+.
+ PcG complexes work as antagonists to the trithorax proteins and are involved
+ in the establishment and maintenance of gene repression.
+ In mammalian cells, two multi-protein complexes named Polycomb Repressive
+ Complex 1 (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PRC"
+description "Polycomb Repressive Complex"
+
+\end_inset
+
+PRC1) and PRC2 are able to to specifically repress regions up to 100 Kbp
+ in length 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Schwartz2006,Tolhuis2006"
+
+\end_inset
+
+.
+ Mechanistically, it is thought that the PRC2 complex is recruited to polycomb
+ response elements (
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PRE"
@@ -4854,30 +4885,66 @@ description "Polycomb response element"
 
 \end_inset
 
-PREs), mediated by repressive histone modifications such as H3K27me3 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cao2002"
-
-\end_inset
-
-, and are important for the maintenance of silencing of the 
-\emph on
-Hox
-\emph default
- genes (reviewed in 
+PREs) where lysine 27 is trimethylated on histone 3 (H3K27me).
+ This chromatin mark is then able to recruit PRC1 which catalyses the monoubiqui
+tylation of histone 2A (H2AK119ub) (reviewed in 
 \begin_inset CommandInset citation
 LatexCommand citealp
-key "Pirrotta1998"
+key "Margueron2011"
 
 \end_inset
 
 ).
- Long range interactions and chromatin looping has been implicated in repression
- by PcG proteins 
+\end_layout
+
+\begin_layout Standard
+Polycomb proteins and the marks they deposit have been shown to form foci
+ in the nucleus.
+ A number of recent studies have shown that PRE associated genes, including
+ the canonical polycomb targeted 
+\emph on
+Hox
+\emph default
+ genes, co-localise within the 
+\emph on
+Drosophila melanogaster 
+\emph default
+nucleus 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Tiwari2008a,Tiwari2008"
+key "Tolhuis2011,Bantignies2011,Noordermeer2011,Sexton2012"
+
+\end_inset
+
+.
+ This co-association of repressed elements requires PcG proteins and perturbatio
+ns in clustering of repressed genes affects the degree of repression 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bantignies2011"
+
+\end_inset
+
+.
+ Polycomb foci have been likened to transcription factories in their organisatio
+n.
+ 
+\begin_inset CommandInset citation
+LatexCommand citeauthor
+key "Noordermeer2011"
+
+\end_inset
+
+ found that the mouse 
+\emph on
+Hox
+\emph default
+ gene cluster is located in a repressive compartment prior to activation
+ in embryonic tissues, and transition into a transcriptionally active compartmen
+t according to the requirements of the developmental programme 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Noordermeer2011"
 
 \end_inset
 
