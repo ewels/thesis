@@ -91,9 +91,9 @@ name "chap:e4C-Analysis"
 
 \begin_layout Standard
 At the time that my first e4C libraries were sequenced, the method was novel.
- Unlike RNA-Seq and ChIP-Seq which are established enough to have accepted
- analysis pipelines, e4C data analysis had not been developed.
- As such I developed a method to analyse the data in a way that is accurate
+ Unlike RNA-Seq and ChIP-Seq which are established and have accepted analysis
+ pipelines, e4C data analysis had not been developed.
+ As such I created a method to analyse the data in a way that is accurate
  and informative.
 \end_layout
 
@@ -122,9 +122,9 @@ Bareback processing
 \end_layout
 
 \begin_layout Standard
-The Illumina next generation sequencing technologies including the Genome
- Analyser IIx (GA IIx) determine the order of nucleotides by using fluorescently
- tagged nucleotides: 
+The Illumina next generation sequencing technologies, including the Genome
+ Analyser IIx (GA IIx), determine the order of nucleotides by using fluorescentl
+y tagged nucleotides: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1014,14 +1014,7 @@ AseI
 \begin_layout Standard
 To pre-process the e4C library reads, Dr.
  Felix Krueger in the Babraham Bioinformatics group wrote a script in Perl,
- which I later modified and used myself (Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:APP-library-trimming"
-
-\end_inset
-
-).
+ which I later modified and used myself.
  The script loops through the FastQ file and attempts to match the first
  three base pairs against expected barcodes.
  If so, the barcode is trimmed and the next six base pairs are matched against
@@ -1066,6 +1059,14 @@ reference "fig:Library-trimming-and-alignments"
 \end_inset
 
 .
+ See Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:APP-library-trimming"
+
+\end_inset
+
+ for full statistics.
 \end_layout
 
 \begin_layout Standard
@@ -1113,7 +1114,7 @@ Library trimming and alignments.
  Proportion of e4C libraries discarded due to AseI or NlaIII sites being
  too close to the bait, or not being mapped to the genome / being suppressed
  due to multiple alignments.
- Raw numbers can be seen in Appendix Table 
+ Full statistics can be seen in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:APP-library-trimming"
@@ -1966,7 +1967,7 @@ reference "sec:APP-systematic-bias-correction"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-C=\frac{hit\, fragments\, in\, bin}{hit\, fragments}\;/\;\frac{all\, fragments\, in\, bin}{all\, fragments}
+C=\frac{hit\,\, fragments\,\, in\,\, bin}{hit\,\, fragments}\;/\;\frac{all\,\, fragments\,\, in\,\, bin}{all\,\, fragments}
 \]
 
 \end_inset
@@ -1983,7 +1984,7 @@ Then, for every potential fragment, the appropriate correction values for
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho_{frag}=\dfrac{observed\; fragments}{potential\; fragments}\times C_{\%GC}\times C_{frag\; length}
+\rho_{frag}=\dfrac{observed\;\, fragments}{potential\;\, fragments}\times C_{\%GC}\times C_{frag\; length}
 \]
 
 \end_inset
@@ -2014,7 +2015,7 @@ To check that the values produced by this script were reliable, I wrote
 \emph on
 in-silico 
 \emph default
-libraries using the correction values.
+e4C libraries using the correction values.
  The script loops through every potential fragment and outputs it as a hit
  if a random number between 0 and 1 is greater than or equal to the correction
  factor.
@@ -2145,7 +2146,7 @@ AseI
 \end_inset
 
 ) value and outputs this to the results file.
- If there are less than 5 fragments it outputs 0; calculating percentages
+ If there are less than 5 fragments it outputs 0; as calculating percentages
  with such small numbers of fragments can give uninformative values for
  regions with few restriction sites, such as centromeres.
 \end_layout
@@ -2323,10 +2324,9 @@ name "fig:AseI-normalisation-in-silico"
 \end_inset
 
 
-\emph on
-A
 \series bold
-seI
+\emph on
+AseI
 \emph default
  normalisation 
 \emph on
@@ -2349,10 +2349,6 @@ AseI
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2380,6 +2376,7 @@ A standard score represents how many standard deviations from the mean a
  single value lies within a dataset.
  I initially calculated these values by exporting data from SeqMonk and
  importing it into IBM SPSS Statistics.
+ I later wrote a script in perl capable of this.
  The ability to requantify probes with standard scores has since been built
  into SeqMonk.
 \end_layout

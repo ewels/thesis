@@ -119,7 +119,7 @@ MLL
 
 \end_inset
 
- cells, the lymphoblastoid cell line GM12878.
+ cells and the lymphoblastoid cell line GM12878.
  I study the association frequencies of the genes in 
 \emph on
 cis
@@ -387,7 +387,7 @@ Oct 2010
 
 \size scriptsize
 Technical replicated of BCR 1, library generated from the same 3C material.
- Sequenced in multiplex with MLL 2.
+ Sequenced in multiplex with MLL 3.
  CD34
 \begin_inset script superscript
 
@@ -1176,7 +1176,11 @@ AseI
  fragment saturation.
  
 \series default
-Degree of AseI fragment separation in 
+Degree of 
+\emph on
+AseI
+\emph default
+ fragment saturation in 
 \emph on
 trans
 \emph default
@@ -1515,7 +1519,7 @@ The linear separation of two DNA sequences is a highly constraining factor
  As such, the linear separation of two sequences is the strongest predictor
  of three dimensional interaction.
  This effect can clearly be seen within all of the e4C libraries, with a
- large proportion of my libraries (29 - 45% raw reads) mapping to the 
+ large proportion of the libraries (29 - 45% raw reads) mapping to the 
 \emph on
 cis
 \emph default
@@ -1809,7 +1813,11 @@ reference "fig:BCR-e4C-cis"
 \end_inset
 
 ).
- The ABL bait interacts with the telomeric region of chromosome 9 more strongly
+ The 
+\emph on
+ABL
+\emph default
+ bait interacts with the telomeric region of chromosome 9 more strongly
  with the rest of the chromosome and the BCR bait can be seen to make a
  number of contacts in both replicates, including a shoulder centromeric
  to the bait and four clusters telomeric (Fig 
@@ -1828,9 +1836,13 @@ To examine
 \emph on
 cis
 \emph default
- associations in more detail in the BCR datasets with higher complexity,
- I plotted the fragment association percentages summed in ten fold smaller
- one megabase windows separated by 100 Kb (Fig 
+ associations in more detail in the 
+\emph on
+BCR
+\emph default
+ datasets with higher complexity, I plotted the fragment association percentages
+ summed in ten fold smaller one megabase windows separated by 100 Kb (Fig
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:BCR-e4C-cis"
@@ -1848,7 +1860,14 @@ AseI
 \emph on
 AseI
 \emph default
- fragments separated by two fragments (Fig 
+ fragments separated by two fragments as done in analysis by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "VandeWerken2012"
+
+\end_inset
+
+ (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:BCR-e4C-cis"
@@ -2737,8 +2756,8 @@ cis
 cis
 \emph default
  and demonstrate that the more complex and informative association libraries
- correlate with active epigenetic marks, suggesting that these genes reside
- within an active genomic compartment.
+ correlate well with active epigenetic marks, suggesting that these genes
+ reside within an active genomic compartment.
  I go on to describe specific associations seen in 
 \emph on
 trans

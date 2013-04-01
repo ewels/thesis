@@ -214,8 +214,8 @@ key "Kalhor2011"
 
 , able to investigate all genomic associations within a cell population
  in a single experiment.
- On initial inspection one might think that these techniques therefore supersede
- those before them, however they still suffer from an Achilles' heel: sequencing
+ On initial inspection one might think that these techniques supersede those
+ before them, however they still suffer from an Achilles' heel: sequencing
  depth.
  Assuming a 3C library generated with a restriction endonuclease recognising
  a six base-pair site such as 

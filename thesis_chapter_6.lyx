@@ -450,6 +450,14 @@ ABL
  e4C associations in GM12878 cells
 \end_layout
 
+\begin_layout Subsection
+A GM12878 
+\emph on
+ABL
+\emph default
+ e4C library overview
+\end_layout
+
 \begin_layout Standard
 If 
 \emph on
@@ -596,6 +604,14 @@ ABL
  genes.
 \end_layout
 
+\begin_layout Subsection
+
+\emph on
+BCR:
+\emph default
+ chr9 association in high resolution
+\end_layout
+
 \begin_layout Standard
 When the BCR e4C libraries are combined and the 
 \emph on
@@ -732,7 +748,7 @@ key "Lieberman-Aiden2009"
  a biotin moiety, adapters are added and the entire library sequenced.
  Hi-C libraries are incredibly complex due to the huge range of ligation
  events captured and require great sequencing power to achieve a useful
- association resolution.
+ resolution.
 \end_layout
 
 \begin_layout Standard
@@ -1414,9 +1430,9 @@ The results of the e4C indicate association frequencies.
  Because of these potential biases traditional RT-qPCR 3C was a logical
  method to validate the association.
  Additionally, the RT-qPCR 3C may provide a resolution of association frequencie
-s at a superior level to that of the e4C, both in terms of quantitative
- association of individual fragments and in differences between fragments
- within close proximity.
+s superior to that of the e4C, both in terms of quantitative association
+ of individual fragments and in differences between fragments within close
+ proximity.
 \end_layout
 
 \begin_layout Subsection
@@ -1431,12 +1447,11 @@ HindIII
  fragments within the promoters of candidate genes described above.
  Four primers were used for each fragment, two either side of both restriction
  sites.
- 3C material prepared with 
+ 3C material was prepared with 
 \emph on
 HindIII
 \emph default
- was used to be compatible with co-worker's experiments and to avoid any
- biases that may be introduced by 
+ to avoid any biases that may be introduced by 
 \emph on
 AseI
 \emph default
@@ -1543,7 +1558,7 @@ Screenshots of candidate genes taken from UCSC.
 \emph on
 HindIII
 \emph default
- restriction sites shown as blue lines, named fragments labelled in green
+ restriction sites shown as blue lines, named fragments labelled in black
  text.
  Not shown at equal scale.
 \end_layout
@@ -1769,7 +1784,7 @@ Gel showing 3C qPCR Products.
 \end_layout
 
 \begin_layout Standard
-Empirically, this shows that the 
+Empirically, this suggests that the 
 \emph on
 Surfeit
 \emph default
@@ -1786,8 +1801,9 @@ BCR
 SMC2.
  
 \emph default
-The presence and absence of bands in replicates demonstrates that these
- ligation products are very rare, due to the weak nature of 
+The binary nature of the presence and absence of bands in replicates demonstrate
+s that these ligation products are very rare, due to the weak nature of
+ 
 \emph on
 trans
 \emph default
@@ -1868,8 +1884,9 @@ DNA-FISH study design
 \end_layout
 
 \begin_layout Standard
-For use in the DNA-FISH I used BAC probes covering target genes directly
- labelled with fluorescent moieties (555 nm for 
+For use in the DNA-FISH I used BAC probes covering target genes.
+ These BACs were directly labelled with fluorescent moieties (555 nm for
+ 
 \emph on
 BCR
 \emph default
@@ -2612,7 +2629,11 @@ th
 \end_inset
 
  percentiles.
- Grey numbers below x axis denote number of signals counted.
+ Grey numbers below 
+\begin_inset Formula $x$
+\end_inset
+
+ axis denote number of signals counted.
  
 \series bold
 (B)
@@ -2991,9 +3012,10 @@ association with
 \emph on
 BCR
 \emph default
- is in chromosome 9 band q34 I demonstrate that this association is also
- present in Hi-C and TCC libraries generated from GM06990 and GM12878 cells
- and that this association is reciprocal.
+ is in chromosome 9 band q34.
+ I demonstrate that this association is also present in Hi-C and TCC libraries
+ generated from GM06990 and GM12878 cells and that this association is reciproca
+l.
  I discuss analysis to identify a candidate region driving the association
  and experiments designed to validate it using RT-qPCR 3Cand DNA-FISH.
 \end_layout
