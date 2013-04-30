@@ -2202,7 +2202,9 @@ AseI
 \series default
  Genome wide plots of BCR e4C Run 2 before and after AseI site distribution
  normalisation.
- Standard scores calculated and normalised against maximum value.
+ Standard scores calculated with 10Mb windows separated by 1Mb.
+ Y axes are normalised for clarity.
+ Raw y axes are 0 - 5, Normalised are 0 - 16.
 \end_layout
 
 \end_inset
@@ -2344,7 +2346,7 @@ in-silico
 AseI
 \emph default
  site distribution.
- Read counts quantified and normalised against maximum value.
+ Y axis shows read count per million reads.
 \end_layout
 
 \end_inset

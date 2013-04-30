@@ -1673,10 +1673,11 @@ cis
  association profiles.
  
 \series default
-Profiles generated using 100 kb sliding window fragment proportions (minimum
- 5 frags) summed in 1 mb windows separated by 100 kb.
+Profiles generated using 1 mb windows separated by 100 kb, summing
+ normalised 100kb hit frequencies and quantified with standard scores.
  Grey bars show position of bait genes.
- Black horizontal bars are 5 Mb.
+ X axis shows chromosomal position in Mb, Y axis shows standard scores
+ ranging from 0 to 200.
 
 \series bold
  
@@ -1974,7 +1975,7 @@ NlaIII
 AseI
 \emph default
  fragments separated by 2 fragments.
- Black horizontal bar is 5 Mb.
+ X axes show position on chromosome 22 in Mb. Y axes show standard scores, ranging from 0 to 50.
 \end_layout
 
 \end_inset
@@ -2309,9 +2310,7 @@ key "Bernstein2010"
 \end_inset
 
 .
- Y scales of the datasets were adjusted to have equal maximal values to
- better show correlation.
- Negative standard scores hidden to aid visibility.
+ BCR e4C y axes show standard scores of 0 - 16. H3K4me1 ChIP-Seq y axis shows standard scores of 0 - 5.
 \end_layout
 
 \end_inset
